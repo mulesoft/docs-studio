@@ -10,10 +10,13 @@ This section contains the following pages:
 
 * xref:maven-support-in-anypoint-studio.adoc[Maven Support in Anypoint Studio]
 * xref:building-a-mule-application-with-maven-in-studio.adoc[Building a Mule Application with Maven in Studio]
-* link:/mule-user-guide/v/3.7/enabling-maven-support-for-a-studio-project[Enabling Maven Support for a Studio Project]
+* xref:enabling-maven-support-for-a-studio-project.adoc[Enabling Maven Support for a Studio Project]
 * xref:importing-a-maven-project-into-studio.adoc[Importing a Maven Project into Studio]
 
+[NOTE]
+====
 If you are working with Maven outside Studio, see
-xref:3.7@mule-runtime::using-maven-in-mule-esb.adoc[Using Maven in Mule ESB].
+xref:3.8@mule-runtime::using-maven-in-mule-esb.adoc[Using Maven in Mule ESB].
 
-For basic details on Maven, see xref:3.7@mule-runtime::maven-reference.adoc[Maven Reference].
+For general basic details on Maven, see xref:3.8@mule-runtime::maven-reference.adoc[Maven Reference].
+====

@@ -4,72 +4,40 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, esb, studio, extensions, install extensions, extend, download new software
 
-Beyond the out-of-the-box functionality included in the Mule distributions, various *plugins*, *modules*, *connectors*, and *runtimes for Studio* are made available by download. Complete the following procedure to extend the functionality of your instance of Mule.
+Beyond the out-of-the-box functionality included in the Studio and Mule distributions, various *plugins*, *modules*, *connectors*, and *runtimes for Studio* are made available by download.
 
-[.ex]
-=====
-[discrete.view]
-=== Studio
+== Available Update Sites for Extensions
 
-. Under the `Help` menu in Anypoint Studio, select `Install New Software`.
-. In the *Work with:* field in the *Install* wizard, enter one of the following:
-.. Use the drop-down menu to select --All Available Sites-- and browse the plugins and modules available for download into Studio +
-.. Use the drop-down menu to select a specific plugin or module
-.. Enter a xref:studio-update-sites.adoc[specific update site URL] from which you wish to download a plugin, module, or connector
-. In the table below the filter field (see image below), use the checkboxes to select one or more modules or plugins you wish to install on your instance of Studio (click to expand the folders to select individual items), then click *Next*.
-+
+For installation of an extension from an update site or local directory, see the instructions in
+xref:studio-update-sites.adoc[Updating Studio, Mule and Components].
+
+After selecting an update site, or when seeing *All Available Sites*, you see a list below the filter bar (see image below). Use the checkboxes to select one or more modules or plugins you wish to install on your instance of Studio (click to expand the folders to select individual items), then click *Next*.
+
 image::allavailablesites.png[AllAvailableSites]
 
 . Review the details of the item(s) you selected, then click *Next*.
 . Click to accept terms and conditions of the product, then click *Finish*.
 . Click *Restart Now* to complete the installation.
 
-[TIP]
-====
-The Studio documentation offers more specific instructions for downloading and using the following extensions:
 
-* xref:adding-community-runtime.adoc[Mule Community Runtime]
-* xref:3.7@mule-runtime::installing-anypoint-enterprise-security.adoc[Anypoint Enterprise Security]
-* xref:3.7@mule-runtime::installing-connectors.adoc[Anypoint Connectors]
-* xref:importing-a-maven-project-into-studio.adoc[Importing a Maven Project into Studio]
-* link:/mule-user-guide/v/3.7/enabling-maven-support-for-a-studio-project[Enabling Maven Support for a Studio Project]
-* xref:using-subversion-with-studio.adoc[Using Subversion with Studio]
-====
+== To Unblock Studio Update Sites
 
-[WARNING]
-====
-*Are you behind a firewall?* +
 
-If you are on a network with firewall restrictions, you may find that the Studio update sites are blocked and you are unable to download extensions.
+If you are on a network with firewall restrictions, you may find that the Studio update sites are blocked and you are unable to download extensions. Allow the following sites to be accessed through your firewall to allow Studio to connect to the update sites:
 
-Allow the following sites on your firewall to allow Studio to connect to the update sites:
+`+https://www.mulesoft.com/lp/dl/mule-esb-enterprise+`
 
-https://www.mulesoft.com/lp/dl/mule-esb-enterprise
+`+http://repository.mulesoft.org/connectors/releases/+`
 
-http://repository.mulesoft.org/connectors/releases/
+`+http://download.eclipse.org/technology/m2e/releases+`
 
-http://download.eclipse.org/technology/m2e/releases
+`+http://download.eclipse.org/eclipse/updates+`
 
-http://download.eclipse.org/eclipse/updates
+`+http://subclipse.tigris.org/+`
 
-http://subclipse.tigris.org/[http://subclipse.tigris.org]
+`+http://findbugs.cs.umd.edu/eclipse/+`
 
-http://findbugs.cs.umd.edu/eclipse/
-====
 
-[discrete.view]
-=== Standalone
-
-. Visit https://www.anypoint.mulesoft.com/exchange/?type=connector[MuleSoft Connectors].
-. Click to reveal the details of a specific connector, then click *Install for Maven*.
-+
-image::installformaven.png[InstallForMaven]
-+
-. Review relevant details about the various ways to install and use the connector.
-. For more specific details regarding the installation of plugins, review the explanation of the
-xref:3.7@mule-runtime::classloader-control-in-mule.adoc[Classloader Control in Mule].
-
-=====
 
 == Checking Extension Versions
 
@@ -100,6 +68,17 @@ To identify an extension's version in Mule Standalone, access your `pom.xml` fil
 
 =====
 
+== More on Extensions
+
+For more specific instructions for the following extensions:
+
+* xref:adding-community-runtime.adoc[Mule Community Runtime]
+* xref:3.8@mule-runtime::installing-anypoint-enterprise-security.adoc[Anypoint Enterprise Security]
+* xref:3.8@mule-runtime::installing-connectors.adoc[Anypoint Connectors]
+* xref:importing-a-maven-project-into-studio.adoc[Importing a Maven Project into Studio]
+* xref:enabling-maven-support-for-a-studio-project.adoc[Enabling Maven Support for a Studio Project]
+* xref:using-subversion-with-studio.adoc[Using Subversion with Studio]
+
 == See Also
 
-* Want to create your own Mule extension? Access the xref:3.7@connector-devkit::index.adoc[Anypoint Connector DevKit] documentation for details.
+* Want to create your own Mule extension? Access the xref:3.8@connector-devkit::index.adoc[Anypoint Connector DevKit] documentation for details.

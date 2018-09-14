@@ -1,0 +1,137 @@
+#%RAML 1.0
+
+title: Contact Information API
+mediaType: application/json
+
+types:
+
+  ###############
+  # Contacts Data:
+  ###############
+
+  Contact:
+   properties:
+     address:
+       type: Address
+     email:
+       type: Email
+
+  Address:
+    properties:
+      street:
+        type: string
+      city:
+        type: string
+      state:
+        type: string
+      country:
+        type: string
+
+  Email:
+    pattern: "^\\w+(\\.\\w+)?@mail.com"
+
+  ###############
+  # Contacts:
+  ###############
+
+  Individual:
+    properties:
+      name:
+        type: string
+      contact-information:
+        type: Contact
+
+  Company:
+    properties:
+      company-name:
+        type: string
+        xml:
+          attribute: true
+          name: xmlcompany-name
+      contact-information:
+        type: Contact
+
+
+  ###############
+  # API:
+  ###############
+
+/individuals:
+  get:
+    responses:
+      200:
+        body:
+          type: Individual
+          example: |
+              {
+                "name": "Max",
+                "contact-information": {
+                  "address": {
+                    "street":"Market Street",
+                    "city":"San Francisco",
+                    "state":"California",
+                    "country":"United States"
+                    },
+                  "email":"max@mail.com"
+                 }
+              }
+  post:
+    body:
+        type: Individual
+    responses:
+      200:
+        body:
+          example: |
+              {
+                "name":"",
+                "contact-information": {
+                  "address": {
+                    "street":"",
+                    "city":"",
+                    "state":"",
+                    "country":""
+                   },
+                 "email": ""
+                }
+              }
+
+/companies:
+  get:
+    body:
+      type: Company
+    responses:
+      200:
+        body:
+          type: Company
+          example: |
+               {
+                  "company-name": "MuleSoft",
+                  "contact-information": {
+                    "address": {
+                      "street":"77 Geary St.",
+                      "city":"San Francisco",
+                      "state":"California",
+                      "country":"United States"
+                      },
+                    "email":"mulesoft@mail.com"
+                   }
+                }
+  post:
+   body:
+    type: Company
+   responses:
+    200:
+      body:
+        example: |
+              {
+                "company-name": "",
+                "contact-information": {
+                  "address": {
+                    "street":"",
+                    "city":"",
+                    "state":"",
+                    "country":""
+                    },
+                  "email":""
+                 }
+              }

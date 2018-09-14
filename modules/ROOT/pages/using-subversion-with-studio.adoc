@@ -18,7 +18,7 @@ image::installnewsoftware-copy.png[InstallNewSoftware+copy]
 +
 *Note*: Use "1.8.x" as shown (the .x is not a placeholder):
 +
- Subclipse Update Site — http://subclipse.tigris.org/update_1.8.x
+ Subclipse Update Site – http://subclipse.tigris.org/update_1.8.x
 +
 image::subeclipse-select.png[subeclipse_select]
 
@@ -38,7 +38,7 @@ image::restart.png[]
 . Click the expand arrow next to *Team*, then select *SVN*.
 . In the *SVN Interface* pane, use the drop down menu in the *Client* field to select *SVNKit* and click *OK*:
 +
- SVNKit (Pure Java) SVNKit v1.7.9.9659
+ SVNKit (Pure Java) SVNKit v1.7.9.9659`
 +
 image::preferences.png[]
 
@@ -74,7 +74,7 @@ image::comment-2.png[comment_2]
 
 . Click *Finish*.
 . Studio displays a panel that gives you the option to automatically open *Synchronize View*, which ensures that your local workspace does not conflict with your team's repository. Click *Yes* to open the view and begin synchronizing your workspaces; click *No* to simply return to your local workspace in Studio.
-
++
 image::perspective-1.png[]
 
 == Checking Out a Project

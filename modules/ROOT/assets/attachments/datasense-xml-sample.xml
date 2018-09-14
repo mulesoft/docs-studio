@@ -1,0 +1,14 @@
+<staff>
+    <employee>
+        <firstname>Annie</firstname>
+        <lastname>Point</lastname>
+    <gender>F</gender>
+    <phone>1234-12345</phone>
+    </employee>
+    <manager>
+        <firstname>Max</firstname>
+        <lastname>Mule</lastname>
+    <gender>M</gender>
+    <phone>321-4321</phone>
+    </manager>
+</staff>

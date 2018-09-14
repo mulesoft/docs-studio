@@ -1,36 +1,18 @@
-= Launch Anypoint Studio
+= To Install Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: download, studio, server, test, deploy, applications
 
-== Installing Enterprise Modules
+It is not possible to download Anypoint Studio 6.4 or below.
 
-If you are running *Anypoint Studio* with *Mule Enterprise Edition (EE)*, you can add additional modules to your Studio instance.
+It's recommended to download the latest Studio 6.x version. +
+Follow the instructions xref:6.5@download-and-launch-anypoint-studio.adoc[here].
 
-* xref:3.8@mule-runtime::installing-anypoint-enterprise-security.adoc[Anypoint Enterprise Security]
 
-* xref:3.8@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors]
-
-* mailto:sales@mulesoft.com[Contact MuleSoft] to acquire entitlements to access the xref:3.8@mule-runtime::mulesoft-enterprise-java-connector-for-sap-reference.adoc[SAP Connector] and/or xref:3.8@mule-runtime::mule-high-availability-ha-clusters.adoc[High Availability Clustering]
-
-== Updating Studio
-
-Anypoint Studio notifies you when an update is available.
-
-[TIP]
-You can also check this manually going to *Help* > *Check for Updates*.
-
-Keep in mind that updating your Studio installation to the latest release using this method does not update the bundled Runtime version that's announced in the xref:release-notes::studio/anypoint-studio.adoc[release notes].
-
-If you updated Studio from the update site and want to get the announced runtime version bundled with your version of Studio follow these steps:
-
-. Go to *Help* > *Install New Software ...*.
-. In the _Work with_ drop down menu select *Anypoint Studio Update Site*.
-. Expand the *Anypoint Studio* entry.
-. Select the *Mule Server Runtime {version}* that appears listed.
-. Follow the instructions on screen to complete the installation.
 
 == See Also
 
-* xref:6@index.adoc[Essentials of Anypoint Studio].
+* xref:troubleshooting-studio.adoc[FAQ: Troubleshooting Issues with Your Default OS Browser]
+* xref:faq-jdk-requirement.adoc[FAQ: Troubleshooting JDK Requirement]
+* xref:exchange-integration.adoc[Integration with Exchange 2.0]
+* xref:import-api-def-dc.adoc[To Import an API Definition from Design Center]

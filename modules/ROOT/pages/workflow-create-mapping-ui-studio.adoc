@@ -1,0 +1,25 @@
+= Workflow: Create a Mapping via UI (Anypoint Studio)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+. xref:input-output-structure-transformation-studio-task.adoc[To Define Input and Output Structure of a Transformation]
+Provide expected input and required output structures.
+
+
+. xref:graphically-construct-mapping-studio-task.adoc[To Graphically Construct a Mapping]
+Drag elements of the input and drop them onto elements of the output. You can also include fixed values and functions to build out the output.
+
+
+. xref:preview-transformation-output-studio-task.adoc[To Preview the Output of a Transformation]
+Verify that the transformation produces the expected output.
+
+
+
+
+
+== See Also
+
+* xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
+* xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart]
+* xref:3.8@mule-runtime::dataweave.adoc[DataWeave Language]

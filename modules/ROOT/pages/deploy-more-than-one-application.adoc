@@ -1,0 +1,43 @@
+= Deploy More Than One Application in Studio
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: deploy studio parallel deployment
+
+Anypoint Studio allows you to deploy more than one application into the same Mule instance through xref:3.8@mule-runtime::application-deployment.adoc#deploying-applications-in-parallel[parallel deployment].
+
+== Deploying more than one application simultaneously.
+
+To deploy more than one application into the same Mule Runtime instance:
+
+. Make sure all the Mule projects you want to deploy are open and visible in your Package Explorer.
++
+[NOTE]
+--
+For this example, we are deploying `MuleApp1` and `MuleApp2` simultaneously.
+--
++
+. Go to *Run* and select *Run Configurations...*.
+.. From the left navigation bar, select one of the Mule applications you want to deploy.
+.. Under the _Mule domains/projects to launch_ select all the applications you want to deploy.
++
+image::parallel-deployment-99dab.png[]
++
+[CAUTION]
+--
+If the Mule application is not an open project in Studio, you won't be able to select it.
+--
++
+.. Select *Apply*.
+.. Click *OK* to finish.
+. After Studio finishes deploying your project, you should see a notification in the console showing all select applications deployed
++
+[source,text,linenums]
+----
+*******************************************************************************************************
+*            - - + APPLICATION + - -            *       - - + DOMAIN + - -       * - - + STATUS + - - *
+*******************************************************************************************************
+* MuleApp2                                      * default                        * DEPLOYED           *
+* MuleApp1                                      * default                        * DEPLOYED           *
+*******************************************************************************************************
+----

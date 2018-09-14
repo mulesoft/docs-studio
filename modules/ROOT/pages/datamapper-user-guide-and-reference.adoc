@@ -1,4 +1,4 @@
-= Anypoint DataMapper User Guide and Reference
+= Anypoint DataMapper User Guide and Reference (Deprecated - DataMapper)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,18 +6,18 @@ endif::[]
 
 *_Enterprise, CloudHub_*
 
+
 [NOTE]
 ====
-DataMapper will continue to be fully supported in all current and future versions of Mule  3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
+DataMapper continues to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
 
-A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
+A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. Right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
 image::dw-migrator-script.png[dw migrator]
 
-If you don't see DataMapper on your palette, you can enable it by going to *Preferences* -> *Anypoint Studio* -> *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
+If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and clicking the checkbox *Show deprecated Mule Components and Attributes*.
 
 To deploy a project that includes DataMapper and is built with Mule Runtime 3.6 or older in one of your own servers, you must xref:including-the-datamapper-plugin.adoc[Include the DataMapper Plugin]
-
 ====
 
 image::datamapper.png[]
@@ -43,7 +43,7 @@ image::mapping-example-compl.png[]
 
 [NOTE]
 ====
-*Full DataMapper functionality is exclusive to the Mule ESB Enterprise Edition (EE),* it won't work if you're deploying your projects to Mule ESB Community Edition (CE).
+*Full DataMapper functionality is exclusive to the Mule  Enterprise Edition (EE),* it won't work if you're deploying your projects to Mule Community Edition (CE).
 ====
 
 [TIP]

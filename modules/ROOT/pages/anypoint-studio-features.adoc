@@ -24,7 +24,7 @@ Get exposure to *metadata* at design-time through xref:datasense.adoc[DataSense]
 
 == Powerful Data Mapping
 
-Handle complex data mappings and transformations through the xref:using-dataweave-in-studio.adoc[*Transform Message*] component, that leverages the powerful xref:3.7@mule-runtime::dataweave.adoc[DataWeave] language. This component allows you to create your transformations both through a simple drag and drop visual interface or by coding in DataWeave to unleash all of the language's potential.
+Handle complex data mappings and transformations through the xref:transform-message-component-concept-studio.adoc[Transform Message Component], that leverages the powerful xref:3.8@mule-runtime::dataweave.adoc[DataWeave] language. This component allows you to create your transformations both through a simple drag and drop visual interface or by coding in DataWeave to unleash all of the language's potential.
 
 
 == Debugging and Testing
@@ -44,19 +44,23 @@ Use the xref:studio-visual-debugger.adoc[Studio Visual Debugger] to run your app
 
 === Unit Testing with MUnit
 
-Use link:/munit/v/1.1.1/using-munit-in-anypoint-studio[MUnit] to automatically create and run unit tests on your applications. That way you can be certain that any changes you make to your application won't brake it or alter how it behaves.
+Use link:/munit/v/1.2.0/using-munit-in-anypoint-studio[MUnit] to automatically create and run unit tests on your applications. That way you can be certain that any changes you make to your application won't brake it or alter how it behaves.
 
-== RAML Support
-
-https://raml.org/[RAML] is a widely used standard for defining APIs through a very simple syntax, similar to that of YAML.
-
-* You can import RAML files for your APIs that are managed in the Anypoint Platform by the xref:api-manager::index.adoc[API Manager].
-
-* While working with a RAML file, you can also view an embedded interactive API Console that's automatically built from the resources and methods described in your RAML.
 
 == APIKit
 
 * Based on a https://raml.org/[*RAML*] or a *WSDL* file, you can use xref:apikit::index.adoc[APIkit] to automatically build scaffoldings for all of the backend flows of a Mule application, as well as exception handling flows. All you have to do then is populate these with operations.
+
+* Also, as a beta feature, you can use APIkit with link:/apikit/creating-an-odata-api-with-apikit[OData]
+
+== Additional RAML Support
+
+https://raml.org/[RAML] is a widely used standard for defining APIs through a very simple syntax, similar to that of YAML.
+
+* You can import RAML files for your APIs that are managed in the Anypoint Platform by the xref:api-manager::index.adoc[API Manager] and xref:api-sync-reference.adoc[keep them in sync] with the platform.
+
+* While working with a RAML file, you can also view an embedded interactive API Console that's automatically built from the resources and methods described in your RAML.
+
 
 
 
@@ -71,4 +75,4 @@ https://raml.org/[RAML] is a widely used standard for defining APIs through a ve
 == See Also
 
 * xref:general:getting-started:build-a-hello-world-application.adoc[Build an application in Anypoint Studio].
-* xref:6@setting-up-your-development-environment.adoc[Setting Up Your Development Environment]
+* xref:setting-up-your-development-environment.adoc[Setting Up Your Development Environment]

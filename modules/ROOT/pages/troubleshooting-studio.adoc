@@ -1,0 +1,40 @@
+= FAQ: Troubleshooting Issues with Your Default OS Browser
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio uses your system's default layout engine to render content in its Web UI. +
+If you are experiencing issues visualizing web content such as the Runtime Manager UI when deploying an application to Anypoint Platform, or Exchange when browsing assets for your project, you need to configure Anypoint Studio to use a *Mozilla/XULRunner* runtime environment as its underlying renderer for the Web UI.
+
+To configure this:
+
+. Download `XULRunner` (we recommend http://ftp.mozilla.org/pub/xulrunner/releases/24.0/runtimes/[v24.0]).
+. Unzip your package and install it.
+. Locate your `AnypointStudio.ini` file:
+.. On Windows: This file is located within your Anypoint Studio's installation directory.
+.. On Linux: `/usr/lib/anypointstudio/anypointstudio.ini`
+.. On OSx: `Applications/AnypointStudio`:
+... Right click on the AnypointStudio.app package
+... Select `Show Package Contents`
+... Navigate to `Contents > Eclipse > AnypointStudio.ini`
+. Add a `-Dorg.eclipse.swt.browser.XULRunnerPath=` variable with the full path to your XULRunner binaries:
++
+----
+-Dorg.eclipse.swt.browser.XULRunnerPath={YourXULRunnerFolder}
+----
+
+[TIP]
+In Firefox and Windows, XULRunner binaries are located in the folder where you extracted the XULRunner package. +
+In OSx, XULRunner binaries are located in a subfolder within the directory where you extracted the XULRunner package: `XUL.framework/Versions/Current/`
+
+
+Additionally, if you are using Windows with Internet Explorer configured as your default browser, and experiencing unexpected crashes, you must disable *ActiveX Filtering*:
+
+. In Internet Explorer, select the *Tools* button.
+. Select `Internet options`.
+. Go to the `Security` tab, select the *Internet* zone and click on the `Custom level…` button.
+. Navigate to the `ActiveX controls and plug-ins` option and select *Disable*
+
+== See Also
+
+* For more information about this configuration, check the https://www.eclipse.org/swt/faq.php#howusemozilla[Eclipse Documentation resource].

@@ -1,4 +1,4 @@
-= Using DataMapper Lookup Tables
+= Using DataMapper Lookup Tables (Deprecated - DataMapper)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,9 +6,9 @@ endif::[]
 
 [NOTE]
 ====
-DataMapper continues to be fully supported in all current and future versions of Mule ESB 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.7@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
+DataMapper continues to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
 
-A xref:3.7@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
+A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
 image::dw-migrator-script.png[dw migrator]
 ====
@@ -171,7 +171,7 @@ image::ex-lookup-assign-key.png[ex.lookup.assign.key]
 +
 [TIP]
 To use more than one lookup search key, click the plus icon to add additional keys. Studio inserts these additional keys into the SQL statement in order.
-. Click *OK*. At this point, the mapping is complete. Running a xref:previewing-datamapper-results-on-sample-data.adoc[preview] of the mapping gives the following result:
+. Click *OK*. At this point, the mapping is complete. Running a preview of the mapping gives the following result:
 +
 [source,text,linenums]
 ----

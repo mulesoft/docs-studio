@@ -3,12 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-[%header%autowidth.spread]
-|===
-|image:information.png[] |Note that if you configure a global connection configuration using OAuth, DataSense is not supported.
-
-|===
-
 [cols="2*"]
 |===
 |*DataSense-Enabled Connectors* |*Bundled with +
@@ -39,3 +33,7 @@ Anypoint Studio May 2014*
 |ZenDesk |
 |Zuora |
 |===
+
+
+[NOTE]
+Note that if you configure a global connection configuration using OAuth, DataSense is not supported.

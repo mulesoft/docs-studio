@@ -1,34 +1,152 @@
-= Setting up your Development Environment
+= Anypoint Studio Setup
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Setting up a proper environment from the beginning is crucial for success with using Mule. The following document outlines the steps to be taken before any significant use of Anypoint Studio, Mule ESB, and our Cloud Solutions.
+Setting up a proper development environment is crucial for a successful use of the Mule Runtime. +
+The following document outlines the steps to be taken before any significant use of Anypoint Studio, Mule, and our Cloud Solutions.
 
-== Anypoint Studio Setup
+== Initial Setup
 
 === Check Hardware and Software Requirements
 
-* Click xref:3.7@mule-runtime::hardware-and-software-requirements.adoc[here] to find information regarding the Hardware and Software requirements. Please correctly align with the appropriate Hardware and Software before proceeding.
+* Review the xref:hardware-and-software-requirements.adoc[Hardware and Software requirements] and make sure you meet the essentials.
 
 === Install Oracle JDK
 
-* If operating Mule 3.7, download and install the newest version of Oracle JDK http://www.oracle.com/technetwork/java/javase/downloads/index.html[here].
-For Mule 3.6 and below, please note Java 7 is compatible.
+* If operating Mule 3.7 or newer, download and install the latest version of Oracle JDK http://www.oracle.com/technetwork/java/javase/downloads/index.html[here].
 
-=== Download Anypoint Studio
+[TIP]
+Java 7 is compatible with Mule 3.6 and below.
 
-Download Anypoint Studio https://www.mulesoft.com/platform/studio[here].
+=== Download and Install Anypoint Studio
 
-=== Setup and Learn about Maven
+* See xref:download-and-launch-anypoint-studio.adoc[Download Anypoint Studio] for detailed instructions
+
+* If you have any extensions you wish to add to Studio, such as premium connectors or the enterprise security package, see xref:installing-extensions.adoc[Installing Extensions]
+
+
+== Credentials Setup
+
+=== Configure Anypoint Platform Credentials
+
+* To associate your Anypoint Platform account to your local development environment:
+
+. Open Anypoint Studio *Preferences*.
+. Go to *Anypoint Studio* > *Authentication*
+. Click the *Add* button and enter your Anypoint Platform credentials
+
+[NOTE]
+--
+xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-update-site-1-release-notes.adoc[Studio 6.1.1] and newer allows you to log-in to Anypoint Platform using your configured xref:access-management::external-identity.adoc[federated external identity].
+
+. When adding your Platform's credentials, click the *Configure* button
+. By default, the _Anypoint Platform_ option is selected.
+.. Select _External identity_
+.. Add your organization's domain
+--
+
+=== Obtain credentials to access paid components and controls
+
+This process only needs to be done once. A project manager or whoever is responsible for project oversight should complete this step.
+
+* Log in to the Support Portal https://support.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
+
+* Click the "Case" tab located on the top of the Support Portal Home page.
+
+* Click the "Create New Case" button, at the right of the page header.
+
+* Fill out the required information (highlighted in red) and in the _Description_ field, include a request for your credentials.
+
+
+== Development Environment Setup
+
+=== Enable Private Cloud Edition Setup
+
+xref:release-notes::studio/anypoint-studio-6.2-with-3.8.3-runtime-release-notes.adoc[Anypoint Studio 6.2] and higher support the xref:1.5@private-cloud::index.adoc[Private Cloud Edition] of Anypoint Platform.
+
+To set Private Cloud Edition Setup from Studio:
+
+image::setting-up-your-development-environment-cdf6d.png[]
+
+. Navigate to *Preferences*.
+. Select the *Anypoint Studio* item from the left navigation bar.
+. Select the *Anypoint Platform Private Edition* option.
+. Select the *Use a Private Edition instance* check mark.
+. Type the URL of your Anypoint Platform Private Cloud Edition installation.
++
+[NOTE]
+====
+The existing URL is being used as a placeholder example. Replace this value with your Anypoint Platform URL.
+
+Keep in mind that changing this value automatically changes the URL that's set in the *Exchange* tab to whatever you set in this field + `/exchange/#!/`.
+====
++
+. Click *Apply*
+. Click *OK*
+
+[TIP]
+--
+If you choose to use a self-signed certificate on your Anypoint Platform Private Cloud Edition installation, you need to:
+
+. Install the certificate in your operative system.
+. Import the same certificate to your JDK:
++
+.Windows
+----
+keytool -import -keystore C:\Program Files\Java\jdk1.8.0_92\jre\lib\security\cacerts -storepass changeit -file selfSignedCertificate.cer
+----
++
+.Unix/Linux
+----
+keytool -import -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass changeit -file selfSignedCertificate.cer
+----
++
+Where:
++
+* `$JAVA_HOME` is the environment variable that defines where your JVM is installed.
+* `selfSignedCertificate.cer` is the self-signed certificate that you are using in your Anypoint Platform Private Cloud Edition.
+* `changeit` is the default password for your JDK keystore. If you manually changed your default password, use your current password instead.
++
+Note that you can either import the certificate to your existing keytool or create a new one and import your certificate there.
+
+--
+
+After configuring and enabling Private Cloud support you can:
+
+. Log in to your Anypoint Platform Private Cloud Edition from Studio configuring your platform's credentials following the steps <<configure-anypoint-platform-credentials,described above>>.
+. Configure xref:api-sync-reference.adoc[API Sync] and link:/api-manager/api-auto-discovery[API Autodiscovery] for APIs in your Private Cloud Edition platform.
+. Access your On-Premises xref:exchange::index.adoc[Exchange] Artifacts.
+
+=== Customize the Exchange Address
+
+You can change the default location of xref:exchange::index.adoc[Anypoint Exchange] to point to a private version of exchange.
+
+image::setting-up-your-development-environment-67928.png[]
+
+To change the default address:
+
+. Navigate to *Preferences*.
+. Select the *Anypoint Studio* item from the left navigation bar.
+. Select the *Exchange* option.
+. Type the URL of your private exchange.
+
++
+[NOTE]
+If you're using the Anypoint Platform Private Cloud Edition, this field automatically changes when you follow the steps in <<Enable Private Cloud Edition Setup>>. This sets the exchange URL to the base URL you set there + `/exchange/#!/`. You can then modify the Exchange tab to customize this address.
+
+
+=== Repositories Setup
+
+==== Setup and Learn about Maven
 
 Maven is a powerful build automation tool used for software project management. We highly urge our customers to use Maven, Gradle, or a similar in-house tool with any significant usage of MuleSoft software.
 
 * Learn more about Maven http://maven.apache.org/guides/getting-started/[here].
 
-* Start learning how to use Maven with Mule xref:maven-support-in-anypoint-studio.adoc[here].
+* Start learning how to use Maven with Mule xref:using-maven-in-anypoint-studio.adoc[here].
 
-=== Set Up Code Repository
+==== Setup Code Repository
 
 Code Repositories facilitate the tracking and versioning of changes developers make to a software project; this enables several people to work on the same project simultaneously without creating conflicts among the changes and additions they make.
 
@@ -36,136 +154,72 @@ Code Repositories facilitate the tracking and versioning of changes developers m
 
 * Start learning how to use Subversion with Studio xref:using-subversion-with-studio.adoc[here].
 
-=== Set Up a Maven Repository Manager
+==== Setup a Maven Repository Manager
 
-A repository manager is a dedicated server application designed to manage repositories (internal and third party) of binary components. The usage of a repository manager is a best practice for any significant usage of Maven.
+A repository manager is a dedicated server application designed to manage repositories (internal and third party) of binary components. +
+The usage of a repository manager is a best practice for any significant usage of Maven. Check http://www.sonatype.org/nexus/downloads/[Nexus] and http://www.jfrog.com/open-source/[Artifactory] as an example.
 
-* Learn more about two recommended tools here: http://www.sonatype.org/nexus/downloads/[Nexus] and http://www.jfrog.com/open-source/[Artifactory].
 
-=== Obtain credentials to access paid components and controls
+==== Configure MuleSoft Repositories
 
-Please Note this only has to be done once. The project manager or who ever is responsible for project oversight should complete this step as well as step 1.8.
-
-* Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
-
-* Click the "Case" tab located on the top of the Support Portal Home page.
-
-* Click the "Create New Case" button, at the right of the page header
-
-* Fill out the required information (highlighted in red) and in the "Description" field please include a request for your credentials.
-
-=== Configure MuleSoft Repositories
-
-* Open Nexus. If you do not have Nexus learn more about Nexus http://www.sonatype.org/nexus/downloads/[here]. If you are using a different Repository Manager tool, please contact your Customer Success Manager.
-
-* Log in as administrator, open the Repositories tab, select *Add…->Proxy Repository*.
-
-* Create a new proxy repository with the following configuration:
-
+* Open the Repository Manager of your choice and configure a Proxy repository with the following information:
 ** Repository ID: muleee
-
 ** Repository Name: MuleSoft EE Repository
+** Set up Remote Storage Location: `+https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/+`
+** Set the authentication method to use the User Name and password obtained from Support.
 
-** Set up Remote Storage Location. Click https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/[here].
 
-** Check the Authentication checkbox
+== Manage your built-in Mule Runtimes
 
-** Fill in User Name (User Name obtained from Support) and password.
+=== Adding Mule Runtimes
 
-== On Premises
+* Anypoint Studio always comes bundled with the latest enterprise version of the Mule Runtime. If you wish to install any prior or beta version of the Runtime to develop applications with it in Studio, see xref:studio-update-sites.adoc[Updating Studio, Mule and Components].
 
-=== Check system compatibility with platform software.
+* If you wish to develop applications with the free Community version of the Mule Runtime, see xref:adding-community-runtime.adoc[Installing Community Edition of Mule Runtime]
 
-* Please review the platform software compatible with Mule ESB xref:3.7@mule-runtime::hardware-and-software-requirements.adoc[Hardware and Software Requirements].
 
-=== Install ESB
+=== Deploying to Production Environments
 
-* Click xref:3.7@mule-runtime::downloading-and-starting-mule-esb.adoc[here] for detailed steps on installing ESB on premises.
+Anypoint Studio comes bundled with the latest runtime for deploying and testing your applications. This server, however, is not meant for production as uptime restrictions apply. To deploy an application to your production environment you can either use:
 
-=== Download your license key file
+* The xref:runtime-manager::index.adoc[Runtime Manager], to deploy to a cloud or a local server/server-group/cluster
+* A xref:3.8@mule-runtime::downloading-and-starting-mule-esb.adoc[standalone local Mule server]
+* The xref:3.8@mule-management-console::index.adoc[Mule Management Console] to manage local servers (which will be deprecated in the future)
 
-* Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
-
-* Click the "Subscriptions" tab located on the top of the Support Portal Home page.
-
-* Click on the "Subscription Name" of the Subscription you would like a license key for. Please note that you must click on the "Subscription Name" (second column on the right) or you will not be forwarded to the correct page.
-
-* Click on the "License ID" number found on the bottom left of the page.
-
-* Click on the "View" button to download your license key.
-
-=== Install License Key
-
-* Click xref:3.7@mule-runtime::installing-an-enterprise-license.adoc[here] to learn how to install your license key.
-
-=== Setup the Runtime Manager
-
-You can manage both your applications that are deployed to the cloud and on premises through the Cloud version of the Runtime Manager, found in the https://anypoint.mulesoft.com[Anypoint Platform]. For more information on configuring the Runtime Manager on the cloud, please see the xref:runtime-manager::managing-servers.adoc[Managing Servers] topic.
-
-[TIP]
-If your organization's security policies require that you carry out everything on premises, you can instead install the Anypoint Platform into a local server and run it from there. If you’re interested in requesting the Anypoint Platform Private Cloud Edition, please contact your sales representative.
-
-== Anypoint Platform/Cloud
-
-=== Get Admin credentials for Anypoint Platform
-
-* If you do not already have Anypoint Platform credentials, email you Customer Success Manager. He/she will set it up up, and email you with your credentials.
-
-=== Create Business Groups on the Anypoint Platform.
-
-* Click https://anypoint.mulesoft.com/#/signin[here] to login into the support portal and create a business group.
-
-=== Add people to the appropriate Business Groups and provision access accordingly.
-
-* Click https://anypoint.mulesoft.com/#/signin[here] to login into the support portal and add people to business groups.
-
-=== Create Different Environments on Anypoint Platform
-
-* Click https://anypoint.mulesoft.com/#/signin[here] to login into the support portal and create different environments.
-
-=== Set Up the Runtime Manager
-
-* It is ready to use! Click xref:runtime-manager::index.adoc[here] to learn how to begin using the Runtime Manager!
-
-=== Use the Platform
-
-* Now that you have an account and are all set up, you are ready to create, build, run, manage, and enhance the experience of using your APIs and cloud based integrations through the platform.
 
 == Frequently Asked Questions
 
 === Does Studio Require any license keys?
 
-No. Studio does not require any customer specific license keys. Just download Studio https://www.mulesoft.com/platform/studio[here] and start learning how to use it xref:index.adoc[here].
+No. Studio does not require any customer specific license keys. Just download Studio https://www.mulesoft.com/platform/studio[here] and start learning how to use it following its xref:index.adoc[official documentation].
 
 === How many additional users can I add to an account?
 
-Each account is different. Depending on the Customer's Use Case and their needs we provide access to varying numbers of users. Please contact your Customer Success Manager for inquires with regards to the number of users you can add to your account.
+Depending on your needs, we can provide access to varying numbers of users. We do not provide a fixed number as every account is different. +
+Contact your Customer Success Manager for inquiries regarding the number of users you should add to your account.
 
 === How do I access the Support Portal?
 
-Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
+Log in to the Support Portal https://support.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
 
 === How do I file a support ticket within the Support Portal?
 
-. Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
-
+. Log in to the Support Portal https://support.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
 . Click the "Case" tab located on the top of the Support Portal Home page.
-
 . Click the "Create New Case" button, at the right of the page header.
-
-. Fill out the required information (marked by an asterisk(*)). Our support team will respond soon.
+. Fill out the required information (marked with an asterisk(*)). Our support team will respond soon.
 
 === Do you need to configure servers with Anypoint Studio?
 
-No, Anypoint Studio runs as an independent application on your machine and it does not need to be configured with any servers.
+No, Anypoint Studio runs as an independent application on your machine, and it does not need to be configured with any servers.
 
 === Where do I find my license key?
 
-. Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
+. Log in to the Support Portal https://support.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
 
 . Click the "Subscriptions" tab located on the top of the Support Portal Home page.
 
-. Click on the "Subscription Name" of the Subscription you would like a license key for. Please note that you must click on the "Subscription Name" (second column on the right) or you will not be forwarded to the correct page.
+. Click on the "Subscription Name" of the Subscription for which you would like a license key. Note that you must click on the "Subscription Name" (second column on the right) or you will not be forwarded to the correct page.
 
 . Click on the "License ID" number found on the bottom left of the page.
 
@@ -173,8 +227,4 @@ No, Anypoint Studio runs as an independent application on your machine and it do
 
 === What happens when my license key expires?
 
-MuleSoft operates an annual subscription model. Every year in order to continue to utilize MuleSoft, you will need to renew your account. Your Customer Success Manager will reach out with regards to renewal during their regular cadence with you. However, if you are ever interested in discussing renewal beforehand, please do not hesitate to reach out to your Customer Success Manager.
-
-== See Also
-
-* xref:general:getting-started:build-a-hello-world-application.adoc[Build a Hello World Application]
+MuleSoft operates an annual subscription model. Your Customer Success Manager will reach out with regards to renewal during their regular cadence with you. You can always reach out to your Customer Success Manager if you are interested in discussing renewal beforehand.

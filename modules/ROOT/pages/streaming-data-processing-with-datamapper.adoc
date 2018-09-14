@@ -1,4 +1,4 @@
-= Streaming Data Processing with DataMapper
+= Streaming Data Processing with DataMapper (Deprecated - DataMapper)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -23,17 +23,15 @@ If you don't see DataMapper on your palette, you can enable it by going to *Pref
 
 == Assumptions
 
-This document assumes the reader is familiar with the Anypoint DataMapper Transformer. If you are not, start from the beginning:  xref:datamapper-user-guide-and-reference.adoc[DataMapper User Guide and Reference]. For a listing of all available tools in DataMapper, consult xref:datamapper-visual-reference.adoc[DataMapper Visual Reference].
+This document assumes the reader is familiar with the Anypoint DataMapper Transformer. If you are not, start from the beginning:  xref:5@datamapper-user-guide-and-reference.adoc[DataMapper User Guide and Reference]. For a listing of all available tools in DataMapper, consult xref:5@datamapper-visual-reference.adoc[DataMapper Visual Reference].
 
 == Setting Streaming in DataMapper
 
 To set the Streaming parameter in your data mapping flow, follow these steps:
 
-. In the DataMapper view, click the *Properties* icon (highlighted below).
-+
-image::datamapper1.png[]
+. In the DataMapper view, click the *Properties* icon. DataMapper displays the general configuration dialog.
 
-. DataMapper displays the general configuration dialog, shown below. Click *Streaming*.
+. Click *Streaming*.
 
 .  In the *Pipe Size* input field, enter the desired size of the cache. The default is 2048. Bear in mind that:
 * When working with files, the value of *Pipe Size* is expressed in bytes
@@ -48,12 +46,6 @@ If an exception occurs in the mapping, DataMapper stops the streaming engine as 
 This example illustrates the use of the Streaming feature in Anypoint DataMapper.
 
 An xref:3.7@mule-runtime::http-connector.adoc[HTTP Connector] receives a CSV file, then passes it to DataMapper. DataMapper maps the input data from CSV to POJO. A xref:3.7@mule-runtime::database-connector.adoc[Database Connector] inserts the data into an external database.  In this scenario, DataMapper and the Database connector work in parallel as a pipeline, further improving application performance.
-
-image::datamapper3.png[]
-
-The image below displays the DataMapper view as configured for this example.
-
-image::datamapper4.png[]
 
 Finally, the output connector receives the list of maps, then incorporates each item as a value in the SQL query for the external database.
 

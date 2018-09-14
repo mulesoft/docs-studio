@@ -1,4 +1,4 @@
-= Anypoint DataMapper Visual Reference
+= Anypoint DataMapper Visual Reference (Deprecated - DataMapper)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,13 +6,13 @@ endif::[]
 
 [NOTE]
 ====
-DataMapper will continue to be fully supported in all current and future versions of Mule ESB 3.x, however it will be removed in Mule 4.0 in favour of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
+DataMapper continues to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
 
-A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
+A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
 image::dw-migrator-script.png[dw migrator]
 
-If you don't see DataMapper on your palette, you can enable it by going to *Preferences* -> *Anypoint Studio* -> *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
+If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and clicking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
 
 
@@ -43,7 +43,7 @@ image:edit-icon.jpg[edit_icon] or the drop-down menu to the right of the *Type* 
 
 image::a1-before-mapping-csv.png[a1.before_mapping-CSV]
 
-Using this window, you define the input and output mapping properties, including data types and fields (for details, see xref:defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata]).
+Using this window, you define the input and output mapping properties, including data types and fields (for details, see xref:5@defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata]).
 
 . After defining the mapping properties, click the *Create mapping* button at the bottom of the editor. The properties editor becomes the graphical mapping editor, shown below, in which you can define your data mapping proper.
 +
@@ -59,15 +59,15 @@ For details on creating your mapping, see xref:defining-datamapper-input-and-out
 
 image::1-before-mapping.png[1.before_mapping]
 
-Notice the *Create mapping* button at the bottom of the image above. The button is grayed-out; it will be available only after you have defined the input and output parameters for your mapping.
+Notice the *Create mapping* button at the bottom of the image above. The button is grayed-out; it's available only after you define the input and output parameters for your mapping.
 
-[%header%autowidth.spread]
+[%header,cols="10a,90a"]
 |===
 |Number |Description
 |1 |Display name input field. Defines the name for this DataMapper in the application flow as shown in the Studio canvas.
 |2 |File name input field. Defines the name of the file that contains the data mapping.
 |3 |Input source drop-down menu. By default, DataMapper takes its input from the message payload. Click to select another input source; you can select from several message properties or flow variables.
-|4 |Input type input field. Click the edit icon image:edit-icon.jpg[edit_icon] or the drop-down menu to the right of the input field to select the input type. This will cause the input pane to change allowing you to select between the available types for input data.
+|4 |Input type input field. Click the edit icon image:edit-icon.jpg[edit_icon] or the drop-down menu to the right of the input field to select the input type. This causes the input pane to change allowing you to select between the available types for input data.
 
 |5 |Output target input field. The default is the message payload. Select between payload or available properties, or write your own expression.
 |6 |Output type drop-down menu. Click to select between the available types for output data.
@@ -88,15 +88,15 @@ Sidepanel view selector and config icons. Use these icons to:
 
 The image below describes the different icons, indicators and tools in DataMapper's graphical mapping editor. For a description of each item, consult the numbered table below the image.
 
-For details on defining your mapping, see xref:defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata].
+For details on defining your mapping, see xref:5@defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata].
 
 image::overview-graphical-graffle-small-cropped.jpg[]
 
-[%header%autowidth.spread]
+[%header,cols="10a,90a"]
 |===
 |Number |Description
 |1 |*Infer Metadata* tool for input metadata. Click to reload or recreate your mapping's input metadata without having to reconfigure your mapping flow from scratch. See xref:defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata] for details.
-|2 a|
+|2 |
 *Add* tool for input data. Click to add elements to the mapping, including:
 
 * Metadata fields
@@ -105,12 +105,12 @@ image::overview-graphical-graffle-small-cropped.jpg[]
 * Lookup tables
 
 |3 |*Remove Selected Field* ** tool. Select a field, then click the tool to remove the selected field.
-|4 a|
+|4 |
 Input *Properties* tool. Click to open the *Properties* configuration window. Configurable properties will vary according to the input type. The image below shows the *Properties* configuration window.
 
 image::csv-input-props.png[csv.input.props]
 
-|5 a|
+|5 |
 *Show/Hide Unrelated Elements* tool. Default position is open, showing the hide icon image:hide-icon.png[hide.icon].
 
 * When open, displays all elements in the input mapping pane that are not collapsed, whether or not you can map them in the current mapping level.
@@ -118,13 +118,13 @@ image::csv-input-props.png[csv.input.props]
 
 |6 |Input pane *Search Filter*. Type a string to display only elements in the input data that contain the string.
 |7 |*Current Element Mapping* indicator/drop-down menu. Indicates the currently-displayed mapping level for multiple-level data mappings such as nested lists. The drop-down menu allows you to instantly switch between mapping levels.
-|8 a| *Add Mapping* icon: Click to add a new mapping. DataMapper displays the *Structure mapping editor* configuration window, displayed below.
+|8 | *Add Mapping* icon: Click to add a new mapping. DataMapper displays the *Structure mapping editor* configuration window, displayed below.
 
 image::dm-structure-mapping-editor.png[DM_structure-mapping-editor]
 
 In the *Name* field, type a descriptive name for the new mapping.
 
-In the *Condition* field, type an optional XPath condition. If you define a condition, the mapping will only process source elements that match the condition.
+In the *Condition* field, type an optional XPath condition. If you define a condition, the mapping only processes source elements that match the condition.
 
 [NOTE]
 ====
@@ -139,10 +139,10 @@ For more information on structured mapping, see xref:datamapper-flat-to-structur
 |12 |*Add* tool for output data. Click to add a metadata field to the output mapping.
 |13 |*Remove Selected Field* ** tool. Select a field, then click the tool to remove the selected field.
 |14 |*Click Field Assignments* tool. Click to delete the selected field(s) assigned input values. To clear the values of multiple fields, select the fields by clicking the first field, holding down the `SHIFT` key and scrolling over the adjacent fields.
-|15 a|
+|15 |
 Output *Properties* tool. Click to open the *Properties* configuration window. Configurable properties will vary according to the input type. Shown here are
 
-|16 a|
+|16 |
 *Show/Hide Unrelated Elements* tool. Default position is open, showing the hide icon image:hide-icon.png[hide.icon].
 
 * When open, displays all elements in the input mapping pane that are not collapsed, whether or not you can map them in the current mapping level.
@@ -158,7 +158,7 @@ Output *Properties* tool. Click to open the *Properties* configuration window. C
 
 image::4-script-view.png[4.script.view]
 
-[%header%autowidth.spread]
+[%header,cols="10a,90a"]
 |===
 |Number |Description
 |1 |Field nav pane filter box. Type a string to see only fields whose names contain that string.
@@ -176,12 +176,12 @@ DataMapper's preview feature allows you to test your mapping using a specific in
 
 image::preview.png[]
 
-[%header%autowidth.spread]
+[%header,cols="10a,90a"]
 |===
 |Number |Description
 |1 |*Input Data* input field. Use to select the path of the file to read data from. Alternatively, click the folder image:input-folder-in-preview.png[input.folder.in.preview]button to the right of the field to select the file using your system's file browser.
 
-|2 a|
+|2 |
 *Text* / *Graphic View* selector. Click to switch between graphic view (default, below left) and text view (below right).
 
 image:graphview.png[]   image:textview.png[] +
@@ -203,13 +203,13 @@ The image:view-selector-icon.png[view_selector_icon] / image:view-selector-icon-
 
 image::config-view.png[config_view]
 
-[%header%autowidth.spread]
+[%header,cols="10a,90a"]
 |===
 |Number |Description
 |1 |Display name input field. Defines the name for this DataMapper in the application flow as shown in the Studio canvas.
-|2 |Drop-down menu for referencing any of the mapping files (ending in .grf) available in the application. By default, the mapping file created for this specific DataMapper is referenced. Selecting another mapping file will causes the DataMapper transformer to replicate the mapping in the referenced file.
+|2 |Drop-down menu for referencing any of the mapping files (ending in .grf) available in the application. By default, the mapping file created for this specific DataMapper is referenced. Selecting another mapping file causes the DataMapper transformer to replicate the mapping in the referenced file.
 |3 |Operation selector drop-down menu. In most cases, only the default `Transform` operation is available.
-|4 |Input source input field. Here you can use xref:3.7@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language] to select an input source other than the message payload, such as message inbound properties, ID, etc.).
+|4 |Input source input field. Here you can use xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language] to select an input source other than the message payload, such as message inbound properties, ID, etc.).
 |5 |Output target input field. Here you can use an enricher expression to enrich the current message with the result of DataMapper processing.
 |6 |Return class input field. Enter the class name of the expected output.
 |7 |Streaming checkbox. Click to enable streaming on this DataMapper. For details on streaming, see xref:streaming-data-processing-with-datamapper.adoc[Streaming Data Processing with DataMapper].

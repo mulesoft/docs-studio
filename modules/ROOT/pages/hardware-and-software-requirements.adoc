@@ -9,6 +9,8 @@ This page lists the hardware, operating systems, Java, and other requirements fo
 
 == Anypoint Studio
 
+See xref:release-notes::studio/anypoint-studio.adoc[Anypoint Studio Release Notes] for the latest software changes.
+
 [%header%autowidth.spread]
 |===
 2+|*Hardware Requirements:*
@@ -20,7 +22,7 @@ a|* 4GB of free memory available
 |*Java Environments*
 a|
 * Oracle JDK 1.8
-* Oracle JDK 1.7.0 (recommended: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html#jdk-7u80-oth-JPR[JDK 1.7.0_79/80]) - *Note*: If you install Anypoint Studio on a new Mac computer, you also need to install https://support.apple.com/kb/DL1572[JRE 1.6]
+* Oracle JDK 1.7.0 (recommended: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html#jdk-7u80-oth-JPR[JDK 1.7.0_79/80]) - *Note*: If you install Anypoint Studio on a new MacOS computer, you also need to install https://support.apple.com/kb/DL1572[JRE 1.6]
 
 |*Operating Systems*
 
@@ -29,8 +31,7 @@ a|June 2015 and newer:
 * MacOS 10.10.0
 * Windows (32- and 64-bit) Windows 7, Windows 8, Windows 10
 * RHEL 7.0
-* Ubuntu Server 14.04
-
+* Ubuntu Desktop 16.04
 |===
 
 NOTE: With Windows 32 bit with 4 GB RAM (maximum allowed by the OS) there is some times not enough memory when running other applications.
@@ -67,12 +68,3 @@ a|* Windows (32- or 64-bit) Windows 7, Windows 8
 |===
 
 Get more information about installing xref:studio-in-eclipse.adoc[Studio as an Eclipse plug-in].
-
-== See Also
-
-* Learn how to xref:3.8@mule-runtime::downloading-and-starting-mule-esb.adoc[download, install, and launch] Mule.
-* Learn more about installing an xref:3.8@mule-runtime::installing-an-enterprise-license.adoc[Enterprise license].
-* xref:index.adoc[Get started] with Anypoint Studio.
-
-* https://developer.mulesoft.com/anypoint-platform[Download Mule Community Edition]
-* https://www.mulesoft.com/platform/studio[Download Anypoint Studio]

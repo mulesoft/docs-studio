@@ -1,4 +1,4 @@
-= DataMapper Flat-to-Structured and Structured-to-Flat Mapping
+= DataMapper Flat-to-Structured and Structured-to-Flat Mapping (Deprecated - DataMapper)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,20 +6,21 @@ endif::[]
 
 [NOTE]
 ====
-DataMapper will continue to be fully supported in all current and future versions of Mule ESB 3.x, however it will be removed in Mule 4.0 in favour of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
+
+DataMapper will continue to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
 
 A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
 image::dw-migrator-script.png[dw migrator]
 
-If you don't see DataMapper on your palette, you can enable it by going to *Preferences* -> *Anypoint Studio* -> *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
+If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
 
-This document describes how to use Anypoint DataMapper to map data between a flat format and a structured format. Here you will find two working examples: Mapping from <<CSV to XML>> and from <<XML to CSV>>.
+This document describes how to use Anypoint DataMapper to map data between a flat format and a structured format. Here you find two working examples: Mapping from <<CSV to XML>> and from <<XML to CSV>>.
 
 In the first example, the CSV file contains repetitive numbered fields (`address 1` and `address 2`) which we must map to  nested structures in the XML file. Likewise, the XML file contains nested structures which we must map to numbered fields in the CSV output file.
 
-To map numbered CSV fields to XML, we will work with mapping levels. To map from XML to numbered CSV fields, we will work with http://en.wikipedia.org/wiki/XPath[XPath] rules.
+To map numbered CSV fields to XML, we work with mapping levels. To map from XML to numbered CSV fields, we work with http://en.wikipedia.org/wiki/XPath[XPath] rules.
 
 == CSV to XML
 
@@ -66,7 +67,7 @@ Jane,Doe,345 Main Street,111,654 Sunset Boulevard,333
 
 This example shows how to map the numbered fields in the CSV file shown above to the XML file shown below it.
 
-We will map the numbered fields `Street 1` and `Street 2`, and `ZipCode 1` and `ZipCode 2`, to the elements `<street>` and `<zipCode>`  in the XML `<address>` element. To do this, we will use mapping levels as shown in the image below.
+Map the numbered fields `Street 1` and `Street 2`, and `ZipCode 1` and `ZipCode 2`, to the elements `<street>` and `<zipCode>`  in the XML `<address>` element. To do this, use mapping levels as shown in the image below.
 
 image::outline-levels.png[]
 
@@ -207,11 +208,11 @@ image::xml-initial1.png[XML_initial1]
 +
 image::xml-initial2.png[XML_initial2]
 +
-As you can see, DataMapper has automatically created a top-level mapping called `Foreach 'employees' -> 'contacts'`. Because there are no top-level elements in the source XML document that populate rows in the output CSV document, this mapping is not needed, and in fact it will generate an extra row of output in the CSV if left in place.
+As you can see, DataMapper has automatically created a top-level mapping called `Foreach 'employees' > 'contacts'`. Because there are no top-level elements in the source XML document that populate rows in the output CSV document, this mapping is not needed, and in fact it will generate an extra row of output in the CSV if left in place.
 
-. Delete this top-level mapping by clicking the image:remove-map-icon.png[remove.map.icon] icon. Then, create a new mapping by clicking the Add icon.
+. Delete this top-level mapping by clicking the image:remove-map-icon.png[remove.map.icon] icon. Then, create a new mapping by clicking the Add Map icon.
 
-. Studio will display the *Add Mapping* window. Configure the window as outlined in the table below.
+. Studio  displays the *Add Mapping* window. Configure the window as outlined in the table below.
 
 .. Window: *Add Mapping*
 +
@@ -237,7 +238,7 @@ To map the addresses in the input XML file to the output CSV fields `Street 1`, 
 
 image::create-rule.png[create.rule]
 
-DataMapper will display the *Create a new xpath rule* window. Configure the window as outlined in the table below.
+DataMapper  displays the *Create a new xpath rule* window. Configure the window as outlined in the table below.
 
 Window: *Create xpath rule*
 
