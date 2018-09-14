@@ -1,0 +1,23 @@
+= DataWeave Expression Watches View Reference
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Mule Visual Debugger can watch for selected DataWeave expressions in all active breakpoints. If the expression occurs at at any of the active breakpoints, Mule evaluates the expression, then displays the result in the DataWeave Expression Watches View.
+
+image::mule-watches-view-ref-9703f.png[mule-watches-view]
+
+[%header%autowidth.spread]
+|===
+|Number |Description
+| image:mule-watches-view-reference-fcc2a.png[add-icon] |Add Expression icon. Click to add a Mule expression to watch for.
+|image:breakpoint-view-reference-dc51b.png[remove-icon] |Delete Expression icon. Click to delete the selected Mule expression.
+| image:breakpoint-view-reference-8b614.png[remove-all-icon] |Delete All Expressions icon. Click to delete all Mule expressions on the watch list.
+|===
+
+
+== See Also
+
+* xref:to-set-expression-watches.adoc[To Set Mule Expression Watches]
+* xref:breakpoints-concepts.adoc[About Breakpoints]
+* xref:add-view-to-perspective.adoc[To Add a New View to Your Current Perspective]

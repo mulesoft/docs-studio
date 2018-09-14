@@ -5,7 +5,7 @@ endif::[]
 
 . Edit the startup file (~/.bashrc).
 . Modify PATH variable. +
-Make sure that the JDK /bin directory of the version you want to configure is the first item in your PATH environment variable. The example below configures JDK 1.8:
+Make sure that the JDK 1.8.0/bin directory is the first item in your PATH environment variable, as shown below:
 +
 [source,console,linenums]
 ----

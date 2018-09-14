@@ -1,0 +1,28 @@
+= To Configure XULRunner as Studio's Default Layout Engine (Windows)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+. Download `XULRunner` (we recommend http://ftp.mozilla.org/pub/xulrunner/releases/24.0/runtimes/[v24.0]).
+. Unzip your package and install it.
+. Go to your Anypoint Studio's installation directory and open your `AnypointStudio.ini` file.
+. Add a `-Dorg.eclipse.swt.browser.XULRunnerPath=` variable with the full path to your XULRunner binaries:
++
+----
+-Dorg.eclipse.swt.browser.XULRunnerPath={YourXULRunnerFolder}
+----
++
+[TIP]
+XULRunner binaries are located in the folder where you extracted the XULRunner package.
+
+Additionally, if you are experiencing unexpected crashes when rendering web content, you must disable *ActiveX Filtering*:
+
+. In Internet Explorer, select the *Tools* button.
+. Select `Internet options`.
+. Go to the `Security` tab, select the *Internet* zone and click on the `Custom level…` button.
+. Navigate to the `ActiveX controls and plug-ins` option and select *Disable*
+
+== See Also
+
+* xref:jdk-requirement-wx-workflow.adoc[To Configure Java JDK (Windows)]
+* xref:studio-configure-vm-task-wx.adoc[To Configure Studio's Default VM (Windows)]

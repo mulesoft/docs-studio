@@ -1,0 +1,86 @@
+= Mule Debugger View Reference
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This section contains a full description of the Mule Debugger View and all its available tools.
+
+When the Mule Debugger starts, it points at the running Mule Runtime in Studio and waits for the Mule Event to reach its first active breakpoint. +
+Until then, the Mule Debugger View displays a placeholder message:
+
+image::mule-debugger-view-reference-ef5f6.png[debugger-view]
+
+When the Mule Event stops at a Breakpoint, the Mule Debugger View displays information about the state of the Mule Event at that breakpoint:
+
+image::mule-debugger-view-reference-70ea1.png[debugger-view-with-event]
+
+[%header,cols="30,70"]
+|===
+| Name | Description
+| Name column | Displays the name of the Mule Event property +
+To see any nested elements for a property, click the arrow next to the property name.
+
+| Value column | Displays the current value of the Mule Event Property +
+By selecting one property and clicking one time on its' value field, you can change that property's value. The Visual Debugger automatically stores the modified value and, so after you resume running the application, the Mule Event progresses with the modified value.
+
+| Type column | Displays the type of the Mule Event Property
+
+|===
+
+On the top right corner of the Mule Debugger View, you can find execution control tools for the Mule Debugger.
+
+[%header,cols="5,15,45,35"]
+|===
+|Icon | Name | Description |Shortcut
+|image:mute-bp.png[mute-bp.icon]
+|Mute Breakpoints
+| Click to mute all the marked breakpoints.
+|
+
+|image:stop-icon.png[stop.icon]
+|Terminate
+|Click to stop the currently running application.
+|
+
+|image:eval-mule-exp-icon.png[eval.mule.exp.icon]
+|Evaluate Mule Expression
+| Click to evaluate a Mule expression.
+a|
+`CMD+SHIFT+i`
+
+Linux and Windows: +
+`Ctrl+SHIFT+i`
+
+|image:next-breakpoint-icon.png[next.breakpoint.icon]
+|Next Processor
+| Click to run the application and stop at the next Event Processor in the flow, even if there is no breakpoint at the next processor.
+|`F6`
+
+
+|image:to-m-proc-icon.png[to.m.proc.icon]
+| Run to Processor
+| Click to run the application and stop at the currently selected processor, even if there is no breakpoint at the currently selected processor. Emulates the behavior of the "Run to cursor" option in Java debuggers. (To select a processor, single-click its building block in the canvas.)
+|`F7`
+
+
+|image:resume-icon.png[resume.icon]
+| Resume
+| Click to run the application until the next breakpoint, if any.
+| `F8`
+
+
+|image:start-poll-icon.png[start.poll.icon]
+|Start Scheduler
+| When configuring a Scheduler in your Mule application, this option triggers the scheduler according to the frequency set in the poll scope.
+|
+
+
+|image:resume-poll-icon.png[resume.poll.icon]
+| Stop Scheduler
+| When configuring a Scheduler in your Mule application, this option it stops the initiated Scheduler. This function only works if the Scheduler has been initiated using the Start Scheduler button above.
+|
+|===
+
+== See Also
+
+* xref:add-view-to-perspective.adoc[To Add a New View to Your Current Perspective]

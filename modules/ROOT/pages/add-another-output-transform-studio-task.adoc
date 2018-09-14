@@ -28,5 +28,5 @@ Execution order of multiple outputs may vary. Ensure each transformation is inde
 * xref:transform-message-component-concept-studio.adoc[Transform Message Component]
 * xref:change-target-output-transformation-studio-task.adoc[Change the Target Output of a Transformation]
 
-* xref:3.8@mule-runtime::mule-message-structure.adoc[Mule Message Structure]
-* xref:3.8@mule-runtime::dataweave.adoc[DataWeave language]
+* xref:4.1@mule4-runtime::mule-message-structure.adoc[Mule Message Structure]
+* xref:4.1@mule4-runtime::dataweave.adoc[DataWeave language]

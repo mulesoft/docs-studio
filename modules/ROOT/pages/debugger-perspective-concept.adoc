@@ -1,0 +1,18 @@
+= About the Mule Debugger Perspective
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The debugger perspective is composed by a list of preconfigured views aimed to help you debug your application:
+
+* Mule Debugger View Reference
+* Mule Watches View Reference
+* Breakpoint View Reference
+
+When you run your application in debug mode for the first time, Aynpoint Studio prompts you to load the Mule Debugger Perspective
+
+== See Also
+
+* xref:breakpoint-view-reference.adoc[Mule Breakpoints View Reference]
+* xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
+* xref:mule-watches-view-reference.adoc[Mule Watches View Reference]

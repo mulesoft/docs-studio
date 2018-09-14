@@ -1,0 +1,21 @@
+= About DataSense Explorer
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: anypoint studio, datasense, metadata, meta data, query metadata, dsql, data sense query language
+
+The DataSense Explorer is a feature in Studio that allows you to preview the Message data structure at different points of the flow, while still in design time.
+
+Select a specific element in the flow, then click the DataSense Explorer icon and explore the structure of the data that enters and leaves it.
+
+image::datasense-logo.png[datasense+logo]
+
+The DataSense Explorer allows you to navigate the Mule Event and the Mule Message. It takes the known output fields of flow elements and the DataSense metadata of compatible connectors into account to predict the Mule Event contents at any given point in the flow. You can easily find what information is available where, even the variables that are implicitly created by certain flow elements which you might not be aware of.
+
+image::datasense-explorer2-1.png[datasense+explorer2-1]
+
+== See Also
+
+xref:datasense-concept.adoc[About DataSense]
+
+xref:datasense-perceptive-flow-design-concept.adoc[About Perceptive Flow Design]

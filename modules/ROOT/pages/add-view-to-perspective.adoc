@@ -1,0 +1,19 @@
+= To Add a New View to Your Current Perspective
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+To add a new view to your current Perspective in Aynpoint Studio:
+
+* Go to Window > Show view > and select View you want to add.
++
+If your View does not appear on the list, click Other... to load an entire list of available Views.
++
+[TIP]
+--
+Specific Mule views such as the Mule Palette, or the Mule Debugger View can be found in the MuleSoft folder.
+--
+
+== See Also
+
+* xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]

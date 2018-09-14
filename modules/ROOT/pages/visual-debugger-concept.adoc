@@ -1,0 +1,24 @@
+= About Anypoint Studio Visual Debugger
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio Visual Debugger allows you to run your application in Debug mode, setting breakpoints to stop execution to check the contents of an event at a previously-specified event processor.
+
+[NOTE]
+Anypoint Studio Debugger only works with Enterprise Edition runtimes and does not connect to Community Edition runtimes.
+
+When you run your application in Debug mode, the application stops immediately after executing the event processor with the breakpoint. Using the Mule Debugger View, you can browse through the contents of the message as it exists at that point in the flow, and evaluate a Dataweave expression against the captured event.
+
+The Visual Debugger is completely distinct from the Java Debugger contained in Studio; in fact, you may run both debuggers concurrently on your application.
+
+When debugging on your local machine, Studio Visual Debugger listens for incoming TCP connections on localhost port 6666. This port must be available on your machine. This means not blocked by a firewall or other security software.
+
+If you plan to remotely debug an application running in an external Mule server, you will need connectivity between your machine and the server's debug port, which by default is configured to 6666. +
+Ensure that there are no routing issues or firewalls blocking access between your host and the server's debug port.
+
+
+== See Also
+
+* xref:debugger-perspective-concept.adoc[About the Mule Debugger Perspective]
+* xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]

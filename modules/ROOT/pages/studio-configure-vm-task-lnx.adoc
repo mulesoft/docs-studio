@@ -6,14 +6,9 @@ endif::[]
 To configure the default VM for Anypoint Studio:
 
 . Locate your `AnypointStudio.ini` file:
-:: This file is located in `/usr/lib/anypointstudio/anypointstudio.ini`.
-. Add the -vm option to point to your specific JDK installation path.
 +
-[NOTE]
---
-The paths detailed below are examples for the JDK 1.8 paths. +
-If you want to configure older JDKs as the default VM for Anypoint Studio, provide the installation path to the version you want to use.
---
+This file is located in `/usr/lib/anypointstudio/anypointstudio.ini`.
+. Add the -vm option to point to your specific JDK installation path.
 +
 [source,text,linenums]
 ----
@@ -29,4 +24,4 @@ When configuring the -vm option, its format must be exact:
 
 == See Also
 
-* xref:jdk-requirement-wx-workflow.adoc[To Configure Java JDK (Windows)]
+* xref:jdk-requirement-lnx-worflow.adoc[To Configure Java JDK (Linux)]

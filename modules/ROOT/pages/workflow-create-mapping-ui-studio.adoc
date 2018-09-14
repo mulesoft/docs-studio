@@ -21,5 +21,4 @@ Verify that the transformation produces the expected output.
 == See Also
 
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
-* xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart]
-* xref:3.8@mule-runtime::dataweave.adoc[DataWeave Language]
+* xref:4.1@mule4-runtime::dataweave.adoc[DataWeave Language]

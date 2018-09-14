@@ -1,0 +1,21 @@
+= To Configure XULRunner as Studio's Default Layout Engine (Linux)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+. Download `XULRunner` (we recommend http://ftp.mozilla.org/pub/xulrunner/releases/24.0/runtimes/[v24.0]).
+. Unzip your package and install it.
+. Go to `/usr/lib/anypointstudio/` and open your `AnypointStudio.ini` file.
+. Add a `-Dorg.eclipse.swt.browser.XULRunnerPath=` variable with the full path to your XULRunner binaries:
++
+----
+-Dorg.eclipse.swt.browser.XULRunnerPath={YourXULRunnerFolder}
+----
++
+[TIP]
+XULRunner binaries are located in the folder where you extracted the XULRunner package.
+
+== See Also
+
+* xref:jdk-requirement-lnx-worflow.adoc[To Configure Java JDK (Linux)]
+* xref:studio-configure-vm-task-lnx.adoc[To Configure Studio's Default VM (Linux)]

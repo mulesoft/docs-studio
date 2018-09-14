@@ -18,8 +18,6 @@ When input and output of a component can be predicted based on its configuration
 . If input or output of certain components can't be predicted, manually define the output and input of key components via their Metadata Tab.
 +
 For example, an HTTP listener might receive requests containing any payload.
-+
-See xref:defining-metadata.adoc[Defining Metadata].
 
 
 == Define Data Structure in Transform Message Component
@@ -28,13 +26,11 @@ See xref:defining-metadata.adoc[Defining Metadata].
 
 . Manually define the data structure.
 
-+
-See xref:defining-metadata.adoc[Defining Metadata].
 
 
 == Define Data Structure Via XML
 
-See xref:3.8@mule-runtime::dataweave-xml-reference.adoc#defining-metadata-via-xml[DataWeave XML Reference].
+See xref:4.1@mule4-runtime::transform-dataweave-xml-reference.adoc[DataWeave XML Reference].
 
 
 == Reader Configuration
@@ -54,11 +50,11 @@ This option only exists if the selected data type format allows for configurable
 
 For a detailed reference of what properties can be set in the Reader Configuration of each format, see the corresponding *reader properties* section:
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#csv[CSV]
+* xref:4.1@mule4-runtime::dataweave-formats.adoc#csv[CSV]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#xml[XML]
+* xref:4.1@mule4-runtime::dataweave-formats.adoc#xml[XML]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#flat-file[Flat File]
+* xref:4.1@mule4-runtime::dataweave-formats.adoc#flat-file[Flat File]
 
 [NOTE]
 You can also add this information through properties in the XML source of your Mule project.
@@ -72,20 +68,20 @@ These properties must be written on the `%output` directive of your DataWeave co
 
 For a detailed reference of what properties can be set in the Writer Configuration of each format, see the corresponding *reader properties* section:
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#csv[CSV]
+* xref:4.1@mule4-runtime::dataweave-formats.adoc#csv[CSV]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#xml[XML]
+* xref:4.1@mule4-runtime::dataweave-formats.adoc#xml[XML]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#json[JSON]
+* xref:4.1@mule4-runtime::dataweave-formats.adoc#json[JSON]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#flat-file[Flat File]
+* xref:4.1@mule4-runtime::dataweave-formats.adoc#flat-file[Flat File]
 
 
 == See Also
 
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
-* xref:3.8@mule-runtime::dataweave.adoc[DataWeave Language]
-* xref:3.8@mule-runtime::dataweave-types.adoc[DataWeave Types]
-* xref:3.8@mule-runtime::dataweave-formats.adoc[DataWeave Formats]
-* xref:3.8@mule-runtime::dataweave-xml-reference.adoc#reader-proerties[DataWeave XML reference]
+* xref:4.1@mule4-runtime::dataweave.adoc[DataWeave Language]
+* xref:4.1@mule4-runtime::dataweave-types.adoc[DataWeave Types]
+* xref:4.1@mule4-runtime::dataweave-formats.adoc[DataWeave Formats]
+* xref:4.1@mule4-runtime::transform-dataweave-xml-reference.adoc[DataWeave XML reference]

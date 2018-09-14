@@ -1,0 +1,21 @@
+= About DataSense
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: anypoint studio, datasense, metadata, meta data, query metadata, dsql, data sense query language
+
+DataSense is a feature of Anypoint Studio. It uses the Mule Event metadata to facilitate application design. Rather than forcing you to manually discover information about the data your internal and external resources employ, Anypoint Studio proactively acquires Mule Event's information such as data type and structure, in order to prescribe how to accurately map or use this data in your application.
+
+For example, if your application connects to Twitter, DataSense captures information about the type and structure of data that Twitter employs, then uses the information to advise you of the type of data you should send to, or expect to receive from Twitter.
+
+Studio offers these DataSense features to support proactive discovery of metadata from external resources:
+
+* Perceptive Flow Design
+* DataSense Explorer
+
+
+== See Also
+
+xref:datasense-perceptive-flow-design-concept.adoc[About Perceptive Flow Design]
+
+xref:datasense-explorer.adoc[About DataSense Explorer]

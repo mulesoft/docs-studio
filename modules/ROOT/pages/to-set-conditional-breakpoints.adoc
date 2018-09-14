@@ -1,0 +1,24 @@
+= To Set Conditional Breakpoints
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+A Conditional Breakpoint is a type of breakpoint that activates when a predefined condition evaluates to true when Studio executes the Event Processor with the breakpoint. You define the condition using a DataWeave expression.
+
+. Click the breakpoint in the Mule Breakpoints View to select it.
+. Check Conditional at the bottom of the Mule Breakpoints View.
+. Enter the condition that must be met for the breakpoint to be activated.
+
+For example, the following expression activates the breakpoint if the value of message property Method is GET:
+
+// REVIEW: Rewrite this to match DW expression
+[source,text,linenums]
+----
+#[message.inboundProperties['Method']=='REST']
+----
+
+== See Also
+
+* xref:breakpoint-view-reference.adoc[Breakpoint View Reference]
+* xref:to-set-breakpoints.adoc[To Set Breakpoints]
+* xref:breakpoints-concepts.adoc[About Breakpoints]

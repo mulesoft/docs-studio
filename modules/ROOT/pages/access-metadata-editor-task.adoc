@@ -1,0 +1,41 @@
+= To Access the Metadata Editor
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+There are several ways of accessing the Metadata editor in Anypoint Studio
+
+== To Access the Metadata Editor (Metadata Tab)
+
+. Select a component in your canvas to display its Mule Properties view.
+. Select the Metadata tab on the component's Mule Properties view.
+. Click the Add Metadata button to start defining the metadata of your payload, attributes, and variables.
+. Select the  Mule event component to which you want to define metadata.
+. Click the Edit icon image:access-metadata-editor-task-93b19.png[] to open the Metadata Editor.
+
+For example, this is the metadata tab for an HTTP Listener source
+
+image::access-metadata-editor-task-320a3.png[]
+
+Note that when editing an inbound endpoint metadata, you can only define outbound metadata.
+
+== To Access the Metadata Editor (Transform Message Component)
+
+. Select a Transform Component in your canvas to display its Mule Properties view.
+. Click the Define Metadata link in either the input or output columns of the component, depending on the metadata you want to define. +
+If the previous component in your flow is already defining output metadata, the input section of the Transform Component already recognizes it. You can right click the payload field and select Set Metadata.
++
+image::access-metadata-editor-task-b0be6.png[]
+
+When you set metadata for a Transform Message component, you can select a checkbox to wrap elements in a collection. Selecting the wrap-elements option sets the metadata as a list, where each element on the list is an instance of the structure you defined. So for example if you set your metadata as an XML structure and click this checkbox, your metadata si expressed as a list that contains N instances of that XML structure.
+
+== To Access the Metadata Editor (Package Explorer View)
+
+. Select *Window > Show View > Package Explorer* if the package explorer is not already displayed.
+. Right click on a project in the package explorer view.
+. Select *Mule > Manage Metadata Types*.
+
+== See Also
+
+* xref:create-metadata-class-task.adoc[To Create Metadata Class]
+* xref:4.1@mule4-runtime::transform-input-output-structure-transformation-studio-task.adoc[To Define Input and Output Structure of a Transformation]

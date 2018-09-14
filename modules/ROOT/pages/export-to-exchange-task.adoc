@@ -1,0 +1,35 @@
+= To Publish a Project to Exchange
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio allows you to connect to Exchange to publish your project as a new asset.
+
+. Right click the project folder on your Package Explorer View.
+. Select Anypoint Platform and then Publish to Exchange.
++
+If you don't have your Anypoint Platform credentials configured in Anypoint Studio, you'll need to provide your log in information before continuing.
+. Select your Anypoint Platform user and business group.
++
+Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
+. Review the information about your project:
+* Group Id: This field is required. The group Id for your project is the Organization Id of your Anypoint Platform Organization.
+* Artifact Id: This field is required. The artifact Id is the name of your project without a version. By default, Studio uses the artifact Id configured in your pom.xml file.
+* Version: This field is required. The version of the asset you are publishing.
+. Select a project type.
+. Select the "Save updated project information to the pom.xml"  if you want to update your pom.xml file with the data you just provided.
++
+[NOTE]
+--
+If selected, the "Save updated project information to the pom.xml" option updates your local project's information with the data configured in the Publish to Exchange window. +
+If not, the project is deployed with the configured data, but your local project information is not updated.
+--
++
+. Click Finish.
+
+You can follow the deployment progress in the Console View. +
+After confirmed, the deployment to Exchange 2.0 cannot be stopped.
+
+== See Also
+
+* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]

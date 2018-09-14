@@ -10,7 +10,7 @@ endif::[]
 . Click Edit.
 +
 If the PATH environment variable does not exist, click New.
-. In Edit System Variable (or New System Variable), make sure that the JDK /bin directory of the version you want to configure is the first item in your PATH environment variable, and click OK.
+. In Edit System Variable (or New System Variable), make sure that the JDK 1.8.0/bin directory is the first item in your PATH environment variable, and click OK.
 +
 [NOTE]
 --

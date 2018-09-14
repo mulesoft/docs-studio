@@ -1,0 +1,56 @@
+= To Add Custom Modules to Your Project (Anypoint Studio)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can add your custom Mule module to your Mule projects in Anypoint Studio.
+
+These instructions assume that you coded your Mule module using the Mule SDK, and that you followed the proper set up steps. +
+See the xref:1.1@mule-sdk::getting-started.adoc[Mule SDK introductory instructions] for more details.
+
+Mule modules are developed as Maven projects, therefore your custom Mule module must be installed in a local or online Maven repository.
+
+. In your Anypoint Studio project, edit the `pom.xml` file with the groupId, artifactId, and version of your Mule module. +
+This information is available in your module's `pom.xml` file. For example:
++
+[source,xml,linenums]
+----
+<parent>
+    <groupId>org.mule.extensions</groupId>
+    <artifactId>mule-ee-core-modules-parent</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
+</parent>
+
+<groupId>com.mulesoft.mule.modules</groupId>
+<artifactId>mule-secure-configuration-property-module</artifactId>
+<packaging>mule-extension</packaging>
+<version>1.0.0-SNAPSHOT</version>
+
+<name>Mule Secure Configuration Property Extension</name>
+<description>Mule extension for loading encrypted properties</description>
+----
++
+It is also reflected in the folder structure in which the Mule module was installed (`$MAVEN_REPOS_HOME/groupID_path/artifactId/version`).
++
+For the example above, your Anypoint Studio pom.xml file should add the following dependency:
++
+[source,xml,linenums]
+----
+<dependency>
+	<groupId>com.mulesoft.mule.modules</groupId>
+	<artifactId>mule-secure-configuration-property-module</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<classifier>mule-plugin</classifier>
+</dependency>
+----
++
+Note that the `<classifier>` element is set to mule-plugin. This automatically install the mule-plugin into your project's palette.
+. Save your changes to your Studio project's `pom.xml` file.
+
+After Anypoint Studio downloads the new dependency, you'll see your new Mule module in the Studio palette. In this example, there is be a Secure Properties module listed in the Mule Palette view. +
+There's also a new Secure Properties Config element available in the Global Elements editor, and the new XML namespace and XML tags are available in the XML configuration file editor.
+
+== See Also
+
+* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project (Anypoint Studio)]
+* xref:1.1@mule-sdk::getting-started.adoc[Getting Started with the Mule SDK]

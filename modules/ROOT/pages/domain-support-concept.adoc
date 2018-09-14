@@ -1,0 +1,32 @@
+= About Domain Support (Anypoint Studio)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio allows you to create, edit and maintain Mule domains to share global configurations between different Mule applications implementing the same domain.
+
+The Mule Domain configuration editor shows two different tabs:
+
+* Global Elements +
+Here you can define the global configurations that your domain makes available for other applications to reuse.
+* Configuration XML +
+This tab allows you to edit your Mule Domain configuration XML code using autocomplete.
+
+All modules inside a Mule Domain are automatically inherited by all Mule applications under it. +
+Module versioning between your Mule domain and you applications must be consistent. It is not possible to add a module to your Mule Application if such module already exists in your Mule domain.
+
+Mule domains must be either available in your Studio Workspace or deployed in the Nexus repository declared in your application's POM file.
+
+When a Mule domain is installed in your Nexus repository, and you configured it as a dependency on your Mule application, Anypoint Studio can automatically resolve your Mule domain's modules and add them to your application project. However, when working with remote Mule Domain projects from Anypoint Studio keep in mind the following restrictions:
+
+* You can't edit the global elements of a remote Mule domain.
+* You can't edit the modules of a remote Mule domain.
+* You can't run a Test Connection from a global element defined in your remote Mule domain.
+
+Domains are only editable when they are open projects in your workspace.
+
+
+== See Also
+
+* xref:domain-studio-tasks.adoc[To Design Mule Domains (Anypoint Studio)]
+* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project (Anypoint Studio)]

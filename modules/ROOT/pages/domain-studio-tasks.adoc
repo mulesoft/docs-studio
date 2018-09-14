@@ -1,0 +1,36 @@
+= To Design Mule Domains (Anypoint Studio)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== To Create Mule Domains
+
+. Go to File > New > Mule Domain Project. +
+You can also right click in your Package Explorer view and select New > Mule Domain Project.
+. Set a name for your project. +
+This is also the artifactId of your domain's POM file.
+
+When editing your Mule domain, all related applications in your classpath get updated accordingly.
+
+== To Associate a Mule Application to a Mule Domain
+
+. Right click your Mule application project in your Packager Explorer view.
+. Select Mule and Open Mule Project Properties.
+. Select your domain project from the Domain drop-down menu.
++
+[TIP]
+The drop-down menu only displays Mule domain projects in your workspace. +
+To point to an external domain in a remote M2 repository click Custom... and configure your domain coordinates.
+
+Keep in mind that the Mule domains must be either available in your Studio Workspace or installed in the repository declared on your application project.
+
+
+== To Install your Mule Domain in an M2 Repository
+
+. In a terminal, cd into your domain project's folder.
+. Type `mvn clean install`.
+
+
+== See Also
+
+* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project (Anypoint Studio)]

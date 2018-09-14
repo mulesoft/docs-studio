@@ -1,0 +1,28 @@
+= Breakpoints View Reference
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The Mule Breakpoints View displays all breakpoints defined in all the applications opened in Studio.
+
+image::breakpoint-view-reference-d7362.png[breakpoint-view]
+
+Breakpoint description format:
+
+`<application name> [<message processor number>] - <flow name>`
+
+[%header%autowidth.spread]
+|===
+|Number |Description |Remarks
+|image:to-set-error-breakpoints-55f71.png[error-breakpoint-icon] | Error Breakpoint Icon | When enabled, any event processor in the application becomes a breakpoint if it throws an error.
+| image:breakpoint-view-reference-8b614.png[remove-all-icon] |remove all breakpoints |When selected, removes all breakpoints but doesn't remove message processors
+| image:breakpoint-view-reference-dc51b.png[remove-icon] |Remove selected breakpoint | Removes the selected breakpoint.
+| image:breakpoint-view-reference-75cef.png[condition-breakpoint] | Conditional Breakpoint |Sets the condition to evaluate for the selected breakpoint. +
+The condition must be a Boolean. The breakpoint activates if the specified condition evaluates to true. To specify a conditional breakpoint, select a breakpoint and click the Conditional checkbox, then add a condition.
+|===
+
+== See Also
+
+* xref:add-view-to-perspective.adoc[To Add a New View to Your Current Perspective]
+* xref:breakpoints-concepts.adoc[About Breakpoints]
+* xref:to-set-conditional-breakpoints.adoc[To Set Conditional Breakpoints]

@@ -1,0 +1,31 @@
+= To Create Metadata Class (Anypoint Studio)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+. Click the Add button in your Metadata Editor.
++
+image::dw-define-type2.png[]
+. Type in an ID for the new metadata type and click Create Type.
+. Select a data format using the type dropdown list in your Metadata Editor. +
+If the type of your data is undeclared or not understood, the type default to `application/java`, and a warning is logged.
+
+Depending on the selected option, there are different ways to define the data structure. With some formats, the structure can be inferred from an example, others require a schema. For some schemas, a built-in editor UI is available.
+
+[%header,cols="40a,20a,20a,20a"]
+|===
+|Format |Sample | Schema | Editor
+|JSON |X |X |
+|XML |X |X |
+|Java |X |X |
+|CSV |X | |X
+|Fixed Width |X | |X
+|Copybook |X |X |
+|Flat File | |X |
+|Simple | | |X
+|Excel | | |X
+|===
+
+== See Also
+
+*** xref:metadata-editor-concept.adoc[About the Metadata Editor]

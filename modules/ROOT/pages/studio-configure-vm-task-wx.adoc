@@ -6,14 +6,9 @@ endif::[]
 To configure the default VM for Anypoint Studio:
 
 . Locate your `AnypointStudio.ini` file:
-:: This file is located within your Anypoint Studio's installation directory.
-. Add the -vm option to point to your specific JDK installation path.
 +
-[NOTE]
---
-The paths detailed below are examples for the JDK 1.8 paths. +
-If you want to configure older JDKs as the default VM for Anypoint Studio, provide the installation path to the version you want to use.
---
+This file is located within your Anypoint Studio's installation directory.
+. Add the -vm option to point to your specific JDK installation path.
 +
 [source,text,linenums]
 ----
@@ -21,7 +16,10 @@ If you want to configure older JDKs as the default VM for Anypoint Studio, provi
 C:\progra~1\Java\jdk1.8.0_73\bin\javaw.exe
 ----
 +
+[NOTE]
+--
 Blank spaces are not allowed when defining paths on Windows. This is why `\Program Files\` changes to `\progra~1\`.
+--
 +
 If you encounter “Java was started but returned exit code=1” error while starting Anypoint Studio, modify the -vm argument to point to the jvm.dll as follows:
 +

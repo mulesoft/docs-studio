@@ -1,0 +1,20 @@
+= To Evaluate a Breakpoint Using an Expression
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+//COMBAK: Review and rewrite
+
+To test a Mule expression against the Event Processor set with a breakpoint:
+
+. Ensure that Studio has stopped the flow execution at the desired breakpoint. When stopped, the breakpoint appears surrounded by a dotted blue line in the canvas, and Studio populates the Mule Debugger View with information.
+. Click the DataWeave Expression Watches icon
+ image:to-evaluate-breakpoint-using-expression-336e3.png[] above the right-hand pane in the Mule Debugger View. Studio displays the expression evaluation window.
+. Type the DataWeave expression you wish to evaluate in the provided input field, and press enter. Studio evaluates the expression, then displays the result in the Name, Value and Type columns.
+
+Using the expression evaluation window, you can also edit message properties or attributes. Right-click the property value or attribute, type the new value, and press enter.
+
+== See Also
+
+* xref:mule-debugger-view-reference.adoc[About the Mule Debugger View]
+* xref:breakpoints-concepts.adoc[About Breakpoints]

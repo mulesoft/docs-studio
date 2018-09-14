@@ -1,0 +1,30 @@
+= To Install Anypoint Studio 7.1 (Windows)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+* Before installing Anypoint Studio, make sure you have the Java SE JDK 8 installed.
+
+You can only download the latest version of Anypoint Studio. These instructions are covered only if you already have the corresponding ZIP file for an older version.
+
+To install Anypoint Studio 7.1:
+
+. Extract your Anypoint Studio 7.1 ZIP file into the 'C:\' root folder. +
+If you are using a Windows Anti-Virus application, ensure that the `plugin/` and `features/` directories are under the “trusted” category.
+. Open the extracted Anypoint Studio.
+. Click OK to accept the default workspace. +
++
+[NOTE]
+--
+You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
+If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
+--
+
+Anypoint Studio displays a welcome message when it loads for the first time. +
+Click Get Started to start using Anypoint Studio.
+
+== See Also
+
+* xref:studio-xulrunner-wx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Windows)]
+* xref:jdk-requirement-wx-workflow.adoc[To Configure Java JDK (Windows)]
+* xref:studio-configure-vm-task-wx.adoc[To Configure Studio's Default VM (Windows)]

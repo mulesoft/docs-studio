@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 6.3 and later allow you to import an API Definition from Design Center and implement it either into a new Mule Project, or an existing one.
+Anypoint Studio allows you to import an API Definition from Design Center and implement it either into a new Mule Project, or an existing one.
 
 == To Implement an API imported from Design Center Into a New Project
 
@@ -15,7 +15,8 @@ Anypoint Studio 6.3 and later allow you to import an API Definition from Design 
 * In API Definition, click the "..." button to and select Design Center.
 . In the Browse Design Center for APIs window:
 * Select your Anypoint Platform user and business group.
-** Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
++
+Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click OK.
 . Click Finish.
 
@@ -26,9 +27,11 @@ APIKit generates the Flow based on the API definition imported from Design Cente
 . Right click your Mule Project on the Package Explorer View.
 . Select Anypoint Platform and then Import from Design Center.
 . Select your Anypoint Platform user and business group.
-* Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
++
+Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click OK.
-* Importing an API definition from Design Center into an existing project deletes all your resources from your src/main/api directory.
++
+Importing an API definition from Design Center into an existing project deletes all your resources from your src/main/resources/api directory.
 . Click Finish.
 
 APIKit generates the Flow based on the API definition imported from Design Center.
@@ -36,5 +39,4 @@ APIKit generates the Flow based on the API definition imported from Design Cente
 
 == See Also
 
-* xref:general:getting-started:implement-and-test.adoc[To Implement and Test an API].
-* xref:apikit::index.adoc[About APIKit].
+* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]

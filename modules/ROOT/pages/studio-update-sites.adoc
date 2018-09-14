@@ -1,117 +1,60 @@
-= Updating Studio, Mule and Components
+= About Anypoint Studio Update Sites
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :keywords: mule, esb, studio, anypoint studio, update sites, updates, extensions, plug-ins, plugins, download
 
-Update sites in Anypoint Studio are used to update or install Studio, Mule, connectors or other useful development tools. See how to access and find update sites from Studio.
-
-[NOTE]
-In order to install the latest runtime with Studio, you must access the *Anypoint Studio Update Site*.
-
+Update sites in Anypoint Studio are used to update or install Studio, the embedded Mule runtime, connectors or other useful development tools.
 
 == To Access an Update Site
 
-To access an update site in Studio:
-
 . Go to *Help* > *Install New Software*.
 . Select one of these update sites from the drop-down menu next to the *Work with* field.
-. If you don't see the site you need, click *Add* to add it manually.
 
-*Note*: None of the URLs listed below are accessible from a web browser. Only use them in the Anypoint Studio *Work with* field.
+=== To Add Additional Update Sites
 
-[WARNING]
-====
-Verify your Studio version before proceeding, as installing updates from the incorrect update sites can cause errors.
+If one of the update sites listed below does not show up in your Anypoint Studio installation, you can add it manually:
 
+. Go to *Help* > *Install New Software*.
+. Click the *Add...* button next to the work-with drop-down menu.
+. Type a Name to identiy the update site and, in Location type the URL of the update site.
+. Click OK
+
+// *Note*: None of the URLs listed below are accessible from a web browser. Only use them in the Anypoint Studio *Work with* field.
+
+[TIP]
+===
+Verify your Studio version before proceeding, as installing updates from the incorrect update sites can cause errors. +
 To check your version of Anypoint Studio, go to *Anypoint Studio* > *About Anypoint Studio*.
-====
+===
+
 
 == Anypoint Studio Update Site
 
 Updates for Anypoint Studio application and components, Mule runtime, SAP connector and RAML editor.
 
-`+http://studio.mulesoft.org/r5/updates+`
+`+http://studio.mulesoft.org/s2/updates+`
 
-*Updates:*
+Updates:
 
-* DataWeave and DataMapper
-* SAP Connector
-* Mule runtime 3.8.n EE. For previous versions see <<mule-versions,Mule Runtimes for Studio>>
-
-[[mule-versions]]
-== Mule Runtimes for Studio Update Site
-
-Older Mule Runtime CE and EE versions
-
-`+http://studio.mulesoft.org/r5/studio-runtimes/+`
-
-== Anypoint Connectors Update Site
-
-All Community, Standard, Select, and Premium Anypoint Connectors available for Studio installation. Connector names are appended with the minimal runtime they support.
-
-`+http://repository.mulesoft.org/connectors/releases/3.5.0+`
-
-== APIkit Update Site
-
-`+http://studio.mulesoft.org/r5/apikit+`
-
-*Provides:*
-
-* APIkit Studio Plugin updates for pre-Mule 3.8.0 installations
-* RAML API Editor updates
-
-Read more about xref:apikit::index.adoc[APIkit].
-
-== API Gateway Update Site
-
-API Gateway runtime updates for pre-Mule 3.8.0 installations
-
-`+http://studio.mulesoft.org/r5/api-gateway/+`
-
-Mule 3.8.0 unifies the API Gateway runtime and APIkit with the core Mule runtime.
-
-== Anypoint Enterprise Security Update Site
-
-`+http://security-update-site-1.6.s3.amazonaws.com+`
-Provides:
-
-* Mule Security Module Extensions:
-** CRC-32
-** Encrypted Property Placeholder
-** Encryption
-** OAuth 2 Provider
-** Security Filters
-** Signature
-* Anypoint Studio Properties File Editor
-
-*Note*: You need an Enterprise license to run applications containing xref:3.8@mule-runtime::anypoint-enterprise-security.adoc[Anypoint Enterprise Security] features.
-
-== Anypoint DevKit Update Site
-
-Anypoint Connector DevKit Studio Module.
+* DataWeave.
+* Mule runtime 4.1.n EE.
 
 
-`+http://studio.mulesoft.org/r5/devkit+`
+== RAML Editor Update Site
 
-== Anypoint Studio Eclipse Plugin Update Site
+Updates the RAML Editor in Anypoint Studio.
 
-Eclipse plugin version of Anypoint Studio
-Read more about installing xref:studio-in-eclipse.adoc[Anypoint Studio as an Eclipse Plugin].
-
-`+http://download.eclipse.org/eclipse/updates/4.4+`
+`+http://studio.mulesoft.org.s3.amazonaws.com/s2/ramleditor/+`
 
 == MUnit Update Site
 
-xref:1.3@munit::index.adoc[MUnit] framework for testing Mule Applications
+xref:2.1@munit::index.adoc[MUnit] framework for testing Mule Applications
 
-`+http://studio.mulesoft.org/r5/munit+`
+`+http://studio.mulesoft.org/s2/munit+`
+
 
 == To Allow Connection to Update Site Through Firewall
-
-[WARNING]
-====
-*Are you behind a firewall?*
 
 If you are on a network with firewall restrictions, you may find that the Studio update sites are blocked and you are unable to download extensions. Configure your firewall so that it allows the following sites, which permits Studio to connect to the above update sites:
 
@@ -129,4 +72,8 @@ Allow on Firewall:
 
 * `+http://findbugs.cs.umd.edu/eclipse/+`
 
-====
+
+== See Also
+
+* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]
+* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project (Anypoint Studio)]

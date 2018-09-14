@@ -1,0 +1,79 @@
+= To Start the Mule Server In Debug Mode
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+. To start the server in debug mode, use the following parameters: +
++
+[%header,cols="2*"]
+|===
+|Parameter |Description
+a|
+----
+-M-Dmule.debug.enable=true
+----
+ |*Mandatory*. Sets debugging mode in Mule. Issue this parameter first.
+a|
+----
+-M-Dmule.debug.port=<port number>
+----
+ |*Optional*. Sets the listening port for incoming connections from Studio. If unset, the listening port will be 6666.
+a|
+----
+-M-Dmule.debug.suspend=true
+----
+ |*Optional*. Sets "suspend" mode in Mule. In suspend mode, Mule will start, then immediately suspend application execution until it receives a connection on the debug port.
+|===
+. To pass the parameters to the server, follow one of the two methods outlined below. +
+.. *Method 1*: pass the parameters to Mule on the command line in the appropriate order, as shown in the example below.
++
+
+[source,text,linenums]
+----
+<$MULE_HOME>/bin/mule -M-Dmule.debug.enable=true -M-Dmule.debug.port=1234
+----
++
+The command displayed above starts Mule in the foreground. To exit Mule when it is running in the foreground, press `Ctrl+C`.
++
+To start Mule in debugging mode in the background, issue `start` as the first parameter for the `mule` command, as shown below.
++
+
+[source,text,linenums]
+----
+<$MULE_HOME>/bin/mule start -M-Dmule.debug.enable=true -M-Dmule.debug.port=1234
+----
+
+.. *Method 2*: include the parameters in the wrapper configuration file, `$MULE_HOME/conf/wrapper.conf`, as shown below.
+
+[source,text,linenums]
+----
+wrapper.java.additional.4=-Dmule.debug.enable=true
+wrapper.java.additional.5=-Dmule.debug.port=1234
+----
+
+In the code shown above, replace the parameter number to reflect the number of active parameters in your configuration file.
+
+Before accessing and debugging your application on a remote server, you must first export and deploy your application to the desired Mule server.
+
+. In Studio, click the arrow next to the debug icon (represented by a small insect), then select *Debug Configurations*. Studio displays the *Debug Configurations* window.
+. In the window's left pane, click *Remote Mule Application*.
+. Click the new configuration icon  (represented by a blank page with a yellow plus sign) to add a new configuration.
+. Enter the required parameters for the configuration:
+
+* *Name:* name for this configuration
+* *Host:* indicates the location of the remote Mule server
+* *Port:* indicates the listening port for the remote Mule server
+
+You can debug an application on a remote Mule Server using *Remote Mule Application*. To do so, you must start the Mule server in debug mode, then connect to the server from Studio.
+
+[NOTE]
+====
+* When you start Mule in debug mode, _all_ applications that you launch in that server run in debug mode.
+* Remote debugging does not work with clusters.
+====
+
+
+== See Also
+
+* xref:debugger-perspective-concept.adoc[About the Mule Debugger Perspective]
+* xref:to-set-breakpoints.adoc[To Set Breakpoints]

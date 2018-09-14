@@ -1,213 +1,103 @@
-= Anypoint Studio
+= About Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: studio, IDE, development, eclipse, anypoint, visual editor, XML editor
 
-``
-Anypoint Studio is MuleSoft's Eclipse-based integration development environment for designing and testing Mule applications. You can deploy the application and run it on your Mule server.
+Anypoint Studio is MuleSoft's Eclipse-based integration development environment for designing and testing Mule applications.
 
-The same editor also allows you to edit API definition files (in https://raml.org/[RAML] and WSDL), create domains that define xref:3.8@mule-runtime::shared-resources.adoc[shared resources].
-// As a beta feature, with the latest release you can also create link:/api-manager/creating-a-policy-walkthrough[API custom policies].
+Anypoint Studio features enhance your productivity when building Mule applications:
 
-It is recommended to run a fresh install of Anypoint Studio 6.5. +
-Anypoint Studio 6.5 requires Java 8 to run properly. However, depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
+* Instant run of your Mule application inside a local runtime
+* Visual editors to configure API definition files and Mule domains
+* Push changes to a local running app to test changes
+* Integration with Exchange to import templates, examples, definitions and other resources from your Anypoint Platform organization
+* Embedded unit testing framework
+* Built-in support to deploy to CloudHub
 
-* Mule 3.9.x requires Studio running on Java 8.
-* Mule 3.5.x requires Studio running on Java 7.
-* Other supported runtime versions work fine with both Java 7 or 8.
-
-You can configure Anypoint Studio's default VM by following the task corresponding to your OS:
-
-* xref:studio-configure-vm-task-wx.adoc[To Configure Studio’s Default VM (Windows)]
-* xref:studio-configure-vm-task-unx.adoc[To Configure Studio’s Default VM (Unix)]
-* xref:studio-configure-vm-task-lnx.adoc[To Configure Studio’s Default VM (Linux)]
+Anypoint Studio 7.x only supports Mule 4.x projects because the structure of the project, export format, XML and scripting language are different. It isn't possible to embed Mule 3.x runtimes or older versions into Anypoint Studio 7.x.
 
 
-Anypoint Studio offers two parallel tabs that you can utilize to design and craft your applications:
+== Editors
 
-* *Visual Editor*
-* *XML Editor*
+Studio editors help you design and edit the definitions of your applications, APIs, properties, and configuration files:
 
-image::36studioeditorssidebyside.png[36StudioEditorsSideBySide]
+* Mule configuration files
+* API definitions
+* Properties files
+* A `pom.xml` file to handle dependencies
 
-What you do in one editor reflects in the other. For example, if you drop a connector onto the Visual Editor canvas, the addition of the connector element to your application is recorded in the XML Editor. This real-time reflection of changes is referred to as *two-way editing*. _Same application, two different editors._
+The Mule configuration file editor opens when you double-click on the application XML file in `/src/main/mule`. The editor contains three tabs which offer different ways to work with your application:
 
-*Notes*:
-
-* In each guide in the documentation set, you can click a graphic to view an expanded illustration.
-* You can zoom the Anypoint Studio Visual Editor using the CMD/+ or - keys on a Mac, or CTRL/+ or - keys in Windows
-
-
-[NOTE]
-To check your version of Anypoint Studio, go to *Anypoint Studio* > *About Anypoint Studio*.
-
-== The Visual Editor
-
-Studio's visual editor is divided into several parts:
-
-. *Package Explorer*
-. *Canvas*
-. *Palette*
-. *Connection Explorer*
-. *Console*
-. <<properties-editor,*Properties Editor*>>
-. *DataSense Explorer*
-
-image::36studio.png[36Studio]
-
-The *Package Explorer* displays project folders and files in a tree format. Click to expand or contract Mule project folders and examine the files that make up a Mule project.
-
-The *Canvas* provides a space for arranging pre-packaged building blocks into Mule applications. The *Palette*, on the right edge of the canvas, displays a list of building blocks that you can drag and drop onto the canvas to build your application. At the base of the canvas, Studio offers three tabs which offer different ways to interface with your application:
-
-image::36vizxmltabs.png[36VizXmlTabs]
-
-* *Message Flow*: Drag-and-drop interface in which you arrange building blocks to form an application
-* *Global Elements*: Interface for creating or editing reusable configurations for Mule building blocks
-* *Configuration XML*: XML editor interface displays the XML elements that correspond to the building blocks arranged on the Message flow canvas
-
-The *Connection Explorer* displays a list of any global connector configurations defined in your application for quick access to your configuration details. Behind this tab, a second tab contains an *outline*, which displays a miniaturized overview of the whole canvas, along with a box cursor that scrolls with the display in the canvas pane. This provides a high-level, bird's-eye view of your complete Mule application as it extends beyond the borders of the canvas.
-
-The *Console* area below the canvas contains the console for the embedded Mule server, which displays a list of events and problems (if any) that Studio reports as you create or run your Mule application. In the console area, you also have a *properties editor*. The properties editor tab is labeled with the name of the building block that is currently selected on your canvas, or with "Mule Properties View" when no building block is selected. The properties editor includes the *DataSense Explorer*, which supplies real-time information about the data structure of your payload and any available inbound and outbound properties or variables. See an example of the properties editor below.
-
-[[properties-editor]]
-== The Properties Editor
-
-Anypoint Studio's Visual Editor enables you to click a building block on the canvas to access its *Properties Editor* in a tab in the console (below).
-
-image::properties-editor.png[properties+editor]
-
-Click the tabs at left (in the above example, *General*, *Advanced*, *References* and *Documentation*) to access various categories of attributes associated with the building block.
-
-== Autocompletion for Mule Expression Language (MEL)
-
-If you are configuring a field that supports expressions and need help with syntax, you can access MEL suggestions by one of two methods.
-
-* Place your cursor inside the brackets in a field that has `#[]` pre-populated for you, then press *Ctrl + Space Bar*.
-* Enter `#[` to open a new MEL expression and display suggestions, as shown below.
-
-image::auto-complete.png[auto_complete]
-
-[NOTE]
-Note that the autocomplete functionality described here works in the *Visual Editor only*. Although Studio's XML tab does offer some autocomplete options, the suggestions in the XML editor are limited by Eclipse and are not based on DataSense or the Mule Expression Language.
-
-== Sample Mule App XML Code
-
-The following XML code sample corresponds to the flow at the start of this <<properties-editor,topic>>:
-
-[source,xml,linenums]
-----
-<?xml version="1.0" encoding="UTF-8"?>
-
-<mule xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-	xmlns:spring="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
-http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
-http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
-http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
-http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
-http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd">
-    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
-    <vm:connector name="VM" validateConnections="true" doc:name="VM">
-        <vm:queue-profile>
-            <queue-store/>
-        </vm:queue-profile>
-    </vm:connector>
-    <db:mysql-config name="MySQL_Configuration" doc:name="MySQL Configuration"/>
-    <flow name="demoFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
-        <json:json-to-object-transformer doc:name="JSON to Object"/>
-        <db:insert config-ref="MySQL_Configuration" doc:name="Database">
-            <db:parameterized-query/>
-        </db:insert>
-        <expression-transformer doc:name="Expression"/>
-    </flow>
-</mule>
-----
-
-
-== The XML Editor
-
-Because Anypoint Studio leverages Eclipse, the Configuration XML editor incorporates many Eclipse features.
-
-*Example Code*
-
-[source,xml,linenums]
-----
-include::{examplesdir}/anypoint-studio-essentials.xml[]
-----
-
-The following sections provide a list of handy tips and tricks for using Studio's XML editor.
-
-=== Show Attribute Options
-
-. Double click to select an attribute of an element, such as the `host` attribute of the `HTTP endpoint` element.
-. Press *Ctrl + space bar* to open a list of suggested attributes you can configure for the element (see below).
-. Use the up and down scroll arrows to browse through the suggestions.
-. When you have highlighted the attribute you wish to use, press enter to insert it into the XML configuration.
+* The Message Flow tab
 +
-image::36helpinfoexample.png[36HelpInfoExample]
+image::index-039ff.png[]
++
+Contains the canvas in which you can see a visual representation of your flows. You can drag and drop Event Processors from the Mule Palette into the canvas to add them to your flow.
 
+Clicking an Event Processor in the canvas opens up the Mule Properties View with the attributes for the selected processor, allowing you to edit them.
 
-=== Keyboard Shortcut To Get Suggestions
+* The Global Elements tab
++
+image::index-a2191.png[]
++
+Contains the global Mule configuration elements for your modules. In this tab you can create, edit or delete configuration files.
 
-. Enter an element's left angle bracket ( < ), then press *Ctrl + space bar*.
-. Recognizing that you are entering a new element, Studio lists all possible elements for that particular situation.
-. Use the up and down scroll arrows to browse through the suggestions.
-. When you have highlighted the element you wish to use, press enter to insert it into the XML configuration.
+* The Configuration XML tab
++
+image::index-ebe7d.png[]
++
+Contains the XML that defines your Mule Application. All changes applied here are reflected in the canvas and the Properties view of your event processors in the Message Flow tab.
 
+== Views
 
-== Building Applications in Studio
+Views in Studio are a graphical representation of project metadata, or properties for the active editor. Move, close, and add views as you develop your Mule project.
 
-Use Anypoint Studio to arrange building blocks on the canvas to create flows which, together, form an application to process messages.
+Anypoint Studio displays the following default views.
 
-Confused? Let's break it down.
+===  Package Explorer
 
-=== Building Blocks
+The Package Explorer view displays the project folders and files that make up a Mule project.
 
-A building block is a pre-packaged unit of business logic that comes bundled with Mule. As the name implies, it is a block (a block of code, really) that you can arrange with other blocks to form a structure. In this case, you are arranging building blocks to form a Mule flow.
+image::index-ee160.png[]
 
-Building blocks fall into one of two categories depending on their function within a Mule flow:
+Click the open arrow next to a Mule project folder to expand or contract it. Double-click a folder or file to open it.
 
-[%header,cols="34a,33a,33a"]
-|===
-|Type |Function |Examples
-|*Message Sources* |Message sources accept messages into flows from other sources or services. A message source always falls at the beginning of a flow and is almost always Anypoint Connector. |HTTP Connector, Ajax Connector, Salesforce Connector
-|*Message Processors* |Message processors filter, alter, route, or validate messages. |Payload Filter, Choice Router, Email to String Transformer
-|===
+=== Mule Palette
 
-To arrange building blocks to form a flow, simply drag and drop them from the palette onto the canvas.
+The Mule Palette view helps you manage the modules and connectors in your project. You can also add new elements from Exchange in this view.
 
-image::36httpdragtocanvas.png[36HTTPDragToCanvas]
+image::mule-palette-concept-0bf01.png[]
 
-After you arrange the building blocks in a flow, configure each by double-clicking a block to open its *Properties Editor*. Supply the values for the configuration fields.
+Available event processors, such as scopes, filters, and flow control routers, along with modules and their related operations are displayed. +
+Drag and drop any event processor to your Favorites or onto the canvas of the Mule Configuration File editor.
 
-For the HTTP connector, first click the *Connector Configuration* green arrow, which displays the additional Global Element Properties screen to enter the host and port.
+=== Mule Properties
 
-image::36httpproperties1.png[36HttpProperties1]
+The Mule Properties view allows you to edit the properties of the module that is currently selected in your canvas.
 
-After you complete the Global Element Properties screen, return to the HTTP connector properties and specify the path as "/" or the name of the application. When you test your application, the path value is the name you put in the URL. For example, if you set the HTTP path to `/myproject` and you set the host to `localhost` and the port to `8081`, you can test the application with `localhost:8081/myproject`. Or if you leave the path as "/", you can test your application with `localhost:8081/`.
+image::index-4cdd4.png[]
 
-Other building blocks utilize similar conventions for specifying properties.
+This view includes the DataSense Explorer which supplies real-time information about the data structure of your payload and any available inbound and outbound properties or variables.
 
-Note that the xref:datasense.adoc[*DataSense Explorer*] at the right side of the properties editor provides helpful information about the data structure and metadata of your message as it enters and exits this particular building block. You can toggle the DataSense Explorer on and off by clicking this icon: image:datasenseexplorericon.png[DataSense Explorer Icon]
+=== Console
 
-Anypoint Studio also supports auto-complete in any message processor configuration fields that support expressions. To open auto-complete, place your cursor in the field and press *CTRL + space bar*.
+The Console view contains the console for the embedded Mule server, which displays a list of events and problems (if any) that Studio reports as you create or run your Mule application.
 
-image::36loggermessagehelp.png[36LoggerMessageHelp]
+image::index-0b4a5.png[]
 
-Find out more about using expressions to access and manipulate the Mule message in the xref:general:getting-started:mule-message.adoc[Mule Message Tutorial].
+=== Problems
 
+The Problems view displays a list of all issues encountered in your project.
 
+image::index-7bcca.png[]
 
+== Perspectives
+
+A Perspective in Studio is a collection of views and editors in a specified arrangement. The default perspective is the Mule Design perspective. Studio also supplies a Mule Debug perspective.
+
+You can create your own perspectives, and add or remove any of the default views.
 
 == See Also
 
-* Learn more about xref:3.8@mule-runtime::elements-in-a-mule-flow.adoc[Elements in a Mule Flow].
-* xref:setting-up-your-development-environment.adoc[Development Environment Setup]
-* xref:basic-studio-tutorial.adoc[Basic Studio Tutorial]
-* xref:anypoint-studio-features.adoc[Studio Features]
-* Learn more about flows in xref:3.8@mule-runtime::mule-application-architecture.adoc[Mule Application Architecture].
-* Skip ahead to learn about xref:3.8@mule-runtime::mule-message-structure.adoc[Mule message structure].
+* xref:to-download-and-install-studio.adoc[To Install Anypoint Studio 7.1]
+* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]

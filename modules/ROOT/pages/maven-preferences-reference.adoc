@@ -1,0 +1,54 @@
+= Maven Preferences Reference (Anypoint Studio)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio allows you to customize your preferences for working with Maven.
+
+image::maven-preferences-reference-7fdf0.png[]
+
+[%header,%autowidth.spread]
+|===
+| Preference |Description |Default Value
+| Display runtime version not available warnings
+| When enabled, it warns you when the runtime version configured in your pom.xml file is different than the one configured in your project.
+| Enabled
+
+| Use embedded Maven Installation (Maven 3.3.9)
+| When enabled, it uses the Maven installation embedded in Anypoint Studio.
+| Enabled
+
+| Maven Installation home directory
+| The directory of your local Maven installation. +
+You can only edit this preference when you disable Use embedded Maven Installation.
+| /usr/local/Cellar/maven/3.3.9/libexec
+
+
+| Override user settings path
+| When selected, this option overrides Studio's default user settings.xml path. +
+Selecting this option requires for you to define your custom path to your settings.xml file in the Path To User Settings.xml field below.
+| unselected
+
+| Override global settings path
+| When selected, this option overrides Studio's default global settings.xml path. +
+Selecting this option requires for you to define your custom path to your global settings.xml file in the Path To User Settings.xml field below.
+| unselected
+
+| Override Maven Local Repository Location
+| When selected, this option overrides Studio's default local repository location. +
+Selecting this option requires for you to define your custom path to your maven local repository.
+| unselected
+
+| MAVEN_OPTS environment variable
+| MAVEN_OPTS contains parameters to start up the JVM or to pass memory options to maven before it runs.
+| Empty
+
+| Base command line for builds
+| The Maven command to execute every time you run your Mule project in your local machine.
+| mvn clean package
+
+|===
+
+== See Also
+
+* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project (Anypoint Studio)]

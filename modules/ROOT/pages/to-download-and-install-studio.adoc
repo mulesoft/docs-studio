@@ -1,0 +1,13 @@
+= To Install Anypoint Studio 7.1
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can only download the latest version of Anypoint Studio. These instructions are covered only if you already have the corresponding ZIP file for an older version:
+
+* xref:to-download-and-install-studio-wx.adoc[To Install Anypoint Studio 7.1 (Windows)]
+* xref:to-download-and-install-studio-ox.adoc[To Install Anypoint Studio 7.1 (OSx)]
+* xref:to-download-and-install-studio-lx.adoc[To Install Anypoint Studio 7.1 (Linux)]
+
+[NOTE]
+Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different.
