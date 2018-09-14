@@ -11,7 +11,7 @@ As a part of a team of developers, you may be using a source code management (SC
 
 == Prerequisites
 
-This document assumes familiarity with https://git-scm.com/[git] as a software version control system, and that you are using xref:index.adoc[Anypoint Studio] to build a new application that you intend to manage using git.
+This document assumes familiarity with https://git-scm.com/[git] as a software version control system, and that you are using xref:6@index.adoc[Anypoint Studio] to build a new application that you intend to manage using git.
 
 == Configuring a gitignore File
 

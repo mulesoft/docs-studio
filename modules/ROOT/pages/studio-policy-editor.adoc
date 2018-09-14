@@ -3,12 +3,14 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Studio 6.1 (and newer) grants you the ability to create a *policy project*, under which you can group your *custom API policies* and apply them to your local Studio deployments. +
-This way you can compose, debug and test custom API policies within Studio, using an editor that fully supports and validates custom API policies design.
+Studio 6.1 (and newer versions of 6.x) grants you the ability to create a *policy project*, under which you can group your *custom API policies* and apply them to your local Studio deployments.
+This way, you can compose, debug, and test custom API policies within Studio, using an editor that fully supports and validates custom API policies design.
 
 [WARNING]
 --
-The custom policy editor is still in beta and is available only for Enterprise Edition users of xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-release-notes.adoc[Anypoint Studio 6.1] and newer.
+The custom policy editor is still in Beta and is available only for Enterprise Edition users of xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-release-notes.adoc[Anypoint Studio 6.1] or newer versions of 6.x.
+
+The Custom Policy Editor is not available for Anypoint Studio 7.x
 --
 
 == Assumptions
@@ -20,13 +22,13 @@ It also assumes that you are familiar with xref:index.adoc#the-visual-editor[Stu
 
 [NOTE]
 --
-For this beta release of the feature, Studio only supports policy creation and edition through XML.
+For this Beta release of the feature, Studio only supports policy creation and edition through XML.
 --
 
 In order to create a custom policy project:
 
-. Right click in your *Package explorer* and select, *New* and *API Custom Policy Project (beta)*.
-. Give a Name to your Policy Project, and make sure to agree to the beta trial license:
+. Right click in your *Package explorer* and select, *New* and *API Custom Policy Project (Beta)*.
+. Give a Name to your Policy Project, and make sure to agree to the Beta trial license:
 +
 image::studio-policy-editor-a01e0.png[]
 +
@@ -185,7 +187,7 @@ In order to test if the policy is being applied, open POSTMAN (or any other simi
 
 == Know Limitations
 
-Being a beta release, the Custom Policy Editor for Studio has some limitations. Keep the following points in mind when designing and testing your custom policy:
+Being a Beta release, the Custom Policy Editor for Studio has some limitations. Keep the following points in mind when designing and testing your custom policy:
 
 === Limitations for the Configuration File
 

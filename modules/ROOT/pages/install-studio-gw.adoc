@@ -40,7 +40,7 @@ The tasks are required for deploying an application to Anypoint Platform.
 
 === Enabling Autodiscovery
 
-link:/api-manager/api-auto-discovery#configuration[API Autodiscovery] is a configuration that triggers discovery of APIs in a project and registration of those APIs to your Anypoint organization. You link:/api-manager/api-auto-discovery#configuration[configure auto-discovery] by adding a global element to your Studio project.
+link:/api-manager/api-auto-discovery#configuration[API Autodiscovery] is a configuration that triggers discovery of APIs in a project and registration of those APIs to your Anypoint organization. You link:/api-manager/api-auto-discovery#configuration[configure Autodiscovery] by adding a global element to your Studio project.
 
 === Configuring Credentials
 

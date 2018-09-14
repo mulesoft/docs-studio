@@ -1,13 +1,26 @@
-= To Install Anypoint Studio
+= To Download and Install Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-It is not possible to download Anypoint Studio 6.4 or below.
+Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
 
-It's recommended to download the latest Studio 6.x version. +
-Follow the instructions xref:6.5@download-and-launch-anypoint-studio.adoc[here].
+To install Anypoint Studio:
 
+. Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio/previous[Anypoint Studio Download Site] and extract it.
+::
+* *Windows*: It's important to extract Anypoint Studio into the 'C:\' root folder. Also, if you are using a Windows Anti-Virus application, ensure that the `plugin/` and `features/` directories are under the “trusted” category.
++
+* *OS X*: If you're using OS version Sierra, it's important that you move your extracted app to the `/applications` folder before you launch it
++
+* *Linux*: To support some of Studio Themes in Linux, it is recommended to have GTK version 2 installed.
+
+. Open the extracted Anypoint Studio.
+. Click OK to accept the default workspace. +
+When setting a custom path to your workspace, keep in mind that Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. It is recommended to use the absolute path when defining your workspace.
+
+Anypoint Studio displays a welcome message when it loads for the first time. +
+Click Get Started to start using Anypoint Studio.
 
 
 == See Also
