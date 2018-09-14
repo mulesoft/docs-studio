@@ -1,0 +1,28 @@
+= To Import a Mule Project from Exchange
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Exchange offers a wide variety of example Mule projects that you can import into your Studio workspace and edit according to your needs. +
+
+It's always recommended that you explore the available examples in Exchange. They are a very useful way of learning how to design and code more complex mule applications.
+
+== Before you Begin.
+
+* Make sure that you set up your Anypoint Platform credentials. +
+See xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials] to learn how to do this.
+
+== Importing an Exchange Example into Studio
+
+. Click the *Open Exchange* button on the top navigation bar image:import-project-exchange-c2fce.png[].
+. In the Exchange window, select the *MuleSoft* organization from the left navigation bar.
+. Click the *All Types* drop-down menu and select *Examples*.
+. Select the example you want to import, and in the example's page, click *Open* from the right menu. +
++
+image::import-project-exchange-7f6a4.png[]
+
+
+== See Also
+
+* xref:export-to-exchange-task.adoc[To Publish a Project to Exchange]
+* xref:import-export-packages.adoc[Importing and Exporting Projects]

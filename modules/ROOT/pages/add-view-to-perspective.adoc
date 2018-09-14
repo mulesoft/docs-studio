@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To add a new view to your current Perspective in Aynpoint Studio:
+To add a new view to your current Perspective in Anypoint Studio:
 
 * Go to Window > Show view > and select View you want to add.
 +

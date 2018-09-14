@@ -1,0 +1,75 @@
+= Importing and Exporting Projects
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio supports the ability to import and export your projects or various project elements. +
+This document outlines the procedures to import or export information pertaining to your Studio projects.
+
+Because Studio is Eclipse-based, keep in mind that among the import/export options, there are ways to import or export projects that are not tailored for Mule projects and that are not recommended for use.
+
+== Importing Projects To Studio
+
+Studio presents two importing options.
+
+image::import-export-packages-ad8ef.png[align=center]
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Option |Action
+|*Packaged Mule Application (.jar)* |Imports a `.jar` file containing a new Mule project.
+|*Anypoint Studio Project from File System* |Imports a folder and its contents as a new Mule project.
+|===
+
+=== Importing a Mule Application (Deployable Archive)
+
+. Select *Import* from the *File* menu.
+. In the Import wizard, click to expand the Mule folder, and select *Packaged Mule Application (.jar)*, then click Next.
+. In the *File* field, click the ellipses (...) button to explore your local drive. Then select the Mule Deployable Archive file (that is, the `.jar` file) you want to import. +
+If you want, you can change project's name.
+. Click *Finish*.
+
+[NOTE]
+When you import a project that was developed in Studio 7.1.x or older versions of Studio 7, Studio will prompt you to *Update your Workspace*. +
+See xref:update-workspace.adoc[Updating Workspaces] for more details.
+
+=== Importing a Mule Application (Project From File System)
+
+. Select *Import* from the *File* menu.
+. In the Import wizard, click to expand the Mule folder, and select *Anypoint Studio Project from File System*, then click Next.
+. In the *Project Root* field, click the ellipses (...) button to explore your local drive, and select the root folder for the Mule project that you want to import. +
+If you want, you can change the project's name and choose a different runtime version in which to run it.
++
+[NOTE]
+You can choose a different runtime version if you have other embedded runtime versions installed in Studio. +
+See _Mule Runtimes for Anypoint Studio Update Site_ in xref:studio-update-sites.adoc[About Anypoint Studio Update Sites] to learn how to install other versions of the runtime in Studio.
+
+== Exporting Projects From Studio
+
+Studio lets you package and export your project as a Mule deployable file.
+
+image::import-export-packages-a1b21.png[]
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+|Option |Action
+|*Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)* |Exports a Mule project to a `.jar` deployable file.
+|===
+
+=== Exporting a Studio Project to a Mule Deployable File
+
+. Select *Export* from the *File* menu.
+. In the Import wizard, click to expand the Mule folder, and select *Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)*, then click Next.
+. Select the project that you want to export, and click *Next*.
+. In the *JAR file* drop-down menu, click the ellipses (...) button to explore your local drive, and select the folder to which you want to export your JAR deployable file. +
+Additionally, you can choose *Attach Project Sources* to include metadata that Studio requires to re-import the deployable file as an open Mule project into your workspace. +
+This is the same as using the `-DattachMuleSources` flag when packaging using the Mule Maven Plugin. See xref:4.1@mule4-runtime::package-task-mmp.adoc[To Package a Mule Application (Mule Maven Plugin)] for more information.
++
+You can also choose *Include Project Modules and Dependencies*. +
+This option creates a heavy package with all the dependencies of your project already packaged in your app. This is required to deploy your app to CloudHub. +
+If you uncheck this option, Studio exports your project in a lightweight package. This is useful if you want to distribute your project to other Studio installations because it only keeps a reference to all its dependencies. When re-importing it to Studio, all your dependencies will be automatically downloaded.
+
+== See Also
+
+* link:/mule4-user-guide/v/4.1/packager-concept.adoc[About the Mule Packager Tool]
+* xref:import-project-exchange.adoc[To Import a Mule Project from Exchange]

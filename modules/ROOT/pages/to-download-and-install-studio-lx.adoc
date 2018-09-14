@@ -1,4 +1,4 @@
-= To Install Anypoint Studio 7.1 (Linux)
+= To Download and Install Anypoint Studio 7.2 (Linux)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -7,11 +7,9 @@ To support some of Studio Themes in Linux, it is recommended to have GTK version
 
 * Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
 
-You can only download the latest version of Anypoint Studio. These instructions are covered only if you already have the corresponding ZIP file for an older version.
+To install Anypoint Studio 7.2:
 
-To install Anypoint Studio 7.1:
-
-. Extract your Anypoint Studio 7.1 ZIP file.
+. Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it.
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
 When setting a custom path to your workspace, keep in mind that Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. It is recommended to use the absolute path when defining your workspace.

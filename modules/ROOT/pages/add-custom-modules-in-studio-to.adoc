@@ -44,10 +44,10 @@ For the example above, your Anypoint Studio pom.xml file should add the followin
 </dependency>
 ----
 +
-Note that the `<classifier>` element is set to mule-plugin. This automatically install the mule-plugin into your project's palette.
+Note that the `<classifier>` element is set to mule-plugin. This automatically installs the mule-plugin into your project's palette.
 . Save your changes to your Studio project's `pom.xml` file.
 
-After Anypoint Studio downloads the new dependency, you'll see your new Mule module in the Studio palette. In this example, there is be a Secure Properties module listed in the Mule Palette view. +
+After Anypoint Studio downloads the new dependency, you'll see your new Mule module in the Studio palette. In this example, there is a Secure Properties module listed in the Mule Palette view. +
 There's also a new Secure Properties Config element available in the Global Elements editor, and the new XML namespace and XML tags are available in the XML configuration file editor.
 
 == See Also

@@ -28,7 +28,6 @@ Verify your Studio version before proceeding, as installing updates from the inc
 To check your version of Anypoint Studio, go to *Anypoint Studio* > *About Anypoint Studio*.
 ===
 
-
 == Anypoint Studio Update Site
 
 Updates for Anypoint Studio application and components, Mule runtime, SAP connector and RAML editor.
@@ -40,6 +39,21 @@ Updates:
 * DataWeave.
 * Mule runtime 4.1.n EE.
 
+== Mule Runtimes for Anypoint Studio Update Site
+
+Updates the Mule runtime version embedded within Studio.
+
+`+http://studio.mulesoft.org/s2/studio-runtimes/+`
+
+Updates:
+
+*  Mule Server Runtime 4.x.x EE.
+
+// == Patches for Anypoint Studio Update Site
+//
+// Contains all the patch versions for a given Studio version.
+//
+// `+http://studio.mulesoft.org/s2/patches/+`
 
 == RAML Editor Update Site
 
