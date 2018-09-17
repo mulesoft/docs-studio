@@ -1,4 +1,4 @@
-= Anypoint Studio
+= About Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

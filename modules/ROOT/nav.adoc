@@ -1,4 +1,5 @@
 .xref:index.adoc[Anypoint Studio]
+* xref:index.adoc[About Anypoint Studio]
 * xref:setting-up-your-development-environment.adoc[Development Environment Setup]
  ** xref:hardware-and-software-requirements.adoc[Hardware and Software Requirements]
  ** xref:download-and-launch-anypoint-studio.adoc[To Download and Install Anypoint Studio]
