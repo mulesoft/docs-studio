@@ -1,4 +1,5 @@
 .xref:index.adoc[About Anypoint Studio]
+* xref:index.adoc[About Anypoint Studio]
 * xref:to-download-and-install-studio.adoc[To Install Anypoint Studio 7.1]
  ** xref:to-download-and-install-studio-wx.adoc[To Install Anypoint Studio 7.1 (Windows)]
  ** xref:to-download-and-install-studio-ox.adoc[To Install Anypoint Studio 7.1 (OSx)]
