@@ -63,7 +63,7 @@ Clicking *Perform update* enables Studio to:
 
 * Update the Mule Maven Plugin version in the pom.xml file of your projects listed in this dialog.
 * Remove all declarations from the 'mule-artifact.json' files of the same listed projects. +
-:: This process overwrites your existing 'mule-artifact.json'. If you have other declarations in your 'mule-artifact.json' that you want to preserve (for example, secureProperties declarations, redeploymentEnabled, etc.), you should back up those files outside of your workspace, perform the migration, and then restore your old 'mule-artifact.json' files. +
+ This process overwrites your existing 'mule-artifact.json'. If you have other declarations in your 'mule-artifact.json' that you want to preserve (for example, secureProperties declarations, redeploymentEnabled, etc.), you should back up those files outside of your workspace, perform the migration, and then restore your old 'mule-artifact.json' files. +
 We strongly recommend not to preserve the following declarations: configs, name, requiredProduct, classLoaderModelLoaderDescriptor and bundleDescriptorLoader
 
 
