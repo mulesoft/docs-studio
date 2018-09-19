@@ -17,5 +17,5 @@ image::dw-new-variable.png[new variable]
 
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
 * xref:add-another-output-transform-studio-task.adoc[Add Another Output Target]
-* xref:4.1@mule4-runtime::mule-message-structure.adoc[Mule Message Structure]
-* xref:4.1@mule4-runtime::dataweave.adoc[DataWeave language]
+* xref:4.1@mule-runtime::mule-message-structure.adoc[Mule Message Structure]
+* xref:4.1@mule-runtime::dataweave.adoc[DataWeave language]

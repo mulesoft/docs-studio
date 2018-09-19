@@ -23,5 +23,5 @@ A file is created under the `src/main/resources` folder in your project containi
 
 == See Also
 
-* xref:4.1@mule4-runtime::dataweave.adoc[DataWeave language]
+* xref:4.1@mule-runtime::dataweave.adoc[DataWeave language]
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
