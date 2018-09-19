@@ -13,7 +13,7 @@ CloudHub then dynamically allocates a port at deployment time.
 * All your external classes and resources are properly declared in the `mule-artifact.json` file of your Mule application. +
 :: Due to Mule 4.x classloading isolation mechanism, all external classes and resources must be explicitly declared in the "exportedPackages" and "exportedResources" fields on the mule-artifact.json file before packaging and deploying the application. +
 +
-See the xref:4.1@mule4-runtime::how-to-export-resources.adoc[How to Export Resources] task to learn more about working with external resources in your Mule application.
+See the xref:4.1@mule-runtime::how-to-export-resources.adoc[How to Export Resources] task to learn more about working with external resources in your Mule application.
 
 == Deploying to CloudHub
 
