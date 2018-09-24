@@ -71,5 +71,5 @@ If you uncheck this option, Studio exports your project in a lightweight package
 
 == See Also
 
-* link:/mule4-user-guide/v/4.1/packager-concept.adoc[About the Mule Packager Tool]
+* xref:4.1@mule-runtime::packager-concept.adoc[About the Mule Packager Tool]
 * xref:import-project-exchange.adoc[To Import a Mule Project from Exchange]
