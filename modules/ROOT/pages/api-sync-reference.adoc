@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: api, anypoint platform, sync, api sync
 
-In API Sync View, you pull, push, and compare your API definition in Anypoint Studio and link:/api-manager/designing-your-api[API Designer].
+In API Sync View, you pull, push, and compare your API definition in Anypoint Studio and xref:1.x@api-manager::designing-your-api.adoc[API Designer].
 
 == How to Show It
 

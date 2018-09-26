@@ -15,7 +15,7 @@ The Custom Policy Editor is not available for Anypoint Studio 7.x
 
 == Assumptions
 
-This article assumes that you are familiar link:/api-manager/using-policies[using policies] in Anypoint Platform and that you are able to link:/api-manager/creating-a-policy-walkthrough[create] and link:/api-manager/applying-custom-policies[apply] custom policies. +
+This article assumes that you are familiar xref:2.x@api-manager::using-policies.adoc[using policies] in Anypoint Platform and that you are able to xref:1.x@api-manager::creating-a-policy-walkthrough.adoc[create] and xref:1.x@api-manager::applying-custom-policies.adoc[apply] custom policies. +
 It also assumes that you are familiar with xref:index.adoc#the-visual-editor[Studio's Visual Editor].
 
 == Usage
@@ -33,7 +33,7 @@ In order to create a custom policy project:
 image::studio-policy-editor-a01e0.png[]
 +
 . When you create a Custom Policy Project for the first time, a default example loads containing:
-** a sample link:/api-manager/creating-a-policy-walkthrough#create-the-policy-configuration-file[policy configuration file]:
+** a sample xref:1.x@api-manager::creating-a-policy-walkthrough.adoc#create-the-policy-configuration-file[policy configuration file]:
 +
 [source,xml,linenums]
 ----
@@ -83,7 +83,7 @@ When designing a custom API in Studio, the `<before>` and `<after>` tags can't b
 If your design does not require an after tag, don't declare it.
 --
 +
-** a sample link:/api-manager/creating-a-policy-walkthrough#create-the-custom-policy-definition[policy definition file]:
+** a sample xref:1.x@api-manager::creating-a-policy-walkthrough.adoc#create-the-custom-policy-definition[policy definition file]:
 +
 [source,yaml,linenums]
 ----
@@ -125,13 +125,13 @@ image::studio-policy-editor-f4c04.png[]
 == Applying the Custom Policy in Your Local Deployment
 
 Custom policies are independent of the APIs to which you want to apply them. +
-You can _point_ a custom policy to one or several APIs by link:/api-manager/applying-custom-policies#customizing-a-pointcut[customizing the pointcut conditions] to:
+You can _point_ a custom policy to one or several APIs by xref:1.x@api-manager::applying-custom-policies.adoc#customizing-a-pointcut[customizing the pointcut conditions] to:
 
-* Point the policy using the `{{ apiName }}` and `{{ apiVersionName }}` link:/api-manager/applying-custom-policies#referencing-properties[reference properties].
+* Point the policy using the `{{ apiName }}` and `{{ apiVersionName }}` xref:1.x@api-manager::applying-custom-policies.adoc#referencing-properties[reference properties].
 * Set up a regex expression to match it with defined endpoints and resources.
 
 However, when designing a custom API in Studio, you need to have at least one local Mule project to deploy and apply the policy. +
-In order to test how the policy behaves when applied to an API, we are creating a simple Mule Project using a variation of the Leagues API example used in link:/api-manager/applying-custom-policies[Applying custom policies] page:
+In order to test how the policy behaves when applied to an API, we are creating a simple Mule Project using a variation of the Leagues API example used in xref:1.x@api-manager::applying-custom-policies.adoc[Applying custom policies] page:
 
 . Download link:{attachmentsdir}/LeagueAPIexample.raml[this RAML API definition] and import it to Studio, so APIKit Studio plugin can automatically generate the flows for your Mule application.
 . Go to the "Global Elements" tab, and _Create_ a new API Autodiscovery element. Assign an API Name, Version and select the flow that contains your APIKit router component as your main flow reference.
