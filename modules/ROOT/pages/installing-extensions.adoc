@@ -32,7 +32,7 @@ The Studio documentation offers more specific instructions for downloading and u
 * xref:3.7@mule-runtime::installing-anypoint-enterprise-security.adoc[Anypoint Enterprise Security]
 * xref:3.7@mule-runtime::installing-connectors.adoc[Anypoint Connectors]
 * xref:importing-a-maven-project-into-studio.adoc[Importing a Maven Project into Studio]
-* link:/mule-user-guide/v/3.7/enabling-maven-support-for-a-studio-project[Enabling Maven Support for a Studio Project]
+* xref:enabling-maven-support-for-a-studio-project.adoc[Enabling Maven Support for a Studio Project]
 * xref:using-subversion-with-studio.adoc[Using Subversion with Studio]
 ====
 

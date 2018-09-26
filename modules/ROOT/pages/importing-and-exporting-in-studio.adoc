@@ -92,4 +92,4 @@ image::exported-doc.png[exported+doc]
 
 * xref:exchange::index.adoc[Exchange]
 * xref:importing-a-maven-project-into-studio.adoc[Importing a Maven Project into Studio]
-* link:/mule-user-guide/v/3.7/enabling-maven-support-for-a-studio-project[Enabling Maven Support for a Studio Project]
+* xref:enabling-maven-support-for-a-studio-project.adoc[Enabling Maven Support for a Studio Project]
