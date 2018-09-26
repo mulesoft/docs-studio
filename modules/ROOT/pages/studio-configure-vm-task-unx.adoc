@@ -23,4 +23,4 @@ When configuring the -vm option, its format must be exact:
 
 == See Also
 
-* link:/anypoint-studio/v/6.5/jdk-requirement-xos-workflow[To Configure Java JDK (Mac OSx)]
+* xref:jdk-requirement-xos-worflow.adoc[To Configure Java JDK (Mac OSx)]

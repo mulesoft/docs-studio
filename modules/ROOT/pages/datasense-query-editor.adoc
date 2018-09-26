@@ -44,7 +44,7 @@ Learn how to xref:installing-extensions.adoc[add connectors] to your instance of
 
 === Accessing the Query Editor
 
-. To access the Query Editor, add a connector to your flow, then access its link:/mule-user-guide/v/3.8/the-properties-editor[Properties Editor.]
+. To access the Query Editor, add a connector to your flow, then access its xref:6@index.adoc#properties-editor[Properties Editor.]
 
 . Set the value of the *Operations* field to `Query`.
 
