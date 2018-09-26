@@ -54,4 +54,4 @@ Even though Maven is able to download sources for most of your project, Studio m
 * xref:studio-visual-debugger.adoc[Studio Visual Debugger]
 * xref:3.8@mule-runtime::configuring-mule-stacktraces.adoc[Configuring Mule Stacktraces]
 * xref:maven-support-in-anypoint-studio.adoc[Maven Support in Anypoint Studio]
-* link:/munit/v/1.2.0/[MUnit 1.2.0]
+* https://docs.archive.mulesoft.com/munit/v/1.2/[MUnit 1.2.0]
