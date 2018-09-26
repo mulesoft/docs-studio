@@ -44,7 +44,7 @@ Use the xref:studio-visual-debugger.adoc[Studio Visual Debugger] to run your app
 
 === Unit Testing with MUnit
 
-Use link:/munit/v/1.1.1/using-munit-in-anypoint-studio[MUnit] to automatically create and run unit tests on your applications. That way you can be certain that any changes you make to your application won't brake it or alter how it behaves.
+Use https://docs.archive.mulesoft.com/munit/v/1.1/using-munit-in-anypoint-studio[MUnit] to automatically create and run unit tests on your applications. That way you can be certain that any changes you make to your application won't brake it or alter how it behaves.
 
 == RAML Support
 
