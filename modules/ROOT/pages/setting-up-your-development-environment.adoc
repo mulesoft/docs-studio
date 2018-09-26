@@ -115,7 +115,7 @@ Note that you can either import the certificate to your existing keytool or crea
 After configuring and enabling Private Cloud support you can:
 
 . Log in to your Anypoint Platform Private Cloud Edition from Studio configuring your platform's credentials following the steps <<configure-anypoint-platform-credentials,described above>>.
-. Configure xref:api-sync-reference.adoc[API Sync] and link:/api-manager/api-auto-discovery[API Autodiscovery] for APIs in your Private Cloud Edition platform.
+. Configure xref:api-sync-reference.adoc[API Sync] and xref:1.x@api-manager::api-auto-discovery.adoc[API Autodiscovery] for APIs in your Private Cloud Edition platform.
 . Access your On-Premises xref:exchange::index.adoc[Exchange] Artifacts.
 
 === Customize the Exchange Address

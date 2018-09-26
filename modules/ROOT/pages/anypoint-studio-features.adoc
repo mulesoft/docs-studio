@@ -44,14 +44,14 @@ Use the xref:studio-visual-debugger.adoc[Studio Visual Debugger] to run your app
 
 === Unit Testing with MUnit
 
-Use link:/munit/v/1.2.0/using-munit-in-anypoint-studio[MUnit] to automatically create and run unit tests on your applications. That way you can be certain that any changes you make to your application won't brake it or alter how it behaves.
+Use https://docs.archive.mulesoft.com/munit/v/1.2/using-munit-in-anypoint-studio[MUnit] to automatically create and run unit tests on your applications. That way you can be certain that any changes you make to your application won't brake it or alter how it behaves.
 
 
 == APIKit
 
 * Based on a https://raml.org/[*RAML*] or a *WSDL* file, you can use xref:apikit::index.adoc[APIkit] to automatically build scaffoldings for all of the backend flows of a Mule application, as well as exception handling flows. All you have to do then is populate these with operations.
 
-* Also, as a beta feature, you can use APIkit with link:/apikit/creating-an-odata-api-with-apikit[OData]
+* Also, as a beta feature, you can use APIkit with xref:3.x@apikit::creating-an-odata-api-with-apikit.adoc[OData]
 
 == Additional RAML Support
 
