@@ -23,10 +23,8 @@ If one of the update sites listed below does not show up in your Anypoint Studio
 // *Note*: None of the URLs listed below are accessible from a web browser. Only use them in the Anypoint Studio *Work with* field.
 
 [TIP]
-===
 Verify your Studio version before proceeding, as installing updates from the incorrect update sites can cause errors. +
 To check your version of Anypoint Studio, go to *Anypoint Studio* > *About Anypoint Studio*.
-===
 
 == Anypoint Studio Update Site
 
