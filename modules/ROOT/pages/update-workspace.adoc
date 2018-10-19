@@ -65,6 +65,7 @@ Clicking *Perform update* enables Studio to:
 * Remove all declarations from the 'mule-artifact.json' files of the same listed projects. +
  This process overwrites your existing 'mule-artifact.json'. If you have other declarations in your 'mule-artifact.json' that you want to preserve (for example, secureProperties declarations, redeploymentEnabled, etc.), you should back up those files outside of your workspace, perform the migration, and then restore your old 'mule-artifact.json' files. +
 We strongly recommend not to preserve the following declarations: configs, name, requiredProduct, classLoaderModelLoaderDescriptor and bundleDescriptorLoader
+* If the application needs to export resources which are not present as files in the project sources (i.e. files from dependencies) those still need to be exported explicitly. In that case, the declaration for classLoaderModelLoaderDescriptor must be preserved, the exportedResources attribute still needs to be specified and will not be generated automatically.
 
 
 == See Also
