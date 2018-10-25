@@ -1,4 +1,4 @@
-= About Anypoint Studio Update Sites
+= Anypoint Studio Update Sites
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,12 +6,12 @@ endif::[]
 
 Update sites in Anypoint Studio are used to update or install Studio, the embedded Mule runtime, connectors or other useful development tools.
 
-== To Access an Update Site
+== Accesing an Update Site
 
 . Go to *Help* > *Install New Software*.
 . Select one of these update sites from the drop-down menu next to the *Work with* field.
 
-=== To Add Additional Update Sites
+=== Adding Additional Update Sites
 
 If one of the update sites listed below does not show up in your Anypoint Studio installation, you can add it manually:
 
@@ -26,7 +26,7 @@ If one of the update sites listed below does not show up in your Anypoint Studio
 Verify your Studio version before proceeding, as installing updates from the incorrect update sites can cause errors. +
 To check your version of Anypoint Studio, go to *Anypoint Studio* > *About Anypoint Studio*.
 
-== Anypoint Studio Update Site
+== Studio Update Site
 
 Updates for Anypoint Studio application and components, Mule runtime, SAP connector and RAML editor.
 
@@ -66,7 +66,7 @@ xref:2.1@munit::index.adoc[MUnit] framework for testing Mule Applications
 `+http://studio.mulesoft.org/s2/munit+`
 
 
-== To Allow Connection to Update Site Through Firewall
+== Allowing Connection to Update Site Through Firewall
 
 If you are on a network with firewall restrictions, you may find that the Studio update sites are blocked and you are unable to download extensions. Configure your firewall so that it allows the following sites, which permits Studio to connect to the above update sites:
 
@@ -87,5 +87,5 @@ Allow on Firewall:
 
 == See Also
 
-* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]
-* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project (Anypoint Studio)]
+* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials]
+* xref:add-modules-in-studio-to.adoc[Adding Modules to Your Project]

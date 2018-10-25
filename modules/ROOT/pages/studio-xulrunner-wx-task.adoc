@@ -1,4 +1,4 @@
-= To Configure XULRunner as Studio's Default Layout Engine (Windows)
+= Configuring XULRunner as Studio's Default Layout Engine (Windows)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

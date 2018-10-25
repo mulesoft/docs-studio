@@ -1,4 +1,4 @@
-= To Configure Proxy Settings (Anypoint Studio)
+= Configuring Proxy Settings (Anypoint Studio)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

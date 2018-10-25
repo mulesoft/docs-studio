@@ -1,4 +1,4 @@
-= To Evaluate a Breakpoint Using an Expression
+= Evaluating a Breakpoint Using an Expression
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

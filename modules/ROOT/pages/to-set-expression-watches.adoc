@@ -1,4 +1,4 @@
-= To Set Mule Expression Watches
+= Setting Mule Expression Watches
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

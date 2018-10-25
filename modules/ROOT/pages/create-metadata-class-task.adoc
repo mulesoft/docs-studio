@@ -1,4 +1,4 @@
-= To Create Metadata Class (Anypoint Studio)
+= Creating a Metadata Class (Anypoint Studio)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -28,4 +28,4 @@ Depending on the selected option, there are different ways to define the data st
 
 == See Also
 
-*** xref:metadata-editor-concept.adoc[About the Metadata Editor]
+*** xref:metadata-editor-concept.adoc[Metadata Editor]

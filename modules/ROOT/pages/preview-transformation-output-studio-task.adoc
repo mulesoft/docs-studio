@@ -1,4 +1,4 @@
-= To Preview the Output of a Transformation (Anypoint Studio)
+= Previewing the Output of a Transformation (Anypoint Studio)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

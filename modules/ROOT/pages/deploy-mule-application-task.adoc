@@ -1,4 +1,4 @@
-= To Deploy a Mule Application to CloudHub (Anypoint Studio)
+= Deploying a Mule Application to CloudHub (Anypoint Studio)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -35,5 +35,5 @@ When you get to the CloudHub instance configuration window, the "Overwrite Exist
 
 == See Also
 
-* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]
+* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials (Anypoint Studio)]
 // _TODO: Add links to runtime manager after 4.1 Release.
