@@ -75,5 +75,5 @@ You can debug an application on a remote Mule Server using *Remote Mule Applicat
 
 == See Also
 
-* xref:debugger-perspective-concept.adoc[About the Mule Debugger Perspective]
-* xref:to-set-breakpoints.adoc[To Set Breakpoints]
+* xref:debugger-perspective-concept.adoc[Mule Debugger Perspective]
+* xref:to-set-breakpoints.adoc[Setting Breakpoints]

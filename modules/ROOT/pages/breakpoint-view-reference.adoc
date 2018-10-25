@@ -23,6 +23,6 @@ The condition must be a Boolean. The breakpoint activates if the specified condi
 
 == See Also
 
-* xref:add-view-to-perspective.adoc[To Add a New View to Your Current Perspective]
-* xref:breakpoints-concepts.adoc[About Breakpoints]
-* xref:to-set-conditional-breakpoints.adoc[To Set Conditional Breakpoints]
+* xref:add-view-to-perspective.adoc[Adding a New View to Your Current Perspective]
+* xref:breakpoints-concepts.adoc[Breakpoints]
+* xref:to-set-conditional-breakpoints.adoc[Setting Conditional Breakpoints]

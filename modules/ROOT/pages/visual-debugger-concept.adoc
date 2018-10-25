@@ -1,4 +1,4 @@
-= About Anypoint Studio Visual Debugger
+= Studio Visual Debugger
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -20,5 +20,5 @@ Ensure that there are no routing issues or firewalls blocking access between you
 
 == See Also
 
-* xref:debugger-perspective-concept.adoc[About the Mule Debugger Perspective]
+* xref:debugger-perspective-concept.adoc[Mule Debugger Perspective]
 * xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]

@@ -42,7 +42,7 @@ If you want, you can change the project's name and choose a different runtime ve
 +
 [NOTE]
 You can choose a different runtime version if you have other embedded runtime versions installed in Studio. +
-See _Mule Runtimes for Anypoint Studio Update Site_ in xref:studio-update-sites.adoc[About Anypoint Studio Update Sites] to learn how to install other versions of the runtime in Studio.
+See _Mule Runtimes for Anypoint Studio Update Site_ in xref:studio-update-sites.adoc[Anypoint Studio Update Sites] to learn how to install other versions of the runtime in Studio.
 
 == Exporting Projects From Studio
 
@@ -71,5 +71,5 @@ If you uncheck this option, Studio exports your project in a lightweight package
 
 == See Also
 
-* xref:4.1@mule-runtime::packager-concept.adoc[About the Mule Packager Tool]
-* xref:import-project-exchange.adoc[To Import a Mule Project from Exchange]
+* xref:mule-runtime::packager-concept.adoc[Mule Packager Tool]
+* xref:import-project-exchange.adoc[Importing a Mule Project from Exchange]

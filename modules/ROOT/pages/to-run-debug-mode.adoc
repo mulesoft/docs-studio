@@ -18,6 +18,6 @@ Additionally you can run your application in debug mode by right clicking in the
 
 == See Also
 
-* xref:breakpoints-concepts.adoc[About Breakpoints]
+* xref:breakpoints-concepts.adoc[Breakpoints]
 * xref:breakpoint-view-reference.adoc[Breakpoint View Reference]
 * xref:mule-watches-view-reference.adoc[Mule Watches View Reference]

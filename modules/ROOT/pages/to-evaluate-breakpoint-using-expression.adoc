@@ -16,5 +16,5 @@ Using the expression evaluation window, you can also edit message properties or 
 
 == See Also
 
-* xref:mule-debugger-view-reference.adoc[About the Mule Debugger View]
-* xref:breakpoints-concepts.adoc[About Breakpoints]
+* xref:mule-debugger-view-reference.adoc[Mule Debugger View]
+* xref:breakpoints-concepts.adoc[Breakpoints]

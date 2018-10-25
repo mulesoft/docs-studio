@@ -1,4 +1,4 @@
-= About the Mule Debugger Perspective
+= Mule Debugger Perspective
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -80,7 +80,7 @@ For a detailed reference of what properties can be set in the Writer Configurati
 == See Also
 
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
-* xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
+* xref:transform-message-component-concept-studio.adoc[Transform Message Component]
 * xref:4.1@mule-runtime::dataweave.adoc[DataWeave Language]
 * xref:4.1@mule-runtime::dataweave-types.adoc[DataWeave Types]
 * xref:4.1@mule-runtime::dataweave-formats.adoc[DataWeave Formats]
