@@ -12,20 +12,35 @@ image::mule-debugger-view-reference-ef5f6.png[debugger-view]
 
 When the Mule Event stops at a Breakpoint, the Mule Debugger View displays information about the state of the Mule Event at that breakpoint:
 
-image::mule-debugger-view-reference-70ea1.png[debugger-view-with-event]
+image::mule-debugger-view-reference-243de.png[debugger-view-with-event]
 
-[%header,cols="30,70"]
-|===
-| Name | Description
-| Name column | Displays the name of the Mule Event property +
 To see any nested elements for a property, click the arrow next to the property name.
 
-| Value column | Displays the current value of the Mule Event Property +
-By selecting one property and clicking one time on its' value field, you can change that property's value. The Visual Debugger automatically stores the modified value and, so after you resume running the application, the Mule Event progresses with the modified value.
+image::mule-debugger-view-reference-c1937.png[]
 
-| Type column | Displays the type of the Mule Event Property
+You can interact with your inspected element by right-clicking the element on your debugger view to display a contextual menu.
 
+image::mule-debugger-view-reference-2bf5c.png[align=center]
+
+[%header%autowidth.spread,cols="a,a"]
 |===
+|Value |Description
+| *Update Value*
+| Enables you to modify data on the fly to test flows.
+
+| *Go to class*
+| Opens the selected class.
+
+| *Copy expression*
+| Copies the Dataweave expression used to access the value (e.g.: payload.0.filename).
+
+| *Add watch*
+| Automatically adds a new watch with the expression to access the value to the Watches menu.
+
+| *Copy value*
+| Copies the Dataweave expression representing the structure of the selected object.
+|===
+
 
 On the top right corner of the Mule Debugger View, you can find execution control tools for the Mule Debugger.
 
@@ -43,8 +58,8 @@ On the top right corner of the Mule Debugger View, you can find execution contro
 |
 
 |image:eval-mule-exp-icon.png[eval.mule.exp.icon]
-|Evaluate Mule Expression
-| Click to evaluate a Mule expression.
+|Evaluate Dataweave Expression
+| Click to evaluate a Dataweave expression.
 a|
 `CMD+SHIFT+i`
 
@@ -80,6 +95,8 @@ Linux and Windows: +
 | When configuring a Scheduler in your Mule application, this option it stops the initiated Scheduler. This function only works if the Scheduler has been initiated using the Start Scheduler button above.
 |
 |===
+
+
 
 == See Also
 

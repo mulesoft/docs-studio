@@ -5,11 +5,11 @@ endif::[]
 
 The debugger perspective is composed by a list of preconfigured views aimed to help you debug your application:
 
-* Mule Debugger View Reference
-* Mule Watches View Reference
-* Breakpoint View Reference
+* Mule Debugger View
+* Mule Watches View
+* Breakpoint View
 
-When you run your application in debug mode for the first time, Aynpoint Studio prompts you to load the Mule Debugger Perspective
+When you run your application in debug mode for the first time, Aynpoint Studio prompts you to load the Mule Debugger Perspective.
 
 == See Also
 
