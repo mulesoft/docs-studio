@@ -5,10 +5,10 @@ endif::[]
 
 To configure the default VM for Anypoint Studio:
 
-. Locate your `AnypointStudio.ini` file.
+. Locate your `AnypointStudio.ini` file by right clicking on the Anypoint Studio icon and selecting show package contents in the menu.
 +
 This file is located in `Applications/AnypointStudio`.
-. Add the -vm option to point to your specific JDK installation path.
+. Add the -vm option to point to your specific JDK installation path. If you have multiple JDKs installed type 'java /usr/libexec/java_home -verbose' to see the full path to your JDKs.
 +
 [source,text,linenums]
 ----
