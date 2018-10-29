@@ -1,11 +1,11 @@
-= To Import an API Definition from Design Center
+= Importing an API Definition from Design Center
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 Anypoint Studio allows you to import an API Definition from Design Center and implement it either into a new Mule Project, or an existing one.
 
-== To Implement an API imported from Design Center Into a New Project
+== Implementing  an API imported from Design Center Into a New Project
 
 . Click File > New > Mule Project to create a project, and set the field values in the project wizard:
 +
@@ -22,7 +22,7 @@ Additionally you can click the "Add Account" button to use a new Anypoint Platfo
 
 APIKit generates the Flow based on the API definition imported from Design Center.
 
-== To Implement an API imported from Design Center Into an Existing Project
+== Implementing  an API imported from Design Center Into an Existing Project
 
 . Right click your Mule Project on the Package Explorer View.
 . Select Anypoint Platform and then Import from Design Center.

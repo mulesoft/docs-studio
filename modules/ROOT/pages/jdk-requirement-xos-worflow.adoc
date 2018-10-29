@@ -1,4 +1,4 @@
-= To Configure Java JDK (Mac OSx)
+= Configuring Java JDK (Mac OSx)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

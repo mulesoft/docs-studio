@@ -3,14 +3,14 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 7.2 simplifies the configuration of the `mule-artifact.json` file. This file is used when packaging your Mule application to identify the class loader configuration and settings of your Mule application, and the minimum required Mule runtime version to run your application. +
+Anypoint Studio 7.2 and later simplifies the configuration of the `mule-artifact.json` file. This file is used when packaging your Mule application to identify the class loader configuration and settings of your Mule application, and the minimum required Mule runtime version to run your application. +
 
 Anypoint Studio includes a new version of the Mule Maven Plugin that can automatically infer some of this required metadata. This make it easier for you to keep track of all the declarations you need to make when exporting resources. +
 
 
 [%header%autowidth.spread,cols="a,a"]
 |===
-| *mule-artifact.json* in 7.1.x | *mule-artifact.json* in 7.2
+| *mule-artifact.json* in 7.1.x | *mule-artifact.json* in 7.2 and later
 |
 [source,json,linenums]
 ----
@@ -50,7 +50,7 @@ The Mule Maven plugin checks the metadata declared in 'mule-artifact.json'. If t
 If there are other metadata declared, it uses that information to package the application. +
 If you choose to update to the latest Mule Maven plugin, and to keep your old descriptor files, you'll need to manually keep track of your descriptors metadata.
 
-== Upgrading From 7.1.x to 7.2
+== Upgrading From 7.1.x to 7.2 and later
 
 When you open Anypoint Studio 7.2 and use a workspace created with previous versions, Studio pops up a note:
 
@@ -69,5 +69,5 @@ We strongly recommend not to preserve the following declarations: configs, name,
 
 == See Also
 
-* xref:4.1@mule-runtime::packager-concept.adoc[About the Mule Packager Tool]
-* xref:4.1@mule-runtime::about-classloading-isolation.adoc[About Class Loading Isolation]
+* xref:mule-runtime::packager-concept.adoc[Mule Packager Tool]
+* xref:mule-runtime::about-classloading-isolation.adoc[Class Loading Isolation]

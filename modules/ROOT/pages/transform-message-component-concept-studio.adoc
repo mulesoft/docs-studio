@@ -1,4 +1,4 @@
-= About the Transform Message Component
+= Transform Message Component
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -18,6 +18,6 @@ image::mule-watches-view-ref-9703f.png[mule-watches-view]
 
 == See Also
 
-* xref:to-set-expression-watches.adoc[To Set Mule Expression Watches]
-* xref:breakpoints-concepts.adoc[About Breakpoints]
-* xref:add-view-to-perspective.adoc[To Add a New View to Your Current Perspective]
+* xref:to-set-expression-watches.adoc[Setting Mule Expression Watches]
+* xref:breakpoints-concepts.adoc[Breakpoints]
+* xref:add-view-to-perspective.adoc[Adding a New View to Your Current Perspective]

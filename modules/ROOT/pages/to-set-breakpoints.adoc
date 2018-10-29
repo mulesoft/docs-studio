@@ -1,4 +1,4 @@
-= To Set Breakpoints
+= Setting Breakpoints
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -12,7 +12,7 @@ When you run your application in Debug mode, Studio stops the flow execution at 
 == See Also
 
 * xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
-* xref:to-set-conditional-breakpoints.adoc[To Set Conditional Breakpoints]
-* xref:to-set-error-breakpoints.adoc[To Set Error Breakpoint]
-* xref:to-evaluate-breakpoint-using-expression.adoc[To Evaluate a Breakpoint Using an Expression]
-* xref:breakpoints-concepts.adoc[About Breakpoints]
+* xref:to-set-conditional-breakpoints.adoc[Setting Conditional Breakpoints]
+* xref:to-set-error-breakpoints.adoc[Setting Error Breakpoint]
+* xref:to-evaluate-breakpoint-using-expression.adoc[Evaluating a Breakpoint Using an Expression]
+* xref:breakpoints-concepts.adoc[Breakpoints]

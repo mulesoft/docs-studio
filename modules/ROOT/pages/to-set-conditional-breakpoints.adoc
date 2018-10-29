@@ -1,4 +1,4 @@
-= To Set Conditional Breakpoints
+= Setting Conditional Breakpoints
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -20,5 +20,5 @@ For example, the following expression activates the breakpoint if the value of m
 == See Also
 
 * xref:breakpoint-view-reference.adoc[Breakpoint View Reference]
-* xref:to-set-breakpoints.adoc[To Set Breakpoints]
-* xref:breakpoints-concepts.adoc[About Breakpoints]
+* xref:to-set-breakpoints.adoc[Setting Breakpoints]
+* xref:breakpoints-concepts.adoc[Breakpoints]

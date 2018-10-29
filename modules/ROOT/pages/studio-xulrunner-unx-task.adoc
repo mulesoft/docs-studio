@@ -1,4 +1,4 @@
-= To Configure XULRunner as Studio’s Default Layout Engine (Mac OSx)
+= Configuring XULRunner as Studio’s Default Layout Engine (Mac OSx)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -17,6 +17,6 @@ endif::[]
 
 == See Also
 
-* xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
+* xref:transform-message-component-concept-studio.adoc[Transform Message Component]
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
 * xref:4.1@mule-runtime::dataweave.adoc[DataWeave Language]

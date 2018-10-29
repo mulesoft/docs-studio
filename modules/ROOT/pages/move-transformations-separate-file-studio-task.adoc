@@ -1,4 +1,4 @@
-= To Move Transformation to Separate Files (Anypoint Studio)
+= Moving Transformation to Separate Files (Anypoint Studio)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -24,4 +24,4 @@ A file is created under the `src/main/resources` folder in your project containi
 == See Also
 
 * xref:4.1@mule-runtime::dataweave.adoc[DataWeave language]
-* xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
+* xref:transform-message-component-concept-studio.adoc[Transform Message Component]

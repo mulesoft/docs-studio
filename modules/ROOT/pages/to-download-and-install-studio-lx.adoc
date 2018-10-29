@@ -1,4 +1,4 @@
-= To Download and Install Anypoint Studio 7.2 (Linux)
+= Downloading and Installing Anypoint Studio (Linux)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -7,7 +7,7 @@ To support some of Studio Themes in Linux, it is recommended to have GTK version
 
 * Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
 
-To install Anypoint Studio 7.2:
+To install Anypoint Studio:
 
 . Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it.
 . Open the extracted Anypoint Studio.
@@ -27,6 +27,6 @@ Click Get Started to start using Anypoint Studio.
 
 == See Also
 
-* xref:studio-xulrunner-lnx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Linux)]
-* xref:jdk-requirement-lnx-worflow.adoc[To Configure Java JDK (Linux)]
-* xref:studio-configure-vm-task-lnx.adoc[To Configure Studio's Default VM (Linux)]
+* xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
+* xref:jdk-requirement-lnx-worflow.adoc[Configuring Java JDK (Linux)]
+* xref:studio-configure-vm-task-lnx.adoc[Configuring Studio's Default VM (Linux)]

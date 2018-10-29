@@ -1,13 +1,13 @@
-= To Download and Install Anypoint Studio 7.2
+= Downloading and Installing Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To download and install Aynpoint Studio 7.2, follow the instructions based on your operative system:
+To download and install Aynpoint Studio, follow the instructions based on your operative system:
 
-* xref:to-download-and-install-studio-wx.adoc[To Download and Install Anypoint Studio 7.2 (Windows)]
-* xref:to-download-and-install-studio-ox.adoc[To Download and Install Anypoint Studio 7.2 (OSx)]
-* xref:to-download-and-install-studio-lx.adoc[To Download and Install Anypoint Studio 7.2 (Linux)]
+* xref:to-download-and-install-studio-wx.adoc[Downloading and Installing Anypoint Studio (Windows)]
+* xref:to-download-and-install-studio-ox.adoc[Downloading and Installing Anypoint Studio (OSx)]
+* xref:to-download-and-install-studio-lx.adoc[Downloading and Installing Anypoint Studio (Linux)]
 
 [NOTE]
 Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different. +

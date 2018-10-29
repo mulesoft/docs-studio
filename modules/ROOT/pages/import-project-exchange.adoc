@@ -1,4 +1,4 @@
-= To Import a Mule Project from Exchange
+= Importing a Mule Project from Exchange
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

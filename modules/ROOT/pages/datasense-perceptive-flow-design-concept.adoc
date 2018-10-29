@@ -1,4 +1,4 @@
-= About Perceptive Flow Design
+= Perceptive Flow Design
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -48,6 +48,5 @@ As a direct consequence of this, there is no implicit metadata propagation of th
 
 == See Also
 
-xref:datasense-concept.adoc[About DataSense]
-
-xref:datasense-explorer.adoc[About DataSense Explorer]
+* xref:datasense-concept.adoc[DataSense]
+* xref:datasense-explorer.adoc[DataSense Explorer]

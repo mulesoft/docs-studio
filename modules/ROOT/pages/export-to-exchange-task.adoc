@@ -1,4 +1,4 @@
-= To Publish a Project to Exchange
+= Publishing a Project to Exchange
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -32,4 +32,4 @@ After confirmed, the deployment to Exchange 2.0 cannot be stopped.
 
 == See Also
 
-* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]
+* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials]

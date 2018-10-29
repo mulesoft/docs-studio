@@ -1,4 +1,4 @@
-= To Add Custom Modules to Your Project (Anypoint Studio)
+= Adding Custom Modules to Your Project (Anypoint Studio)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

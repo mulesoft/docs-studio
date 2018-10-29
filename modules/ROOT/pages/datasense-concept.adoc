@@ -1,4 +1,4 @@
-= About DataSense
+= DataSense
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -16,6 +16,6 @@ Studio offers these DataSense features to support proactive discovery of metadat
 
 == See Also
 
-xref:datasense-perceptive-flow-design-concept.adoc[About Perceptive Flow Design]
+xref:datasense-perceptive-flow-design-concept.adoc[Perceptive Flow Design]
 
-xref:datasense-explorer.adoc[About DataSense Explorer]
+xref:datasense-explorer.adoc[DataSense Explorer]

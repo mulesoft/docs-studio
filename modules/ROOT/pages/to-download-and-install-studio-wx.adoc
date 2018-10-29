@@ -1,11 +1,11 @@
-= To Download and Install Anypoint Studio 7.2 (Windows)
+= Downloading and Installing Anypoint Studio (Windows)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 * Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
 
-To install Anypoint Studio 7.2:
+To install Anypoint Studio:
 
 . Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it into the 'C:\' root folder. +
 If you are using a Windows Anti-Virus application, ensure that the `plugin/` and `features/` directories are under the “trusted” category.
@@ -23,6 +23,6 @@ Click Get Started to start using Anypoint Studio.
 
 == See Also
 
-* xref:studio-xulrunner-wx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Windows)]
-* xref:jdk-requirement-wx-workflow.adoc[To Configure Java JDK (Windows)]
-* xref:studio-configure-vm-task-wx.adoc[To Configure Studio's Default VM (Windows)]
+* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]
+* xref:jdk-requirement-wx-workflow.adoc[Configuring Java JDK (Windows)]
+* xref:studio-configure-vm-task-wx.adoc[Configuring Studio's Default VM (Windows)]

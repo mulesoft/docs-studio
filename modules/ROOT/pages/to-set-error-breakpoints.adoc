@@ -1,4 +1,4 @@
-= To Set Error Breakpoints
+= Setting Error Breakpoints
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -13,5 +13,5 @@ Additionally, Studio identifies the error with a red, dotted-line square in the 
 
 == See Also
 
-* xref:breakpoints-concepts.adoc[About Breakpoints]
+* xref:breakpoints-concepts.adoc[Breakpoints]
 * xref:breakpoint-view-reference.adoc[Breakpoint View Reference]

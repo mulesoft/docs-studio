@@ -1,4 +1,4 @@
-= To Add a New View to Your Current Perspective
+= Adding a New View to Your Current Perspective
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

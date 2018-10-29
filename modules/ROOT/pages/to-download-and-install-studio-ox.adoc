@@ -1,11 +1,11 @@
-= To Download and Install Anypoint Studio 7.2 (OSx)
+= Downloading and Installing Anypoint Studio (OSx)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 * Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
 
-To install Anypoint Studio 7.2:
+To install Anypoint Studio:
 
 . Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it.
 If you're using OS version Sierra, it's important that you move your extracted app to the `/Applications` folder before you launch it.
@@ -25,6 +25,6 @@ Click Get Started to start using Anypoint Studio.
 
 == See Also
 
-* xref:studio-xulrunner-unx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Mac OSx)]
-* xref:jdk-requirement-lnx-worflow.adoc[To Configure Java JDK (Linux)]
-* xref:studio-configure-vm-task-unx.adoc[To Configure Studio's Default VM (Mac OSx)]
+* xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
+* xref:jdk-requirement-lnx-worflow.adoc[Configuring Java JDK (Linux)]
+* xref:studio-configure-vm-task-unx.adoc[Configuring Studio's Default VM (Mac OSx)]

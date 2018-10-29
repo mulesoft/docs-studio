@@ -1,4 +1,4 @@
-= To Preview the Output of a Transformation (Anypoint Studio)
+= Previewing the Output of a Transformation (Anypoint Studio)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -44,5 +44,5 @@ Note that samples defined in this pane work only within the *Transform Message* 
 == See Also
 
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
-* xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
+* xref:transform-message-component-concept-studio.adoc[Transform Message Component]
 * xref:4.1@mule-runtime::dataweave.adoc[DataWeave Language]

@@ -1,4 +1,4 @@
-= About Anypoint Studio
+= Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -99,5 +99,5 @@ You can create your own perspectives, and add or remove any of the default views
 
 == See Also
 
-* xref:to-download-and-install-studio.adoc[To Install Anypoint Studio 7.2]
-* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]
+* xref:to-download-and-install-studio.adoc[Installing Anypoint Studio]
+* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials (Anypoint Studio)]
