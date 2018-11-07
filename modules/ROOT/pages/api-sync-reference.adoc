@@ -7,6 +7,10 @@ endif::[]
 API Sync lets you pull an API definition published in Exchange, and scaffold a flow out of this file. +
 Additionally, you can use API Sync to keep track of the API versions that you implemented, and update your flows based on the latest published version.
 
+Anypoint Studio 7.4 does not allow you to import an API specification directly form Design Center, as older versions used to do. +
+If you don't want to publish your API spec to Exchange, you need to download the API from Design Center, and import it as a local file to your Studio project. +
+Follow the xref:studio::import-api-def-dc.adoc[Importing an API Definition from a Local File] steps for more information.
+
 == Prerequisites
 
 API Sync comes bundled by default in Studio 7.4.x and later, and requires Mule 4.1.4 or later. +

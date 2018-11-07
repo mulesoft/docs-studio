@@ -3,12 +3,25 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Anypoint Studio allows you to import an API Definition from your local machine and implement it either into a new Mule Project, or into an existing one.
+
+If you designed an API in Design Center, you can
+
+You can choose to use design your API in Design Center, publish it to Exchange and import it into Studio usign API sync. +
+Follow the xref:studio::import-api-definition.adoc[Importing an API Definition from Exchange] steps for more information.
 
 == Implementing an API Into a New Project
 
+. Click File > New > Mule Project to create a project, and set the field values in the project wizard:
++
+. Type a name for your project.
+. Select a Mule runtime version.
+. Check the *API Implementation* checkmark.
+. In the *Add Local API Specification* tab, type the location of your local API, or click the *...* button and select *Browse Files*.
+You can import a RAML file, or an entire zip file bundle if your API has schemas and examples.
+. Click *Finish*.
 
-
-== Implementing an API from Exchange Into an Existing Project
+You can import more than one API. You can select the API you want to scaffold flows and check the *Scaffold selected API specifications* checkbox, so that APIKit generates the flow based on the imported API.
 
 == See Also
 
