@@ -49,6 +49,7 @@
  ** xref:datasense-explorer.adoc[DataSense Explorer]
 * xref:api-sync-reference.adoc[API Sync]
  ** xref:import-api-definition.adoc[Importing an API Definition from Exchange]
+ ** xref:import-api-def-maven.adoc[Importing an API Definition from Maven]
  ** xref:import-api-def-dc.adoc[Importing an API Definition from a Local File]
 * xref:import-export-packages.adoc[Importing and Exporting Projects]
  ** xref:import-project-exchange.adoc[Importing a Mule Project from Exchange]

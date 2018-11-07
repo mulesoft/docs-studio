@@ -14,7 +14,7 @@ This feature is possible through API Sync. If you are using an older version of 
 . Type a name for your project.
 . Select a Mule runtime version 4.1.4 or later.
 . Check the *API Implementation* checkmark.
-. In the *Add API Specification Dependency* tab, click the plus icon, and select *Import from Exchange*
+. In the *Add API Specification Dependency* tab, click the plus icon, and select *From Exchange*
 . Select your Anypoint Platform username +
 Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click OK. +
@@ -27,7 +27,7 @@ image::import-api-definition-2f3e3.png[]
 +
 Under your *selected modules*, you can select the version of the API you want to import. +
 You can choose more than one API to import.
-. Click Finish.
+. Click *Finish*.
 
 APIKit generates the Flow based on the imported API definition.
 
@@ -51,7 +51,7 @@ image::import-api-definition-2f3e3.png[]
 +
 Under your *selected modules*, you can select the version of the API you want to import. +
 You can choose more than one API to import.
-. Click Finish.
+. Click *Finish*.
 
 APIKit generates the Flow based on the API definition imported from Design Center.
 
