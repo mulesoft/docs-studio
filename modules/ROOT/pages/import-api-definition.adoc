@@ -17,13 +17,11 @@ This feature is possible through API Sync. If you are using an older version of 
 . In the *Add API Specification Dependency* tab, click the plus icon, and select *From Exchange*
 . Select your Anypoint Platform username +
 Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
-. From the list of available APIs, select the one you want and click OK. +
-[TIP]
---
+. From the list of available APIs, select the one you want and click OK.
++
 You can type an `*` character in the search bar and press enter for available modules to display all your available APIs.
 +
-image::import-api-definition-2f3e3.png[]
---
+image::import-api-definition-2f3e3.png[import-api-definition-2f3e3]
 +
 Under your *selected modules*, you can select the version of the API you want to import. +
 You can choose more than one API to import.
@@ -42,12 +40,10 @@ image::import-api-definition-c9ad9.png[]
 +
 Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click *Add* to add it to your project.
-[TIP]
---
++
 You can type an `*` character in the search bar and press enter for available modules to display all your available APIs.
 +
-image::import-api-definition-2f3e3.png[]
---
+image::import-api-definition-2f3e3.png[import-api-definition-2f3e3]
 +
 Under your *selected modules*, you can select the version of the API you want to import. +
 You can choose more than one API to import.

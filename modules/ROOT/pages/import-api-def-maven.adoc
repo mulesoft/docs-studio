@@ -1,4 +1,4 @@
-= Importing an API Definition from Exchange
+= Importing an API Definition from Maven
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
