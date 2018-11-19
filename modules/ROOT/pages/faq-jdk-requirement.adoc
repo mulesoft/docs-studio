@@ -3,7 +3,9 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 6.4.4 requires Java 7 or Java 8 depending on which Mule runtime you want to use:
+Anypoint Studio 6.5.0 requires Java 8 to start.
+Anypoint Studio 6.4.4 requires Java 7 or Java 8 to start.
+You can select a different Java version to execute Mule projects. Depending on which Mule runtime you want to use:
 
 * Mule 3.9.x requires Studio running on Java 8.
 * Mule 3.5.x requires Studio running on Java 7.
