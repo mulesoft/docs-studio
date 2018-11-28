@@ -9,7 +9,7 @@ Anypoint Studio is MuleSoft's Eclipse-based integration development environment 
 [NOTE]
 Anypoint Studio 6 is not compatible with Mule 4.
 
-The same editor also allows you to edit API definition files (in https://raml.org/[RAML] and WSDL), create domains that define xref:3.8@mule-runtime::shared-resources.adoc[shared resources].
+The same editor also allows you to edit API definition files (in https://raml.org/[RAML] and WSDL), and create domains that define xref:3.8@mule-runtime::shared-resources.adoc[shared resources].
 
 Anypoint Studio offers two parallel tabs that you can utilize to design and craft your applications:
 
