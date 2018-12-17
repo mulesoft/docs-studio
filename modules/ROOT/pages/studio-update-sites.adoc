@@ -30,7 +30,7 @@ To check your version of Anypoint Studio, go to *Anypoint Studio* > *About Anypo
 
 Updates for Anypoint Studio application and components, Mule runtime, SAP connector and RAML editor.
 
-`+http://studio.mulesoft.org/s2/updates+`
+`+http://studio.mulesoft.org/s3/updates+`
 
 Updates:
 
@@ -41,7 +41,7 @@ Updates:
 
 Updates the Mule runtime version embedded within Studio.
 
-`+http://studio.mulesoft.org/s2/studio-runtimes/+`
+`+http://studio.mulesoft.org/s3/studio-runtimes/+`
 
 Updates:
 
@@ -63,7 +63,7 @@ Updates the RAML Editor in Anypoint Studio.
 
 xref:2.1@munit::index.adoc[MUnit] framework for testing Mule Applications
 
-`+http://studio.mulesoft.org/s2/munit+`
+`+http://studio.mulesoft.org/s3/munit+`
 
 
 == Allowing Connection to Update Site Through Firewall
