@@ -13,7 +13,7 @@ image::studioruntimes.png[StudioRuntimes]
 +
 If Studio does not show a list of update sites from the drop-down menu, you need to add this update site manually:
 +
-.. Click the *Add..* button next to the drop-down menu.
+.. Click the *Add...* button next to the drop-down menu.
 .. In *Name*, add a name for this update site. For example: `Mule ESB Runtimes`.
 .. In *Location*, add the Mule runtimes update site: `+http://studio.mulesoft.org/r3/studio-runtimes/+`
 . Check the box to select Community or Enterprise and click *Next*.
