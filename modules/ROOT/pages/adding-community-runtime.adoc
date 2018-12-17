@@ -10,6 +10,12 @@ endif::[]
 . In the *Work With* field of the *Install* wizard, use the drop-down menu to select the update site for Mule.
 +
 image::studioruntimes.png[StudioRuntimes]
++
+If Studio does not show a list of update sites from the drop-down menu, you need to add this update site manually:
++
+.. Click the *Add...* button next to the drop-down menu.
+.. In *Name*, add a name for this update site. For example: `Mule ESB Runtimes`.
+.. In *Location*, add the Mule runtimes update site: `+http://studio.mulesoft.org/r3/studio-runtimes/+`
 . Check the box to select Community or Enterprise and click *Next*.
 . Select one or more runtimes you want to install. If you only want one version, expand the item and click the version you want. After selecting one or more versions, click *Next*.
 +
