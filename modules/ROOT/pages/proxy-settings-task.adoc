@@ -23,6 +23,9 @@ Keep in mind that when setting a manual provider, you should not disable the def
 When applying changes to your proxy settings, Anypoint Studio restarts the Mule instance used to obtain metadata and test outbound connections.
 If this fails, manually restart your instance by going to *Preferences* > *Tooling*, and clicking *Restart Instance*.
 
+Studio 7 propagates the proxy configuration to the runtimes when running applications. +
+This means that all your deployed applications will inherit your proxy configuration.
+
 == See Also
 
 * xref:proxy-settings-reference.adoc[Proxy Settings Reference (Anypoint Studio)]
