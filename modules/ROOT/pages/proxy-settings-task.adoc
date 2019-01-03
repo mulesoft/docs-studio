@@ -7,21 +7,24 @@ Anypoint Studio allows you to configure proxy configurations for when your compu
 Anypoint Studio only supports configurations for non-authenticated proxies.
 
 . Open the preferences view. +
-In OSx go to Anypoint Studio > Preferences.. or hit `cmd + ,`. +
-In Windows and Linux go to Window > Prefereces...
-. Under General select Network Connections.
+In OSx go to *Anypoint Studio* > *Preferences...* or hit `cmd + ,`. +
+In Windows and Linux go to *Window* > *Prefereces...*
+. Under *General*, select *Network Connections*.
 . Select your Active Provider: +
-* Direct causes Anypoint Studio to open connections without the use of a proxy server.
-* Manual causes Anypoint Studio to open connections using the settings defined in the options below.
-* Native causes Anypoint Studio to open connections using settings discovered in the OS where Anypoint Studio is installed.
-. Click the Edit button when selecting the proxy entry for each schema to configure its host and port number.
+* *Direct* causes Anypoint Studio to open connections without the use of a proxy server.
+* *Manual* causes Anypoint Studio to open connections using the settings defined in the options below.
+* *Native* causes Anypoint Studio to open connections using settings discovered in the OS where Anypoint Studio is installed.
+. Click the *Edit* button when selecting the proxy entry for each schema to configure its host and port number.
 
 If necessary, you can add bypasses to your proxy. This is a list of hosts that should not use any proxy. +
-Click Add Host... to add hostnames to your proxy bypass list. +
-Keep in mind that when setting a manual provider, you should not disable the default localhost and 127.0.0.1 bypasses. Otherwise the embedded Mule Runtime within Studio won't be able to reach your developing application.
+Click *Add Host...* to add hostnames to your proxy bypass list. +
+Keep in mind that when setting a manual provider, you should not disable the default localhost and 127.0.0.1 bypasses. Otherwise, Studio's embedded Mule Runtime won't be able to reach your developing application.
 
 When applying changes to your proxy settings, Anypoint Studio restarts the Mule instance used to obtain metadata and test outbound connections.
-If this fails, manually restart your instance by going to Preferences > Tooling, and clicking Restart Instance.
+If this fails, manually restart your instance by going to *Preferences* > *Tooling*, and clicking *Restart Instance*.
+
+Studio 7 propagates the proxy configuration to the Mule runtime engines when running applications. +
+This means that all your deployed applications will inherit your proxy configuration.
 
 == See Also
 
