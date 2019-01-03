@@ -28,4 +28,4 @@ This means that all your deployed applications will inherit your proxy configura
 
 == See Also
 
-* xref:proxy-settings-referenc2e2.adoc[Proxy Settings Reference (Anypoint Studio)]
+* xref:proxy-settings-reference.adoc[Proxy Settings Reference (Anypoint Studio)]
