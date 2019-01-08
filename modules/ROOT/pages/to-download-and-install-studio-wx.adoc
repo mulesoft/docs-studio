@@ -1,28 +1,75 @@
-= Downloading and Installing Anypoint Studio (Windows)
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+= Download and Install Anypoint Studio 7.3 (Windows)
 
-* Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
+== Prerequisites
 
-To install Anypoint Studio:
+* If your environment requires JDK 8 to be installed somewhere other than your computer, write down the location, as you'll need it later. The installation is slightly different depending on the location of JDK 8.
+* You can't use a workspace created by Anypoint Studio 6.x or for Mule 3.x and earlier. If you choose to use an existing workspace once Studio is launched, the workspace must have been created using Anypoint Studio 7.0 or later, and must be for Mule 4.x or later.
 
-. Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it into the 'C:\' root folder. +
-If you are using a Windows Anti-Virus application, ensure that the `plugin/` and `features/` directories are under the “trusted” category.
-. Open the extracted Anypoint Studio.
-. Click OK to accept the default workspace. +
+== Install Anypoint Studio 7.3
+
+. Download Anypoint Studio installer from the link:https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site^].
++
+image:installstudioversionscreen.png[Anypoint Studio version screen]
+
+. Launch the Anypoint Studio (Studio) installer. 
+. If Windows warns you about running an EXE file downloaded from the internet, verify that the publisher is MuleSoft.
+. Click Yes and accept the MuleSoft Studio license agreement.
+. The installer shows the default location. We recommend that you accept it, though you can change it here.
+. The installer checks to see if JDK 8 is installed on your computer. If the installer finds JDK 8 installed on your computer, skip to step 8. If the installer doesn't find JDK 8, it prompts you to install the JDK 8 for your operating system. 
++
+image:installstudioneedsjdk.png[]
+
+. The next step depends on whether or not your environment uses JDK 8 installed in a location other than the same machine on which you're installing Studio.
++
+** If you are allowed to install JDK 8 on your machine, follow the prompts to install JDK 8 for your operating system.
++
+... Click **JDK version**.
+... Accept the JDK 8 license agreement. 
+... Select the Windows x64 version of the JDK 8. 
++
+image:installstudiojdkchoice.png[]
+
+... Follow prompts and accept defaults to complete installation of JDK 8. We recommend that you accept default values.
+... Close the JDK 8 installer window.
+... Return to the MuleSoft installation window. 
+... Click **Check Installation** to verify that the JDK 8 installed correctly.
+... The window confirms that the JDK 8 is installed.
 +
 [NOTE]
 --
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
+You may get a Windows firewall warning if this is the first time JDK has been installed on your computer. We recommend that you allow access to enable all functions of Anypoint Studio. If you do not allow access, some features of Anypoint Studio may not work properly.
 --
 
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
++
+** If your environemnt requires that JDK 8 not be installed on the same machine where you are installing Studio, click **Continue Anypoint Studio installation anyway (advanced).** (Step 6)
++
+image:installstudioadvancedmode.png[]
+
+. Follow the prompts to install Anypoint Studio. When the installation is complete, the installer displays **Anypoint Studio was installed successfully**.
++
+image:installstudiosucess.png[]
+
+[NOTE]
+--
+If you see the following message when you launch Anypoint Studio you must uninstall and reinstall it using the instructions in <<Uninstall and Reinstall Studio>>.
+
+image:installstudiojre.png[]
+--
+
+[start=9]
+. Click **Open Release Notes.**
+. Click **Finish**
+. The installer opens a browser window to the Release Notes and opens the Anypoint Studio launcher.
+. Open the installed Anypoint Studio.
+. Click **OK** to accept the default workspace. +
+
+== Uninstall and Reinstall Studio
+
+If Studio doesn't install successfully, unninstall Anypoint Studio from your computer.
+Retry the installation on the same computer as JDK 8, making sure to install JDK 8 before proceeding with the Studio installation.
 
 == See Also
 
-* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]
-* xref:jdk-requirement-wx-workflow.adoc[Configuring Java JDK (Windows)]
-* xref:studio-configure-vm-task-wx.adoc[Configuring Studio's Default VM (Windows)]
+* link:/anypoint-studio/v/7.2/studio-xulrunner-wx-task[To Configure XULRunner as Studio's Default Layout Engine (Windows)]
+* link:/anypoint-studio/v/7.2/jdk-requirement-wx-workflow[To Configure Java JDK (Windows)]
+* link:/anypoint-studio/v/7.2/studio-configure-vm-task-wx[To Configure Studio's Default VM (Windows)]
