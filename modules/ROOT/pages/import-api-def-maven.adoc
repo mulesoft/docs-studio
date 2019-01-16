@@ -29,7 +29,7 @@ You can add a ZIP bundle file as your API definition and click *Open*.
 . Click *Install*, and *OK*.
 . Anypoint Studio asks you if you want to scaffold your API specification.
 
-== Implementing an API from Exchange Into an Existing Project
+== Implementing an API from Maven Into an Existing Project
 
 . Select your project from the Package Explorer view.
 . Click the API Sync icon on the top menu bar.
