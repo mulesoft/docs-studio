@@ -13,7 +13,6 @@ This feature is possible through API Sync. If you are using an older version of 
 +
 . Type a name for your project.
 . Select a Mule runtime version 4.1.4 or later.
-. Check the *API Implementation* checkmark.
 . In the *Add API Specification Dependency* tab, click the plus icon, and select *From Exchange*
 . Select your Anypoint Platform username +
 Additionally you can click the "Add Account" button to use a new Anypoint Platform account.

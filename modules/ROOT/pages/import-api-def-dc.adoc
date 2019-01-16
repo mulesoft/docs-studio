@@ -16,7 +16,6 @@ Follow the xref:studio::import-api-definition.adoc[Importing an API Definition f
 +
 . Type a name for your project.
 . Select a Mule runtime version.
-. Check the *API Implementation* checkmark.
 . In the *Add Local API Specification* tab, type the location of your local API, or click the *...* button and select *Browse Files*.
 You can import a RAML file, or an entire zip file bundle if your API has schemas and examples.
 . Click *Finish*.

@@ -13,7 +13,6 @@ This feature is possible through API Sync. If you are using an older version of 
 +
 . Type a name for your project.
 . Select a Mule runtime version 4.1.4 or later.
-. Check the *API Implementation* checkmark.
 . In the *Add API Specification Dependency* tab, click the plus icon, and select *From Maven*
 . You can specify your API definition's Maven coordinates, or you can install a local file into your Maven repository.
 
