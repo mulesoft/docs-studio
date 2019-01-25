@@ -48,7 +48,7 @@ Under your *selected modules*, you can select the version of the API you want to
 You can choose more than one API to import.
 . Click *Finish*.
 
-APIKit generates the Flow based on the API definition imported from Exchange.
+APIKit generates a new Mule configuration file with the flow based on the API definition you just imported.
 
 == See Also
 
