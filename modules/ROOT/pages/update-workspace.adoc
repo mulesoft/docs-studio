@@ -70,5 +70,5 @@ We strongly recommend not to preserve the following declarations: configs, name,
 
 == See Also
 
-* xref:4.1@mule-runtime::packager-concept.adoc[About the Mule Packager Tool]
+* xref:4.1@mule-runtime::mmp-concept#mule-application-packaging.adoc[Mule Application Packaging]
 * xref:4.1@mule-runtime::about-classloading-isolation.adoc[About Class Loading Isolation]
