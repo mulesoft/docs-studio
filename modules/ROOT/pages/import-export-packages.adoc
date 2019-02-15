@@ -63,7 +63,7 @@ image::import-export-packages-a1b21.png[]
 . Select the project that you want to export, and click *Next*.
 . In the *JAR file* drop-down menu, click the ellipses (...) button to explore your local drive, and select the folder to which you want to export your JAR deployable file. +
 Additionally, you can choose *Attach Project Sources* to include metadata that Studio requires to re-import the deployable file as an open Mule project into your workspace. +
-This is the same as using the `-DattachMuleSources` flag when packaging using the Mule Maven Plugin. See xref:4.1@mule-runtime::package-task-mmp.adoc[To Package a Mule Application (Mule Maven Plugin)] for more information.
+This is the same as using the `-DattachMuleSources` flag when packaging using the Mule Maven Plugin. See xref:mule-runtime::mmp-concept.adoc#mule-application-packaging[Mule Application Packaging] for more information.
 +
 You can also choose *Include Project Modules and Dependencies*. +
 This option creates a heavy package with all the dependencies of your project already packaged in your app. This is required to deploy your app to CloudHub. +
@@ -71,5 +71,4 @@ If you uncheck this option, Studio exports your project in a lightweight package
 
 == See Also
 
-* xref:4.1@mule-runtime::packager-concept.adoc[About the Mule Packager Tool]
 * xref:import-project-exchange.adoc[To Import a Mule Project from Exchange]
