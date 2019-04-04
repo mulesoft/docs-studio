@@ -5,40 +5,41 @@ endif::[]
 
 Anypoint Studio allows you to import an API Definition from Design Center and implement it either into a new Mule Project, or an existing one.
 
-== Implementing an API imported from Design Center Into a New Project
+== Importing an API from Design Center into a New Project
 
-. Select *File* > *New* > *Mule Project* to create a project, and set the field values in the project wizard:
+. Select *File* > *New* > *Mule Project* to create a project.
+. Set the field values in the project wizard:
 +
 .. Type a name for your project.
 .. Select a Mule runtime version.
 .. Select *Specify API definition file location or URL*.
 .. To the right of the *Location* field, click the "..." button and select *Design Center*.
 . In the Browse Design Center for APIs window:
-* Select your Anypoint Platform user and business group.
+* Select your Anypoint Platform Username and Business Group.
 +
 Logging previously into Anypoint Platform, makes your Username and Business Group details grayed out.
 +
-Additionally, you can click the *Add Account* button to use a new Anypoint Platform account.
+Optionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click *OK*.
 . Click *Finish*.
 
-APIKit generates the Flow based on the API definition imported from Design Center.
+APIKit generates the flow based on the API definition imported from Design Center.
 
-== Implementing an API imported from Design Center Into an Existing Project
+== Importing an API from Design Center into an Existing Project
 
 . Right click your Mule Project on the Package Explorer View.
 . Select *Anypoint Platform* and then *Import from Design Center*.
-. Select your Anypoint Platform user and business group.
+. Select your Anypoint Platform Username and Business Group.
 +
 Logging previously into Anypoint Platform makes your Username and Business Group details grayed out.
 +
-Additionally, you can click the *Add Account* button to use a new Anypoint Platform account.
+Optionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click *OK*.
 +
 Importing an API definition from Design Center into an existing project deletes all your resources from your src/main/resources/api directory.
 . Click *Finish*.
 
-APIKit generates the Flow based on the API definition imported from Design Center.
+APIKit generates the flow based on the API definition imported from Design Center.
 
 
 == See Also
