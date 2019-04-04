@@ -30,7 +30,7 @@ APIKit generates the Flow based on the API definition imported from Design Cente
 . Select *Anypoint Platform* and then *Import from Design Center*.
 . Select your Anypoint Platform user and business group.
 +
-Logging previously into Anypoint Platform, makes your Username and Business Group details grayed out.
+Logging previously into Anypoint Platform makes your Username and Business Group details grayed out.
 +
 Additionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click *OK*.
