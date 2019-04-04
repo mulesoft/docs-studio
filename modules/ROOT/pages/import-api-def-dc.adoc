@@ -36,7 +36,7 @@ Additionally, you can click the *Add Account* button to use a new Anypoint Platf
 . From the list of available APIs, select the one you want and click *OK*.
 +
 Importing an API definition from Design Center into an existing project deletes all your resources from your src/main/resources/api directory.
-. Click Finish.
+. Click *Finish*.
 
 APIKit generates the Flow based on the API definition imported from Design Center.
 
