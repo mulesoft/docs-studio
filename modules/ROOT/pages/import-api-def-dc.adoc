@@ -17,7 +17,7 @@ Anypoint Studio allows you to import an API Definition from Design Center and im
 . In the Browse Design Center for APIs window:
 * Select your Anypoint Platform username and business group.
 +
-If you are logged into AnyPoint Platform, your username and business group will be grayed out.
+If you have configured your AnyPoint Platform credentials, your username and business group will be grayed out.
 +
 Optionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click *OK*.
@@ -31,7 +31,7 @@ APIKit generates the flow based on the API definition imported from Design Cente
 . Select *Anypoint Platform* and then *Import from Design Center*.
 . Select your Anypoint Platform username and business group.
 +
-If you are logged into AnyPoint Platform, your username and business group will be grayed out.
+If you have configured your AnyPoint Platform credentials, your username and business group will be grayed out.
 +
 Optionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . From the list of available APIs, select the one you want and click *OK*.
