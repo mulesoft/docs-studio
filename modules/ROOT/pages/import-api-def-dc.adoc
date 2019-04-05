@@ -29,7 +29,7 @@ APIKit generates the flow based on the API definition imported from Design Cente
 
 . Right click your Mule Project on the Package Explorer View.
 . Select *Anypoint Platform* and then *Import from Design Center*.
-. Select your Anypoint Platform user and business group.
+. Select your Anypoint Platform username and business group.
 +
 If you are logged into AnyPoint Platform, your username and business group will be grayed out.
 +
