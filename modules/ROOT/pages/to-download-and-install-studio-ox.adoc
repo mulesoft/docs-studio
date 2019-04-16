@@ -1,4 +1,4 @@
-= Downloading and Installing Anypoint Studio (OSx)
+= Downloading and Installing Anypoint Studio (OS X)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
