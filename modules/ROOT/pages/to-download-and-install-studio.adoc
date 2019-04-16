@@ -6,7 +6,7 @@ endif::[]
 You can only download the latest version of Anypoint Studio. These instructions are covered only if you already have the corresponding ZIP file for an older version:
 
 * xref:to-download-and-install-studio-wx.adoc[To Install Anypoint Studio 7.1 (Windows)]
-* xref:to-download-and-install-studio-ox.adoc[To Install Anypoint Studio 7.1 (OSx)]
+* xref:to-download-and-install-studio-ox.adoc[To Install Anypoint Studio 7.1 (OS X)]
 * xref:to-download-and-install-studio-lx.adoc[To Install Anypoint Studio 7.1 (Linux)]
 
 [NOTE]
