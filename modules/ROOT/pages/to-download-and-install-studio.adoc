@@ -3,10 +3,10 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To download and install Aynpoint Studio, follow the instructions based on your operative system:
+To download and install Anypoint Studio, follow the instructions based on your operating system:
 
 * xref:to-download-and-install-studio-wx.adoc[Downloading and Installing Anypoint Studio (Windows)]
-* xref:to-download-and-install-studio-ox.adoc[Downloading and Installing Anypoint Studio (OSx)]
+* xref:to-download-and-install-studio-ox.adoc[Downloading and Installing Anypoint Studio (OSX)]
 * xref:to-download-and-install-studio-lx.adoc[Downloading and Installing Anypoint Studio (Linux)]
 
 [NOTE]
