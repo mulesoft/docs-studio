@@ -1,4 +1,4 @@
-= To Install Anypoint Studio 7.1 (OSx)
+= To Install Anypoint Studio 7.1 (OS X)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
