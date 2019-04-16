@@ -1,9 +1,10 @@
-= To Download and Install Anypoint Studio 7.2 (OSx)
+= To Download and Install Anypoint Studio 7.2 (OS X)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-* Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
+[NOTE]
+Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
 
 To install Anypoint Studio 7.2:
 
