@@ -6,7 +6,7 @@ endif::[]
 To download and install Anypoint Studio, follow the instructions based on your operating system:
 
 * xref:to-download-and-install-studio-wx.adoc[Downloading and Installing Anypoint Studio (Windows)]
-* xref:to-download-and-install-studio-ox.adoc[Downloading and Installing Anypoint Studio (OSX)]
+* xref:to-download-and-install-studio-ox.adoc[Downloading and Installing Anypoint Studio (OS X)]
 * xref:to-download-and-install-studio-lx.adoc[Downloading and Installing Anypoint Studio (Linux)]
 
 [NOTE]
