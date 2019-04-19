@@ -59,8 +59,7 @@ image::import-export-packages-a1b21.png[]
 === Exporting a Studio Project to a Mule Deployable File
 
 . Select *Export* from the *File* menu.
-. In the Import wizard, click to expand the Mule folder, and select *Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)*, then click Next.
-. Select the project that you want to export, and click *Next*.
+. In the Export wizard, click to expand the Mule folder, and select *Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)*, then click Next.
 . In the *JAR file* drop-down menu, click the ellipses (...) button to explore your local drive, and select the folder to which you want to export your JAR deployable file. +
 Additionally, you can choose *Attach Project Sources* to include metadata that Studio requires to re-import the deployable file as an open Mule project into your workspace. +
 This is the same as using the `-DattachMuleSources` flag when packaging using the Mule Maven Plugin. See xref:mule-runtime::mmp-concept.adoc#mule-application-packaging[Mule Application Packaging] for more information.
