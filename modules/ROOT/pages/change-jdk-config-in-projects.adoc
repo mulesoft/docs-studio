@@ -1,9 +1,9 @@
-= Update the JDK Version from Studio
+= Change the JDK from Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can change the version of the JDK used to run your Mule project from Studio.
+You can select any of your installed JDKs as the default Java runtime environment that Studio uses to run your Mule project.
 
 [NOTE]
 Anypoint Studio 7.3 and later require JDK 1.8 to launch. +
