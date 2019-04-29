@@ -7,7 +7,7 @@ You can select any of your installed JDKs as the default Java runtime environmen
 
 [NOTE]
 Anypoint Studio 7.3 and later require JDK 1.8 to launch. +
-These instructions change the JDK used to start up your Mule runtime in your Studio testing environment.
+These instructions change the JDK used to start up your Mule runtime in your Studio environment.
 
 == Configuring the JDK Version for your Studio Projects
 
