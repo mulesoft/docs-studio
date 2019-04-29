@@ -9,6 +9,7 @@
  ** xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
  ** xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
 * xref:faq-jdk-requirement.adoc[JDK Requirement]
+ ** xref:change-jdk-config-in-projects.adoc[Change the JDK from Studio]
  ** xref:jdk-requirement-wx-workflow.adoc[Configuring Java JDK (Windows)]
  ** xref:studio-configure-vm-task-wx.adoc[Configuring Studio's Default VM (Windows)]
  ** xref:jdk-requirement-lnx-worflow.adoc[Configuring Java JDK (Linux)]
