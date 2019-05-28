@@ -24,16 +24,20 @@ Imagine you are obtaining status update data from the Slack connector and that y
 
 image::payload-autocomplete.png[]
 
+== Specifically Declaring Metadata
 
-Now, imagine you are obtaining status update data from the Slack connector and that you want to log the message you are sending to Slack, but you aren't familiar with the property names used by this connector. Instead of having to look up Slack's documentation to find out the name of the property you need, you can just place a Logger message processor right after the Slack connector and write in it. If you start writing `#[payload.` in the logger's Message field, and then press `ctrl + space bar`, you get a list of all the properties and methods associated to the payload, including the properties returned by the request that you're performing on the Slack connector.
+All components in a Mule application let you manually define the metadata that they expose. When building prescriptive and reusable components in a flow, you need to pay attention when to let Datasense handle the metadata that a component expects, and when you need to manually define a metadata that a component should expect or expose.
 
-image::payload-autocomplete.png[]
+We recommend you to specifically declare metadata only when:
 
-== Managing Metadata Through Flows
+* It is absolutely required, for example, metadata for a value being defined by you.
+* When it is most cohesive to an annotated value, for example, when metadata for a value is being used or expected by a component.
 
-Whenever data lives outside the scope of a reusable artifact, you should also declare it as part of that artifact's contract. Flows and subflows, for example, need to declare their metadata contract, just like any other processor. You should declare your input and output metadata specifying the shape of event you require, and the shape of the event you return to the caller. Output event declaration, if not specified, is automatically inferred from flow content when the flow is not recursive.
+For example, the transform message component should not define a metadata contract because Dataweave acts as a data mediation device between the producer and consumer of data, Those boundaries are the ones that should define the contracts. By explicitly declaring a metadata type, you are masking the actual metadata type of the data coming out from your transform message component. DataWeave transform message implementation can completely infer this output data type. The best practice is to define expected metadata where this data is used or consumed, and it is not automatically inferred. At the same time, defining the input metadata for your Transform Message component also masks the actual incoming metadata coming into your transform message component to be used on mapping. It would be best to define metadata where data is produced, and again, only when it is not automatically inferred.
 
-Declaring a Flow Reference component that points to another flow with a Set Payload component right after an HTTP Lister source causes the Set Payload component to throw an `Unable to resolve reference` error.
+Additionally, whenever data lives outside the scope of a reusable artifact, you should declare its metadata as part of that component's contract. Flows and subflows, for example, need to declare their metadata contract, just like any other processor would. You should declare your input and output metadata specifying the shape of event you require, and the shape of the event you return to the caller. Output event declaration, if not specified, is automatically inferred from flow content when the flow is not recursive.
+
+If you declare a Flow Reference component that points to another flow with a Set Payload component right after an HTTP Listener source, the Set Payload component throws an `Unable to resolve reference` error.
 
 image::datasense-perceptive-flow-design-concept-a209e.png[]
 
