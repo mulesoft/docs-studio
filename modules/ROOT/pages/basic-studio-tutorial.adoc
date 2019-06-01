@@ -341,4 +341,3 @@ The following topics help you augment your knowledge of Studio:
 * Learn about routing information: xref:general:getting-started:content-based-routing.adoc[Content-Based Routing].
 * Want to learn more about Mule Expression Language (MEL)? Check out the xref:3.7@mule-runtime::mule-expression-language-mel.adoc[complete reference].
 * Get a deeper explanation about the Mule message and anatomy of a Mule flow in xref:3.7@mule-runtime::mule-concepts.adoc[Mule Concepts].
-* Want to try a Hello World example using xref:runtime-manager::cloudhub.adoc[CloudHub] instead? Check out xref:general:getting-started:deploy-to-cloudhub.adoc[Deploy to CloudHub].
