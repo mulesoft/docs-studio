@@ -101,7 +101,6 @@ image::36loggermessagehelp.png[36LoggerMessageHelp]
 
 == See Also
 
-* *NEXT STEP:* xref:general:getting-started:build-a-hello-world-application.adoc[Build an application in Anypoint Studio].
 * xref:setting-up-your-development-environment.adoc[Setting Up Your Development Environment]
 * Learn more about flows in xref:3.7@mule-runtime::mule-application-architecture.adoc[Mule Application Architecture].
 * Skip ahead to learn about xref:3.7@mule-runtime::mule-message-structure.adoc[message structure].
