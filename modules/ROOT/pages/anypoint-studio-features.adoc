@@ -74,5 +74,4 @@ https://raml.org/[RAML] is a widely used standard for defining APIs through a ve
 
 == See Also
 
-* xref:general:getting-started:build-a-hello-world-application.adoc[Build an application in Anypoint Studio].
 * xref:setting-up-your-development-environment.adoc[Setting Up Your Development Environment]
