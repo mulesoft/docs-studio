@@ -174,7 +174,3 @@ No, Anypoint Studio runs as an independent application on your machine and it do
 === What happens when my license key expires?
 
 MuleSoft operates an annual subscription model. Every year in order to continue to utilize MuleSoft, you will need to renew your account. Your Customer Success Manager will reach out with regards to renewal during their regular cadence with you. However, if you are ever interested in discussing renewal beforehand, please do not hesitate to reach out to your Customer Success Manager.
-
-== See Also
-
-* xref:general:getting-started:build-a-hello-world-application.adoc[Build a Hello World Application]
