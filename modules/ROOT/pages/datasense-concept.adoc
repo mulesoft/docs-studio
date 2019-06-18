@@ -1,10 +1,12 @@
-= Understanding How DataSense Uses Mule Event Metadata
+= DataSense
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :keywords: anypoint studio, datasense, metadata, meta data, query metadata, dsql, data sense query language
 
 DataSense is a feature of Anypoint Studio that uses Mule event metadata to help you design applications. Rather than forcing you to manually discover this metadata, Anypoint Studio automatically acquires it so that you can map or use this data in your application.
+
+== Understanding How DataSense Uses Mule Event Metadata
 
 Understanding how your components use metadata in a flow is key to ensuring data reliability by enabling early detection of errors during project design and data reusability in your Mule application by detecting when a component requires metadata that is not being exposed to it within its scope.
 
