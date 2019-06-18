@@ -17,7 +17,7 @@ A new tab opens with an empty scaffolding of your input structure. Values are po
 [NOTE]
 When the input is of type POJO, samples must be written in DataWeave format. This is not a transformation in itself, just a way to express how data is structured.
 
-. Replace placeholder values with sample values to see how they are mapped out to the preview pane.
+. Replace placeholder values with sample values to see how they are mapped out to the Preview pane.
 +
 image::dw-popupalte-sample-data.png[sample data]
 
@@ -26,7 +26,7 @@ image::dw-popupalte-sample-data.png[sample data]
 To reset the sample to the original scaffolding with placeholders, click the *rescafold button* image:dw-rescafold-button.png[rescafold]. Note that any sample data you provided is lost.
 
 
-. Enable the preview pane by clicking on the *Preview* button on the top-right of the editor.
+. Enable the Preview pane by clicking on the *Preview* button on the top-right of the editor.
 
 +
 As you make changes in the DataWeave code or your sample data, notice how the output data structure changes.
