@@ -46,7 +46,6 @@
  ** xref:breakpoints-concepts.adoc[Breakpoints]
  ** xref:mule-watches-view-reference.adoc[DataWeave Expression Watches View Reference]
 * xref:datasense-concept.adoc[DataSense]
- ** xref:datasense-perceptive-flow-design-concept.adoc[Perceptive Flow Design]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
 * xref:import-export-packages.adoc[Importing and Exporting Projects]
  ** xref:import-project-exchange.adoc[Importing a Mule Project from Exchange]
