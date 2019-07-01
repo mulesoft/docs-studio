@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: to-download-and-install-studio-wx.adoc, to-download-and-install-studio-ox.adoc, to-download-and-install-studio-lx.adoc
 
 To download and install Anypoint Studio, follow the instructions based on your operating system:
 
