@@ -63,11 +63,37 @@ image::import-export-packages-a1b21.png[]
 . Select the project that you want to export, and click *Next*.
 . In the *JAR file* drop-down menu, click the ellipses (...) button to explore your local drive, and select the folder to which you want to export your JAR deployable file. +
 Additionally, you can choose *Attach Project Sources* to include metadata that Studio requires to re-import the deployable file as an open Mule project into your workspace. +
-This is the same as using the `-DattachMuleSources` flag when packaging using the Mule Maven Plugin. See xref:mule-runtime::mmp-concept.adoc#mule-application-packaging[Mule Application Packaging] for more information.
+This is the same as using the `-DattachMuleSources` flag when packaging using the Mule Maven Plugin, such as in a command-line using the command:
+
+[source,console,linenums]
+----
+$ mvn clean package -DattachMuleSources
+----
+
+Additionally, you can uncheck *Include project modules and dependenciess* to skip bundling the actual modules and external dependencies required to run the Mule application in a Mule runtime. 
+In this case a lightweight JAR file package of the Mule application is created that does *not* include any depenedencies specified in the Mule applicataion's `pom.xml` file. This JAR file is *not* a functional deployable archive file and *cannot* be deployed to a Mule runtime, but instead offers a way to archive just the source files that make up the Mule application. This is the same as using the `-lightWeightPackage` flag when packaging using the Mule Maven plugin, such as in a command-line using the command:
+
+source,console,linenums]
+----
+$ mvn clean package -DlightweightPackage
+----
+
+You can also combine the flags together to create a deployable Mule application package that also includes the source files and metadata to import the package back into Anypoint Studio. 
+
+[source,console,linenums]
+----
+$ mvn clean package -DattachMuleSources -DlightweightPackage
+----
+
+. See xref:mule-runtime::mmp-concept.adoc#mule-application-packaging[Mule Application Packaging] for more information.
 +
 You can also choose *Include Project Modules and Dependencies*. +
 This option creates a heavy package with all the dependencies of your project already packaged in your app. This is required to deploy your app to CloudHub. +
 If you uncheck this option, Studio exports your project in a lightweight package. This is useful if you want to distribute your project to other Studio installations because it only keeps a reference to all its dependencies. When re-importing it to Studio, all your dependencies will be automatically downloaded.
+
+
+
+
 
 == See Also
 
