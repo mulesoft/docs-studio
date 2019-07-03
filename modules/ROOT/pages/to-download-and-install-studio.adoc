@@ -22,10 +22,10 @@ If you are using a Windows Anti-Virus application, ensure that the `plugin/` and
 . Click OK to accept the default workspace.
 +
 include::partial$installation.adoc[tag=workspace-reuse]
-+
-.. Locate your `AnypointStudio.ini` file. +
+
+. Locate your `AnypointStudio.ini` file. +
 This file is located within your Anypoint Studio's installation directory.
-.. Add the -vm option to point to your specific JDK installation path.
+. Add the -vm option to point to your specific JDK installation path.
 +
 [source,text,linenums]
 ----
@@ -51,10 +51,10 @@ C:\progra~1\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
 include::partial$installation.adoc[tag=tilde-workspace-reuse-note]
-+
-.. Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
-.. Go to to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
-.. Add the -vm option to point to your specific JDK installation path.
+
+. Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
+. Go to to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
+. Add the -vm option to point to your specific JDK installation path.
 +
 [source,text,linenums]
 ----
@@ -73,11 +73,11 @@ To support some of Studio Themes in Linux, it is recommended to have GTK version
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
 include::partial$installation.adoc[tag=tilde-workspace-reuse-note]
-+
-.. Locate your `AnypointStudio.ini` file:
+
+. Locate your `AnypointStudio.ini` file:
 +
 This file is located in `/usr/lib/anypointstudio/anypointstudio.ini`.
-.. Add the -vm option to point to your specific JDK installation path.
+. Add the -vm option to point to your specific JDK installation path.
 +
 [source,text,linenums]
 ----
