@@ -1,7 +1,7 @@
 .xref:index.adoc[Anypoint Studio]
 * xref:index.adoc[Anypoint Studio]
+* xref:faq-jdk-requirement.adoc[JDK Requirement]
 * xref:to-download-and-install-studio.adoc[Downloading and Installing Studio]
-* xref:faq-jdk-requirement.adoc[Configuring your JDK Installation]
   ** xref:change-jdk-config-in-projects.adoc[Change the JDK from Studio]
 * xref:faq-default-browser-config.adoc[Troubleshooting Issues with Your Default OS Browser]
  ** xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]
