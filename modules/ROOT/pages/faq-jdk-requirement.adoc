@@ -6,31 +6,30 @@ endif::[]
 
 Anypoint Studio requires Java 8 to run properly.
 
-To verify that you have the correct JDK version installed, type `java -version` in your command line. +
-If you get the error `java: Command not found`, install JDK 1.8. +
-If you get a version different than 1.8, make sure to upgrade, or downgrade to 1.8.
+To verify that you have the correct JDK version installed, type `java -version` in your command line.
 
-After downloading and installing the JDK, make sure that your JDK installation is properly configured within the the JAVA_HOME environment variable by following the instructions below.
+* If you get the error `java: Command not found`, install the JDK 1.8.
+* If you get a version different than 1.8, make sure to upgrade, or downgrade to 1.8.
 
-For more information about these configurations, check the https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html#CJAGAACB[Oracle Documentation resource].
+After downloading and installing the JDK, make sure that your JDK installation is properly configured within the the `JAVA_HOME` environment variable by following the instructions below.
 
 == Windows
 
-. In Search, search for System (Control Panel) and select it.
-. Click Advanced System Settings.
-. Click Environment Variables.
-. In System Variables, select the PATH environment variable.
-. Click Edit.
+. In Search, search for `System (Control Panel)` and select it.
+. Click *Advanced System Settings*.
+. Click *Environment Variables*.
+. In *System Variables*, select the `PATH` environment variable.
+. Click *Edit*.
 +
-If the PATH environment variable does not exist, click New.
-. In Edit System Variable (or New System Variable), make sure that the JDK 1.8.0/bin directory is the first item in your PATH environment variable, and click OK.
+If the `PATH` environment variable does not exist, click *New*.
+. In *Edit System Variable* (or *New System Variable*), make sure that the JDK 1.8.0 `/bin` directory is the first item in your `PATH` environment variable, and click *OK*.
 +
 [NOTE]
 --
 Blank spaces are not allowed when defining a path on Windows.
 --
 +
-. Click OK.
+. Click *OK*.
 
 To verify that your installation was configured correctly, reopen the command prompt window, and type:
 
@@ -39,47 +38,13 @@ To verify that your installation was configured correctly, reopen the command pr
 > java -version
 ----
 
-This should print the version of the java tool. +
-If the version is other than your desired JDK, or you get the error "java: Command not found", then the JDK is not properly installed.
-
-Under certain circumstances, if you had a JRE installation previous to installing the JDK, your default VM could still be configured as the JRE. +
-To correct this, follow the instructions below to configure Anypoint Studio to point to your JDK installation as the default VM.
-
-. Locate your `AnypointStudio.ini` file:
-+
-This file is located within your Anypoint Studio's installation directory.
-. Add the -vm option to point to your specific JDK installation path.
-+
-[source,text,linenums]
-----
--vm
-C:\progra~1\Java\jdk1.8.0_73\bin\javaw.exe
-----
-+
-[NOTE]
---
-Blank spaces are not allowed when defining paths on Windows. This is why `\Program Files\` changes to `\progra~1\`.
---
-+
-When configuring the -vm option, its format must be exact:
-+
-* The -vm option and the installation path must be in separate lines.
-* The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
-* The -vm option must occur after the other Studio-specific options (such as -product, --launcher.&#42;, etc), but before the -vmargs option, since everything after -vmargs is passed directly to the JVM.
-
-If you encounter “Java was started but returned exit code=1” error while starting Anypoint Studio, modify the -vm argument to point to the jvm.dll as follows:
-
-[source,text,linenums]
-----
--vm
-C:\progra~1\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
-----
+This should print the version of the java tool.
 
 == OSx
 
-. Edit the startup file (~/.bashrc).
-. Modify PATH variable. +
-Make sure that the JDK 1.8.0/bin directory is the first item in your PATH environment variable, as shown below:
+. Edit the startup file `~/.bashrc`.
+. Modify `PATH` variable. +
+Make sure that the JDK 1.8.0 `/bin` directory is the first item in your `PATH` environment variable, as shown below:
 +
 [source,console,linenums]
 ----
@@ -101,33 +66,13 @@ To verify that your installation was configured correctly, type:
 > java -version
 ----
 
-This should print the version of the java tool. +
-If the version is other than your desired JDK, or you get the error "java: Command not found", then the JDK is not properly installed.
-
-Under certain circumstances, if you had a JRE installation previous to installing the JDK, your default VM could still be configured as the JRE. +
-To correct this, follow the instructions below to configure Anypoint Studio to point to your JDK installation as the default VM.
-
-. Go to `Applications/`, find your `AnypointStudio` package file, right click on it, and select *Show Package Contents*.
-. Navigate to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
-. Add the -vm option to point to your specific JDK installation path.
-+
-[source,text,linenums]
-----
--vm
-/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
-----
-+
-When configuring the -vm option, its format must be exact:
-+
-* The -vm option and the installation path must be in separate lines.
-* The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
-* The -vm option must occur after the other Studio-specific options (such as -product, --launcher.&#42;, etc), but before the -vmargs option, since everything after -vmargs is passed directly to the JVM.
+This should print the version of the java tool.
 
 == Linux
 
-. Edit the startup file (~/.bashrc).
-. Modify PATH variable. +
-Make sure that the JDK 1.8.0/bin directory is the first item in your PATH environment variable, as shown below:
+. Edit the startup file `~/.bashrc`.
+. Modify `PATH` variable. +
+Make sure that the JDK 1.8.0 `/bin` directory is the first item in your PATH environment variable, as shown below:
 +
 [source,console,linenums]
 ----
@@ -149,28 +94,8 @@ To verify that your installation was configured correctly, type:
 > java -version
 ----
 
-This should print the version of the java tool. +
-If the version is other than your desired JDK, or you get the error "java: Command not found", then the JDK is not properly installed.
+This should print the version of the java tool.
 
-Under certain circumstances, if you had a JRE installation previous to installing the JDK, your default VM could still be configured as the JRE. +
-To correct this, follow the instructions below to configure Anypoint Studio to point to your JDK installation as the default VM.
-
-. Locate your `AnypointStudio.ini` file:
-+
-This file is located in `/usr/lib/anypointstudio/anypointstudio.ini`.
-. Add the -vm option to point to your specific JDK installation path.
-+
-[source,text,linenums]
-----
--vm
-/opt/sun-jdk-1.8.0.73/bin/java
-----
-+
-When configuring the -vm option, its format must be exact:
-+
-* The -vm option and the installation path must be in separate lines.
-* The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
-* The -vm option must occur after the other Studio-specific options (such as -product, --launcher.&#42;, etc), but before the -vmargs option, since everything after -vmargs is passed directly to the JVM.
 
 == See Also
 
