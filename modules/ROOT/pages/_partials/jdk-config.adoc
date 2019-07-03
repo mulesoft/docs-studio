@@ -1,0 +1,24 @@
+
+// tag::prereq[]
+Anypoint Studio requires Java 8 to run properly.
+
+To verify that you have the correct JDK version installed, type `java -version` in your command line.
+
+* If you get the error `java: Command not found`, install the JDK 1.8.
+* If you get a version different than 1.8, make sure to upgrade, or downgrade to 1.8.
+
+After downloading and installing the JDK, make sure that your JDK installation is properly configured within the the `JAVA_HOME` environment variable by following the instructions below.
+// end::prereq[]
+
+
+// tag::verify[]
+To verify that your installation was configured correctly, reopen the command prompt window, and type:
+
+[source,console,linenums]
+----
+> java -version
+----
+
+This should print the version of the java tool.
+// end::verify[]
+
