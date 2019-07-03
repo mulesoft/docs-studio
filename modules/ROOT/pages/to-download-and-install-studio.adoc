@@ -21,15 +21,28 @@ If you are using a Windows Anti-Virus application, ensure that the `plugin/` and
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace.
 +
-[NOTE]
---
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
---
-
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
-
+include::partial$installation.adoc[tag=workspace-reuse]
++
+.. Locate your `AnypointStudio.ini` file. +
+This file is located within your Anypoint Studio's installation directory.
+.. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+C:\progra~1\Java\jdk1.8.0_73\bin\javaw.exe
+----
++
+* Blank spaces are not allowed when defining paths on Windows. This is why `\Program Files\` changes to `\progra~1\`.
+include::partial$installation.adoc[tag=vm-argument]
++
+If you encounter “Java was started but returned exit code=1” error while starting Anypoint Studio, modify the -vm argument to point to the `jvm.dll` as follows:
++
+[source,text,linenums]
+----
+-vm
+C:\progra~1\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
+----
 
 [[osx]]
 == OSx
@@ -37,16 +50,19 @@ Click Get Started to start using Anypoint Studio.
 . Extract the Anypoint Studio package and move it to your `/Applications` directory.
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
-When setting a custom path to your workspace, keep in mind that Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. It is recommended to use the absolute path when defining your workspace.
+include::partial$installation.adoc[tag=tilde-workspace-reuse-note]
 +
-[NOTE]
---
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
---
-
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
+.. Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
+.. Go to to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
+.. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
+----
++
+include::partial$installation.adoc[tag=vm-argument]
 
 [[linux]]
 == Linux
@@ -56,16 +72,17 @@ To support some of Studio Themes in Linux, it is recommended to have GTK version
 
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
-When setting a custom path to your workspace, keep in mind that Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. It is recommended to use the absolute path when defining your workspace.
+include::partial$installation.adoc[tag=tilde-workspace-reuse-note]
 +
-[NOTE]
---
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
---
-
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
-
-
-== See Also
+.. Locate your `AnypointStudio.ini` file:
++
+This file is located in `/usr/lib/anypointstudio/anypointstudio.ini`.
+.. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+/opt/sun-jdk-1.8.0.73/bin/java
+----
++
+include::partial$installation.adoc[tag=vm-argument]
