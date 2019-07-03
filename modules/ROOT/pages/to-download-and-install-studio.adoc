@@ -13,14 +13,6 @@ See xref:faq-jdk-requirement.adoc[Configuring your JDK Installation] for instruc
 [NOTE]
 Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different.
 
-== Installation
-
-To download and install Anypoint Studio, follow the instructions based on your operating system:
-
-* <<windows,Windows>>
-* <<osx,OSx>>
-* <<linux,Linux>>
-
 [[windows]]
 == Windows
 
