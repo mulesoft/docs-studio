@@ -1,30 +1,69 @@
-= Anypoint Studio JDK Requirement
+= JDK Requirement
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: jdk-requirement-lnx-worflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-worflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc
 
-Anypoint Studio requires Java 8 to run properly.
+include::partial$jdk-config.adoc[tag=prereq]
 
-To verify that you have the correct JDK version installed, type `java -version` in your command line. +
-If you get the error `java: Command not found`, install JDK 1.8. +
-If you get a version different than 1.8, make sure to upgrade, or downgrade to 1.8.
+== Windows
 
-After downloading and installing the JDK, make sure that your JDK installation is properly configured within the the JAVA_HOME environment variable by following the instructions below:
+. In Search, search for `System (Control Panel)` and select it.
+. Click *Advanced System Settings*.
+. Click *Environment Variables*.
+. In *System Variables*, select the `PATH` environment variable.
+. Click *Edit*.
++
+If the `PATH` environment variable does not exist, click *New*.
+. In *Edit System Variable* (or *New System Variable*), make sure that the JDK 1.8.0 `/bin` directory is the first item in your `PATH` environment variable, and click *OK*.
++
+[NOTE]
+--
+Blank spaces are not allowed when defining a path on Windows.
+--
++
+. Click *OK*.
 
-* xref:jdk-requirement-wx-workflow.adoc[To Configure Java JDK (Windows)]
-* xref:jdk-requirement-lnx-worflow.adoc[To Configure Java JDK (Linux)]
-* xref:jdk-requirement-xos-worflow.adoc[To Configure Java JDK (Mac OSx)]
+include::partial$jdk-config.adoc[tag=verify]
 
-Under certain circumstances, if you had a JRE installation previous to installing the JDK, your default VM could still be configured as the JRE. +
-To correct this, follow the instructions below to configure Anypoint Studio to point to your JDK installation as the default VM:
+== OSx
 
-* xref:studio-configure-vm-task-wx.adoc[To Configure Studio's Default VM (Windows)]
-* xref:studio-configure-vm-task-unx.adoc[To Configure Studio's Default VM (Mac OSx)]
-* xref:studio-configure-vm-task-lnx.adoc[To Configure Studio's Default VM (Linux)]
+. Edit the startup file `~/.bashrc`.
+. Modify `PATH` variable. +
+Make sure that the JDK 1.8.0 `/bin` directory is the first item in your `PATH` environment variable, as shown below:
++
+[source,console,linenums]
+----
+PATH=/usr/local/jdk1.8.0/bin:$PATH
+export PATH
+----
+. Save and close the file.
+. Load the startup file.
++
+[source,console,linenums]
+----
+> source ~/.bashrc
+----
 
-If after doing so, Anypoint Studio still does not recognize your JDK installation, consider uninstalling your the JRE.
+include::partial$jdk-config.adoc[tag=verify]
 
+== Linux
 
-== See Also
+. Edit the startup file `~/.bashrc`.
+. Modify `PATH` variable. +
+Make sure that the JDK 1.8.0 `/bin` directory is the first item in your PATH environment variable, as shown below:
++
+[source,console,linenums]
+----
+PATH=/usr/local/jdk1.8.0/bin:$PATH
+export PATH
+----
+. Save and close the file.
+. Load the startup file.
++
+[source,console,linenums]
+----
+> . /.profile
+----
 
-* For more information about this configuration, check the https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html#CJAGAACB[Oracle Documentation resource].
+include::partial$jdk-config.adoc[tag=verify]

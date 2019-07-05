@@ -3,23 +3,37 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-* Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
+include::partial$installation.adoc[tag=prereq]
 
-To install Anypoint Studio:
+== Installation
 
-. Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it into the 'C:\' root folder. +
+. Extract the Windows installation file into the `C:\` root folder. +
 If you are using a Windows Anti-Virus application, ensure that the `plugin/` and `features/` directories are under the “trusted” category.
 . Open the extracted Anypoint Studio.
-. Click OK to accept the default workspace. +
+. Click OK to accept the default workspace.
 +
-[NOTE]
---
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
---
+include::partial$installation.adoc[tag=workspace-reuse]
 
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
+. Locate your `AnypointStudio.ini` file. +
+This file is located within your Anypoint Studio's installation directory.
+. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+C:\progra~1\Java\jdk1.8.0_73\bin\javaw.exe
+----
++
+* Blank spaces are not allowed when defining paths on Windows. This is why `\Program Files\` changes to `\progra~1\`.
+include::partial$installation.adoc[tag=vm-argument]
++
+If you encounter “Java was started but returned exit code=1” error while starting Anypoint Studio, modify the -vm argument to point to the `jvm.dll` as follows:
++
+[source,text,linenums]
+----
+-vm
+C:\progra~1\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
+----
 
 == See Also
 

@@ -3,24 +3,26 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-* Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
+include::partial$installation.adoc[tag=prereq]
 
-To install Anypoint Studio:
+== Installation
 
-. Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it.
-If you're using OS version Sierra, it's important that you move your extracted app to the `/Applications` folder before you launch it.
-. Open the extracted Anypoint Studio:
+. Extract the Anypoint Studio package and move it to your `/Applications` directory.
+. Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
-When setting a custom path to your workspace, keep in mind that Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. It is recommended to use the absolute path when defining your workspace.
-+
-[NOTE]
---
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
---
+include::partial$installation.adoc[tag=tilde-workspace-reuse-note]
 
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
+. Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
+. Go to to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
+. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
+----
++
+include::partial$installation.adoc[tag=vm-argument]
 
 
 == See Also

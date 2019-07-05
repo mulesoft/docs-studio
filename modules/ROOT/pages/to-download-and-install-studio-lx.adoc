@@ -3,27 +3,29 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+[NOTE]
 To support some of Studio Themes in Linux, it is recommended to have GTK version 2 installed.
 
-* Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
+include::partial$installation.adoc[tag=prereq]
 
-To install Anypoint Studio:
+== Installation
 
-. Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it.
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
-When setting a custom path to your workspace, keep in mind that Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. It is recommended to use the absolute path when defining your workspace.
+include::partial$installation.adoc[tag=tilde-workspace-reuse-note]
+
+. Locate your `AnypointStudio.ini` file:
 +
-[NOTE]
---
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
---
-
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
-
-
+This file is located in `/usr/lib/anypointstudio/anypointstudio.ini`.
+. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+/opt/sun-jdk-1.8.0.73/bin/java
+----
++
+include::partial$installation.adoc[tag=vm-argument]
 
 == See Also
 
