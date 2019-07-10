@@ -1,7 +1,6 @@
 .xref:index.adoc[Anypoint Studio]
 * xref:index.adoc[Anypoint Studio]
-* xref:to-download-and-install-studio.adoc[Downloading and Installing Studio]
- ** xref:faq-jdk-requirement.adoc[JDK Requirement]
+* xref:to-download-and-install-studio.adoc[Downloading and Installing Studio] 
  ** xref:to-download-and-install-studio-wx.adoc[Windows]
  ** xref:to-download-and-install-studio-lx.adoc[Linux]
  ** xref:to-download-and-install-studio-ox.adoc[OSx]

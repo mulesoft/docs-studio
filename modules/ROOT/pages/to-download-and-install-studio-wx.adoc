@@ -2,8 +2,29 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: jdk-requirement-lnx-worflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-worflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
 
 include::partial$installation.adoc[tag=prereq]
+
+After downloading and installing the JDK, make sure that your JDK installation is properly configured within the the `JAVA_HOME` environment variable by following the instructions below.
+
+. In Search, search for `System (Control Panel)` and select it.
+. Click *Advanced System Settings*.
+. Click *Environment Variables*.
+. In *System Variables*, select the `PATH` environment variable.
+. Click *Edit*.
++
+If the `PATH` environment variable does not exist, click *New*.
+. In *Edit System Variable* (or *New System Variable*), make sure that the JDK 1.8.0 `/bin` directory is the first item in your `PATH` environment variable, and click *OK*.
++
+[NOTE]
+--
+Blank spaces are not allowed when defining a path on Windows.
+--
++
+. Click *OK*.
+
+
 
 == Installation
 

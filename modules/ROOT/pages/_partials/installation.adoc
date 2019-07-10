@@ -3,8 +3,7 @@
 
 == Prerequisites
 
-* Make sure you have the Java SE JDK 8 installed and configured. +
-See xref:faq-jdk-requirement.adoc[Configuring your JDK Installation] for instructions.
+* Make sure you have the Java SE JDK 8 installed and configured.
 * Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site].
 
 [NOTE]
