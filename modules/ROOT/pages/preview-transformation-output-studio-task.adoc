@@ -7,7 +7,7 @@ You can provide sample input data to your Transform Message component to see how
 
 
 
-. Click on the root of the input pane and select *Edit Sample Data*.
+. Click on the root of the Input pane and select *Edit Sample Data*.
 +
 image::dataweave-edit-sample-data.png[sample data]
 
