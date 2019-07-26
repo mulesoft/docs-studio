@@ -63,22 +63,26 @@ image::import-export-packages-a1b21.png[]
 . Select the project that you want to export, and click *Next*.
 . In the *JAR file* drop-down menu, click the ellipses (...) button to explore your local drive, and select the folder to which you want to export your JAR deployable file. +
 Additionally, you can choose *Attach Project Sources* to include metadata that Studio requires to re-import the deployable file as an open Mule project into your workspace.
++
+[NOTE]
+--
+You need to keep the *Attach Project Sources* option selected to be able to import the packaged JAR file back into a Studio workspace. This is the same as using the `-DattachMuleSources` flag when packaging using the Mule Maven Plugin. See xref:mule-runtime::mmp-concept.adoc#create-an-application-package-to-import-into-anypoint-studio[Create an Application Package to Import into Anypoint Studio] in the Mule Maven Plugin documentation for more information.
+--
 
-=== Exporting a Studio Project to a Shareable Lightweight Mule Application
+=== Exporting a Studio Project to a Shareable Lightweight Package
 
 . Select *Export* from the *File* menu.
 . In the Import wizard, click to expand the Mule folder, and select *Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)*, then click Next.
 . Select the project that you want to export, and click *Next*.
 . In the *JAR file* drop-down menu, click the ellipses (...) button to explore your local drive, and select the folder to which you want to export your JAR deployable file.
 . Uncheck the *Include project modules and dependencies* option.  +
-This option skips bundling the actual modules and external dependencies required to run the Mule application in a Mule runtime, creating a lightweight JAR file package of the Mule application that does not include any dependencies specified in the Mule application's `pom.xml` file.
+This option skips bundling the actual modules and external dependencies required to run the Mule application in a Mule runtime engine, creating a lightweight JAR file package of the Mule application that does not include any dependencies specified in the Mule application's `pom.xml` file.
 +
 [NOTE]
 --
-The generated JAR file is not a functional deployable archive and cannot be deployed to a Mule runtime, but instead offers a way to archive only the source files that make up the Mule application. This is the same as using the `-lightWeightPackage` flag when packaging using the Mule Maven plugin and is useful if you want to distribute your project to other Studio installations because it only keeps a reference to all its dependencies. . When you import a lightweight package into Studio, all your dependencies will be automatically downloaded.
+The generated JAR file is not a functional deployable archive and cannot be deployed to a Mule runtime engine, but instead offers a way to archive only the source files that make up the Mule application. This is the same as using the `-lightWeightPackage` flag when packaging using the Mule Maven Plugin and is useful if you want to distribute your project to other Studio installations because it only keeps a reference to all its dependencies. When you import a lightweight package into Studio, all your dependencies will be automatically downloaded. See xref:mule-runtime::mmp-concept.adoc#create-a-lightweight-package[Create a Lightweight Package] in the Mule Maven Plugin documentation for more information.
 --
-+
-See xref:mule-runtime::mmp-concept.adoc#create-a-lightweight-package[Create a Lightweight Package] in the Mule Maven Plugin documentation for more information.
+
 
 
 == See Also
