@@ -69,7 +69,7 @@ You must keep the *Attach Project Sources* option selected to be able to import 
 === Exporting a Studio Project to a Shareable Lightweight Package
 
 . Select *Export* from the *File* menu.
-. In the Import wizard, click to expand the Mule folder, and select *Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)*, then click Next.
+. In the Import wizard, click to expand the Mule folder, select *Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)*, and click *Next*.
 . Select the project that you want to export and click *Next*.
 . In the *JAR file* menu, click the ellipses (...) button to explore your local drive, and select the folder to which you want to export your JAR deployable file.
 . Deselect the *Include project modules and dependencies* option.  +
