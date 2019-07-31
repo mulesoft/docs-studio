@@ -9,5 +9,4 @@ To download and install Anypoint Studio, follow the instructions based on your o
 * xref:to-download-and-install-studio-ox.adoc[OSx]
 * xref:to-download-and-install-studio-lx.adoc[Linux]
 
-[NOTE]
 Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different. +

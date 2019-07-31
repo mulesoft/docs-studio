@@ -21,28 +21,15 @@ After downloading and installing the JDK, ensure that your JDK installation is p
 . Click *Edit*.
 +
 If the `PATH` environment variable does not exist, click *New*.
-. In *Edit System Variable* (or *New System Variable*), make sure that the JDK 1.8.0 `/bin` directory is the first item in your `PATH` environment variable, and click *OK*.
-+
-[NOTE]
---
+. In *Edit System Variable* (or *New System Variable*), ensure that the JDK 1.8.0 `/bin` directory is the first item in your `PATH` environment variable, and click *OK*. +
 Blank spaces are not allowed when defining a path on Windows.
---
-+
 . Click *OK*.
-
-
 
 == Installation
 
 . Extract the Windows installation file into the `C:\` root folder. +
 If you are using a Windows Anti-Virus application, ensure that the `plugin/` and `features/` directories are under the “trusted” category.
 . Open the extracted Anypoint Studio.
-. Click OK to accept the default workspace.
-+
-include::partial$installation.adoc[tag=workspace-reuse]
-
-. Locate your `AnypointStudio.ini` file. +
-This file is located within your Anypoint Studio's installation directory.
 . Click OK to accept the default workspace. +
 You cannot reuse a workspace used by Anypoint Studio 6.x or below. If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
 . Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
