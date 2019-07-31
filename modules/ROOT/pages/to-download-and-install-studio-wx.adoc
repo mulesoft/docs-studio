@@ -32,6 +32,11 @@ If you are using a Windows Anti-Virus application, ensure that the `plugin/` and
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
 You cannot reuse a workspace used by Anypoint Studio 6.x or below. If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
+
+== Troubleshooting
+
+If Studio fails to load with a *An Error Has Occured* message, you must configure Anypoint Studio to point to your JDK installation as the default VM.
+
 . Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
 . Add the -vm option to point to your specific JDK installation path.
 +

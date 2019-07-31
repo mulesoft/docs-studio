@@ -22,7 +22,7 @@ Use an absolute path when defining your workspace because Anypoint Studio does n
 
 == Troubleshooting
 
-If Studio fails to load with a *An Error Has Occured* message, follow the instructions below to configure Anypoint Studio to point to your JDK installation as the default VM.
+If Studio fails to load with a *An Error Has Occured* message, you must configure Anypoint Studio to point to your JDK installation as the default VM:
 
 . Locate your `AnypointStudio.ini` file in `/usr/lib/anypointstudio/anypointstudio.ini`.
 . Add the -vm option to point to your specific JDK installation path.

@@ -22,7 +22,7 @@ Use an absolute path when defining your workspace because Anypoint Studio does n
 
 == Troubleshooting
 
-If Studio fails to load with a *An Error Has Occured* message, follow the instructions below to configure Anypoint Studio to point to your JDK installation as the default VM.
+If Studio fails to load with a *An Error Has Occured* message, you must configure Anypoint Studio to point to your JDK installation as the default VM.
 
 . Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
 . Go to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
