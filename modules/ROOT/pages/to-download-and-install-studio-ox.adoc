@@ -6,10 +6,10 @@ endif::[]
 == Prerequisites
 
 * Ensure that you have the Java SE JDK 8 installed and configured.
-* Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site].
+* Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 
 [NOTE]
-Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different.
+Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different..
 
 
 == Installation
@@ -17,12 +17,12 @@ Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the p
 . Extract the Anypoint Studio package and move it to your `/Applications` directory.
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
-Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. You cannot reuse a workspace used by Anypoint Studio 6.x or below. If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
-
+** You must Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix and Linux systems.
+** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later.
 
 == Troubleshooting
 
-If Studio fails to load with a *An Error Has Occured* message, you must configure Anypoint Studio to point to your JDK installation as the default VM.
+If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
 
 . Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
 . Go to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
@@ -34,9 +34,9 @@ If Studio fails to load with a *An Error Has Occured* message, you must configur
 /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
 ----
 +
-* The `-vm` option and the installation path must be in separate lines.
+* The `-vm` option and the installation path must be on separate lines.
 * The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
-* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option, because everything after `-vmargs` is passed directly to the JVM.
+* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
 
 
 == See Also

@@ -6,8 +6,8 @@ endif::[]
 == Prerequisites
 
 * Ensure that you have the Java SE JDK 8 installed and configured.
-* To support some of Studio Themes in Linux, it is recommended to have GTK version 2 installed.
-* Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site].
+* To support the Studio Theme in Linux, have GTK version 2 installed.
+* Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 
 [NOTE]
 Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different.
@@ -16,16 +16,17 @@ Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the p
 == Installation
 
 . Open the extracted Anypoint Studio.
-. Click OK to accept the default workspace. +
-Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. You cannot reuse a workspace used by Anypoint Studio 6.x or below. If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
+. Click *OK* to accept the default workspace.
+** You must Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix and Linux systems.
+** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later.
 
 
 == Troubleshooting
 
-If Studio fails to load with a *An Error Has Occured* message, you must configure Anypoint Studio to point to your JDK installation as the default VM:
+If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
 
 . Locate your `AnypointStudio.ini` file in `/usr/lib/anypointstudio/anypointstudio.ini`.
-. Add the -vm option to point to your specific JDK installation path.
+. Add the `-vm` option to point to your specific JDK installation path.
 +
 [source,text,linenums]
 ----
@@ -33,9 +34,9 @@ If Studio fails to load with a *An Error Has Occured* message, you must configur
 /opt/sun-jdk-1.8.0.73/bin/java
 ----
 +
-* The `-vm` option and the installation path must be in separate lines.
+* The `-vm` option and the installation path must be on separate lines.
 * The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
-* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option, because everything after `-vmargs` is passed directly to the JVM.
+* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
 
 == See Also
 
