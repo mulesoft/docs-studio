@@ -44,7 +44,7 @@ If Anypoint Studio fails to load with a *An Error Has Occured* message, you must
 [source,text,linenums]
 ----
 -vm
-C:\progra~1\Java\jdk1.8.0_73\bin\javaw.exe
+C:\%ProgramFiles%\Java\jdk1.8.0_73\bin\javaw.exe
 ----
 +
 * Blank spaces are not allowed when defining a path on Windows. +
@@ -58,7 +58,7 @@ If you encounter “Java was started but returned exit code=1” while starting 
 [source,text,linenums]
 ----
 -vm
-C:\progra~1\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
+C:\%ProgramFiles%\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
 ----
 
 == See Also
