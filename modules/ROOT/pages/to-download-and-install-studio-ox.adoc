@@ -9,8 +9,7 @@ endif::[]
 * Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 
 [NOTE]
-Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different..
-
+Anypoint Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
 
 == Installation
 
