@@ -11,7 +11,7 @@ endif::[]
 
 
 [NOTE]
-Anypoint Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different.
+Anypoint Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
 
 
 == Installation
