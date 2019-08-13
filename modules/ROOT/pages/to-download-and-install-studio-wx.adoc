@@ -9,8 +9,6 @@ endif::[]
 * Ensure that you have the Java SE JDK 8 installed and configured.
 * Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 
-[NOTE]
-Anypoint Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
 
 After downloading and installing the JDK, ensure that your JDK installation is properly configured within the `JAVA_HOME` environment variable:
 
@@ -31,7 +29,9 @@ You must use the `%ProgramFiles%` or `%ProgramFiles(x86)%` environment variables
 ** If you are using a Windows antivirus application, ensure that the `plugin/` and `features/` directories are under the _trusted_ category.
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
-** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later.
+** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +
+Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
+
 
 == Troubleshooting
 
