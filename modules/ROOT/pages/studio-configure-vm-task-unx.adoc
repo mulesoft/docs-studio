@@ -5,19 +5,24 @@ endif::[]
 
 To configure the default VM for Anypoint Studio:
 
+. Locate your JDK 1.8 installation's 'bin' directory:
+```bash
+ls -d $(/usr/libexec/java_home -v 1.8)/bin
+```
 . Locate your `AnypointStudio.ini` file.
 +
-This file is located in `Applications/AnypointStudio`.
+This file is located in `/Applications/AnypointStudio.app/Contents/Eclipse`.
 . Add the -vm option to point to your specific JDK installation path.
 +
 [source,text,linenums]
 ----
 -vm
-/usr/bin
+/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin
 ----
 
 When configuring the -vm option, its format must be exact:
 
+* The above is just an example. The actual path to your '.../bin' directory may vary and should be based on the output of step 1.
 * The -vm option and the installation path must be in separate lines.
 * The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
 * The -vm option must occur after the other Studio-specific options (such as -product, --launcher.&#42;, etc), but before the -vmargs option, since everything after -vmargs is passed directly to the JVM.
