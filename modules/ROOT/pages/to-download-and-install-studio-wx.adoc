@@ -63,5 +63,3 @@ C:\%ProgramFiles%\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
 == See Also
 
 * xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]
-* xref:jdk-requirement-wx-workflow.adoc[Configuring Java JDK (Windows)]
-* xref:studio-configure-vm-task-wx.adoc[Configuring Studio's Default VM (Windows)]

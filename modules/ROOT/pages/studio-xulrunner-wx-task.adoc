@@ -24,5 +24,3 @@ Additionally, if you are experiencing unexpected crashes when rendering web cont
 
 == See Also
 
-* xref:jdk-requirement-wx-workflow.adoc[To Configure Java JDK (Windows)]
-* xref:studio-configure-vm-task-wx.adoc[To Configure Studio's Default VM (Windows)]

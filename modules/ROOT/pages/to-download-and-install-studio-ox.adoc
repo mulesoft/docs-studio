@@ -39,5 +39,3 @@ If Anypoint Studio fails to load with a *An Error Has Occured* message, you must
 == See Also
 
 * xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
-* xref:jdk-requirement-lnx-worflow.adoc[Configuring Java JDK (Linux)]
-* xref:studio-configure-vm-task-unx.adoc[Configuring Studio's Default VM (Mac OSx)]
