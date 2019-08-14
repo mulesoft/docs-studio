@@ -3,28 +3,39 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-* Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
+== Prerequisites
 
-To install Anypoint Studio:
+* Ensure that you have the Java SE JDK 8 installed and configured.
+* Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 
-. Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it.
-If you're using OS version Sierra, it's important that you move your extracted app to the `/Applications` folder before you launch it.
-. Open the extracted Anypoint Studio:
+== Installation
+
+. Extract the Anypoint Studio package and move it to your `/Applications` directory.
+. Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace. +
-When setting a custom path to your workspace, keep in mind that Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. It is recommended to use the absolute path when defining your workspace.
-+
-[NOTE]
---
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
---
+** You must Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix and Linux systems.
+** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +
+Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
 
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
+== Troubleshooting
+
+If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+
+. Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
+. Go to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
+. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
+----
++
+* The `-vm` option and the installation path must be on separate lines.
+* The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
+* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
 
 
 == See Also
 
 * xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
-* xref:jdk-requirement-lnx-worflow.adoc[Configuring Java JDK (Linux)]
-* xref:studio-configure-vm-task-unx.adoc[Configuring Studio's Default VM (Mac OSx)]
