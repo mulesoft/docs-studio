@@ -24,3 +24,5 @@ Additionally, if you are experiencing unexpected crashes when rendering web cont
 
 == See Also
 
+* xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
+* xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]

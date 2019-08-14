@@ -17,3 +17,5 @@ XULRunner binaries are located in the folder where you extracted the XULRunner p
 
 == See Also
 
+* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]
+* xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
