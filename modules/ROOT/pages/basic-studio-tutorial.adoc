@@ -4,9 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: studio, tutorial, request, response, http, listener, config
 
-Walk through this tutorial to learn how to use Anypoint Studio to build a simple HTTP
-request-response application. After creating and running the example locally, you should be
-able to apply what you have learned to create xref:general:getting-started:content-based-routing.adoc[more complex applications].
+Walk through this tutorial to learn how to use Anypoint Studio to build a simple HTTP request-response application. 
 
 == Prerequisites
 
