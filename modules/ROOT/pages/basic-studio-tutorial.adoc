@@ -4,9 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: studio, tutorial, request, response, http, listener, config
 
-Walk through this tutorial to learn how to use Anypoint Studio to build a simple HTTP
-request-response application. After creating and running the example locally, you should be
-able to apply what you have learned to create xref:general:getting-started:content-based-routing.adoc[more complex applications].
+Walk through this tutorial to learn how to use Anypoint Studio to build a simple HTTP request-response application.
 
 == Prerequisites
 
@@ -325,14 +323,11 @@ INFO  2016-06-29 15:22:43,080 [[basictutorial].HTTP_Listener_Configuration.worke
 * The directory you specified for writing files contains `<UUID>.txt` files. For example: 42424242-4242-4242-4242-acbc4242ecbd.txt
 * The contents of each .txt file match the dynamic, inbound message specified by the payload.
 
-Congratulations! You're all set to go on to the xref:general:getting-started:content-based-routing.adoc[Content-Based Routing].
-
 == Next
 
 The following topics help you augment your knowledge of Studio:
 
 * Making decisions: xref:3.8@mule-runtime::choice-flow-control-reference.adoc[Choice Flow Control Reference]
 * Transforming data: xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart Guide]
-* Learn about routing information: xref:general:getting-started:content-based-routing.adoc[Content-Based Routing].
 * Want to learn more about Mule Expression Language (MEL)? Check out the xref:3.8@mule-runtime::mule-expression-language-mel.adoc[complete reference].
 * Get a deeper explanation about the Mule message and anatomy of a Mule flow in xref:3.8@mule-runtime::mule-concepts.adoc[Mule Concepts].
