@@ -4,14 +4,11 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: studio, tutorial, request, response, http, listener, config
 
-This tutorial walks you through how to use Anypoint Studio to build a simple HTTP
-request-response application. After creating and running the example locally, you are
-able to apply what you learn to create xref:general:getting-started:content-based-routing.adoc[more complex applications].
+This tutorial walks you through how to use Anypoint Studio to build a simple HTTP request-response application. 
 
 == Prerequisites
 
 This tutorial assumes that you have xref:6@download-and-launch-anypoint-studio.adoc[downloaded and installed Anypoint Studio]. If you do not have any previous experience with Eclipse or an Eclipse-based IDE, you can review the brief introduction to the xref:index.adoc[Anypoint Studio interface].
-
 
 == Goals
 
@@ -330,7 +327,6 @@ You see the following results:
 * The directory you specified for writing files contains `<UUID>.txt` files. For example: 5ebf4320-d43b-11e5-a7b3-acbc32b4ecbd.txt
 * The contents of each .txt file match the dynamic, inbound message specified by the payload.
 
-Congratulations! You're all set to go on to the xref:general:getting-started:content-based-routing.adoc[Content-Based Routing Tutorial].
 
 == Next
 
@@ -338,6 +334,5 @@ The following topics help you augment your knowledge of Studio:
 
 * Making decisions: xref:3.7@mule-runtime::choice-flow-control-reference.adoc[Choice Flow Control Reference]
 * Transforming data: xref:3.7@mule-runtime::dataweave-tutorial.adoc[DataWeave Tutorial]
-* Learn about routing information: xref:general:getting-started:content-based-routing.adoc[Content-Based Routing].
 * Want to learn more about Mule Expression Language (MEL)? Check out the xref:3.7@mule-runtime::mule-expression-language-mel.adoc[complete reference].
 * Get a deeper explanation about the Mule message and anatomy of a Mule flow in xref:3.7@mule-runtime::mule-concepts.adoc[Mule Concepts].
