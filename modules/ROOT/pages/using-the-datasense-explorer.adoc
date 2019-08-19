@@ -130,6 +130,5 @@ image::property-was-defined-in.png[property+was+defined+in]
 
 * xref:defining-metadata.adoc[Defining Metadata]
 * Learn more about the xref:3.8@mule-runtime::mule-message-structure.adoc[Mule message] and how to work with it.
-* Work through the xref:general:getting-started:mule-message.adoc[Mule Message Tutorial] to learn more.
 * Need more information about the payload or metadata? Try running your application in xref:studio-visual-debugger.adoc[Debug mode] to inspect your message contents step by step at runtime.
 * Get familiar with xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language] so that you can access and manipulate the contents of your message and its environment.

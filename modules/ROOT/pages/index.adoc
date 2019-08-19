@@ -198,11 +198,6 @@ Anypoint Studio also supports auto-complete in any message processor configurati
 
 image::36loggermessagehelp.png[36LoggerMessageHelp]
 
-Find out more about using expressions to access and manipulate the Mule message in the xref:general:getting-started:mule-message.adoc[Mule Message Tutorial].
-
-
-
-
 == See Also
 
 * Learn more about xref:3.8@mule-runtime::elements-in-a-mule-flow.adoc[Elements in a Mule Flow].
