@@ -36,5 +36,4 @@ APIKit generates the Flow based on the API definition imported from Design Cente
 
 == See Also
 
-* xref:general:getting-started:implement-and-test.adoc[To Implement and Test an API].
-* xref:apikit::index.adoc[About APIKit].
+* xref:apikit::index.adoc[About APIKit]
