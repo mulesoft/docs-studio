@@ -19,5 +19,5 @@ XULRunner binaries are located in a subfolder within the directory where you ext
 
 == See Also
 
-* xref:jdk-requirement-xos-worflow.adoc[To Configure Java JDK (Mac OSx)]
-* xref:studio-configure-vm-task-unx.adoc[To Configure Studio's Default VM (Mac OSx)]
+* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]
+* xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
