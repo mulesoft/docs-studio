@@ -6,7 +6,7 @@ endif::[]
 
 Update sites in Anypoint Studio are used to update or install Studio, the embedded Mule runtime, connectors or other useful development tools.
 
-== Accesing an Update Site
+== Accessing an Update Site
 
 . Go to *Help* > *Install New Software*.
 . Select one of these update sites from the drop-down menu next to the *Work with* field.
