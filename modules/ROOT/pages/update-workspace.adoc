@@ -43,7 +43,7 @@ Anypoint Studio includes a new version of the Mule Maven Plugin that can automat
 ----
 |===
 
-Note that this simplification is meant to reduce the number of declarations you need to keep track at development time using Anypoint Studio. A fully configured `mule-artifact.json` is still required by Mule runtime engine when executing the packaged application. You can find the generated `mule-artifact.json` file inside the `target` directory after packaging.
+Note that this simplification is meant to reduce the number of declarations you need to keep track of at development using Anypoint Studio. A fully configured `mule-artifact.json` file is still required by Mule runtime engine when executing the packaged application. You can find the generated `mule-artifact.json` file inside the `target` directory after packaging.
 
 The Mule Maven plugin inspects the metadata declared in `mule-artifact.json`. If there is a value that is not declared, the Mule Maven Plugin infers it from the application code before packaging. If there are other metadata declared, it uses that information to package the application.
 
