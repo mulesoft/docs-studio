@@ -49,7 +49,7 @@ The plugin inspects the metadata declared in `mule-artifact.json`. If there is a
 
 If you choose to update to the latest Mule Maven plugin, and want to keep your old descriptor files, you'll need to manually keep track of your descriptors metadata.
 
-== Upgrading From 7.1.x to 7.2 and later
+== Upgrading from Studio 7.1.x to 7.2 and later
 
 When you open Anypoint Studio 7.2 and use a workspace created with previous versions, Studio pops up a note:
 
