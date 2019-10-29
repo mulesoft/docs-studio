@@ -11,9 +11,9 @@ Because Mule runtime engine 4.x does not include the remote debugger plugin as i
 . Navigate to your Studio installation in `/Applications/`, right click on it, and select *Show Package Content*.
 . Navigate to `Contents/Eclipse/plugins/org.mule.tooling.server.4.2.1.ee_7.x.x.xxxxxx/mule/server-plugins`. +
 The `org.mule.tooling.server.4.2.1.ee_7.x` name directory varies depending your installed Studio version and build ID.
-. Copy the `mule-debugger-mule-server-plugin.jar` artifact and paste it in the `MULE_HOME/server-plugins` directory of your remote Mule instance.
-* Before accessing and debugging your application on a remote Mule instance, you must first export and deploy your application to the desired instance.
-* When you start Mule in debug mode all applications that you launch in that server run in debug mode.
+. Copy the `mule-debugger-mule-server-plugin` folder and paste it in the `MULE_HOME/server-plugins` directory of your remote Mule instance.
+* You must export and deploy your application to the desired instance before accessing and debugging your application on a remote Mule instance. +
+When you start Mule in debug mode all applications that you launch in that server run in debug mode.
 * Remote debugging does not work with clusters.
 
 == Debug Mode Parameters
