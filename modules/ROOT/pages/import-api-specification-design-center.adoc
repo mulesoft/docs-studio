@@ -1,0 +1,44 @@
+= Importing an API Specification from Design Center
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio allows you to import an API Definition from Design Center into either into a new Mule Project, or an existing one.
+
+This task only works for RAML types of API specifications.
+
+== Importing an API from Design Center Into a New Project
+
+. In the top task bar, select *File*, then *New*, and then *Mule Project*.
+. Type a name for your project.
+. Select a Mule runtime engine version 4.1.4 or later.
+. In the *API Specification* section, select the *From Design Center or Local Files* tab.
+. In the *Location* field click the *...* button and select *Design Center...*.
+. Select your Anypoint Platform username. +
+If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
+. In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located. +
+If you have configured your AnyPoint Platform credentials, your username and business group will be grayed out. +
+If you want to use a different account, click the *Add Account* button and log in again.
+. From the list of available APIs, select the one you want and click *OK*.
+. Click *Finish*.
+
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, uncheck the *Scaffold Flows From These API Specifications* option.
+
+== Importing an API from Design Center into an Existing Project
+
+Importing an API specification from Design Center into an existing project deletes all your resources from your `src/main/resources/api` directory.
+
+. Right click on your project in the Package Explorer view, select *Anypoint Platform*, and then *Import From Design Center (Local Copy)*.
+. Select your Anypoint Platform username. +
+If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
+. In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located. +
+If you have configured your AnyPoint Platform credentials, your username and business group will be grayed out. +
+If you want to use a different account, click the *Add Account* button and log in again.
+. From the list of available APIs, select the one you want and click *OK*.
+. Click *Finish*.
+
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, uncheck the *Scaffold Flows From These API Specifications* option.
+
+== See Also
+
+* xref:set-credentials-in-studio-to.adoc[Configure Anypoint Platform Credentials (Anypoint Studio)]

@@ -1,0 +1,40 @@
+= API Sync
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:keywords: api, anypoint platform, sync, api sync
+
+The API Sync feature of Anypoint Studio lets you pull a published API specification from Exchange, into your Mule application project in Studio to scaffold a new your project. API Sync also lets you keep track of the API versions that you implemented in your project and update your flows based on the latest published version.
+
+You can use API Sync on more than one API specification to scaffold multiple flows in different Mule configuration files.
+
+API Sync lets you import both RAML and OAS specifications.
+
+API Sync comes bundled by default in Studio 7.4.x and later, and requires Mule 4.1.4 and later.
+
+== Working With API Sync
+
+Using API Sync you can develop your Mule applications following our recommended API Lifecycle practices:
+
+. Create an API specification in Design Center and publish it to Exchange. +
+You can either xref:design-center::design-create-publish-api-visual-editor.adoc[Create and Publish an API Specification with the Visual Editor in Design Center] or xref:design-center::design-create-publish-api-raml-editor.adoc[Create and Publish an API Specification with the Code Editor in Design Center].
+. Import this API specification from Exchange to your Studio project. +
+See xref:studio::import-api-specification-exchange.adoc[Importing an API Specification from Exchange] for more information.
+
+It is not possible to create a new API version from Studio, and then upload it to Exchange.  MuleSoft recommends changing your API specification in Design Center, then publish a new version to Exchange, and updating your local Studio implementation using API Sync:
+
+. Right click in the project that implements the API for which you want to check for updates.
+. From the *API Specs* menu, select the API for which you want to check for updates, and click *Update Version*. +
+If a new version is found, API Sync asks you if you want to regenerate the flows based on the new version.
+
+[CAUTION]
+--
+API sync feature might not work properly if the RAML file exceeds 4,000 lines of text.
+--
+
+
+== See Also
+
+* xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
+* xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange]
+* xref:import-api-specification-maven.adoc[Importing an API Specification from Maven]
