@@ -8,7 +8,7 @@ Anypoint Studio is MuleSoft's Eclipse-based integration development environment 
 Anypoint Studio features enhance your productivity when building Mule applications:
 
 * Instant run of your Mule application inside a local runtime
-* Visual editors to configure API definition files and Mule domains
+* Visual editors to configure API specification files and Mule domains
 * Push changes to a local running app to test changes
 * Integration with Exchange to import templates, examples, definitions and other resources from your Anypoint Platform organization
 * Embedded unit testing framework
@@ -22,7 +22,7 @@ Anypoint Studio 7.x only supports Mule 4.x projects because the structure of the
 Studio editors help you design and edit the definitions of your applications, APIs, properties, and configuration files:
 
 * Mule configuration files
-* API definitions
+* API specifications
 * Properties files
 * A `pom.xml` file to handle dependencies
 
