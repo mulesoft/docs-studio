@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 7.2 and later simplifies the configuration of the `mule-artifact.json` file. This file is used when packaging your Mule application to identify its class loader configuration and settings, and the minimum required Mule runtime engine version to run your application.
+Anypoint Studio 7.2 and later simplifies the configuration of the `mule-artifact.json` file. When packaging your Mule application, this file is used to identify the application's classloader configuration and settings, and the minimum required Mule runtime engine version required to run your application.
 
 Anypoint Studio includes a new version of the Mule Maven Plugin that can automatically infer some of this required metadata. This makes it easier for you to keep track of all the declarations you need to make when exporting resources.
 
@@ -43,11 +43,11 @@ Anypoint Studio includes a new version of the Mule Maven Plugin that can automat
 ----
 |===
 
-Note that this simplification is meant to reduce the number of declarations you need to keep track of at development using Anypoint Studio. A fully configured `mule-artifact.json` file is still required by Mule runtime engine when executing the packaged application. You can find the generated `mule-artifact.json` file inside the `target` directory after packaging.
+Note that this simplification is meant to reduce the number of declarations you need to monitor during development. A fully configured `mule-artifact.json` file is still required by Mule runtime engine when executing the packaged application. You can find the generated `mule-artifact.json` file inside the `target` directory after packaging.
 
 The plugin inspects the metadata declared in `mule-artifact.json`. If there is a value that is not declared, the plugin infers it from the application code before packaging. If other metadata is declared, the plugin uses that information to package the application.
 
-If you choose to update to the latest plugin and want to keep your old descriptor files, you'll need to manually keep track of your descriptor metadata.
+If you update to the latest plugin and want to keep your old descriptor files, you'll need to manually monitor your descriptor metadata.
 
 
 == Upgrading from Studio 7.1.x to 7.2 and later

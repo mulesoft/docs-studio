@@ -1,0 +1,63 @@
+= Importing an API Specification from Maven
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Using API Sync, Anypoint Studio enables you to import a RAML or OAS API specification into either a new Mule project or an existing one.
+
+If you are using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that's not in Exchange, follow the steps presented in xref:studio::import-api-specification-design-center.adoc[import an API specification from a local file] or xref:import-api-secification-design-cetner[import an API specification from Design Center] depending on your prefered use case.
+
+== Import an API Specification From Maven Into a New Project
+
+. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
+. Type a name for your project.
+. Select a Mule runtime engine version 4.1.4 or later.
+. In the *API Specification* section, select the *From Exchange or Maven* tab, click the *Add* icon (image:add-icon.png[2%,2%]) and select *From Maven*. +
+You can either specify the Maven coordinates of your API specification, or you can install a local file into your Maven repository.
+
+// tag::maven-tasks[]
+=== Add an API Specification From Maven Coordinates
+
+If your API specification is in your corporate Maven repository, you can add it as a dependency.
+
+. In the *Import From Maven* screen, configure your API specification artifact definition:
+* Group ID
+* Artifact ID
+* Version
+. In the *Advanced Settings* section, verify that the *Classifier* value for your dependency is the same as your API specification type (RAML, for example).
+. Click *OK*.
+
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
+
+After you import them, you can manage the API specifications in your project that are linked to Exchange from the API project management view by clicking the _Manage Mule Project APIs_ icon (image:manage-project-api-icon.png[2%,2%]) in the top taskbar.
+
+=== Add an API Specification From a Local File
+
+If you can't connect to the internet to download the API specification dependency from your corporate Maven repository, or if your API specification is not available in Maven, you can still make your specification available as a dependency by installing it to your local Maven installation:
+
+. In the *Import From Maven* screen, next to the *Install a local dependency* field, click *Install*.
+. In the *File* field, either type the location of your file or click *Browse* to find it in your files. +
+If you select *Browse*, change the file type to *any*. +
+You can add either a RAML or OAS specificaiton, or a ZIP bundle file as your API specification, and click *Open*.
+. Set up the rest of your Maven coordinates for your API specification.
+. In the *Advanced Settings* section, verify that the *Classifier* value for your dependency is the same as your API specification type (RAML, for example).
+. Click *Install* and *OK*.
+
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
+
+You can manage the API specifications in your project that are linked to Exchange from the API Project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
+// end::maven-tasks[]
+
+== Import an API Specification from Maven Into an Existing Project
+
+. In the Package Explorer view, select your project.
+. Click the *Add* icon (image:add-icon.png[2%,2%]) and select *From Maven*.
+. You can either specify the Maven coordinates of your API specification, or you can install a local file into your Maven repository.
+
+include::import-api-specification-maven.adoc[tag=maven-tasks]
+
+
+== See Also
+
+* xref:api-sync.adoc[API Sync]
+* xref:maven-preferences-reference.adoc[Maven Preferences Reference]
