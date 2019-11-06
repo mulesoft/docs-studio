@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 7.2 and later simplifies the configuration of the `mule-artifact.json` file. This file is used when packaging your Mule application to identify its class loader configuration and settings, and the minimum required Mule runtime engine version to run your application.
+Anypoint Studio 7.2 and later simplifies the configuration of the `mule-artifact.json` file. When packaging your Mule application, this file is used to identify the application's classloader configuration and settings, and the minimum required Mule runtime engine version required to run your application.
 
 Anypoint Studio includes a new version of the Mule Maven Plugin that can automatically infer some of this required metadata. This makes it easier for you to keep track of all the declarations you need to make when exporting resources.
 
