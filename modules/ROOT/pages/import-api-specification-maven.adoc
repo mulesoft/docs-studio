@@ -12,13 +12,13 @@ If you are using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer 
 . In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
 . Type a name for your project.
 . Select a Mule runtime engine version 4.1.4 or later.
-. In the *API Specification* section, select the *From Exchange or Maven* tab, click the plus icon, and select *From Maven*. +
+. In the *API Specification* section, select the *From Exchange or Maven* tab, click the *Add* icon (image:add-icon.png[2%,2%]) and select *From Maven*. +
 You can either specify the Maven coordinates of your API specification, or you can install a local file into your Maven repository.
 
 // tag::maven-tasks[]
 === Add an API Specification From Maven Coordinates
 
-If your API specification is in your corporate's Maven repository, you can add it as a dependency.
+If your API specification is in your corporate Maven repository, you can add it as a dependency.
 
 . In the *Import From Maven* screen, configure your API specification artifact definition:
 * Group ID

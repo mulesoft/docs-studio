@@ -20,7 +20,7 @@ Using API Sync, you can develop your Mule applications following  API Lifecycle 
 
 . Create an API specification in Design Center and publish it to Exchange. +
 You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification by using the visual editor in Design Center] or xref:design-center::design-create-publish-api-raml-editor.adoc[create and publish an API specification by using the Code Editor in Design Center].
-. Import this API specification from Exchange to your Studio project. +
+. Import the same API specification from Exchange to your Studio project. +
 See xref:studio::import-api-specification-exchange.adoc[Importing an API Specification from Exchange] for more information.
 
 It is not possible to create a new API version from Studio and then upload it to Exchange.  Change your API specification in Design Center, publish a new version to Exchange, and then update your local Studio implementation using API Sync:
