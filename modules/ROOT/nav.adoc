@@ -9,6 +9,7 @@
  ** xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
  ** xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
 * xref:update-workspace.adoc[Updating Workspaces]
+* xref:api-search.adoc[Search Inside Your API Specification Dependencies]
 * xref:api-sync.adoc[API Sync]
  ** xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange]
  ** xref:import-api-specification-maven.adoc[Import an API Specification from Maven]
