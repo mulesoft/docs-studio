@@ -23,7 +23,7 @@ If you are not logged in, you can click the *Add Account* button to add your Any
 +
 You can type a `*` character in the search bar and press enter to list all your available APIs.
 +
-You can select the version of the API you want to import in the *Selected Modules* table.
+. To select the version of the API that you want to import, use the *Selected Modules* table.
 . Click *Finish*.
 
 Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
