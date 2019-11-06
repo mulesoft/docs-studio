@@ -20,7 +20,6 @@ If you cannot access Exchange from your work environment, you can still import a
 . Select your Anypoint Platform username. +
 If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
 . From the list of available APIs, select one or more and click the *Add* button. +
-You can choose more than one API to import.
 +
 You can type a `*` character in the search bar and press enter to list all your available APIs.
 +
