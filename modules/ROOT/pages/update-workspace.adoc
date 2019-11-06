@@ -47,7 +47,7 @@ Note that this simplification is meant to reduce the number of declarations you 
 
 The plugin inspects the metadata declared in `mule-artifact.json`. If there is a value that is not declared, the plugin infers it from the application code before packaging. If other metadata is declared, the plugin uses that information to package the application.
 
-If you choose to update to the latest plugin and want to keep your old descriptor files, you'll need to manually keep track of your descriptor metadata.
+If you update to the latest plugin and want to keep your old descriptor files, you'll need to manually monitor your descriptor metadata.
 
 
 == Upgrading from Studio 7.1.x to 7.2 and later
