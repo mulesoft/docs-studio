@@ -13,7 +13,7 @@ image::api-search.png[]
 * Use `\*` to search for any string. For example, `*-api-*` searches for strings containing `-api-`.
 * Use `?` to allow any character after a specific pattern. For example, `customer?` searches for both `customer` and `customers`.
 * Use `\` to escape any of the reserved literals used in search patterns. For example, if you want to search for strings containing `\*`, `?`, or `\` you must escape them: `\*`, `\?`, and `\\`.
-. If you want to specify a specific name patter for the files you want to search through, type the pattern in the *File name patterns* field.
+. If you want to specify a specific name pattern for the files you want to search through, type the pattern in the *File name patterns* field.
 +
 * Use `\*` to search for any string. For example, `*-api-*` searches inside any API specification containing `-api-` in its name.
 * Use `?` to allow any character after a specific pattern. For example, `customer?.raml` searches inside both `customer.raml` and `customers.raml`.
@@ -22,11 +22,11 @@ image::api-search.png[]
 . Select the type of API specification in your project.
 +
 * *API dependencies* searches inside API specifications imported from Exchange or Maven.
-* *Local API Files* searches inside API specifications added from a local file, or Design Center.
+* *Local API Files* searches inside API specifications added from a local file or Design Center.
 
 When you click *Search* Studio searches for your text criteria inside your API specifications.
 
-You can also search for all API specifications inside your open projects by selecting *Navigate* > *Open API Resource* in the taskbar at the top of the Anypoint Studio display, or by using the `cmd + Shift P` (OSx) or `control + shift + P` (Windows/Linux) keyboard shortcut.
+You can also search for all API specifications inside your open projects by selecting *Navigate* > *Open API Resource* in the taskbar at the top of the Anypoint Studio display, or by using the `cmd + Shift + P` (OSx) or `control + shift + P` (Windows/Linux) keyboard shortcut.
 
 image::open-api-resource.png[]
 
