@@ -1,0 +1,38 @@
+= API Development in Studio 7.4
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+To ensure that your Mule applications always refer to a single source of truth for your API specifications, MuleSoft introduces a workflow to design, publish, and implement your API specifications.
+
+. Design an API specification in Design Center. +
+You can either xref:design-center::design-create-publish-api-visual-editor.adoc[Create and Publish an API Specification with the Visual Editor] or xref:design-center::design-create-publish-api-raml-editor.adoc[Create and Publish an API Specification with the Code Editor].
+. Publish that API specification to Exchange. +
+Make your newly designed API available to your entire organization as an Exchange dependency. As you change your API, you can publish new versions of your API specifications to Exchange. See xref:exchange::to-change-raml-version.adoc[best practices for API versioning].
+. Import the API specification from Exchange to Studio. +
+Your API specification is imported to Anypoint Studio as a dependency. This means that your Mule application project now holds a pointer to the specific API version that you are implementing. Studio monitors your API and notifies you when there is a new version available. See xref:api-sync.adoc[API Sync] for how to update to new versions of your API specifications in Studio.
+
+This workflow allows you to use both RAML and OAS specifications.
+
+== Exchange as a Centralized Repository for All Your Project Dependencies
+
+Beginning with Anypoint Studio 7.4, you can manage APIs for your Mule application the same way you manage the modules that compose your application. By leveraging Exchange as your unified repository for all your Mule application dependencies, you can monitor the latest versions of your dependencies, ensuring that your application is up-to-date with the latest API requirements.
+
+=== Local Copies vs Exchange Pointers
+
+In previous versions of Studio, you could import an API specification either from your hard drive or directly from Design Center into the `/src/main/api/` directory in the structure of your project. This process creates a local copy of the API in your project's structure. The imported API works as a standalone attachment to your project, meaning that every subsequent upgrade requires a manual import. Whenever the API that you import as a local copy into your project's structure is updated outside your Studio environment, you must reimport the API into your project and regenerate all the flows based on the updated specification, risking creating duplicated copies of your specification.
+
+Because the implementation of your API might change with each iteration, it’s important for you to keep track so that your Mule application can be updated to match newer specifications. To help you track these changes, you must treat your API specifications as dependencies of your project. This way, every time the specification design changes, the API publishes a new API version that you can manage from Studio and you can update your application to match the new API version. Each API version that you import from Exchange is not stored as a local copy on your project’s structure, but as a pointer to the API version dependency in Exchange. By referencing the API version in Exchange, Studio can periodically check the status of the version and alert you  when a new version is available. 
+
+== Scaffold RAML and OAS Specifications
+
+You can design your API using either RAML or OAS specifications in Anypoint Design Center. When you import these specifications as dependencies of your flows, you can automatically generate the flows (scaffold) in your canvas based on the endpoints described in the API specification.
+
+Studio leverages APIkit to scaffold the flow and make it easier for you to start developing a Mule application from an API specification.
+
+
+
+
+
+
+
