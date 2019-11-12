@@ -3,13 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 7.4 and later support native integration with Anypoint Platform Private Cloud Edition (PCE) versions 1.6 and 2.0.
+Anypoint Studio 7.4 and later supports native integration with Anypoint Platform Private Cloud Edition (PCE) versions 1.6 and 2.0.
 
-To point your Studio installation to integrate with the Anypoint platform components in a PCE deployment option:
+Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
 
 . In the taskbar at the top of the Anypoint Studio display, select *Anypoint Studio* > *Preferences...*.
 . Select *Anypoint Studio* > *Anypoint Platform*.
-. Under the *PCE Settings* section, check the *Use a Private Cloud Instance URL*.
+. Select the *Use a Private Cloud Instance URL*.
 . Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
 +
 image::pce-properties.png[]
