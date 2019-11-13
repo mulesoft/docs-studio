@@ -8,7 +8,7 @@ To ensure that your Mule applications always refer to a single source of truth f
 . Design an API specification in Design Center. +
 You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification with the Visual Editor] or xref:design-center::design-create-publish-api-raml-editor.adoc[with the Code Editor].
 . Publish that API specification to Exchange. +
-Make your newly designed API available to your entire organization as an Exchange dependency. As you change your API, you can publish new versions of your API specifications to Exchange. See xref:exchange::to-change-raml-version.adoc[best practices for API versioning].
+Make your newly designed API available to your entire organization as an Exchange dependency. As you change your API, you can publish new versions of your API specifications to Exchange. See xref:exchange::to-change-raml-version.adoc#best-practices-api-versioning[best practices for API versioning].
 . Import the API specification from Exchange to Studio. +
 You can either xref:import-api-specification-exchange.adoc[import an API specification from Exchange] or xref:import-api-specification-maven.adoc[from Maven]. Your API specification is imported to Anypoint Studio as a dependency. This means that your Mule application project now holds a reference to the specific API version that you are implementing. Studio monitors your API and notifies you when there is a new version available.
 
