@@ -1,34 +1,25 @@
-= Importing an API Specification from a Local File
+= Import an API Specification from a Local File
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio allows you to import an API specification from your local machine and import it either into a new Mule Project, or an existing one.
+Anypoint Studio enables you to import a RAML API specification from your local machine and import it either into a new Mule project, or an existing one.
 
 This task only works for RAML types of API specifications.
 
-. In the top task bar, select *File*, then select *New*, and then *Mule Project*.
-. Type a name for your project.
-. Select a Mule runtime version.
-. In the *API Specification* section, select the *From Design Center or Local Files* tab.
-. In the *Location* field, type the location of your local API, or click the *...* button and select *Browse Files...*.
-You can import a RAML file, or an entire zip file bundle if your API has schemas and examples.
-. Click *Finish*.
-
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, uncheck the *Scaffold Flows From These API Specifications* option.
-
-You can import more than one API. You can select the API you want to scaffold flows and check the *Scaffold selected API specifications* checkbox so that Studio generates the flow based on the imported API.
-
 It is not possible to add a local API specification to an existing Mule project.
 
-// VALIDATE
-// == Importing a Local API Into an Existing Project
-//
-// . Right click on your project in the Package Explorer view, then select *New*, and then *RAML API Definition*.
-// . In the *File Name* type the name for your API specificaton.
-// . Click the *<< Advanced* button, and check the *Link to File in the Filesystem*.
-// . Click the *Browse* button and navigate to the RAML file you want to import.
-// . Click *Finish*.
+. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
+. Type a name for your project.
+. Select a Mule runtime engine version.
+. In the *API Specification* section, select the *From Design Center or Local Files* tab.
+. In the *Location* field, type the location of your local API, or click the *...* button and select *Browse Files...*.
+You can import either a RAML file or an entire .zip file bundle if your API has schemas and examples.
+. Click *Finish*.
+
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
+
+You can import more than one API. You can select the API you want to scaffold flows and check the *Scaffold selected API specifications* checkbox so that Studio generates the flow based on the imported API.
 
 
 == See Also

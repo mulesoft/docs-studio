@@ -1,0 +1,17 @@
+= Configure Private Cloud Edition in Studio
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio 7.4 and later supports native integration with Anypoint Platform Private Cloud Edition (PCE) versions 1.6 and 2.0.
+
+Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
+
+. In the taskbar at the top of the Anypoint Studio display, select *Anypoint Studio* > *Preferences...*.
+. Select *Anypoint Studio* > *Anypoint Platform*.
+. Select the *Use a Private Cloud Instance URL*.
+. Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
++
+image::pce-properties.png[]
+. Click *Apply and Close*.
+
