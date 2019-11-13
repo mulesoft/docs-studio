@@ -12,7 +12,7 @@ Make your newly designed API available to your entire organization as an Exchang
 . Import the API specification from Exchange to Studio. +
 Your API specification is imported to Anypoint Studio as a dependency. This means that your Mule application project now holds a reference to the specific API version that you are implementing. Studio monitors your API and notifies you when there is a new version available. See xref:api-sync.adoc[API Sync] for how to update to new versions of your API specifications in Studio.
 
-This workflow allows you to use both RAML and OAS specifications.
+This workflow allows you to use both RAML and OAS 2.0 specifications.
 
 == API Specifications as Exchange Dependencies
 
@@ -24,7 +24,7 @@ Each API version that you import from Exchange is not stored as a local copy on 
 
 === Scaffold RAML and OAS Specifications
 
-You can design your API using either RAML or OAS specifications in Anypoint Design Center. When you import these specifications as dependencies of your flows, you can automatically generate the flows (scaffold) in your canvas based on the endpoints described in the API specification.
+You can design your API using either RAML or OAS 2.0 specifications in Anypoint Design Center. When you import these specifications as dependencies of your flows, you can automatically generate the flows (scaffold) in your canvas based on the endpoints described in the API specification.
 
 Studio leverages APIkit to scaffold the flow and make it easier for you to start developing a Mule application from an API specification.
 

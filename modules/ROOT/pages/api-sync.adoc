@@ -8,7 +8,7 @@ The API Sync feature of Anypoint Studio enables you to pull a published API spec
 
 You can use API Sync on more than one API specification to scaffold multiple flows in different Mule configuration files.
 
-API Sync supports importing both RAML and OAS specifications.
+API Sync supports importing both RAML and OAS 2.0 specifications.
 
 API Sync comes bundled by default in Studio 7.4.x and later, and requires Mule 4.1.4 and later.
 
