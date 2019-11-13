@@ -9,6 +9,7 @@
  ** xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
  ** xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
+* xref:change-jdk-config-in-projects.adoc[Change the JDK from Studio]
 * xref:update-workspace.adoc[Updating Workspaces]
 * xref:api-development-studio.adoc[API Development in Studio]
 * xref:api-search.adoc[Search Inside Your API Specification Dependencies]
