@@ -1,4 +1,4 @@
-= Maven Preferences Reference (Anypoint Studio)
+= Maven Preferences Reference
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -51,4 +51,4 @@ Selecting this option requires for you to define your custom path to your maven 
 
 == See Also
 
-* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project (Anypoint Studio)]
+* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project]

@@ -24,5 +24,6 @@ You can import more than one API. You can select the API you want to scaffold fl
 
 == See Also
 
+* xref:api-development-studio.adoc[API Development in Studio]
 * xref:api-sync.adoc[API Sync]
-* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]
+* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials]

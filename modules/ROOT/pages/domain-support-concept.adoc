@@ -1,4 +1,4 @@
-= Domain Support (Anypoint Studio)
+= Domain Support
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -28,5 +28,5 @@ Domains are only editable when they are open projects in your workspace.
 
 == See Also
 
-* xref:domain-studio-tasks.adoc[To Design Mule Domains (Anypoint Studio)]
-* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project (Anypoint Studio)]
+* xref:domain-studio-tasks.adoc[To Design Mule Domains]
+* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project]

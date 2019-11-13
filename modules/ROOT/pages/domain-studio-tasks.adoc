@@ -1,4 +1,4 @@
-= Designing Mule Domains (Anypoint Studio)
+= Designing Mule Domains
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -33,4 +33,4 @@ Keep in mind that the Mule domains must be either available in your Studio Works
 
 == See Also
 
-* xref:add-modules-in-studio-to.adoc[Adding Modules to Your Project (Anypoint Studio)]
+* xref:add-modules-in-studio-to.adoc[Adding Modules to Your Project]

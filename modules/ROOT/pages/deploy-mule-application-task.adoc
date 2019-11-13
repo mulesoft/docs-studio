@@ -1,4 +1,4 @@
-= Deploying a Mule Application to CloudHub (Anypoint Studio)
+= Deploying a Mule Application to CloudHub
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -13,7 +13,7 @@ CloudHub then dynamically allocates a port at deployment time.
 * All your external classes and resources are properly declared in the `mule-artifact.json` file of your Mule application. +
  Due to Mule 4.x classloading isolation mechanism, all external classes and resources must be explicitly declared in the "exportedPackages" and "exportedResources" fields on the mule-artifact.json file before packaging and deploying the application. +
 +
-See the xref:4.1@mule-runtime::how-to-export-resources.adoc[How to Export Resources] task to learn more about working with external resources in your Mule application.
+See the xref:mule-runtime::how-to-export-resources.adoc[How to Export Resources] task to learn more about working with external resources in your Mule application.
 
 == Deploying to CloudHub
 
@@ -35,5 +35,5 @@ When you get to the CloudHub instance configuration window, the "Overwrite Exist
 
 == See Also
 
-* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials (Anypoint Studio)]
+* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials]
 // _TODO: Add links to runtime manager after 4.1 Release.

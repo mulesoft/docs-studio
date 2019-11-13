@@ -38,4 +38,4 @@ When you set metadata for a Transform Message component, you can select a checkb
 == See Also
 
 * xref:create-metadata-class-task.adoc[Creating Metadata Class]
-* xref:4.1@mule-runtime::transform-input-output-structure-transformation-studio-task.adoc[Defining Input and Output Structure of a Transformation]
+* xref:mule-runtime::transform-input-output-structure-transformation-studio-task.adoc[Defining Input and Output Structure of a Transformation]

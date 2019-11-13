@@ -41,4 +41,5 @@ Studio scaffolds your API specification. If you choose not to create flows out o
 
 == See Also
 
-* xref:set-credentials-in-studio-to.adoc[Configure Anypoint Platform Credentials (Anypoint Studio)]
+* xref:api-development-studio.adoc[API Development in Studio]
+* xref:set-credentials-in-studio-to.adoc[Configure Anypoint Platform Credentials]

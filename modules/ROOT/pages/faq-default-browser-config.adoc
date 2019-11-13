@@ -1,14 +1,15 @@
-= FAQ: Troubleshooting Issues with Your Default OS Browser
+= Troubleshoot Issues with Platform Content in Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio uses your system's default layout engine to render content in its Web UI. +
-If you are experiencing issues visualizing web content such as the Runtime Manager UI when deploying an application to Anypoint Platform, or Exchange when browsing assets for your project, you need to configure Anypoint Studio to use a Mozilla/XULRunner runtime environment as its underlying renderer for the Web UI.
+Anypoint Studio uses your system's default layout engine to render the Anypoint Platform UI.
 
-* xref:studio-xulrunner-wx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Windows)]
-* xref:studio-xulrunner-lnx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Linux)]
-* xref:studio-xulrunner-unx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Mac OSx)]
+If you are experiencing issues visualizing web content such as the Runtime Manager UI when deploying an application to Anypoint Platform, or Exchange when browsing assets for your project, configure Studio to use a Mozilla/XULRunner runtime environment as its underlying renderer for the Web UI.
+
+* xref:studio-xulrunner-wx-task.adoc[Windows]
+* xref:studio-xulrunner-lnx-task.adoc[Linux]
+* xref:studio-xulrunner-unx-task.adoc[OSx]
 
 == See Also
 

@@ -26,4 +26,4 @@ The Transform Message component leverages metadata from connectors, schemas and 
 
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
 * xref:tips-transform-message-ui-studio.adoc[Tips on the Transform Message UI]
-* xref:4.1@mule-runtime::dataweave.adoc[DataWeave language]
+* xref:mule-runtime::dataweave.adoc[DataWeave language]

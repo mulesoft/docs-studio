@@ -1,4 +1,4 @@
-= Adding Modules to Your Project (Anypoint Studio)
+= Adding Modules to Your Project
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -38,5 +38,5 @@ You can't edit or delete Domain Modules from your Mule Application's palette .
 
 == See Also
 
-* xref:add-custom-modules-in-studio-to.adoc[To Add Custom Modules to Your Project (Anypoint Studio)]
-* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials (Anypoint Studio)]
+* xref:add-custom-modules-in-studio-to.adoc[To Add Custom Modules to Your Project]
+* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials]

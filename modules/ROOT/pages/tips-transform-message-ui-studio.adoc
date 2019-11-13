@@ -1,4 +1,4 @@
-= Tips for the Transform Message UI (Anypoint Studio)
+= Tips for the Transform Message UI
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -19,4 +19,4 @@ endif::[]
 
 * xref:transform-message-component-concept-studio.adoc[Transform Message Component]
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
-* xref:4.1@mule-runtime::dataweave.adoc[DataWeave Language]
+* xref:mule-runtime::dataweave.adoc[DataWeave Language]
