@@ -18,6 +18,7 @@ endif::[]
 Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
 
 
+[[troubleshoot-install]]
 == Troubleshooting
 
 If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
