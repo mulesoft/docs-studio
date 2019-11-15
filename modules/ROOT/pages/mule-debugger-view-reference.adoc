@@ -97,7 +97,3 @@ Linux and Windows: +
 |===
 
 
-
-== See Also
-
-* xref:add-view-to-perspective.adoc[To Add a New View to Your Current Perspective]
