@@ -44,6 +44,7 @@ If you want, you can change the project's name and choose a different runtime ve
 You can choose a different runtime version if you have other embedded runtime versions installed in Studio. +
 See _Mule Runtimes for Anypoint Studio Update Site_ in xref:studio-update-sites.adoc[About Anypoint Studio Update Sites] to learn how to install other versions of the runtime in Studio.
 
+[[export-project-studio]]
 == Exporting Projects From Studio
 
 Studio lets you package and export your project as a Mule deployable file.
