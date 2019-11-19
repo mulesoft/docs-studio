@@ -19,8 +19,6 @@ After downloading and installing the JDK, ensure that your JDK installation is p
 ** If `PATH` is visible, select it and click *Edit* to navigate to *Edit System Variable*.
 ** If `PATH` is not visible, click *New* to navigate to *New System Variable*.
 . Ensure that the `/bin` directory of your JDK 1.8.0 installation is the first item in your `PATH` environment variable.
-** Blank spaces are not allowed when defining a path on Windows. +
-You must use the `%ProgramFiles%` or `%ProgramFiles(x86)%` environment variables provided by Windows to refer to your `\Program Files\` or `\Program Files (x86)\` directories.
 . Click *OK*.
 
 == Installation
@@ -43,11 +41,9 @@ If Anypoint Studio fails to load with a *An Error Has Occured* message, you must
 [source,text,linenums]
 ----
 -vm
-C:\%ProgramFiles%\Java\jdk1.8.0_73\bin\javaw.exe
+C:\Program Files\Java\jdk1.8.0_73\bin\javaw.exe
 ----
 +
-* Blank spaces are not allowed when defining a path on Windows. +
-You must use the `%ProgramFiles%` or `%ProgramFiles(x86)%` environment variables provided by Windows to refer to your `\Program Files\` or `\Program Files (x86)\` directories.
 * The `-vm` option and the installation path must be on separate lines.
 * The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
 * The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
@@ -57,7 +53,7 @@ If you encounter *Java was started but returned exit code=1* while starting Anyp
 [source,text,linenums]
 ----
 -vm
-C:\%ProgramFiles%\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
+C:\Program Files\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
 ----
 
 == See Also
