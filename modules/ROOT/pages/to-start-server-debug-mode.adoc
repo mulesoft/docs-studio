@@ -50,16 +50,9 @@ You can pass the debug parameters to the Mule runtime engine on the command line
 +
 [source,text,linenums]
 ----
-<$MULE_HOME>/bin/mule -M-Dmule.debug.enable=true -M-Dmule.debug.port=1234
-----
-+
-To start Mule in debugging mode in the background, pass `start` as the first parameter for the `mule` command:
-+
-[source,text,linenums]
-----
 <$MULE_HOME>/bin/mule start -M-Dmule.debug.enable=true -M-Dmule.debug.port=1234
 ----
-. Configure the Debug Parameters in Mule Runtime Engine Configuration File.
+* Configure the Debug Parameters in Mule Runtime Engine Configuration File.
 +
 You can include the parameters in the wrapper configuration file located in `$MULE_HOME/conf/wrapper.conf`:
 +
