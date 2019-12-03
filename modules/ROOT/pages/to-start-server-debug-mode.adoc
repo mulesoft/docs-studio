@@ -1,7 +1,11 @@
-= Debug your Application on a Remote Mule Instance From Studio
+= Debug Your Application on a Remote Mule Instance from Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+You can debug your Mule applications deployed on a remote Mule instance using the Studio debugger.
+
+Remote debugging does not work with clusters.
 
 == Prerequesites
 
@@ -9,50 +13,46 @@ endif::[]
 Because Mule runtime engine 4.x does not include the remote debugger plugin as it did in previous versions, you must manually move the bundled debugger plugin from the embedded Mule runtime engine in Studio, and move it to your remote Mule instance.
 . Locate the plugins embedded with Anypoint Studio.
 +
-*Windows*. +
+* Windows +
 Navigate to the `/plugins/` directory in your Studio’s installation directory.
 +
-*OSx*. +
+* OSx +
 Navigate to your Studio installation in `/Applications/`, right-click on it, select *Show Package Content*, and navigate to `Contents/Eclipse/plugins/`.
 +
-*Linux*. +
+* Linux +
 Navigate to the `/plugins/` directory in your `/usr/lib/anypointstudio/` directory.
-. Navigate to the  `org.mule.tooling.server.4.x.x.ee_7.x.x.xxxxxx/mule/server-plugins/` directory. +
+. Navigate to the `org.mule.tooling.server.4.x.x.ee_7.x.x.xxxxxx/mule/server-plugins/` directory. +
 The `org.mule.tooling.server.4.x.X.ee_7.x` folder name varies depending on your installed Studio version and build ID.
 . Copy the `mule-debugger-mule-server-plugin` folder and paste it in the `MULE_HOME/server-plugins` directory of your remote Mule instance.
-* You must export and deploy your application to the desired instance before accessing and debugging your application on a remote Mule instance. +
-When you start Mule in debug mode all applications that you launch in that server run in debug mode.
-* Remote debugging does not work with clusters.
+* You must start your application
+* You must export and deploy your application to the desired instance before accessing and debugging your application on a remote Mule instance.
 
-== Start your remote Mule Instance in Debug Mode.
+
+== Start Your Remote Mule Instance in Debug Mode.
 
 Mule runtime engine takes the following parameters to start in debug mode:
 
-[%header.spread,cols="40a,60a"]
-|===
-|Parameter |Description
-| `-M-Dmule.debug.enable=true`
-| Sets debugging mode in Mule. +
-This parameter is mandatory and must be sent first.
+`-M-Dmule.debug.enable=true` ::
+Sets debugging mode in Mule. +
+This parameter is mandatory and you must use it before any other parameters.
 
-| `-M-Dmule.debug.port=<port number>`
-| Sets the listening port for incoming connections from Studio. If unset, the listening port will be 6666.
+`-M-Dmule.debug.port=<port number>` ::
+Sets the listening port for incoming connections from Studio. If not set otherwise, the default listening port of 6666 is used.
 
-| `-M-Dmule.debug.suspend=true`
-| Sets suspend mode in Mule. In suspend mode, Mule starts and then immediately suspends application execution until it receives a connection on the debug port.
-|===
+`-M-Dmule.debug.suspend=true` ::
+Sets Mule to start and then immediately suspend application execution until it receives a connection on the debug port.
 
-To start Mule in debug mode, you must use these parameters in any of the following two ways:
+To start Mule in debug mode, use these parameters in either of the following two ways:
 
-* Pass the Debug Parameters when Starting Mule.
+* Pass the debug parameters when starting Mule.
 +
-You can pass the debug parameters to the Mule runtime engine on the command line in the appropriate order, as shown in the following example:
+Pass the debug parameters to the Mule runtime engine on the command line in the following appropriate order:
 +
 [source,text,linenums]
 ----
 <$MULE_HOME>/bin/mule start -M-Dmule.debug.enable=true -M-Dmule.debug.port=1234
 ----
-* Configure the Debug Parameters in Mule Runtime Engine Configuration File.
+* Configure the debug parameters in the Mule configuration file.
 +
 You can include the parameters in the wrapper configuration file located in `$MULE_HOME/conf/wrapper.conf`:
 +
@@ -62,21 +62,20 @@ wrapper.java.additional.4=-Dmule.debug.enable=true
 wrapper.java.additional.5=-Dmule.debug.port=1234
 ----
 
+When you start Mule in debug mode all applications that you launch in that server run in debug mode.
+
 == Configure Studio to Debug your Application in a Remote Mule Instance
 
-. Ensure that your Mule application is running in your remote Mule instance and that the Mule instance is started in debug mode.
-. In Studio, click *Run* on the top menu bar, and click *Debug Configurations*.
+. In Studio, click *Run* > *Debug Configurations*.
 . In the window's left pane, click *Remote Mule Application*.
 . Click the new configuration icon.
 . Enter the required parameters for the configuration:
 +
-* *Name:* name for this configuration.
+* *Name:* specifies the name for this configuration.
 * *Host:* indicates the location of the remote Mule server.
 * *Port:* indicates the listening port for the remote Mule server. +
 This must be the same debug port that you configured in your Mule instance.
 . Click *Debug*.
-
-Every time you ping your application in the remote server, you can debug your application in Studio.
 
 
 == See Also
