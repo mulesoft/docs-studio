@@ -20,10 +20,10 @@ image::payload-autocomplete.png[payload+autocomplete]
 
 == Declaring Metadata
 
-Mule 4 introduces a new prescriptive way to build reliable and reusable flow artifacts and apps. You can build, for example, more reliable applications by achieving earlier detection of errors during design time. +
-To make this possible without changing runtime semantics, Mule 4 uses metadata. Metadata should act as a prescriptive guidance to build more reliable and reusable applications.
+Mule 4 introduces a new prescriptive way to build reliable and reusable flow artifacts and apps. You can build, for example, more reliable applications by achieving earlier detection of errors during design time. To make this possible without changing runtime semantics, Mule 4 uses metadata. Metadata should act as a prescriptive guidance to build more reliable and reusable applications.
 
 We recommend you to use metadata declaration only when:
+
 . It is absolutely required, for example, metadata for a value being defined by you.
 . Or when it is most cohesive to an annotated value, for example, when metadata for a value is being used or expected by a component.
 
@@ -31,19 +31,15 @@ For example, the transform message component should not define a metadata contra
 
 === Being More Specific About Your Metadata Declarations
 
-Using the transform message component's output metadata as expected metadata could be wrong. By explicitly declaring a metadata type, you are masking the actual metadata type of the data coming out from your transform message component. DataWeave transform message implementation can completely infer this output data type. +
-The best practice is to define expected metadata where this data is used or consumed, and it is not automatically inferred (static/dynamic metadata).
+Using the transform message component's output metadata as expected metadata could be wrong. By explicitly declaring a metadata type, you are masking the actual metadata type of the data coming out from your transform message component. DataWeave transform message implementation can completely infer this output data type. The best practice is to define expected metadata where this data is used or consumed, and it is not automatically inferred (static/dynamic metadata).
 
-At the same time, defining the input metadata for your Transform Message component also masks the actual incoming metadata coming into your transform message component to be used on mapping. +
-It would be best to define metadata where data is produced, and again, only when it is not automatically inferred (static/dynamic metadata). For example, in the source or the extension operation that generated the actual message payload.
+At the same time, defining the input metadata for your Transform Message component also masks the actual incoming metadata coming into your transform message component to be used on mapping. It would be best to define metadata where data is produced, and again, only when it is not automatically inferred (static/dynamic metadata). For example, in the source or the extension operation that generated the actual message payload.
 
-With this concept in mind, always remember that whenever data lives outside the scope of a reusable artifact, you should also declare it as part of that artifact's contract. +
-Flows and subflows, for example, are expected to declare their metadata contract, just like any other processor.
+With this concept in mind, always remember that whenever data lives outside the scope of a reusable artifact, you should also declare it as part of that artifact's contract. Flows and subflows, for example, are expected to declare their metadata contract, just like any other processor.
 
 You should declare your input and output metadata specifying the shape of event you require, and the shape of the event you return to the caller. Output event declaration, if not specified, is automatically inferred from flow content when the flow is not recursive.
 
-As with connectors, there are some special cases where flow metadata declaration can be automatically inferred based on related contracts. This is the case of resource flows for APIKit or SOAPKit. In these cases, corresponding API contract is used to infer a metadata contract for a resource flow. +
-As a direct consequence of this, there is no implicit metadata propagation of the whole event context through a flow reference (flow-refs) to a flow. If the flow or sub-flow is expected to be reused, this flow has to declare its data contract in terms of the input and output event.
+As with connectors, there are some special cases where flow metadata declaration can be automatically inferred based on related contracts. This is the case of resource flows for APIKit or SOAPKit. In these cases, corresponding API contract is used to infer a metadata contract for a resource flow. As a direct consequence of this, there is no implicit metadata propagation of the whole event context through a flow reference (flow-refs) to a flow. If the flow or sub-flow is expected to be reused, this flow has to declare its data contract in terms of the input and output event.
 
 
 == See Also
