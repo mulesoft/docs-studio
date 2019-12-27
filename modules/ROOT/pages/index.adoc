@@ -98,7 +98,7 @@ A Perspective in Studio is a collection of views and editors in a specified arra
 
 You can create your own perspectives, and add or remove any of the default views.
 
-To add a new view to your current Perspective in Anypoint Studio navigate to *Window* > *Show view* > and select the View you want to add.
+To add a new view to your current Perspective in Anypoint Studio navigate to *Window* > *Show view* and select the View you want to add.
 
 If your View does not appear on the list, click Other... to load an entire list of available Views.
 
