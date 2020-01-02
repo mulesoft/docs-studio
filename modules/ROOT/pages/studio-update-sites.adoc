@@ -4,17 +4,31 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, esb, studio, anypoint studio, update sites, updates, extensions, plug-ins, plugins, download
 
+Anypoint Studio uses update sites to update Studio, and the embedded versions of Mule runtime engine and MUnit.
 
 == Accesing an Update Site
 
+. Navigate to *Help* > *Install New Software*.
+. In the *Work with* field, select  one of the update sites.
 
 === Adding Additional Update Sites
 
+To add a new update site to install extra components to Studio:
 
+. Navigate to *Help* > *Install New Software*.
+. Click *Add...*.
+. In *Name*, add a to identify the update site.
+. In *Location*, type the URL of the update site.
+. Click *OK*.
 
 == Allowing Connection to Update Site Through Firewall
 
+If you are on a network with firewall restrictions, you must whitelist the URLs of the update sites to download extensions:
 
+. Navigate to *Help* > *Install New Software*.
+. Click *Manage...*.
+. The list of available software shows up:
+. Add the URLs from the *Location* column to your firewall whilelist.
 
 == See Also
 
