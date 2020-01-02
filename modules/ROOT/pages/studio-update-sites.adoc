@@ -28,6 +28,9 @@ If you are on a network with firewall restrictions, you must whitelist the URLs 
 . Navigate to *Help* > *Install New Software*.
 . Click *Manage...*.
 . The list of available software shows up:
++
+image::available-software.png[]
++
 . Add the URLs from the *Location* column to your firewall whilelist.
 
 == See Also
