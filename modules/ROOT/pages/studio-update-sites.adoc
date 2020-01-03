@@ -27,7 +27,7 @@ If you are on a network that has firewall restrictions, you must whitelist the U
 
 . Navigate to *Help* > *Install New Software*.
 . Click *Manage...*.
-. The list of available software shows up:
+The list of available software is displayed:
 +
 image::available-software.png[]
 +
