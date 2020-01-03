@@ -17,7 +17,7 @@ To add a new update site for installing additional components to Studio:
 
 . Navigate to *Help* > *Install New Software*.
 . Click *Add...*.
-. In *Name*, add a to identify the update site.
+. In *Name*, add a name to identify the update site.
 . In *Location*, type the URL of the update site.
 . Click *OK*.
 
