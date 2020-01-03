@@ -13,7 +13,7 @@ Anypoint Studio uses update sites to update both itself and embedded versions of
 
 === Adding Additional Update Sites
 
-To add a new update site to install extra components to Studio:
+To add a new update site for installing additional components to Studio:
 
 . Navigate to *Help* > *Install New Software*.
 . Click *Add...*.
