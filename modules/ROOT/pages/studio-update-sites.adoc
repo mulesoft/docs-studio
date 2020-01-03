@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, esb, studio, anypoint studio, update sites, updates, extensions, plug-ins, plugins, download
 
-Anypoint Studio uses update sites to update Studio, and the embedded versions of Mule runtime engine and MUnit.
+Anypoint Studio uses update sites to update both itself and embedded versions of Mule runtime engine and MUnit.
 
 == Accesing an Update Site
 
