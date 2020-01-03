@@ -9,7 +9,7 @@ Anypoint Studio uses update sites to update both itself and embedded versions of
 == Accesing an Update Site
 
 . Navigate to *Help* > *Install New Software*.
-. In the *Work with* field, select  one of the update sites.
+. In the *Work with* field, select one of the update sites.
 
 === Adding Additional Update Sites
 
