@@ -46,7 +46,7 @@ A repository manager is a dedicated server application designed to manage reposi
 
 Please Note this only has to be done once. The project manager or who ever is responsible for project oversight should complete this step as well as step 1.8.
 
-* Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
+* Login to the Support portal https://help.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
 
 * Click the "Case" tab located on the top of the Support Portal Home page.
 
@@ -84,7 +84,7 @@ Please Note this only has to be done once. The project manager or who ever is re
 
 === Download your license key file
 
-* Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
+* Login to the Support portal https://help.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
 
 * Click the "Subscriptions" tab located on the top of the Support Portal Home page.
 
@@ -143,11 +143,11 @@ Each account is different. Depending on the Customer's Use Case and their needs 
 
 === How do I access the Support Portal?
 
-Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
+Login to the Support portal https://help.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
 
 === How do I file a support ticket within the Support Portal?
 
-. Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
+. Login to the Support portal https://help.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
 
 . Click the "Case" tab located on the top of the Support Portal Home page.
 
@@ -161,7 +161,7 @@ No, Anypoint Studio runs as an independent application on your machine and it do
 
 === Where do I find my license key?
 
-. Login to the Support portal https://support.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
+. Login to the Support portal https://help.mulesoft.com[here]. If you do not have credentials to login, please contact your Customer Success Manager.
 
 . Click the "Subscriptions" tab located on the top of the Support Portal Home page.
 
