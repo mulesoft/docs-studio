@@ -19,7 +19,7 @@ For the open source components of Mule, Studio provides the source code as part 
 == Mule Enterprise Libraries
 
 [NOTE]
-For modules which are part of the enterprise edition of Mule, source code is not available out of the box. If you need access to the source of these libraries, you can https://support.mulesoft.com[Contact MuleSoft Support], explain your use case and why you require it.
+For modules which are part of the enterprise edition of Mule, source code is not available out of the box. If you need access to the source of these libraries, you can https://help.mulesoft.com[Contact MuleSoft Support], explain your use case and why you require it.
 
 In order to make these available in Studio you need to:
 

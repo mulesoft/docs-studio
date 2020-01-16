@@ -50,7 +50,7 @@ xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-update-site-1-
 
 This process only needs to be done once. A project manager or whoever is responsible for project oversight should complete this step.
 
-* Log in to the Support Portal https://support.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
+* Log in to the Support Portal https://help.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
 
 * Click the "Case" tab located on the top of the Support Portal Home page.
 
@@ -200,11 +200,11 @@ Contact your Customer Success Manager for inquiries regarding the number of user
 
 === How do I access the Support Portal?
 
-Log in to the Support Portal https://support.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
+Log in to the Support Portal https://help.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
 
 === How do I file a support ticket within the Support Portal?
 
-. Log in to the Support Portal https://support.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
+. Log in to the Support Portal https://help.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
 . Click the "Case" tab located on the top of the Support Portal Home page.
 . Click the "Create New Case" button, at the right of the page header.
 . Fill out the required information (marked with an asterisk(*)). Our support team will respond soon.
@@ -215,7 +215,7 @@ No, Anypoint Studio runs as an independent application on your machine, and it d
 
 === Where do I find my license key?
 
-. Log in to the Support Portal https://support.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
+. Log in to the Support Portal https://help.mulesoft.com[here]. If you do not have credentials to log in, contact your Customer Success Manager.
 
 . Click the "Subscriptions" tab located on the top of the Support Portal Home page.
 
