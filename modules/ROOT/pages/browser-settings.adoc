@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio comes bundled with Chromium to display elements of the Anypoint Platform UI. For example, when you deploy to CloudHub from Studio, the Runtime Manager UI displayed in Studio is rendered using a built-in version of Chromium.
+Anypoint Studio comes bundled with a default browser to display elements of the Anypoint Platform UI. For example, when you deploy to CloudHub from Studio, the Runtime Manager UI displayed in Studio is rendered using a built-in browser.
 
 It is recommended to use the built-in browser, however, if the default browser fails to display you can configure Studio to your system's native browser to render the Anypoint Platform UI:
 
@@ -11,7 +11,7 @@ It is recommended to use the built-in browser, however, if the default browser f
 . Select the type of default browser for Studio:
 +
 image::browser-configuration.png[]
-<1> *Built-in*: Uses the built-in version of Chromium. This is the recommended setting.
+<1> *Built-in*: Uses the built-in browser. This is the recommended setting.
 <2> *Native*: Uses the native browser of your operative system.
 . Click *Preview* to test the browser's configuration. +
 If the page previews correctly, then Studio's browser is correctly configured.
