@@ -5,15 +5,15 @@ endif::[]
 
 Anypoint Studio comes bundled with a default browser to display elements of the Anypoint Platform UI. For example, when you deploy to CloudHub from Studio, the Runtime Manager UI displayed in Studio is rendered using a built-in browser.
 
-It is recommended to use the built-in browser, however, if the default browser fails to display you can configure Studio to your system's native browser to render the Anypoint Platform UI:
+This built-in browser is the default. However, if it fails to display, you can configure Studio to use your system's native browser to render the Anypoint Platform UI:
 
-. Navigate to *Preferences* > *Anypoint Studio* > *Browser*
+. Navigate to *Preferences* > *Anypoint Studio* > *Browser*.
 . Select the type of default browser for Studio:
 +
 image::browser-configuration.png[]
 <1> *Built-in*: Uses the built-in browser. This is the recommended setting.
 <2> *Native*: Uses the native browser of your operative system.
-. Click *Preview* to test the browser's configuration. +
+. Click *Preview* to verify the changed configuration. +
 If the page previews correctly, then Studio's browser is correctly configured.
 
 
@@ -21,4 +21,3 @@ If the page previews correctly, then Studio's browser is correctly configured.
 
 * xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
 * xref:proxy-settings-task.adoc[Configuring Proxy Settings]
-
