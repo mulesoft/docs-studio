@@ -14,7 +14,6 @@ image::browser-configuration.png[]
 <1> *Built-in*: Uses the built-in browser. This is the recommended setting.
 <2> *Native*: Uses the native browser of your operative system.
 . Click *Preview* to verify the changed configuration. +
-If the page previews correctly, then Studio's browser is correctly configured.
 
 
 == See Also
