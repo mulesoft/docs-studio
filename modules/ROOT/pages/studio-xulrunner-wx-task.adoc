@@ -22,7 +22,3 @@ Additionally, if you are experiencing unexpected crashes when rendering web cont
 . Go to the `Security` tab, select the *Internet* zone and click on the `Custom level…` button.
 . Navigate to the `ActiveX controls and plug-ins` option and select *Disable*
 
-== See Also
-
-* xref:jdk-requirement-wx-workflow.adoc[To Configure Java JDK (Windows)]
-* xref:studio-configure-vm-task-wx.adoc[To Configure Studio's Default VM (Windows)]
