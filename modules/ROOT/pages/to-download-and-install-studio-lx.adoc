@@ -1,32 +1,41 @@
-= To Download and Install Anypoint Studio 7.2 (Linux)
+= Downloading and Installing Anypoint Studio (Linux)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To support some of Studio Themes in Linux, it is recommended to have GTK version 2 installed.
+== Prerequisites
 
-* Before downloading and launching Anypoint Studio, make sure you have the Java SE JDK 8 installed.
+* Ensure that you have the Java SE JDK 8 installed and configured.
+* To support the Studio Theme in Linux, have GTK version 2 installed.
+* Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 
-To install Anypoint Studio 7.2:
+== Installation
 
-. Download Anypoint Studio from the https://www.mulesoft.com/lp/dl/studio[Anypoint Studio Download Site] and extract it.
 . Open the extracted Anypoint Studio.
-. Click OK to accept the default workspace. +
-When setting a custom path to your workspace, keep in mind that Anypoint Studio does not expand the `~` tilde used in Unix/Linux systems. It is recommended to use the absolute path when defining your workspace.
+. Click *OK* to accept the default workspace.
+** You must Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix and Linux systems.
+** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +
+Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
+
+
+[[troubleshoot-install]]
+== Troubleshooting
+
+If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+
+. Locate your `AnypointStudio.ini` file in `/usr/lib/anypointstudio/anypointstudio.ini`.
+. Add the `-vm` option to point to your specific JDK installation path.
 +
-[NOTE]
---
-You cannot reuse a workspace used by Anypoint Studio 6.x or below. +
-If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or above.
---
-
-Anypoint Studio displays a welcome message when it loads for the first time. +
-Click Get Started to start using Anypoint Studio.
-
-
+[source,text,linenums]
+----
+-vm
+/opt/sun-jdk-1.8.0.73/bin/java
+----
++
+* The `-vm` option and the installation path must be on separate lines.
+* The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
+* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
 
 == See Also
 
-* xref:studio-xulrunner-lnx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Linux)]
-* xref:jdk-requirement-lnx-worflow.adoc[To Configure Java JDK (Linux)]
-* xref:studio-configure-vm-task-lnx.adoc[To Configure Studio's Default VM (Linux)]
+* xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
