@@ -17,13 +17,6 @@ Anypoint Studio 6.5 requires Java 8 to run properly. However, depending on which
 [NOTE]
 Studio 6.5 is not compatible with Mule 4.
 
-You can configure Anypoint Studio's default VM by following the task corresponding to your OS:
-
-* xref:studio-configure-vm-task-wx.adoc[To Configure Studio’s Default VM (Windows)]
-* xref:studio-configure-vm-task-unx.adoc[To Configure Studio’s Default VM (Unix)]
-* xref:studio-configure-vm-task-lnx.adoc[To Configure Studio’s Default VM (Linux)]
-
-
 Anypoint Studio offers two parallel tabs that you can utilize to design and craft your applications:
 
 * *Visual Editor*
