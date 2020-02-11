@@ -15,7 +15,3 @@ endif::[]
 [TIP]
 XULRunner binaries are located in the folder where you extracted the XULRunner package.
 
-== See Also
-
-* xref:jdk-requirement-lnx-worflow.adoc[To Configure Java JDK (Linux)]
-* xref:studio-configure-vm-task-lnx.adoc[To Configure Studio's Default VM (Linux)]
