@@ -103,7 +103,6 @@ image::flow.png[]
 . Leave the HTTP connector to its default settings. Then configure the Twitter Connector as follows:
 
 .. Obtain access to the Twitter API by registering an App in the https://dev.twitter.com/[Twitter Developers page].
-
 .. Click the green plus sign next to *Connector Configuration* to create a new Global Element. Name it and provide the Consumer Key, Consumer Secret, Access Token, and Access Token Secret that Twitter gave you after registering your app. Click *Test Connection* to ensure that your configuration works, then click *Ok* to close the dialogue.
 
 .. Under *Operation* select *Get user timeline by screen name*
