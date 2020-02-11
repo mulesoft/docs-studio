@@ -33,7 +33,3 @@ If Anypoint Studio fails to load with a *An Error Has Occured* message, you must
 * The `-vm` option and the installation path must be on separate lines.
 * The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
 * The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
-
-== See Also
-
-* xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]

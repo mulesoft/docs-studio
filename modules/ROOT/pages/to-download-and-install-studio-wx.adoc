@@ -26,7 +26,7 @@ After downloading and installing the JDK, ensure that your JDK installation is p
 . Extract the Windows installation file into the `C:\` root folder.
 ** If you are using a Windows antivirus application, ensure that the `plugin/` and `features/` directories are under the _trusted_ category.
 . Open the extracted Anypoint Studio.
-. Click OK to accept the default workspace. 
+. Click OK to accept the default workspace.
 
 [[troubleshoot-install]]
 == Troubleshooting
@@ -54,6 +54,3 @@ If you encounter *Java was started but returned exit code=1* while starting Anyp
 C:\Program Files\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
 ----
 
-== See Also
-
-* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]
