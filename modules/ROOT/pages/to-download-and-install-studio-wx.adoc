@@ -1,0 +1,58 @@
+= Downloading and Installing Anypoint Studio (Windows)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== Prerequisites
+
+* Ensure that you have the Java SE JDK 8 installed and configured.
+* Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio/previous[Download Site].
+
+
+After downloading and installing the JDK, ensure that your JDK installation is properly configured within the `JAVA_HOME` environment variable:
+
+. In Search, search for `System (Control Panel)` and select it.
+. Click *Advanced System Settings*.
+. Click *Environment Variables*.
+. In *System Variables*, look for the PATH environment variable:
+** If `PATH` is visible, select it and click *Edit* to navigate to *Edit System Variable*.
+** If `PATH` is not visible, click *New* to navigate to *New System Variable*.
+. Ensure that the `/bin` directory of your JDK 1.8.0 installation is the first item in your `PATH` environment variable.
+. Click *OK*.
+
+== Installation
+
+. Extract the Windows installation file into the `C:\` root folder.
+** If you are using a Windows antivirus application, ensure that the `plugin/` and `features/` directories are under the _trusted_ category.
+. Open the extracted Anypoint Studio.
+. Click OK to accept the default workspace.
+
+[[troubleshoot-install]]
+== Troubleshooting
+
+If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+
+. Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
+. Add the `-vm` option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+C:\Program Files\Java\jdk1.8.0_73\bin\javaw.exe
+----
++
+* The `-vm` option and the installation path must be on separate lines.
+* The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
+* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
++
+If you encounter *Java was started but returned exit code=1* while starting Anypoint Studio, modify the `-vm` argument to point to the `jvm.dll`:
++
+[source,text,linenums]
+----
+-vm
+C:\Program Files\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
+----
+
+== See Also
+
+* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]

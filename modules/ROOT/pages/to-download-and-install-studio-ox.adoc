@@ -1,0 +1,40 @@
+= Downloading and Installing Anypoint Studio (OS X)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== Prerequisites
+
+* Ensure that you have the Java SE JDK 8 installed and configured.
+* Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio/previous[Download Site].
+
+== Installation
+
+. Extract the Anypoint Studio package and move it to your `/Applications` directory.
+. Open the extracted Anypoint Studio.
+. Click OK to accept the default workspace. +
+** You must Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix and Linux systems.
+
+[[troubleshoot-install]]
+== Troubleshooting
+
+If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+
+. Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
+. Go to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
+. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
+----
++
+* The `-vm` option and the installation path must be on separate lines.
+* The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
+* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
+
+
+== See Also
+
+* xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
