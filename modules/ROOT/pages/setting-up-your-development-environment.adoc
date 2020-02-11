@@ -21,7 +21,7 @@ Java 7 is compatible with Mule 3.6 and below.
 
 === Download and Install Anypoint Studio
 
-* See xref:download-and-launch-anypoint-studio.adoc[Download Anypoint Studio] for detailed instructions
+* See xref:to-download-and-install-studio.adoc[Download Anypoint Studio] for detailed instructions
 
 * If you have any extensions you wish to add to Studio, such as premium connectors or the enterprise security package, see xref:installing-extensions.adoc[Installing Extensions]
 

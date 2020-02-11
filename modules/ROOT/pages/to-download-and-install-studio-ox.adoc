@@ -35,6 +35,3 @@ If Anypoint Studio fails to load with a *An Error Has Occured* message, you must
 * The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.
 
 
-== See Also
-
-* xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Mac OSx)]
