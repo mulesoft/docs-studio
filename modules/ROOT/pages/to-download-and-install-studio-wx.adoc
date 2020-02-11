@@ -53,6 +53,3 @@ If you encounter *Java was started but returned exit code=1* while starting Anyp
 C:\Program Files\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
 ----
 
-== See Also
-
-* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]

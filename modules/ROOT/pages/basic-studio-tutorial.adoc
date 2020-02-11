@@ -4,11 +4,11 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: studio, tutorial, request, response, http, listener, config
 
-This tutorial walks you through how to use Anypoint Studio to build a simple HTTP request-response application. 
+This tutorial walks you through how to use Anypoint Studio to build a simple HTTP request-response application.
 
 == Prerequisites
 
-This tutorial assumes that you have xref:6@download-and-launch-anypoint-studio.adoc[downloaded and installed Anypoint Studio]. If you do not have any previous experience with Eclipse or an Eclipse-based IDE, you can review the brief introduction to the xref:index.adoc[Anypoint Studio interface].
+This tutorial assumes that you have xref:to-download-and-install-studio.adoc[downloaded and installed Anypoint Studio]. If you do not have any previous experience with Eclipse or an Eclipse-based IDE, you can review the brief introduction to the xref:index.adoc[Anypoint Studio interface].
 
 == Goals
 
