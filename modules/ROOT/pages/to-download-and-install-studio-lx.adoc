@@ -21,7 +21,7 @@ Studio 7.x supports only Mule 4.x projects, because the structure of the project
 [[troubleshoot-install]]
 == Troubleshooting
 
-If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+If Anypoint Studio fails to load with a *Incorrect Java Version* message, you must configure it to point to your JDK installation as the default VM:
 
 . Locate your `AnypointStudio.ini` file in `/usr/lib/anypointstudio/anypointstudio.ini`.
 . Add the `-vm` option to point to your specific JDK installation path.
