@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-When you use Anypoint Studio 7.4 to import your API specifications from Exchange or Maven as dependencies of your project, those dependencies relocate from`src/resources/api/` to a ZIP file in your project's classpath. This change means that you cannot search for your API dependencies by using the File Search option in Studio. To enable you to search for specific text inside your API dependencies, Studio introduces the API Search feature.
+When you use Anypoint Studio 7.4, or later, to import your API specifications from Exchange or Maven as dependencies of your project, those dependencies relocate from`src/resources/api/` to a ZIP file in your project's classpath. This change means that you cannot search for your API dependencies by using the File Search option in Studio. To enable you to search for specific text inside your API dependencies, Studio introduces the API Search feature.
 
 You can access the API Search menu from the taskbar at the top of the Anypoint Studio display, either by selecting *Search* > *Search...* or by using the control and H keys on your keyboard simultaneously:
 

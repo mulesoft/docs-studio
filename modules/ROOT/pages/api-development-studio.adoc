@@ -1,4 +1,4 @@
-= API Development in Studio 7.4
+= API Development in Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
