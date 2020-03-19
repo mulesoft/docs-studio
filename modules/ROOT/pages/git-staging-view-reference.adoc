@@ -3,3 +3,88 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+The Git Staging view allows you to control the version control system (VCS) process to edit RAML and OAS API specifications offline and push your changes to Design Center.
+
+== Menu Icon Reference
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+| Icon | Description
+
+2+^| *Unstaged Changes section*
+| Add selected files to the index
+|
+
+| Add all files including not selected ones to the index
+|
+
+| Presentation
+|
+
+| Sort by state
+|
+
+2+^| *Staged Changes section*
+| Remove selected files to the index
+|
+
+| Remove selected files from the index
+|
+
+| Remove all files including not selected ones from the index
+|
+
+2+^| *Commit Message section*
+| Amend (Edit previous commit)
+|
+
+| Add Signed-off-by
+|
+
+| Sign Commit
+|
+
+| Add Change-ID
+|
+
+|===
+
+== Right Click Menu Reference
+
+[%header%autowidth.spread,cols="a,a"]
+|===
+| Option | Description
+
+2+^| *Unstaged Changes section*
+| Open Working Tree Version
+|
+
+| Compare with Index
+|
+
+| Add to Index
+|
+
+|Replace with HEAD Revision
+|
+
+| Assume Unchanged
+|
+
+| Untrack
+|
+
+2+^| *Staged Changes*
+| Open working Tree Version
+|
+
+| Compare with Working Tree
+|
+
+| Remove from Index
+|
+
+| Replace with HEAD Revision
+|
+
+|===
