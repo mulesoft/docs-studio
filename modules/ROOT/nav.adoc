@@ -15,6 +15,8 @@
 
 * xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center]
 
+* xref:git-staging-view-reference.adoc[Git Staging View Reference]
+
 * xref:import-export-packages.adoc[Importing and Exporting Projects]
  ** xref:import-project-exchange.adoc[Importing a Mule Project from Exchange]
  ** xref:export-to-exchange-task.adoc[Publishing a Project to Exchange]
