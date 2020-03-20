@@ -1,0 +1,18 @@
+= Change the JDK Used By Studio (OSx)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+. Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
+. Go to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
+. Add the -vm option to point to your specific JDK installation path.
++
+[source,text,linenums]
+----
+-vm
+/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
+----
++
+* The `-vm` option and the installation path must be on separate lines.
+* The value must be the full absolute or relative path to the Java executable, not just to the Java home directory.
+* The `-vm` option must occur after the other Studio-specific options (such as `-product`, `--launcher.*`, etc), but before the `-vmargs` option.

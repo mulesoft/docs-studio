@@ -60,6 +60,11 @@
  ** xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
  ** xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
 
+* xref:change-jdk-for-studio.adoc[Change the JDK Used By Studio]
+ ** xref:change-jdk-for-studio-wx.adoc[Windows]
+ ** xref:change-jdk-for-studio-lx.adoc[Linux]
+ ** xref:change-jdk-for-studio-ox.adoc[OSx] 
+
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
 * xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
 * xref:proxy-settings-task.adoc[Configuring Proxy Settings]
