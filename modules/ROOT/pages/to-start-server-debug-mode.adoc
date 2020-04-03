@@ -7,7 +7,7 @@ You can debug your Mule applications deployed on a remote Mule instance using th
 
 Remote debugging does not work with clusters.
 
-== Prerequesites
+== Prerequisites
 
 * Add the Mule Debugger Mule Server plugin to your Mule instance. +
 Because Mule runtime engine 4.x does not include the remote debugger plugin as it did in previous versions, you must manually move the bundled debugger plugin from the embedded Mule runtime engine in Studio, and move it to your remote Mule instance.
