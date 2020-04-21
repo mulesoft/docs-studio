@@ -5,86 +5,52 @@ endif::[]
 
 The Git Staging view allows you to control the version control system (VCS) process to edit RAML and OAS API specifications offline and push your changes to Design Center.
 
-== Menu Icon Reference
+== Unstaged Changes section
 
-[%header%autowidth.spread,cols="a,a"]
-|===
-| Icon | Description
+image::unstaged-changes-section.png[]
 
-2+^| *Unstaged Changes section*
-| Add selected files to the index
-|
+<1> image:add-unstage-icons.png[] *Add selected files to the index* +
+This is a test.
+<1> image:add-all-unstage-icons.png[] *Add all files including not selected ones to the index* +
+This is another test.
+<1> image:present-unstage-icons.png[] *Presentation*
+<1> image:sort-by-state-unstage-icons.png[] *Sort by state*
 
-| Add all files including not selected ones to the index
-|
+image::unstaged-changes-section-right-click.png[]
 
-| Presentation
-|
+<1> image:open-working-tree-icon-unstage.png[] *Open Working Tree Version*
+<1> image:compare-with-index-icon-unstage.png[] *Compare with Index*
+<1> image:add-to-index-icon-unstage.png[] *Add to Index*
+<1> *Replace with HEAD Revision*
+<1> image:assume-unchanged-icon-unstage.png[] *Assume Unchanged*
+<1> image:untrack-icon-unstage.png[] *Untrack*
 
-| Sort by state
-|
 
-2+^| *Staged Changes section*
-| Remove selected files to the index
-|
+== Staged Changes section
 
-| Remove selected files from the index
-|
+image::staged-changes-section.png[]
 
-| Remove all files including not selected ones from the index
-|
+<1> image:remove-stage-icons.png[] *Remove selected files from the index*
+<1> image:remove-all-stage-icons.png[] *Remove all files including not selected ones from the index*
 
-2+^| *Commit Message section*
-| Amend (Edit previous commit)
-|
+image::staged-changes-section-right-click.png[]
 
-| Add Signed-off-by
-|
+<1> image:open-working-tree-icon-stage.png[] *Open working Tree Version*
+<1> image:compare-with-index-icon-stage.png[] *Compare with Working Tree*
+<1> image:remove-from-index-icon-stage.png[] *Remove from Index*
+<1> *Replace with HEAD Revision*
 
-| Sign Commit
-|
+== Commit Message section
 
-| Add Change-ID
-|
+image::commit-message-section.png[]
 
-|===
 
-== Right Click Menu Reference
 
-[%header%autowidth.spread,cols="a,a"]
-|===
-| Option | Description
+<1> image:amend-commit-message.png[] *Amend (Edit previous commit)*
+<1> image:sign-off-by-commit-message.png[] *Add Signed-off-by*
+<1> image:sign-commit-commit-message.png[] *Sign Commit*
+<1> image:add-change-id-commit-message.png[] *Add Change-ID*
 
-2+^| *Unstaged Changes section*
-| Open Working Tree Version
-|
 
-| Compare with Index
-|
 
-| Add to Index
-|
 
-|Replace with HEAD Revision
-|
-
-| Assume Unchanged
-|
-
-| Untrack
-|
-
-2+^| *Staged Changes*
-| Open working Tree Version
-|
-
-| Compare with Working Tree
-|
-
-| Remove from Index
-|
-
-| Replace with HEAD Revision
-|
-
-|===
