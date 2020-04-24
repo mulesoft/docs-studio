@@ -8,11 +8,13 @@ In certain scenarios, someone else might have modified the version in Design Cen
 For example, you might have modified a file in a branch, while someone else modified this very same file in the same branch directly in Design Center. By the time you want to push your changes, git rejects the push command because it cannot fast-forward your changes to the version in Design Center, meaning that you must tell git how to apply your changes over a modified version:
 //_TODO add more information about git conflicts.
 
-image::conflict.png[]
-
-To solve conflicts from Studio:
-
 . In the Package Explorer view, right-click your API project and select *Team* > *Switch To* > *Push Branch...*.
++
+image::push-branch.png[]
+. Git rejects the push due to the conflicting file:
++
+image::conflict.png[]
+. Pull the changes from Design Center into your local version.
 +
 image::pull-changes.png[]
 . Evaluate the conflicts flagged by git:
