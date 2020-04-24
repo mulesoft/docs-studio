@@ -4,26 +4,36 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: api, anypoint platform, sync, api sync
 
-The API Sync feature of Anypoint Studio enables you to pull a published RAML or OAS 2.0 API specification from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. API Sync also enables you monitor the API versions that you implemented in your project and update your flows based on the latest published version.
+The API Sync feature of Anypoint Studio enables you to:
 
+* Pull a published RAML or OAS 2.0 API specification from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. +
+API sync also enables you to edit the API specification you imported from Exchange, and push your changes to Design Center.
++
 You can use API Sync on more than one API specification to scaffold multiple flows in different Mule configuration files.
+* Monitor the API versions that you implemented in your project and update your flows based on the latest published version.
+* Pull a RAML or OAS 2.0 API specification from Design Center into Studio, edit the specification offline, and pull the updates back to Design Center.
 
 API Sync supports importing both RAML and OAS 2.0 specifications.
 
 API Sync comes bundled by default in Studio 7.4.x and later, and requires Mule 4.1.4 and later.
 
-API sync might now work properly if the RAML file exceeds 4,000 lines of text.
+API sync might not work properly if the RAML file exceeds 4,000 lines of text.
 
-== Working with API Sync
+Using API Sync, you can develop your Mule applications following API Lifecycle development practices.
 
-Using API Sync, you can develop your Mule applications following  API Lifecycle development practices:
+== Import an API Specification from Exchange into a New Mule Project
 
-. Create an API specification in Design Center and publish it to Exchange. +
-You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification by using the visual editor in Design Center] or xref:design-center::design-create-publish-api-raml-editor.adoc[create and publish an API specification by using the Code Editor in Design Center].
+. Create an API specification in Design Center. +
+You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].
+. Publish it to Exchange. +
+See xref:design-center::design-publish.adoc[Publish an API Specification] for more information.
 . Import the same API specification from Exchange to your Studio project. +
-See xref:api-development-studio.adoc[API development in Studio] for more information.
+See xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange] for more information.
 
-It is not possible to create a new API version from Studio and then upload it to Exchange. Change your API specification in Design Center, publish a new version to Exchange, and then update your local Studio implementation using API Sync:
+// It is not possible to create a new API version from Studio and then upload it to Exchange.
+// Change your API specification in Design Center, publish a new version to Exchange, and then update your local Studio implementation using API Sync:
+
+You can keep your Studio projects updated to the latest version of the API specification:
 
 . Right click in the project that implements the API for which you want to check for updates.
 . From the *API Specs* menu, select the API for which you want to check for updates, and click *Update Version*. +
@@ -31,10 +41,26 @@ If a new version is found, API Sync asks you if you want to regenerate the flows
 
 You can manage the API specifications in your project that are linked to Exchange from the API Project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
 
+=== Edit The Imported API Specification in Studio
 
+You can also edit the imported API specification in your project as an API project.
 
+. Import the API specification from Exchange to your Studio project.
+. Synchronize it to Design Center,
+. Publish it to Exchange
+. Import the new version of your API spec.
+
+See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Pojects in Studio] for more information.
+
+== Import an API Specification from Design Center into an Editable API Project
+
+. Create an API specification in Design Center. +
+You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].
+. Import the same API specification from Design Center to your Studio project. +
+See xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center] to learn how to do this.
 
 == See Also
 
+* xref:api-development-studio.adoc[API Development in Studio]
 * xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange]
 * xref:import-api-specification-maven.adoc[Importing an API Specification from Maven]
