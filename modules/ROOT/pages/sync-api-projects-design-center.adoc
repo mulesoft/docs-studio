@@ -44,6 +44,9 @@ When configuring this option, you must select the behavior you want git to have 
 <1> Select the *Check out new branch* for git to switch to this new branch as soon as you create it.
 . Select *Finish*.
 
+With a newly created branch, you can start committing your changes. 
+
+[[commit-to-branch]]
 == Commit Changes to Your API Project
 
 The VCS in Studio tracks every change you make to your project and shows them in the *Unstaged Changes* area of your *Git Staging* view.
@@ -66,7 +69,6 @@ image::add-commit-message.png[]
 <1> Select *Commit and Push* to also push the change to Design Center. +
 See <<push-branch,Push Your Branch to Design Center>> below for more information.
 <1> Select *Commit* to add the commit to your local copy.
-
 
 See xref:git-staging-view-reference.adoc[Git Staging View Reference] for more information about this view.
 
