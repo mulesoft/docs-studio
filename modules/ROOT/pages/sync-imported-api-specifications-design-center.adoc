@@ -1,0 +1,32 @@
+= Edit Imported API Specifications in Your Pojects in Studio
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can edit an imported API specification in your project as an API project.
+
+Before you begin, ensure that you have the necessary permissions to edit the API specification in Design Center, and that you don't already have an API Project for that API specification in your Studio workspace.
+
+. In the Package Explorer view, right-click the API dependency of your API project and select the name of the API you want to edit >  *Import API Spec from Design Center*.
++
+image::import-dc-working-spec.png[]
++
+By default, Studio pulls the 'master' branch in Design Center. If the API version that you imported from Exchange belongs to a different branch in Design Center, you must switch to that branch before continuing.
+. Apply the changes to your API specification.
+. Synchronize your changes with Design Center before publishing to Exchange. +
+See xref:sync-api-projects-design-center.adoc#commit[Commit Changes to Your API Project] for more information.
+. In the Package Explorer view, right-click your API project and select *Publish to Exchange*.
+. Update the asset and API version:
++
+image::update-asset-version.png[]
+. Click *Finish*.
+. In the Package Explorer view, right-click the Mule project where you imported the API specification that edited, and select *API Specs* > the name of your API > *Update Version*.
++
+image::update-version-api-dc.png[]
+. Select the new version of your API specification and select *Apply and Close*.
++
+Studio updates the API specification to the selected version and offers you to scaffold the flows again based on the new version.
+
+
+
+
