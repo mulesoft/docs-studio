@@ -74,3 +74,7 @@ image::push-conflict-changes.png[]
 . Select *Commit and Push*.
 
 Your copies between Studio and Design Center are synchronized with your latest changes.
+
+== See Also
+
+* xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center]
