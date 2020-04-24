@@ -1,0 +1,76 @@
+= Solving Conflicts
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+In certain scenarios, someone else might have modified the version in Design Center while you modified the same version locally. This triggers a conflict in git.
+
+For example, you might have modified a file in a branch, while someone else modified this very same file in the same branch directly in Design Center. By the time you want to push your changes, git rejects the push command because it cannot fast-forward your changes to the version in Design Center, meaning that you must tell git how to apply your changes over a modified version:
+//_TODO add more information about git conflicts.
+
+image::conflict.png[]
+
+To solve conflicts from Studio:
+
+. In the Package Explorer view, right-click your API project and select *Team* > *Switch To* > *Push Branch...*.
++
+image::pull-changes.png[]
+. Evaluate the conflicts flagged by git:
++
+image::flagged-commit.png[]
+<1> Your local commit flagged as conflicting.
+<1> The commit made by another collaborator flagged as conflicting.
+. Git flags the conflicting parts of the file in the API editor view:
++
+image::resolve-marked-conflict.png[]
++
+[source,linenums]
+----
+<<<<<<< HEAD
+          - LAX
+          - CLE
+======= //<1>
+          - CLE
+          - LAX
+>>>>>>> branch 'add-flights-path' of https://anypoint.mulesoft.com/ //<2>
+----
+<1> Everything between the characters `HEAD` and `=======` are your changes.
+<1> Everything between the characters `=======` and `branch ...` are the changes in Design Center conflicting with yours.
++
+In this case, another collaborator changed the definition from:
++
+[source,raml,linenums]
+----
+/flights:
+  get:
+    queryParameters:
+      destination:
+        required: false
+        enum:
+          - SFO
+          - LAX
+          - CLE
+----
+To:
++
+[source,raml,linenums]
+----
+/flights:
+  get:
+    queryParameters:
+      destination:
+        required: false
+        enum:
+          - SFO
+          - CLE
+          - LAX
+----
+The conflict happens because git does not know which change to prioritize.
+. Remove the change you don't want to keep:
++
+image::push-conflict-changes.png[]
+<1> Ensure that your changes remain in the file.
+<1> Add your changes to the index.
+. Select *Commit and Push*.
+
+Your copies between Studio and Design Center are synchronized with your latest changes.
