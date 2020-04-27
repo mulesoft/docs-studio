@@ -17,4 +17,3 @@ image::datasense-explorer2-1.png[datasense+explorer2-1]
 == See Also
 
 * xref:datasense-concept.adoc[DataSense]
-* xref:datasense-perceptive-flow-design-concept.adoc[Perceptive Flow Design]

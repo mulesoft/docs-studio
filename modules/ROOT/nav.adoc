@@ -44,8 +44,8 @@
 * xref:api-sync.adoc[API Sync]
 
 * xref:datasense-concept.adoc[DataSense]
- ** xref:datasense-perceptive-flow-design-concept.adoc[Perceptive Flow Design]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
+
 * xref:metadata-editor-concept.adoc[Metadata Editor]
  ** xref:access-metadata-editor-task.adoc[Accessing the Metadata Editor]
  ** xref:create-metadata-class-task.adoc[Creating a Metadata Class]
