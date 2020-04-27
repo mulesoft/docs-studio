@@ -3,19 +3,35 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :keywords: anypoint studio, datasense, metadata, meta data, query metadata, dsql, data sense query language
+:page-aliases: datasense-perceptive-flow-design-concept.adoc
 
-DataSense is a feature of Anypoint Studio. It uses the Mule Event metadata to facilitate application design. Rather than forcing you to manually discover information about the data your internal and external resources employ, Anypoint Studio proactively acquires Mule Event's information such as data type and structure, in order to prescribe how to accurately map or use this data in your application.
+DataSense is a feature of Anypoint Studio that uses Mule event metadata to help you design applications. Rather than forcing you to manually discover this metadata, Anypoint Studio automatically acquires it so that you can map or use this data in your application.
 
-For example, if your application connects to Twitter, DataSense captures information about the type and structure of data that Twitter employs, then uses the information to advise you of the type of data you should send to, or expect to receive from Twitter.
+== Understanding How DataSense Uses Mule Event Metadata
 
-Studio offers these DataSense features to support proactive discovery of metadata from external resources:
+Understanding how your components use metadata in a flow is key to ensuring data reliability by enabling early detection of errors during project design and data reusability in your Mule application by detecting when a component requires metadata that is not being exposed to it within its scope.
 
-* Perceptive Flow Design
-* DataSense Explorer
+== Using Datasense to Map Data
+
+Consider a flow in which you include an Anypoint Connector preceded or followed by a Transform Message component. The Mule runtime engine uses the working connection to the resource to retrieve and supply to DataWeave metadata about the payload and properties, saving you the effort of manually inspecting Mule event structure.
+
+For example, imagine that you need to connect your organization's Salesforce account to Slack to notify your team about a new opportunity. To accomplish this, you can drop both Salesforce and Slack connectors on your Studio canvas and configure them to connect to your organization's accounts. Then, you can drop a Transform Message component between the connectors. Mule automatically captures the data type and structure information from each provider and prescribes the input and output for your data mapping. With this prescription in place, you can configure the mapping, populating the DataWeave code.
+
+image::datasense-perceptive-flow-design-concept-cf42d.png[]
+
+== Using Datasense for Autocomplete
+
+Imagine that you are obtaining status update data from the Slack connector and you want to log the message you are sending to Slack, but you aren't familiar with the property names used by this connector. Instead of referring to Slack documentation, you can insert a Logger message processor after the Slack connector and begin to type in it, which activates autocomplete. For example, if you type `#[payload.` and then press `ctrl + space bar`, you get a list of all the properties and methods associated with that payload, including the properties returned by your request to the Slack connector.
+
+image::payload-autocomplete.png[]
+
+== When to Manually Define Metadata
+
+Although all components of a Mule application allow you to manually define the metadata that they expose, you should do so only when it is absolutely required (for example, for a metadata type that you defined), or when it is most cohesive to an annotated value (for example, when a component uses or expects a specific metadata type).
+
+For example, when working with flows and subflows you must declare their metadata contract to specify the shape of the event you require and the shape of the event your return to the caller. On the contrary, you should not define metadata when using the Transform Message component because DataWeave defines the contract between the producer of data and the consumer of data. In this situation, if you explicitly declare a metadata type, you mask the actual metadata type of the data coming from your Transform Message component.
 
 
 == See Also
 
-xref:datasense-perceptive-flow-design-concept.adoc[Perceptive Flow Design]
-
-xref:datasense-explorer.adoc[DataSense Explorer]
+* xref:datasense-explorer.adoc[DataSense Explorer]
