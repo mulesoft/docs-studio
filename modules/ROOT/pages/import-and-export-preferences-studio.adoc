@@ -1,0 +1,37 @@
+= Export and Import Studio Preferences
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can export your Anypoint Studio preferences and import them into a new version.
+
+Follow this process if you had to download a fresh copy of Studio and you want to recover your previous configurations.
+
+== Export Your Studio Configurations
+
+. In Studio, go to *Preferences*.
+. Ensure that you applied all the configurations that you want to export.
+. Select the *Export* icon image:export-icon.png[30,30]
++
+image::export-preferences.png[]
+. Configure the preferences that you want to export:
++
+image::export-preferences-configure.png[]
+<1> Select *Export all* to export all of your preferences, or select the specific configurations that you want to export.
+<1> Define a location and name for your exported preferences.
+. Select *Finish*.
+
+== Import Your Studio Configurations
+
+When importing preferences, you must restart Studio to apply changes.
+
+. In Studio, go to *Preferences*.
+. Select the *Import* icon image:import-icon.png[30,30]
++
+image::import-preferences.png[]
+Configure the preferences that you want to import:
++
+image::import-preferences-configure.png[]
+<1> Define the location for your preferences.
+<1> Select *Import all* to import all of your preferences, or select the specific configurations that you want to import.
+. Select *Finish*.
