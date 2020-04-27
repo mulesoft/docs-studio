@@ -5,6 +5,8 @@
  ** xref:to-download-and-install-studio-lx.adoc[Linux]
  ** xref:to-download-and-install-studio-ox.adoc[OSx]
 
+* xref:import-and-export-preferences-studio.adoc[Export and Import Studio Preferences]
+
 * xref:api-development-studio.adoc[API Development in Studio]
 
 * xref:import-api-secification.adoc[Import API Specifications]
