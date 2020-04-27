@@ -15,3 +15,6 @@ Ensure to allow the OpenDJK Platform library from the AdoptOpenJDK publisher thr
 . Click OK to accept the default workspace. +
 ** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +
 Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
+
+[CAUTION]
+If you want to rename your `AnypointStudio.exe` executable file, you must also rename the `AnypointStudio.ini` file on the same directory.
