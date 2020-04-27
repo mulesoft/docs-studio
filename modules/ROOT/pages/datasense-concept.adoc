@@ -13,7 +13,7 @@ Understanding how your components use metadata in a flow is key to ensuring data
 
 == Using Datasense to Map Data
 
-Consider a flow in which you include an Anypoint Connector preceded or followed by a Transform Message component. The Mule runtime engine uses the working connection to the resource to retrieve and supply to DataWeave metadata about the payload and properties, saving you the effort of manually inspecting Mule event structure.
+Consider a flow in which you include an Anypoint Connector preceded or followed by a Transform Message component. The Mule runtime engine uses the working connection to the resource to retrieve and supply metadata about the payload and properties to DataWeave, saving you the effort of manually inspecting Mule event structure.
 
 For example, imagine that you need to connect your organization's Salesforce account to Slack to notify your team about a new opportunity. To accomplish this, you can drop both Salesforce and Slack connectors on your Studio canvas and configure them to connect to your organization's accounts. Then, you can drop a Transform Message component between the connectors. Mule automatically captures the data type and structure information from each provider and prescribes the input and output for your data mapping. With this prescription in place, you can configure the mapping, populating the DataWeave code.
 
@@ -29,7 +29,7 @@ image::payload-autocomplete.png[]
 
 Although all components of a Mule application allow you to manually define the metadata that they expose, you should do so only when it is absolutely required (for example, for a metadata type that you defined), or when it is most cohesive to an annotated value (for example, when a component uses or expects a specific metadata type).
 
-For example, when working with flows and subflows you must declare their metadata contract to specify the shape of the event you require and the shape of the event your return to the caller. On the contrary, you should not define metadata when using the Transform Message component because DataWeave defines the contract between the producer of data and the consumer of data. In this situation, if you explicitly declare a metadata type, you mask the actual metadata type of the data coming from your Transform Message component.
+For example, when working with flows and subflows you must declare their metadata contract to specify the shape of the event you require and the shape of the event you return to the caller. You should not define metadata when using the Transform Message component because DataWeave defines the contract between the producer of data and the consumer of data. In this situation, if you explicitly declare a metadata type, you mask the actual metadata type of the data coming from your Transform Message component.
 
 
 == See Also
