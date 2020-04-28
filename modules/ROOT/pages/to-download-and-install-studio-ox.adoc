@@ -8,6 +8,13 @@ endif::[]
 . Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 . Extract the Anypoint Studio package and move it to your `/Applications` directory.
 . Open the extracted Anypoint Studio.
+.. It is possible that Gatekeeper flags Studio as an unsafe application:
++
+image::studio-blocked-gatekeeper.png[]
++
+.. To open Studio, navigate to *System Preferences* > *Security and Privacy* and in the *General* tab select *Open Anyway*:
++
+image::open-anyway-gatekeeper.png[]
 . Click OK to accept the default workspace. +
 ** You must Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix and Linux systems.
 ** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +
