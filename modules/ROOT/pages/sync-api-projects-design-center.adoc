@@ -44,7 +44,7 @@ When configuring this option, you must select the behavior you want git to have 
 <1> Select the *Check out new branch* for git to switch to this new branch as soon as you create it.
 . Select *Finish*.
 
-With a newly created branch, you can start committing your changes. 
+With a newly created branch, you can start committing your changes.
 
 [[commit-to-branch]]
 == Commit Changes to Your API Project
@@ -71,6 +71,19 @@ See <<push-branch,Push Your Branch to Design Center>> below for more information
 <1> Select *Commit* to add the commit to your local copy.
 
 See xref:git-staging-view-reference.adoc[Git Staging View Reference] for more information about this view.
+
+== Merge Your Changes into the Master Branch
+
+You can merge the changes made in your local branch to the master branch to push to Design Center:
+
+. In the Package Explorer view, right-click your API project and select *Team* > *Merge* > *Push Branch...*.
++
+image::merge-menu.png[]
+. Select the local branch to which you want to merge your changes:
++
+image::merge-view.png[]
+. Select *Merge*.
+
 
 [[push-branch]]
 == Push Your Branch to Design Center
