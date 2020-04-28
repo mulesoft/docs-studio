@@ -7,13 +7,13 @@
 
 * xref:import-and-export-preferences-studio.adoc[Export and Import Studio Preferences]
 
-* xref:api-development-studio.adoc[API Development in Studio]
-
 * xref:import-api-secification.adoc[Import API Specifications]
 ** xref:import-api-specification-exchange.adoc[From Exchange]
 ** xref:import-api-specification-maven.adoc[From Maven]
 ** xref:import-api-specification-local-file.adoc[From a Local File]
 ** xref:import-api-specification-design-center.adoc[From Design Center]
+
+* xref:api-development-studio.adoc[API Development in Studio]
 
 * xref:api-sync.adoc[API Sync]
  ** xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center]
