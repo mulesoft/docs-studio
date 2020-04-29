@@ -39,7 +39,7 @@ You can only keep RAML API specifications as local copies within your project's 
 
 == API Specifications as API Projects in Studio
 
-You can import an API specification from Design Center as a an API project with VCS enabled capabilities to edit your API specification using Studio and synchronize your changes with Design Center:
+You can import an API specification from Design Center as a an API project with version control system (VCS) enabled capabilities to edit your API specification using Studio and synchronize your changes with Design Center:
 
 . Design an API specification in Design Center. +
 You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification with the Visual Editor] or xref:design-center::design-create-publish-api-raml-editor.adoc[with the Code Editor].
@@ -51,3 +51,5 @@ You can also edit an API specification that you imported as an API dependency in
 . Import the API specification xref:import-api-specification-exchange.adoc[from Exchange to Studio]. +
 Your API specification is imported to Anypoint Studio as a dependency. This means that your Mule application project now holds a reference to the specific API version that you are implementing. Studio monitors your API and notifies you when there is a new version available.
 . Select the API specification imported in your project and xref:sync-imported-api-specifications-design-center.adoc[Edit your API specification from Studio] to later sync your changes to Design Center.
+
+Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
