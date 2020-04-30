@@ -50,7 +50,7 @@ You can also edit the imported API specification in your project as an API proje
 . Publish it to Exchange
 . Import the new version of your API spec.
 
-See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Pojects in Studio] for more information.
+See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Projects in Studio] for more information.
 
 == Import an API Specification from Design Center into an Editable API Project
 

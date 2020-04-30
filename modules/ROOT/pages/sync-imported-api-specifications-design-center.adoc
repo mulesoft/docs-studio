@@ -1,4 +1,4 @@
-= Edit Imported API Specifications in Your Pojects in Studio
+= Edit Imported API Specifications in Your Projects in Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
