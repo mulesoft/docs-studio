@@ -8,7 +8,7 @@ If you are experiencing issues visualizing web content such as the Runtime Manag
 
 * xref:studio-xulrunner-wx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Windows)]
 * xref:studio-xulrunner-lnx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Linux)]
-* xref:studio-xulrunner-unx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (Mac OSx)]
+* xref:studio-xulrunner-unx-task.adoc[To Configure XULRunner as Studio's Default Layout Engine (MacOS)]
 
 == See Also
 
