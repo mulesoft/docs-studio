@@ -3,7 +3,7 @@
 * xref:to-download-and-install-studio.adoc[Downloading and Installing Studio]
  ** xref:to-download-and-install-studio-wx.adoc[Windows]
  ** xref:to-download-and-install-studio-lx.adoc[Linux]
- ** xref:to-download-and-install-studio-ox.adoc[OSx]
+ ** xref:to-download-and-install-studio-ox.adoc[MacOS]
 * xref:setting-up-your-development-environment.adoc[Development Environment Setup]
  ** xref:hardware-and-software-requirements.adoc[Hardware and Software Requirements]
  ** xref:studio-update-sites.adoc[Updating Studio, Mule and Components]
