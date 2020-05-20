@@ -16,7 +16,7 @@ Because Mule runtime engine 4.x does not include the remote debugger plugin as i
 * Windows +
 Navigate to the `/plugins/` directory in your Studio’s installation directory.
 +
-* OSx +
+* MacOS +
 Navigate to your Studio installation in `/Applications/`, right-click on it, select *Show Package Content*, and navigate to `Contents/Eclipse/plugins/`.
 +
 * Linux +

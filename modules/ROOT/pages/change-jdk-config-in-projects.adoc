@@ -19,7 +19,7 @@ image::change-jdk-config-in-projects-09213.png[align=center]
 If your installed JRE version does not appear, you need to configure it:
 +
 .. Go to *Add...*, and select your type of installed JRE:
-** `MacOS X VM` for OSx.
+** `MacOS X VM` for MacOS.
 ** `Standard VM` for Windows and Linux.
 .. Click *Next*.
 .. In the *JRE Home*, click *Directory* and select the folder where your JDK is installed. +
