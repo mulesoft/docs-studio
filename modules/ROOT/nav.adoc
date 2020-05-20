@@ -3,7 +3,7 @@
 * xref:to-download-and-install-studio.adoc[Downloading and Installing Studio]
  ** xref:to-download-and-install-studio-wx.adoc[Windows]
  ** xref:to-download-and-install-studio-lx.adoc[Linux]
- ** xref:to-download-and-install-studio-ox.adoc[OSx]
+ ** xref:to-download-and-install-studio-ox.adoc[MacOS]
 
 * xref:api-development-studio.adoc[API Development in Studio]
 
@@ -73,4 +73,4 @@
 * xref:faq-default-browser-config.adoc[Troubleshoot Issues with Platform Content in Studio]
  ** xref:studio-xulrunner-wx-task.adoc[Windows]
  ** xref:studio-xulrunner-lnx-task.adoc[Linux]
- ** xref:studio-xulrunner-unx-task.adoc[OSx]
+ ** xref:studio-xulrunner-unx-task.adoc[MacOS]
