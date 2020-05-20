@@ -1,4 +1,4 @@
-= Change the JDK Used By Studio (OSx)
+= Change the JDK Used By Studio (MacOS)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

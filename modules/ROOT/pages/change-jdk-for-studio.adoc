@@ -11,4 +11,4 @@ If you need to use a different JDK for your development projects, follow the ins
 
 * xref:change-jdk-for-studio-wx.adoc[Windows]
 * xref:change-jdk-for-studio-lx.adoc[Linux]
-* xref:change-jdk-for-studio-ox.adoc[OSx] 
+* xref:change-jdk-for-studio-ox.adoc[MacOS] 

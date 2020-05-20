@@ -9,7 +9,7 @@ If you are experiencing issues visualizing web content such as the Runtime Manag
 
 * xref:studio-xulrunner-wx-task.adoc[Windows]
 * xref:studio-xulrunner-lnx-task.adoc[Linux]
-* xref:studio-xulrunner-unx-task.adoc[OSx]
+* xref:studio-xulrunner-unx-task.adoc[MacOS]
 
 == See Also
 
