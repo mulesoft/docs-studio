@@ -3,7 +3,7 @@
 * xref:to-download-and-install-studio.adoc[Downloading and Installing Studio]
  ** xref:to-download-and-install-studio-wx.adoc[Windows]
  ** xref:to-download-and-install-studio-lx.adoc[Linux]
- ** xref:to-download-and-install-studio-ox.adoc[OSx]
+ ** xref:to-download-and-install-studio-ox.adoc[MacOS]
 
 * xref:import-and-export-preferences-studio.adoc[Export and Import Studio Preferences]
 
@@ -69,7 +69,7 @@
 * xref:change-jdk-for-studio.adoc[Change the JDK Used By Studio]
  ** xref:change-jdk-for-studio-wx.adoc[Windows]
  ** xref:change-jdk-for-studio-lx.adoc[Linux]
- ** xref:change-jdk-for-studio-ox.adoc[OSx]
+ ** xref:change-jdk-for-studio-ox.adoc[MacOS]
 
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
 * xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
@@ -84,4 +84,4 @@
 * xref:faq-default-browser-config.adoc[Troubleshoot Issues with Platform Content in Studio]
  ** xref:studio-xulrunner-wx-task.adoc[Windows]
  ** xref:studio-xulrunner-lnx-task.adoc[Linux]
- ** xref:studio-xulrunner-unx-task.adoc[OSx]
+ ** xref:studio-xulrunner-unx-task.adoc[MacOS]
