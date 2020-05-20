@@ -7,7 +7,7 @@ Anypoint Studio allows you to configure proxy configurations for when your compu
 Anypoint Studio only supports configurations for non-authenticated proxies.
 
 . Open the preferences view. +
-In OSx go to Anypoint Studio > Preferences.. or hit `cmd + ,`. +
+In MacOS go to Anypoint Studio > Preferences.. or hit `cmd + ,`. +
 In Windows and Linux go to Window > Prefereces...
 . Under General select Network Connections.
 . Select your Active Provider: +
