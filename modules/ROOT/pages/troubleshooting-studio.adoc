@@ -13,7 +13,7 @@ To configure this:
 . Locate your `AnypointStudio.ini` file:
 .. On Windows: This file is located within your Anypoint Studio's installation directory.
 .. On Linux: `/usr/lib/anypointstudio/anypointstudio.ini`
-.. On OSx: `Applications/AnypointStudio`:
+.. On MacOS: `Applications/AnypointStudio`:
 ... Right click on the AnypointStudio.app package
 ... Select `Show Package Contents`
 ... Navigate to `Contents > Eclipse > AnypointStudio.ini`
@@ -25,7 +25,7 @@ To configure this:
 
 [TIP]
 In Firefox and Windows, XULRunner binaries are located in the folder where you extracted the XULRunner package. +
-In OSx, XULRunner binaries are located in a subfolder within the directory where you extracted the XULRunner package: `XUL.framework/Versions/Current/`
+In MacOS, XULRunner binaries are located in a subfolder within the directory where you extracted the XULRunner package: `XUL.framework/Versions/Current/`
 
 
 Additionally, if you are using Windows with Internet Explorer configured as your default browser, and experiencing unexpected crashes, you must disable *ActiveX Filtering*:
