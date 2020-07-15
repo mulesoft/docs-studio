@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: 6.5@studio::import-api-def-dc.adoc
 
 Anypoint Studio 6.3 and later allow you to import an API Definition from Design Center and implement it either into a new Mule Project, or an existing one.
 

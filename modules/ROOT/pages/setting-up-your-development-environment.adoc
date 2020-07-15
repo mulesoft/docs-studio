@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: 6.5@studio::setting-up-your-development-environment.adoc
 
 Setting up a proper development environment is crucial for a successful use of the Mule Runtime. +
 The following document outlines the steps to be taken before any significant use of Anypoint Studio, Mule, and our Cloud Solutions.

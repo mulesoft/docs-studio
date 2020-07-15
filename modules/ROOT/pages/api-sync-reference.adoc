@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: 6.5@studio::api-sync-reference.adoc
 :keywords: api, anypoint platform, sync, api sync
 
 In API Sync View, you pull, push, and compare your API definition in Anypoint Studio and xref:1.x@api-manager::designing-your-api.adoc[API Designer].
