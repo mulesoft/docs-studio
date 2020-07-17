@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: 6.5@studio::tips-transform-message-ui-studio.adoc
 
 * Before creating your mapping, configure everything else on the flow so that the input and output is known.
 

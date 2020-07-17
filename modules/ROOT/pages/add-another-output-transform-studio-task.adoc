@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: 6.5@studio::add-another-output-transform-studio-task.adoc
 
 A single Transform Message component can give shape to several different parts of the output (example: the payload, a flow variable, a property). Each different output part must be defined in a separate DataWeave code, written out in a separate tab of the Transform pane. For example: if one tab defines the payload, and another an outbound property, these are both parts of the same output Mule message.
 
