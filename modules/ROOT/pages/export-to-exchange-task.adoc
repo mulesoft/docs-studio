@@ -13,7 +13,7 @@ Additionally you can click the "Add Account" button to use a new Anypoint Platfo
 * *Group ID* +
 The group ID for your project is the organization ID of your Anypoint Platform organization.
 * *Artifact ID* +
-The artifact ID is the name of your project, minus its version. By default, Studio uses the artifact ID configured in your `pom.xml` file. 
+The artifact ID is the name of your project, minus its version. By default, Studio uses the artifact ID configured in your `pom.xml` file.
 * *Version*: The version of the asset you are publishing.
 . Select a project type. +
 If you are publishing a new version of an already published asset, you cannot change the project type.
@@ -21,8 +21,8 @@ If you are publishing a new version of an already published asset, you cannot ch
 This option updates your local project information with the data configured in the *Publish to Exchange* window. If you do not select this option, the project is deployed with the configured data, but your local project information is not updated.
 . Select *Finish*. +
 
-You can follow deployment progress in the *Console* view.
-Once started, you cannot cancel the your asset's publication Exchange.
+After you select *Finish*, the publication of your project as a new asset in Exchange begins and cannot be cancelled. You can follow the progress of this publication process in the *Console* view.
+
 
 
 == See Also
