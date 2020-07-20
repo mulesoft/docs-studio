@@ -38,6 +38,8 @@
 * xref:visual-debugger-concept.adoc[Visual Debugger]
  ** xref:breakpoints-concepts.adoc[Breakpoints]
  ** xref:breakpoint-view-reference.adoc[Breakpoints View Reference]
+ ** xref:evaluate-dw-expressions.adoc[DataWeave Expression Watches]
+ ** xref:dw-expression-watches-view-reference.adoc[DataWeave Expression Watches View Reference]
 
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
