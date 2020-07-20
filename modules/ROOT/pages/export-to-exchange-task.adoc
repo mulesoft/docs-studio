@@ -5,30 +5,25 @@ endif::[]
 
 Anypoint Studio allows you to connect to Exchange to publish your project as a new asset.
 
-. Right click the project folder on your Package Explorer View.
-. Select Anypoint Platform and then Publish to Exchange.
-+
-If you don't have your Anypoint Platform credentials configured in Anypoint Studio, you'll need to provide your log in information before continuing.
-. Select your Anypoint Platform user and business group.
-+
+. Right-click your project folder in your Package Explorer view.
+. Select *Anypoint Platform* > *Publish to Exchange*.
+. Either select your Anypoint Platform user and business group or create a new Anypoint Platform account by clicking *Add Account*. +
 Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
-. Review the information about your project:
-* Group Id: This field is required. The group Id for your project is the Organization Id of your Anypoint Platform Organization.
-* Artifact Id: This field is required. The artifact Id is the name of your project without a version. By default, Studio uses the artifact Id configured in your pom.xml file.
-* Version: This field is required. The version of the asset you are publishing.
-. Select a project type.
-. Select the "Save updated project information to the pom.xml"  if you want to update your pom.xml file with the data you just provided.
-+
-[NOTE]
---
-If selected, the "Save updated project information to the pom.xml" option updates your local project's information with the data configured in the Publish to Exchange window. +
-If not, the project is deployed with the configured data, but your local project information is not updated.
---
-+
-. Click Finish.
+. Verify that the required identification and version information for your project is present and correct:
+* *Group ID* +
+The group ID for your project is the organization ID of your Anypoint Platform organization.
+* *Artifact ID* +
+The artifact ID is the name of your project, minus its version. By default, Studio uses the artifact ID configured in your `pom.xml` file.
+* *Version*: The version of the asset you are publishing.
+. Select a project type. +
+If you are publishing a new version of an already published asset, you cannot change the project type.
+. Select *Save updated project information to the pom.xml*  if you want to update your `pom.xml` file with the data you just provided. +
+This option updates your local project information with the data configured in the *Publish to Exchange* window. If you do not select this option, the project is deployed with the configured data, but your local project information is not updated.
+. Select *Finish*. +
 
-You can follow the deployment progress in the Console View. +
-After confirmed, the deployment to Exchange 2.0 cannot be stopped.
+After you select *Finish*, the publication of your project as a new asset in Exchange begins and cannot be cancelled. You can follow the progress of this publication process in the *Console* view.
+
+
 
 == See Also
 
