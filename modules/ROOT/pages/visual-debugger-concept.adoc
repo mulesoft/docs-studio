@@ -20,5 +20,4 @@ Ensure that there are no routing issues or firewalls blocking access between you
 
 == See Also
 
-* xref:debugger-perspective-concept.adoc[Mule Debugger Perspective]
 * xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]

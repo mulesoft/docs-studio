@@ -36,18 +36,7 @@
 * xref:api-search.adoc[Search Inside Your API Specification Dependencies]
 
 * xref:visual-debugger-concept.adoc[Visual Debugger]
- ** xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
- ** xref:to-run-debug-mode.adoc[Running a Project in Debug Mode]
- ** xref:to-start-server-debug-mode.adoc[Starting the Mule Server In Debug Mode]
- ** xref:to-set-breakpoints.adoc[Setting Breakpoints]
- ** xref:to-set-conditional-breakpoints.adoc[Setting Conditional Breakpoints]
- ** xref:to-set-expression-watches.adoc[Setting Mule Expression Watches]
- ** xref:to-set-error-breakpoints.adoc[Setting Error Breakpoints]
- ** xref:to-evaluate-breakpoint-using-expression.adoc[Evaluating a Breakpoint Using an Expression]
- ** xref:debugger-perspective-concept.adoc[Mule Debugger Perspective]
- ** xref:breakpoint-view-reference.adoc[Breakpoints View Reference]
  ** xref:breakpoints-concepts.adoc[Breakpoints]
- ** xref:mule-watches-view-reference.adoc[DataWeave Expression Watches View Reference]
 
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
