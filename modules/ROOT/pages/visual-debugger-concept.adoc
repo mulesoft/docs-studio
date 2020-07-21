@@ -3,32 +3,32 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio Visual Debugger allows you to run your application from Studio in Debug mode, and to
+Anypoint Studio Visual Debugger enables you to run your application from Studio in Debug mode, and to
 
 The Visual Debugger works with Enterprise Edition runtimes and does not connect to Community Edition runtimes.
 
-You can configure breakpoints to stop the execution of your application at a specific message processor. Using the Mule Debugger View, you can inspect the content of the message as it exists at that point in the flow, and evaluate a Dataweave expression against the captured event.
+To perform debugging, you can configure breakpoints to stop the execution of your application at a specific message processor. Then, using the *Mule Debugger* view, you can inspect the content of the message as it exists at that point in the flow, and evaluate a DataWeave expression against the captured event.
 
-When you run your application in debug mode for the first time, Aynpoint Studio prompts you to load the Mule Debugger Perspective.
+When you run your application in debug mode for the first time, Anypoint Studio prompts you to load Mule Debugger Perspective.
 
-The debugger perspective is composed by a list of preconfigured views that help you debug your application:
+The debugger perspective consists of a list of preconfigured views that help you debug your application:
 
 * Mule Debugger View
-* Evaluate DataWeave Expressions View.
+* Evaluate DataWeave Expressions View
 * Mule Breakpoints View
 
-== Debug your Project in Studio
+== Debug Your Project in Studio
 
 When debugging on your local machine, the debugger listens for incoming TCP connections on `localhost` and port `6666`. You can modify this configuration in by clicking *Run* > *Debug configurations* and selecting the *Debug* tab.
 
 To debug your application in Studio:
 
-. Right-click your project in the Package Explorer view.
+. Right-click your project in the *Package Explorer* view.
 . Select *Debug As* > *Mule Application*. +
 Studio asks you for permission to switch to the Debug Perspective.
 . Click *Yes*.
 
-Additionally you can run your application in debug mode by right clicking in the canvas and selecting *Debug Project*, or by clicking the Debug button on your top toolbar image:to-run-debug-mode-e7b7b.png[debug-button]
+Additionally, you can run your application in debug mode by right-clicking in the canvas and selecting *Debug Project*, or by clicking the *Debug* button on your top toolbar image:to-run-debug-mode-e7b7b.png[debug-button].
 
 
 
