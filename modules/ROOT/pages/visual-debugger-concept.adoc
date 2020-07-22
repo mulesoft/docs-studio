@@ -1,23 +1,35 @@
-= Studio Visual Debugger
+= Studio Debugger
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio Visual Debugger allows you to run your application in Debug mode, setting breakpoints to stop execution to check the contents of an event at a previously-specified event processor.
+Anypoint Studio's debugger enables you to run your application from Studio in debug mode, and to configure breakpoints to stop the execution of your application at a specific message processor. Then, using the *Mule Debugger* view, you can inspect the content of the message as it exists at that point in the flow, and evaluate a DataWeave expression against it.
 
-[NOTE]
-Anypoint Studio Debugger only works with Enterprise Edition runtimes and does not connect to Community Edition runtimes.
+The debugger works with Enterprise Edition runtimes and does not connect to Community Edition runtimes.
 
-When you run your application in Debug mode, the application stops immediately after executing the event processor with the breakpoint. Using the Mule Debugger View, you can browse through the contents of the message as it exists at that point in the flow, and evaluate a Dataweave expression against the captured event.
+When you run your application in debug mode for the first time, Anypoint Studio prompts you to load the *Mule debug* perspective. The *Mule debug* perspective consists of a list of preconfigured views that help you debug your application:
 
-The Visual Debugger is completely distinct from the Java Debugger contained in Studio; in fact, you may run both debuggers concurrently on your application.
+* *Mule Debugger*
+* *Evaluate DataWeave Expressions*
+* *Mule Breakpoints*
 
-When debugging on your local machine, Studio Visual Debugger listens for incoming TCP connections on localhost port 6666. This port must be available on your machine. This means not blocked by a firewall or other security software.
+== Debug Your Project in Studio
 
-If you plan to remotely debug an application running in an external Mule server, you will need connectivity between your machine and the server's debug port, which by default is configured to 6666. +
-Ensure that there are no routing issues or firewalls blocking access between your host and the server's debug port.
+To debug your application in Studio:
+
+. Right-click your project in the *Package Explorer* view.
+. Select *Debug As* > *Mule Application*. +
+Studio asks you for permission to switch to the *Mule debug* perspective.
+. Click *Yes*.
+
+Additionally, you can run your application in debug mode by right-clicking in the canvas and selecting *Debug Project*, or by clicking the *Debug* button on your top toolbar image:to-run-debug-mode-e7b7b.png[debug-button].
+
+== Configure Studio Debugger
+
+When debugging in Studio, the debugger listens for incoming TCP connections on `localhost` and port `6666`. You can modify this configuration in by clicking *Run* > *Debug configurations* and selecting the *Debug* tab.
 
 
 == See Also
 
 * xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
+
