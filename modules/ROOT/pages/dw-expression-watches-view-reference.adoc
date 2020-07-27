@@ -3,16 +3,16 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Studio debugger can watch for selected DataWeave expressions in all active breakpoints. If the expression occurs at at any of the active breakpoints, the debugger evaluates the expression, then displays the result in the *Mule Debugger* view.
+The Studio debugger can watch for selected DataWeave expressions in all active breakpoints. If the expression occurs at any of the active breakpoints, the debugger evaluates the expression, then displays the result in the *Mule Debugger* view.
 
 image::expression-view-reference.png[]
 
 <1> *Expression field* +
-Write your DataWeave expression in the expression field
+Specify the DataWeave expression to watch for in the expression field.
 <1> *Clear* +
-Clears all results from the expression evaluations
+Clears all results from the expression evaluations.
 <1> *Evaluate* +
-Evaluates the expression from the expression field against the metadata of your flow
+Evaluates the expression you specified in the expression field against the metadata of your flow.
 <1> *Add to watch* +
 Adds the current DataWeave expression as an expression watch
 

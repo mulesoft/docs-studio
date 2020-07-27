@@ -30,13 +30,13 @@ You can also save these evaluations as expression watches so that the debugger d
 . After the debugger stops the execution at your breakpoint, write the Dataweave expression in the *Evaluate DataWeave Expression* view, and select *Evaluate*:
 +
 image::evaluate-dw-expression.png[]
-. The result of the evaluation displays in the *Evaluate DataWeave Expression* view.
+The result of the evaluation displays in the *Evaluate DataWeave Expression* view.
 +
 image::evaluation-result.png[]
 
 You can also edit the event properties or attributes:
 
-. In the *Evaluate DataWeave Expression* view, right-click the property value or attribute, and select *Update value...*.
+. In the *Evaluate DataWeave Expression* view, right-click the property value or attribute, and select *Update value...*:
 +
 image::update-value-dw-expression.png[]
 . Edit the value and select *Set*.
@@ -45,13 +45,12 @@ image::set-new-value-dw-expression.png[]
 
 == Add a DataWeave Expression Watch
 
-To instruct Studio Debugger to watch for an expression:
+To instruct Studio debugger to watch for an expression:
 
 . In the *Evaluate DataWeave Expression* view, write your DataWeave expression, and select *Add to watch*:
 +
 image::add-dw-expression-watch.png[]
-. Studio displays the new expression watch in the *Mule Debugger* view:
+Studio displays the new expression watch in the *Mule Debugger* view:
 +
 image::show-expression-watch.png[]
-
 
