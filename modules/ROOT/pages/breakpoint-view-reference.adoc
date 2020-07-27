@@ -11,13 +11,14 @@ image::breakpoints-view.png[]
 <1> *Mute breakpoints* +
 Temporarily disables all breakpoints
 <1> *Disable error breakpoint* +
-Enables error breakpoints. Any event processor in the application becomes a breakpoint if it throws an error.
+Enables error breakpoints +
+Any event processor in the application becomes a breakpoint if it throws an error.
 <1> *Remove all breakpoints* +
-When selected, removes all breakpoints but doesn't remove the event processors under the breakpoint.
+When selected, removes all breakpoints but doesn't remove the event processors under the breakpoint
 <1> *Remove breakpoint* +
-Removes the selected breakpoint.
+Removes the selected breakpoint
 <1> *Conditional* +
-Sets the condition to evaluate for the selected breakpoint. +
+Sets the condition to evaluate for the selected breakpoint +
 The condition must be a `boolean`.
 
 
