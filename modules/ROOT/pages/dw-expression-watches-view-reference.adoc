@@ -1,19 +1,20 @@
-= DataWeave Expression Watches View Reference
+= Evaluate DataWeave Expression View Reference
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Mule Visual Debugger can watch for selected DataWeave expressions in all active breakpoints. If the expression occurs at at any of the active breakpoints, Mule evaluates the expression, then displays the result in the DataWeave Expression Watches View.
+The Studio debugger can watch for selected DataWeave expressions in all active breakpoints. If the expression occurs at at any of the active breakpoints, the debugger evaluates the expression, then displays the result in the *Mule Debugger* view.
 
-image::mule-watches-view-ref-9703f.png[mule-watches-view]
+image::expression-view-reference.png[]
 
-[%header%autowidth.spread]
-|===
-|Number |Description
-| image:mule-watches-view-reference-fcc2a.png[add-icon] |Add Expression icon. Click to add a Mule expression to watch for.
-|image:breakpoint-view-reference-dc51b.png[remove-icon] |Delete Expression icon. Click to delete the selected Mule expression.
-| image:breakpoint-view-reference-8b614.png[remove-all-icon] |Delete All Expressions icon. Click to delete all Mule expressions on the watch list.
-|===
+<1> *Expression field* +
+Write your DataWeave expression in the expression field
+<1> *Clear* +
+Clears all results from the expression evaluations
+<1> *Evaluate* +
+Evaluates the expression from the expression field against the metadata of your flow
+<1> *Add to watch* +
+Adds the current DataWeave expression as an expression watch
 
 
 == See Also

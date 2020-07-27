@@ -39,7 +39,7 @@
  ** xref:breakpoints-concepts.adoc[Breakpoints]
  ** xref:breakpoint-view-reference.adoc[Breakpoints View Reference]
  ** xref:evaluate-dw-expressions.adoc[DataWeave Expression Watches]
- ** xref:dw-expression-watches-view-reference.adoc[DataWeave Expression Watches View Reference]
+ ** xref:dw-expression-watches-view-reference.adoc[Evaluate DataWeave Expression View Reference]
  ** xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
  ** xref:to-start-server-debug-mode.adoc[Starting the Mule Server In Debug Mode]
 
