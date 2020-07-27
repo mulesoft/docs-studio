@@ -1,0 +1,56 @@
+= DataWeave Expression Watches
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+When debugging your Mule application, you may need to evaluate a specific expression while your flow's execution is paused. You can write a DataWeave expression to evaluate or inspect any message property.
+
+If your expression is a declaration, the debugger returns `boolean`. Otherwise, it returns the value.
+For example, you can set:
+
+* One expression to evaluate if the method for a request is `GET`:
++
+[source]
+--
+#[attributes.method == "GET"]
+--
+* And another expression to inspect the payload of the message:
++
+[source]
+--
+#[payload]
+--
+
+The first expression returns either `true` or `false`, while the second expression displays the value of the payload at that particular breakpoint.
+
+You can also save these evaluations as expression watches so that the debugger displays the result of these evaluations every time the execution of your flow stops at a breakpoint.
+
+== Evaluate a DataWeave Expression
+
+. After the debugger stops the execution at your breakpoint, write the Dataweave expression in the *Evaluate DataWeave Expression* view, and select *Evaluate*:
++
+image::evaluate-dw-expression.png[]
+The result of the evaluation displays in the *Evaluate DataWeave Expression* view.
++
+image::evaluation-result.png[]
+
+You can also edit the event properties or attributes:
+
+. In the *Evaluate DataWeave Expression* view, right-click the property value or attribute, and select *Update value...*:
++
+image::update-value-dw-expression.png[]
+. Edit the value and select *Set*.
++
+image::set-new-value-dw-expression.png[]
+
+== Add a DataWeave Expression Watch
+
+To instruct Studio debugger to watch for an expression:
+
+. In the *Evaluate DataWeave Expression* view, write your DataWeave expression, and select *Add to watch*:
++
+image::add-dw-expression-watch.png[]
+Studio displays the new expression watch in the *Mule Debugger* view:
++
+image::show-expression-watch.png[]
+
