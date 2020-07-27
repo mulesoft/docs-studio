@@ -35,8 +35,9 @@
 
 * xref:api-search.adoc[Search Inside Your API Specification Dependencies]
 
-* xref:visual-debugger-concept.adoc[Visual Debugger]
+* xref:visual-debugger-concept.adoc[Studio Debugger]
  ** xref:breakpoints-concepts.adoc[Breakpoints]
+ ** xref:breakpoint-view-reference.adoc[Breakpoints View Reference]
 
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]

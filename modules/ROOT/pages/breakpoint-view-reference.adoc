@@ -3,23 +3,24 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Mule Breakpoints View displays all breakpoints defined in all the applications opened in Studio.
+The *Mule Breakpoints* view displays all breakpoints defined in all the Mule projects opened in Studio.
 
-image::breakpoint-view-reference-d7362.png[breakpoint-view]
+// image::breakpoint-view-reference-d7362.png[breakpoint-view]
+image::breakpoints-view.png[]
 
-Breakpoint description format:
+<1> *Mute breakpoints* +
+Temporarily disables all breakpoints
+<1> *Disable error breakpoint* +
+Enables error breakpoints +
+Any event processor in the application becomes a breakpoint if it throws an error.
+<1> *Remove all breakpoints* +
+When selected, removes all breakpoints but doesn't remove the event processors under the breakpoint
+<1> *Remove breakpoint* +
+Removes the selected breakpoint
+<1> *Conditional* +
+Sets the condition to evaluate for the selected breakpoint +
+The condition must be a `boolean`.
 
-`<application name> [<message processor number>] - <flow name>`
-
-[%header%autowidth.spread]
-|===
-|Number |Description |Remarks
-|image:to-set-error-breakpoints-55f71.png[error-breakpoint-icon] | Error Breakpoint Icon | When enabled, any event processor in the application becomes a breakpoint if it throws an error.
-| image:breakpoint-view-reference-8b614.png[remove-all-icon] |remove all breakpoints |When selected, removes all breakpoints but doesn't remove message processors
-| image:breakpoint-view-reference-dc51b.png[remove-icon] |Remove selected breakpoint | Removes the selected breakpoint.
-| image:breakpoint-view-reference-75cef.png[condition-breakpoint] | Conditional Breakpoint |Sets the condition to evaluate for the selected breakpoint. +
-The condition must be a Boolean. The breakpoint activates if the specified condition evaluates to true. To specify a conditional breakpoint, select a breakpoint and click the Conditional checkbox, then add a condition.
-|===
 
 == See Also
 
