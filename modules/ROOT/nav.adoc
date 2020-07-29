@@ -60,11 +60,6 @@
  ** xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
  ** xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
 
-* xref:change-jdk-for-studio.adoc[Start Studio Using Your Own JDK]
- ** xref:change-jdk-for-studio-wx.adoc[Windows]
- ** xref:change-jdk-for-studio-lx.adoc[Linux]
- ** xref:change-jdk-for-studio-ox.adoc[MacOS]
-
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
 * xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
 * xref:proxy-settings-task.adoc[Configuring Proxy Settings]
@@ -79,3 +74,8 @@
  ** xref:studio-xulrunner-wx-task.adoc[Windows]
  ** xref:studio-xulrunner-lnx-task.adoc[Linux]
  ** xref:studio-xulrunner-unx-task.adoc[MacOS]
+
+ * xref:change-jdk-for-studio.adoc[Start Studio Using Your Own JDK]
+  ** xref:change-jdk-for-studio-wx.adoc[Windows]
+  ** xref:change-jdk-for-studio-lx.adoc[Linux]
+  ** xref:change-jdk-for-studio-ox.adoc[MacOS]
