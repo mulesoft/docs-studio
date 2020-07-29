@@ -1,4 +1,4 @@
-= Configure the JRE to Run the Embedded Mule Runtime Engine
+= Select a Different JRE to Run the Embedded Mule Runtime Engine
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -7,7 +7,7 @@ Anypoint Studio 7.3 and later require JDK 1.8 to launch. These instructions chan
 
 You can select any of your installed JREs as the default Java runtime environment that Studio uses to run your Mule project.
 
-== Configure the JRE Version for All your Studio Projects
+== Select the JRE Version for All your Studio Projects
 
 . In Studio, click *Anypoint Studio*, and *Preferences*.
 . Under *Java*, *Installed JREs*, select the JRE version you want to use.
@@ -26,7 +26,7 @@ For example, `/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home`
 For example, `Java SE 11`.
 .. Click *Finish*.
 
-== Configure the JRE Version for a Specific Project
+== Select the JRE Version for a Specific Project
 
 . Right click in your Studio project.
 . Navigate to *Build Path*, and click *Configure Build Path...*.
