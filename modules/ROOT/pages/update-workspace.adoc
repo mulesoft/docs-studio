@@ -1,7 +1,19 @@
-= Updating Workspaces
+= Update Workspaces
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+Anypoint Studio keeps your workspace's configuration files updated to use the latest Mule Maven plugin version available.
+
+When Studio runs in a new workspace for the first time, it validates the configuration files of your projects in that workspace. When Studio finds projects using a deprecated version of the Mule Maven plugin, it prompts you to perform an update to continue those projects in your current Studio version:
+
+image::update-workspaces.png[]
+
+<1> Studio lists all the open projects in your workspace that must be updated.
+<1> Selecting *Perform update* enables Studio to update the Mule Maven Plugin version in the `pom.xml` file of your projects listed in this dialog.
+
+[[update-7.1-workspace]]
+== Update Workspaces Created With Studio 7.1.x and Earlier Versions
 
 Anypoint Studio 7.2 and later simplifies the configuration of the `mule-artifact.json` file. When packaging your Mule application, this file is used to identify the application's classloader configuration and settings, and the minimum required Mule runtime engine version required to run your application.
 
@@ -43,36 +55,21 @@ Anypoint Studio includes a new version of the Mule Maven Plugin that can automat
 ----
 |===
 
-Note that this simplification is meant to reduce the number of declarations you need to monitor during development. A fully configured `mule-artifact.json` file is still required by Mule runtime engine when executing the packaged application. You can find the generated `mule-artifact.json` file inside the `target` directory after packaging.
+This simplification reduces the number of declarations you need to monitor during development. A fully configured `mule-artifact.json` file is still required by Mule runtime engine when executing the packaged application. You can find the generated `mule-artifact.json` file inside the `target` directory after packaging.
 
-The plugin inspects the metadata declared in `mule-artifact.json`. If there is a value that is not declared, the plugin infers it from the application code before packaging. If other metadata is declared, the plugin uses that information to package the application.
+The plugin inspects the metadata declared in `mule-artifact.json`. If there is a value that is not declared, the plugin infers it from the application code before packaging. If another metadata is declared, the plugin uses that information to package the application.
 
-If you update to the latest plugin and want to keep your old descriptor files, you'll need to manually monitor your descriptor metadata.
+If you update to the latest plugin and chose to keep your old descriptor files, you'll need to manually monitor your descriptor metadata.
 
-
-== Upgrading from Studio 7.1.x to 7.2 and later
-
-When you open Anypoint Studio 7.2 and use a workspace created with previous versions, Studio pops up a note:
-
-image::this-766bb.png[align=center]
-
-Note that Studio lists only the projects whose configurations need updating; it does not list closed projects.
-
-Clicking *Perform update* enables Studio to:
-
-* Update the Mule Maven Plugin version in the pom.xml file of your projects listed in this dialog.
-* Remove all declarations from the `mule-artifact.json` files of the same listed projects. +
-This process overwrites your existing `mule-artifact.json` file. If you have other declarations in `mule-artifact.json` that you want to preserve (for example, `secureProperties`, `redeploymentEnabled`, and so on), you should back up those files outside of your workspace, perform the migration, and then restore your old `mule-artifact.json` files.
-
+When you update a workspace created using Studio 7.1.x and earlier, Studio overwrites your existing `mule-artifact.json` file. If you have other declarations in `mule-artifact.json` that you want to preserve (for example, `secureProperties`, or `redeploymentEnabled`), you should back up those files outside of your workspace, perform the migration, and then restore your old `mule-artifact.json` files.
 
 Do not to preserve the following declarations:
 
-** `configs`
-** `name`
-** `requiredProduct`
-** `classLoaderModelLoaderDescriptor`
-** `bundleDescriptorLoader`
-
+* `configs`
+* `name`
+* `requiredProduct`
+* `classLoaderModelLoaderDescriptor`
+* `bundleDescriptorLoader`
 
 == See Also
 
