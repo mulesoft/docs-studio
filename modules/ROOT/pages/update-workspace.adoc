@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio keeps your workspace's configuration files updated to use the latest Mule Maven plugin version available.
+Anypoint Studio helps you to ensure that you are using the latest Mule Maven configuration. When Studio runs in a new workspace for the first time, it validates the configuration files of your projects in that workspace. When Studio finds projects using a deprecated version of the Mule Maven plugin, it prompts you to perform an update to continue those projects in your current Studio version:
 
 When Studio runs in a new workspace for the first time, it validates the configuration files of your projects in that workspace. When Studio finds projects using a deprecated version of the Mule Maven plugin, it prompts you to perform an update to continue those projects in your current Studio version:
 
@@ -57,9 +57,9 @@ Anypoint Studio includes a new version of the Mule Maven Plugin that can automat
 
 This simplification reduces the number of declarations you need to monitor during development. A fully configured `mule-artifact.json` file is still required by Mule runtime engine when executing the packaged application. You can find the generated `mule-artifact.json` file inside the `target` directory after packaging.
 
-The plugin inspects the metadata declared in `mule-artifact.json`. If there is a value that is not declared, the plugin infers it from the application code before packaging. If another metadata is declared, the plugin uses that information to package the application.
+The plugin inspects the metadata declared in `mule-artifact.json`. If a value is not declared, the plugin infers it from the application code before packaging. If another metadata is declared, the plugin uses that information to package the application.
 
-If you update to the latest plugin and chose to keep your old descriptor files, you'll need to manually monitor your descriptor metadata.
+If you update to the latest plugin but choose to keep your former descriptor files, you must manually monitor your descriptor metadata.
 
 When you update a workspace created using Studio 7.1.x and earlier, Studio overwrites your existing `mule-artifact.json` file. If you have other declarations in `mule-artifact.json` that you want to preserve (for example, `secureProperties`, or `redeploymentEnabled`), you should back up those files outside of your workspace, perform the migration, and then restore your old `mule-artifact.json` files.
 
