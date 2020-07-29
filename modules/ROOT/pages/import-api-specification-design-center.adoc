@@ -12,7 +12,7 @@ This task only works for RAML types of API specifications.
 . In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
 . Type a name for your project.
 . Select a Mule runtime engine version 4.1.4 or later.
-. In the *API Specification* section, select the *From Design Center or Local Files* tab.
+. In the *API Specification* section, select the *Download RAML from Design Center* tab.
 . In the *Location* field, click the *...* button and select *Design Center...*.
 . Select your Anypoint Platform username. +
 If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
@@ -28,7 +28,7 @@ Studio scaffolds your API specification. If you choose not to create flows out o
 
 Importing an API specification from Design Center into an existing project deletes all your resources from your `src/main/resources/api` directory.
 
-	. In the Package Explorer view, right-click on your project and select *Anypoint Platform* > *Import From Design Center (Local Copy)*.
+. In the Package Explorer view, right-click on your project and select *Anypoint Platform* > *Download RAML from Design Center*.
 . Select your Anypoint Platform username. +
 If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
 . In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located. +
