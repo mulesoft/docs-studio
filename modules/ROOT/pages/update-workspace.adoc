@@ -57,7 +57,7 @@ Anypoint Studio includes a new version of the Mule Maven Plugin that can automat
 
 This simplification reduces the number of declarations you need to monitor during development. A fully configured `mule-artifact.json` file is still required by Mule runtime engine when executing the packaged application. You can find the generated `mule-artifact.json` file inside the `target` directory after packaging.
 
-The plugin inspects the metadata declared in `mule-artifact.json`. If a value is not declared, the plugin infers it from the application code before packaging. If another metadata is declared, the plugin uses that information to package the application.
+The plugin inspects the metadata declared in `mule-artifact.json`. If a value is not declared, the plugin infers it from the application code before packaging. If other metadata is declared, the plugin uses it to package the application.
 
 If you update to the latest plugin but choose to keep your former descriptor files, you must manually monitor your descriptor metadata.
 
