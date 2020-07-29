@@ -1,16 +1,16 @@
-= Change the JDK from Studio
+= Configure the JRE to Run the Embedded Mule Runtime Engine
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 7.3 and later require JDK 1.8 to launch. These instructions change the JDK used to start up your Mule runtime in your Studio environment.
+Anypoint Studio 7.3 and later require JDK 1.8 to launch. These instructions change the JRE used to start up your Mule runtime in your Studio environment.
 
-You can select any of your installed JDKs as the default Java runtime environment that Studio uses to run your Mule project.
+You can select any of your installed JREs as the default Java runtime environment that Studio uses to run your Mule project.
 
-== Configuring the JDK Version for your Studio Projects
+== Configure the JRE Version for All your Studio Projects
 
 . In Studio, click *Anypoint Studio*, and *Preferences*.
-. Under *Java*, *Installed JREs*, select the JDK version you want to use.
+. Under *Java*, *Installed JREs*, select the JRE version you want to use.
 +
 image::installed-jres.png[]
 +
@@ -20,13 +20,13 @@ If your installed JRE version does not appear, you need to configure it:
 ** `MacOS X VM` for MacOS.
 ** `Standard VM` for Windows and Linux.
 .. Click *Next*.
-.. In the *JRE Home*, click *Directory* and select the folder where your JDK is installed. +
+.. In the *JRE Home*, click *Directory* and select the folder where your JRE is installed. +
 For example, `/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home`
-.. In *JRE Name* type in a descriptive name for the JDK. +
+.. In *JRE Name* type in a descriptive name for the JRE. +
 For example, `Java SE 11`.
 .. Click *Finish*.
 
-== Configuring the JDK Version for a Specific Project
+== Configure the JRE Version for a Specific Project
 
 . Right click in your Studio project.
 . Navigate to *Build Path*, and click *Configure Build Path...*.

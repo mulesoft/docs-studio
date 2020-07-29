@@ -60,7 +60,7 @@
  ** xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
  ** xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
 
-* xref:change-jdk-for-studio.adoc[Change the JDK Used By Studio]
+* xref:change-jdk-for-studio.adoc[Start Studio Using Your Own JDK]
  ** xref:change-jdk-for-studio-wx.adoc[Windows]
  ** xref:change-jdk-for-studio-lx.adoc[Linux]
  ** xref:change-jdk-for-studio-ox.adoc[MacOS]
@@ -69,7 +69,7 @@
 * xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
 * xref:proxy-settings-task.adoc[Configuring Proxy Settings]
 * xref:browser-settings.adoc[Configure Studio's Browser Settings]
-* xref:change-jdk-config-in-projects.adoc[Change the JDK from Studio]
+* xref:change-jdk-config-in-projects.adoc[Configure the JRE to Run the Embedded Mule Runtime Engine]
 
 * xref:studio-update-sites.adoc[Studio Update Sites]
 
