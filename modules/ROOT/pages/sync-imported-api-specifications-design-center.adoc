@@ -5,6 +5,8 @@ endif::[]
 
 You can edit an imported API specification in your project as an API project.
 
+OAS 3.0 API specifications are not supported for importing as an API dependency for your project and therefore you cannot edit them following this process. To import an OAS 3.0 API specification as an editable API project see xref:sync-api-projects-design-center.adoc[synchronize API specifications with Design Center].
+
 Before you begin, ensure that you have the necessary permissions to edit the API specification in Design Center, and that you don't already have an API Project for that API specification in your Studio workspace.
 
 . In the Package Explorer view, right-click the API dependency of your API project and select the name of the API you want to edit >  *Import API Spec from Design Center*.
