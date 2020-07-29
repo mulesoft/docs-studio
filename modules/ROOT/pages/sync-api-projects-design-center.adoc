@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 7.5 and later enables you to import a RAML or OAS API specification from Design Center into an API Project in Studio to edit it offline, and stage and push your changes as you would do with any version control system (VCS).
+Anypoint Studio enables you to import a RAML, OAS 2.0, or OAS 3.0 API specification created in Design Center to an API project in Studio so that you can edit it offline and then stage and push your changes as you would do with any version control system (VCS).
 
 This feature only works when importing an API from Design Center as shown in the following process. +
 To import an API specification to write a Mule application implementation see xref:import-api-specification-design-center.adoc[Import an API Specification From Design Center].
@@ -112,4 +112,6 @@ This option force pushes your changes to the branch in Design Center.
 In certain scenarios, someone else might have modified the version in Design Center while you modified the same version locally. This triggers conflicts in git. +
 See xref:solving-conflicts-api-projects.adoc[Solving Conflicts] for more information.
 
+== See Also
 
+* xref:release-notes::platform/oas3.adoc[OpenAPI Specification 3.0 Support Release Notes]
