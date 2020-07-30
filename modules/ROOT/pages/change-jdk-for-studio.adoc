@@ -1,4 +1,4 @@
-= Change the JDK Used By Studio
+= Configure Studio to Use Your Own JDK
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -7,8 +7,8 @@ Anypoint Studio 7.5.0 and later comes bundled with a Java development kit (JDK).
 
 You can find the JDK version used by Studio under *About Anypoint Studio* > *Installation Details*.
 
-If you need to use a different JDK for your development projects, follow the instructions below based on your operative system:
+If you need to start Studio using a different JDK, follow the following instructions based on your operative system:
 
 * xref:change-jdk-for-studio-wx.adoc[Windows]
 * xref:change-jdk-for-studio-lx.adoc[Linux]
-* xref:change-jdk-for-studio-ox.adoc[MacOS] 
+* xref:change-jdk-for-studio-ox.adoc[MacOS]

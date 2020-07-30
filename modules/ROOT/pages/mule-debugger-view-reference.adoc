@@ -5,95 +5,37 @@ endif::[]
 
 This section contains a full description of the Mule Debugger View and all its available tools.
 
-When the Mule Debugger starts, it points at the running Mule Runtime in Studio and waits for the Mule Event to reach its first active breakpoint. +
-Until then, the Mule Debugger View displays a placeholder message:
-
-image::mule-debugger-view-reference-ef5f6.png[debugger-view]
-
-When the Mule Event stops at a Breakpoint, the Mule Debugger View displays information about the state of the Mule Event at that breakpoint:
-
-image::mule-debugger-view-reference-243de.png[debugger-view-with-event]
-
-To see any nested elements for a property, click the arrow next to the property name.
-
-image::mule-debugger-view-reference-c1937.png[]
-
-You can interact with your inspected element by right-clicking the element on your debugger view to display a contextual menu.
-
-image::mule-debugger-view-reference-2bf5c.png[align=center]
-
-[%header%autowidth.spread,cols="a,a"]
-|===
-|Value |Description
-| *Update Value*
-| Enables you to modify data on the fly to test flows.
-
-| *Go to class*
-| Opens the selected class.
-
-| *Copy expression*
-| Copies the Dataweave expression used to access the value (e.g.: payload.0.filename).
-
-| *Add watch*
-| Automatically adds a new watch with the expression to access the value to the Watches menu.
-
-| *Copy value*
-| Copies the Dataweave expression representing the structure of the selected object.
-|===
+image::debugger-reference.png[]
 
 
-On the top right corner of the Mule Debugger View, you can find execution control tools for the Mule Debugger.
+<1> *Terminate* +
+Stop the running application.
 
-[%header,cols="5,15,45,35"]
-|===
-|Icon | Name | Description |Shortcut
-|image:mute-bp.png[mute-bp.icon]
-|Mute Breakpoints
-| Click to mute all the marked breakpoints.
-|
+<1> *Evaluate DataWeave wxpression* +
+Click to evaluate a Dataweave expression.
 
-|image:stop-icon.png[stop.icon]
-|Terminate
-|Click to stop the currently running application.
-|
+<1> *Next processor* +
+Runs the application and stops at the next processor in the flow, even if that processor has no breakpoint.
 
-|image:eval-mule-exp-icon.png[eval.mule.exp.icon]
-|Evaluate Dataweave Expression
-| Click to evaluate a Dataweave expression.
-a|
-`CMD+SHIFT+i`
+<1> *Run to processor* +
+Runs the application and stops at the selected processor, even if there is no breakpoint at that processor. Emulates the behavior of the `run to cursor` option in Java debuggers.
 
-Linux and Windows: +
-`Ctrl+SHIFT+i`
+<1> *Resume* +
+Runs the application until the next breakpoint. If there are no other breakpoints in the execution, it runs until executing the entire flow.
 
-|image:next-breakpoint-icon.png[next.breakpoint.icon]
-|Next Processor
-| Click to run the application and stop at the next Event Processor in the flow, even if there is no breakpoint at the next processor.
-|`F6`
+<1> *Start scheduler* +
+When configuring a scheduler processor in your Mule application, this option triggers the scheduler according to the frequency set in the scheduler's configuration.
 
+<1> *Stop scheduler* +
+When configuring a scheduler processor in your Mule application, this option stops the initiated scheduler. This function only works if the Scheduler has been initiated using the `start scheduler` function.
 
-|image:to-m-proc-icon.png[to.m.proc.icon]
-| Run to Processor
-| Click to run the application and stop at the currently selected processor, even if there is no breakpoint at the currently selected processor. Emulates the behavior of the "Run to cursor" option in Java debuggers. (To select a processor, single-click its building block in the canvas.)
-|`F7`
+<1> *Add expression to watches* +
+Adds the current DataWeave expression to the watch list.
 
+<1> *Remove expression to watches* +
+Removes the selected DataWeave expression from the watch list.
 
-|image:resume-icon.png[resume.icon]
-| Resume
-| Click to run the application until the next breakpoint, if any.
-| `F8`
-
-
-|image:start-poll-icon.png[start.poll.icon]
-|Start Scheduler
-| When configuring a Scheduler in your Mule application, this option triggers the scheduler according to the frequency set in the poll scope.
-|
-
-
-|image:resume-poll-icon.png[resume.poll.icon]
-| Stop Scheduler
-| When configuring a Scheduler in your Mule application, this option it stops the initiated Scheduler. This function only works if the Scheduler has been initiated using the Start Scheduler button above.
-|
-|===
+<1> *Remove all expressions from watches* +
+Removes all DataWeave expression from your watch list.
 
 

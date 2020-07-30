@@ -1,0 +1,22 @@
+= Evaluate DataWeave Expression View Reference
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The Studio debugger enables you to watch for selected DataWeave expressions in all active breakpoints. If the expression occurs at any of the active breakpoints, the debugger evaluates the expression, then displays the result in the *Mule Debugger* view.
+
+image::expression-view-reference.png[]
+
+<1> *Expression field* +
+Specify the DataWeave expression to watch for in the expression field.
+<1> *Clear* +
+Clears all results from the expression evaluations.
+<1> *Evaluate* +
+Evaluates the expression you specified in the expression field against the metadata of your flow.
+<1> *Add to watch* +
+Adds the current DataWeave expression as an expression watch
+
+
+== See Also
+
+* xref:evaluate-dw-expressions.adoc[DataWeave Expression Watches]

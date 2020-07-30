@@ -5,6 +5,7 @@
  ** xref:to-download-and-install-studio-lx.adoc[Linux]
  ** xref:to-download-and-install-studio-ox.adoc[MacOS]
 
+* xref:update-workspace.adoc[Update Workspaces]
 * xref:import-and-export-preferences-studio.adoc[Export and Import Studio Preferences]
 
 * xref:import-api-secification.adoc[Import API Specifications]
@@ -35,19 +36,13 @@
 
 * xref:api-search.adoc[Search Inside Your API Specification Dependencies]
 
-* xref:visual-debugger-concept.adoc[Visual Debugger]
- ** xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
- ** xref:to-run-debug-mode.adoc[Running a Project in Debug Mode]
- ** xref:to-start-server-debug-mode.adoc[Starting the Mule Server In Debug Mode]
- ** xref:to-set-breakpoints.adoc[Setting Breakpoints]
- ** xref:to-set-conditional-breakpoints.adoc[Setting Conditional Breakpoints]
- ** xref:to-set-expression-watches.adoc[Setting Mule Expression Watches]
- ** xref:to-set-error-breakpoints.adoc[Setting Error Breakpoints]
- ** xref:to-evaluate-breakpoint-using-expression.adoc[Evaluating a Breakpoint Using an Expression]
- ** xref:debugger-perspective-concept.adoc[Mule Debugger Perspective]
- ** xref:breakpoint-view-reference.adoc[Breakpoints View Reference]
+* xref:visual-debugger-concept.adoc[Studio Debugger]
  ** xref:breakpoints-concepts.adoc[Breakpoints]
- ** xref:mule-watches-view-reference.adoc[DataWeave Expression Watches View Reference]
+ ** xref:breakpoint-view-reference.adoc[Breakpoints View Reference]
+ ** xref:evaluate-dw-expressions.adoc[DataWeave Expression Watches]
+ ** xref:dw-expression-watches-view-reference.adoc[Evaluate DataWeave Expression View Reference]
+ ** xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
+ ** xref:to-start-server-debug-mode.adoc[Starting the Mule Server In Debug Mode]
 
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
@@ -66,16 +61,11 @@
  ** xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
  ** xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
 
-* xref:change-jdk-for-studio.adoc[Change the JDK Used By Studio]
- ** xref:change-jdk-for-studio-wx.adoc[Windows]
- ** xref:change-jdk-for-studio-lx.adoc[Linux]
- ** xref:change-jdk-for-studio-ox.adoc[MacOS]
-
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
 * xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
 * xref:proxy-settings-task.adoc[Configuring Proxy Settings]
 * xref:browser-settings.adoc[Configure Studio's Browser Settings]
-* xref:change-jdk-config-in-projects.adoc[Change the JDK from Studio]
+* xref:change-jdk-config-in-projects.adoc[Select a Different JRE to Run the Embedded Mule Runtime Engine]
 
 * xref:studio-update-sites.adoc[Studio Update Sites]
 
@@ -85,3 +75,8 @@
  ** xref:studio-xulrunner-wx-task.adoc[Windows]
  ** xref:studio-xulrunner-lnx-task.adoc[Linux]
  ** xref:studio-xulrunner-unx-task.adoc[MacOS]
+
+ * xref:change-jdk-for-studio.adoc[Start Studio Using Your Own JDK]
+  ** xref:change-jdk-for-studio-wx.adoc[Windows]
+  ** xref:change-jdk-for-studio-lx.adoc[Linux]
+  ** xref:change-jdk-for-studio-ox.adoc[MacOS]
