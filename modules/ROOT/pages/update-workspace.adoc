@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio helps you to ensure that you are using the latest Mule Maven configuration. When Studio runs in a new workspace for the first time, it validates the configuration files of your projects in that workspace. When Studio finds projects using a deprecated version of the Mule Maven plugin, it prompts you to perform an update to continue those projects in your current Studio version:
+Anypoint Studio helps you to ensure that you are using the latest Mule Maven configuration.
 
 When Studio runs in a new workspace for the first time, it validates the configuration files of your projects in that workspace. When Studio finds projects using a deprecated version of the Mule Maven plugin, it prompts you to perform an update to continue those projects in your current Studio version:
 
