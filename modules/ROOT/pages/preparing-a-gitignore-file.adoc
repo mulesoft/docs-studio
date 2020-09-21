@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::preparing-a-gitignore-file.adoc
+:page-aliases: 6.5@studio::preparing-a-gitignore-file.adoc, using-subversion-with-studio.adoc
 :keywords: anypoint studio, esb, git, github, gitignore, versioning
 
 [NOTE]
@@ -110,4 +110,4 @@ target/
 
 == See Also
 
-* Learn about xref:using-subversion-with-studio.adoc[Using Subversion with Studio].
+
