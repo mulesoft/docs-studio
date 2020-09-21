@@ -78,7 +78,6 @@ For more specific instructions for the following extensions:
 * xref:3.8@mule-runtime::installing-connectors.adoc[Anypoint Connectors]
 * xref:importing-a-maven-project-into-studio.adoc[Importing a Maven Project into Studio]
 * xref:enabling-maven-support-for-a-studio-project.adoc[Enabling Maven Support for a Studio Project]
-* xref:using-subversion-with-studio.adoc[Using Subversion with Studio]
 
 == See Also
 

@@ -16,7 +16,6 @@
   *** xref:enabling-maven-support-for-a-studio-project.adoc[Enabling Maven Support on Studio Projects]
   *** xref:importing-a-maven-project-into-studio.adoc[Importing Maven Projects]
  ** xref:studio-in-eclipse.adoc[Studio in Eclipse]
- ** xref:using-subversion-with-studio.adoc[Using Subversion]
  ** xref:preparing-a-gitignore-file.adoc[Preparing a .gitignore file]
  ** xref:troubleshooting-studio.adoc[FAQ: Troubleshooting Issues with Your Default OS Browser]
 * xref:basic-studio-tutorial.adoc[Basic Studio Tutorial]
