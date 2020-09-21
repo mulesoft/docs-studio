@@ -153,8 +153,6 @@ Code Repositories facilitate the tracking and versioning of changes developers m
 
 * Learn more about two recommended Code Repositories: http://subversion.apache.org/[Subversion] and http://git-scm.com/[Git].
 
-* Start learning how to use Subversion with Studio xref:using-subversion-with-studio.adoc[here].
-
 ==== Setup a Maven Repository Manager
 
 A repository manager is a dedicated server application designed to manage repositories (internal and third party) of binary components. +
