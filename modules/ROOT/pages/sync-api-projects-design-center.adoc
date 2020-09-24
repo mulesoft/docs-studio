@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-partial:
 
 Anypoint Studio enables you to import a RAML, OAS 2.0, or OAS 3.0 API specification created in Design Center to an API project in Studio so that you can edit it offline and then stage and push your changes as you would do with any version control system (VCS).
 
@@ -33,6 +34,7 @@ Studio imports the API specification as an API project so that you can work on y
 You can create your own branch based on the branch you pulled from Design Center. +
 Using a different branch allows you to modify the API definition without risking pushing those changes to the main branch in Design Center.
 
+// tag::create-branch-vcs[]
 To create a different branch in Studio:
 
 . In the Package Explorer view, right-click your API project and select *Team* > *Switch To* > *New Branch...*.
@@ -48,7 +50,9 @@ When configuring this option, you must select the behavior you want git to have 
 . Select *Finish*.
 
 With a newly created branch, you can start committing your changes.
+// end::create-branch-vcs[]
 
+// tag::commit-to-branch-vcs[]
 [[commit-to-branch]]
 == Commit Changes to Your API Project
 
@@ -74,11 +78,13 @@ See <<push-branch,Push Your Branch to Design Center>> below for more information
 <1> Select *Commit* to add the commit to your local copy.
 
 See xref:git-staging-view-reference.adoc[Git Staging View Reference] for more information about this view.
+// end::commit-to-branch-vcs[]
 
 == Merge Your Changes into the Master Branch
 
 You can merge the changes made in your local branch to the master branch to push to Design Center:
 
+// tag::merge-and-push-to-main-vcs[]
 . In the Package Explorer view, right-click your API project and select *Team* > *Merge* > *Push Branch...*.
 +
 image::merge-menu.png[]
@@ -86,7 +92,6 @@ image::merge-menu.png[]
 +
 image::merge-view.png[]
 . Select *Merge*.
-
 
 [[push-branch]]
 == Push Your Branch to Design Center
@@ -111,6 +116,7 @@ This option force pushes your changes to the branch in Design Center.
 
 In certain scenarios, someone else might have modified the version in Design Center while you modified the same version locally. This triggers conflicts in git. +
 See xref:solving-conflicts-api-projects.adoc[Solving Conflicts] for more information.
+// end::merge-and-push-to-main-vcs[]
 
 == See Also
 
