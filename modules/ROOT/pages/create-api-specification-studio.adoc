@@ -2,6 +2,8 @@
 
 Anypoint Studio 7.7 and later enables you to create a RAML or OAS 2.0 and 3.0 API specification, or an API fragment in Studio and automatically synchronize it with Design Center.
 
+It is not possible to create a flow out of an OAS 3.0 API specification.
+
 [NOTE]
 Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
 
@@ -16,7 +18,7 @@ To start creating an API project in Studio, you must be logged in to Anypoint Pl
 
 Studio prompts you to switch to the API design perspective.
 
-In the API design perspective, use the API editor to write your API specification or API fragment.
+In the API design perspective, use the API editor to write your API specification or API fragment. Additionally, you can use the API Console view to mock a live service so you can test your API specification.
 
 Studio uses VCS to track the development of your API project and keep it syncronized with Design Center.
 
