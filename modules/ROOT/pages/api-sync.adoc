@@ -6,15 +6,15 @@ endif::[]
 
 The API Sync feature of Anypoint Studio enables you to:
 
-* Start designing an API project in Studio and synchronize it with Design Center.
-* Pull a published RAML or OAS 2.0 API specification from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. +
+* Start designing a RAML, or OAS 2.0 and 3.0 API specification in Studio and synchronize it with Design Center.
+* Pull a published RAML or OAS 2.0 and 3.0 API specification from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. +
 API sync also enables you to edit the API specification you imported from Exchange, and push your changes to Design Center.
 +
 You can use API Sync on more than one API specification to scaffold multiple flows in different Mule configuration files.
 * Monitor the API versions that you implemented in your project and update your flows based on the latest published version.
-* Pull a RAML or OAS 2.0 API specification from Design Center into Studio, edit the specification offline, and pull the updates back to Design Center.
+* Pull a RAML or OAS 2.0 and 3.0 API specification from Design Center into Studio, edit the specification offline, and pull the updates back to Design Center.
 
-API Sync supports importing both RAML and OAS 2.0 specifications.
+API Sync supports importing both RAML, OAS 2.0 and OAS 3.0 specifications.
 
 API Sync comes bundled by default in Studio 7.4.x and later, and requires Mule 4.1.4 and later.
 
