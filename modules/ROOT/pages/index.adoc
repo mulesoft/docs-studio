@@ -94,7 +94,7 @@ image::index-7bcca.png[]
 
 == Perspectives
 
-A Perspective in Studio is a collection of views and editors in a specified arrangement. The default perspective is the Mule Design perspective. Studio also supplies a Mule Debug perspective.
+A Perspective in Studio is a collection of views and editors in a specified arrangement. The default perspective is the Mule Design perspective. Studio also supplies a Mule Debug perspective, and an API design perspective.
 
 You can create your own perspectives, and add or remove any of the default views.
 
