@@ -1,8 +1,8 @@
 = Update your Modules
 
-Because Anypoint Studio allows you to modularize your projects, you can use the *Manage dependencies* wizard to manage the dependencies of your Mule project.
+Anypoint Studio allows you to modularize your projects. You can use the *Manage dependencies* wizard to manage the dependencies of your Mule project.
 
-To update check for updates and update the version of the modules in your project:
+To check for updates and keep your modules updated:
 
 . In the top menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20]
 . Under *Mule Project*, select *Modules*.
@@ -14,10 +14,10 @@ When Studio loads this wizard for the first time, it automatically checks for ne
 +
 image::update-module-version.png[]
 +
-Additionally, you can select the *Update all dependencies to latest* button to update all dependencies to their latest versions.
+Additionally, you can select *Update all dependencies to latest* to update all dependencies to the latest version of each.
 +
 image::update-all-modules.png[]
 . Select *Apply and close*.
 
-Studio updates your selected dependencies to their latest version available.
+Studio updates your selected dependencies.
 
