@@ -1,8 +1,8 @@
 = Create an API Project in Studio
 
-Anypoint Studio 7.7 and later enables you to create a RAML or OAS 2.0 and 3.0 API specification, or an API fragment in Studio and automatically synchronize it with Design Center.
+Anypoint Studio 7.7 and later enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment in Studio, and then to automatically synchronize it with Design Center.
 
-It is not possible to create a flow out of an OAS 3.0 API specification.
+It is not possible to create a flow from an OAS 3.0 API specification.
 
 [NOTE]
 Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
@@ -10,9 +10,9 @@ Studio uses the EGit plugin only for the VCS feature of editing API specificatio
 To start creating an API project in Studio, you must be logged in to Anypoint Platform. See xref:xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
 
 . In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *API Specificiation*.
-. Select the type of API project that you want to create.
-** To create a new API specification, select the *New API Specification* tab, and then select the type of API.
-** To create an API fragment, select the the *New API Fragment* tab, and then select the type of API fragment.
+. Select the type of API project that you want to create:
+* To create a new API specification, select the *New API Specification* tab, and then select the type of API.
+* To create a new API fragment, select the *New API Fragment* tab, and then select the type of API fragment.
 . Type a name for your project.
 . Select *Finish*.
 
@@ -24,7 +24,7 @@ Studio uses VCS to track the development of your API project and keep it syncron
 
 == Create Branches
 
-Using a different branch allows you to modify the API definition without risking pushing those changes to the main branch in Design Center.
+Using a different branch enables you to used a modified API definition in certain cases, without modifying the main branch in Design Center.
 
 include::page$sync-api-projects-design-center.adoc[tag=create-branch-vcs]
 
