@@ -8,7 +8,7 @@
 * xref:update-workspace.adoc[Update Workspaces]
 * xref:import-and-export-preferences-studio.adoc[Export and Import Studio Preferences]
 
-* xref:import-api-secification.adoc[Import API Specifications]
+* xref:import-api-specification.adoc[Import API Specifications]
  ** xref:import-api-specification-exchange.adoc[From Exchange]
  ** xref:import-api-specification-maven.adoc[From Maven]
  ** xref:import-api-specification-local-file.adoc[From a Local File]
