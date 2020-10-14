@@ -1,4 +1,4 @@
-= Test your API Specification Using the API Console
+= Test Your API Specification Using the API Console
 
 Studio provides an API Console view for the API you are designing. The API Console view returns the HTTP status codes and example payloads that you defined in your API specification, and is valuable for testing or exploring how your API behaves.
 
@@ -28,4 +28,3 @@ Your expanded API Console view shows the mocking service to the right of the con
 == See Also
 
 * xref:create-api-specification-studio.adoc[Create an API Project in Studio].
-
