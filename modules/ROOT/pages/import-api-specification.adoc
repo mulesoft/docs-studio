@@ -2,6 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:page-aliases: 7.5@studio::import-api-secification.adoc
 
 Anypoint Studio enables you to import API specifications into either a new Mule project or an existing one.
 
