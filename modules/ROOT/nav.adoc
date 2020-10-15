@@ -7,7 +7,7 @@
 
 * xref:api-development-studio.adoc[API Development in Studio]
 
-* xref:import-api-secification.adoc[Import API Specifications]
+* xref:import-api-specification.adoc[Import API Specifications]
 ** xref:import-api-specification-exchange.adoc[From Exchange]
 ** xref:import-api-specification-maven.adoc[From Maven]
 ** xref:import-api-specification-local-file.adoc[From a Local File]
