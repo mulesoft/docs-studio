@@ -8,6 +8,7 @@ endif::[]
 . Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 . Extract the Windows installation file into the `C:\` root folder.
 ** If you are using a Windows antivirus application, ensure that the `plugin/` and `features/` directories are under the _trusted_ category.
+** Extracting files other than `C:\` root folder might cause "extract path is too long" error
 . Open the extracted Anypoint Studio.
 +
 When Studio first runs, the embedded OpenJDK libraries might cause a Windows Security alert. +
