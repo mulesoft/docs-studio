@@ -59,7 +59,6 @@
   *** xref:input-output-structure-transformation-studio-task.adoc[Defining Input and Output Structure of a Transformation]
   *** xref:graphically-construct-mapping-studio-task.adoc[Graphically Constructing a Mapping]
   *** xref:preview-transformation-output-studio-task.adoc[Previewing the Output of a Transformation]
- ** xref:tips-transform-message-ui-studio.adoc[Tips on the Transform Message UI]
  ** xref:change-target-output-transformation-studio-task.adoc[Changing the Target Output of a Transformation]
  ** xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
  ** xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
