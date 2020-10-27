@@ -8,7 +8,7 @@ To configure Studio to connect to GovCloud:
 
 . Open the preferences view. +
 * In MacOS navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
-* In Windows and Linux, navigate to *Window* > *Prefereces...*.
+* In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
 +
 image::studio-anypoint-platform-settings.png[]
@@ -21,11 +21,11 @@ This configuration persists within your Anypoint Studio installation. To distrib
 
 == Configure your GovCloud User Login
 
-Because GovCloud requires you to use a two factor authentication (2FA) method, you must configure your identity provider (IdP) information to access it:
+Because GovCloud requires you to use a two-factor authentication (2FA) method, you must configure your identity provider (IdP) information to access it:
 
 . Open the preferences view. +
 * In MacOS navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
-* In Windows and Linux, navigate to *Window* > *Prefereces...*.
+* In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
 image::preferences-authentication-add.png[]
