@@ -5,13 +5,71 @@ endif::[]
 
 Anypoint Studio 7.4 and later support native integration with Anypoint Platform Private Cloud Edition (PCE) versions 1.6 and 2.0.
 
+== Configure Your PCE Certificates Into Studio
+
 Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
 
-. In the taskbar at the top of the Anypoint Studio display, select *Anypoint Studio* > *Preferences...*.
-. Select *Anypoint Studio* > *Anypoint Platform*.
+. Extract your CA certificate using OpenSSL:
++
+[source]
+--
+openssl s_client -connect <dsm-name>:443 -showcerts
+--
++
+* Where `<dsm-name>` is the domain name of your PCE instance.
+. Copy the resulting base-64 encoded certificate. +
+Save the string characters between the the `---BEGIN CERTIFICATE-----` and the `-----END CERTIFICATE -----` sections into a .pem file.
+. Add your .pem file certificate to your Studio embedded Java cacerts keystore:
++
+[source]
+--
+sudo keytool -import -trustcacerts -keystore <cacerts_path> \ //<1>
+-storepass <pass> \ //<2>
+-alias <alias> \ //<3>
+-import -file [certificate_name].pem //<4>
+--
++
+<1> `cacerts_path` is your Anypoint Studio artifact. For example:
++
+[source]
+--
+AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/jre/lib/security/cacerts
+--
+<1> `pass` is your certificate's password.
+<1> `alias` is the name you give to your certificate
+<1> `certificate name` is the path to the generated .pem file you saved in the previous step.
+. In Studio, open the preferences view. +
+Navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+. Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
++
+image::studio-anypoint-platform-settings.png[]
 . Select the *Use a Private Cloud Instance URL*.
 . Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
 +
 image::pce-properties.png[]
 . Click *Apply and Close*.
+. Restart Studio.
 
+== Configure your PCE User Login
+
+The first time you configure your user's login, Studio asks you to confirm your PCE certificate:
+
+. Open the preferences view. +
+Navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+. Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
++
+image::preferences-authentication-add.png[]
+. Select *Yes* in the *Invalid Certificate* message that appears.
++
+image::invalid-certificate-pce.png[]
+. Add your PCE credentials and sign-in.
+
+To avoid having to trust your certificate every time you login, add your certificate to your MacOS keystore:
+
+. On your computer, open your `KeychainAccess.app`.
+. In the left navigation bar, select *System*.
+. Drop the `.pem` file that you generated in the previous task into the list of certificates.
+. Double-click your imported `.pem` file and select *Always Trust* from the *When using this certificate* drop-down menu.
++
+image::always-trust-certificate.png[]
+. If your Studio installation is running, restart it so that Studio uses your new system preferences.
