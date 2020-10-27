@@ -69,6 +69,8 @@
 * xref:browser-settings.adoc[Configure Studio's Browser Settings]
 * xref:change-jdk-config-in-projects.adoc[Select a Different JRE to Run the Embedded Mule Runtime Engine]
 
+* xref:govcloud-config.adoc[Access GovCloud from Studio]
+
 * xref:studio-update-sites.adoc[Studio Update Sites]
 
 * xref:maven-preferences-reference.adoc[Maven Preferences Reference]

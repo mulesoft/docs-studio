@@ -1,0 +1,44 @@
+= Access GovCloud from Studio
+
+Anypoint Studio 7.7 and later allows you to connect to the MuleSoft Government Cloud (GovCloud) region.
+
+== Configure Studio to Access The GovCloud Region
+
+To configure Studio to connect to GovCloud:
+
+. Open the preferences view. +
+* In MacOS navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+* In Windows and Linux, navigate to *Window* > *Prefereces...*.
+. Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
++
+image::studio-anypoint-platform-settings.png[]
+. Under *Region Settings*, select *GOV* from the drop-down menu.
++
+image::gov-region-selection.png[]
+. Select *Apply and Close*.
+
+This configuration persists within your Anypoint Studio installation. To distribute this configuration, follow this task, then zip your Anypoint Studio application, and distribute the resulting zip file.
+
+== Configure your GovCloud User Login
+
+Because GovCloud requires you to use a two factor authentication (2FA) method, you must configure your identity provider (IdP) information to access it:
+
+. Open the preferences view. +
+* In MacOS navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+* In Windows and Linux, navigate to *Window* > *Prefereces...*.
+. Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
++
+image::preferences-authentication-add.png[]
+. In the *User Login* UI, select *Configure*.
++
+image::login-configure.png[]
+. In the pop-up window, select *External Identity* and your GovCloud organization's domain.
++
+image::user-login-custom-domain.png[]
++
+Talk to your organization administrator if you don't know your organization's domain.
+. Click *OK*.
+
+== See Also
+
+* xref:gov-cloud::index.adoc[MuleSoft Government Cloud Documentation]
