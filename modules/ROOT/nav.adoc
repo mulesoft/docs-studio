@@ -64,6 +64,7 @@
  ** xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
 
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
+* xref:pce-configuration-windows.adoc[Configure Private Cloud Edition in Studio (Windows)]
 * xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
 * xref:proxy-settings-task.adoc[Configuring Proxy Settings]
 * xref:browser-settings.adoc[Configure Studio's Browser Settings]

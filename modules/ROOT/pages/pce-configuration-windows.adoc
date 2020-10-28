@@ -1,0 +1,71 @@
+= Configure Private Cloud Edition in Studio (Windows)
+
+Anypoint Studio 7.4 and later support native integration with Anypoint Platform Private Cloud Edition (PCE) versions 1.6 and 2.0.
+
+== Configure Your PCE Certificates Into Studio
+
+Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
+
+. Open your browser and navigate to your PCE instance URL.
+. Your browser displays a *Your connection is not private* error.
+. Click the *Not Secure* section in your URL bar, and select *Certificate*.
++
+image::get-pce-certificate-windows.png[]
+. In the *Certificate* UI, navigate to the *Details* tab and select *Copy to File...*.
++
+image::copy-certificate-windows.png[]
+. In the *Certificate Export Wizard* select *Base-64 encoded X.509 (.CER)*, and click *Next*.
++
+image::base64-certificate-windows.png[]
+. Select a destination folder in your computer and click *Finish*.
++
+image::export-certificate-windows.png[]
+. Navigate to your exported `.cer` file, double-click it, and select *Install Certificate...*.
++
+image::install-certificate-studio.png[]
+. In the *Certificate Import Wizard*, select *Place all certificates in the following store* and type *Trusted Root Certification Authorities*.
++
+image::trusted-root-certificate-windows.png[]
+. Select *Next* and then *Finish*.
+. Select *Yes* when the security warning asks for confirmation to install the certificate.
++
+image::install-certificate-security-warning-windows.png[]
+. Add your `.cer` file certificate to your Studio embedded Java cacerts keystore:
++
+[source]
+--
+Bin\keytool -import -trustcacerts -keystore [cacerts_path] \ //<1>
+- storepass [pass] \ //<2>
+- alias [alias] \ //<3>
+-import -file [certificate_name].cer //<4>
+--
++
+<1> `cacerts_path` is your Anypoint Studio artifact. For example:
++
+[source]
+--
+AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/jre/lib/security/cacerts
+--
+<1> `pass` is your certificate's password.
+<1> `alias` is the name you give to your certificate
+<1> `certificate name` is the path to the generated .pem file you saved in the previous step.
+. In Studio, open the preferences view. +
+Navigate to *Window* > *Preferences...*.
+. Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
++
+image::pce-properties.png[]
+. Select *Apply and Close*.
+. Restart Studio.
+
+== Configure your PCE User Login
+
+The first time you configure your user's login, Studio asks you to confirm your PCE certificate:
+
+. Open the preferences view. +
+Navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+. Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
++
+image::preferences-authentication-add.png[]
+. Add your PCE credentials and sign-in.
+. Select *Apply and Close*.
+
