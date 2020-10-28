@@ -19,7 +19,7 @@ openssl s_client -connect <dsm-name>:443 -showcerts
 * Where `<dsm-name>` is the domain name of your PCE instance.
 . Copy the resulting base-64 encoded certificate. +
 Save the string characters between the the `---BEGIN CERTIFICATE-----` and the `-----END CERTIFICATE -----` sections into a .pem file.
-. Add your .pem file certificate to your Studio embedded Java cacerts keystore:
+. Add your `.pem` file certificate to your Studio embedded Java cacerts keystore:
 +
 [source]
 --
@@ -63,6 +63,7 @@ image::preferences-authentication-add.png[]
 +
 image::invalid-certificate-pce.png[]
 . Add your PCE credentials and sign-in.
+. Select *Apply and Close*.
 
 To avoid having to trust your certificate every time you login, add your certificate to your MacOS keystore:
 

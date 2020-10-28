@@ -17,8 +17,6 @@ image::studio-anypoint-platform-settings.png[]
 image::gov-region-selection.png[]
 . Select *Apply and Close*.
 
-This configuration persists within your Anypoint Studio installation. To distribute this configuration, follow this task, then zip your Anypoint Studio application, and distribute the resulting zip file.
-
 == Configure your GovCloud User Login
 
 Because GovCloud requires you to use a two-factor authentication (2FA) method, you must configure your identity provider (IdP) information to access it:
@@ -38,6 +36,7 @@ image::user-login-custom-domain.png[]
 +
 Talk to your organization administrator if you don't know your organization's domain.
 . Click *OK*.
+. Add your GovCloud credentials and sign-in.
 
 == See Also
 
