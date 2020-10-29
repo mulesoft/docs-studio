@@ -12,6 +12,8 @@ Studio's mocking service does not modify the `baseUri` field in your API specifi
 * Your API specification project must be synchronized with Design Center.
 * You must turn on the mocking service. +
 In your Package Explorer view, right-click your API specification project and select *Manage API Specification* > *Turn on Mocking Service*.
++
+image::turn-on-mocking-service.png[]
 
 == Steps
 
@@ -20,11 +22,10 @@ The API Console view displays:
 * A summary of your API specification
 * All the available endpoints and their allowed HTTP methods
 * A list of all the types defined in your API specification
-. Navigate through the the *Endpoints* section and click the HTTP method that you want to test.
-. Click *Try It* to simulate calls to an API. +
+. Navigate through the *Endpoints* section, click the HTTP method that you want to test, and click *Try It* to simulate calls to an API. +
 Your expanded API Console view shows the mocking service to the right of the console. *Request URL* is populated with your selected API endpoint.
-. The *Request URL* field is populated with your selected API endpoint.
-. Use *Query Parameters* if you need to add specific parameters to your request.
+* The *Request URL* field is populated with your selected API endpoint.
+* Use *Query Parameters* if you need to add specific parameters to your request.
 . Click *Send* to send your test request.
 
 
