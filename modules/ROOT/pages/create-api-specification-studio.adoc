@@ -7,7 +7,7 @@ It is not possible to create a flow from an OAS 3.0 API specification.
 [NOTE]
 Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
 
-To start creating an API specification project in Studio, you must be logged in to Anypoint Platform. See xref:xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
+To start creating an API specification project in Studio, you must be logged in to Anypoint Platform. See xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
 
 . In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *API Specificiation Project*.
 . Select the tab of type of API specification project that you want to create:
