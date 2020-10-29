@@ -9,8 +9,8 @@ Studio uses the EGit plugin only for the VCS feature of editing API specificatio
 
 To start creating an API project in Studio, you must be logged in to Anypoint Platform. See xref:xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
 
-. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *API Specificiation*.
-. Select the type of API project that you want to create:
+. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *API Specificiation Project*.
+. Select the tab of type of API project that you want to create:
 * To create a new API specification, select the *New API Specification* tab, and then select the type of API.
 +
 image::create-api-sepcification.png[]
