@@ -29,7 +29,7 @@ If your API specification is in your corporate Maven repository, you can add it 
 
 Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
 
-After you import them, you can manage the API specifications in your project that are linked to Exchange from the API project management view by clicking the _Manage Mule Project APIs_ icon (image:manage-project-api-icon.png[2%,2%]) in the top taskbar.
+After you import them, you can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the _Manage Mule Project APIs_ icon (image:manage-project-api-icon.png[2%,2%]) in the top taskbar.
 
 === Add an API Specification From a Local File
 
@@ -45,7 +45,7 @@ You can add either a RAML or OAS 2.0 specification, or a ZIP bundle file as your
 
 Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
 
-You can manage the API specifications in your project that are linked to Exchange from the API Project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
+You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
 // end::maven-tasks[]
 
 == Import an API Specification from Maven Into an Existing Project

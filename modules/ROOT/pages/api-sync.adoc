@@ -24,8 +24,8 @@ Using API Sync, you can develop your Mule applications following API Lifecycle d
 
 == Create an API Specification in Studio
 
-. Start a new API project in Studio.
-See xref:create-api-specification-studio.adoc[Create an API Project in Studio] for more information.
+. Start a new API specification project in Studio.
+See xref:create-api-specification-studio.adoc[Create an API Specification Project in Studio] for more information.
 . Publish it to Exchange.
 . Import the same API specification from Exchange to your Studio project. +
 See xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange] for more information.
@@ -45,11 +45,11 @@ You can keep your Studio projects updated to the latest version of the API speci
 . From the *API Specs* menu, select the API for which you want to check for updates, and click *Update Version*. +
 If a new version is found, API Sync asks you if you want to regenerate the flows based on the new version.
 
-You can manage the API specifications in your project that are linked to Exchange from the API Project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
+You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
 
 === Edit The Imported API Specification in Studio
 
-You can also edit the imported API specification in your project as an API project.
+You can also edit the imported API specification in your project as an API specification project.
 
 . Import the API specification from Exchange to your Studio project.
 . Synchronize it to Design Center,
@@ -58,7 +58,7 @@ You can also edit the imported API specification in your project as an API proje
 
 See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Projects in Studio] for more information.
 
-== Import an API Specification from Design Center into an Editable API Project
+== Import an API Specification from Design Center into an Editable API Specification Project
 
 . Create an API specification in Design Center. +
 You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].

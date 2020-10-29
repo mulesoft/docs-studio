@@ -16,7 +16,7 @@
 
 * xref:api-development-studio.adoc[API Development in Studio]
 
-* xref:create-api-specification-studio.adoc[Create an API Project in Studio]
+* xref:create-api-specification-studio.adoc[Create an API Specification Project in Studio]
 * xref:test-specification-api-console.adoc[Test your API Specification Using the API Console]
 
 * xref:api-sync.adoc[API Sync]

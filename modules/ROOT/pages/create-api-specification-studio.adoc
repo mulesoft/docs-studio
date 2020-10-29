@@ -1,4 +1,4 @@
-= Create an API Project in Studio
+= Create an API Specification Project in Studio
 
 Anypoint Studio 7.7 and later enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment in Studio, and then to automatically synchronize it with Design Center.
 
@@ -7,10 +7,10 @@ It is not possible to create a flow from an OAS 3.0 API specification.
 [NOTE]
 Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
 
-To start creating an API project in Studio, you must be logged in to Anypoint Platform. See xref:xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
+To start creating an API specification project in Studio, you must be logged in to Anypoint Platform. See xref:xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
 
 . In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *API Specificiation Project*.
-. Select the tab of type of API project that you want to create:
+. Select the tab of type of API specification project that you want to create:
 * To create a new API specification, select the *New API Specification* tab, and then select the type of API.
 +
 image::create-api-sepcification.png[]
@@ -24,7 +24,7 @@ Studio prompts you to switch to the API design perspective.
 
 In the API design perspective, use the API editor to write your API specification or API fragment. Additionally, you can use the API Console view to mock a live service so you can test your API specification.
 
-Studio uses VCS to track the development of your API project and keep it syncronized with Design Center.
+Studio uses VCS to track the development of your API specification project and keep it syncronized with Design Center.
 
 == Create Branches
 
@@ -34,7 +34,7 @@ include::page$sync-api-projects-design-center.adoc[tag=create-branch-vcs]
 
 include::page$sync-api-projects-design-center.adoc[tag=commit-to-branch-vcs]
 
-== Merge and Push Your API Project
+== Merge and Push Your API Specification Project
 
 You can merge the changes made to your API specification to your main branch and synchronize it with Design Center
 

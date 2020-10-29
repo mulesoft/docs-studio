@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :page-partial:
 
-Anypoint Studio enables you to import a RAML, OAS 2.0, or OAS 3.0 API specification created in Design Center to an API project in Studio so that you can edit it offline and then stage and push your changes as you would do with any version control system (VCS).
+Anypoint Studio enables you to import a RAML, OAS 2.0, or OAS 3.0 API specification created in Design Center to an API specification project in Studio so that you can edit it offline and then stage and push your changes as you would do with any version control system (VCS).
 
 This feature only works when importing an API from Design Center as shown in the following process. +
 To import an API specification to write a Mule application implementation see xref:import-api-specification-design-center.adoc[Import an API Specification From Design Center].
@@ -27,7 +27,7 @@ If you want to use a different account, click the *Add Account* button and log i
 image::list-of-apis-studio.png[]
 . Click *Finish*.
 
-Studio imports the API specification as an API project so that you can work on your API project offline.
+Studio imports the API specification as an API specification project so that you can work on your API specification project offline.
 
 == Create Branches
 
@@ -37,7 +37,7 @@ Using a different branch allows you to modify the API definition without risking
 // tag::create-branch-vcs[]
 To create a different branch in Studio:
 
-. In the Package Explorer view, right-click your API project and select *Team* > *Switch To* > *New Branch...*.
+. In the Package Explorer view, right-click your API specification project and select *Team* > *Switch To* > *New Branch...*.
 +
 image::switch-to-new-branch.png[]
 . In the *Create Branch* window, configure your new branch:
@@ -54,7 +54,7 @@ With a newly created branch, you can start committing your changes.
 
 // tag::commit-to-branch-vcs[]
 [[commit-to-branch]]
-== Commit Changes to Your API Project
+== Commit Changes to Your API Specification Project
 
 The VCS in Studio tracks every change you make to your project and shows them in the *Unstaged Changes* area of your *Git Staging* view.
 
@@ -85,7 +85,7 @@ See xref:git-staging-view-reference.adoc[Git Staging View Reference] for more in
 You can merge the changes made in your local branch to the master branch to push to Design Center:
 
 // tag::merge-and-push-to-main-vcs[]
-. In the Package Explorer view, right-click your API project and select *Team* > *Merge* > *Push Branch...*.
+. In the Package Explorer view, right-click your API specification project and select *Team* > *Merge* > *Push Branch...*.
 +
 image::merge-menu.png[]
 . Select the local branch to which you want to merge your changes:
@@ -98,7 +98,7 @@ image::merge-view.png[]
 
 You can choose to publish your local branch to Design Center after you committed all your changes to your local branch:
 
-. In the Package Explorer view, right-click your API project and select *Team* > *Switch To* > *Push Branch...*.
+. In the Package Explorer view, right-click your API specification project and select *Team* > *Switch To* > *Push Branch...*.
 +
 image::push-branch.png[]
 . Verify the changes that you are pushing to Design Center.

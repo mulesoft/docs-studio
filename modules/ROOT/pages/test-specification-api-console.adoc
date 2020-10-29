@@ -8,10 +8,10 @@ Studio's mocking service does not modify the `baseUri` field in your API specifi
 
 == Prerequisites
 
-* You must have an API project created.
-* Your API project must be synchronized with Design Center.
+* You must have an API specification project created.
+* Your API specification project must be synchronized with Design Center.
 * You must turn on the mocking service. +
-In your Package Explorer view, right-click your API project and select *Manage API Specification* > *Turn on Mocking Service*.
+In your Package Explorer view, right-click your API specification project and select *Manage API Specification* > *Turn on Mocking Service*.
 
 == Steps
 
@@ -30,4 +30,4 @@ Your expanded API Console view shows the mocking service to the right of the con
 
 == See Also
 
-* xref:create-api-specification-studio.adoc[Create an API Project in Studio].
+* xref:create-api-specification-studio.adoc[Create an API Specification Project in Studio].
