@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-partial:
 
 Anypoint Studio enables you to import a RAML, OAS 2.0, or OAS 3.0 API specification created in Design Center to an API specification project in Studio so that you can edit it offline and then stage and push your changes as you would do with any version control system (VCS).
 
