@@ -22,7 +22,7 @@ With a newly created branch, you can start committing your changes.
 
 The VCS in Studio tracks every change you make to your project and shows them in the *Unstaged Changes* area of your *Git Staging* view.
 
-You can track your changes to a file by right-clicking it in the *Unstaged Changes* section and select *Compare with index*:
+You can track your changes to a file by right-clicking it in the *Unstaged Changes* section and selecting *Compare with index*:
 
 image::studio::compare-with-index.png[]
 
