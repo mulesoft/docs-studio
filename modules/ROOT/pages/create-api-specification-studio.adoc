@@ -30,15 +30,15 @@ Studio uses VCS to track the development of your API specification project and k
 
 Using a different branch enables you to used a modified API definition in certain cases, without modifying the main branch in Design Center.
 
-include::page$sync-api-projects-design-center.adoc[tag=create-branch-vcs]
+include::partial$branch-commit-push-changes.adoc[tag=create-branch-vcs]
 
-include::page$sync-api-projects-design-center.adoc[tag=commit-to-branch-vcs]
+include::partial$branch-commit-push-changes.adoc[tag=commit-to-branch-vcs]
 
 == Merge and Push Your API Specification Project
 
 You can merge the changes made to your API specification to your main branch and synchronize it with Design Center
 
-include::page$sync-api-projects-design-center.adoc[tag=merge-and-push-to-main-vcs]
+include::partial$branch-commit-push-changes.adoc[tag=merge-and-push-to-main-vcs]
 
 == See Also
 
