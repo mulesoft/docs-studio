@@ -26,13 +26,10 @@ sudo keytool -import -trustcacerts -keystore <cacerts_path> \ //<1>
 -import -file [certificate_name].pem //<4>
 --
 +
-<1> `cacerts_path` is your Anypoint Studio artifact. For example:
-+
-[source]
---
-AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/jre/lib/security/cacerts
---
-<1> `pass` is your certificate's password.
+<1> `cacerts_path` is your Anypoint Studio artifact. +
+For example: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/jre/lib/security/cacerts`.
+<1> `pass` is your certificate's password. +
+If you don't provide a passord for this certificate, the keytool generates the password `changeit` by default.
 <1> `alias` is the name you give to your certificate
 <1> `certificate name` is the path to the generated .pem file you saved in the previous step.
 . In Studio, open the preferences view. +
