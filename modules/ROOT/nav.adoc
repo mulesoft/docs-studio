@@ -63,6 +63,8 @@
  ** xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
  ** xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
 
+* xref:eu-cloud-configuration.adoc[Configure EU Cloud in Studio]
+
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
  ** xref:pce-configuration-macos.adoc[MacOS]
  ** xref:pce-configuration-windows.adoc[Windows]
