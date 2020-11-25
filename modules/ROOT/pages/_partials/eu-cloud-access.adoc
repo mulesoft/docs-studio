@@ -1,17 +1,15 @@
-= To Access the EU Control Plane (Anypoint Studio)
+= Access the EU Control Plane from Anypoint Studio
 
-You can configure your Anypoint Studio 6.4.2 and later to point to the EU control plane.
+Configure your Anypoint Studio 6.4.2 and later implementation to point to the EU control plane to perform tasks there, such as deploying to CloudHub, importing an asset from Exchange, or importing an API definition from Design Center.
 
-This process enables you to perform tasks such as deploying to CloudHub, importing an asset from Exchange, or importing an API definition from Design Center, in the EU control plane.
-
-. Open the preferences view. +
-* In MacOS navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+. Open the preferences view in the manner appropriate to your OS: +
+* In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
-. Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
+. Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*:
 +
 image::studio::studio-anypoint-platform-settings.png[]
-. Select *EU* option from the region dropdown menu, and then select *Apply and Close*.
+. Select *EU* from the region drop-down menu, and then select *Apply and Close*:
 +
 image::studio::select-eu-region.png[]
 
-All Anypoint Platform tools embedded in Anypoint Studio will now display your Anypoint Platform from the EU Control plane.
+As a result, all Anypoint Platform tools embedded in Anypoint Studio display your Anypoint Platform from the EU control plane.
