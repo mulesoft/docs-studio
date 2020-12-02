@@ -33,7 +33,7 @@ If you don't provide a password for this certificate, the keytool generates the 
 <1> `alias` is the name you give to your certificate
 <1> `certificate name` is the path to the generated .pem file you saved in the previous step.
 . In Studio, open the preferences view. +
-Navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+Navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
 +
 image::studio-anypoint-platform-settings.png[]
@@ -49,7 +49,7 @@ image::pce-properties.png[]
 The first time you configure your user's login, Studio asks you to confirm your PCE certificate:
 
 . Open the preferences view. +
-Navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+Either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
 image::preferences-authentication-add.png[]

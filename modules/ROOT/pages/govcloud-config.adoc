@@ -6,8 +6,8 @@ Anypoint Studio 7.7 and later allows you to connect to the MuleSoft Government C
 
 To configure Studio to connect to GovCloud:
 
-. Open the preferences view. +
-* In MacOS navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+. Open the preferences view in the manner appropriate to your OS: +
+* In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
 +
@@ -21,8 +21,8 @@ image::gov-region-selection.png[]
 
 Because GovCloud requires you to use a two-factor authentication (2FA) method, you must configure your identity provider (IdP) information to access it:
 
-. Open the preferences view. +
-* In MacOS navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+. Open the preferences view in the manner appropriate to your OS: +
+* In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
