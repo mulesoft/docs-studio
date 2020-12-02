@@ -59,7 +59,7 @@ image::pce-properties.png[]
 The first time you configure your user's login, Studio asks you to confirm your PCE certificate:
 
 . Open the preferences view. +
-Navigate to *Anypoint Studio* > *Preferences..* or hit `cmd + ,`.
+Navigate to *Anypoint Studio* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
 image::preferences-authentication-add.png[]
