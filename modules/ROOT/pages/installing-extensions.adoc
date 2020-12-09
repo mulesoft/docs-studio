@@ -44,17 +44,13 @@ If you are on a network with firewall restrictions, you may find that the Studio
 
 Allow the following sites on your firewall to allow Studio to connect to the update sites:
 
-https://www.mulesoft.com/lp/dl/mule-esb-enterprise
+* +http://studio.mulesoft.org/+
+* +http://repository.mulesoft.org/connectors/releases/+
+* +http://download.eclipse.org/technology/m2e/releases+
+* +http://download.eclipse.org/eclipse/updates+
+* +http://subclipse.tigris.org/+
+* +http://findbugs.cs.umd.edu/eclipse/+
 
-http://repository.mulesoft.org/connectors/releases/
-
-http://download.eclipse.org/technology/m2e/releases
-
-http://download.eclipse.org/eclipse/updates
-
-http://subclipse.tigris.org/[http://subclipse.tigris.org]
-
-http://findbugs.cs.umd.edu/eclipse/
 ====
 
 [discrete.view]
