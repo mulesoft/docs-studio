@@ -18,7 +18,7 @@ image::installnewsoftware-copy.png[InstallNewSoftware+copy]
 +
 *Note*: Use "1.8.x" as shown (the .x is not a placeholder):
 +
- Subclipse Update Site – http://subclipse.tigris.org/update_1.8.x
+ Subclipse Update Site – +http://subclipse.tigris.org/update_1.8.x+
 +
 image::subeclipse-select.png[subeclipse_select]
 
@@ -41,8 +41,6 @@ image::restart.png[]
  SVNKit (Pure Java) SVNKit v1.7.9.9659`
 +
 image::preferences.png[]
-
-. If you are using Mac OS, see http://subclipse.tigris.org/wiki/JavaHL for additional information.
 
 == Committing a Project
 
