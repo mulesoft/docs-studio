@@ -60,17 +60,12 @@ If you are on a network with firewall restrictions, you may find that the Studio
 
 Allow on Firewall:
 
-* `+http://studio.mulesoft.org/+`
-
-* `+http://repository.mulesoft.org/connectors/releases/+`
-
-* `+http://download.eclipse.org/technology/m2e/releases+`
-
-* `+http://download.eclipse.org/eclipse/updates+`
-
-* `+http://subclipse.tigris.org/+`
-
-* `+http://findbugs.cs.umd.edu/eclipse/+`
+* +http://studio.mulesoft.org/+
+* +http://repository.mulesoft.org/connectors/releases/+
+* +http://download.eclipse.org/technology/m2e/releases+
+* +http://download.eclipse.org/eclipse/updates+
+* +http://subclipse.tigris.org/+
+* +http://findbugs.cs.umd.edu/eclipse/+
 
 
 == See Also
