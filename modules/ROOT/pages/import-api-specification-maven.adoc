@@ -5,6 +5,8 @@ endif::[]
 
 Anypoint Studio enables you to import a RAML or OAS 2.0 and 3.0 API specification into either a new Mule project or an existing one.
 
+If your OAS 3.0 API specification includes callbacks, you must manually implement them. See <<oas3-callbacks,Implement OAS 3 Callbacks>>.
+
 If you are using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that's not in Exchange, follow the steps presented in xref:import-api-specification-local-file.adoc[import an API specification from a local file] or xref:import-api-specification-design-center.adoc[import an API specification from Design Center] depending on your prefered use case.
 
 == Import an API Specification From Maven Into a New Project
@@ -56,6 +58,7 @@ You can manage the API specifications in your project that are linked to Exchang
 
 include::import-api-specification-maven.adoc[tag=maven-tasks]
 
+include::partial$implement-oas3-callbacks.adoc[leveloffset=1]
 
 == See Also
 
