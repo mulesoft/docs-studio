@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Git Staging view allows you to control the version control system (VCS) process to edit RAML and OAS API specifications offline and push your changes to Design Center.
+The Git Staging view allows you to control the version control system (VCS) process to edit RAML and OAS 2.0 and 3.0 API specifications offline and push your changes to Design Center.
 
 == Unstaged Changes section
 
