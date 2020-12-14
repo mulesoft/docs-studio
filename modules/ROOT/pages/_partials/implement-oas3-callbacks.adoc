@@ -1,0 +1,37 @@
+[[oas3-callbacks]]
+= Implement OAS 3 Callbacks
+
+Callbacks from an OAS 3 API specification cannot be automatically implemented into a Mule application in Studio or using APIkit.
+
+If your OAS 3 API specification uses callbacks, you must manually implement them into your flow as shown in the following example:
+
+. Assume a `/subscribe` resource in an OAS 3 specification that uses a `callbackUrl` property:
++
+[source]
+--
+paths:
+  /subscribe:
+    post:
+      summary: Subscribe to a webhook
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                callbackUrl:   # Callback URL
+                  type: string
+                  format: uri
+                  example: https://myserver.com/send/callback/here
+              required:
+                - callbackUrl
+--
+. When importing this API specification, Studio creates an empty flow for the `/subscribe` resource.
++
+image::empty-subscribe-resource.png[]
+. Create an object store to store the callback URL mentioned in the callback section: `'{$request.body#/callbackUrl}'` to `#[payload.callbackUrl]`.
+. Set a new variable in the flow to set a `statusCode` to 201.
++
+image::implement-callback-flow.png[]
+
