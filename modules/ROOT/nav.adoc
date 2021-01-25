@@ -46,6 +46,7 @@
  ** xref:dw-expression-watches-view-reference.adoc[Evaluate DataWeave Expression View Reference]
  ** xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
  ** xref:to-start-server-debug-mode.adoc[Starting the Mule Server In Debug Mode]
+ ** xref:java-debugger-preference.adoc[Connect the Java Debugger]
 
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
