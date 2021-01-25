@@ -11,5 +11,4 @@ Studio 7.8 and later disconnects the Java debugger by default. The following ste
 image::connect-java-debugger.png[]
 . Select *Apply and Close*.
 
-
-
+Note that connecting the Java debugger in Studio can cause performance degradation in your subsequent redeployments.
