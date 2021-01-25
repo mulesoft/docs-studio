@@ -1,6 +1,9 @@
 = Configure Private Cloud Edition in Studio (Windows)
 
-Anypoint Studio 7.4 and later support native integration with Anypoint Platform Private Cloud Edition (PCE) versions 1.6 and 2.0.
+Anypoint Studio 7.4 and later support native integration with Anypoint Platform Private Cloud Edition (PCE) versions 1.6, 2.0, and 3.0.
+
+Anypoint Studio 7.8 and later only support native integration with PCE version 3.0.0
+
 
 == Configure Your PCE Certificates Into Studio
 
