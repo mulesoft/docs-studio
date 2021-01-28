@@ -15,11 +15,13 @@ Anypoint Studio supports configurations for authenticated and non-authenticated 
 * *Direct* causes Anypoint Studio to open connections without the use of a proxy server.
 * *Manual* causes Anypoint Studio to open connections using the settings defined in the options below.
 * *Native* causes Anypoint Studio to open connections using settings discovered in the OS where you installed Anypoint Studio.
-. Click *Edit* when selecting the proxy entry for each schema to configure its host and port number. +
+. Click *Edit* when selecting the proxy entry for each schema to configure its host and port number.
++
 If you're using an authenticated proxy, select *Requires Authentication* and complete the *User* and *Password* fields.
-
-If necessary, you can add bypasses to your proxy. This is a list of hosts that should not use any proxy. +
-Click *Add Host...* to add hostnames to your proxy bypass list. +
+. If necessary, you can add bypasses to your proxy. This is a list of hosts that should not use any proxy.
++
+Click *Add Host...* to add hostnames to your proxy bypass list. 
++
 Keep in mind that when setting a manual provider, don't disable the default `localhost` and `127.0.0.1` bypasses. If you disable the bypasses, the embedded Mule runtime within Studio won't be able to reach your application.
 
 When applying changes to your proxy settings, Anypoint Studio restarts the Mule instance used to obtain metadata and test outbound connections.
