@@ -58,8 +58,6 @@ You can manage the API specifications in your project that are linked to Exchang
 
 include::import-api-specification-maven.adoc[tag=maven-tasks]
 
-include::partial$implement-oas3-callbacks.adoc[leveloffset=1]
-
 == See Also
 
 * xref:api-development-studio.adoc[API Development in Studio]

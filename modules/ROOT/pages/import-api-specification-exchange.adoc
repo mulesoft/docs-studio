@@ -50,8 +50,6 @@ Studio scaffolds your API specification. If you choose not to create flows out o
 
 You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
 
-include::partial$implement-oas3-callbacks.adoc[leveloffset=1]
-
 == See Also
 
 * xref:api-development-studio.adoc[API Development in Studio]
