@@ -26,6 +26,6 @@ image::update-version-api-dc.png[]
 . Select the new version of your API specification and select *Apply and Close*.
 +
 Studio updates the API specification to the selected version
-. To scaffold the flow of the updated version, right-click the Mule project where you updated the API version, and select *API Specs* > the name of your API > *Generate Flows*.
+. To generate a flow for the updated version, right-click the Mule project where you updated the API version, and select *API Specs* > the name of your API > *Generate Flows*.
 +
-Studio generates xref:4.x@apikit::apikit-4-raml-flow-concept.adoc[a scaffold of the flow] based on the new version.
+Studio generates xref:4.x@apikit::apikit-4-raml-flow-concept.adoc[a RAML-based flow] of the new version.
