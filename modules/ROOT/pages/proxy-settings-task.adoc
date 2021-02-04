@@ -6,30 +6,33 @@ endif::[]
 
 Anypoint Studio allows you to configure proxy configurations for when your computer is behind a proxy server and needs to connect to the internet to download plugins and install updates.
 
-Anypoint Studio only supports configurations for non-authenticated proxies.
+Anypoint Studio supports configurations for authenticated and non-authenticated proxies.
 
 . Open the preferences view in the manner appropriate to your OS: +
 * In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
-. Under General select Network Connections.
+. Under *General* select *Network Connections*.
 . Select your Active Provider: +
-* Direct causes Anypoint Studio to open connections without the use of a proxy server.
-* Manual causes Anypoint Studio to open connections using the settings defined in the options below.
-* Native causes Anypoint Studio to open connections using settings discovered in the OS where Anypoint Studio is installed.
-. Click the Edit button when selecting the proxy entry for each schema to configure its host and port number.
-
-If necessary, you can add bypasses to your proxy. This is a list of hosts that should not use any proxy. +
-Click Add Host... to add hostnames to your proxy bypass list. +
-Keep in mind that when setting a manual provider, you should not disable the default localhost and 127.0.0.1 bypasses. Otherwise the embedded Mule Runtime within Studio won't be able to reach your developing application.
+* *Direct* causes Anypoint Studio to open connections without the use of a proxy server.
+* *Manual* causes Anypoint Studio to open connections using the settings defined in the options below.
+* *Native* causes Anypoint Studio to open connections using settings discovered in the OS where you installed Anypoint Studio.
+. Click *Edit* when selecting the proxy entry for each schema to configure its host and port number.
++
+If you're using an authenticated proxy, select *Requires Authentication* and complete the *User* and *Password* fields.
+. If necessary, you can add bypasses to your proxy. This is a list of hosts that should not use any proxy.
++
+Click *Add Host...* to add hostnames to your proxy bypass list.
++
+Keep in mind that when setting a manual provider, don't disable the default `localhost` and `127.0.0.1` bypasses. If you disable the bypasses, the embedded Mule runtime within Studio won't be able to reach your application.
 
 When applying changes to your proxy settings, Anypoint Studio restarts the Mule instance used to obtain metadata and test outbound connections.
-If this fails, manually restart your instance by going to Preferences > Tooling, and clicking Restart Instance.
+If this fails, manually restart your instance: navigate to *Preferences* > *Tooling*, and click *Restart Instance*.
 
 == Proxy Settings Reference
 
 This section describes the options for configuring network connections from Anypoint Studio.
 
-You can access Network Connections configuration preferences from the Network Connections item in the Preferences window.
+You can access these configuration options from *Network Connections* in *Preferences...*.
 
 image::proxy-settings-reference-4eeb1.png[]
 
@@ -39,20 +42,18 @@ image::proxy-settings-reference-4eeb1.png[]
 | Active Provider
 | Specifies the settings profile to be used when opening connections.
 
-* Direct causes Anypoint Studio to open connections without the use of a proxy server.
-* Manual causes Anypoint Studio to open connections using the settings defined in the options below.
-* Native causes Anypoint Studio to open connections using settings discovered in the OS where Anypoint Studio is running.
-| Native if Anypoint Studio detects proxy configuration in your OS. +
-Direct if not proxy configuration is detected.
+* *Direct* causes Anypoint Studio to open connections without the use of a proxy server.
+* *Manual* causes Anypoint Studio to open connections using the settings defined in the options below.
+* *Native* causes Anypoint Studio to open connections using settings discovered in the OS where Anypoint Studio is running.
+| *Native* if Anypoint Studio detects a proxy configuration in your OS. +
+*Direct* if no proxy configuration is detected.
 
 | Proxy Entries
 | This table displays entries that are available for all providers. You can check the boxes in the first column for your selected provider to use that entry.
 | none
 
-| Proxy bypass
+| Proxy Bypass
 | This table specifies, either by name or pattern, which hosts should not use any proxy. A direct connection will always be used for matching hosts. You can check the boxes in the first column for your selected provider to use that entry.
-| `localhost` and `127.0.0.1` are marked by default for the Manual provider.
-
-You must not remove this configuration when using a proxy. Otherwise the embedded Mule runtime engine within Studio won't be able to reach your developing application.
+| `localhost` and `127.0.0.1` are marked by default for the Manual provider. +
+Don't remove this configuration when using a proxy. If you do, the embedded Mule Runtime within Studio won't be able to reach your application.
 |===
-
