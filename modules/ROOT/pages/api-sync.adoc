@@ -39,7 +39,7 @@ See xref:design-center::design-publish.adoc[Publish an API Specification] for mo
 . Import the same API specification from Exchange to your Studio project. +
 See xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange] for more information.
 
-See xref:sync-update-api-spec.adoc[Update the API Specification in Your Project] for instructions on keeping your Studio projects up to date with to the latest version of an API specification.
+See xref:sync-update-api-spec.adoc[Update the API Specification in Your Project] for instructions on keeping your Studio projects up to date with the latest version of an API specification.
 
 === Edit The Imported API Specification in Studio
 

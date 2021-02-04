@@ -10,7 +10,9 @@ To update the API specification:
 . In the Package Explorer view, right-click the Mule project that contains the API specification you want to update.
 . Select *API Specs* > the name of your API > *Update Version*.
 +
-After you update the version, Studio asks you if you want to regenerate the flows based on the new version.
+After you update the specification, Studio asks you if you want to regenerate the flows based on the new version.
++
+To manually generate a flow for the updated API, right-click the Mule project where you updated the API specification, and select *API Specs* > the name of your API > *Generate Flows*.
 
 Additionally, you can manage the API specifications in your project that are linked to Exchange from the API specification project management view. To do so, click the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
 

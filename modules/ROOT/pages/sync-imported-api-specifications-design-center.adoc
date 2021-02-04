@@ -27,4 +27,4 @@ image::update-version-api-dc.png[]
 
 Studio updates the API specification to the selected version, and asks you if you want to regenerate the xref:4.x@apikit::apikit-4-raml-flow-concept.adoc[flow] based on the new version.
 
-To manually generate a flow for the updated version, right-click the Mule project where you updated the API version, and select *API Specs* > the name of your API > *Generate Flows*.
+To manually generate a flow for the updated API, right-click the Mule project where you updated the API specification, and select *API Specs* > the name of your API > *Generate Flows*.
