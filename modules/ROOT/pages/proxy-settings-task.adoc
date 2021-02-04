@@ -32,7 +32,7 @@ If this fails, manually restart your instance: navigate to *Preferences* > *Tool
 
 This section describes the options for configuring network connections from Anypoint Studio.
 
-You can access these configuration options from *Network Connections* in *Preferences...*.
+You can access these configuration options from *Preferences...* > *General* > *Network Connections*.
 
 image::proxy-settings-reference-4eeb1.png[]
 
