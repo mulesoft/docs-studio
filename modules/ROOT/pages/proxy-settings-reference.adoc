@@ -18,20 +18,20 @@ image::proxy-settings-reference-4eeb1.png[]
 | Active Provider
 | Specifies the settings profile to be used when opening connections.
 
-* Direct causes Anypoint Studio to open connections without the use of a proxy server.
-* Manual causes Anypoint Studio to open connections using the settings defined in the options below.
-* Native causes Anypoint Studio to open connections using settings discovered in the OS where Anypoint Studio is running.
-| Native if Anypoint Studio detects proxy configuration in your OS. +
-Direct if not proxy configuration is detected.
+* *Direct* causes Anypoint Studio to open connections without the use of a proxy server.
+* *Manual* causes Anypoint Studio to open connections using the settings defined in the options below.
+* *Native* causes Anypoint Studio to open connections using settings discovered in the OS where Anypoint Studio is running.
+| *Native* if Anypoint Studio detects a proxy configuration in your OS. +
+*Direct* if no proxy configuration is detected.
 
 | Proxy Entries
 | This table displays entries that are available for all providers. You can check the boxes in the first column for your selected provider to use that entry.
 | none
 
-| Proxy bypass
+| Proxy Bypass
 | This table specifies, either by name or pattern, which hosts should not use any proxy. A direct connection will always be used for matching hosts. You can check the boxes in the first column for your selected provider to use that entry.
-| localhost and 127.0.0.1 are marked by default for the Manual provider. +
-You should not remove this configuration when using a proxy. Otherwise the embedded Mule Runtime within Studio won't be able to reach your developing application.
+| `localhost` and `127.0.0.1` are marked by default for the Manual provider. +
+Don't remove this configuration when using a proxy. If you do, the embedded Mule Runtime within Studio won't be able to reach your application.
 |===
 
 == See Also
