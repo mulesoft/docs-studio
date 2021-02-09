@@ -3,7 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-When necessary you can update the API specification in your Studio project.
+When you import an API specification as a dependency, you can update the API specification version in your Studio project.
+
 
 To update the API specification:
 

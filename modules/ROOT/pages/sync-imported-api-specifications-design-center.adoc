@@ -7,7 +7,7 @@ You can edit an imported API specification in your project as an API specificati
 
 Before you begin, ensure that you have the necessary permissions to edit the API specification in Design Center, and that you don't already have an API specification project for that API specification in your Studio workspace.
 
-. In the Package Explorer view, right-click the API dependency of your API specification project, select the name of the API you want to edit, and click  *Import API Spec from Design Center*.
+. In the Package Explorer view, right-click the API dependency of your API specification project, select the name of the API you want to edit, and select *Import API Spec from Design Center*.
 +
 image::import-dc-working-spec.png[]
 +
@@ -25,6 +25,6 @@ image::update-asset-version.png[]
 image::update-version-api-dc.png[]
 . Select the new version of your API specification and select *Apply and Close*.
 
-Studio updates the API specification to the selected version, and asks you if you want to regenerate the xref:4.x@apikit::apikit-4-raml-flow-concept.adoc[flow] based on the new version.
+Studio updates the API specification to the selected version and asks you if you want to regenerate the flow based on the new version.
 
 To manually generate a flow for the updated API, right-click the Mule project where you updated the API specification, and select *API Specs* > the name of your API > *Generate Flows*.
