@@ -1,0 +1,19 @@
+= Publish an API Project to Exchange
+
+You can publish your API project as a new version of an API specification to Exchange.
+
+To publish your API project as an API in Exchange:
+
+. In the Package Explorer view, right-click your API specification project and select *Manage API Specification* > *Publish to Exchange*.
++
+image::publish-api-project-to-exchange.png[]
+. Configure the following properties for your API to be an Exchange asset:
++
+image::configure-api-spec.png[]
+<1> In *Specification name*, type the name of your API
+<1> In *Artifact ID*, type the name of your API artifact
+<1> In *Group ID*, choose the group ID to which your API artifact belongs
+<1> In *Assert Version*, type the version of your API asset
+<1> In *API Version*, type the version of your API specification
+. Select *Finish*.
+
