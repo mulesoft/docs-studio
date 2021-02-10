@@ -39,13 +39,7 @@ See xref:design-center::design-publish.adoc[Publish an API Specification] for mo
 . Import the same API specification from Exchange to your Studio project. +
 See xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange] for more information.
 
-You can keep your Studio projects updated to the latest version of the API specification:
-
-. Right click in the project that implements the API for which you want to check for updates.
-. From the *API Specs* menu, select the API for which you want to check for updates, and click *Update Version*. +
-If a new version is found, API Sync asks you if you want to regenerate the flows based on the new version.
-
-You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
+See xref:sync-update-api-spec.adoc[Update the API Specification in Your Project] for instructions on keeping your Studio projects up to date with the latest version of an API specification.
 
 === Edit The Imported API Specification in Studio
 
