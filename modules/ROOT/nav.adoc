@@ -29,7 +29,8 @@
  ** xref:import-project-exchange.adoc[Importing a Mule Project from Exchange]
  ** xref:export-to-exchange-task.adoc[Publishing a Project to Exchange]
 
-* xref:add-modules-in-studio-to.adoc[Adding Modules to Your Project]
+ * xref:add-modules-in-studio-to.adoc[Add Modules to Your Project]
+  ** xref:update-modules.adoc[Update your Modules]
  ** xref:add-custom-modules-in-studio-to.adoc[Adding Custom Modules to Your Project]
 
 * xref:deploy-mule-application-task.adoc[Deploying a Mule Application to CloudHub]
