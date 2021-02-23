@@ -4,7 +4,7 @@ Anypoint Studio allows you to modularize your projects. You can use the *Manage 
 
 To check for updates and keep your modules updated:
 
-. In the top menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20]
+. In the top menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
 . Under *Mule Project*, select *Modules*.
 +
 image::manage-modules.png[]
