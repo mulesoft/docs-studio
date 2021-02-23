@@ -36,4 +36,4 @@ image::available-software.png[]
 == See Also
 
 * xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials]
-* xref:add-modules-in-studio-to.adoc[Adding Modules to Your Project]
+* xref:add-modules-in-studio-to.adoc[Add Modules to Your Project]
