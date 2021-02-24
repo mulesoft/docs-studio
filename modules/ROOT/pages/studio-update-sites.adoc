@@ -21,6 +21,19 @@ To add a new update site for installing additional components to Studio:
 . In *Location*, type the URL of the update site.
 . Click *OK*.
 
+=== Add a Local Update Site
+
+To add a local update site ensure that your update site is a JAR or ZIP file format and complete the following steps:
+
+. Navigate to *Help* > *Install New Software*.
+. Select *Add...*.
+. In *Location*, select *Archive* .
+. Seleect the ZIP or JAR file of your update site.
+. In *Name*, add a name to identify the update site.
+. Select *OK*
+. Follow the instructions that appear to complete the update site installation.
+
+
 == Allowing Connection to Update Site Through Firewall
 
 If you are on a network that has firewall restrictions, you must whitelist the URLs of the update sites to download extensions:
