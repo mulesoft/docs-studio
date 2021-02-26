@@ -51,4 +51,4 @@ image::3-setting.png[]
 
 * For complete information on MEL, see  xref:3.7@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language].
 
-* For complete information on CTL syntax and capabilities, including a language and functions reference, download the link:{attachmentsdir}/Mule+ESB+and+Studio+-+Datamapper+CTL2+Reference.pdf[Mule Datamapper CTL2 Reference].
+* For complete information on CTL syntax and capabilities, including a language and functions reference, download the http://docs.mulesoft.com/downloads/studio/5/Mule%2BESB%2Band%2BStudio%2B-%2BDatamapper%2BCTL2%2BReference.pdf[Mule Datamapper CTL2 Reference]
