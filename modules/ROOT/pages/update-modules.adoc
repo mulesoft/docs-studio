@@ -21,3 +21,4 @@ image::update-all-modules.png[]
 
 Studio updates your selected dependencies.
 
+Warning: If you are using Maven properties to set the connector version, then Studio will show the availability for the update, but will not perform the update. You will need to contact your Development team and change your custom maven code to update to the last version available
