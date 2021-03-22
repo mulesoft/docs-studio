@@ -21,5 +21,20 @@ image::update-all-modules.png[]
 
 Studio updates your selected dependencies.
 
-Warning: If you are using Maven properties to set the connector version, then Studio will show the availability for the update, but will not perform the update. You will need to contact your Development team and change your custom maven code to update to the last version available
+Note that this process works only if you manage your dependencies using Studio. If you use Maven properties to specify your modules version:
 
+[source,XML,linenums]
+--
+<properties>
+  <http_connector_version>1.5.23</http_connector_version>
+</properties>
+
+<dependency>
+    <groupId>org.mule.connectors</groupId>
+    <artifactId>mule-http-connector</artifactId>
+    <version>${http_connector_version}</version>
+    <classifier>mule-plugin</classifier>
+</dependency>
+--
+
+You must contact your development team and change your custom maven code to update to the latest version available.
