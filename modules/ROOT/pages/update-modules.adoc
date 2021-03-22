@@ -1,6 +1,6 @@
 = Update your Modules
 
-Anypoint Studio allows you to modularize your projects. If you host your modules in Exchange, you can use the *Manage dependencies* wizard to manage the dependencies of your Mule project.
+Anypoint Studio allows you to modularize your projects. You can use the *Manage dependencies* wizard to manage the dependencies of your Mule project.
 
 To check for updates and keep your modules updated:
 
@@ -21,4 +21,20 @@ image::update-all-modules.png[]
 
 Studio updates your selected dependencies.
 
-If your modules reside in a custom Maven installation you must contact your development team and change your custom Maven code to update your modules.
+This method does not work if you use Maven properties to specify your modules' version:
+
+[source,XML,linenums]
+--
+<properties>
+  <http_connector_version>1.5.23</http_connector_version>
+</properties>
+
+<dependency>
+    <groupId>org.mule.connectors</groupId>
+    <artifactId>mule-http-connector</artifactId>
+    <version>${http_connector_version}</version>
+    <classifier>mule-plugin</classifier>
+</dependency>
+--
+
+When using Maven properties to set your modules' versions, you must contact your development team and change your custom maven code to update to the latest version available.
