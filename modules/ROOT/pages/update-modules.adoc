@@ -21,7 +21,7 @@ image::update-all-modules.png[]
 
 Studio updates your selected dependencies.
 
-This method does not work if you use Maven properties to specify your modules' version:
+Note that this process works only if you manage your dependencies using Studio. If you use Maven properties to specify your modules version:
 
 [source,XML,linenums]
 --
@@ -37,4 +37,4 @@ This method does not work if you use Maven properties to specify your modules' v
 </dependency>
 --
 
-When using Maven properties to set your modules' versions, you must contact your development team and change your custom maven code to update to the latest version available.
+You must contact your development team and change your custom maven code to update to the latest version available.
