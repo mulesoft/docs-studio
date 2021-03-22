@@ -21,7 +21,7 @@ image::update-all-modules.png[]
 
 Studio updates your selected dependencies.
 
-Note that this process only works if you manage your dependencies using Studio. If you use Maven properties to specify your modules version:
+Note that this process works only if you manage your dependencies using Studio. If you use Maven properties to specify your modules version:
 
 [source,XML,linenums]
 --
