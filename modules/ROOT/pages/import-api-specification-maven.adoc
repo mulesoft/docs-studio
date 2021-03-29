@@ -1,4 +1,4 @@
-= Importing an API Specification from Maven
+= Import an API Specification from Maven
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

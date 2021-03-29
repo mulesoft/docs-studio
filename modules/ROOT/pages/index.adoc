@@ -106,5 +106,5 @@ Specific Mule views such as the Mule Palette, or the Mule Debugger View can be f
 
 == See Also
 
-* xref:to-download-and-install-studio.adoc[Installing Anypoint Studio]
-* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials]
+* xref:to-download-and-install-studio.adoc[Install Anypoint Studio]
+* xref:set-credentials-in-studio-to.adoc[Configure Anypoint Platform Credentials]

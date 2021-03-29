@@ -28,7 +28,7 @@ Using API Sync, you can develop your Mule applications following API Lifecycle d
 See xref:create-api-specification-studio.adoc[Create an API Specification Project in Studio] for more information.
 . Publish it to Exchange.
 . Import the same API specification from Exchange to your Studio project. +
-See xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange] for more information.
+See xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange] for more information.
 
 == Import an API Specification from Exchange into a New Mule Project
 
@@ -37,7 +37,7 @@ You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Cr
 . Publish it to Exchange. +
 See xref:design-center::design-publish.adoc[Publish an API Specification] for more information.
 . Import the same API specification from Exchange to your Studio project. +
-See xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange] for more information.
+See xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange] for more information.
 
 See xref:sync-update-api-spec.adoc[Update the API Specification in Your Project] for instructions on keeping your Studio projects up to date with the latest version of an API specification.
 
@@ -62,5 +62,5 @@ See xref:sync-api-projects-design-center.adoc[Synchronize API Specifications wit
 == See Also
 
 * xref:api-development-studio.adoc[API Development in Studio]
-* xref:import-api-specification-exchange.adoc[Importing an API Specification from Exchange]
-* xref:import-api-specification-maven.adoc[Importing an API Specification from Maven]
+* xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange]
+* xref:import-api-specification-maven.adoc[Import an API Specification from Maven]

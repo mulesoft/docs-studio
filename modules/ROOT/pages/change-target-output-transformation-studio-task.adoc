@@ -1,4 +1,4 @@
-= Changing the Target Output of a Transformation
+= Change the Target Output of a Transformation
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -16,6 +16,6 @@ image::dw-new-variable.png[new variable]
 == See Also
 
 * xref:transform-message-component-concept-studio.adoc[Transform Message Component]
-* xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
+* xref:add-another-output-transform-studio-task.adoc[Add Another Output Target]
 * xref:mule-runtime::about-mule-message.adoc[Mule Message Structure]
 * xref:mule-runtime::dataweave.adoc[DataWeave language]

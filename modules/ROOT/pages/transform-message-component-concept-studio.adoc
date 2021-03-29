@@ -51,7 +51,7 @@ To improve your experience with the Transform Message component and properly man
 == See Also
 
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
-* xref:change-target-output-transformation-studio-task.adoc[Changing the Target Output of a Transformation]
-* xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
-* xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
+* xref:change-target-output-transformation-studio-task.adoc[Change the Target Output of a Transformation]
+* xref:add-another-output-transform-studio-task.adoc[Add Another Output Target]
+* xref:move-transformations-separate-file-studio-task.adoc[Move Transformations to Separate Files]
 * xref:mule-runtime::dataweave.adoc[DataWeave language]

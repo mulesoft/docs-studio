@@ -1,4 +1,4 @@
-= Importing a Mule Project from Exchange
+= Import a Mule Project from Exchange
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -12,7 +12,7 @@ It's always recommended that you explore the available examples in Exchange. The
 * Make sure that you set up your Anypoint Platform credentials. +
 See xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials] to learn how to do this.
 
-== Importing an Exchange Example into Studio
+== Import an Exchange Example into Studio
 
 . Click the *Open Exchange* button on the top navigation bar image:import-project-exchange-c2fce.png[].
 . In the Exchange window, select the *MuleSoft* organization from the left navigation bar.
@@ -25,4 +25,4 @@ image::import-project-exchange-7f6a4.png[]
 == See Also
 
 * xref:export-to-exchange-task.adoc[To Publish a Project to Exchange]
-* xref:import-export-packages.adoc[Importing and Exporting Projects]
+* xref:import-export-packages.adoc[Import and Export Projects]

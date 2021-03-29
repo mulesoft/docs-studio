@@ -1,4 +1,4 @@
-= Downloading and Installing Anypoint Studio (Windows)
+= Download and Install Anypoint Studio (Windows)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -1,4 +1,4 @@
-= Configuring XULRunner as Studio's Default Layout Engine (Windows)
+= Configure XULRunner as Studio's Default Layout Engine (Windows)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -24,5 +24,5 @@ Additionally, if you are experiencing unexpected crashes when rendering web cont
 
 == See Also
 
-* xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
-* xref:studio-xulrunner-unx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (MacOS)]
+* xref:studio-xulrunner-lnx-task.adoc[Configure XULRunner as Studio's Default Layout Engine (Linux)]
+* xref:studio-xulrunner-unx-task.adoc[Configure XULRunner as Studio's Default Layout Engine (MacOS)]

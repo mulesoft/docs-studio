@@ -6,11 +6,11 @@ endif::[]
 
 DataSense is a feature of Anypoint Studio that uses Mule event metadata to help you design applications. Rather than forcing you to manually discover this metadata, Anypoint Studio automatically acquires it so that you can map or use this data in your application.
 
-== Understanding How DataSense Uses Mule Event Metadata
+== Understand How DataSense Uses Mule Event Metadata
 
 Understanding how your components use metadata in a flow is key to ensuring data reliability by enabling early detection of errors during project design and data reusability in your Mule application by detecting when a component requires metadata that is not being exposed to it within its scope.
 
-== Using Datasense to Map Data
+== Use Datasense to Map Data
 
 Consider a flow in which you include an Anypoint Connector preceded or followed by a Transform Message component. The Mule runtime engine uses the working connection to the resource to retrieve and supply to DataWeave metadata about the payload and properties, saving you the effort of manually inspecting Mule event structure.
 
@@ -18,7 +18,7 @@ For example, imagine that you need to connect your organization's Salesforce acc
 
 image::datasense-perceptive-flow-design-concept-cf42d.png[]
 
-== Using Datasense for Autocomplete
+== Use Datasense for Autocomplete
 
 Imagine that you are obtaining status update data from the Slack connector and you want to log the message you are sending to Slack, but you aren't familiar with the property names used by this connector. Instead of referring to Slack documentation, you can insert a Logger message processor after the Slack connector and begin to type in it, which activates autocomplete. For example, if you type `#[payload.` and then press `ctrl + space bar`, you get a list of all the properties and methods associated with that payload, including the properties returned by your request to the Slack connector.
 

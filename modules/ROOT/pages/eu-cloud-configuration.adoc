@@ -4,5 +4,5 @@ include::studio::partial$eu-cloud-access.adoc[]
 
 * xref:import-api-specification.adoc[Import API Specifications]
 * xref:add-modules-in-studio-to.adoc[Add Modules to Your Project]
-* xref:deploy-mule-application-task.adoc[Deploying a Mule Application to CloudHub]
+* xref:deploy-mule-application-task.adoc[Deploy a Mule Application to CloudHub]
 
