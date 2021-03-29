@@ -1,4 +1,4 @@
-= Graphically Constructing a Mapping
+= Graphically Construct a Mapping
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

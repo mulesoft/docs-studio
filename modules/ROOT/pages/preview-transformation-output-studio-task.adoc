@@ -1,4 +1,4 @@
-= Previewing the Output of a Transformation
+= Preview the Output of a Transformation
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

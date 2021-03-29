@@ -1,4 +1,4 @@
-= Deploying a Mule Application to CloudHub
+= Deploy a Mule Application to CloudHub
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -15,7 +15,7 @@ CloudHub then dynamically allocates a port at deployment time.
 +
 See the xref:mule-runtime::how-to-export-resources.adoc[How to Export Resources] task to learn more about working with external resources in your Mule application.
 
-== Deploying to CloudHub
+== Deploy to CloudHub
 
 . Right click the project folder on your Package Explorer View.
 . Select Anypoint Platform and then Deploy to CloudHub. +
@@ -28,12 +28,12 @@ To reduce compatibility risks, you should always deploy to the runtime version i
 +
 Additionally you can configure the amount of worker and worker size for the CloudHub instance you are going to use, enable Insight, static IPs, configure log levels, and properties placeholders for your application.
 
-== Redeploying to CloudHub
+== Redeploy to CloudHub
 
 After you deploy your application from Anypoint Studio for the first time, you can keep modifying the application's code and repeat the steps 1 and 2 above to redeploy your updated application. +
 When you get to the CloudHub instance configuration window, the "Overwrite Existing Application" option would already be selected for you. This allows you to redeploy the application.
 
 == See Also
 
-* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials]
+* xref:set-credentials-in-studio-to.adoc[Configure Anypoint Platform Credentials]
 // _TODO: Add links to runtime manager after 4.1 Release.

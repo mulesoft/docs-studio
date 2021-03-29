@@ -1,4 +1,4 @@
-= Importing and Exporting Projects
+= Import and Export Projects
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -8,7 +8,7 @@ This document outlines the procedures to import or export information pertaining
 
 Because Studio is Eclipse-based, keep in mind that among the import/export options, there are ways to import or export projects that are not tailored for Mule projects and that are not recommended for use.
 
-== Importing Projects To Studio
+== Import Projects to Studio
 
 Studio presents two importing options.
 
@@ -21,7 +21,7 @@ image::import-export-packages-ad8ef.png[align=center]
 |*Anypoint Studio Project from File System* |Imports a folder and its contents as a new Mule project.
 |===
 
-=== Importing a Mule Application (Deployable Archive)
+=== Import a Mule Application (Deployable Archive)
 
 . Select *Import* from the *File* menu.
 . In the Import wizard, click to expand the Mule folder, select *Packaged Mule Application (.jar)*, and click *Next*.
@@ -31,9 +31,9 @@ If you want, you can change project's name.
 
 [NOTE]
 When you import a project that was developed in Studio 7.1.x or older versions of Studio 7, Studio will prompt you to *Update your Workspace*. +
-See xref:update-workspace.adoc[Updating Workspaces] for more details.
+See xref:update-workspace.adoc[Update Workspaces] for more details.
 
-=== Importing a Mule Application (Project From File System)
+=== Import a Mule Application (Project From File System)
 
 . Select *Import* from the *File* menu.
 . In the Import wizard, click to expand the Mule folder, select *Anypoint Studio Project from File System*, and click *Next*.
@@ -45,7 +45,7 @@ You can choose a different runtime version if you have other embedded runtime ve
 See _Mule Runtimes for Anypoint Studio Update Site_ in xref:studio-update-sites.adoc[About Anypoint Studio Update Sites] to learn how to install other versions of the runtime in Studio.
 
 [[export-project-studio]]
-== Exporting Projects From Studio
+== Export Projects From Studio
 
 Studio lets you package and export your project as a Mule deployable file.
 
@@ -57,7 +57,7 @@ image::import-export-packages-a1b21.png[]
 |*Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)* |Exports a Mule project to a `.jar` deployable file.
 |===
 
-=== Exporting a Studio Project to a Deployable Mule Application
+=== Export a Studio Project to a Deployable Mule Application
 
 . Select *Export* from the *File* menu.
 . In the Import wizard, click to expand the Mule folder, select *Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)*, and click *Next*.
@@ -67,7 +67,7 @@ Additionally, you can choose *Attach Project Sources* to include metadata that S
 +
 You must keep the *Attach Project Sources* option selected to be able to import the packaged JAR file back into a Studio workspace. This is the same as using the `-DattachMuleSources` flag when packaging using the Mule Maven Plugin. See xref:mule-runtime::mmp-concept.adoc#create-an-application-package-to-import-into-anypoint-studio[Create an Application Package to Import into Anypoint Studio] in the Mule Maven Plugin documentation for more information.
 
-=== Exporting a Studio Project to a Shareable Lightweight Package
+=== Export a Studio Project to a Shareable Lightweight Package
 
 . Select *Export* from the *File* menu.
 . In the Import wizard, click to expand the Mule folder, select *Anypoint Studio Project to Mule Deployable Archive (includes Studio metadata)*, and click *Next*.

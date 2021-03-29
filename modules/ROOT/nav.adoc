@@ -1,6 +1,6 @@
 .xref:index.adoc[Anypoint Studio]
 * xref:index.adoc[Overview]
-* xref:to-download-and-install-studio.adoc[Downloading and Installing Studio]
+* xref:to-download-and-install-studio.adoc[Download and Install Studio]
  ** xref:to-download-and-install-studio-wx.adoc[Windows]
  ** xref:to-download-and-install-studio-lx.adoc[Linux]
  ** xref:to-download-and-install-studio-ox.adoc[MacOS]
@@ -23,22 +23,22 @@
  ** xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center]
  ** xref:sync-update-api-spec.adoc[Update the API Specification in Your Project]
  ** xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Projects in Studio]
- ** xref:solving-conflicts-api-projects.adoc[Solving Conflicts]
+ ** xref:solving-conflicts-api-projects.adoc[Solve Conflicts]
  ** xref:git-staging-view-reference.adoc[Git Staging View Reference]
  ** xref:publish-api-project-to-exchange.adoc[Publish an API Project to Exchange]
 
-* xref:import-export-packages.adoc[Importing and Exporting Projects]
- ** xref:import-project-exchange.adoc[Importing a Mule Project from Exchange]
- ** xref:export-to-exchange-task.adoc[Publishing a Project to Exchange]
+* xref:import-export-packages.adoc[Import and Export Projects]
+ ** xref:import-project-exchange.adoc[Import a Mule Project from Exchange]
+ ** xref:export-to-exchange-task.adoc[Publish a Project to Exchange]
 
  * xref:add-modules-in-studio-to.adoc[Add Modules to Your Project]
   ** xref:update-modules.adoc[Update your Modules]
- ** xref:add-custom-modules-in-studio-to.adoc[Adding Custom Modules to Your Project]
+ ** xref:add-custom-modules-in-studio-to.adoc[Add Custom Modules to Your Project]
 
-* xref:deploy-mule-application-task.adoc[Deploying a Mule Application to CloudHub]
+* xref:deploy-mule-application-task.adoc[Deploy a Mule Application to CloudHub]
 
 * xref:domain-support-concept.adoc[Domain Support]
- ** xref:domain-studio-tasks.adoc[Designing Mule Domains]
+ ** xref:domain-studio-tasks.adoc[Design Mule Domains]
 
 * xref:api-search.adoc[Search Inside Your API Specification Dependencies]
 
@@ -48,24 +48,24 @@
  ** xref:evaluate-dw-expressions.adoc[DataWeave Expression Watches]
  ** xref:dw-expression-watches-view-reference.adoc[Evaluate DataWeave Expression View Reference]
  ** xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
- ** xref:to-start-server-debug-mode.adoc[Starting the Mule Server In Debug Mode]
+ ** xref:to-start-server-debug-mode.adoc[Start the Mule Server In Debug Mode]
  ** xref:java-debugger-preference.adoc[Connect the Java Debugger]
 
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
 
 * xref:metadata-editor-concept.adoc[Metadata Editor]
- ** xref:access-metadata-editor-task.adoc[Accessing the Metadata Editor]
- ** xref:create-metadata-class-task.adoc[Creating a Metadata Class]
+ ** xref:access-metadata-editor-task.adoc[Access the Metadata Editor]
+ ** xref:create-metadata-class-task.adoc[Create a Metadata Class]
 
 * xref:transform-message-component-concept-studio.adoc[Transform Message Component]
  ** xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
-  *** xref:input-output-structure-transformation-studio-task.adoc[Defining Input and Output Structure of a Transformation]
-  *** xref:graphically-construct-mapping-studio-task.adoc[Graphically Constructing a Mapping]
-  *** xref:preview-transformation-output-studio-task.adoc[Previewing the Output of a Transformation]
- ** xref:change-target-output-transformation-studio-task.adoc[Changing the Target Output of a Transformation]
- ** xref:add-another-output-transform-studio-task.adoc[Adding Another Output Target]
- ** xref:move-transformations-separate-file-studio-task.adoc[Moving Transformations to Separate Files]
+  *** xref:input-output-structure-transformation-studio-task.adoc[Define Input and Output Structure of a Transformation]
+  *** xref:graphically-construct-mapping-studio-task.adoc[Graphically Construct a Mapping]
+  *** xref:preview-transformation-output-studio-task.adoc[Preview the Output of a Transformation]
+ ** xref:change-target-output-transformation-studio-task.adoc[Change the Target Output of a Transformation]
+ ** xref:add-another-output-transform-studio-task.adoc[Add Another Output Target]
+ ** xref:move-transformations-separate-file-studio-task.adoc[Move Transformations to Separate Files]
 
 * xref:eu-cloud-configuration.adoc[Configure EU Cloud in Studio]
 
@@ -73,8 +73,8 @@
  ** xref:pce-configuration-macos.adoc[MacOS]
  ** xref:pce-configuration-windows.adoc[Windows]
 
-* xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
-* xref:proxy-settings-task.adoc[Configuring Proxy Settings]
+* xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials]
+* xref:proxy-settings-task.adoc[Configure Proxy Settings]
 * xref:browser-settings.adoc[Configure Studio's Browser Settings]
 * xref:change-jdk-config-in-projects.adoc[Select a Different JRE to Run the Embedded Mule Runtime Engine]
 

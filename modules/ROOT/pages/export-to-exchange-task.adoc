@@ -1,4 +1,4 @@
-= Publishing a Project to Exchange
+= Publish a Project to Exchange
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -27,4 +27,4 @@ After you select *Finish*, the publication of your project as a new asset in Exc
 
 == See Also
 
-* xref:set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials]
+* xref:set-credentials-in-studio-to.adoc[Configure Anypoint Platform Credentials]

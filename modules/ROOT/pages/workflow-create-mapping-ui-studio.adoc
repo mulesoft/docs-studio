@@ -3,15 +3,15 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-. xref:input-output-structure-transformation-studio-task.adoc[Defining Input and Output Structure of a Transformation]
+. xref:input-output-structure-transformation-studio-task.adoc[Define Input and Output Structure of a Transformation]
 Provide expected input and required output structures.
 
 
-. xref:graphically-construct-mapping-studio-task.adoc[Graphically Constructing a Mapping]
+. xref:graphically-construct-mapping-studio-task.adoc[Graphically Construct a Mapping]
 Drag elements of the input and drop them onto elements of the output. You can also include fixed values and functions to build out the output.
 
 
-. xref:preview-transformation-output-studio-task.adoc[Previewing the Output of a Transformation]
+. xref:preview-transformation-output-studio-task.adoc[Preview the Output of a Transformation]
 Verify that the transformation produces the expected output.
 
 

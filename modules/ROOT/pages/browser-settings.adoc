@@ -18,5 +18,5 @@ image::browser-configuration.png[]
 
 == See Also
 
-* xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
-* xref:proxy-settings-task.adoc[Configuring Proxy Settings]
+* xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials]
+* xref:proxy-settings-task.adoc[Configure Proxy Settings]

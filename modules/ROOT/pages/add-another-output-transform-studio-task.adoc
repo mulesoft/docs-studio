@@ -1,4 +1,4 @@
-= Adding Another Output to the Transform Message Component
+= Add Another Output to the Transform Message Component
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -76,5 +76,5 @@ This option force pushes your changes to the branch in Design Center.
 . Select *Push*
 
 In certain scenarios, someone else might have modified the version in Design Center while you modified the same version locally. This triggers conflicts in git. +
-See xref:solving-conflicts-api-projects.adoc[Solving Conflicts] for more information.
+See xref:solving-conflicts-api-projects.adoc[Solve Conflicts] for more information.
 // end::merge-and-push-to-main-vcs[]

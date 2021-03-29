@@ -1,4 +1,4 @@
-= Adding Custom Modules to Your Project
+= Add Custom Modules to Your Project
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -53,4 +53,4 @@ There's also a new Secure Properties Config element available in the Global Elem
 == See Also
 
 * xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project]
-* xref:1.1@mule-sdk::getting-started.adoc[Getting Started with the Mule SDK]
+* xref:1.1@mule-sdk::getting-started.adoc[Get Started with the Mule SDK]
