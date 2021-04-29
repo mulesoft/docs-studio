@@ -28,10 +28,10 @@ Studio 7.9.0 is the first version that needs Java 11 to run. Because there are s
 
 * Studio 7.9.0 comes with 2 embedded JDKs:
 ** JDK 11 (AdoptOpenJDK 11.0.10_9) starts and runs Studio. JDK 11 also runs the Mule runtime instance used for tooling, for example, the runtime instance that resolves metadata. +
-You can choose to use any other custom JDK to start Studio. See Configure Studio to Use Your Own JDK for more information.
+You can choose to use any other custom JDK to start Studio. See xref:change-jdk-for-studio.adoc[Start Studio Using Your Own JDK] for more information.
 ** JDK 8 (AdoptOpenJDK 8u282-b08) is the default JRE to run your Mule projects. +
 You can choose to use any other custom JDK installation to run your Mule projects. +
-See Select a Different JRE to Run the Embedded Mule Runtime Engine for more information.
+See xref:change-jdk-config-in-projects.adoc[Select a Different JRE to Run the Embedded Mule Runtime Engine] to Run the Embedded Mule Runtime Engine for more information.
 * Studio 7.9 modifies the formatting of the configuration XML files (`pom.xml` and `setting.xml` files):
 ** Projects created with Studio 7.9 have a consistent indentation character usage.
 ** Projects created with previous versions of Studio and opened in Studio 7.9 will be fully re-formatted to provide consistency. Studio 7.9 will then provide further modifications to enforce the format.
@@ -39,7 +39,7 @@ See Select a Different JRE to Run the Embedded Mule Runtime Engine for more info
 *** Studio moves the comments on the same line before an element tag to a new line above.
 *** Studio moves the comments on the same line after an element tag to a new line below.
 ** Groups of multiple blank lines are replaced with just one new line.
-* Outdated Connectors versions could potentially not fully support Java 11. If you encounter any problem while designing your flow in Studio, consider upgrading to the latest version of the connector. See Update your Modules for more information.
+* Outdated Connectors versions could potentially not fully support Java 11. If you encounter any problem while designing your flow in Studio, consider upgrading to the latest version of the connector. See xref:update-modules.adoc[Update your Modules] for more information.
 
 == Improved Dataweave Experience
 
