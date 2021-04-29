@@ -60,7 +60,7 @@ To remove the input data structure from the Source Only view:
 . Open the preferences view in the manner appropriate to your OS:
 ** In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd` + `,`.
 ** In Windows and Linux, navigate to *Window* > *Preferences...*.
-** Expand Anypoint Studio in the left navigation bar, and select DataWeave:
+. Expand Anypoint Studio in the left navigation bar, and select DataWeave:
 +
 image::hide-input-structure-dw.png[]
 . Select Remove the input data structure from the Source Only view.
