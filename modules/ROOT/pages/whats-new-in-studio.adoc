@@ -1,0 +1,70 @@
+= What’s New in Studio
+
+Anypoint Studio 7.9 introduces dark mode and upgrades its underlying infrastructure to Eclipse 4.18 and Java 11 adding official support for macOS Big Sur.
+
+This version also introduces improvements for Dataweave code experience.
+
+== Dark Mode
+
+Studio 7.9 improves the user experience by introducing dark mode. Dark mode enables Studio users to choose a new color scheme that’s  easier on the eyes in low-light environments.
+
+To enable dark mode, in the top toolbar, select the *Switch to Dark Theme* image:dark-theme-icon.png[] button.
+
+image::enable-dark-theme.png[]
+
+You must restart Studio for this change to fully take effect.
+
+To switch back to the light theme, in the top toolbar, select the *Switch to Light Theme* image:light-theme-icon.png[] button.
+
+image::enable-light-theme.png[]
+
+You must restart Studio for this change to fully take effect.
+
+== Run Studio in Java 11 by Default
+
+Studio 7.9 release natively uses Java 11 to run.
+
+Studio 7.9.0 is the first version that needs Java 11 to run. Because there are several changes between Java 8 and Java 11, the following bullet points list the main differences you might encounter:
+
+* Studio 7.9.0 comes with 2 embedded JDKs:
+** JDK 11 (AdoptOpenJDK 11.0.10_9) starts and runs Studio. JDK 11 also runs the Mule runtime instance used for tooling, for example, the runtime instance that resolves metadata. +
+You can choose to use any other custom JDK to start Studio. See Configure Studio to Use Your Own JDK for more information.
+** JDK 8 (AdoptOpenJDK 8u282-b08) is the default JRE to run your Mule projects. +
+You can choose to use any other custom JDK installation to run your Mule projects. +
+See Select a Different JRE to Run the Embedded Mule Runtime Engine for more information.
+* Studio 7.9 modifies the formatting of the configuration XML files (`pom.xml` and `setting.xml` files):
+** Projects created with Studio 7.9 have a consistent indentation character usage.
+** Projects created with previous versions of Studio and opened in Studio 7.9 will be fully re-formatted to provide consistency. Studio 7.9 will then provide further modifications to enforce the format.
+** Comments located on the same line of an element tag, either before or after it, are relocated:
+*** Studio moves the comments on the same line before an element tag to a new line above.
+*** Studio moves the comments on the same line after an element tag to a new line below.
+** Groups of multiple blank lines are replaced with just one new line.
+* Outdated Connectors versions could potentially not fully support Java 11. If you encounter any problem while designing your flow in Studio, consider upgrading to the latest version of the connector. See Update your Modules for more information.
+
+== Improved Dataweave Experience
+
+This release keeps adding improvements for the Dataweave editor usage experience:
+
+=== Remove the Input Data Structure from the Source Only View
+
+You can choose to remove the structure of your input data when selecting the Source Only view in the Dataweave editor.
+
+.Dataweave editor with input structure information
+image::dw-editor-input-structure.png[]
+
+.Dataweave editor without input structure information
+image::dw-editor-no-input-structure.png[]
+
+To remove the input data structure from the Source Only view:
+
+. Open the preferences view in the manner appropriate to your OS:
+** In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd` + `,`.
+** In Windows and Linux, navigate to *Window* > *Preferences...*.
+** Expand Anypoint Studio in the left navigation bar, and select DataWeave:
++
+image::hide-input-structure-dw.png[]
+. Select Remove the input data structure from the Source Only view.
++
+You must close your Dataweave editor and re-open it for this change to take place.
+
+
