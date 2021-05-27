@@ -24,7 +24,7 @@ After downloading and installing the JDK, ensure that your JDK installation is p
 == Installation
 
 . Extract the Windows installation file into the `C:\` root folder.
-** If you are using a Windows antivirus application, ensure that the `plugin/` and `features/` directories are under the _trusted_ category.
+** If you are using a Windows antivirus application, ensure that the `plugins/` and `features/` directories are under the _trusted_ category.
 . Open the extracted Anypoint Studio.
 . Click OK to accept the default workspace.
 
