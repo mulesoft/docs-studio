@@ -1,6 +1,6 @@
 = Edit Your API Specification Project Exchange File
 
-Anypoint Studio enables you to edit the `exchange.json` file of your API specification project. The `exchange.json` file is a file that contains metadata required by Anypoint Exchange to describe your API asset.
+Anypoint Studio enables you to edit the `exchange.json` file of your API specification project. The `exchange.json` file contains metadata required by Anypoint Exchange to describe your API asset.
 
 To edit your `exchange.json` file:
 
