@@ -1,27 +1,25 @@
-= Edit your API Specification Project Exchange File
+= Edit Your API Specification Project Exchange File
 
-Anypoint Studio enables you to edit the `exchange.json` file of your API specification project.
-
-The `exchange.json` file is a file that contains metadata required by Anypoint Exchange to describe your API asset.
+Anypoint Studio enables you to edit the `exchange.json` file of your API specification project. The `exchange.json` file is a file that contains metadata required by Anypoint Exchange to describe your API asset.
 
 To edit your `exchange.json` file:
 
-. Select it from your API specification project in your Project Explorer view.
+. Select it from your API specification project in your Project Explorer view:
 +
 image::exchange-json-package-explorer.png[alt="Exchange.json file shown in the Package explorer view"]
 . Use the editor to update the values of your `exchange.json` file:
 +
 image::exchange-json-studio-editor.png[alt="Exchange.json editor view"]
 +
-<1> You cannot edit the first item, *Name*, since this is the artifact name of your API specification asset.
-<1> Use the second item, *Main file* drop-down menu, to choose the main file of your API specification asset.
-<1> You cannot edit the third item, *Artifact ID*, since this is the artifact ID of your API specification asset.
-<1> You cannot edit the fourth item, *Group ID*, since this is the group ID of your API specification asset.
-<1> Use the fifth item, *Asset Version*, to update your API specification asset's version.
+<1> You cannot edit the first item, *Name*, because this is the artifact name of your API specification asset.
+<1> Use the second item, *Main file*, to choose the main file of your API specification asset.
+<1> You cannot edit the third item, *Artifact ID*, because this is the artifact ID of your API specification asset.
+<1> You cannot edit the fourth item, *Group ID*, because this is the group ID of your API specification asset.
+<1> Use the fifth item, *Asset Version*, to update your API specification asset version.
 <1> Use the sixth item, *API Version*, to update the API version of your API specification asset.
 <1> Use the green plus icon to add a new dependency to your API specification asset.
 
-Additionally, you can edit the XML of your `exchange.json` file by selecting the editor's *exchange.json* tab below:
+Additionally, you can edit the XML of your `exchange.json` file by selecting the editor's *exchange.json* tab:
 
 image::exchange-json-editor.png[]
 
