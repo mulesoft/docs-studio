@@ -8,11 +8,14 @@ Anypoint Studio enables you to import a RAML, OAS 2.0, or OAS 3.0 API specificat
 This feature only works when importing an API from Design Center as shown in the following process. +
 To import an API specification to write a Mule application implementation see xref:import-api-specification-design-center.adoc[Import an API Specification From Design Center].
 
+Your API specification project must have a different name than any other project in your workspace.
+
 [NOTE]
 Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
 
 == Import an API Specification From Design Center To Edit Locally
 
+. Ensure that no other project in your workspace has the same name as the API project you want to import.
 . In the taskbar at the top of the Anypoint Studio display, select *File* > *Import*.
 . Select *Anypoint Studio* > *API Specification from Design Center*.
 . In the *Import From Design Center* window, select your Anypoint Platform username and the Anypoint Platform business group where the API specification is located.
