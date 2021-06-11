@@ -5,10 +5,31 @@ endif::[]
 
 You can add your custom Mule module to your Mule projects in Anypoint Studio.
 
-These instructions assume that you coded your Mule module using the Mule SDK, and that you followed the proper set up steps. +
+These instructions assume that you developed your Mule module using the Mule SDK, and that you followed the proper setup steps. +
 See the xref:1.1@mule-sdk::getting-started.adoc[Mule SDK introductory instructions] for more details.
 
-Mule modules are developed as Maven projects, therefore your custom Mule module must be installed in a local or online Maven repository.
+You can install custom modules using the Studio UI, or by manually adding them as a Maven dependency in your project's `pom.xml` file.
+
+== From Studio
+
+To install a local custom module from Studio:
+
+. In the top menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
+. Under *Mule Project*, select *Modules*:
++
+image::manage-modules.png[]
+. Select the green plus icon (image:add-icon.png[2%,2%]) and select *From Maven*:
++
+image::add-modules-from-maven.png[]
+. In the properties window, configure your custom module's Maven:
++
+image::add-modules-maven-ui.png[]
++
+This information is available in your module's `pom.xml` file.
+
+== From Maven
+
+Because Mule modules are developed as Maven projects, you can install them from a local or online Maven repository:
 
 . In your Anypoint Studio project, edit the `pom.xml` file with the groupId, artifactId, and version of your Mule module. +
 This information is available in your module's `pom.xml` file. For example:
