@@ -21,7 +21,7 @@ image::manage-modules.png[]
 . Select the green plus icon (image:add-icon.png[2%,2%]) and select *From Maven*:
 +
 image::add-modules-from-maven.png[]
-. In the properties window, configure your custom module's Maven:
+. In the properties window, configure your custom module's Maven coordinates:
 +
 image::add-modules-maven-ui.png[]
 +
