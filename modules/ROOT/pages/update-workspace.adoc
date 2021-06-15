@@ -22,7 +22,7 @@ Anypoint Studio includes a new version of the Mule Maven Plugin that can automat
 
 [%header%autowidth.spread,cols="a,a"]
 |===
-| *mule-artifact.json* in 7.1.x | *mule-artifact.json* in 7.9
+| *mule-artifact.json* in 7.1.x | *mule-artifact.json* in 7.10
 |
 [source,json,linenums]
 ----
