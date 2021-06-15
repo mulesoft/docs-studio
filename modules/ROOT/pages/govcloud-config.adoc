@@ -1,6 +1,6 @@
 = Access MuleSoft Government Cloud from Studio
 
-Anypoint Studio 7.7 and later allows you to connect to the MuleSoft Government Cloud region.
+Anypoint Studio allows you to connect to the MuleSoft Government Cloud region.
 
 == Configure Studio to Access The MuleSoft Government Cloud Region
 

@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio 7.5.0 and later comes bundled with a Java development kit (JDK).
+Anypoint Studio comes bundled with a Java development kit (JDK).
 
 You can find the JDK version used by Studio under *About Anypoint Studio* > *Installation Details*.
 

@@ -18,7 +18,7 @@ This workflow allows you to use both RAML and OAS 2.0 and 3.0 specifications and
 
 == API Specifications as Exchange Dependencies
 
-Beginning with Anypoint Studio 7.4, you can manage APIs for your Mule application the same way you manage the modules that compose your application. By leveraging Exchange as your unified repository for all your Mule application dependencies, you can monitor the latest versions of your dependencies, ensuring that your application is up-to-date with the latest API requirements.
+You can manage APIs for your Mule application the same way you manage the modules that compose your application. By leveraging Exchange as your unified repository for all your Mule application dependencies, you can monitor the latest versions of your dependencies, ensuring that your application is up-to-date with the latest API requirements.
 
 Because the implementation of your API might change with each iteration, it’s important for you to keep track so that your Mule application can be updated to match newer specifications. To help you track these changes, you must treat your API specifications as dependencies of your project. This way, every time the specification design changes, the API publishes a new API version that you can manage from Studio and you can update your application to match the new API version.
 

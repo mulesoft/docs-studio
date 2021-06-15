@@ -1,6 +1,6 @@
 = Connect the Java Debugger
 
-Studio 7.8 and later disconnects the Java debugger by default. The following steps show you how to connect your Java debugger if you need to debug Java code in Studio:
+Studio 7.9 disconnects the Java debugger by default. The following steps show you how to connect your Java debugger if you need to debug Java code in Studio:
 
 . Open the preferences view in the manner appropriate to your OS: +
 * In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.

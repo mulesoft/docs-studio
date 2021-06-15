@@ -15,14 +15,14 @@ image::update-workspaces.png[]
 [[update-7.1-workspace]]
 == Update Workspaces Created With Studio 7.1.x and Earlier Versions
 
-Anypoint Studio 7.2 and later simplifies the configuration of the `mule-artifact.json` file. When packaging your Mule application, this file is used to identify the application's classloader configuration and settings, and the minimum required Mule runtime engine version required to run your application.
+Anypoint Studio simplifies the configuration of the `mule-artifact.json` file. When packaging your Mule application, this file is used to identify the application's classloader configuration and settings, and the minimum required Mule runtime engine version required to run your application.
 
 Anypoint Studio includes a new version of the Mule Maven Plugin that can automatically infer some of this required metadata. This makes it easier for you to keep track of all the declarations you need to make when exporting resources.
 
 
 [%header%autowidth.spread,cols="a,a"]
 |===
-| *mule-artifact.json* in 7.1.x | *mule-artifact.json* in 7.2 and later
+| *mule-artifact.json* in 7.1.x | *mule-artifact.json* in 7.9
 |
 [source,json,linenums]
 ----
