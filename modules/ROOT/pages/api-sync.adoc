@@ -16,7 +16,7 @@ You can use API Sync on more than one API specification to scaffold multiple flo
 
 API Sync supports importing both RAML, OAS 2.0 and OAS 3.0 specifications.
 
-API Sync comes bundled by default in Studio 7.4.x and later, and requires Mule 4.1.4 and later.
+API Sync comes bundled by default in Studio, and requires Mule 4.1.4 and later.
 
 API sync might not work properly if the RAML file exceeds 4,000 lines of text.
 
