@@ -9,7 +9,7 @@ endif::[]
 [source,text,linenums]
 ----
 -vm
-/opt/sun-jdk-1.8.0.73/bin/java
+/opt/jdk-11.0.11+9/bin/java
 ----
 +
 * The `-vm` option and the installation path must be on separate lines.

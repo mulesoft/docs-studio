@@ -10,7 +10,7 @@ endif::[]
 [source,text,linenums]
 ----
 -vm
-/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/bin/java
+/Library/Java/JavaVirtualMachines/jdk-11.0.11+9/Contents/Home/bin/java
 ----
 +
 * The `-vm` option and the installation path must be on separate lines.
