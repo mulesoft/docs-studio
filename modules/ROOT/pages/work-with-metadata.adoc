@@ -1,0 +1,13 @@
+= Work With Metadata in Studio
+
+Anypoint Studio 7.10 infers the metadata of your destination flow or subflow from the actual metadata in your current flow. By automatically detecting the metadata of your existing flow, Studio enables you to propagate the metadata in your flow to the flow you are referencing as the expected metadata.
+
+Studio converts your infered metadata as custom metadata for the flow you are referencing. When you update the metadata in your flow, you must update the custom metadata in your target flow.
+
+By leveraging Studio to define your metadata you can:
+
+* Automatically propagate the metadata of your flow to each referenced flow and subflow.
+* Easily define the metadata of each referenced flow and subflow within your application.
+* Set custom metadata in a new subflow without manually defining it.
+
+When you use Studio to scaffold your flows based on a RAML specification, Studio infers the metadata of your flow based on your RAML specification's types. However, note that Union types are not supported.

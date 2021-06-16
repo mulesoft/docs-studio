@@ -29,7 +29,7 @@
  ** xref:solving-conflicts-api-projects.adoc[Solve Conflicts]
  ** xref:git-staging-view-reference.adoc[Git Staging View Reference]
  ** xref:publish-api-project-to-exchange.adoc[Publish an API Project to Exchange]
- ** xref:edit-exchange-json-file.adoc[Edit Your API Project Exchange File] 
+ ** xref:edit-exchange-json-file.adoc[Edit Your API Project Exchange File]
 
 * xref:import-export-packages.adoc[Import and Export Projects]
  ** xref:import-project-exchange.adoc[Import a Mule Project from Exchange]
@@ -61,6 +61,8 @@
 * xref:metadata-editor-concept.adoc[Metadata Editor]
  ** xref:access-metadata-editor-task.adoc[Access the Metadata Editor]
  ** xref:create-metadata-class-task.adoc[Create a Metadata Class]
+ ** xref:work-with-metadata.adoc[Work With Metadata]
+ ** xref:propagate-metadata-studio.adoc[Propagate Metadata To Other Flows]
 
 * xref:transform-message-component-concept-studio.adoc[Transform Message Component]
  ** xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
