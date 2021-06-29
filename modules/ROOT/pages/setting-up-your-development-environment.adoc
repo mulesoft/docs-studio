@@ -64,7 +64,10 @@ This process only needs to be done once. A project manager or whoever is respons
 
 === Enable Private Cloud Edition Setup
 
-xref:release-notes::studio/anypoint-studio-6.2-with-3.8.3-runtime-release-notes.adoc[Anypoint Studio 6.2] and higher support the xref:1.5@private-cloud::index.adoc[Private Cloud Edition] of Anypoint Platform.
+xref:release-notes::studio/anypoint-studio-6.2-with-3.8.3-runtime-release-notes.adoc[Anypoint Studio 6.2] and higher support the xref:1.5@private-cloud::index.adoc[Private Cloud Edition] of Anypoint Platform version 1.7 and earlier.
+
+[NOTE]
+Studio 6.x is not compatible with PCE 2.x
 
 To set Private Cloud Edition Setup from Studio:
 
