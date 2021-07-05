@@ -1,4 +1,4 @@
-= Work With Metadata in Studio
+= Metadata Propagation Between Flows
 
 Anypoint Studio 7.10 infers the metadata of your current flow so that, when you use a Flow Reference component to reference another flow, you can set the metadata from your current flow as custom metadata for your referenced flow. By automatically detecting the actual metadata of your existing flow, Studio enables you to propagate the metadata in your flow to the flow you are referencing.
 
