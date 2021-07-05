@@ -62,7 +62,7 @@
  ** xref:access-metadata-editor-task.adoc[Access the Metadata Editor]
  ** xref:create-metadata-class-task.adoc[Create a Metadata Class]
  ** xref:metadata-propagation-between-flows.adoc[Metadata Propagation Between Flows]
- ** xref:propagate-metadata-studio.adoc[Propagate Metadata To Other Flows]
+ ** xref:propagate-metadata-studio.adoc[Propagate Metadata to Other Flows]
 
 * xref:transform-message-component-concept-studio.adoc[Transform Message Component]
  ** xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
