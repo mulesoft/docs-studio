@@ -30,7 +30,7 @@ For example, assume a flow named `flow-1` that uses a Set Payload component to c
 }
 --
 
-When you add a Flow Reference component to a second flow, `flow-2`, Studio detects the current metadata as the actual metadata that the referenced flow will receive and automatically assigns it as custom metadata in `flow-2`.
+When you add a Flow Reference component to a second flow, `flow-2`, Studio detects the current metadata as the actual metadata that the referenced flow will receive and automatically assigns it as custom metadata in `flow-2` if the flow does not already have custom metadata declared for it.
 
 Because the metadata in `flow-2` is set once, it can't update automatically if you modify the metadata in `flow-1`. For this example, if you choose to modify the actual metadata sample for the Set Payload component in `flow-1`, you must update the custom metadata in `flow-2`.
 
