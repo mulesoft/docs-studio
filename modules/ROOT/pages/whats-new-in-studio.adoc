@@ -2,6 +2,17 @@
 
 Anypoint Studio 7.10 introduces a notification mechanism to help you keep up to date with your modules versions in Exchange, and also enables you to propagate metadata to flows and sub-flows.
 
+== Modules Updates Notifications
+
+Every time Studio starts up it checks for updated modules in your open projects. You can choose to update to the latest minor version of your module, or upgrade directly to the latest version available.
+
+You can also prompt Studio to check for modules updates by selecting the *Request updates* button.
+
+[NOTE]
+--
+If you need to rollback any of the updated versions, you must perform that task manually.
+--
+
 == Metadata Propagation to Sub-Flows
 
 Studio can infer the metadata of your current flow so that, when you use a Flow Reference component to reference another flow, you can set the metadata from your current flow as custom metadata for your referenced flow. You can also extract an operation from your current flow into a new flow or sub-flow and Studio can automatically declare the metadata as custom metadata of a new flow.
