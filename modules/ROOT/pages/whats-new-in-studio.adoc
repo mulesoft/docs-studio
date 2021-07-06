@@ -1,1 +1,13 @@
 = What’s New in Studio
+
+Anypoint Studio 7.10 introduces a notification mechanism to help you keep up to date with your modules versions in Exchange, and also enables you to propagate metadata to flows and sub-flows.
+
+== Metadata Propagation to Sub-Flows
+
+Studio can infer the metadata of your current flow so that, when you use a Flow Reference component to reference another flow, you can set the metadata from your current flow as custom metadata for your referenced flow. You can also extract an operation from your current flow into a new flow or sub-flow and Studio can automatically declare the metadata as custom metadata of a new flow.
+
+See xref:metadata-propagation-between-flows.adoc[Metadata Propagation Between Flows] for more information.
+
+== Dark Theme Experience Improvements
+
+Studio now automatically detects the theme of your OS and adjust its light or dark theme accordingly by default.
