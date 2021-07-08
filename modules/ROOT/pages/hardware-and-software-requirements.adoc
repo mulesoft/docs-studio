@@ -29,8 +29,7 @@ a|
 
 a|June 2015 and newer:
 
-* macOS 10.10.0 through 11.0.x +
-Studio is not compatible with macOS 11.x.
+* macOS 10.10.0 through 11.0.x
 * Windows (32- and 64-bit) Windows 7, Windows 8, Windows 10
 * RHEL 7.0
 * Ubuntu Desktop 16.04
