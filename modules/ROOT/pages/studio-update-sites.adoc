@@ -23,7 +23,7 @@ To add a new update site for installing additional components to Studio:
 
 == Allowing Connection to Update Site Through Firewall
 
-If you are on a network that has firewall restrictions, you must whitelist the URLs of the update sites to download extensions:
+If you are on a network that has firewall restrictions, you must allow the URLs of the update sites to download extensions:
 
 . Navigate to *Help* > *Install New Software*.
 . Click *Manage...*.
@@ -31,7 +31,7 @@ The list of available software is displayed:
 +
 image::available-software.png[]
 +
-. Add the URLs from the *Location* column to your firewall whilelist.
+. Add the URLs from the *Location* column to your firewall list of allowd URLs.
 
 == See Also
 
