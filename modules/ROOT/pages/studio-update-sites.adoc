@@ -44,7 +44,7 @@ The list of available software is displayed:
 +
 image::available-software.png[]
 +
-. Add the URLs from the *Location* column to your firewall list of allowd URLs.
+. Add the URLs from the *Location* column to your firewall list of allowed URLs.
 
 == See Also
 
