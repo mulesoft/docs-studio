@@ -4,7 +4,7 @@ Anypoint Studio 7.10 infers the metadata of your flow so that, when you use a Fl
 
 Using the Flow Reference component in Anypoint Studio enables you to automatically rather than manually propagate metadata in your flow to the flow referenced by it.
 
-When you use Studio to scaffold your flows based on a RAML specification, Studio infers the metadata of your flow based on your RAML specification's types. However, note that Union types are not supported
+When you use Studio to scaffold your flows based on a RAML specification, Studio infers the metadata of your flow based on your RAML specification's types. However, because Union types are not supported, Studio does not infer your Union type values as metadata.
 
 For example, consider a flow named `flow-1` that uses a Set Payload component to create a JSON payload:
 
