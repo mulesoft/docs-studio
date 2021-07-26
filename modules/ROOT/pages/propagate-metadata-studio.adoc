@@ -74,7 +74,7 @@ image::logger-metadata-case-2.png[]
 image::extract-operation-metadata.png[]
 . Name your target flow `flow-2`.
 . Select *Metadata Preferences* to configure the input and output metadata. +
-Note that Studio automatically recognizes the metadata of your current flow.
+Note that Studio automatically recognizes the metadata of your flow.
 +
 image::extract-flow-metadata.png[]
 . Select *OK*.
