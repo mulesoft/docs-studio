@@ -6,7 +6,7 @@ Depending on the metadata configured in your referenced flow, you might need to 
 
 == Propagate Metadata to a Flow Without Custom Metadata
 
-When you add a Flow Reference component to reference another flow with no custom metadata configured, Studio automatically propagates the metadata in your flow as custom metadata in your target flow.
+When you add a Flow Reference component and reference another flow with no custom metadata configured, Studio automatically propagates the metadata in your flow as custom metadata in your target flow.
 
 . In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
 . Type a name for this project, and select *Finish*.
@@ -85,7 +85,7 @@ image::extract-flow-metadata-final.png[]
 
 == Propagate Metadata to a Flow With Custom Metadata Already Configured
 
-When you add a Flow Reference component to reference another flow that has custom metadata already configured, Studio prompts you to select the metadata that you want to propagate.
+When you add a Flow Reference component and reference another flow that has custom metadata already configured, Studio prompts you to select the metadata that you want to propagate.
 
 . In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
 . Type a name for this project, and select *Finish*.
