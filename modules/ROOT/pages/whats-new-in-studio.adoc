@@ -4,14 +4,39 @@ Anypoint Studio 7.10 introduces a notification mechanism to help you keep up to 
 
 == Modules Updates Notifications
 
-Every time Studio starts up it checks for updated modules in your open projects. You can choose to update to the latest minor version of your module, or upgrade directly to the latest version available.
+Every time Studio starts up it checks for updated modules in your open projects. You can choose to update to the latest minor version of your module or upgrade directly to the latest version available.
 
-You can also prompt Studio to check for modules updates by selecting the *Request updates* button.
+You can also prompt Studio to check for modules updates:
 
-[NOTE]
---
-If you need to rollback any of the updated versions, you must perform that task manually.
---
+. Ensure that you are logged in to Anypoint Platform.
+. Select the *Manage Mule Modules* (image:manage-mule-modules-icon.png[2%,2%]) button.
++
+image::manage-mule-modules-location.png[]
+
+
+[CAUTION]
+This feature does not support modules that are inherited from a parent pom file.
+
+To perform a rollback to a previous version of your module:
+
+. In the top menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
+. Under *Mule Project*, select *Modules*:
++
+image::manage-modules.png[]
+. Select the module whose version you want to change, and select the *Edit selected dependency version* icon (image:edit-module-version-icon.png[])
++
+image::edit-selected-module-version.png[]
+. Select the version of your module from the version selector menu.
++
+image::mule-module-version-selector.png[]
+. Select *OK*, and then *Apply and CLose*.
+
+You can also modify the versions of your modules in your `pom.xml` file.
+
+
+== Automatic Refactor When Renaming a Flow
+
+When you rename a flow in Anypoint Studio, your change is now automatically refactored across your project.
 
 == Metadata Propagation to Sub-Flows
 
@@ -21,4 +46,14 @@ See xref:metadata-propagation-between-flows.adoc[Metadata Propagation Between Fl
 
 == Dark Theme Experience Improvements
 
-Studio now automatically detects the theme of your OS and adjust its light or dark theme accordingly by default.
+Studio now automatically detects the theme of your OS and adjusts its light or dark theme accordingly by default.
+
+To manually change from light to dark theme, select the *Switch to Dark Theme* image:dark-theme-icon.png[] button.
+
+image::enable-dark-theme.png[]
+
+To switch back to the light theme, in the top toolbar, select the *Switch to Light Theme* image:light-theme-icon.png[] button.
+
+image::enable-light-theme.png[]
+
+You must restart Studio for this change to fully take effect.
