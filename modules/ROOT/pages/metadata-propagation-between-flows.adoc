@@ -1,18 +1,12 @@
 = Metadata Propagation Between Flows
 
-Anypoint Studio 7.10 infers the metadata of your current flow so that, when you use a Flow Reference component to reference another flow, you can set the metadata from your current flow as custom metadata for your referenced flow. By automatically detecting the actual metadata of your existing flow, Studio enables you to propagate the metadata in your flow to the flow you are referencing.
+Anypoint Studio 7.10 infers the metadata of your flow so that, when you use a Flow Reference component to reference another flow, you can set the metadata from your flow as custom metadata for your referenced flow.
 
-By leveraging Studio to define the metadata you can:
+Using the Flow Reference component in Anypoint Studio enables you to automatically rather than manually propagate metadata in your flow to the flow referenced by it.
 
-* Automatically propagate the metadata of your flow to a referenced flow without custom metadata configured.
-* Easily define the metadata of each referenced flow within your application.
-* Set custom metadata in a new flow without manually defining it.
+When you use Studio to scaffold your flows based on a RAML specification, Studio infers the metadata of your flow based on your RAML specification's types. However, because Union types are not supported, Studio does not infer your Union type values as metadata.
 
-When you use Studio to scaffold your flows based on a RAML specification, Studio infers the metadata of your flow based on your RAML specification's types. However, note that Union types are not supported
-
-Studio converts your inferred metadata as custom metadata for the flow you are referencing.
-
-For example, assume a flow named `flow-1` that uses a Set Payload component to create a JSON payload:
+For example, consider a flow named `flow-1` that uses a Set Payload component to create a JSON payload:
 
 .Actual Metadata Sample
 [source,JSON,linenums]
@@ -30,10 +24,9 @@ For example, assume a flow named `flow-1` that uses a Set Payload component to c
 }
 --
 
-When you add a Flow Reference component to a second flow, `flow-2`, Studio detects the current metadata as the actual metadata that the referenced flow will receive and automatically assigns it as custom metadata in `flow-2` if the flow does not already have custom metadata declared for it.
+When you add a Flow Reference component to a second flow, `flow-2`, Studio detects the metadata in `flow-1` as the actual metadata that the referenced flow receives and automatically assigns it as custom metadata in `flow-2` if the flow does not already have custom metadata declared for it.
 
 Because the metadata in `flow-2` is set once, it can't update automatically if you modify the metadata in `flow-1`. For this example, if you choose to modify the actual metadata sample for the Set Payload component in `flow-1`, you must update the custom metadata in `flow-2`.
-
 
 Consider now that `flow-2` has custom metadata configured already using the following JSON example:
 
@@ -57,4 +50,4 @@ Consider now that `flow-2` has custom metadata configured already using the foll
 }
 --
 
-Studio considers The custom metadata of `flow-2` as the _expected_ metadata for the referenced flow, and the metadata set by the Set Payload component in `flow-1` as its _actual_ metadata. You can choose to either overwrite the expected metadata with the actual metadata, or customize it so that you choose what metadata you want to overwrite, and which metadata you want to preserve.
+Studio considers the custom metadata of `flow-2` as the expected metadata for the referenced flow, and the metadata set by the Set Payload component in `flow-1` as its actual metadata. You can choose to either overwrite the expected metadata with the actual metadata, or customize it so that you choose what metadata you want to overwrite, and which metadata you want to preserve.
