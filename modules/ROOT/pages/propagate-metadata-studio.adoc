@@ -1,8 +1,6 @@
 = Propagate Metadata to Other Flows
 
-Studio enables you to propagate your flow's metadata to other flows referenced within your application.
-
-Depending on the metadata configured in your referenced flow, you might need to configure the specific metadata to propagate.
+Studio enables you to propagate metadata in your source flow to other, target flows referenced within your application. Depending on metadata already in the target flow, you might need to configure the specific metadata to propagate from the source flow.
 
 == Propagate Metadata to a Flow Without Custom Metadata
 
