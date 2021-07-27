@@ -13,32 +13,17 @@ You can also prompt Studio to check for modules updates:
 +
 image::manage-mule-modules-location.png[]
 
-
 [CAUTION]
 This feature does not support modules that are inherited from a parent pom file.
 
-To perform a rollback to a previous version of your module:
-
-. In the top menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
-. Under *Mule Project*, select *Modules*:
-+
-image::manage-modules.png[]
-. Select the module whose version you want to change, and select the *Edit selected dependency version* icon (image:edit-module-version-icon.png[])
-+
-image::edit-selected-module-version.png[]
-. Select the version of your module from the version selector menu.
-+
-image::mule-module-version-selector.png[]
-. Select *OK*, and then *Apply and CLose*.
-
-You can also modify the versions of your modules in your `pom.xml` file.
+See xref:update-modules.adoc[Update Your Modules] for more information.
 
 
 == Automatic Refactor When Renaming a Flow
 
 When you rename a flow in Anypoint Studio, your change is now automatically refactored across your project.
 
-== Metadata Propagation to Sub-Flows
+== Metadata Propagation Between Flows
 
 Studio can infer the metadata of your current flow so that, when you use a Flow Reference component to reference another flow, you can set the metadata from your current flow as custom metadata for your referenced flow. You can also extract an operation from your current flow into a new flow or sub-flow and Studio can automatically declare the metadata as custom metadata of a new flow.
 
