@@ -51,4 +51,4 @@ Note that this process works only if you manage your dependencies using Studio. 
 </dependency>
 --
 
-You must contact your development team and change your custom maven code to update to the latest version available.
+Contact your development team to update your custom Maven code to the latest version available.
