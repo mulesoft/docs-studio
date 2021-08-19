@@ -5,15 +5,30 @@ endif::[]
 
 Anypoint Studio comes bundled with a default browser to display elements of the Anypoint Platform UI. For example, when you deploy to CloudHub from Studio, the Runtime Manager UI displayed in Studio is rendered using a built-in browser.
 
-This built-in browser is the default. However, if it fails to display, you can configure Studio to use your system's native browser to render the Anypoint Platform UI:
+This built-in browser is the default. However, if you log in to Anypoint Platform using multi-factor authentication (MFA), you must configure Studio to use your system's native browser to render the Anypoint Platform UI:
 
 . Navigate to *Preferences* > *Anypoint Studio* > *Browser*.
 . Select the type of default browser for Studio:
 +
 image::browser-configuration.png[]
-<1> *Built-in*: Uses the built-in browser. This is the recommended setting.
+<1> *Built-in*: Uses the built-in browser.
 <2> *Native*: Uses the native browser of your operative system.
 . Click *Preview* to verify the changed configuration. +
+
+Additionally, if you use Windows and your default browser is Internet Explorer 11, you must perform an additional configuration:
+
+. Quit Anypoint Studio if you are running it.
+. Download the latest fixed version of WebView2 from the https://developer.microsoft.com/en-us/microsoft-edge/webview2/[Microsoft Developer Portal^].
+. Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
+. Add the following lines to the `AnypointStudio.ini` file:
++
+[source]
+--
+-Dorg.eclipse.swt.browser.DefaultType=edge
+-Dorg.eclipse.swt.browser.EdgeDir=<path-to-your-WebView2-cab-file>
+# for example:
+# -Dorg.eclipse.swt.browser.EdgeDir=C:\Users\my-user\Downloads\Microsoft.WebView2.FixedVersionRuntime.91.0.864.59.x64
+--
 
 
 == See Also
