@@ -27,7 +27,7 @@ Additionally, if you use Windows you must perform an additional configuration:
 -Dorg.eclipse.swt.browser.DefaultType=edge
 -Dorg.eclipse.swt.browser.EdgeDir=<path-to-your-WebView2-cab-file>
 # for example:
-# -Dorg.eclipse.swt.browser.EdgeDir=C:\Users\my-user\Downloads\Microsoft.WebView2.FixedVersionRuntime.91.0.864.59.x64
+# -Dorg.eclipse.swt.browser.EdgeDir=C:\Users\my-user\Downloads\Microsoft.WebView2.FixedVersionRuntime.9x.x.xx.xx
 --
 
 
