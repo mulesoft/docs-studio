@@ -15,7 +15,7 @@ image::browser-configuration.png[]
 <2> *Native*: Uses the native browser of your operative system.
 . Click *Preview* to verify the changed configuration. +
 
-Additionally, if you use Windows and your default browser is Internet Explorer 11, you must perform an additional configuration:
+Additionally, if you use Windows you must perform an additional configuration:
 
 . Quit Anypoint Studio if you are running it.
 . Download the latest fixed version of WebView2 from the https://developer.microsoft.com/en-us/microsoft-edge/webview2/[Microsoft Developer Portal^].
