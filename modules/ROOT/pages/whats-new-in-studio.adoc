@@ -1,44 +1,10 @@
 = What’s New in Studio
 
-Anypoint Studio 7.10 introduces a notification mechanism to help you keep your module versions in Exchange up to date. Studio 7.10 also enables you to propagate metadata to flows and subflows.
-
-== Module Update Notifications
-
-Every time Studio starts, it checks for updates to modules in your open projects. Based on what it finds, you can choose to update to the latest minor version of your module or upgrade directly to the latest version available.
-
-You can also manually prompt a running instance of Studio to check for module updates:
-
-. Ensure that you are logged in to Anypoint Platform.
-. Click the *Manage Mule Modules* (image:manage-mule-modules-icon.png[2%,2%]) button:
-+
-image::manage-mule-modules-location.png[]
-
-[CAUTION]
-This feature does not support modules that are inherited from a parent pom file.
-
-See xref:update-modules.adoc[Update Your Modules] for more information.
+Anypoint Studio 7.11 introduces support for Mule runtime engine version 4.4. It also enables you to encrypt and save your credentials using a Secure Storage facility.
 
 
-== Automatic Refactor When Renaming a Flow
+== Secure Storage
 
-When you rename a flow in Anypoint Studio, your change is now automatically refactored across your project.
+Anypoint Studio 7.10 and earlier versions stored the information of authenticated users in the workspace, meaning that you could have different authenticated users per workspace.
 
-== Metadata Propagation Between Flows
-
-Studio infers the metadata of your current flow so that when you use a Flow Reference component to reference another flow, you can set the metadata from your current flow as custom metadata for your referenced flow. You can also extract an operation from your current flow into a new flow or subflow, and Studio automatically declares the metadata as custom metadata of a new flow.
-
-See xref:metadata-propagation-between-flows.adoc[Metadata Propagation Between Flows] for more information.
-
-== Dark Theme Experience Improvements
-
-Studio now automatically detects the theme of your OS and adjusts its light or dark theme accordingly.
-
-To manually change from the default light theme to the dark theme, click the *Switch to Dark Theme* image:dark-theme-icon.png[] button:
-
-image::enable-dark-theme.png[]
-
-To switch back to the light theme, click the *Switch to Light Theme* image:light-theme-icon.png[] button:
-
-image::enable-light-theme.png[]
-
-You must restart Studio for this change to fully take effect.
+Because of the architecture of the Eclipse Secure Storage and its usage since Anypoint Studio 7.11.0, the authenticated users are now shared across all Eclipse-based workspaces and Anypoint Studio instances. See xref:secure-storage.adoc[Secure Storage] for more information.
