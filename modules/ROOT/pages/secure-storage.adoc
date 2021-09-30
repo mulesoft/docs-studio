@@ -96,7 +96,7 @@ You can only decrypt your credentials with the same password file used to encryp
 
 Exception: `org.eclipse.equinox.security.storage.StorageException: No password provided`
 
-Studio throws this error when it loads and caches the master password for the provider and then it tries to decrypt a value that was encrypted with another master password.
+This error occurs when Studio loads and caches the master password for the provider and then it tries to decrypt a value that was encrypted with another master password.
 
 This happens when one instance of Anypoint Studio changes the master password while another instance of Studio saves a new credential using a cached master password.
 
