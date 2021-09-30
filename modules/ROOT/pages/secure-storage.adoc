@@ -98,7 +98,7 @@ Exception: `org.eclipse.equinox.security.storage.StorageException: No password p
 
 This error occurs when Studio loads and caches the master password for the provider and then it tries to decrypt a value that was encrypted with another master password.
 
-This happens when one instance of Anypoint Studio changes the master password while another instance of Studio saves a new credential using a cached master password.
+This happens when a user changes the master password using one instance of Studio or another Eclipse-based application changes the master password while another instance of Studio saves a new credential using a cached master password.
 
 
 === Given Final Block Not Properly Padded
@@ -107,4 +107,4 @@ This happens when one instance of Anypoint Studio changes the master password wh
 
 This error occurs when the current cached master password can not decrypt a value because it was encrypted with another password.
 
-This happens when an instance of Studio changes the master password and another instances attempts to read encrypted values with a previous cached password.
+This happens when a user using an instance of Studio or another Eclipse-based application changes the master password and another instances attempts to read encrypted values with a previous cached password.
