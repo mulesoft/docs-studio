@@ -103,6 +103,8 @@ This happens when one instance of Anypoint Studio changes the master password wh
 
 === Given Final Block Not Properly Padded
 
-`org.eclipse.equinox.security.storage.StorageException: Given final block not properly padded`.
+`org.eclipse.equinox.security.storage.StorageException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.`.
 
-Studio throws this error when it attempts to use a bad key during decryption.
+This error occurs when the current cached master password can not decrypt a value because it was encrypted with another password.
+
+This happens when an instance of Studio changes the master password and another instances attempts to read encrypted values with a previous cached password.
