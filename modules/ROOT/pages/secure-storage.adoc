@@ -43,7 +43,7 @@ You can change or rotate the master password for a particular provider. When cha
 === Before you Begin
 
 * Ensure that all other instances of Anypoint Studio and any other Eclipse-based application are not running. +
-Because the secure storage file is shared across all running instances and the master password is cached in each instance's memory, updating your master password causes other opened instances to still write the credentials using the old master password. Closing all other instances ensures you avoid the <<no-password-provided-exception,No Password Provided Exception>>.
+Because the secure storage file is shared across all running instances and the master password is cached in each instance's memory, updating your master password causes other opened instances to still write the credentials using the old master password. Closing all other instances ensures you avoid decryption issues. See <<errors, Decryption Errors>> for more information.
 
 To re-generate your master password:
 
@@ -89,9 +89,9 @@ To change the location of the password and secure storage files:
 [CAUTION]
 You can only decrypt your credentials with the same password file used to encrypt them.
 
-== Troubleshooting the Secure Storage
+[[errors]]
+== Decryption Errors
 
-[[no-password-provided-exception]]
 === No Password Provided
 
 Exception: `org.eclipse.equinox.security.storage.StorageException: No password provided`
