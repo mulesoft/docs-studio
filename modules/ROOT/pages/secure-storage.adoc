@@ -2,7 +2,7 @@
 
 Anypoint Studio 7.10 and earlier versions stored the information of authenticated users in the workspace, meaning that you could have different authenticated users per workspace.
 
-Studio 7.11 introduces a Secure Storage facility provided by Eclipse to encrypt and save your credentials.
+Studio 7.11 introduces Secure Storage, provided by Eclipse to encrypt and save your credentials.
 
 Studio provides a master password provider that automatically generates a master password for all your user credentials. When adding a new credential, Studio uses your master password to encrypt and save that credential into a secure storage file in your file system.
 
@@ -31,9 +31,7 @@ Once a master password is created, Studio caches it until it is closed, or you m
 
 == Secure Storage File
 
-This file holds all your user credentials in an encrypted form. By default, the secure storage file is located in `$HOME/.eclipse/org.eclipse.equinox.security/secure_storage`.
-
-Because it is a single file, the same secure storage is shared across all Eclipse-based workspaces and Anypoint Studio instances.
+This file holds all your user credentials in an encrypted form. By default, the secure storage file is located in `$HOME/.eclipse/org.eclipse.equinox.security/secure_storage` and is shared across all Eclipse-based workspaces and Anypoint Studio instances.
 
 
 == Update the Master Password
@@ -42,26 +40,23 @@ You can change or rotate the master password for a particular provider. When cha
 
 === Before you Begin
 
-* Ensure that all other instances of Anypoint Studio and any other Eclipse-based application are not running. +
-Because the secure storage file is shared across all running instances and the master password is cached in each instance's memory, updating your master password causes other opened instances to still write the credentials using the old master password. Closing all other instances ensures you avoid decryption issues. See <<errors, Decryption Errors>> for more information.
+To avoid decryption issues, ensure that all other instances of Anypoint Studio and any other Eclipse-based application are not running. +
 
-To re-generate your master password:
+To regenerate your master password:
 
 . Navigate to *Preferences* > *General* > *Security* > *Secure Storage*.
 . Select *Change Password...*:
 +
 image::secure-storage-change-password.png[]
-. Studio prompts you to create a password hint for this new password. +
-Select *Yes* to generate a new password hint:
+. When Studio prompts you to create password hints, select *Yes*:
 +
 image::new-password-created.png[]
 +
 [CAUTION]
 --
-If you don't supply new password hints, then the former ones persist, which reference the former master password. You cannot recover this new master password using the previous password hints.
+If you don't supply new password hints, then the existing hints persist, referencing the existing master password, and you will not be able to recover your new master password.
 --
-. Studio prompts you that the password has been successfully updated.
-. Select *Apply and Close*.
+. When Studio confirms that the password is successfully updated, select *Apply and Close*.
 
 
 == Customize the Location of the Secure Storage and Password Files
