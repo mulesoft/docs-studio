@@ -1,6 +1,6 @@
 = What’s New in Studio
 
-Anypoint Studio 7.11 introduces support for Mule runtime engine version 4.4. It also enables you to encrypt and save your credentials using a Secure Storage facility.
+Anypoint Studio 7.11 introduces support for Mule runtime engine version 4.4. Studio 7.11 also enables you to encrypt and save your credentials by introducing Secure Storage.
 
 
 == Secure Storage
