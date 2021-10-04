@@ -1,6 +1,6 @@
 = What’s New in Studio
 
-Anypoint Studio 7.10 introduces a notification mechanism to help you keep your module versions in Exchange up to date. Studio 7.10 also enables you to propagate metadata to flows and subflows.
+Anypoint Studio 7.11 introduces support for Mule runtime engine version 4.4. It also enables you to encrypt and save your credentials using a Secure Storage facility.
 
 == Support for Mule Runtime Engine 4.4
 
@@ -35,6 +35,12 @@ handling `null` values.
 Changes to the documentation include more detailed function signatures and organization of the functions by their module names, such as `dw::Core`, `dw::core::Strings`, and `dw::util::Math`.
 
 See xref:dataweave::whats-new-in-dw.adoc[What's New in DataWeave 2.4] for more information
+
+== Secure Storage
+
+Anypoint Studio 7.10 and earlier versions stored the information of authenticated users in the workspace, meaning that you could have different authenticated users per workspace.
+
+Because of the architecture of the Eclipse Secure Storage and its usage since Anypoint Studio 7.11.0, the authenticated users are now shared across all Eclipse-based workspaces and Anypoint Studio instances. See xref:secure-storage.adoc[Secure Storage] for more information.
 
 == Flow and Subflow Referenced By
 
