@@ -2,43 +2,42 @@
 
 Anypoint Studio 7.10 introduces a notification mechanism to help you keep your module versions in Exchange up to date. Studio 7.10 also enables you to propagate metadata to flows and subflows.
 
-== Module Update Notifications
+== Support for Mule Runtime Engine 4.4
+
+Mule runtime engine 4.4 is mainly focused on fixing issues, and also includes some enhancements.
+
+* Feature Flagging. +
+Mule 4.4 incorporates a feature flagging mechanism, which enables you to disable certain features that change core functionality in Mule to avoid backward compatibility issues.
+* Correlation ID Management. +
+Mule 4.4 enables you to modify the Correlation ID associated with a Mule event. You can also change the algorithm Mule uses to generate each Correlation ID.
+* Improved Logging Capabilities. +
+Mule 4.4 incorporates Mapped Diagnostic Context (MDC), which enriches logging and improves tracking by providing more context or information in the logs for Mule events.
+
+See xref:mule-runtime::whats-new-in-mule.adoc[] for more information.
+
 
 Every time Studio starts, it checks for updates to modules in your open projects. Based on what it finds, you can choose to update to the latest minor version of your module or upgrade directly to the latest version available.
 
 You can also manually prompt a running instance of Studio to check for module updates:
 
-. Ensure that you are logged in to Anypoint Platform.
-. Click the *Manage Mule Modules* (image:manage-mule-modules-icon.png[2%,2%]) button:
-+
-image::manage-mule-modules-location.png[]
+Because of the architecture of the Eclipse Secure Storage and its usage since Anypoint Studio 7.11.0, the authenticated users are now shared across all Eclipse-based workspaces and Anypoint Studio instances. See xref:secure-storage.adoc[Secure Storage] for more information.
 
-[CAUTION]
-This feature does not support modules that are inherited from a parent pom file.
+== DataWeave Language Improvements
 
-See xref:update-modules.adoc[Update Your Modules] for more information.
+The 2.4 version of DataWeave introduces the following features:
 
+* Ability to read larger-than-memory strings automatically. When you are using the indexed reader strategy and processing a String with a size larger than 1.5 MB, DataWeave automatically splits the value in chunks to avoid out-of-memory issues. Related reader properties are `com.mulesoft.dw.max_memory_allocation` and `com.mulesoft.dw.buffered_char_sequence.enabled`.
+* New reader and writer properties for working with data formats. For example, the XML writer now enables you to define namespaces at the root level.
+* Many new modules, functions, types, annotations, and variables. Some are experimental and subject to change in future releases.
+* A number of functions are overloaded to introduce new helper functions for
+handling `null` values.
 
-== Automatic Refactor When Renaming a Flow
+Changes to the documentation include more detailed function signatures and organization of the functions by their module names, such as `dw::Core`, `dw::core::Strings`, and `dw::util::Math`.
 
-When you rename a flow in Anypoint Studio, your change is now automatically refactored across your project.
+See xref:dataweave::whats-new-in-dw.adoc[What's New in DataWeave 2.4] for more information
 
-== Metadata Propagation Between Flows
+== Flow and Subflow Referenced By
 
-Studio infers the metadata of your current flow so that when you use a Flow Reference component to reference another flow, you can set the metadata from your current flow as custom metadata for your referenced flow. You can also extract an operation from your current flow into a new flow or subflow, and Studio automatically declares the metadata as custom metadata of a new flow.
+You can right-click on a flow or subflow and select the *Referenced by* option to get a list of Flow Reference components that reference your selected flow.
 
-See xref:metadata-propagation-between-flows.adoc[Metadata Propagation Between Flows] for more information.
-
-== Dark Theme Experience Improvements
-
-Studio now automatically detects the theme of your OS and adjusts its light or dark theme accordingly.
-
-To manually change from the default light theme to the dark theme, click the *Switch to Dark Theme* image:dark-theme-icon.png[] button:
-
-image::enable-dark-theme.png[]
-
-To switch back to the light theme, click the *Switch to Light Theme* image:light-theme-icon.png[] button:
-
-image::enable-light-theme.png[]
-
-You must restart Studio for this change to fully take effect.
+image::referenced-by-flow.png[]
