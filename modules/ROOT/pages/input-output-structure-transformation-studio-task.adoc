@@ -55,11 +55,11 @@ This option only exists if the selected data type format allows for configurable
 
 For a detailed reference of what properties can be set in the Reader Configuration of each format, see the corresponding *reader properties* section:
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#csv[CSV]
+* xref:1.2@dataweave::dataweave-formats.adoc#csv[CSV]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#xml[XML]
+* xref:1.2@dataweave::dataweave-formats.adoc#xml[XML]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#flat-file[Flat File]
+* xref:1.2@dataweave::dataweave-formats.adoc#flat-file[Flat File]
 
 [NOTE]
 You can also add this information through properties in the XML source of your Mule project.
@@ -73,13 +73,13 @@ These properties must be written on the `%output` directive of your DataWeave co
 
 For a detailed reference of what properties can be set in the Writer Configuration of each format, see the corresponding *reader properties* section:
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#csv[CSV]
+* xref:1.2@dataweave::dataweave-formats.adoc#csv[CSV]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#xml[XML]
+* xref:1.2@dataweave::dataweave-formats.adoc#xml[XML]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#json[JSON]
+* xref:1.2@dataweave::dataweave-formats.adoc#json[JSON]
 
-* xref:3.8@mule-runtime::dataweave-formats.adoc#flat-file[Flat File]
+* xref:1.2@dataweave::dataweave-formats.adoc#flat-file[Flat File]
 
 
 == See Also
@@ -87,6 +87,6 @@ For a detailed reference of what properties can be set in the Writer Configurati
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
 * xref:3.8@mule-runtime::dataweave.adoc[DataWeave Language]
-* xref:3.8@mule-runtime::dataweave-types.adoc[DataWeave Types]
-* xref:3.8@mule-runtime::dataweave-formats.adoc[DataWeave Formats]
+* xref:1.2@dataweave::dataweave-types.adoc[DataWeave Types]
+* xref:1.2@dataweave::dataweave-formats.adoc[DataWeave Formats]
 * xref:3.8@mule-runtime::dataweave-xml-reference.adoc#reader-proerties[DataWeave XML reference]
