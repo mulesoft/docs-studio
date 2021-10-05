@@ -230,4 +230,4 @@ Message processors after the File endpoint inherit the defined metadata. In this
 * xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave quickstart guide]
 * View complete example projects that use DataWeave in the https://www.anypoint.mulesoft.com/exchange/?search=dataweave[Anypoint Exchange]
 * xref:3.8@mule-runtime::dataweave-examples.adoc[DataWeave Examples]
-* xref:3.8@mule-runtime::dataweave-types.adoc[DataWeave Types]
+* xref:1.2@dataweave::dataweave-types.adoc[DataWeave Types]
