@@ -80,6 +80,7 @@
  ** xref:pce-configuration-windows.adoc[Windows]
 
 * xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials]
+* xref:secure-storage.adoc[Secure Storage]
 * xref:proxy-settings-task.adoc[Configure Proxy Settings]
 * xref:browser-settings.adoc[Configure Studio's Browser Settings]
 * xref:change-jdk-config-in-projects.adoc[Select a Different JRE to Run the Embedded Mule Runtime Engine]
