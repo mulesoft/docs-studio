@@ -1,0 +1,64 @@
+= Install Mule Runtime Engine in Studio
+
+// tag::intro[]
+Anypoint Studio bundles the latest Runtime engine version available for each release.
+
+If you choose to use a different Mule runtime engine version than the one bundled in your Studio distribution, you can install any compatible Mule runtime version.
+// end::intro[]
+
+// tag::prereq[]
+= Prerequisites
+
+* If you have strict firewall rules, ensure that you allow the following URLs:
+** `+http://studio.mulesoft.org/+`
+** `+http://repository.mulesoft.org/connectors/releases/+`
+** `+http://download.eclipse.org/technology/m2e/releases+`
+** `+http://download.eclipse.org/eclipse/updates+`
+** `+http://subclipse.tigris.org/+`
+** `+http://findbugs.cs.umd.edu/eclipse/+`
+// end::prereq[]
+
+// tag::install-task[]
+= Installing a Different Mule Runtime Engine Version
+
+. In the top menu bar, select *Help* > *Install New Software.*
+. Select *Mule Runtimes for Anypoint Studio - +https://studio.mulesoft.org/s3/studio-runtimes/+*.
++
+image::studio::mule-runtime-update-site.png[]
+. Select the Mule runtime engine version you want to install and select *Next*.
++
+image::studio::select-mule-runtime-version.png[]
+. Accept the terms and conditions and select *Finish*.
++
+image::studio::accept-terms-and-conditions.png[]
+. Restart Studio after the installation completes.
+
+After installing a different Mule runtime version, you can proceed to update your project to use a different Mule runtime version.
+// end::install-task[]
+
+// tag::update-mule-version-task[]
+= Changing the Mule Runtime version of an Existing Project
+
+. In the Package Explorer view, right-click your project, and select *Mule* > *Open Mule Project Properties*.
++
+image::studio::open-mule-project-properties.png[]
+. Use the drop-down menu next to *Server Runtime* to select a new Mule runtime engine version.
++
+image::studio::select-project-runtime-version.png[]
+. Select *Apply and Close*.
+
+// end::update-mule-version-task[]
+
+// tag::uninstall-mule-version-task[]
+= Uninstall a Mule Runtime Engine Version
+
+To uninstall a version of mule runtime engine:
+
+. In the top menu bar, select *Anypoint Studio* > *About Anypoint Studio*.
+. Select *Installation Details*.
++
+image::studio::studio-installation-details.png[]
+. Select the runtime version you want to uninstall, and select *Uninstall...*.
++
+image::studio::uninstall-runtime-version.png[]
+// end::uninstall-mule-version-task[]
