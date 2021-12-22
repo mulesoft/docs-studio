@@ -16,7 +16,7 @@ Anypoint Studio downloads and imports the asset automatically.
 [[import-asset-outside-studio]]
 == Manually Import an Asset from Exchange
 
-If you are having trouble accessing Exchange from Studio 6, follow the following steps to import an asset from Exchange from outside Studio:
+If you are having trouble accessing Exchange from Studio 6, use the following steps to import an asset from Exchange from outside Studio:
 
 . Access Anypoint Platform using any of the supported browsers. +
 See xref:general::browser-support.adoc[] for more information.
@@ -26,7 +26,7 @@ image::discover-share-exchange.png[]
 . Search for the asset that you want to use.
 +
 image::search-exchange.png[]
-. Select *Download* to download the asset.
+. Select *Download*.
 +
 image::download-exchange-asset.png[]
 . Open Studio and navigate to *Help* > *Install New Software*.
