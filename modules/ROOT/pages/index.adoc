@@ -11,6 +11,8 @@ The same editor also allows you to edit API definition files (in https://raml.or
 
 == Requirements
 
+* Internet Explorer versions 11 and earlier are not supported. +
+Anypoint Studio uses your system's native browser to display elements of the Anypoint Platform UI. If your system defaults to an Internet Explorer browser, you won't be able to visualize any of the Anypoint Platform views.
 
 * Anypoint Studio 6 requires Java 8 to run properly. However, depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
 
