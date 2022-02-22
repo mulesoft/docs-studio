@@ -7,16 +7,20 @@ endif::[]
 
 Anypoint Studio is MuleSoft's Eclipse-based integration development environment for designing and testing Mule applications. You can deploy the application and run it on your Mule server.
 
-The same editor also allows you to edit API definition files (in https://raml.org/[RAML] and WSDL), and create domains that define xref:3.8@mule-runtime::shared-resources.adoc[shared resources].
+The same editor also allows you to edit API definition files (in https://raml.org/[RAML] and WSDL), and create domains that define shared resources.
 
-Anypoint Studio 6.5 requires Java 8 to run properly. However, depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
+== Requirements
 
-* Mule 3.9.x requires Studio running on Java 8.
-* Mule 3.5.x requires Studio running on Java 7.
-* Other supported runtime versions work fine with both Java 7 or 8.
 
-[NOTE]
-Studio 6.5 is not compatible with Mule 4.
+* Anypoint Studio 6 requires Java 8 to run properly. However, depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
+
+** Mule 3.9.x requires Studio running on Java 8.
+** Mule 3.5.x requires Studio running on Java 7.
+** Other supported runtime versions work fine with both Java 7 or 8.
+
+* Studio 6 is not compatible with Mule 4.
+
+== Overview
 
 Anypoint Studio offers two parallel tabs that you can utilize to design and craft your applications:
 
