@@ -2,7 +2,7 @@
 
 Anypoint Studio 7.10 and earlier versions stored the information of authenticated users in the workspace, meaning that you could have different authenticated users per workspace.
 
-Studio 7.11 introduces Secure Storage, provided by Eclipse to encrypt and save your credentials.
+Studio 7.11 and later introduce Secure Storage, provided by Eclipse to encrypt and save your credentials.
 
 Studio provides a master password provider that automatically generates a master password for all your user credentials. When adding a new credential, Studio uses your master password to encrypt and save that credential into a secure storage file in your file system.
 
