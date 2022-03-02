@@ -107,7 +107,7 @@ configuration:
     optional: false
 ----
 
-This sample custom policy bascially blocks all POST requests being sent to your endpoint. +
+This sample custom policy basically blocks all POST requests being sent to your endpoint. +
 It asserts the MEL expression: `#[message.inboundProperties['http.method'] == 'POST']` against the message being received. If there's a match it prevents the action and returns an `Access denied` message.
 
 [NOTE]
@@ -215,7 +215,7 @@ Being a beta release, the Custom Policy Editor for Studio has some limitations. 
 * `requiredCharacteristics` and `providedCharacteristics` fields are not validated from Studio
 * The `{{order}}` attribute from the YAML file is not supported. The order of the policy is overwritten by the other set in the *Run Configurations* screen.
 
-=== Limititations for Studio
+=== Limitations for Studio
 
 * Importing and exporting custom policies from API Platform is not supported
 * Importing custom policies from Exchange is not supported

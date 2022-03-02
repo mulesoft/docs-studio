@@ -88,4 +88,4 @@ For a detailed reference of what properties can be set in the Writer Configurati
 * xref:3.8@mule-runtime::dataweave.adoc[DataWeave Language]
 * xref:3.8@mule-runtime::dataweave-types.adoc[DataWeave Types]
 * xref:3.8@mule-runtime::dataweave-formats.adoc[DataWeave Formats]
-* xref:3.8@mule-runtime::dataweave-xml-reference.adoc#reader-proerties[DataWeave XML reference]
+* xref:3.8@mule-runtime::dataweave-xml-reference.adoc[DataWeave XML reference]

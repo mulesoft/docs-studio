@@ -58,7 +58,7 @@ The above output indicates that the connection was successful. A "connection ref
 
 Complete the following macro-steps to use the Visual Debugger in Studio.
 
-. Set breakpoints on building blocks in your application via right click menu on the Studio compoent, see <<Setting Breakpoints>> - .
+. Set breakpoints on building blocks in your application via right click menu on the Studio component, see <<Setting Breakpoints>> - .
 . Run the application in Debug mode, see <<Running in Debug Mode>>.
 . <<Viewing Message Data at a Breakpoint>> and/or <<Evaluating Mule Expressions>> on the data in the first building block that has a breakpoint.
 . Resume application execution.
