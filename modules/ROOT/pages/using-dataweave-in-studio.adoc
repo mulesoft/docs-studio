@@ -102,9 +102,9 @@ You can then define the data structure manually by writing or pasting a sample i
 
 image::input-payload-2.png[]
 
-You can also click the *rescafold button* to have your sample data overwritten by an empty scaffolding structure based on the metadata.
+You can also click the *rescaffold button* to have your sample data overwritten by an empty scaffolding structure based on the metadata.
 
-image::input-payload-rescafold.png[rescafold]
+image::input-payload-rescaffold.png[rescaffold]
 
 
 When the input is of JSON or XML types, the sample input contains plain XML or JSON code. When the input is of type POJO or DataWeave, the sample input is written in DataWeave for more simplicity. In these cases the sample DataWeave code is merely a way to display the sample data, not a transformation in itself.
@@ -159,7 +159,7 @@ When `header=true` you can then access the fields within the input anywhere by n
 When `header=false` you must access the fields by index, referencing first the entry and then the field, Ex: `in0[107][2]`
 ====
 
-You can set these propertes by either editing the XML code or via the UI:
+You can set these properties by either editing the XML code or via the UI:
 
 [.ex]
 =====
