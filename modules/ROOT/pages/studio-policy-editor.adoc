@@ -213,7 +213,7 @@ Being a beta release, the Custom Policy Editor for Studio has some limitations. 
 * The `hasContract` boolean to define whether this custom policy has credentials defined to access other APIs or not, is currently not supported.
 * Studio does not validate the `gatewayCompatibility` attribute
 * `requiredCharacteristics` and `providedCharacteristics` fields are not validated from Studio
-* The `{{order}}` attribute from the YAML file is not supported. The order of the policy is overwritten by the other set in the *Run Configurations* screen.
+* The `{\{order}}` attribute from the YAML file is not supported. The order of the policy is overwritten by the other set in the *Run Configurations* screen.
 
 === Limitations for Studio
 
