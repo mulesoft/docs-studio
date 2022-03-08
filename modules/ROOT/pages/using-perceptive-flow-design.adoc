@@ -42,7 +42,7 @@ image::dw-flow2.png[perceptive+flow+2]
 . Open the Transform Message *Properties Editor*.
 . Having already retrieved details about data structure and format from Salesforce (because you have successfully connected via your global connector), Mule already presents the known structure that the *Output* must have.
 . Manually define the *Input* structure by clicking the *Define Metadata* link in the input section.
-. A window opens where you can supply an example or a shema to represent the input structure.
+. A window opens where you can supply an example or a schema to represent the input structure.
 . You will now see the input fields you manually defined at left, and the output fields that DataSense retrieved from Salesforce at right.
 . Drag and drop input fields across to the output fields to map and transform data format to Salesforce-friendly values. Note how the xref:3.7@mule-runtime::dataweave-reference-documentation.adoc[DataWeave Code] on the right is written automatically to match every field you drag along. +
 +
