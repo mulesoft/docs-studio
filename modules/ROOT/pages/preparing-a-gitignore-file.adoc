@@ -20,7 +20,7 @@ A project's ` gitignore ` file contains a list of files and folders that git sho
 . Create a new Mule Project (*File* > *New* > *Mule Project*).
 . In the first pane of the *New Mule Project* wizard (see image below), check **Create a default .gitignore file:**
 
-image::mujeproject.png[]
+image::muleproject.png[]
 
 . Click *Finish* to save and open your new project.
 

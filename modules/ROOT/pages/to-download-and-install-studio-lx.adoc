@@ -19,7 +19,7 @@ endif::[]
 [[troubleshoot-install]]
 == Troubleshooting
 
-If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+If Anypoint Studio fails to load with a *An Error Has Occurred* message, you must configure it to point to your JDK installation as the default VM:
 
 . Locate your `AnypointStudio.ini` file in `/usr/lib/anypointstudio/anypointstudio.ini`.
 . Add the `-vm` option to point to your specific JDK installation path.
