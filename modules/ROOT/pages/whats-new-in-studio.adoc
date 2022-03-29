@@ -12,7 +12,7 @@ When publishing an asset to Exchange, you can now add more information (such as 
 
 You can now log in to Anypoint Platform using multi-factor authentication (MFA) from the Studio built-in browser.
 
-== Comment and Uncomment Objects from the Canvas
+== Comment and Uncomment Objects Directly from the Canvas
 
 You can now comment and uncomment flows and components directly from the canvas:
 
