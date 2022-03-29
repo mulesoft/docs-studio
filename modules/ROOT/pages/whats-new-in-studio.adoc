@@ -10,7 +10,7 @@ When publishing an asset to Exchange, you can now add more information such as t
 
 == MFA Support
 
-You can now log in to Anypoint Platform using multi-factor authentication (MFA) from Studio built-in browser.
+You can now log in to Anypoint Platform using multi-factor authentication (MFA) from the Studio built-in browser.
 
 == Comment and Uncomment Objects from the Canvas
 
