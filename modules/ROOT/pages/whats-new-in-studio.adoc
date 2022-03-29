@@ -16,7 +16,7 @@ You can now log in to Anypoint Platform using multi-factor authentication (MFA) 
 
 You can now comment and uncomment flows and components directly from the canvas:
 
-. Right-click the flow or component that you want to comment.
+. Right-click the flow or component that you want to comment or uncomment.
 . Select *Toggle Comment*.
 +
 image::toggle-comment.png["Toggle comment highlighted when right-clicking the flow"]
