@@ -3,21 +3,22 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio helps you to ensure that you are using the latest Mule Maven configuration.
+Anypoint Studio helps you ensure that you are using the latest Mule Maven plugin and that your project points to the latest Anypoint Exchange. When Studio runs in a new workspace for the first time, it validates that every project in your workspace has both dependencies updated.
 
-When Studio runs in a new workspace for the first time, it validates the configuration files of your projects in that workspace. When Studio finds projects using a deprecated version of the Mule Maven plugin, it prompts you to perform an update to continue those projects in your current Studio version:
+To manually validate your workspace navigate to *Help* > *Validate workspace compatibility*.
 
-image::update-workspaces.png[]
+image::update-workspaces.png[alt=Dialog box that provides the possibility to select the updates that you want to perform.]
 
-<1> Studio lists all the open projects in your workspace that must be updated.
-<1> Selecting *Perform update* enables Studio to update the Mule Maven Plugin version in the `pom.xml` file of your projects listed in this dialog.
+<1> Studio lists all the open projects in your workspace that must update the Mule Maven Plugin version.
+<1> Studio lists all the open projects in your workspace that must add the updated Exchange dependency.
+<1> Selecting *Perform update* enables Studio to update the dependencies in the `pom.xml` file of the projects you selected.
 
 [[update-7.1-workspace]]
-== Update Workspaces Created With Studio 7.1.x and Earlier Versions
+== Mule Maven Plugin Update for Workspaces Created With Studio 7.1.x and Earlier Versions
 
-Anypoint Studio simplifies the configuration of the `mule-artifact.json` file. When packaging your Mule application, this file is used to identify the application's classloader configuration and settings, and the minimum required Mule runtime engine version required to run your application.
+Studio simplifies the configuration of the `mule-artifact.json` file. When packaging your Mule application, this file is used to identify the application's classloader configuration and settings, and the minimum required Mule runtime engine version required to run your application.
 
-Anypoint Studio includes a new version of the Mule Maven Plugin that can automatically infer some of this required metadata. This makes it easier for you to keep track of all the declarations you need to make when exporting resources.
+Studio includes a new version of the Mule Maven Plugin that can automatically infer some of this required metadata. This makes it easier for you to keep track of all the declarations you need to make when exporting resources.
 
 
 [%header%autowidth.spread,cols="a,a"]
@@ -70,6 +71,26 @@ Do not to preserve the following declarations:
 * `requiredProduct`
 * `classLoaderModelLoaderDescriptor`
 * `bundleDescriptorLoader`
+
+[[exchange-dependency-update]]
+== Exchange Update for Workspaces Created With Studio 7.11.x and Earlier Versions
+
+Because Anypoint Studio 7.12 adds support for comprehensive publication of assets to Exchange, your projects must add a dependency to the new version of Anypoint Exchange.
+
+When you open a project created with earlier versions than 7.12, Studio adds this new dependency to your project pom.xml file:
+
+[source,XML,linenums]
+--
+<repository>
+  <id>anypoint-exchange-v3</id>
+  <name>Anypoint Exchange V3</name>
+  <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+  <layout>default</layout>
+</repository>
+--
+
+You must add this new dependency to take advantage of the latest publication process to Exchange.
+
 
 == See Also
 
