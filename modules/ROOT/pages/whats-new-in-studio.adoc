@@ -6,7 +6,7 @@ This version also improves the metadata edition and Design Center import experie
 
 == Comprehensive Publication to Exchange
 
-When publishing an asset to Exchange, you can now add more information such as tags, categories, name, description, and documentation to your asset directly from Studio.
+When publishing an asset to Exchange, you can now add more information (such as tags, categories, names, descriptions, and documentation) to your assets directly from Studio.
 
 == MFA Support
 
