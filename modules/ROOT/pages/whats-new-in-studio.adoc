@@ -2,7 +2,7 @@
 
 Anypoint Studio 7.12 introduces support for comprehensive publication of assets to Exchange and for multi-factor authentication (MFA) to Anypoint Platform.
 
-This version also improves the metadata edition and Design Center import experiences and adds a feature to comment and uncomment objects from the canvas.
+This version also improves the metadata edition and Design Center import experiences and adds a feature that enables you to comment and uncomment objects directly from the canvas.
 
 == Comprehensive Publication to Exchange
 
