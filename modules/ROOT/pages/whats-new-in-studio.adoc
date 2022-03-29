@@ -28,4 +28,4 @@ Studio 7.12 improves the overall performance of the metadata edition experience 
 
 == Improved Design Center Import Experience
 
-Studio 7.12 improves its import from Design Center experience by loading all REST APIs to import from Design Center simultaneously enabling you to search your desired API specification much faster.
+Studio 7.12 improves its import from Design Center experience by loading all REST APIs to import from Design Center simultaneously, enabling you to search your desired API specification much faster.
