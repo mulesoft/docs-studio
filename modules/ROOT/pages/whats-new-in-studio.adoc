@@ -1,1 +1,31 @@
 = What’s New in Studio
+
+Anypoint Studio 7.12 introduces support for comprehensive publication of assets to Exchange and for multi-factor authentication (MFA) to Anypoint Platform.
+
+This version also improves the metadata edition and Design Center import experiences and adds a feature that enables you to comment and uncomment objects directly from the canvas.
+
+== Comprehensive Publication to Exchange
+
+When publishing an asset to Exchange, you can now add more information (such as tags, categories, names, descriptions, and documentation) to your assets directly from Studio.
+
+== MFA Support
+
+You can now log in to Anypoint Platform using multi-factor authentication (MFA) from the Studio built-in browser.
+
+== Comment and Uncomment Objects Directly from the Canvas
+
+You can now comment and uncomment flows and components directly from the canvas:
+
+. Right-click the flow or component that you want to comment or uncomment.
+. Select *Toggle Comment*.
++
+image::toggle-comment.png["Toggle comment highlighted when right-clicking the flow"]
+
+== Improved Metadata Edition Experience
+
+Studio 7.12 improves the overall performance of the metadata edition experience by reducing background processing and by asynchronously propagating the metadata through the Flow Reference component.
+
+
+== Improved Design Center Import Experience
+
+Studio 7.12 improves its import from Design Center experience by loading all REST APIs to import from Design Center simultaneously, enabling you to search your desired API specification much faster.
