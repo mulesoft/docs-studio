@@ -3,14 +3,14 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio helps you ensure that you are using the latest Mule Maven plugin and that your project points to the latest Anypoint Exchange. When Studio runs in a new workspace for the first time, it validates that the components of such workspaces are updated and compliant with latest Studio 7.12.0 requirements.
+When Anypoint Studio runs in a new workspace for the first time, it validates that the components of the projects in the workspace are updated and compliant with latest Studio 7.12.0 requirements.
 
 To manually validate your workspace navigate to *Help* > *Validate workspace compatibility*.
 
 image::update-workspaces.png[alt=Dialog box that provides the possibility to select the updates that you want to perform.]
 
 <1> Studio lists all the open projects in your workspace that must update the Mule Maven Plugin version.
-<1> Studio lists all the open projects in your workspace that must add the updated Exchange version.
+<1> Studio lists all the open projects in your workspace that must add the updated Exchange repository.
 <1> Selecting *Perform update* enables Studio to update the repositories in the `pom.xml` file of the projects you selected.
 
 [[update-7.1-workspace]]
