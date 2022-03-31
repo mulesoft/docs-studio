@@ -10,7 +10,7 @@ To manually validate your workspace navigate to *Help* > *Validate workspace com
 image::update-workspaces.png[alt=Dialog box that provides the possibility to select the updates that you want to perform.]
 
 <1> Studio lists all the open projects in your workspace that must update the Mule Maven Plugin version.
-<1> Studio lists all the open projects in your workspace that must add the updated Exchange repository.
+<1> Studio lists all the open projects in your workspace that must add the updated Exchange version.
 <1> Selecting *Perform update* enables Studio to update the repositories in the `pom.xml` file of the projects you selected.
 
 [[update-7.1-workspace]]
