@@ -10,12 +10,12 @@ Anypoint Studio allows you to connect to Exchange to publish your project as a n
 +
 image::publish-project-to-exchange.png[alt=Right-click + select + publish.]
 . Either select your Anypoint Platform user and business group or create a new Anypoint Platform account by clicking *Add Account*. +
-Additionally, you can click the *Add *ccount8 button to use a new Anypoint Platform account.
+Additionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . Verify that the required identification and version information for your project is present and correct:
 +
 image::configure-asset-properties.png[alt=List of fields to configure before publishing an asset to Exchange.]
 <1> *Name*: The name of your API specification.
-<1> *Descrition*: (optional) A description of your API specification.
+<1> *Description*: (optional) A description of your API specification.
 <1> *Group ID* +
 The group ID for your project is the organization ID of your Anypoint Platform organization.
 <1> *Artifact ID* +
