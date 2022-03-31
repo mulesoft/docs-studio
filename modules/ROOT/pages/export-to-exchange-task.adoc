@@ -7,22 +7,31 @@ Anypoint Studio allows you to connect to Exchange to publish your project as a n
 
 . Right-click your project folder in your Package Explorer view.
 . Select *Anypoint Platform* > *Publish to Exchange*.
++
+image::publish-project-to-exchange.png[alt=Right-click + select + publish.]
 . Either select your Anypoint Platform user and business group or create a new Anypoint Platform account by clicking *Add Account*. +
-Additionally you can click the "Add Account" button to use a new Anypoint Platform account.
+Additionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . Verify that the required identification and version information for your project is present and correct:
-* *Group ID* +
++
+image::configure-asset-properties.png[alt=List of fields to configure before publishing an asset to Exchange.]
+<1> *Name*: The name of your API specification.
+<1> *Description*: (optional) A description of your API specification.
+<1> *Group ID* +
 The group ID for your project is the organization ID of your Anypoint Platform organization.
-* *Artifact ID* +
+<1> *Artifact ID* +
 The artifact ID is the name of your project, minus its version. By default, Studio uses the artifact ID configured in your `pom.xml` file.
-* *Version*: The version of the asset you are publishing.
-. Select a project type. +
+<1> *Version*: The version of the asset you are publishing.
+<1> *Project type*: +
 If you are publishing a new version of an already published asset, you cannot change the project type.
-. Select *Save updated project information to the pom.xml*  if you want to update your `pom.xml` file with the data you just provided. +
-This option updates your local project information with the data configured in the *Publish to Exchange* window. If you do not select this option, the project is deployed with the configured data, but your local project information is not updated.
-. Select *Finish*. +
+. Select *Save updated project information to the pom.xml* if you want to update your `pom.xml` file with the data you just provided. +
+This option updates your local project information with the data you just configured. If you do not select this option, the project is deployed with the configured data, but your local project information is not updated.
+. Select *Next*.
+. Configure the tags and categories for your project:
++
+image::tags-and-categories-configuration.png[alt=Configuration screen for adding tags and categories to your asset.]
+. Select *Finish*.
 
-After you select *Finish*, the publication of your project as a new asset in Exchange begins and cannot be cancelled. You can follow the progress of this publication process in the *Console* view.
-
+Once you select *Finish*, the publication of your project as a new asset in Exchange begins. You can follow the progress of this publication process in the Console view, but you cannot cancel it.
 
 
 == See Also
