@@ -34,7 +34,7 @@ image::subeclipse.png[]
 +
 image::restart.png[]
 
-. Starting from Studio's application menu, click *Window*, (or *Application Studio* in Mac), and click *Preferences*.
+. Starting from Studio application menu, click *Window*, (or *Application Studio* in Mac), and click *Preferences*.
 . Click the expand arrow next to *Team*, then select *SVN*.
 . In the *SVN Interface* pane, use the drop down menu in the *Client* field to select *SVNKit* and click *OK*:
 +
@@ -77,12 +77,12 @@ image::perspective-1.png[]
 
 == Checking Out a Project
 
-You may wish to check out a Subversion project and import it into Studio in order to leverage Studio's graphical user interface. To do so, you must first install an SVN plugin, then access your SVN project from Studio.
+You may wish to check out a Subversion project and import it into Studio in order to leverage Studio graphical user interface. To do so, you must first install an SVN plugin, then access your SVN project from Studio.
 
 [WARNING]
 This procedure assumes that you have already created and have read-write access to a shared Subversion repository, and that you have saved to that repository the project you wish to access in Studio.
 
-. Starting from Studio's application menu, click *Window*, navigate to *Open Perspective,* then select *Other...*
+. Starting from Studio application menu, click *Window*, navigate to *Open Perspective,* then select *Other...*
 +
 image::open-persp-crop.png[open_persp_crop]
 

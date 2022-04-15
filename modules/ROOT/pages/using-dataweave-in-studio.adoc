@@ -262,7 +262,7 @@ Then you must specify where in the output Mule message to place the output of th
 
 image::dw-new-variable.png[new variable]
 
-In Studio's XML editor you can do the same by adding multiple child elements inside the `dw:transform-message` component.
+In Studio XML editor you can do the same by adding multiple child elements inside the `dw:transform-message` component.
 
 [source,xml,linenums]
 ----

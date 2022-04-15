@@ -215,8 +215,8 @@ More information on logging is at xref:3.7@mule-runtime::logging-in-mule.adoc[Lo
 
 Most Mule elements provide configuration options, which you can set in one of the following ways:
 
-* Using the building block *Properties* tabs in Studio's visual editor
-* Using XML code in Studio's *XML* editor
+* Using the building block *Properties* tabs in Studio visual editor
+* Using XML code in Studio *XML* editor
 
 Use the *Configuration XML* at the bottom of the canvas to switch to the XML editor view.
 
@@ -233,7 +233,7 @@ The Configuration Element sits above the flow you built, outside it, as it could
 by other HTTP connectors on other flows. The configurations you set in the Configuration Element
 and those in the XML view of an element are the same.
 
-Studio's two-way editor automatically updates the configuration as you switch back and forth. For example, if
+Studio two-way editor automatically updates the configuration as you switch back and forth. For example, if
 in the XML configuration view you change the value of the *port*
 attribute on the `http-listener-config`, this change is reflected in the visual editor when you click *Message Flow*
 to switch back to the visual editor.

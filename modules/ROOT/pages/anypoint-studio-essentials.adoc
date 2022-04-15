@@ -20,7 +20,7 @@ image::36studioeditorssidebyside.png[36StudioEditorsSideBySide]
 
 == The Visual Editor
 
-Studio's visual editor is divided into five parts:
+Studio visual editor is divided into five parts:
 
 . Package Explorer
 . Canvas
@@ -46,7 +46,7 @@ The *Console* area below the canvas contains the console for the embedded Mule s
 
 == The XML Editor
 
-Because Anypoint Studio leverages Eclipse, the Configuration XML editor incorporates many Eclipse features. The following is a list of handy tips and tricks for using Studio's XML editor.
+Because Anypoint Studio leverages Eclipse, the Configuration XML editor incorporates many Eclipse features. The following is a list of handy tips and tricks for using Studio XML editor.
 
 === Show Attribute Options
 
