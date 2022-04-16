@@ -44,7 +44,7 @@ To check your version of Anypoint Studio, go to *Anypoint Studio* > *About Anypo
 
 == The Visual Editor
 
-Studio's visual editor is divided into several parts:
+Studio visual editor is divided into several parts:
 
 . *Package Explorer*
 . *Canvas*
@@ -73,7 +73,7 @@ The *Console* area below the canvas contains the console for the embedded Mule s
 [[properties-editor]]
 == The Properties Editor
 
-Anypoint Studio's Visual Editor enables you to click a building block on the canvas to access its *Properties Editor* in a tab in the console (below).
+Anypoint Studio Visual Editor enables you to click a building block on the canvas to access its *Properties Editor* in a tab in the console (below).
 
 image::properties-editor.png[properties+editor]
 
@@ -89,7 +89,7 @@ If you are configuring a field that supports expressions and need help with synt
 image::auto-complete.png[auto_complete]
 
 [NOTE]
-The autocomplete functionality described here works in the *Visual Editor only*. Although Studio's XML tab does offer some autocomplete options, the suggestions in the XML editor are limited by Eclipse and are not based on DataSense or the Mule Expression Language.
+The autocomplete functionality described here works in the *Visual Editor only*. Although Studio XML tab does offer some autocomplete options, the suggestions in the XML editor are limited by Eclipse and are not based on DataSense or the Mule Expression Language.
 
 == Sample Mule App XML Code
 
@@ -139,7 +139,7 @@ Because Anypoint Studio leverages Eclipse, the Configuration XML editor incorpor
 include::{examplesdir}/anypoint-studio-essentials.xml[]
 ----
 
-The following sections provide a list of handy tips and tricks for using Studio's XML editor.
+The following sections provide a list of handy tips and tricks for using Studio XML editor.
 
 === Show Attribute Options
 
