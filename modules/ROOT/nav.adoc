@@ -81,7 +81,7 @@
 
 * xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials]
 * xref:proxy-settings-task.adoc[Configure Proxy Settings]
-* xref:browser-settings.adoc[Configure Studio's Browser Settings]
+* xref:browser-settings.adoc[Configure Studio Browser Settings]
 * xref:change-jdk-config-in-projects.adoc[Select a Different JRE to Run the Embedded Mule Runtime Engine]
 
 * xref:govcloud-config.adoc[Access MuleSoft Government Cloud from Studio]
