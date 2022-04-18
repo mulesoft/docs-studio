@@ -25,17 +25,17 @@ You can only edit this preference when you disable Use embedded Maven Installati
 
 
 | Override user settings path
-| When selected, this option overrides Studio's default user settings.xml path. +
+| When selected, this option overrides Studio default user settings.xml path. +
 Selecting this option requires for you to define your custom path to your settings.xml file in the Path To User Settings.xml field below.
 | unselected
 
 | Override global settings path
-| When selected, this option overrides Studio's default global settings.xml path. +
+| When selected, this option overrides Studio default global settings.xml path. +
 Selecting this option requires for you to define your custom path to your global settings.xml file in the Path To User Settings.xml field below.
 | unselected
 
 | Override Maven Local Repository Location
-| When selected, this option overrides Studio's default local repository location. +
+| When selected, this option overrides Studio default local repository location. +
 Selecting this option requires for you to define your custom path to your maven local repository.
 | unselected
 
