@@ -65,7 +65,7 @@
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
 * xref:set-credentials-in-studio-to.adoc[Configuring Platform Credentials]
 * xref:proxy-settings-task.adoc[Configuring Proxy Settings]
-* xref:browser-settings.adoc[Configure Studio's Browser Settings]
+* xref:browser-settings.adoc[Configure Studio Browser Settings]
 * xref:change-jdk-config-in-projects.adoc[Change the JDK from Studio]
 
 * xref:studio-update-sites.adoc[Studio Update Sites]
