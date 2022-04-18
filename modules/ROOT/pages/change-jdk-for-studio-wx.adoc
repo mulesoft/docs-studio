@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-. Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
+. Locate your `AnypointStudio.ini` file inside your Anypoint Studio installation directory.
 . Add the `-vm` option to point to your specific JDK installation path.
 +
 [source,text,linenums]
