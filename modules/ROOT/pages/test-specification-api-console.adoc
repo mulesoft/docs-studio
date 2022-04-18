@@ -4,7 +4,7 @@ Studio provides an API Console view and a mocking service for the API you are de
 
 Simulating calls to your API is a critical design task that helps you troubleshoot problems and demo the API to prospective users even before you implement it. You can simulate calls to the API in the API Console view before publishing a new version of the API specification to Exchange.
 
-Studio's mocking service does not modify the `baseUri` field in your API specification when it is enabled.
+Studio mocking service does not modify the `baseUri` field in your API specification when it is enabled.
 
 == Prerequisites
 

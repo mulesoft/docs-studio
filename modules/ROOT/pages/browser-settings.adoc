@@ -1,4 +1,4 @@
-= Configure Studio's Browser Settings
+= Configure Studio Browser Settings
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -20,7 +20,7 @@ Additionally, if you use Windows you must perform an additional configuration:
 . Quit Anypoint Studio if you are running it.
 . Download the latest fixed version of WebView2 from the https://developer.microsoft.com/en-us/microsoft-edge/webview2/[Microsoft Developer Portal^].
 . Extract the `.cab` file with the following command in a Command Prompt (CMD): `Extrac32 /E <path_to_CAB>`
-. Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
+. Locate your `AnypointStudio.ini` file inside your Anypoint Studio installation directory.
 . Add the following lines to the `AnypointStudio.ini` file:
 +
 [source]

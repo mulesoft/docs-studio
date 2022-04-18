@@ -27,7 +27,7 @@ When you add a new credential for the first time, Studio notifies you that a new
 
 Each provider supplies its own master password. When you use a provider to encrypt a new credential, you can only use that provider to recover the encrypted credential.
 
-After a master password is created, Studio caches the master password until it is closed, or you manually clear the password from Studio's cache.
+After a master password is created, Studio caches the master password until it is closed, or you manually clear the password from Studio cache.
 
 == Secure Storage File
 
