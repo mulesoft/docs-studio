@@ -32,7 +32,7 @@ After downloading and installing the JDK, ensure that your JDK installation is p
 
 If Anypoint Studio fails to load with a *An Error Has Occurred* message, you must configure it to point to your JDK installation as the default VM:
 
-. Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
+. Locate your `AnypointStudio.ini` file inside your Anypoint Studio installation directory.
 . Add the `-vm` option to point to your specific JDK installation path.
 +
 [source,text,linenums]

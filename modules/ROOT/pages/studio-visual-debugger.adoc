@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, esb, studio, anypoint studio, debug, debugger, break points, breakpoints
 
-Studio's *Visual Debugger* allows you to run your application in Debug mode, stopping execution to check the contents of a message at previously-specified building blocks.
+Studio *Visual Debugger* allows you to run your application in Debug mode, stopping execution to check the contents of a message at previously-specified building blocks.
 
 To do this, you set a *breakpoint* at any building block in your flow that you wish to check or test (see image below). When you run your application in Debug mode, the application stops immediately after executing the building block with the breakpoint. Using the *Mule Debugger View*, you can browse through the contents of the message as it exists at that point in the flow, and evaluate xref:3.7@mule-runtime::mule-expression-language-mel.adoc[Mule Expressions] against the message.
 
