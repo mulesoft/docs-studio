@@ -159,7 +159,7 @@ For connector metadata, the DataMapper can take its metadata from the connector 
 ====
 *DataMapper, Connectors and DataSense*
 
-Through Anypoint Studio's support for Perceptive Flow Design, DataSense-enabled connectors retrieve from the connected source system full metadata for supported operations and objects, including any custom objects and fields. If you model a flow to include a connector that supports perceptive flow design as an input to or output from a DataMapper, Mule uses metadata retrieved from the connected system – a SaaS provider, for example – and feeds that data into the DataMapper to automate correct input and output metadata setup. See xref:datasense.adoc[DataSense] and xref:using-perceptive-flow-design.adoc[Using Perceptive Flow Design] for more details.
+Through Anypoint Studio support for Perceptive Flow Design, DataSense-enabled connectors retrieve from the connected source system full metadata for supported operations and objects, including any custom objects and fields. If you model a flow to include a connector that supports perceptive flow design as an input to or output from a DataMapper, Mule uses metadata retrieved from the connected system – a SaaS provider, for example – and feeds that data into the DataMapper to automate correct input and output metadata setup. See xref:datasense.adoc[DataSense] and xref:using-perceptive-flow-design.adoc[Using Perceptive Flow Design] for more details.
 ====
 
 When a connector already defined in a Mule flow is input or output for your DataMapper, the operation and any associated object classes are filled in for you.
