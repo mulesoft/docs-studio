@@ -38,4 +38,4 @@ If Anypoint Studio fails to load with a *Incorrect Java Version* message, you mu
 
 == See Also
 
-* xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Linux)]
+* xref:studio-xulrunner-lnx-task.adoc[Configuring XULRunner as Studio Default Layout Engine (Linux)]
