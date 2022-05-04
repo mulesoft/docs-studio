@@ -56,7 +56,7 @@ Allow the following sites on your firewall to allow Studio to connect to the upd
 [discrete.view]
 === Standalone
 
-. Visit https://www.anypoint.mulesoft.com/exchange/?type=connector[MuleSoft Connectors].
+. Visit https://anypoint.mulesoft.com/exchange/?type=connector[MuleSoft Connectors].
 . Click to reveal the details of a specific connector, then click *Install for Maven*.
 +
 image::installformaven.png[InstallForMaven]
