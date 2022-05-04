@@ -9,7 +9,7 @@ Building upon the certainty that connection testing establishes, Mule takes one 
 
 == Prerequisites
 
-This document assumes that you are familiar with the xref:index.adoc[Visual Editor in Anypoint Studio] and the xref:3.8@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors] and xref:3.8@mule-runtime::dataweave.adoc[DataWeave] that you can use to create applications in Studio.  Further, this document references https://www.anypoint.mulesoft.com/exchange/?type=connector[Connectors] and xref:3.8@mule-runtime::global-elements.adoc[Global Elements.] Review xref:datasense.adoc[DataSense] to learn more about the overall DataSense functionality.
+This document assumes that you are familiar with the xref:index.adoc[Visual Editor in Anypoint Studio] and the xref:3.8@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors] and xref:3.8@mule-runtime::dataweave.adoc[DataWeave] that you can use to create applications in Studio.  Further, this document references https://anypoint.mulesoft.com/exchange/?type=connector[Connectors] and xref:3.8@mule-runtime::global-elements.adoc[Global Elements.] Review xref:datasense.adoc[DataSense] to learn more about the overall DataSense functionality.
 
 == Designing with Metadata
 
@@ -31,7 +31,7 @@ In other words, Mule intelligently examines the structure of the input or output
 
 == Building a Perceptive Flow
 
-. Begin by building a flow which contains at least one connector which supports connection testing. For example, create a flow with a https://www.anypoint.mulesoft.com/exchange/?type=connector&search=salesforce[Salesforce Connector].
+. Begin by building a flow which contains at least one connector which supports connection testing. For example, create a flow with a https://anypoint.mulesoft.com/exchange/?type=connector&search=salesforce[Salesforce Connector].
 +
 image::perceptive-flow-1.png[perceptive+flow+1]
 +
