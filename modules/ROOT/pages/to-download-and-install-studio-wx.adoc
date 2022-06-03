@@ -11,8 +11,8 @@ endif::[]
 ** If you are using a Windows antivirus application, ensure that the `plugins/` and `features/` directories are under the _trusted_ category.
 . Open the extracted Anypoint Studio.
 +
-When Studio first runs, the embedded OpenJDK libraries might cause a Windows Security alert. +
-Ensure to allow the OpenJDK Platform library from the Adoptium Eclipse Temurin OpenJDK publisher through your Windows firewall.
+When Studio first runs, the embedded OpenJDK Platform libraries might cause a Windows Security alert. +
+Ensure to allow the OpenJDK Platform library from Temurin publisher through your Windows firewall.
 . Click OK to accept the default workspace. +
 ** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +
 Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
