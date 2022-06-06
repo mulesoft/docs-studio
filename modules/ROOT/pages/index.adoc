@@ -11,8 +11,12 @@ The same editor also allows you to edit RAML and WSDL API specification files an
 
 == Requirements
 
-* Internet Explorer versions 11 and earlier are not supported. +
-Anypoint Studio uses your system's native browser to display elements of the Anypoint Platform UI. If your system defaults to an Internet Explorer browser, you won't be able to visualize any of the Anypoint Platform views.
+* Studio 6.x will miss the following features in Windows:
+** Internet Explorer version 11 and earlier are not supported.
+** Anypoint Studio will not display the Anypoint Platform views if your system has a default Internet browser.
+** Authentication over MFA.
+** Access Exchange eeb UI.
+** Deploy to CloudHub.
 
 * Anypoint Studio 6 requires Java 8 to run properly. However, depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
 
@@ -21,6 +25,7 @@ Anypoint Studio uses your system's native browser to display elements of the Any
 ** Other supported runtime versions work fine with both Java 7 or 8.
 
 * Studio 6 is not compatible with Mule 4.
+* From Studio 6 on, in Windows, you cannot use Exchange UI or deploy Mule apps to CloudHub.
 
 == Overview
 
