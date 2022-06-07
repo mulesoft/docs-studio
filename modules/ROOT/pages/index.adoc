@@ -24,7 +24,6 @@ The same editor also allows you to edit RAML and WSDL API specification files an
 ** Other supported runtime versions work fine with both Java 7 or 8.
 
 * Studio 6 is not compatible with Mule 4.
-* From Studio 6 on, in Windows, you cannot use Exchange UI or deploy Mule apps to CloudHub.
 
 == Overview
 
