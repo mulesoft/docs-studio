@@ -11,8 +11,7 @@ The same editor also allows you to edit RAML and WSDL API specification files an
 
 == Requirements
 
-* Studio 6.x will miss the following features in Windows:
-** Internet Explorer version 11 and earlier are not supported.
+* Studio 6.x will miss some features in Windows due to the fact that Anypoint Platform no longer supports Internet Explorer:
 ** Anypoint Studio will not display the Anypoint Platform views if your system has a default Internet browser.
 ** Authentication over MFA.
 ** Access Exchange web UI.
