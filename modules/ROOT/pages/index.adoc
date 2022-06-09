@@ -16,7 +16,7 @@ The same editor also allows you to edit RAML and WSDL API specification files an
 ** Access Exchange web UI.
 ** Deploy to CloudHub.
 
-As IE is no longer supported, other features may not work in the future.
+Because Internet Explorer is no longer supported, other features might not work in the future.
 
 * Anypoint Studio 6 requires Java 8 to run properly. However, depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
 
