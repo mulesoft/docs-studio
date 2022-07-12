@@ -11,7 +11,7 @@ The same editor also allows you to edit RAML and WSDL API specification files an
 
 == Requirements
 
-* Studio 6.x doesn't use some features in Windows because Anypoint Platform no longer supports Internet Explorer (see xref:docs-general::browser-support.adoc[Browser Support for Anypoint Platform]).
+* Studio 6.x doesn't use some features in Windows because Anypoint Platform no longer supports Internet Explorer (see xref:general::browser-support.adoc[Browser Support for Anypoint Platform]).
 ** Authenticate with MFA.
 ** Access Exchange web UI.
 ** Deploy to CloudHub.
