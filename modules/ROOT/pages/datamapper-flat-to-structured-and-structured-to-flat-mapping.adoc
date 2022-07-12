@@ -92,11 +92,11 @@ image::dm-initiala1.png[DM_initialA1]
 +
 As you can see, Anypoint DataMapper has automatically created a top-level mapping called `Foreach 'CSV' -> 'employees'`, and mapped the field `Name` since it is identical in the input and output panes. You can now map additional elements, such as `Street 1` to `street` and `Zipcode 1` to `zipCode`.
 +
-image::dm-intial2.png[DM_intial2]
+image::dm-initial2.png[DM_initial2]
 
 . Now, map the input fields `Street 2` to `street`, and `ZipCode 2` to `zipCode`. The final mapping should look like the image below.
 +
-image::dm-intial3.png[DM_intial3]
+image::dm-initial3.png[DM_initial3]
 
 To test your mapping, use the xref:previewing-datamapper-results-on-sample-data.adoc[Preview] feature by completing the following steps:
 
