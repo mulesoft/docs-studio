@@ -3,36 +3,72 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio allows you to connect to Exchange to publish your project as a new asset.
+Anypoint Studio enables you to write documentation in your new projects and to connect to Exchange to publish your project as a new asset.
 
-. Right-click your project folder in your Package Explorer view.
+== Publishing Assets with Documentation
+
+When creating a new project in Anypoint Studio, it includes an exchange-docs folder with a home.md file to write the front page of a new asset in Markdown format after publishing it in Exchange.
+
+NOTE: Learn more about Markdown at https://www.markdownguide.org/.
+
+Studio enables you to add more pages, images, and an icon: 
+
+. Create a new project in Anypoint Studio.
+. In the Package Explorer view, look for *Exchange-docs* > *Home.md* and open it.
+. Use the default Text Editor for Studio, or choose an external editor by right clicking on *Open with...* > *Other*, and selecting an external app.
+. Optionally, create additional pages to add to your asset documentation by right clicking on the *Exchange-docs* folder and selecting *New* > *File*.
++
+NOTE: The name of the file will be the name of the page in Exchange.
++
+. In case of having more than two pages, create a `config.json` file to provide page order following the format:
++
+----
+{"pageOrder": ["home","page1","page2"]}
+----
++
+NOTE: If no format is provided, the home page will be followed by the other pages in alphabetical order. 
++
+. Assign an icon to your project by adding an image (*.jpg, *.png, *.bmp) with the name icon before publishing your project for the first time.
+. Create a *Resources* folder in the *Exchange-docs* folder to add extra resources to your documentation, such as images, or other types of files (size limit of 2MB).
+. To publish your project, right click your project in the *Package Explorer*, and click on *Anypoint Platform* > *Publish to Exchange*.
+. Log in to the platform if needed, fill in the required fields of the two pages, and click on the *Finish* button. 
+. After uploading the asset, click on the link provided to verify that your asset and documentation are available in Exchange.
+
+== Publishing a Project to Exchange
+
+. Right-click your project folder in your *Package Explorer* view.
 . Select *Anypoint Platform* > *Publish to Exchange*.
 +
-image::publish-project-to-exchange.png[alt=Right-click + select + publish.]
-. Either select your Anypoint Platform user and business group or create a new Anypoint Platform account by clicking *Add Account*. +
+image::publish-project-to-exchange.png[AltText:"Right-click + select + publish."]
++
+. Either select your Anypoint Platform user and business group, or create a new Anypoint Platform account by clicking *Add Account*. +
 Additionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . Verify that the required identification and version information for your project is present and correct:
 +
-image::configure-asset-properties.png[alt=List of fields to configure before publishing an asset to Exchange.]
+image::configure-asset-properties.png[AltText:"List of fields to configure before publishing an asset to Exchange."]
++
 <1> *Name*: The name of your API specification.
 <1> *Description*: (optional) A description of your API specification.
-<1> *Group ID* +
-The group ID for your project is the organization ID of your Anypoint Platform organization.
-<1> *Artifact ID* +
-The artifact ID is the name of your project, minus its version. By default, Studio uses the artifact ID configured in your `pom.xml` file.
+<1> *Group ID*: The group ID for your project is the organization ID of your Anypoint Platform organization.
+<1> *Artifact ID*: The artifact ID is the name of your project, minus its version. By default, Studio uses the artifact ID configured in your `pom.xml` file.
 <1> *Version*: The version of the asset you are publishing.
-<1> *Project type*: +
-If you are publishing a new version of an already published asset, you cannot change the project type.
-. Select *Save updated project information to the pom.xml* if you want to update your `pom.xml` file with the data you just provided. +
-This option updates your local project information with the data you just configured. If you do not select this option, the project is deployed with the configured data, but your local project information is not updated.
-. Select *Next*.
-. Configure the tags and categories for your project:
+<1> *Project type*: If you are publishing a new version of an already published asset, you cannot change the project type.
 +
-image::tags-and-categories-configuration.png[alt=Configuration screen for adding tags and categories to your asset.]
+. Select *Next*.
+. Configure the tags, categories*, and custom fields** for your project:
++
+image::tags-and-categories-configuration.png[AltText:"Configuration screen for adding tags and categories to your asset."]
++
+NOTES:
++
+*Categories can not be created from Studio directly. Refer to the [Manage Categories](https://docs.mulesoft.com/exchange/to-manage-categories) documentation to learn how to create Categories for your organization.
++
+**Custom Fields can not be created from Studio directly. Refer to the [Manage Custom Fields](https://docs.mulesoft.com/exchange/to-manage-custom-fields) documentation to learn how to create Custom Fields for your organization.
++
+. Check the *Save updated project information to the pom.xml* box to update your `pom.xml` file with the data provided. This option syncs your local project information with the data you entered. If not checked, your project is deployed with the provided data, but your local project remains with the original information and it is not updated.
 . Select *Finish*.
 
 Once you select *Finish*, the publication of your project as a new asset in Exchange begins. You can follow the progress of this publication process in the Console view, but you cannot cancel it.
-
 
 == See Also
 
