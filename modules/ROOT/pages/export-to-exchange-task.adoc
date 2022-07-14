@@ -3,11 +3,11 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio enables you to write documentation in your new projects and to connect to Exchange to publish your project as a new asset.
+Anypoint Studio enables you to write documentation for your new projects and to connect to Exchange to publish your project as a new asset.
 
 == Publishing Assets with Documentation
 
-When creating a new project in Anypoint Studio, it includes an exchange-docs folder with a home.md file to write the front page of a new asset in Markdown format after publishing it in Exchange.
+When you create a new project in Anypoint Studio, Studio includes an *exchange-docs* folder with a *home.md* file. You can document the front page of your new asset in Markdown format after publishing your asset to Exchange.
 
 NOTE: Learn more about Markdown at https://www.markdownguide.org/.
 
