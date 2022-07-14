@@ -41,7 +41,7 @@ If no format is provided, the home page will be followed by the other pages in a
 +
 image::publish-project-to-exchange.png[AltText:"Right-click + select + publish."]
 +
-. Either select your Anypoint Platform user and business group, or create a new Anypoint Platform account by clicking *Add Account*. +
+. Either select your Anypoint Platform user and business group or create a new Anypoint Platform account by clicking *Add Account*. +
 Additionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . Verify that the required identification and version information for your project is present and correct:
 +
