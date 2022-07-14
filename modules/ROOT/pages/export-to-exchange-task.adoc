@@ -57,7 +57,7 @@ image::configure-asset-properties.png[AltText:"List of fields to configure befor
 . Select *Next*.
 . Configure the tags, categories, and custom fields for your project:
 +
-image::tags-and-categories-configuration.png[AltText:"Configuration screen for adding tags and categories to your asset."]
+image::tags-and-categories-configuration.png[AltText:"Configuration screen for adding tags, categories, and custom fields to your asset."]
 +
 NOTE:
 +
