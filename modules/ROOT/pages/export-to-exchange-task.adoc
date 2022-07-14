@@ -30,7 +30,7 @@ If no format is provided, the home page will be followed by the other pages in a
 +
 . Assign an icon to your project by adding an image (*.jpg, *.png, *.bmp) with the name icon before publishing your project for the first time.
 . Create a *Resources* folder in the *Exchange-docs* folder to add extra resources to your documentation, such as images, or other types of files (size limit of 2MB).
-. To publish your project, right click your project in the *Package Explorer*, and click on *Anypoint Platform* > *Publish to Exchange*.
+. To publish your project, right-click on your project in the *Package Explorer*, and click on *Anypoint Platform* > *Publish to Exchange*.
 . Log in to the platform if needed, fill in the required fields of the two pages, and click on the *Finish* button. 
 . After uploading the asset, click on the link provided to verify that your asset and documentation are available in Exchange.
 
