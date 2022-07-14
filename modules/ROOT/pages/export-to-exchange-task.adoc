@@ -16,7 +16,7 @@ Studio enables you to add more pages, images, and an icon:
 . Create a new project in Anypoint Studio.
 . In the Package Explorer view, open *Exchange-docs* > *Home.md*.
 . Use the default Studio text editor or choose an external editor by right-clicking on *Open with...* > *Other* and selecting an external app.
-. Optionally, create additional pages to add to your asset documentation by right clicking on the *Exchange-docs* folder and selecting *New* > *File*.
+. Optionally, create additional pages to add to your asset documentation by right-clicking on the *Exchange-docs* folder and selecting *New* > *File*.
 +
 NOTE: The name of the file will be the name of the page in Exchange.
 +
