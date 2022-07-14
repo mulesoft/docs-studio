@@ -17,6 +17,7 @@ Users now have easier access to manage DataWeave libraries through Studio UI.
 == New Exchange Comprehensive Publication Features
 
 The Exchange Comprehensive Publication features enhance the user experience in Studio when publishing assets to Exchange.
+
 * Custom fields are now available to add from the wizard.
 * Users can now create and edit Markdown files and deploy them along with the asset.
 * An icon can be added to new assets when publishing them to Exchange.
@@ -24,6 +25,7 @@ The Exchange Comprehensive Publication features enhance the user experience in S
 == Improved General User Experience
 
 Studio provides a better user experience by showing clearer information on the screen.
+
 * Dependency version is displayed when adding it to a project.
 * When creating an API Project, the users get a notification to learn that their project is created in Design Center as well.
 * API Console warns the users to turn on the Mocking Service for testing their API.
