@@ -63,7 +63,7 @@ Categories cannot be created from Studio directly. Refer to the xref:exchange::t
 +
 Custom Fields cannot be created from Studio directly. Refer to the xref:exchange::to-manage-custom-fields.adoc[Manage Custom Fields] documentation to learn how to create Custom Fields for your organization.
 +
-. Check the *Save updated project information to the pom.xml* box to update your `pom.xml` file with the data provided. This option syncs your local project information with the data you entered. If not checked, your project is deployed with the provided data, but your local project remains with the original information and it is not updated.
+. Check the *Save updated project information to the pom.xml* box to update your `pom.xml` file with the data provided. This option syncs your local project information with the data you entered. If not checked, your project is deployed with the provided data, but your local project remains with the original information and is not updated.
 . Select *Finish*.
 
 Once you select *Finish*, the publication of your project as a new asset in Exchange begins. You can follow the progress of this publication process in the Console view, but you cannot cancel it.
