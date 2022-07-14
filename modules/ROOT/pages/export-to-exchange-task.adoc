@@ -20,7 +20,7 @@ Studio enables you to add more pages, images, and an icon:
 +
 NOTE: The name of the file will be the name of the page in Exchange.
 +
-. If you have more than two pages, create a `config.json` file using the following format  to provide a page order:
+. If you have more than two pages, create a `config.json` file using the following format to provide a page order:
 +
 ----
 {"pageOrder": ["home","page1","page2"]}
