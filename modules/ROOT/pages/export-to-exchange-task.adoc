@@ -36,7 +36,7 @@ If no format is provided, the home page will be followed by the other pages in a
 
 == Publishing a Project to Exchange
 
-. Right-click your project folder in your *Package Explorer* view.
+. Right-click your project folder in your Package Explorer view.
 . Select *Anypoint Platform* > *Publish to Exchange*.
 +
 image::publish-project-to-exchange.png[AltText:"Right-click + select + publish."]
