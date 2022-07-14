@@ -14,7 +14,7 @@ NOTE: Learn more about Markdown at https://www.markdownguide.org/.
 Studio enables you to add more pages, images, and an icon: 
 
 . Create a new project in Anypoint Studio.
-. In the Package Explorer view, open *Exchange-docs* > *Home.md*.
+. In the *Package Explorer* view, open *Exchange-docs* > *Home.md*.
 . Use the default Studio text editor or choose an external editor by right-clicking on *Open with...* > *Other* and selecting an external app.
 . Optionally, create additional pages to add to your asset documentation by right-clicking on the *Exchange-docs* folder and selecting *New* > *File*.
 +
@@ -36,7 +36,7 @@ If no format is provided, the home page will be followed by the other pages in a
 
 == Publishing a Project to Exchange
 
-. Right-click your project folder in your Package Explorer view.
+. Right-click your project folder in your *Package Explorer* view.
 . Select *Anypoint Platform* > *Publish to Exchange*.
 +
 image::publish-project-to-exchange.png[AltText:"Right-click + select + publish."]
