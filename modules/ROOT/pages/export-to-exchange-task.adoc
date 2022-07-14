@@ -59,8 +59,6 @@ image::configure-asset-properties.png[AltText:"List of fields to configure befor
 +
 image::tags-and-categories-configuration.png[AltText:"Configuration screen for adding tags, categories, and custom fields to your asset."]
 +
-NOTE:
-+
 Categories cannot be created from Studio directly. Refer to the [Manage Categories](https://docs.mulesoft.com/exchange/to-manage-categories) documentation to learn how to create Categories for your organization.
 +
 Custom Fields cannot be created from Studio directly. Refer to the [Manage Custom Fields](https://docs.mulesoft.com/exchange/to-manage-custom-fields) documentation to learn how to create Custom Fields for your organization.
