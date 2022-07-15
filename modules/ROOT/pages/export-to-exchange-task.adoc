@@ -28,7 +28,7 @@ NOTE: The name of the file will be the name of the page in Exchange.
 +
 If no format is provided, the home page will be followed by the other pages in alphabetical order. 
 +
-. Assign an icon to your project by adding an image (*.jpg, *.png, *.bmp) with the name icon before publishing your project for the first time.
+. Assign an icon to your project by adding an image (*.jpg, *.png, *.bmp) with the name icon (for example, *icon.png*) before publishing your project for the first time.
 . Create a *Resources* folder in the *Exchange-docs* folder to add extra resources to your documentation, such as images, or other types of files (size limit of 2MB).
 . To publish your project, right-click on your project in the *Package Explorer*, and click on *Anypoint Platform* > *Publish to Exchange*.
 . Log in to the platform if needed, fill in the required fields, and click *Finish*. 
