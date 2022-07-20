@@ -1,31 +1,35 @@
 = What’s New in Studio
 
-Anypoint Studio 7.12 introduces support for comprehensive publication of assets to Exchange and for multi-factor authentication (MFA) to Anypoint Platform.
+Anypoint Studio 7.13 introduces support for message flow visualization and management of DataWeave libraries through its UI.
 
-This version also improves the metadata edition and Design Center import experiences and adds a feature that enables you to comment and uncomment objects directly from the canvas.
+This version also improves the general user experience including new features such as the Exchange Comprehensive Publication.
 
-== Comprehensive Publication to Exchange
+== Explore and Debug Shared Flows
 
-When publishing an asset to Exchange, you can now add more information (such as tags, categories, names, descriptions, and documentation) to your assets directly from Studio.
+Studio now supports message flow visualization of a Mule configuration file loaded from a dependency, which enables exploring and debugging shared flows.
 
-== MFA Support
+image::explore-and-debug-shared-flows.png[Alt text:"A Mule Configuration file inside a dependency is highlighted in the Package Explorer and its flow displayed on the main panel."]
 
-You can now log in to Anypoint Platform using multi-factor authentication (MFA) from the Studio built-in browser.
+== Easy Management of DataWeave Libraries
 
-== Comment and Uncomment Objects Directly from the Canvas
+Users now have easier access to manage DataWeave libraries through the Studio UI.
 
-You can now comment and uncomment flows and components directly from the canvas:
+== New Exchange Comprehensive Publication Features
 
-. Right-click the flow or component that you want to comment or uncomment.
-. Select *Toggle Comment*.
-+
-image::toggle-comment.png["Toggle comment highlighted when right-clicking the flow"]
+The Exchange Comprehensive Publication features enhance the user experience in Studio when publishing assets to Exchange.
 
-== Improved Metadata Edition Experience
+* Custom fields are now available to add from the wizard.
+* Users can now create and edit Markdown files and deploy them along with the asset.
+* An icon can be added to new assets when publishing them to Exchange.
 
-Studio 7.12 improves the overall performance of the metadata edition experience by reducing background processing and by asynchronously propagating the metadata through the Flow Reference component.
+== Improved General User Experience
 
+Studio provides a better user experience by showing clearer information on the screen.
 
-== Improved Design Center Import Experience
+* Dependency version is displayed when adding it to a project.
+* When creating an API Project, the users get a notification that Studio creates the project in Design Center as well.
+* API Console warns the users to turn on the Mocking Service for testing their API.
 
-Studio 7.12 improves its import from Design Center experience by loading all REST APIs to import from Design Center simultaneously, enabling you to search your desired API specification much faster.
+== Support for Apple's Latest Versions
+
+Studio 7.13 now supports macOS 12.4 (Monterey) and Apple’s M1 processor.
