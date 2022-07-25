@@ -34,7 +34,7 @@ The selected Module is now part of your Mule Domain and it will show up in the M
 
 [NOTE]
 Modules inherited by a Mule domain show as such in the Mule Palette View. +
-You can't edit or delete Domain Modules from your Mule Application's palette .
+You can't edit or delete Domain Modules from your Mule Application's palette.
 
 == See Also
 
