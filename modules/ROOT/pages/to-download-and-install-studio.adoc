@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::to-download-and-install-studio.adoc, download-and-launch-anypoint-studio.adoc
+:page-aliases: 6.5.x@studio::to-download-and-install-studio.adoc, download-and-launch-anypoint-studio.adoc
 
 To download and install Anypoint Studio, follow the instructions based on your operating system:
 

@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::workflow-create-mapping-ui-studio.adoc
+:page-aliases: 6.5.x@studio::workflow-create-mapping-ui-studio.adoc
 
 . xref:input-output-structure-transformation-studio-task.adoc[To Define Input and Output Structure of a Transformation]
 Provide expected input and required output structures.

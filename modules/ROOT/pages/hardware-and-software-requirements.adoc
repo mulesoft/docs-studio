@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::hardware-and-software-requirements.adoc
+:page-aliases: 6.5.x@studio::hardware-and-software-requirements.adoc
 :keywords: mule, requirements, os, jdk, installation, jre
 
 This page lists the hardware, operating systems, Java, and other requirements for running MuleSoft products.

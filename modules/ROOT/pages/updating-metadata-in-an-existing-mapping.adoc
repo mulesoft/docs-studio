@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::updating-metadata-in-an-existing-mapping.adoc
+:page-aliases: 6.5.x@studio::updating-metadata-in-an-existing-mapping.adoc
 :keywords: datamapper
 
 [NOTE]

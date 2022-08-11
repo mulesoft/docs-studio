@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::exchange-integration.adoc
+:page-aliases: 6.5.x@studio::exchange-integration.adoc
 
 Anypoint Studio 6.4 allows you to connect to Exchange 2.0 to publish your project as a new asset.
 

@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::importing-and-exporting-in-studio.adoc
+:page-aliases: 6.5.x@studio::importing-and-exporting-in-studio.adoc
 :keywords: anypoint studio, import project, export project, share project, download project
 
 Anypoint Studio supports the ability to import and export your projects or various project elements. The sections that follow outline the procedures to import or export information pertaining to your Studio projects. Because Studio is Eclipse-based, keep in mind that among the import/export options, there are way to import or export projects that are not tailored for Mule projects, and which are not recommended for use.

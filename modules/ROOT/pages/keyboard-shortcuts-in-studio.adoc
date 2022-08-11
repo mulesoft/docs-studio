@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::keyboard-shortcuts-in-studio.adoc
+:page-aliases: 6.5.x@studio::keyboard-shortcuts-in-studio.adoc
 :keywords: studio, shortcuts, hot keys
 
 To help you be more efficient when using Anypoint Studio, there are a series of keyboard shortcuts you can use any time you're in the application to trigger specific actions.
