@@ -18,7 +18,7 @@ Note that the Visual Debugger is completely distinct from the Java Debugger cont
 
 == Assumptions
 
-This document assumes that you are familiar with the xref:index.adoc[Anypoint Studio Essentials], particularly xref:6@index.adoc#building-blocks[Studio Building Blocks]. Review the xref:basic-studio-tutorial.adoc[Getting Started with Mule Studio] chapter to learn more about developing with Mule ESB's graphical user interface.
+This document assumes that you are familiar with the xref:index.adoc[Anypoint Studio Essentials], particularly xref:index.adoc#building-blocks[Studio Building Blocks]. Review the xref:basic-studio-tutorial.adoc[Getting Started with Mule Studio] chapter to learn more about developing with Mule ESB's graphical user interface.
 
 == Prerequisites
 
