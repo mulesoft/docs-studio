@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::enabling-maven-support-for-a-studio-project.adoc
+:page-aliases: 6.x@studio::enabling-maven-support-for-a-studio-project.adoc
 :keywords: anypoint studio, maven
 
 You may wish to take a Mule project that was already created in Anypoint Studio and add http://maven.apache.org/[Maven] functionality to it. Maven can make your project more easily shareable with other developers as it takes care of its dependencies and helps automate your project's build process.

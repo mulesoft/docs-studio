@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::pojo-class-bindings-and-factory-classes.adoc
+:page-aliases: 6.x@studio::pojo-class-bindings-and-factory-classes.adoc
 :keywords: anypoint studio, esb, java classes, java bindings, factory classes
 
 Anypoint DataMapper allows you to map an interface or abstract class as a POJO. *Binding*, in this case, refers to linking your POJO (which can be an interface or abstract class) to a concrete class. Thus, when instantiating your POJO, Mule uses the concrete class you specified.

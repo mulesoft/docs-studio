@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::to-download-and-install-studio-lx.adoc
+:page-aliases: 6.x@studio::to-download-and-install-studio-lx.adoc
 
 == Prerequisites
 

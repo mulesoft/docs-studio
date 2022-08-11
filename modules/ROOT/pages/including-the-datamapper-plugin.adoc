@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::including-the-datamapper-plugin.adoc
+:page-aliases: 6.x@studio::including-the-datamapper-plugin.adoc
 :keywords: datamapper, migration
 
 DataMapper is deprecated as of Mule runtime 3.7.0 and superseded by the xref:transform-message-component-concept-studio.adoc[Transform Message Component].

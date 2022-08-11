@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::testing-connections.adoc
+:page-aliases: 6.x@studio::testing-connections.adoc
 
 This functionality enables you to test connections to external resources. As you model your application in Studio, you have the opportunity, when configuring connectors, to test the functionality of its connection to a Web service.
 

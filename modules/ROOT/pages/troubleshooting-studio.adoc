@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::troubleshooting-studio.adoc
+:page-aliases: 6.x@studio::troubleshooting-studio.adoc
 
 Anypoint Studio uses your system's default layout engine to render content in its Web UI. +
 If you are experiencing issues visualizing web content such as the Runtime Manager UI when deploying an application to Anypoint Platform, or Exchange when browsing assets for your project, you need to configure Anypoint Studio to use a *Mozilla/XULRunner* runtime environment as its underlying renderer for the Web UI.

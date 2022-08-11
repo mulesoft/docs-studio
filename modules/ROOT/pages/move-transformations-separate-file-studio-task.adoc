@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::move-transformations-separate-file-studio-task.adoc
+:page-aliases: 6.x@studio::move-transformations-separate-file-studio-task.adoc
 
 By default, the DataWeave code from a Transform Message component is expressed inline within your Mule XML file. You can instead keep each in a separate file ( `.dwl` ) and have your XML reference them. These files are packaged with your Mule application when built.
 

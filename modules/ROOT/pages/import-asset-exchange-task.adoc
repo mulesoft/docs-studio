@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::import-asset-exchange-task.adoc
+:page-aliases: 6.x@studio::import-asset-exchange-task.adoc
 
 . Click the Exchange icon in the Studio taskbar image:exchange-integration-adc09.png[].
 . Click Log In on the top right corner of your screen and provide your Anypoint Platform credentials.

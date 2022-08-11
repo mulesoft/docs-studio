@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::installing-extensions.adoc
+:page-aliases: 6.x@studio::installing-extensions.adoc
 :keywords: mule, esb, studio, extensions, install extensions, extend, download new software
 
 Beyond the out-of-the-box functionality included in the Studio and Mule distributions, various *plugins*, *modules*, *connectors*, and *runtimes for Studio* are made available by download.

@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::basic-studio-tutorial.adoc
+:page-aliases: 6.x@studio::basic-studio-tutorial.adoc
 :keywords: studio, tutorial, request, response, http, listener, config
 
 Walk through this tutorial to learn how to use Anypoint Studio to build a simple HTTP request-response application.
