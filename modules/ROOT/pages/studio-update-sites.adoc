@@ -48,7 +48,7 @@ Provides:
 
 Read more about xref:apikit::index.adoc[APIkit].
 |*API Gateway Update Site*
-|API Gateway runtime - For initial installation, see xref:6@install-studio-gw.adoc[Install API Gateway Runtime].
+|API Gateway runtime - For initial installation, see xref:install-studio-gw.adoc[Install API Gateway Runtime].
 
 `+http://studio.mulesoft.org/r4/api-gateway/+`
 |*Anypoint Enterprise Security*

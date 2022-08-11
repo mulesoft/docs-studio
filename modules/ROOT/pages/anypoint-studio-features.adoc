@@ -70,4 +70,4 @@ https://raml.org/[RAML] is a widely used standard for defining APIs through a ve
 
 == See Also
 
-* xref:6@setting-up-your-development-environment.adoc[Setting Up Your Development Environment]
+* xref:setting-up-your-development-environment.adoc[Setting Up Your Development Environment]
