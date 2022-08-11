@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::defining-metadata-using-edit-fields.adoc
+:page-aliases: 6.x@studio::defining-metadata-using-edit-fields.adoc
 :keywords: anypoint studio, datasense, metadata, meta data, query metadata, dsql, data sense query language
 
 When defining or updating input and output metadata for the different data types supported by Anypoint DataMapper, you use one of several very similar editors to create the structure and define fields, elements and attributes. Any of these editors is opened by selecting *Edit Structure*.

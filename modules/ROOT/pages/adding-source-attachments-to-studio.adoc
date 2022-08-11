@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::adding-source-attachments-to-studio.adoc
+:page-aliases: 6.x@studio::adding-source-attachments-to-studio.adoc
 :keywords: debug, source code, source files, importing sources, debugging, troubleshooting, source, stack trace
 
 Often when troubleshooting applications you may stumble upon the need to step through third party code, which often lacks source files. This is no different in Anypoint Studio regarding code living inside Mule in any of its flavors. This document will walk you through how this applies to Studio and how it works.

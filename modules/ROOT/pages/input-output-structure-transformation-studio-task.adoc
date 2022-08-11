@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::input-output-structure-transformation-studio-task.adoc
+:page-aliases: 6.x@studio::input-output-structure-transformation-studio-task.adoc
 
 To use the graphical view and construct mappings via drag and drop, the Transform Message component first needs information about what fields are available for dragging and dropping onto.
 

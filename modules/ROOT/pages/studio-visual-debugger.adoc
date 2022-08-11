@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::studio-visual-debugger.adoc
+:page-aliases: 6.x@studio::studio-visual-debugger.adoc
 :keywords: mule, esb, studio, anypoint studio, debug, debugger, break points, breakpoints
 
 Studio *Visual Debugger* allows you to run your application in Debug mode, stopping execution to check the contents of a message at previously-specified building blocks.

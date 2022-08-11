@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::datamapper-input-error-policy-for-bad-input-data.adoc
+:page-aliases: 6.x@studio::datamapper-input-error-policy-for-bad-input-data.adoc
 :keywords: datamapper
 
 [NOTE]

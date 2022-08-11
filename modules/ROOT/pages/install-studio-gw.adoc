@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::install-studio-gw.adoc
+:page-aliases: 6.x@studio::install-studio-gw.adoc
 :keywords: gateway, studio
 
 To develop an API using Anypoint Studio 6.0 for deployment to Anypoint Platform, you no longer need to install and configure API Gateway Runtime because Anypoint Studio with Mule 3.8.0 Runtime includes all of the API Gateway Runtime capabilities.

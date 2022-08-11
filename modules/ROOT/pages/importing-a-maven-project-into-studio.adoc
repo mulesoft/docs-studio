@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::importing-a-maven-project-into-studio.adoc
+:page-aliases: 6.x@studio::importing-a-maven-project-into-studio.adoc
 :keywords: anypoint studio, maven, import maven
 
 If you have a Mule project that was built using https://maven.apache.org/[Maven] outside Anypoint Studio, you can still import it into Studio and continue to work on it with the benefits of the Studio IDE.

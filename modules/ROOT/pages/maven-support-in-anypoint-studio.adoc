@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::maven-support-in-anypoint-studio.adoc
+:page-aliases: 6.x@studio::maven-support-in-anypoint-studio.adoc
 :keywords: studio, maven, esb, version control, dependencies, libraries
 
 The following sections describe how to enable or disable Maven support for your projects in Anypoint Studio.

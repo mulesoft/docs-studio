@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5.x@studio::to-download-and-install-studio-wx.adoc, jdk-requirement-lnx-workflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-workflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
+:page-aliases: 6.x@studio::to-download-and-install-studio-wx.adoc, jdk-requirement-lnx-workflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-workflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
 
 == Prerequisites
 
