@@ -2,10 +2,9 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-<<<<<<< HEAD
-=======
+
 :page-aliases: 6.5.x@studio::change-target-output-transformation-studio-task.adoc
->>>>>>> parent of a87cacc (Fix broken page-aliases)
+
 
 By default, the Transform Message component outputs to the message payload. You can change this target, so that the result of your transformation populates another part of the output such as a property or variable.
 
