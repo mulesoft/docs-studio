@@ -1,0 +1,65 @@
+= Enabling Maven Support for a Studio Project
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:page-aliases: 6.5.x@studio::enabling-maven-support-for-a-studio-project.adoc
+:keywords: anypoint studio, maven
+
+You may wish to take a Mule project that was already created in Anypoint Studio and add http://maven.apache.org/[Maven] functionality to it. Maven can make your project more easily shareable with other developers as it takes care of its dependencies and helps automate your project's build process.
+
+This page describes how to use Studio native support for the "mavenization" of a Mule project.
+
+== Mavenizing an Existing Mule Project
+
+If you have an existing Studio project that was created without Maven support enabled, you can still add Maven support to it by "Mavenizing" it.
+
+. Right-click the name of your project in the Package Explorer.
+. Select *Mule* > *Mavenize*.
++
+image::mule-mavenize-existing-project.png[]
++
+. Studio presents a confirmation dialog, warning that although Maven support can later be disabled, this does not reset your project's classpath. Click *Yes* to confirm.
++
+image::studio-mavenize-warning.png[Studio-mavenize-warning]
++
+. Studio creates a `*pom.xml*` file for your project. You can observe the progress in the console.
+. When the mavenization process is complete, the `pom.xml` file for your project appears in the Package Explorer underneath the `mule-project.xml` file.
++
+image::2-1.png[]
+
+== Running a Mavenized Project
+
+You can now run your project on the embedded server in Anypoint Studio either as a *Mule Application* or as a *Mule Application with Maven*.
+
+== Running Maven Life-Cycle Commands
+
+Studio includes a Maven Support view. You can add this to your workspace projects by selecting Window > Show View > Other..., then searching for Maven Support.
+
+[NOTE]
+--
+If you cannot find the _Maven Support_ view you need to install the _Maven Tools for Mule_. To do so, go to *Help* > *Install New Software*, select *Anypoint Addons Update Site* from the _Work with:_ scroll down menu and mark the *Maven Tools for Mule* option.
+
+After installation, restart Studio to see the newly added Maven support view.
+--
+
+In the Maven Support view, you can run all the Maven life-cycle events such as clean, validate, compile, test and package.
+
+Note: If you get any fatal errors running any of these Maven life-cycle commands, you can also run them from the command line in the Mule project's folder where the .pom file is located.
+
+For example, you can also package your Mule project from the command line by executing the following syntax:
+
+`mvn package`
+
+The maven-mule-plugin packages the project in a `.zip` file and places it in a /target folder.  Copy the `.zip` file to the `apps` folder of your standalone Mule instance to run the application.
+
+Note: You can run all the Maven commands from the command line, rather from inside Maven.
+
+== See Also
+
+* Learn how to migrate xref:importing-a-maven-project-into-studio.adoc[a Maven project into Studio].
+
+* Learn how to xref:building-a-mule-application-with-maven-in-studio.adoc[build new Maven projects] directly in Studio.
+
+* Learn how to create a xref:preparing-a-gitignore-file.adoc[gitignore] file if you want to implement Git.
+
+* Learn how to xref:3.8@mule-runtime::maven-tools-for-mule-esb.adoc[generate a Mavenized Mule application] from an archetype template.

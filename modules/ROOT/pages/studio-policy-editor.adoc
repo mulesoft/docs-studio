@@ -1,0 +1,229 @@
+= Studio Custom Policy Editor (Beta)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:page-aliases: 6.5.x@studio::studio-policy-editor.adoc
+
+Studio 6.1 (and newer versions of 6.x) grants you the ability to create a *policy project*, under which you can group your *custom API policies* and apply them to your local Studio deployments.
+This way, you can compose, debug, and test custom API policies within Studio, using an editor that fully supports and validates custom API policies design.
+
+[WARNING]
+--
+The custom policy editor is still in Beta and is available only for Enterprise Edition users of xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-release-notes.adoc[Anypoint Studio 6.1] or newer versions of 6.x.
+
+The Custom Policy Editor is not available for Anypoint Studio 7.x
+--
+
+== Assumptions
+
+This article assumes that you are familiar xref:2.x@api-manager::using-policies.adoc[using policies] in Anypoint Platform and that you are able to xref:1.x@api-manager::creating-a-policy-walkthrough.adoc[create] and xref:1.x@api-manager::applying-custom-policies.adoc[apply] custom policies. +
+It also assumes that you are familiar with xref:index.adoc#the-visual-editor[Studio's Visual Editor].
+
+== Usage
+
+[NOTE]
+--
+For this Beta release of the feature, Studio only supports policy creation and edition through XML.
+--
+
+In order to create a custom policy project:
+
+. Right click in your *Package explorer* and select, *New* and *API Custom Policy Project (Beta)*.
+. Give a Name to your Policy Project, and make sure to agree to the Beta trial license:
++
+image::studio-policy-editor-a01e0.png[]
++
+. When you create a Custom Policy Project for the first time, a default example loads containing:
+** a sample xref:1.x@api-manager::creating-a-policy-walkthrough.adoc#create-the-policy-configuration-file[policy configuration file]:
++
+[source,xml,linenums]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<policy xmlns="http://www.mulesoft.org/schema/mule/policy"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:spring="http://www.springframework.org/schema/beans"
+        xmlns:mule="http://www.mulesoft.org/schema/mule/core"
+        xmlns:mule-ss="http://www.mulesoft.org/schema/mule/spring-security"
+        xmlns:ss="http://www.springframework.org/schema/security"
+        xmlns:api-platform-gw="http://www.mulesoft.org/schema/mule/api-platform-gw"
+        xsi:schemaLocation="http://www.mulesoft.org/schema/mule/policy http://www.mulesoft.org/schema/mule/policy/current/mule-policy.xsd
+              http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+              http://www.mulesoft.org/schema/mule/spring-security http://www.mulesoft.org/schema/mule/spring-security/current/mule-spring-security.xsd
+              http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-current.xsd
+              http://www.mulesoft.org/schema/mule/api-platform-gw http://www.mulesoft.org/schema/mule/api-platform-gw/current/mule-api-platform-gw.xsd
+              http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+
+    <pointcut>
+        <api-platform-gw:api-pointcut apiName="{{ apiName }}" apiVersion="{{ apiVersionName }}"/>
+    </pointcut>
+
+    <before>
+        <mule:set-variable variableName="evaluated" value="{{ query }}" />
+
+        <mule:message-filter onUnaccepted="policyViolation">
+            <mule:expression-filter expression="#[!evaluated]" />
+        </mule:message-filter>
+    </before>
+
+    <after>
+        <mule:set-property propertyName="Custom-Header" value="Example Policy" />
+    </after>
+
+    <mule:processor-chain name="policyViolation">
+        <mule:logger message="The custom policy filtered the message #[message.getId()] based on a MEL query" level="DEBUG" />
+        <mule:set-property propertyName="http.status" value="403"/>
+        <mule:set-property propertyName="Content-Type" value="application/json"/>
+        <mule:set-payload value='{ "error" : "Custom Policy: {{ denied-message }}"}'/>
+    </mule:processor-chain>
+</policy>
+----
++
+[NOTE]
+--
+When designing a custom API in Studio, the `<before>` and `<after>` tags can't be left empty. +
+If your design does not require an after tag, don't declare it.
+--
++
+** a sample xref:1.x@api-manager::creating-a-policy-walkthrough.adoc#create-the-custom-policy-definition[policy definition file]:
++
+[source,yaml,linenums]
+----
+name: Custom Policy Example
+description: Specifies an MEL *query* expression which when evaluated against incoming messages and returning true, rejects the incoming message.
+category: Security
+standalone: true
+providedCharacteristics: [Message protection]
+requiredCharacteristics: []
+
+configuration:
+  - propertyName: query
+    name: MEL query
+    description: MEL query expression to filter incoming requests
+    type: expression
+    optional: false
+    defaultValue: "#[message.inboundProperties['http.method'] == 'POST']"
+  - propertyName: denied-message
+    name: Rejection message
+    description: A message to display when an incoming message is filtered
+    type: string
+    defaultValue: Access denied
+    optional: false
+----
+
+This sample custom policy basically blocks all POST requests being sent to your endpoint. +
+It asserts the MEL expression: `#[message.inboundProperties['http.method'] == 'POST']` against the message being received. If there's a match it prevents the action and returns an `Access denied` message.
+
+[NOTE]
+--
+You can have more than one configuration and definition file inside the same project. However, you can only apply one pair at a time.
+Your Custom Policy Project holds a `mule-policy.xml` file in which you can define an `.xml` and `.yaml` to apply.
+
+image::studio-policy-editor-f4c04.png[]
+--
+
+
+
+== Applying the Custom Policy in Your Local Deployment
+
+Custom policies are independent of the APIs to which you want to apply them. +
+You can _point_ a custom policy to one or several APIs by xref:1.x@api-manager::applying-custom-policies.adoc#customizing-a-pointcut[customizing the pointcut conditions] to:
+
+* Point the policy using the `{{ apiName }}` and `{{ apiVersionName }}` xref:1.x@api-manager::applying-custom-policies.adoc#referencing-properties[reference properties].
+* Set up a regex expression to match it with defined endpoints and resources.
+
+However, when designing a custom API in Studio, you need to have at least one local Mule project to deploy and apply the policy. +
+In order to test how the policy behaves when applied to an API, we are creating a simple Mule Project using a variation of the Leagues API example used in xref:1.x@api-manager::applying-custom-policies.adoc[Applying custom policies] page:
+
+. Download link:{attachmentsdir}/LeagueAPIexample.raml[this RAML API definition] and import it to Studio, so APIKit Studio plugin can automatically generate the flows for your Mule application.
+. Go to the "Global Elements" tab, and _Create_ a new API Autodiscovery element. Assign an API Name, Version and select the flow that contains your APIKit router component as your main flow reference.
++
+[NOTE]
+--
+The API Autodiscovery element is necessary if you want to leave the `apiName` and `apiVersionName` placeholder properties in your .yaml definition file. You can additionally replace the API name and version in your policy's configuration file.
+--
+//   Current bug:
+//   Manually add API Autodiscovery namespaces:
+//     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd
+//     http://www.mulesoft.org/schema/mule/api-platform-gw http://www.mulesoft.org/schema/mule/api-platform-gw/current/mule-api-platform-gw.xsd
++
+
+You can also apply this policy to an existing Mule Project in your Package Explorer, however, make sure to either configure a proper *API Autodiscovery* element, or manually point your custom policy pointcut to that specific API.
+
+Now that you have one Project to which apply this newly created policy, it's time to locally deploy everything together. +
+In order to do so:
+
+. Right click in your policy project, and select *Run as* and *Run Configurations...*
+. The run configuration screen for custom policies is shown:
++
+image::studio-policy-editor-8a38d.png[]
++
+. Select an API Custom Policy Project and a Mule Domain or Project to launch
++
+[NOTE]
+--
+If you configured an API Autodiscovery element for your projects, when you select the Mule Project, the apiName and apiVersionName properties are automatically updated.
+--
++
+. Click *Apply* and then *Run*
+
+If you inspect your console logs, depending on your logging settings, you might notice an INFO message letting you know that the policy was correctly applied:
+
+---
+com.mulesoft.module.policies.lifecycle.PolicyRegistryLifecycleManager: Policy policy.xml was correctly applied
+---
+
+[NOTE]
+--
+You can choose to select `Show generated API policy file` before running the policy project. This causes Studio to show the resulting policy XML file that's generated from the configuration file, using the properties defined in the definition file.
+--
+
+In order to test if the policy is being applied, open POSTMAN (or any other similar application to send requests) and try to POST anything to `0.0.0.0:8081/api/teams`, the response should be align to your configured policy:
+
+[source,json,linenums]
+----
+{
+  "error": "Custom Policy: Access denied"
+}
+----
+
+== Know Limitations
+
+Being a Beta release, the Custom Policy Editor for Studio has some limitations. Keep the following points in mind when designing and testing your custom policy:
+
+=== Limitations for the Configuration File
+
+* XML validation for sections within the policy configuration file (such as `{{#isWsdlEndpoint}} {{/isWsdlEndpoint}}`) is not supported. Policies configured using sections such as the one in the example below will run, but the editor won't validate them before running.
++
+[source,xml,linenums]
+----
+<mule:processor-chain name="{{policyId}}-build-response">
+       <mule:set-property propertyName="http.status" value="403"/>
+       {{#isWsdlEndpoint}}
+         <mule:set-property propertyName="Content-Type" value="text/xml"/>
+         <mule:set-payload value="#[soapFault('client', _invalidClientMessage)]"/>
+       {{/isWsdlEndpoint}}
+
+       {{^isWsdlEndpoint}}
+         <mule:set-property propertyName="Content-Type" value="application/json"/>
+         <mule:set-payload value="#[_invalidClientMessage]"/>
+       {{/isWsdlEndpoint}}
+   </mule:processor-chain>
+----
+
+=== Limitations for the Definition File
+
+* The only supported YAML types for the policy definition file are: `String`, `Boolean`, `Int`, `Expression` and `IpAddress`.
+* The `hasContract` boolean to define whether this custom policy has credentials defined to access other APIs or not, is currently not supported.
+* Studio does not validate the `gatewayCompatibility` attribute
+* `requiredCharacteristics` and `providedCharacteristics` fields are not validated from Studio
+* The `{{order}}` attribute from the YAML file is not supported. The order of the policy is overwritten by the other set in the *Run Configurations* screen.
+
+=== Limitations for Studio
+
+* Importing and exporting custom policies from API Platform is not supported
+* Importing custom policies from Exchange is not supported
+* As stated earlier, this feature is currently aimed for local testing. Currently it's not possible to run your custom policies against your APIs in API Manager and validate them there.
+* You can only configure one `ApiName` and `ApiVersion` attribute in the Run Configuration.
+* The Visual Debugger does not support debugging of custom policies.
+* There is no MUnit support
+* Maven support for Custom Policies is not supported
