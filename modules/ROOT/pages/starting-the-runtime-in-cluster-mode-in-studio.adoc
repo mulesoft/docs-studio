@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.x@studio::starting-the-runtime-in-cluster-mode-in-studio.adoc
+:page-aliases: 6.5@studio::starting-the-runtime-in-cluster-mode-in-studio.adoc
 :keywords: mule, deploy, launch, run, anypoint studio, cluster
 
 Anypoint Studio allows you to specify that the Mule runtime should start in cluster mode for specific applications. Running an application with this setting enabled causes it to run as if it were on a one-node cluster. This allows you to test for any discrepancies in the application's behavior between the clustered and the standalone modes.

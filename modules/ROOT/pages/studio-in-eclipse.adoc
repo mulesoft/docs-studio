@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.x@studio::studio-in-eclipse.adoc
+:page-aliases: 6.5@studio::studio-in-eclipse.adoc
 :keywords: mule, esb, anypoint studio, studio, eclipse plug-in
 
 As an Eclipse-based IDE, Anypoint Studio has adopted many of the functionalities Eclipse has to offer. However, you don't need to download a new IDE in order to take advantages of all that Studio provides. If you are already an Eclipse user, you can simply download and install *Studio as an Eclipse plug-in*.
@@ -25,7 +25,7 @@ The Anypoint Studio Eclipse plugin is accessible in the Java, Java EE, and STS d
 . Eclipse installs *Anypoint Studio*, then demands a restart of the application.
 . After Eclipse restarts, click *Window* > *Open Perspective* > *Other* > *Mule Design*.  +
 
-Keep in mind that it is not possible to install Anypoint Studio plugin for Studio versions 6.x and 7.x in the same Eclipse installation. +
+Keep in mind that it is not possible to install Anypoint Studio plugin for Studio versions 6.5 and 7.x in the same Eclipse installation. +
 
 == Available Software in the Update Site
 
