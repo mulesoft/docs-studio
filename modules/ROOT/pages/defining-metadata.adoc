@@ -1,0 +1,233 @@
+= Defining Metadata
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:page-aliases: 6.5.x@studio::defining-metadata.adoc
+:keywords: studio, anypoint, esb, transform, transformer, format, aggregate, rename, split, filter convert, xml, json, csv, pojo, java object, metadata, dataweave, data weave, datamapper, dwl, dfl, dw, output structure, input structure, map, mapping
+
+== Overview
+
+
+Several elements in your Mule flow automatically expose metadata about the expected input and output ( see xref:datasense-enabled-connectors.adoc[DataSense enabled connectors] for a list). For components that don't expose this metadata, you can easily define it manually, or via an example or schema.
+
+This metadata is handled by xref:datasense.adoc[DataSense] and exposed in design time on every component of your flows, helping you debug your application and know if the expected data structure differs from what's truly being sent. It also providing smart autocomplete options. To use the drag and drop UI of the xref:transform-message-component-concept-studio.adoc[Transform Message Component], you must define its input and output metadata.
+
+
+[TIP]
+====
+As an alternative to what's explained in this document, the xref:3.8@mule-runtime::http-request-connector.adoc[HTTP Request Connector] can reference a RAML file, and expose metadata based on the operations listed on this API definition.
+
+image::defining-metadata-66747.png[]
+
+Similarly, the xref:3.8@mule-runtime::web-service-consumer.adoc[Web Service consumer] can include a WSDL file to expose metadata based on this service description.
+====
+
+== Accessing the Metadata Editor
+
+You can reach the metadata editor screen in various ways:
+
+
+* On the *properties editor* of most components, you can select the  Metadata tab
++
+image::defining-metadata-66747.png[]
+
+* On a xref:3.8@mule-runtime::dataweave.adoc[*Transform Message Component*], you can right-click on the input or output and select *Set Metadata*. If nothing is set, you will see a *Define metadata* link:
++
+image::defining-metadata-5198c.png[]
++
+If your input metadata is missing variables, inbound properties, outbound properties, session variables or record variables that you know exist in the incoming mule message, you can manually add these too in the editor. Just right-click on one of these categories and select *New Property* or *New Variable*.
++
+image::defining-metadata-558dd.png[]
+
+* On the package explorer, right click on your project and then select *Mule* > *Manage Metadata types*.
+
+[TIP]
+For DataWeave, if you want to define metadata via the Mule project XML code, see xref:3.8@mule-runtime::dataweave-xml-reference.adoc#defining-metadata-via-xml[DataWeave XML Reference].
+
+
+
+== Metadata Tab Basic Usage
+
+
+The custom metadata tab is included in all message processors except connectors (which already contribute their own metadata to DataSense). The custom metadata tab allows you to define metadata types for message processors that do not automatically contribute their own types.
+
+
+The image below shows the *Metadata* tab on the properties editor of the xref:3.8@mule-runtime::file-connector.adoc[File endpoint].
+
+image::custommetadata1.png[]
+
+Clicking *Add Metadata* (outlined in the image above) opens a new set of fields, shown below.
+
+image::custommetadata2.png[]
+
+Clicking the dropdown menus allows you to select between the available metadata types.
+
+The defined metadata types are automatically recognized as inputs by the next message processor in the flow.
+
+You can define the following types of input and output metadata:
+
+* FlowVars
+* SessionVars
+* Message Inbound Properties
+* Message Outbound Properties
+* Message Payload
+
+NOTE: When editing metadata on an inbound endpoint, only outbound metadata is available.
+
+
+=== Adding Multiple Metadata Types
+
+To define more than one metadata type on the metadata tab, click *Add metadata*, one time for each metadata type you need to define. To remove a metadata type, click the *Remove* image:rem-icon.png[] icon next to the right of the editor.
+
+image::adding-more.png[adding_more]
+
+
+
+== Defining Metadata via the UI
+
+
+The metadata classes that you have previously defined in the current Mule project will be displayed for you to select one if appropriate:
+
+image::dw-define-type1.png[define type]
+
+
+You can also create a new metadata class, to do so:
+
+. Click the green plus sign at the top.
++
+image::custom-metadata-tab-c9f9e.png[]
+
+. Give the new type a _name_
+. Select a data format (eg: XML, JSON, CSV, etc)
+
++
+image::custom-metadata-tab-0e99d.png[]
++
+[NOTE]
+If the type of your data is undeclared or not understood it will default to 'application/java', a warning will be logged.
+
+. Depending on the selected option, there are different ways to define the data structure. With some formats, the structure can be inferred from an example, others require a schema, for some of these a builtin editor UI can be used to define this schema easily.
+
++
+[%header,cols="40a,20a,20a,20a"]
+|===
+|Format |Sample | Schema | Editor
+|JSON |X |X |
+|XML |X |X |
+|Java |X | |
+|Map | | |X
+|CSV |X | |X
+|Fixed Width |X | |X
+|Copybook |X |X |
+|Flat File | |X |
+|Simple | | |X
+|Excel | | |X
+|===
+
++
+[NOTE]
+The Excel type is currently in Beta.
+
+When defining the structure through the editor, you're implicitly creating a schema for that type. These schemas are stored in your project's `src/main/resources` folder, and you can open these and edit them freely on Anypoint Studio.
+
+After you create a new type, you can associate any new metadata you create with this new type to avoid having to define it again.
+
+== Fixed Width
+
+Copybook and Fixed Width are technically subsets of Flat File, and they actually all produce Flat File schemas. The Flat File type is recommended only for use cases that aren't covered by the other two.
+
+image::dw-flatfile-format.png[fixed-width]
+
+See reference docs for the schema structures required for xref:3.8@mule-runtime::dataweave-flat-file-schemas.adoc[Flat-File and EDI].
+
+On the fixed width editor, you can configure several properties of each of your fields through the *format* column of each. Click on the button to open a menu where you can select not only the type of the field, but also its alignment, decimals, if extra characters are to be filled with zeros or empty spaces, etc.
+
+image::dw-flatfile-format.png[fixed-width]
+
+
+
+[NOTE]
+====
+* Copybook type definitions actually use flat-file schemas, Migration from copybook to fixedwidth is supported with the exception of some options, xref:3.8@mule-runtime::dataweave-flat-file-schemas.adoc[see which ones].
+
+* On Fixed Width, the field property 'numbersign' is not configurable via the UI and the default is always used, however you can edit the schema directly if you wish to assign it a different value.
+====
+
+
+== Wrap Element in Collection
+
+
+For any type, you can click the *Wrap Element in a Collection* checkbox, at the bottom of the metadata editor window:
+
+image::defining-metadata-61ffc.png[]
+
+This sets the metadata as a list, where each element on the list is an instance of the structure you defined. So for example if you set your metadata as an XML structure, clicking this checkbox will make your metadata a list that contains N instances of that XML structure.
+
+== Reader and Writer Properties
+
+On the *Transform Message component* Some formats such as CSV also allow you to then set some additional parameters in the reader configuration or the writer-configuration, depending on if you want to set the input or the output.
+
+See xref:input-output-structure-transformation-studio-task.adoc[To Define Input and Output Structure of a Transformation]
+
+
+== Simple Example
+
+In this example, the application's flow takes an XML file as input, and passes it to a Transform Message component. This transformer automatically inherits the input fields from the File endpoint, even if no file has yet been received.
+
+This example uses the XML file displayed below as a sample. To complete the example, copy and save the code below into an XML file on your hard drive, or download it link:{attachmentsdir}/datasense-xml-sample.xml[here]. You'll need to supply it to the metadata editor.
+
+[source,xml,linenums]
+----
+<staff>
+    <employee>
+        <firstname>Annie</firstname>
+        <lastname>Point</lastname>
+    <gender>F</gender>
+    <phone>1234-12345</phone>
+    </employee>
+    <manager>
+        <firstname>Max</firstname>
+        <lastname>Mule</lastname>
+    <gender>M</gender>
+    <phone>321-4321</phone>
+    </manager>
+</staff>
+----
+
+. Create a new Mule project
+. Place a File endpoint as the inbound endpoint in the flow, configure it so that its 'path' points to a folder in your hard drive
+. Click the *Metadata* tab, then click the *Add Metadata* button. Studio displays the metadata editor, shown below.
+
+image::custom-metadata-tab-0e99d.png[]
+
+The field *Output: Payload* is automatically selected from the drop-down menu. Click the edit icon image:edit-icon.png[] to edit the field. Studio displays the *Define Type* window, shown below.
+
+image::define-type-window.png[define_type_window]
+
+. Click the green plus sign at the top.
++
+image::custom-metadata-tab-c9f9e.png[]
+
+. Give the new type a _name_ . In this case, we use `myXML`.
+. Click the dropdown menu next to *Type* and select a data format: XML
+. Click the drop-down menu that displays *Schema,* then select *Example*.
+
++
+image::custom-metadata-tab-1fb01.png[]
+
+. Click the ellipsis (*...*) button to use the filesystem browser to navigate to, then select the example XML file (provided above).
+. Once you have selected the file, click *Select*.
+
+. Now, place a xref:transform-message-component-concept-studio.adoc[Transform Message Component] in the flow after the File inbound endpoint. The input metadata fields for the DataWeave transformer are automatically defined, as shown below.
+
+image::custom-metadata-tab-bf539.png[]
+
+Message processors after the File endpoint inherit the defined metadata. In this example, as you added a metadata definition to the File endpoint's output, this metadata type is expected as an input by the DataWeaver transformer. After you define a transformation for this component to carry out, any other message processors that you place after it in the flow will expect the resulting structure from applying the transformation onto the metadata you defined in the endpoint.
+
+
+== See Also
+
+* xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave quickstart guide]
+* View complete example projects that use DataWeave in the https://anypoint.mulesoft.com/exchange/?search=dataweave[Anypoint Exchange]
+* xref:3.8@mule-runtime::dataweave-examples.adoc[DataWeave Examples]
+* xref:1.2@dataweave::dataweave-types.adoc[DataWeave Types]

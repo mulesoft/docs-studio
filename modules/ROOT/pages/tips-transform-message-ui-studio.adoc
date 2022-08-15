@@ -1,0 +1,23 @@
+= Tips for the Transform Message UI (Anypoint Studio)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:page-aliases: 6.5.x@studio::tips-transform-message-ui-studio.adoc
+
+* Before creating your mapping, configure everything else on the flow so that the input and output is known.
+
+* To filter what you can see from the input or output structures, click the magnifying glass icon image:tips-transform-message-ui-studio-69e11.png[] at the top of either section and then start typing the name of a field.
+
+* Select an element in the output pane to have its corresponding line in the DataWeave code highlighted.
+
+* If an input field is mapped to two or more output fields, you can right-click it and then select which of the multiple outputs you want to highlight in the DataWeave code.
+
+
+
+
+== See Also
+
+* xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
+* xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
+* xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart]
+* xref:3.8@mule-runtime::dataweave.adoc[DataWeave Language]

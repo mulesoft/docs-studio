@@ -2,6 +2,10 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+<<<<<<< HEAD
+=======
+:page-aliases: 6.5.x@studio::to-download-and-install-studio-ox.adoc
+>>>>>>> parent of a87cacc (Fix broken page-aliases)
 
 
 

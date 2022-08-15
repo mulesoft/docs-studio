@@ -2,6 +2,9 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+:page-aliases: 6.5.x@studio::studio-update-sites.adoc
+
 :keywords: mule, esb, studio, anypoint studio, update sites, updates, extensions, plug-ins, plugins, download
 
 Anypoint Studio uses update sites to update both itself and embedded versions of Mule runtime engine and MUnit.

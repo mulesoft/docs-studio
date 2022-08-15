@@ -2,7 +2,12 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+<<<<<<< HEAD
 :page-aliases: add-view-to-perspective.adoc
+=======
+:page-aliases: 6.5.x@studio::index.adoc
+:keywords: studio, IDE, development, eclipse, anypoint, visual editor, XML editor
+>>>>>>> parent of a87cacc (Fix broken page-aliases)
 
 Anypoint Studio is MuleSoft's Eclipse-based integration development environment for designing and testing Mule applications.
 

@@ -1,0 +1,96 @@
+= Using Perceptive Flow Design
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:page-aliases: 6.5.x@studio::using-perceptive-flow-design.adoc
+:keywords: datamapper
+
+Building upon the certainty that connection testing establishes, Mule takes one more step to make designing your application easier with *Perceptive Flow Design*. If you model a flow to include an Anypoint Connector, preceded or followed by a xref:3.8@mule-runtime::dataweave.adoc[Transform Message component], Mule uses the working connection to the resource to retrieve metadata about message payload and properties. Capturing the data type and structure that a resource employs, Mule feeds that data into the xref:3.8@mule-runtime::dataweave.adoc[Transform Message component] thereby informing the component of the expected input or output.  This functionality facilitates mapping of data from one data format and structure to another.
+
+== Prerequisites
+
+This document assumes that you are familiar with the xref:index.adoc[Visual Editor in Anypoint Studio] and the xref:3.8@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors] and xref:3.8@mule-runtime::dataweave.adoc[DataWeave] that you can use to create applications in Studio.  Further, this document references https://anypoint.mulesoft.com/exchange/?type=connector[Connectors] and xref:3.8@mule-runtime::global-elements.adoc[Global Elements.] Review xref:datasense.adoc[DataSense] to learn more about the overall DataSense functionality.
+
+== Designing with Metadata
+
+It is very common to need to connect to a SaaS provider within a Mule application. However, because each SaaS provider supports different data types and structures,  it is challenging to map data to or from them. Connecting with Salesforce, for example, involves more than just a simple plug and play connection– you must examine the data structure of Salesforce to determine the expected data input or output.  If Salesforce employed the same data structure as the raw messages in your application, you could simply map "username" to "username", but that is rarely the case, so usually direct mapping is impossible. For example, you may need to disassemble the "username" input field to map it to a "company_name" output field.
+
+To make mapping data easier, DataSense's perceptive functionality performs the following activities:
+
+* Tests connections to the SaaS providers to which you wish to connect
+* Retrieves metadata from the SaaS providers to acquire information about the data structure and format each employs
+* Supplies the sObject type for the data input or output for use by the Transform Message Component
+
+In other words, Mule intelligently examines the structure of the input or output data you intend to map, then feeds the correct input or output values into your Transform Message Component. Using Perceptive Flow Design, you don't need to figure out the data structures manually. Mule's automated connection testing and metadata retrieval gives you a higher level of certainty that your flow will run without errors.
+
+=== Limitations
+
+* Perceptive Flow Design is only available in xref:basic-studio-tutorial.adoc[Studio's Visual Editor].
+* To use Perceptive Flow Design, you must configure at least one Anypoint connector, test its connections, then insert a Transform Message component into your flow before or after the connector.
+* Perceptive Flow Design only functions with Anypoint connectors which support xref:testing-connections.adoc[connection testing]. See xref:datasense-enabled-connectors.adoc[the list].
+
+== Building a Perceptive Flow
+
+. Begin by building a flow which contains at least one connector which supports connection testing. For example, create a flow with a https://anypoint.mulesoft.com/exchange/?type=connector&search=salesforce[Salesforce Connector].
++
+image::perceptive-flow-1.png[perceptive+flow+1]
++
+. Configure the Salesforce connector, and its corresponding global connector, then test the connection to confirm communication. Refer to xref:testing-connections.adoc[Testing Connections] for details.
+. Once you have confirmed successful connection to Salesforce, insert a xref:3.8@mule-runtime::dataweave.adoc[Transform Message Component] before the connector on your canvas.
++
+image::perceptive-flow-2.png[perceptive+flow+2]
++
+. Open the Transform Message component's *Properties Editor*.
+. Having already retrieved details about data structure and format from Salesforce (because you have successfully connected via your global connector), Mule already presents the known structure that the *Output* must have.
+. Manually define the *Input* structure. You can do this by either:
+** clicking the *Define Metadata* link in the input section of the Transform Message component.
++
+[NOTE]
+See xref:input-output-structure-transformation-studio-task.adoc[To Define Input and Output Structure of a Transformation]
+
+** or by selecting the *Metadata* tab in the File endpoint. See xref:defining-metadata.adoc[Custom Metadata Tab]
+. A window opens where you can select a defined metadata or create a new one. Create a new one by clicking the green plus sign.
++
+image::using-perceptive-flow-design-c9f9e.png[]
+. Pick the type of your input by clicking on the dropdown menu.
+. Supply an example or a schema to represent the input structure. Some types allow you to build a schema via a built in editor UI.
+. In the Transform Message component, you now see the input fields you manually defined at on the left, and the output fields that DataSense retrieved from Salesforce on the right.
+. Drag and drop input fields across to the output fields to map and transform data format to Salesforce-friendly values. Note how the xref:3.8@mule-runtime::dataweave-language-introduction.adoc[DataWeave Code] on the right is written automatically to match every field you drag along.
++
+image::dw-perceptive-flow.png[dw_perceptive_flow]
++
+. Save, then continue to build your Mule application.
++
+[TIP]
+See xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart Guide] for more complete examples using the same features.
+
+
+
+
+
+== Clearing DataSense Metadata
+
+In some cases, you may need to clear the metadata gathered by DataSense – for example if the name of an attribute on the remote application has changed. You can clear the metadata for any DataSense-enabled connector that you have placed on the Studio canvas.
+
+There are two ways to clear metadata:
+
+* In the *Connection Explorer* pane, right-click the connector name, then select *Clear DataSense Metadata*. +
+
++
+image::conn-exp-pane.png[conn.exp.pane]
++
+
+* In the Studio canvas, right-click the connector, then select *Clear DataSense Metadata*. +
+
++
+image::studio-canv.png[studio.canv]
++
+
+[NOTE]
+The *Clear DataSense Metadata* option does not appear, or appears grayed-out, unless DataSense has already gathered metadata for the selected connector.
+
+Clicking *Clear DataSense Metadata* causes Studio to automatically clear the metadata. This operation preserves the connector's configuration, including any parameters such as operations, queries, etc. When you reconfigure your connector, DataSense again gathers metadata from the remote application.
+
+== See Also
+
+* Learn more about xref:3.8@mule-runtime::dataweave.adoc[DataWeave]

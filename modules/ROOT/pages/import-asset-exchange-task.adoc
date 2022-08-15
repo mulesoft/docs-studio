@@ -1,0 +1,45 @@
+= To Import an Asset from Exchange
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:page-aliases: 6.5.x@studio::import-asset-exchange-task.adoc
+
+. Click the Exchange icon in the Studio taskbar image:exchange-integration-adc09.png[].
+. Click Log In on the top right corner of your screen and provide your Anypoint Platform credentials.
+. Search for the asset you want to import and select it.
+* If your asset is a Template or an Example, select the version you want to import and click Open.
+* If your asset is an Anypoint Connector, select the version you want to import and click Install. +
+Additionally you can click Dependency Snippets to see the artifact's information.
+
+Anypoint Studio downloads and imports the asset automatically.
+
+[[import-asset-outside-studio]]
+== Manually Import an Asset from Exchange
+
+If you are having trouble accessing Exchange from Studio 6, use the following steps to import an asset from Exchange from outside Studio:
+
+. Access Anypoint Platform using any of the supported browsers. +
+See xref:general::browser-support.adoc[] for more information.
+. Select *Discover and Share* to access Exchange.
++
+image::discover-share-exchange.png[]
+. Search for the asset that you want to use.
++
+image::search-exchange.png[]
+. Select *Download*.
++
+image::download-exchange-asset.png[]
+. Open Studio and navigate to *Help* > *Install New Software*.
+. Click *Add...*.
+. Click *Archive…* and select your downloaded asset.
+. Enter a name for your asset and select *OK*.
+. Use the checkbox to select the asset and click *Next*.
+. Review the details of the item you selected and click *Next*.
+. Click *Accept* to terms and conditions of the product and click *Finish*.
+. Restart Studio to complete the installation.
+
+
+== See Also
+
+* xref:exchange-integration.adoc[Integration with Exchange 2.0]
+* xref:import-api-def-dc.adoc[To Import an API Definition from Design Center]
