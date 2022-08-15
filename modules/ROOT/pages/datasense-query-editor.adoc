@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.x@studio::datasense-query-editor.adoc
+:page-aliases: 6.5@studio::datasense-query-editor.adoc
 :keywords: anypoint studio, datasense, metadata, meta data, query metadata, dsql, data sense query language
 
 The *Query Editor* in Studio allows you to query and retrieve complex data structures that you can use when designing your application. Using xref:datasense.adoc[DataSense] on an Anypoint Connector which supports query functionality, the Query Editor can automatically acquire metadata from remote application, discovering which data types and fields are available to query. The Query Editor displays the available data types and fields in a graphical menu. You select the ones you want to query.

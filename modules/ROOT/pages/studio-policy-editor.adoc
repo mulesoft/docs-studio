@@ -2,14 +2,14 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.x@studio::studio-policy-editor.adoc
+:page-aliases: 6.5@studio::studio-policy-editor.adoc
 
-Studio 6.1 (and newer versions of 6.x) grants you the ability to create a *policy project*, under which you can group your *custom API policies* and apply them to your local Studio deployments.
+Studio 6.1 (and newer versions of 6.5) grants you the ability to create a *policy project*, under which you can group your *custom API policies* and apply them to your local Studio deployments.
 This way, you can compose, debug, and test custom API policies within Studio, using an editor that fully supports and validates custom API policies design.
 
 [WARNING]
 --
-The custom policy editor is still in Beta and is available only for Enterprise Edition users of xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-release-notes.adoc[Anypoint Studio 6.1] or newer versions of 6.x.
+The custom policy editor is still in Beta and is available only for Enterprise Edition users of xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-release-notes.adoc[Anypoint Studio 6.1] or newer versions of 6.5.
 
 The Custom Policy Editor is not available for Anypoint Studio 7.x
 --

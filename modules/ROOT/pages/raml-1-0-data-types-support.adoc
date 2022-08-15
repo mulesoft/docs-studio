@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.x@studio::raml-1-0-data-types-support.adoc
+:page-aliases: 6.5@studio::raml-1-0-data-types-support.adoc
 
 Datasense now supports https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md#raml-data-types[RAML 1.0 data types], and can parse this information to be displayed in the xref:using-the-datasense-explorer.adoc[DataSense explorer].
 
