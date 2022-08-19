@@ -49,7 +49,7 @@ Studio scaffolds your API specification. If you choose not to create flows out o
 
 You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
 
-NOTE: The API specification published as an asset in Exchange needs to be marked as stable to be listed in Studio when searching for available APIs. 
+NOTE: The API specification published as an asset in Exchange needs to be marked as *stable* to be listed in Studio when searching for available APIs. 
 
 == See Also
 
