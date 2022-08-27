@@ -41,7 +41,7 @@ You can only keep RAML API specifications as local copies within your project's 
 
 == API Specifications as API Specification Projects in Studio
 
-You can start xref:create-api-specification-studio.adoc[an API specification project in Studio and syncronize it with Design Center]. Studio uses version control system (VCS) capabilities to keep your API specifications syncronized between your Studio's workspace and Design Center.
+You can start xref:create-api-specification-studio.adoc[an API specification project in Studio and syncronize it with Design Center]. Studio uses version control system (VCS) capabilities to keep your API specifications syncronized between your Studio workspace and Design Center.
 
 You can also import an API specification from Design Center as a an API specification project with VCS enabled capabilities to edit your API specification using Studio and synchronize your changes with Design Center:
 
