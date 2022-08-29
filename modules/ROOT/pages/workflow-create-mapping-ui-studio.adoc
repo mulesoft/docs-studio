@@ -2,10 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-<<<<<<< HEAD
-=======
-:page-aliases: 6.5.x@studio::workflow-create-mapping-ui-studio.adoc
->>>>>>> parent of a87cacc (Fix broken page-aliases)
 
 . xref:input-output-structure-transformation-studio-task.adoc[Define Input and Output Structure of a Transformation]
 Provide expected input and required output structures.

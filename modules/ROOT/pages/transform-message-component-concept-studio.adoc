@@ -2,10 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-<<<<<<< HEAD
-=======
-:page-aliases: 6.5.x@studio::transform-message-component-concept-studio.adoc
->>>>>>> parent of a87cacc (Fix broken page-aliases)
 :keywords: studio, anypoint, esb, transform, transformer, format, aggregate, rename, split, filter convert, xml, json, csv, pojo, java object, metadata, dataweave, data weave, datamapper, dwl, dfl, dw, output structure, input structure, map, mapping
 
 The Transform Message component enables you to perform transformations over the input data it receives. You can explicitly write out a transformation in DataWeave language, or you can use the UI to build it through dragging and dropping elements.
