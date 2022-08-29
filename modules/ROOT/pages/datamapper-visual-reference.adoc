@@ -44,7 +44,7 @@ image:edit-icon.jpg[edit_icon] or the drop-down menu to the right of the *Type* 
 
 image::a1-before-mapping-csv.png[a1.before_mapping-CSV]
 
-Using this window, you define the input and output mapping properties, including data types and fields (for details, see xref:5@defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata]).
+Using this window, you define the input and output mapping properties, including data types and fields (for details, see xref:defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata]).
 
 . After defining the mapping properties, click the *Create mapping* button at the bottom of the editor. The properties editor becomes the graphical mapping editor, shown below, in which you can define your data mapping proper.
 +
@@ -89,7 +89,7 @@ Sidepanel view selector and config icons. Use these icons to:
 
 The image below describes the different icons, indicators and tools in DataMapper's graphical mapping editor. For a description of each item, consult the numbered table below the image.
 
-For details on defining your mapping, see xref:5@defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata].
+For details on defining your mapping, see xref:defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata].
 
 image::overview-graphical-graffle-small-cropped.jpg[]
 
