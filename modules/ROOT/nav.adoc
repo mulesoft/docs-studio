@@ -11,6 +11,10 @@
 * xref:update-workspace.adoc[Update Workspaces]
 * xref:import-and-export-preferences-studio.adoc[Export and Import Studio Preferences]
 
+* xref:install-mule-runtime-versions.adoc[Install Mule Runtime Engine in Studio]
+
+* xref:install-mule-runtime-versions.adoc[Install Mule Runtime Engine in Studio]
+
 * xref:import-api-specification.adoc[Import API Specifications]
  ** xref:import-api-specification-exchange.adoc[From Exchange]
  ** xref:import-api-specification-maven.adoc[From Maven]
