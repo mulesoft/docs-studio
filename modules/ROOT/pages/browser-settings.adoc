@@ -1,4 +1,4 @@
-= Configure Studio's Browser Settings
+= Configure Studio Browser Settings
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

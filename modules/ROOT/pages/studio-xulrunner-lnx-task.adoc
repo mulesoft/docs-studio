@@ -1,4 +1,4 @@
-= Configure XULRunner as Studio's Default Layout Engine (Linux)
+= Configure XULRunner as Studio Default Layout Engine (Linux)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -17,5 +17,5 @@ XULRunner binaries are located in the folder where you extracted the XULRunner p
 
 == See Also
 
-* xref:studio-xulrunner-wx-task.adoc[Configure XULRunner as Studio's Default Layout Engine (Windows)]
-* xref:studio-xulrunner-unx-task.adoc[Configure XULRunner as Studio's Default Layout Engine (MacOS)]
+* xref:studio-xulrunner-wx-task.adoc[Configure XULRunner as Studio Default Layout Engine (Windows)]
+* xref:studio-xulrunner-unx-task.adoc[Configure XULRunner as Studio Default Layout Engine (MacOS)]
