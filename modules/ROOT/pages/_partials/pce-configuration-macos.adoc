@@ -1,0 +1,97 @@
+// tag::intro[]
+
+Anypoint Studio 7.4 through 7.7 support native integration with Anypoint Platform Private Cloud Edition (PCE) versions 1.6 and 2.0 and 3.0
+
+Anypoint Studio 7.8 and later only support native integration with PCE version 3.0.0
+
+// end::intro[]
+
+// tag::pce-config[]
+
+= Configure Your PCE Certificates Into Studio
+
+Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
+
+. Extract your CA certificate using OpenSSL:
++
+[source, bash]
+--
+openssl s_client -connect <dsm-name>:443 -showcerts > <certificate_name>.pem
+--
++
+* Where `<dsm-name>` is the domain name of your PCE instance.
+* And `<certificate_name>.pem` is the name taht you define for the file to which you exported your certificate.
++
+For example:
++
+[source,bash]
+--
+openssl s_client -connect your.dsm.name.com:443 -showcerts > my-certifiate.pem
+--
+. Add your `.pem` file certificate to your Studio embedded Java cacerts keystore:
++
+[source,bash]
+--
+sudo keytool -import -trustcacerts -keystore <cacerts_path> \ //<1>
+-storepass <pass> \ //<2>
+-alias <alias> \ //<3>
+-import -file <certificate_name>.pem //<4>
+--
++
+<1> `cacerts_path` is your Anypoint Studio artifact. +
+For example:
+** If you are using Java 8: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/jre/lib/security/cacerts`.
+** If you are using Java 11: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/lib/security/cacerts`.
+<1> `pass` is your certificate's password. +
+If you don't provide a password for this certificate, the keytool generates the password `changeit` by default.
+<1> `alias` is the name you give to your certificate. For example, `my-certificate`.
+<1> `certificate name` is the path to the generated `.pem` file you saved in the previous step.
+. Add your certificate to your MacOS keystore and set it as always trusted:
++
+[source,bash]
+--
+security add-trusted-cert -r trustRoot -k "${HOME}/Library/Keychains/login.keychain-db" \
+<path-to-your-certificate-pem-file>
+--
++
+Optionally, you can use the KeyChainAccess UI:
++
+.. On your computer, open your `KeychainAccess.app`.
+.. In the left navigation bar, select *System*.
+.. Drop the `.pem` file that you generated in the previous task into the list of certificates.
+.. Double-click your imported `.pem` file and select *Always Trust* from the *When using this certificate* drop-down menu.
++
+image::studio::always-trust-certificate.png[]
+. In Studio, open the preferences view. +
+Navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
+. Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
++
+image::studio::studio-anypoint-platform-settings.png[]
+. Select the *Use a Private Cloud Instance URL*.
+. Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
++
+image::studio::pce-properties.png[]
+. Click *Apply and Close*.
+. Restart Studio.
+
+// end::pce-config[]
+
+// tag::pce-user-config[]
+
+= Configure your PCE User Login
+
+The first time you configure your user's login, Studio asks you to confirm your PCE certificate:
+
+. Open the preferences view. +
+Either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
+. Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
++
+image::studio::preferences-authentication-add.png[]
+. Select *Yes* in the *Invalid Certificate* message that appears.
++
+image::studio::invalid-certificate-pce.png[]
+. Add your PCE credentials and sign-in.
+. Select *Apply and Close*.
+. Restart Studio.
+
+// end::pce-user-config[]

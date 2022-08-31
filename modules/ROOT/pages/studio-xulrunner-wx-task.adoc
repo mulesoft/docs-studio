@@ -1,11 +1,11 @@
-= Configure XULRunner as Studio's Default Layout Engine (Windows)
+= Configure XULRunner as Studio Default Layout Engine (Windows)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 . Download `XULRunner` (we recommend http://ftp.mozilla.org/pub/xulrunner/releases/24.0/runtimes/[v24.0]).
 . Unzip your package and install it.
-. Go to your Anypoint Studio's installation directory and open your `AnypointStudio.ini` file.
+. Go to your Anypoint Studio installation directory and open your `AnypointStudio.ini` file.
 . Add a `-Dorg.eclipse.swt.browser.XULRunnerPath=` variable with the full path to your XULRunner binaries:
 +
 ----
@@ -24,5 +24,5 @@ Additionally, if you are experiencing unexpected crashes when rendering web cont
 
 == See Also
 
-* xref:studio-xulrunner-lnx-task.adoc[Configure XULRunner as Studio's Default Layout Engine (Linux)]
-* xref:studio-xulrunner-unx-task.adoc[Configure XULRunner as Studio's Default Layout Engine (MacOS)]
+* xref:studio-xulrunner-lnx-task.adoc[Configure XULRunner as Studio Default Layout Engine (Linux)]
+* xref:studio-xulrunner-unx-task.adoc[Configure XULRunner as Studio Default Layout Engine (MacOS)]
