@@ -35,7 +35,7 @@ Studio 7.x supports only Mule 4.x projects, because the structure of the project
 
 If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
 
-. Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
+. Locate your `AnypointStudio.ini` file inside your Anypoint Studio installation directory.
 . Add the `-vm` option to point to your specific JDK installation path.
 +
 [source,text,linenums]
@@ -58,4 +58,4 @@ C:\Program Files\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
 
 == See Also
 
-* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio's Default Layout Engine (Windows)]
+* xref:studio-xulrunner-wx-task.adoc[Configuring XULRunner as Studio Default Layout Engine (Windows)]
