@@ -34,7 +34,7 @@ Compares your changes to the index version of the selected file.
 . image:add-to-index-icon-unstage.png[] *Add to Index* +
 Adds the selected file to your index to commit.
 . *Replace with HEAD Revision* +
-Discards uncommited changes to your file.
+Discards uncommitted changes to your file.
 . image:assume-unchanged-icon-unstage.png[] *Assume Unchanged* +
 Excludes the selected file from VCS management. +
 Use this option when you want to ignore a file that you want to change locally but not push to Design Center.
