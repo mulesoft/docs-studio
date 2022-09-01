@@ -9,67 +9,67 @@ The Git Staging view allows you to control the version control system (VCS) proc
 
 image::unstaged-changes-section.png[]
 
-<1> image:add-unstage-icons.png[] *Add selected files to the index* +
+[calloutlist]
+. image:add-unstage-icons.png[] *Add selected files to the index* +
 Adds the selected file to your index to commit.
-<1> image:add-all-unstage-icons.png[] *Add all files including not selected ones to the index* +
+. image:add-all-unstage-icons.png[] *Add all files including not selected ones to the index* +
 Adds all the modified files in your unstaged changes section to the index to commit.
-<1> image:present-unstage-icons.png[] *Presentation* +
+. image:present-unstage-icons.png[] *Presentation* +
 Changes the view for the unstaged and staged sections. Other views are:
 +
 * List view.
 * Tree view.
 * Compact Tree.
-<1> image:sort-by-state-unstage-icons.png[] *Sort by state* +
++
+. image:sort-by-state-unstage-icons.png[] *Sort by state* +
 Sorts the files in the unstaged section based on their state.
 
 image::unstaged-changes-section-right-click.png[]
 
-<1> image:open-working-tree-icon-unstage.png[] *Open Working Tree Version* +
+[calloutlist]
+. image:open-working-tree-icon-unstage.png[] *Open Working Tree Version* +
 Opens the selected file with your local changes.
-<1> image:compare-with-index-icon-unstage.png[] *Compare with Index* +
+. image:compare-with-index-icon-unstage.png[] *Compare with Index* +
 Compares your changes to the index version of the selected file.
-<1> image:add-to-index-icon-unstage.png[] *Add to Index* +
+. image:add-to-index-icon-unstage.png[] *Add to Index* +
 Adds the selected file to your index to commit.
-<1> *Replace with HEAD Revision* +
+. *Replace with HEAD Revision* +
 Discards uncommited changes to your file.
-<1> image:assume-unchanged-icon-unstage.png[] *Assume Unchanged* +
+. image:assume-unchanged-icon-unstage.png[] *Assume Unchanged* +
 Excludes the selected file from VCS management. +
 Use this option when you want to ignore a file that you want to change locally but not push to Design Center.
-<1> image:untrack-icon-unstage.png[] *Untrack* +
+. image:untrack-icon-unstage.png[] *Untrack* +
 //_TODO
 
 == Staged Changes section
 
 image::staged-changes-section.png[]
 
-<1> image:remove-stage-icons.png[] *Remove selected files from the index* +
+[calloutlist]
+. image:remove-stage-icons.png[] *Remove selected files from the index* +
 Removes the selected file from the the index.
-<1> image:remove-all-stage-icons.png[] *Remove all files including not selected ones from the index* +
+. image:remove-all-stage-icons.png[] *Remove all files including not selected ones from the index* +
 Removes all files in the staged section from the index.
 
 image::staged-changes-section-right-click.png[]
 
-<1> image:open-working-tree-icon-stage.png[] *Open working Tree Version* +
+[calloutlist]
+. image:open-working-tree-icon-stage.png[] *Open working Tree Version* +
 Opens the version of your file with your local changes.
-<1> image:compare-with-index-icon-stage.png[] *Compare with Working Tree* +
+. image:compare-with-index-icon-stage.png[] *Compare with Working Tree* +
 Compares your staged changes to the changes in your local copy.
-<1> image:remove-from-index-icon-stage.png[] *Remove from Index* +
+. image:remove-from-index-icon-stage.png[] *Remove from Index* +
 Removes the selected file from the the index.
-<1> *Replace with HEAD Revision* +
-Discards uncommited changes to your file.
+. *Replace with HEAD Revision* +
+Discards uncommitted changes to your file.
 
 == Commit Message section
 
 image::commit-message-section.png[]
 
-
-
-<1> image:amend-commit-message.png[] *Amend (Edit previous commit)* +
+[calloutlist]
+. image:amend-commit-message.png[] *Amend (Edit previous commit)* +
 Lets you change the commit message of your previous commit.
-<1> image:sign-off-by-commit-message.png[] *Add Signed-off-by* +
-<1> image:sign-commit-commit-message.png[] *Sign Commit* +
-<1> image:add-change-id-commit-message.png[] *Add Change-ID* +
-
-
-
-
+. image:sign-off-by-commit-message.png[] *Add Signed-off-by* +
+. image:sign-commit-commit-message.png[] *Sign Commit* +
+. image:add-change-id-commit-message.png[] *Add Change-ID* +
