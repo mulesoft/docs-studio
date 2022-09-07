@@ -20,8 +20,12 @@ image::pull-changes.png[]
 . Evaluate the conflicts flagged by git:
 +
 image::flagged-commit.png[]
-<1> Your local commit flagged as conflicting.
-<1> The commit made by another collaborator flagged as conflicting.
+
+[calloutlist]
+. Your local commit flagged as conflicting.
+. The commit made by another collaborator flagged as conflicting.
+
+[start=5]
 . Git flags the conflicting parts of the file in the API editor view:
 +
 image::resolve-marked-conflict.png[]
@@ -37,7 +41,7 @@ image::resolve-marked-conflict.png[]
 >>>>>>> branch 'add-flights-path' of https://anypoint.mulesoft.com/ //<2>
 ----
 <1> Everything between the characters `HEAD` and `=======` are your changes.
-<1> Everything between the characters `=======` and `branch ...` are the changes in Design Center conflicting with yours.
+<2> Everything between the characters `=======` and `branch ...` are the changes in Design Center conflicting with yours.
 +
 In this case, another collaborator changed the definition from:
 +
@@ -71,8 +75,12 @@ The conflict happens because git does not know which change to prioritize.
 . Remove the change you don't want to keep:
 +
 image::push-conflict-changes.png[]
-<1> Ensure that your changes remain in the file.
-<1> Add your changes to the index.
+
+[calloutlist]
+. Ensure that your changes remain in the file.
+. Add your changes to the index.
+
+[start=7]
 . Select *Commit and Push*.
 
 Your copies between Studio and Design Center are synchronized with your latest changes.
