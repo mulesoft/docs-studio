@@ -42,10 +42,10 @@ Bin\keytool -import -trustcacerts -keystore [cacerts_path] \ //<1>
 +
 <1> `cacerts_path` is your Anypoint Studio artifact. +
 For example: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/jre/lib/security/cacerts`
-<1> `pass` is your certificate's password. +
+<2> `pass` is your certificate's password. +
 If you don't provide a password for this certificate, the keytool generates the password `changeit` by default.
-<1> `alias` is the name you give to your certificate
-<1> `certificate name` is the path to the generated .pem file you saved in the previous step.
+<3> `alias` is the name you give to your certificate
+<4> `certificate name` is the path to the generated .pem file you saved in the previous step.
 . In Studio, open the preferences view. +
 Navigate to *Window* > *Preferences...*.
 . Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
@@ -65,4 +65,3 @@ Navigate to *Anypoint Studio* > *Preferences...*.
 image::preferences-authentication-add.png[]
 . Add your PCE credentials and sign-in.
 . Select *Apply and Close*.
-

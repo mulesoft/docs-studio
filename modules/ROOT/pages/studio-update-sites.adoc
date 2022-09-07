@@ -6,7 +6,7 @@ endif::[]
 
 Anypoint Studio uses update sites to update both itself and embedded versions of Mule runtime engine and MUnit.
 
-== Accesing an Update Site
+== Accessing an Update Site
 
 . Navigate to *Help* > *Install New Software*.
 . In the *Work with* field, select one of the update sites.
