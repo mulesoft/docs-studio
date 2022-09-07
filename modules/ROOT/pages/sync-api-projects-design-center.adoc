@@ -44,10 +44,14 @@ image::switch-to-new-branch.png[]
 . In the *Create Branch* window, configure your new branch:
 +
 image::create-new-branch.png[]
-<1> In the *branch name* field, type the name of your new branch.
-<1> You can select the *Configure upstream for push and pull* option if you want to also pull changes from Design Center into your local branch. +
+
+[calloutlist]
+. In the *branch name* field, type the name of your new branch.
+. You can select the *Configure upstream for push and pull* option if you want to also pull changes from Design Center into your local branch. +
 When configuring this option, you must select the behavior you want git to have when it pulls the changes from Design Center.
-<1> Select the *Check out new branch* for git to switch to this new branch as soon as you create it.
+. Select the *Check out new branch* for git to switch to this new branch as soon as you create it.
+
+[start=3]
 . Select *Finish*.
 
 With a newly created branch, you can start committing your changes.
@@ -65,16 +69,18 @@ After applying your changes, add them to your index:
 
 image::compare-to-index-view.png[]
 
-<1> Use the *Add selected files to the index* icon to stage for commit the files that you selected.
-<1> Use the *Add all files including not selected ones to the index* icon to stage for commit all unstaged changes.
+[calloutlist]
+. Use the *Add selected files to the index* icon to stage for commit the files that you selected.
+. Use the *Add all files including not selected ones to the index* icon to stage for commit all unstaged changes.
 
 When you staged the changes that you want to commit, write a commit message in the *Commit Message* section:
 
 image::add-commit-message.png[]
 
-<1> Select *Commit and Push* to also push the change to Design Center. +
+[calloutlist]
+. Select *Commit and Push* to also push the change to Design Center. +
 See <<push-branch,Push Your Branch to Design Center>> below for more information.
-<1> Select *Commit* to add the commit to your local copy.
+. Select *Commit* to add the commit to your local copy.
 
 See xref:git-staging-view-reference.adoc[Git Staging View Reference] for more information about this view.
 
@@ -90,7 +96,6 @@ image::merge-menu.png[]
 image::merge-view.png[]
 . Select *Merge*.
 
-
 [[push-branch]]
 == Push Your Branch to Design Center
 
@@ -102,13 +107,17 @@ image::push-branch.png[]
 . Verify the changes that you are pushing to Design Center.
 +
 image::push-branch-view.png[]
-<1> The *Source* section shows the changes that you are pushing to Design Center.
-<1> The *Remote* section shows the coordinates to the remote you are pushing to.
-<1> The *Branch* section shows the local branch that you are pushing.
-<1> You can select the *Configure upstream for push and pull* option if you want to also pull changes from Design Center into your local branch. +
+
+[calloutlist]
+. The *Source* section shows the changes that you are pushing to Design Center.
+. The *Remote* section shows the coordinates to the remote you are pushing to.
+. The *Branch* section shows the local branch that you are pushing.
+. You can select the *Configure upstream for push and pull* option if you want to also pull changes from Design Center into your local branch. +
 When configuring this option, you must select the behavior you want git to have when it pulls the changes from Design Center.
-<1> Select the *Force overwrite branch in remote if it exists and has diverged* only if you know that your local changes must overwrite the changes in Design Center. +
+. Select the *Force overwrite branch in remote if it exists and has diverged* only if you know that your local changes must overwrite the changes in Design Center. +
 This option force pushes your changes to the branch in Design Center.
+
+[start=3]
 . Select *Preview* to see a summary of the changes you are pushing.
 . Select *Push*
 
