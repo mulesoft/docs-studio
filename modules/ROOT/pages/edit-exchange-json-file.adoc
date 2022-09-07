@@ -10,14 +10,15 @@ image::exchange-json-package-explorer.png[alt="Exchange.json file shown in the P
 . Use the editor to update the values of your `exchange.json` file:
 +
 image::exchange-json-studio-editor.png[alt="Exchange.json editor view"]
-+
-<1> You cannot edit the first item, *Name*, because this is the artifact name of your API specification asset.
-<1> Use the second item, *Main file*, to choose the main file of your API specification asset.
-<1> You cannot edit the third item, *Artifact ID*, because this is the artifact ID of your API specification asset.
-<1> You cannot edit the fourth item, *Group ID*, because this is the group ID of your API specification asset.
-<1> Use the fifth item, *Asset Version*, to update your API specification asset version.
-<1> Use the sixth item, *API Version*, to update the API version of your API specification asset.
-<1> Use the green plus icon to add a new dependency to your API specification asset.
+
+[calloutlist]
+. You cannot edit the first item, *Name*, because this is the artifact name of your API specification asset.
+. Use the second item, *Main file*, to choose the main file of your API specification asset.
+. You cannot edit the third item, *Artifact ID*, because this is the artifact ID of your API specification asset.
+. You cannot edit the fourth item, *Group ID*, because this is the group ID of your API specification asset.
+. Use the fifth item, *Asset Version*, to update your API specification asset version.
+. Use the sixth item, *API Version*, to update the API version of your API specification asset.
+. Use the green plus icon to add a new dependency to your API specification asset.
 
 Additionally, you can edit the XML of your `exchange.json` file by selecting the editor's *exchange.json* tab:
 

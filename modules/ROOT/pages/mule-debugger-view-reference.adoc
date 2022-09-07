@@ -7,35 +7,24 @@ This section contains a full description of the Mule Debugger View and all its a
 
 image::debugger-reference.png[]
 
-
-<1> *Terminate* +
+[calloutlist]
+. *Terminate* +
 Stop the running application.
-
-<1> *Evaluate DataWeave wxpression* +
+. *Evaluate DataWeave expression* +
 Click to evaluate a Dataweave expression.
-
-<1> *Next processor* +
+. *Next processor* +
 Runs the application and stops at the next processor in the flow, even if that processor has no breakpoint.
-
-<1> *Run to processor* +
+. *Run to processor* +
 Runs the application and stops at the selected processor, even if there is no breakpoint at that processor. Emulates the behavior of the `run to cursor` option in Java debuggers.
-
-<1> *Resume* +
+. *Resume* +
 Runs the application until the next breakpoint. If there are no other breakpoints in the execution, it runs until executing the entire flow.
-
-<1> *Start scheduler* +
+. *Start scheduler* +
 When configuring a scheduler processor in your Mule application, this option triggers the scheduler according to the frequency set in the scheduler's configuration.
-
-<1> *Stop scheduler* +
+. *Stop scheduler* +
 When configuring a scheduler processor in your Mule application, this option stops the initiated scheduler. This function only works if the Scheduler has been initiated using the `start scheduler` function.
-
-<1> *Add expression to watches* +
+. *Add expression to watches* +
 Adds the current DataWeave expression to the watch list.
-
-<1> *Remove expression to watches* +
+. *Remove expression to watches* +
 Removes the selected DataWeave expression from the watch list.
-
-<1> *Remove all expressions from watches* +
+. *Remove all expressions from watches* +
 Removes all DataWeave expression from your watch list.
-
-
