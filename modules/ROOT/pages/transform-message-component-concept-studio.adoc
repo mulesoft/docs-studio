@@ -10,9 +10,10 @@ You can work with two representations of the same transformation, and any change
 
 image::transform-message-component.png[]
 
-<1> Graphical View. +
+[calloutlist]
+. Graphical View. +
 Two tree views show the expected metadata structures of the input and output, mappings between these are represented through lines. These can be created through drag and drop.
-<1> Source Code View. +
+. Source Code View. +
 DataWeave code expresses the transformation in full depth, including functions that aggregate, normalize, group, join, partition, pivot and filter data.
 
 The Transform Message component leverages metadata from connectors, schemas and sample data. It offers you a preview of your output that is built on sample data and is updated in real time as you make changes to your transformation.

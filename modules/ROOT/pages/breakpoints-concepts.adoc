@@ -40,7 +40,7 @@ To add a conditional breakpoint:
 image::add-breakpoint.png[]
 . In the *Mule Breakpoints* view, select the breakpoint to which you want to add a condition, and select *Conditional* at the bottom:
 +
-image::set-confitional-breakpoint.png[]
+image::set-conditional-breakpoint.png[]
 . Enter the condition that must be met for the breakpoint to be activated. +
 For example, the following expression activates the breakpoint if the method used in the request is `GET`:
 +
