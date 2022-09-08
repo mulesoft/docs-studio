@@ -4,7 +4,7 @@ include::studio::partial$install-mule-runtime-versions.adoc[tag=intro]
 
 include::studio::partial$install-mule-runtime-versions.adoc[tag=prereq]
 
-include::studio::partial$install-mule-runtime-versions.adoc[tags=install-task;rest-install-task]
+include::studio::partial$install-mule-runtime-versions.adoc[tag=install-task]
 
 include::studio::partial$install-mule-runtime-versions.adoc[tag=update-mule-version-task]
 
