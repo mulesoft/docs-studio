@@ -2,10 +2,10 @@
 
 include::studio::partial$install-mule-runtime-versions.adoc[tag=intro]
 
-include::studio::partial$install-mule-runtime-versions.adoc[tag=prereq,leveloffset=+1]
+include::studio::partial$install-mule-runtime-versions.adoc[tag=prereq]
 
-include::studio::partial$install-mule-runtime-versions.adoc[tag=install-task,leveloffset=+1]
+include::studio::partial$install-mule-runtime-versions.adoc[tag=install-task]
 
-include::studio::partial$install-mule-runtime-versions.adoc[tag=update-mule-version-task,leveloffset=+1]
+include::studio::partial$install-mule-runtime-versions.adoc[tag=update-mule-version-task]
 
-include::studio::partial$install-mule-runtime-versions.adoc[tag=uninstall-mule-version-task,leveloffset=+1]
+include::studio::partial$install-mule-runtime-versions.adoc[tag=uninstall-mule-version-task]
