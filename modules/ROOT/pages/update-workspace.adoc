@@ -9,8 +9,9 @@ When Studio runs in a new workspace for the first time, it validates the configu
 
 image::update-workspaces.png[]
 
-<1> Studio lists all the open projects in your workspace that must be updated.
-<1> Selecting *Perform update* enables Studio to update the Mule Maven Plugin version in the `pom.xml` file of your projects listed in this dialog.
+[calloutlist]
+. Studio lists all the open projects in your workspace that must be updated.
+. Selecting *Perform update* enables Studio to update the Mule Maven Plugin version in the `pom.xml` file of your projects listed in this dialog.
 
 [[update-7.1-workspace]]
 == Update Workspaces Created With Studio 7.1.x and Earlier Versions
