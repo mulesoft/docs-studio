@@ -7,7 +7,7 @@ If you choose to use a different Mule version than the one bundled in your Studi
 // end::intro[]
 
 // tag::prereq[]
-= Prerequisites
+== Prerequisites
 
 * If you have strict firewall rules, ensure that you allow the following URLs:
 ** `+http://studio.mulesoft.org/+`
@@ -19,7 +19,7 @@ If you choose to use a different Mule version than the one bundled in your Studi
 // end::prereq[]
 
 // tag::install-task[]
-= Installing a Different Mule Version
+== Installing a Different Mule Version
 
 . In the top menu bar, select *Help* > *Install New Software.*
 . Select *Mule Runtimes for Anypoint Studio - +https://studio.mulesoft.org/s3/studio-runtimes/+*:
@@ -37,7 +37,7 @@ After installing a different Mule version, you can proceed to update your projec
 // end::install-task[]
 
 // tag::update-mule-version-task[]
-= Changing the Mule Version of an Existing Project
+== Changing the Mule Version of an Existing Project
 
 . In the Package Explorer view, right-click your project, and select *Mule* > *Open Mule Project Properties*:
 +
@@ -50,7 +50,7 @@ image::studio::select-project-runtime-version.png[]
 // end::update-mule-version-task[]
 
 // tag::uninstall-mule-version-task[]
-= Uninstall a Mule Version
+== Uninstall a Mule Version
 
 To uninstall a version of Mule:
 

@@ -8,7 +8,7 @@ Anypoint Studio 7.8 and later only support native integration with PCE version 3
 
 // tag::pce-config[]
 
-= Configure Your PCE Certificates Into Studio
+== Configure Your PCE Certificates Into Studio
 
 Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
 
@@ -20,13 +20,13 @@ openssl s_client -connect <dsm-name>:443 -showcerts > <certificate_name>.pem
 --
 +
 * Where `<dsm-name>` is the domain name of your PCE instance.
-* And `<certificate_name>.pem` is the name taht you define for the file to which you exported your certificate.
+* And `<certificate_name>.pem` is the name that you define for the file to which you exported your certificate.
 +
 For example:
 +
 [source,bash]
 --
-openssl s_client -connect your.dsm.name.com:443 -showcerts > my-certifiate.pem
+openssl s_client -connect your.dsm.name.com:443 -showcerts > my-certificate.pem
 --
 . Add your `.pem` file certificate to your Studio embedded Java cacerts keystore:
 +
@@ -42,10 +42,10 @@ sudo keytool -import -trustcacerts -keystore <cacerts_path> \ //<1>
 For example:
 ** If you are using Java 8: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/jre/lib/security/cacerts`.
 ** If you are using Java 11: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/lib/security/cacerts`.
-<1> `pass` is your certificate's password. +
+<2> `pass` is your certificate's password. +
 If you don't provide a password for this certificate, the keytool generates the password `changeit` by default.
-<1> `alias` is the name you give to your certificate. For example, `my-certificate`.
-<1> `certificate name` is the path to the generated `.pem` file you saved in the previous step.
+<3> `alias` is the name you give to your certificate. For example, `my-certificate`.
+<4> `certificate name` is the path to the generated `.pem` file you saved in the previous step.
 . Add your certificate to your MacOS keystore and set it as always trusted:
 +
 [source,bash]
@@ -78,7 +78,7 @@ image::studio::pce-properties.png[]
 
 // tag::pce-user-config[]
 
-= Configure your PCE User Login
+== Configure your PCE User Login
 
 The first time you configure your user's login, Studio asks you to confirm your PCE certificate:
 
