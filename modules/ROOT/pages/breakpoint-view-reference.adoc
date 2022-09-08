@@ -6,21 +6,22 @@ endif::[]
 The *Mule Breakpoints* view displays all breakpoints defined in all the Mule projects opened in Studio.
 
 // image::breakpoint-view-reference-d7362.png[breakpoint-view]
+
 image::breakpoints-view.png[]
 
-<1> *Mute breakpoints* +
+[calloutlist]
+. *Mute breakpoints* +
 Temporarily disables all breakpoints
-<1> *Disable error breakpoint* +
+. *Disable error breakpoint* +
 Enables error breakpoints +
 Any event processor in the application becomes a breakpoint if it throws an error.
-<1> *Remove all breakpoints* +
+. *Remove all breakpoints* +
 When selected, removes all breakpoints but doesn't remove the event processors under the breakpoint
-<1> *Remove breakpoint* +
+. *Remove breakpoint* +
 Removes the selected breakpoint
-<1> *Conditional* +
+. *Conditional* +
 Sets the condition to evaluate for the selected breakpoint +
 The condition must be a `boolean`.
-
 
 == See Also
 

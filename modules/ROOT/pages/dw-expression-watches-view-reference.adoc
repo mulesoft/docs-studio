@@ -7,15 +7,15 @@ The Studio debugger enables you to watch for selected DataWeave expressions in a
 
 image::expression-view-reference.png[]
 
-<1> *Expression field* +
+[calloutlist]
+. *Expression field* +
 Specify the DataWeave expression to watch for in the expression field.
-<1> *Clear* +
+. *Clear* +
 Clears all results from the expression evaluations.
-<1> *Evaluate* +
+. *Evaluate* +
 Evaluates the expression you specified in the expression field against the metadata of your flow.
-<1> *Add to watch* +
+. *Add to watch* +
 Adds the current DataWeave expression as an expression watch
-
 
 == See Also
 
