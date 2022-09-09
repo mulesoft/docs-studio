@@ -7,11 +7,11 @@ Studio uses the EGit plugin only for the VCS feature of editing API specificatio
 
 To start creating an API specification project in Studio, you must be logged in to Anypoint Platform. See xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
 
-. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *API Specificiation Project*.
+. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *API Specification Project*.
 . Select the tab of type of API specification project that you want to create:
 * To create a new API specification, select the *New API Specification* tab, and then select the type of API.
 +
-image::create-api-sepcification.png[]
+image::create-api-specification.png[]
 * To create a new API fragment, select the *New API Fragment* tab, and then select the type of API fragment.
 +
 image::create-api-fragment.png[]
@@ -22,7 +22,7 @@ Studio prompts you to switch to the API design perspective.
 
 In the API design perspective, use the API editor to write your API specification or API fragment. Additionally, you can use the API Console view to mock a live service so you can test your API specification.
 
-Studio uses VCS to track the development of your API specification project and keep it syncronized with Design Center.
+Studio uses VCS to track the development of your API specification project and keep it synchronized with Design Center.
 
 == Create Branches
 
