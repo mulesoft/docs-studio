@@ -17,7 +17,7 @@ If one of the update sites listed below does not show up in your Anypoint Studio
 
 . Go to *Help* > *Install New Software*.
 . Click the *Add...* button next to the work-with drop-down menu.
-. Type a Name to identiy the update site and, in Location type the URL of the update site.
+. Type a Name to identify the update site and, in Location type the URL of the update site.
 . Click OK
 
 // *Note*: None of the URLs listed below are accessible from a web browser. Only use them in the Anypoint Studio *Work with* field.

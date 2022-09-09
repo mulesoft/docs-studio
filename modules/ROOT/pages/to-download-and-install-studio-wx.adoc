@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: jdk-requirement-lnx-worflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-worflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
+:page-aliases: jdk-requirement-lnx-workflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-workflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
 
 == Prerequisites
 
@@ -33,7 +33,7 @@ Studio 7.x supports only Mule 4.x projects, because the structure of the project
 [[troubleshoot-install]]
 == Troubleshooting
 
-If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+If Anypoint Studio fails to load with a *An Error Has Occurred* message, you must configure it to point to your JDK installation as the default VM:
 
 . Locate your `AnypointStudio.ini` file inside your Anypoint Studio installation directory.
 . Add the `-vm` option to point to your specific JDK installation path.
