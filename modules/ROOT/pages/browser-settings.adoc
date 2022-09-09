@@ -11,8 +11,12 @@ This built-in browser is the default. However, if you log in to Anypoint Platfor
 . Select the type of default browser for Studio:
 +
 image::browser-configuration.png[]
-<1> *Built-in*: Uses the built-in browser.
-<2> *Native*: Uses the native browser of your operative system.
+
+[calloutlist]
+. *Built-in*: Uses the built-in browser.
+. *Native*: Uses the native browser of your operative system.
+
+[start=3]
 . Click *Preview* to verify the changed configuration. +
 
 Additionally, if you use Windows you must perform an additional configuration:

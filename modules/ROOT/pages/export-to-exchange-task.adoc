@@ -14,15 +14,19 @@ Additionally, you can click the *Add Account* button to use a new Anypoint Platf
 . Verify that the required identification and version information for your project is present and correct:
 +
 image::configure-asset-properties.png[alt=List of fields to configure before publishing an asset to Exchange.]
-<1> *Name*: The name of your API specification.
-<1> *Description*: (optional) A description of your API specification.
-<1> *Group ID* +
+
+[calloutlist]
+. *Name*: The name of your API specification.
+. *Description*: (optional) A description of your API specification.
+. *Group ID* +
 The group ID for your project is the organization ID of your Anypoint Platform organization.
-<1> *Artifact ID* +
+. *Artifact ID* +
 The artifact ID is the name of your project, minus its version. By default, Studio uses the artifact ID configured in your `pom.xml` file.
-<1> *Version*: The version of the asset you are publishing.
-<1> *Project type*: +
+. *Version*: The version of the asset you are publishing.
+. *Project type*: +
 If you are publishing a new version of an already published asset, you cannot change the project type.
+
+[start=5]
 . Select *Save updated project information to the pom.xml* if you want to update your `pom.xml` file with the data you just provided. +
 This option updates your local project information with the data you just configured. If you do not select this option, the project is deployed with the configured data, but your local project information is not updated.
 . Select *Next*.

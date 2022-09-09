@@ -15,8 +15,12 @@ image::export-preferences.png[]
 . Configure the preferences that you want to export:
 +
 image::export-preferences-configure.png[]
-<1> Select *Export all* to export all of your preferences, or select the specific configurations that you want to export.
-<1> Define a location and name for your exported preferences.
+
+[calloutlist]
+. Select *Export all* to export all of your preferences, or select the specific configurations that you want to export.
+. Define a location and name for your exported preferences.
+
+[start=5]
 . Select *Finish*.
 
 == Import Your Studio Configurations
@@ -30,6 +34,10 @@ image::import-preferences.png[]
 Configure the preferences that you want to import:
 +
 image::import-preferences-configure.png[]
-<1> Define the location for your preferences.
-<1> Select *Import all* to import all of your preferences, or select the specific configurations that you want to import.
+
+[calloutlist]
+. Define the location for your preferences.
+. Select *Import all* to import all of your preferences, or select the specific configurations that you want to import.
+
+[start=3]
 . Select *Finish*.

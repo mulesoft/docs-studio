@@ -19,5 +19,6 @@ Additionally, you can manage the API specifications in your project that are lin
 
 image::update-api-version.png[]
 
-<1> The blue dot indicates a new version of the API specification is available.
-<2> Click *Update version* and Studio will regenerate the flow based on the new version of the API specification.
+[calloutlist]
+. The blue dot indicates a new version of the API specification is available.
+. Click *Update version* and Studio will regenerate the flow based on the new version of the API specification.
