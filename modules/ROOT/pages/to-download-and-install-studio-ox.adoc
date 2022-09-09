@@ -19,7 +19,7 @@ Studio 7.x supports only Mule 4.x projects, because the structure of the project
 
 == Troubleshooting
 
-If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+If Anypoint Studio fails to load with a *An Error Has Occurred* message, you must configure it to point to your JDK installation as the default VM:
 
 . Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
 . Go to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
