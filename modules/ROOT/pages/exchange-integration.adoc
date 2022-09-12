@@ -11,6 +11,18 @@ The integration with Exchange 2.0 only works for Mavenized projects.
 
 By default, Studio 6.4 points to the Exchange 2.0 URL +https://anypoint.mulesoft.com/exchange2/+.
 
+== Before You Begin
+
+Because Exchange 2.0 provides its own repository and versioning implementation, every new asset that you publish to Exchange 2.0 gets a new Group ID, Asset ID, and Version (GAV) combination.
+
+If you are publishing an asset that already has a GAV combination configured, those Maven coordinates will be overwritten by the new GAV combination when publishing. To avoid messing up your dependencies, you have two options:
+
+* You can choose to move all your Mule assets to Exchange. Consider that this option requires you to update all your dependencies to reference your new Group ID.
+* If you prefer to preserve the GAV combination as it was originally assigned to your dependent assets, you can move your Mule applications with all their dependencies included in the project to Exchange.
+
+See this related https://help.mulesoft.com/s/article/Studio-changes-groupId-in-the-pom-when-publishing-to-Exchange[Help Center Article^] for more information.
+
+
 == To Publish to Exchange 2.0
 
 . In a Mavenized project, right click the project folder on your Package Explorer View.
