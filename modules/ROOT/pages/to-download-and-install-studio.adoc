@@ -10,5 +10,5 @@ To download and install Anypoint Studio, follow the instructions based on your o
 * xref:to-download-and-install-studio-ox.adoc[MacOS]
 * xref:to-download-and-install-studio-lx.adoc[Linux]
 
-Anypoint Studio 6.x only supports Mule 3.x projects. To use create Mule 4 projects you must use Studio 7.x. +
+Anypoint Studio 6.5 only supports Mule 3.x projects. To use create Mule 4 projects you must use Studio 7.x. +
 See xref:studio::to-download-and-install-studio.adoc[Downloading and Installing Studio 7] for more information.

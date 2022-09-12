@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: 6.5@studio::to-download-and-install-studio-wx.adoc, jdk-requirement-lnx-worflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-worflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
+:page-aliases: 6.5@studio::to-download-and-install-studio-wx.adoc, jdk-requirement-lnx-workflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-workflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
 
 == Prerequisites
 
@@ -31,9 +31,9 @@ After downloading and installing the JDK, ensure that your JDK installation is p
 [[troubleshoot-install]]
 == Troubleshooting
 
-If Anypoint Studio fails to load with a *An Error Has Occured* message, you must configure it to point to your JDK installation as the default VM:
+If Anypoint Studio fails to load with a *An Error Has Occurred* message, you must configure it to point to your JDK installation as the default VM:
 
-. Locate your `AnypointStudio.ini` file inside your Anypoint Studio's installation directory.
+. Locate your `AnypointStudio.ini` file inside your Anypoint Studio installation directory.
 . Add the `-vm` option to point to your specific JDK installation path.
 +
 [source,text,linenums]
@@ -53,4 +53,3 @@ If you encounter *Java was started but returned exit code=1* while starting Anyp
 -vm
 C:\Program Files\Java\jdk1.8.0_73\jre\bin\server\jvm.dll
 ----
-

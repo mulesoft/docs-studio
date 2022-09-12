@@ -12,7 +12,7 @@ As a part of a team of developers, you may be using a source code management (SC
 
 == Prerequisites
 
-This document assumes familiarity with https://git-scm.com/[git] as a software version control system, and that you are using xref:6@index.adoc[Anypoint Studio] to build a new application that you intend to manage using git.
+This document assumes familiarity with https://git-scm.com/[git] as a software version control system, and that you are using xref:index.adoc[Anypoint Studio] to build a new application that you intend to manage using git.
 
 == Configuring a gitignore File
 
@@ -36,7 +36,7 @@ A `gitignore` file generally includes several files and folders that are commonl
 
 [source,java,linenums]
 ----
-# Java defaults (https://github.com/github/gitignore/blob/master/Java.gitignore) #
+# Java defaults (https://github.com/github/gitignore/blob/main/Java.gitignore) #
 # --- #
 *.class
 # Package Files #
@@ -44,7 +44,7 @@ A `gitignore` file generally includes several files and folders that are commonl
 *.war
 *.ear
 # --- #
-# Eclipse-specific (https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore) #
+# Eclipse-specific (https://github.com/github/gitignore/blob/main/Global/Eclipse.gitignore) #
 # --- #
 *.pydevproject
 .metadata

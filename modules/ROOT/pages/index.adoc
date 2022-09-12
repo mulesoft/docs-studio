@@ -7,16 +7,26 @@ endif::[]
 
 Anypoint Studio is MuleSoft's Eclipse-based integration development environment for designing and testing Mule applications. You can deploy the application and run it on your Mule server.
 
-The same editor also allows you to edit API definition files (in https://raml.org/[RAML] and WSDL), and create domains that define xref:3.8@mule-runtime::shared-resources.adoc[shared resources].
+The same editor also allows you to edit RAML and WSDL API specification files and create domains that define shared resources.
 
-Anypoint Studio 6.5 requires Java 8 to run properly. However, depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
+== Requirements
 
-* Mule 3.9.x requires Studio running on Java 8.
-* Mule 3.5.x requires Studio running on Java 7.
-* Other supported runtime versions work fine with both Java 7 or 8.
+* Studio 6.5 doesn't use some features in Windows because Anypoint Platform no longer supports Internet Explorer (see xref:general::browser-support.adoc[Browser Support for Anypoint Platform]).
+** Authenticate with MFA.
+** Access Exchange web UI.
+** Deploy to CloudHub.
 
-[NOTE]
-Studio 6.5 is not compatible with Mule 4.
+Because Internet Explorer is no longer supported, other features might not work in the future.
+
+* Anypoint Studio 6 requires Java 8 to run properly. However, depending on which Mule runtime you want to use, you can configure different JDK versions within Anypoint Studio:
+
+** Mule 3.9.x requires Studio running on Java 8.
+** Mule 3.5.x requires Studio running on Java 7.
+** Other supported runtime versions work fine with both Java 7 or 8.
+
+* Studio 6 is not compatible with Mule 4.
+
+== Overview
 
 Anypoint Studio offers two parallel tabs that you can utilize to design and craft your applications:
 
@@ -38,7 +48,7 @@ To check your version of Anypoint Studio, go to *Anypoint Studio* > *About Anypo
 
 == The Visual Editor
 
-Studio's visual editor is divided into several parts:
+Studio visual editor is divided into several parts:
 
 . *Package Explorer*
 . *Canvas*
@@ -67,7 +77,7 @@ The *Console* area below the canvas contains the console for the embedded Mule s
 [[properties-editor]]
 == The Properties Editor
 
-Anypoint Studio's Visual Editor enables you to click a building block on the canvas to access its *Properties Editor* in a tab in the console (below).
+Anypoint Studio Visual Editor enables you to click a building block on the canvas to access its *Properties Editor* in a tab in the console (below).
 
 image::properties-editor.png[properties+editor]
 
@@ -83,7 +93,7 @@ If you are configuring a field that supports expressions and need help with synt
 image::auto-complete.png[auto_complete]
 
 [NOTE]
-The autocomplete functionality described here works in the *Visual Editor only*. Although Studio's XML tab does offer some autocomplete options, the suggestions in the XML editor are limited by Eclipse and are not based on DataSense or the Mule Expression Language.
+The autocomplete functionality described here works in the *Visual Editor only*. Although Studio XML tab does offer some autocomplete options, the suggestions in the XML editor are limited by Eclipse and are not based on DataSense or the Mule Expression Language.
 
 == Sample Mule App XML Code
 
@@ -133,7 +143,7 @@ Because Anypoint Studio leverages Eclipse, the Configuration XML editor incorpor
 include::{examplesdir}/anypoint-studio-essentials.xml[]
 ----
 
-The following sections provide a list of handy tips and tricks for using Studio's XML editor.
+The following sections provide a list of handy tips and tricks for using Studio XML editor.
 
 === Show Attribute Options
 

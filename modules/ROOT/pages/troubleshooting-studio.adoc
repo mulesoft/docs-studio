@@ -12,7 +12,7 @@ To configure this:
 . Download `XULRunner` (we recommend http://ftp.mozilla.org/pub/xulrunner/releases/24.0/runtimes/[v24.0]).
 . Unzip your package and install it.
 . Locate your `AnypointStudio.ini` file:
-.. On Windows: This file is located within your Anypoint Studio's installation directory.
+.. On Windows: This file is located within your Anypoint Studio installation directory.
 .. On Linux: `/usr/lib/anypointstudio/anypointstudio.ini`
 .. On MacOS: `Applications/AnypointStudio`:
 ... Right click on the AnypointStudio.app package

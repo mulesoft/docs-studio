@@ -60,7 +60,7 @@ image::36aboutanyptstudio.png[36AboutAnyptStudio]
 . On the Anypoint Studio Installation Details window, the Installed Software tab is open by default, listing all extensions and other software you have installed. Find the extension you are interested in and check the *Version* column to see the version number: +
 
 +
-image::36extensions.png[36Extensions]
+image::36extensions.png[36extensions]
 
 [discrete.view]
 === Standalone

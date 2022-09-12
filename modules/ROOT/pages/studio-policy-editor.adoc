@@ -4,12 +4,12 @@ include::_attributes.adoc[]
 endif::[]
 :page-aliases: 6.5@studio::studio-policy-editor.adoc
 
-Studio 6.1 (and newer versions of 6.x) grants you the ability to create a *policy project*, under which you can group your *custom API policies* and apply them to your local Studio deployments.
+Studio 6.1 (and newer versions of 6.5) grants you the ability to create a *policy project*, under which you can group your *custom API policies* and apply them to your local Studio deployments.
 This way, you can compose, debug, and test custom API policies within Studio, using an editor that fully supports and validates custom API policies design.
 
 [WARNING]
 --
-The custom policy editor is still in Beta and is available only for Enterprise Edition users of xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-release-notes.adoc[Anypoint Studio 6.1] or newer versions of 6.x.
+The custom policy editor is still in Beta and is available only for Enterprise Edition users of xref:release-notes::studio/anypoint-studio-6.1-with-3.8.1-runtime-release-notes.adoc[Anypoint Studio 6.1] or newer versions of 6.5.
 
 The Custom Policy Editor is not available for Anypoint Studio 7.x
 --
@@ -110,7 +110,7 @@ configuration:
     optional: false
 ----
 
-This sample custom policy bascially blocks all POST requests being sent to your endpoint. +
+This sample custom policy basically blocks all POST requests being sent to your endpoint. +
 It asserts the MEL expression: `#[message.inboundProperties['http.method'] == 'POST']` against the message being received. If there's a match it prevents the action and returns an `Access denied` message.
 
 [NOTE]
@@ -218,7 +218,7 @@ Being a Beta release, the Custom Policy Editor for Studio has some limitations. 
 * `requiredCharacteristics` and `providedCharacteristics` fields are not validated from Studio
 * The `{{order}}` attribute from the YAML file is not supported. The order of the policy is overwritten by the other set in the *Run Configurations* screen.
 
-=== Limititations for Studio
+=== Limitations for Studio
 
 * Importing and exporting custom policies from API Platform is not supported
 * Importing custom policies from Exchange is not supported

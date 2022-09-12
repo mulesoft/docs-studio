@@ -167,7 +167,7 @@ Finally, for the API definition, you can define `get` and `post` methods for bot
               }
 ----
 
-If you download link:{attachmentsdir}/contacts.raml[this RAML definition example], import it into Studio, add logger processor at any of the generated flows and inspect the input displayed by the *DatasSnse explorer*, you can see the metadata populated considering al the types definition and inheritance.
+If you download link:{attachmentsdir}/contacts.raml[this RAML definition example], import it into Studio, add logger processor at any of the generated flows and inspect the input displayed by the *DataSense Explorer*, you can see the metadata populated considering al the types definition and inheritance.
 
 This is how it looks when inspecting the `GET` method for the `/companies` resource:
 
