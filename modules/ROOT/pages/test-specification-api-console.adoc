@@ -28,7 +28,6 @@ Your expanded API Console view shows the mocking service to the right of the con
 * Use *Query Parameters* if you need to add specific parameters to your request.
 . Click *Send* to send your test request.
 
-
 == See Also
 
 * xref:create-api-specification-studio.adoc[Create an API Specification Project in Studio].
