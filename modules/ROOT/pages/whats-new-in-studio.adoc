@@ -8,7 +8,7 @@ This version also improves the general user experience including new features su
 
 Studio now supports message flow visualization of a Mule configuration file loaded from a dependency, which enables exploring and debugging shared flows.
 
-image::explore-and-debug-shared-flows.png[Alt text:"A Mule Configuration file inside a dependency is highlighted in the Package Explorer and its flow displayed on the main panel."]
+image::explore-and-debug-shared-flows.png["A Mule Configuration file inside a dependency is highlighted in the Package Explorer and its flow displayed on the main panel."]
 
 == Easy Management of DataWeave Libraries
 
