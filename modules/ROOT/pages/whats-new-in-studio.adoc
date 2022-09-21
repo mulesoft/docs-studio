@@ -1,6 +1,6 @@
 = What’s New in Studio
 
-Anypoint Studio 7.14.0 introduces new features to enhance the users experience making the daily use of Studio easier, faster, and more agile. 
+Anypoint Studio 7.14.0 introduces new features to enhance the users' experience making the daily use of Studio easier, faster, and more agile. 
 
 == Improved Copy-Paste Experience
 
