@@ -12,9 +12,9 @@ Studio enables developers to deploy their applications to https://www.mulesoft.c
 
 == Project Creation Made Easier
 
-The on-screen information has been simplified and now users can choose the view of API implementation when creating a project from Studio preferences:
+The on-screen information is simplified:
 
-* The API implementation section is now collapsable.
+* The API implementation section is now collapsable, so you can choose whether to have this section collapsed by default when you create a project.
 * The API implementation tab layout is modified to get easier access to the most common options.
 
 image::api-implementation-collapsed.png["*API Implementation* section collapsed in the *New Mule Project* window."]
