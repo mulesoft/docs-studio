@@ -8,7 +8,7 @@ Users can now add a suffix to the copy-pasted Mule Palette elements and flows to
 
 == Deploy to CloudHub 2.0
 
-Aligned with the latest release, Studio allows developers to deploy their applications to https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration[CloudHub 2.0^], which offers a wide variety of shared services.
+Studio enables developers to deploy their applications to https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration[CloudHub 2.0^], which offers a wide variety of shared services.
 
 == Project Creation Made Easier
 
