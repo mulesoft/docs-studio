@@ -4,11 +4,11 @@ Anypoint Studio 7.14.0 introduces new features to enhance the users' experience 
 
 == Improved Copy-Paste Experience
 
-Now, users have the possibility to select if a suffix is added to the copy-pasted Mule Palette elements and to the flows to avoid having similar long names.
+Users can now add a suffix to the copy-pasted Mule Palette elements and flows to avoid having similar long names.
 
 == Deploy to CloudHub 2.0
 
-Aligned with the latest release, Studio allows developers to deploy their applications to https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration[CloudHub 2.0], which offers a wide variety of shared services.
+Aligned with the latest release, Studio allows developers to deploy their applications to https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration[CloudHub 2.0^], which offers a wide variety of shared services.
 
 == Project Creation Made Easier
 
@@ -21,7 +21,7 @@ image::api-implementation-collapsed.png["*API Implementation* section collapsed 
 
 == Increased Visibility and Readability
 
-In line up with accessibility initiatives, the color contrast in Studio is enhanced to improve its visibility and readability.
+Following accessibility initiatives, Studio has an enhanced color contrast to improve its visibility and readability.
 
 == Better Performance When Creating and Opening Projects
 
