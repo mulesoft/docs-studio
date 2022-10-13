@@ -1,35 +1,31 @@
 = What’s New in Studio
 
-Anypoint Studio 7.13 introduces support for message flow visualization and management of DataWeave libraries through its UI.
+Anypoint Studio 7.14.0 introduces new features to enhance the users' experience making the daily use of Studio easier, faster, and more agile. 
 
-This version also improves the general user experience including new features such as the Exchange Comprehensive Publication.
+== Improved Copy-Paste Experience
 
-== Explore and Debug Shared Flows
+Users can now add a suffix to the copy-pasted Mule Palette elements and flows to avoid having similar long names.
 
-Studio now supports message flow visualization of a Mule configuration file loaded from a dependency, which enables exploring and debugging shared flows.
+== Deploy to CloudHub 2.0
 
-image::explore-and-debug-shared-flows.png["A Mule Configuration file inside a dependency is highlighted in the Package Explorer and its flow displayed on the main panel."]
+Studio enables developers to deploy their applications to https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration[CloudHub 2.0^], which offers a wide variety of shared services.
 
-== Easy Management of DataWeave Libraries
+== Project Creation Made Easier
 
-Users now have easier access to manage DataWeave libraries through the Studio UI.
+The on-screen information is simplified:
 
-== New Exchange Comprehensive Publication Features
+* The API implementation section is now collapsable, so you can choose whether to have this section collapsed by default when you create a project.
+* The API implementation tab layout is modified to get easier access to the most common options.
 
-The Exchange Comprehensive Publication features enhance the user experience in Studio when publishing assets to Exchange.
+image::api-implementation-collapsed.png["*API Implementation* section collapsed in the *New Mule Project* window."]
 
-* Custom fields are now available to add from the wizard.
-* Users can now create and edit Markdown files and deploy them along with the asset.
-* An icon can be added to new assets when publishing them to Exchange.
+== Increased Visibility and Readability
 
-== Improved General User Experience
+Following accessibility initiatives, Studio has an enhanced color contrast to improve its visibility and readability.
 
-Studio provides a better user experience by showing clearer information on the screen.
+== Better Performance When Creating and Opening Projects
 
-* Dependency version is displayed when adding it to a project.
-* When creating an API Project, the users get a notification that Studio creates the project in Design Center as well.
-* API Console warns the users to turn on the Mocking Service for testing their API.
+Studio architecture is modified to reduce the time to create and open projects, and to improve its overall performance:
 
-== Support for Apple's Latest Versions
-
-Studio 7.13 now supports macOS 12.4 (Monterey) and Apple’s M1 processor.
+* Less memory usage (~10%).
+* Less CPU usage (~5%).
