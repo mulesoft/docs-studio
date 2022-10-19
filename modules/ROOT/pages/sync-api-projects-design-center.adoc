@@ -40,9 +40,9 @@ include::partial$branch-commit-push-changes.adoc[tag=create-branch-vcs]
 
 include::partial$branch-commit-push-changes.adoc[tag=commit-to-branch-vcs]
 
-== Merge Your Changes into the Master Branch
+== Merge Your Changes into the Main Branch
 
-You can merge the changes made in your local branch to the master branch to push to Design Center:
+You can merge the changes made in your local branch to the main branch to push to Design Center:
 
 include::partial$branch-commit-push-changes.adoc[tag=merge-and-push-to-main-vcs]
 
