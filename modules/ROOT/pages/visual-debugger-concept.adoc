@@ -32,4 +32,3 @@ When debugging in Studio, the debugger listens for incoming TCP connections on `
 == See Also
 
 * xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
-
