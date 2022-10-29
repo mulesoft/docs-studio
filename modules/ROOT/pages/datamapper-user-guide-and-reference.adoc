@@ -59,9 +59,7 @@ The following examples show the use of DataMapper:
 [%header,cols="10a,90a"]
 |===
 |Document |Description
-|xref:3.5@mule-runtime::web-service-consumer-example.adoc[Web Service Consumer] |Turns JSON requests to XML and back. Also turns a flow variable into an outbound property.
-|xref:3.5@mule-runtime::salesforce-to-database-example.adoc[Salesforce to Database] |Renames fields in a Salesforce record selector. See the "Batch Step 1" section.
-|xref:3.5@mule-runtime::service-orchestration-and-choice-routing-example.adoc[Service Orchestration and Choice Routing] |Transforms a message to communicate with the Samsung web service API in the "samsungOrder Flow" section.
+|xref:web-service-consumer-connector::index.adoc[Web Service Consumer] |Turns JSON requests to XML and back. Also turns a flow variable into an outbound property.
 |https://docs.archive.mulesoft.com/mule-user-guide/v/3.4/xml-only-soap-web-service-example[XML-Only SOAP Web Service] |Maps data from responses to a healthcare database for viewing by a patient, and formats questions from patients for access to a patient information web service.
 |https://docs.archive.mulesoft.com/mule-user-guide/v/3.4/legacy-modernization-example[Legacy Modernization] |Maps data from a shipping order POJO into a CSV file in the "How it Works" section.
 |===

@@ -40,13 +40,13 @@ To set the Streaming parameter in your data mapping flow, follow these steps:
 
 === Handling Exceptions
 
-If an exception occurs in the mapping, DataMapper stops the streaming engine as soon as possible. To avoid undesired consequences in case of failure (such as inserting only part of a row into a database) use xref:3.7@mule-runtime::transactions-configuration-reference.adoc[Transactions].
+If an exception occurs in the mapping, DataMapper stops the streaming engine as soon as possible. To avoid undesired consequences in case of failure (such as inserting only part of a row into a database) use xref:3.9@mule-runtime::transactions-configuration-reference.adoc[Transactions].
 
 == Example
 
 This example illustrates the use of the Streaming feature in Anypoint DataMapper.
 
-An xref:3.7@mule-runtime::http-connector.adoc[HTTP Connector] receives a CSV file, then passes it to DataMapper. DataMapper maps the input data from CSV to POJO. A xref:3.7@mule-runtime::database-connector.adoc[Database Connector] inserts the data into an external database.  In this scenario, DataMapper and the Database connector work in parallel as a pipeline, further improving application performance.
+An xref:3.9@mule-runtime::http-connector.adoc[HTTP Connector] receives a CSV file, then passes it to DataMapper. DataMapper maps the input data from CSV to POJO. A xref:3.9@mule-runtime::database-connector.adoc[Database Connector] inserts the data into an external database.  In this scenario, DataMapper and the Database connector work in parallel as a pipeline, further improving application performance.
 
 Finally, the output connector receives the list of maps, then incorporates each item as a value in the SQL query for the external database.
 
