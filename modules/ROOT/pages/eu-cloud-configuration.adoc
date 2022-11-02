@@ -1,8 +1,9 @@
-include::studio::partial$eu-cloud-access.adoc[]
+= Access the EU Control Plane from Anypoint Studio
+
+include::reuse::partial$studio/eu-cloud-access.adoc[]
 
 == See Also
 
 * xref:import-api-specification.adoc[Import API Specifications]
 * xref:add-modules-in-studio-to.adoc[Add Modules to Your Project]
 * xref:deploy-mule-application-task.adoc[Deploy a Mule Application to CloudHub]
-
