@@ -7,9 +7,9 @@ endif::[]
 
 [NOTE]
 ====
-DataMapper continues to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
+DataMapper continues to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.9@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
 
-A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
+A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
 image::dw-migrator-script.png[dw migrator]
 
@@ -210,7 +210,7 @@ image::config-view.png[config_view]
 |1 |Display name input field. Defines the name for this DataMapper in the application flow as shown in the Studio canvas.
 |2 |Drop-down menu for referencing any of the mapping files (ending in .grf) available in the application. By default, the mapping file created for this specific DataMapper is referenced. Selecting another mapping file causes the DataMapper transformer to replicate the mapping in the referenced file.
 |3 |Operation selector drop-down menu. In most cases, only the default `Transform` operation is available.
-|4 |Input source input field. Here you can use xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language] to select an input source other than the message payload, such as message inbound properties, ID, etc.).
+|4 |Input source input field. Here you can use xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language] to select an input source other than the message payload, such as message inbound properties, ID, etc.).
 |5 |Output target input field. Here you can use an enricher expression to enrich the current message with the result of DataMapper processing.
 |6 |Return class input field. Enter the class name of the expected output.
 |7 |Streaming checkbox. Click to enable streaming on this DataMapper. For details on streaming, see xref:streaming-data-processing-with-datamapper.adoc[Streaming Data Processing with DataMapper].

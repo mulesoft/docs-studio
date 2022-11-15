@@ -92,7 +92,7 @@ image::maven-newjavaclass.png[Maven-newjavaclass]
 ----
 include::{examplesdir}/building-a-mule-application-with-maven-in-studio.java[]
 ----
-<1> This class extends FunctionalTestCase, which is Mule's implementation of an abstract JUnit test case. For more information, see xref:3.8@mule-runtime::functional-testing.adoc[Functional Testing].
+<1> This class extends FunctionalTestCase, which is Mule's implementation of an abstract JUnit test case. For more information, see xref:3.9@mule-runtime::functional-testing.adoc[Functional Testing].
 <2> Creates a new Mule client.
 <3> Sends the client the HTTP URL with the HTTP GET method.
 <4> Assert that the return is not null and is equal to "Hello World!".
@@ -172,11 +172,11 @@ This populates your local Maven repository (in Linux, typically found in $HOME/.
 
 == See Also
 
-* Read more about xref:3.8@mule-runtime::using-maven-with-mule.adoc[Using Maven with Mule].
+* Read more about xref:3.9@mule-runtime::using-maven-with-mule.adoc[Using Maven with Mule].
 
 * Learn how to xref:maven-support-in-anypoint-studio.adoc[configure your Studio Preferences to work with Maven].
 * Learn how to xref:enabling-maven-support-for-a-studio-project.adoc["mavenize" an existing Anypoint Studio project].
 
 * Learn how to xref:importing-a-maven-project-into-studio.adoc[import an existing Maven project into Anypoint Studio].
 
-* Access additional Maven xref:3.8@mule-runtime::maven-reference.adoc[reference] and xref:3.8@mule-runtime::configuring-maven-to-work-with-mule-esb.adoc[configuration] information.
+* Access additional Maven xref:3.9@mule-runtime::maven-reference.adoc[reference] and xref:3.9@mule-runtime::configuring-maven-to-work-with-mule-esb.adoc[configuration] information.

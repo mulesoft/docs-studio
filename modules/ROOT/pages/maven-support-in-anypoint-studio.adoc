@@ -50,4 +50,4 @@ If you disable *Maven support* in your Studio project _and_ delete the `pom.xml`
 
 * Follow along with xref:building-a-mule-application-with-maven-in-studio.adoc[Building a Mule Application with Maven in Studio] which demonstrates the end-to-end experience of using Maven and Studio to create, manage, and deploy a Mule project.
 * Learn more about xref:importing-a-maven-project-into-studio.adoc[importing Maven projects into Studio] or xref:enabling-maven-support-for-a-studio-project.adoc["mavenizing" existing Studio projects].
-* Using Maven outside of Studio? Refer to these instructions for xref:3.8@mule-runtime::configuring-maven-to-work-with-mule-esb.adoc[configuring your Maven installation] to point to the necessary repositories.
+* Using Maven outside of Studio? Refer to these instructions for xref:3.9@mule-runtime::configuring-maven-to-work-with-mule-esb.adoc[configuring your Maven installation] to point to the necessary repositories.

@@ -19,15 +19,15 @@ The Query Editor also allows you to:
 
 * Limit the maximum number of results
 
-Using the Query Editor in conjunction DataSense's xref:using-perceptive-flow-design.adoc[perceptive flow design] facilitates designing and building a SaaS integration flow. You create complex mappings by placing a xref:3.8@mule-runtime::dataweave.adoc[DataWeave transformer] before or after a connector in your flow.
+Using the Query Editor in conjunction DataSense's xref:using-perceptive-flow-design.adoc[perceptive flow design] facilitates designing and building a SaaS integration flow. You create complex mappings by placing a xref:3.9@mule-runtime::dataweave.adoc[DataWeave transformer] before or after a connector in your flow.
 
 == Assumptions
 
-This document assumes that you are familiar with the xref:index.adoc[Visual Editor in Anypoint Studio], as well as the xref:3.8@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors], in particular the Salesforce cloud connector used in the example queries. This document also references xref:3.8@mule-runtime::anypoint-connectors.adoc[Connectors], xref:3.8@mule-runtime::global-elements.adoc[Global Elements], and xref:datasense.adoc[DataSense]. To learn more about developing with Mule's graphical user interface, review xref:index.adoc[Getting Started with Anypoint Studio].
+This document assumes that you are familiar with the xref:index.adoc[Visual Editor in Anypoint Studio], as well as the xref:3.9@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors], in particular the Salesforce cloud connector used in the example queries. This document also references xref:3.9@mule-runtime::anypoint-connectors.adoc[Connectors], xref:3.9@mule-runtime::global-elements.adoc[Global Elements], and xref:datasense.adoc[DataSense]. To learn more about developing with Mule's graphical user interface, review xref:index.adoc[Getting Started with Anypoint Studio].
 
 == Using the Query Editor
 
-The table below lists the xref:3.8@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors] which support Query Editor functionality. (Additionally, you can use the Query Editor with any custom-built connector which supports the query functionality.)
+The table below lists the xref:3.9@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors] which support Query Editor functionality. (Additionally, you can use the Query Editor with any custom-built connector which supports the query functionality.)
 
 [%header%autowidth,width=80%]
 |===
@@ -64,7 +64,7 @@ The following characteristics and requirements of the DataSense and Native query
 
 ==== DataSense Query Language (DSQL)
 
-The Query Editor retrieves available object types and fields, then lists them in a menu for you to select and filter. You can build your query using a graphical user interface, shown below. Within the connector in your flow, you need to reference a xref:3.8@mule-runtime::global-elements.adoc[Global Element] with DataSense enabled.
+The Query Editor retrieves available object types and fields, then lists them in a menu for you to select and filter. You can build your query using a graphical user interface, shown below. Within the connector in your flow, you need to reference a xref:3.9@mule-runtime::global-elements.adoc[Global Element] with DataSense enabled.
 
 image::dslimage.png[DSLimage]
 
@@ -153,7 +153,7 @@ Enter the number that defines the offset (i.e. how many results to ignore before
 
 This section demonstrates how to use the Query Editor in the context of a use case example. In this case, the example application makes use of a a Salesforce connector to integrate with Salesforce.  To use the Query Builder in such an application, one must complete the following macro steps, outlined in more detail below.
 
-. Create a Salesforce xref:3.8@mule-runtime::global-elements.adoc[Global Element].
+. Create a Salesforce xref:3.9@mule-runtime::global-elements.adoc[Global Element].
 
 . Add a Salesforce connector to the flow; configure it to reference the global Salesforce element.
 

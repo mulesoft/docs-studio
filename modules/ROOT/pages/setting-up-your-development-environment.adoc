@@ -185,7 +185,7 @@ The usage of a repository manager is a best practice for any significant usage o
 Anypoint Studio comes bundled with the latest runtime for deploying and testing your applications. This server, however, is not meant for production as uptime restrictions apply. To deploy an application to your production environment you can either use:
 
 * The xref:runtime-manager::index.adoc[Runtime Manager], to deploy to a cloud or a local server/server-group/cluster
-* A xref:3.8@mule-runtime::downloading-and-starting-mule-esb.adoc[standalone local Mule server]
+* A xref:3.9@mule-runtime::downloading-and-starting-mule-esb.adoc[standalone local Mule server]
 * The xref:3.8@mule-management-console::index.adoc[Mule Management Console] to manage local servers (which will be deprecated in the future)
 
 

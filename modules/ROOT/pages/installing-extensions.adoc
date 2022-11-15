@@ -74,8 +74,8 @@ To identify an extension's version in Mule Standalone, access your `pom.xml` fil
 For more specific instructions for the following extensions:
 
 * xref:adding-community-runtime.adoc[Mule Community Runtime]
-* xref:3.8@mule-runtime::installing-anypoint-enterprise-security.adoc[Anypoint Enterprise Security]
-* xref:3.8@mule-runtime::installing-connectors.adoc[Anypoint Connectors]
+* xref:3.9@mule-runtime::installing-anypoint-enterprise-security.adoc[Anypoint Enterprise Security]
+* xref:3.9@mule-runtime::installing-connectors.adoc[Anypoint Connectors]
 * xref:importing-a-maven-project-into-studio.adoc[Importing a Maven Project into Studio]
 * xref:enabling-maven-support-for-a-studio-project.adoc[Enabling Maven Support for a Studio Project]
 

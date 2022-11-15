@@ -25,7 +25,7 @@ Get exposure to *metadata* at design-time through xref:datasense.adoc[DataSense]
 
 == Powerful Data Mapping
 
-Handle complex data mappings and transformations through the xref:transform-message-component-concept-studio.adoc[Transform Message Component], that leverages the powerful xref:3.8@mule-runtime::dataweave.adoc[DataWeave] language. This component allows you to create your transformations both through a simple drag and drop visual interface or by coding in DataWeave to unleash all of the language's potential.
+Handle complex data mappings and transformations through the xref:transform-message-component-concept-studio.adoc[Transform Message Component], that leverages the powerful xref:3.9@mule-runtime::dataweave.adoc[DataWeave] language. This component allows you to create your transformations both through a simple drag and drop visual interface or by coding in DataWeave to unleash all of the language's potential.
 
 
 == Debugging and Testing

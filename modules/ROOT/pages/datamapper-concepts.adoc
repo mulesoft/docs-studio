@@ -7,9 +7,9 @@ endif::[]
 
 [NOTE]
 ====
-DataMapper continues to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
+DataMapper continues to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.9@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
 
-A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
+A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
 image::dw-migrator-script.png[dw migrator]
 
@@ -158,7 +158,7 @@ image::mapping.jpg[]
 
 *Element mappings* pair an element or a collection of similar elements from the input schema with an element or collection of elements in the output.
 
-Once two elements are mapped, by default the input will be simply replicated into the output, but if you want you can define transformations that populate the output elements. If you want to define a transformation, you must write a xref:3.8@mule-runtime::mule-expression-language-mel.adoc[MEL expression] that computes the output value based on the values of input elements.
+Once two elements are mapped, by default the input will be simply replicated into the output, but if you want you can define transformations that populate the output elements. If you want to define a transformation, you must write a xref:3.9@mule-runtime::mule-expression-language-mel.adoc[MEL expression] that computes the output value based on the values of input elements.
 
 === Element Mapping Levels and Nested Lists
 
@@ -331,5 +331,5 @@ CTL2 was licensed from a third party for use in past versions of DataMapper, and
 
 * For a more detailed explanation about what each part of the GUI does, see xref:datamapper-visual-reference.adoc[DataMapper Visual Reference]
 
-* For complete information on MEL, see xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language]
+* For complete information on MEL, see xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language]
 * For complete information on CTL syntax and capabilities, including a language and functions reference, download the http://docs.mulesoft.com/downloads/studio/5/Mule%2BESB%2Band%2BStudio%2B-%2BDatamapper%2BCTL2%2BReference.pdf[Mule Datamapper CTL2 Reference].

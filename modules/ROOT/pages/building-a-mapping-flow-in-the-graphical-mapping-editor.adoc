@@ -7,9 +7,9 @@ endif::[]
 
 [NOTE]
 ====
-DataMapper will continue to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
+DataMapper will continue to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.9@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
 
-A xref:3.8@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right-click DataMapper, select *Migrate to DataWeave*, and follow the instructions.
+A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right-click DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
 image::dw-migrator-script.png[dw migrator]
 
@@ -213,7 +213,7 @@ For a more extensive example using rules, see the "Structured-to-Flat Data Mappi
 
 DataMapper input arguments enable you to include dynamic information (such as the value of Mule variables or functions) in your mappings.
 
-Arguments can reference any information obtainable through Mule Expression Language (MEL), including message and header properties,  filenames, etc. Consult xref:3.8@mule-runtime::non-mel-expressions-configuration-reference.adoc[Non-MEL Expressions Configuration Reference]  for details.
+Arguments can reference any information obtainable through Mule Expression Language (MEL), including message and header properties,  filenames, etc. Consult xref:3.9@mule-runtime::non-mel-expressions-configuration-reference.adoc[Non-MEL Expressions Configuration Reference]  for details.
 
 [NOTE]
 ====

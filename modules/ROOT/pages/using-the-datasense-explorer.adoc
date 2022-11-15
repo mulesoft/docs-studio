@@ -16,7 +16,7 @@ Use the DataSense Explorer at design-time to:
 
 == Prerequisites
 
-This document assumes you are familiar with Mule and the xref:index.adoc[Studio interface]. Further, it assumes you have read the xref:3.8@mule-runtime::mule-message-structure.adoc[Mule Message Structure document] to understand the contents of a Mule message. To increase your familiarity with Studio, consider reading xref:index.adoc[Anypoint Studio Essentials].
+This document assumes you are familiar with Mule and the xref:index.adoc[Studio interface]. Further, it assumes you have read the xref:3.9@mule-runtime::mule-message-structure.adoc[Mule Message Structure document] to understand the contents of a Mule message. To increase your familiarity with Studio, consider reading xref:index.adoc[Anypoint Studio Essentials].
 
 == Basic Anatomy
 
@@ -101,7 +101,7 @@ The table below tracks the message state as it arrives at each building block sh
 |Note that you can expand the timestamp variable to view all the components accessible via the #[server.dateTime] expression used for this variable.
 |image::using-the-datasense-explorer-ed69e.png[]
 |image:metadata6.png[]
-|The xref:3.8@mule-runtime::flow-reference-component-reference.adoc[flow reference] in the previous step sent the message to a new flow.
+|The xref:3.9@mule-runtime::flow-reference-component-reference.adoc[flow reference] in the previous step sent the message to a new flow.
 |image::using-the-datasense-explorer-fc448.png[]
 |image:metadata8.png[]
 |The Set Payload transformer in the previous step set the payload as a map with three elements. DataSense Explorer shows the map keys and types.
@@ -130,6 +130,6 @@ image::property-was-defined-in.png[property+was+defined+in]
 == See Also
 
 * xref:defining-metadata.adoc[Defining Metadata]
-* Learn more about the xref:3.8@mule-runtime::mule-message-structure.adoc[Mule message] and how to work with it.
+* Learn more about the xref:3.9@mule-runtime::mule-message-structure.adoc[Mule message] and how to work with it.
 * Need more information about the payload or metadata? Try running your application in xref:studio-visual-debugger.adoc[Debug mode] to inspect your message contents step by step at runtime.
-* Get familiar with xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language] so that you can access and manipulate the contents of your message and its environment.
+* Get familiar with xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule Expression Language] so that you can access and manipulate the contents of your message and its environment.

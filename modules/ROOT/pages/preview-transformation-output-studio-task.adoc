@@ -46,4 +46,4 @@ Note that samples defined in this pane work only within the *Transform Message* 
 
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
-* xref:3.8@mule-runtime::dataweave.adoc[DataWeave language]
+* xref:3.9@mule-runtime::dataweave.adoc[DataWeave language]

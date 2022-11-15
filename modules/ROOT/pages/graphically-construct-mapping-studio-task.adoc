@@ -43,5 +43,5 @@ You can add:
 
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
-* xref:3.8@mule-runtime::dataweave.adoc[DataWeave language]
-* xref:3.8@mule-runtime::dataweave-operators.adoc[DataWeave Operators]
+* xref:3.9@mule-runtime::dataweave.adoc[DataWeave language]
+* xref:3.9@mule-runtime::dataweave-operators.adoc[DataWeave Operators]

@@ -19,5 +19,5 @@ endif::[]
 
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
-* xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart]
-* xref:3.8@mule-runtime::dataweave.adoc[DataWeave Language]
+* xref:3.9@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart]
+* xref:3.9@mule-runtime::dataweave.adoc[DataWeave Language]
