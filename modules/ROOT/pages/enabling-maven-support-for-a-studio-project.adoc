@@ -62,4 +62,4 @@ Note: You can run all the Maven commands from the command line, rather from insi
 
 * Learn how to create a xref:preparing-a-gitignore-file.adoc[gitignore] file if you want to implement Git.
 
-* Learn how to xref:3.8@mule-runtime::maven-tools-for-mule-esb.adoc[generate a Mavenized Mule application] from an archetype template.
+* Learn how to xref:3.9@mule-runtime::maven-tools-for-mule-esb.adoc[generate a Mavenized Mule application] from an archetype template.

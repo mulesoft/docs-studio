@@ -17,7 +17,7 @@ This section contains the following pages:
 [NOTE]
 ====
 If you are working with Maven outside Studio, see
-xref:3.8@mule-runtime::using-maven-in-mule-esb.adoc[Using Maven in Mule ESB].
+xref:3.9@mule-runtime::using-maven-in-mule-esb.adoc[Using Maven in Mule ESB].
 
-For general basic details on Maven, see xref:3.8@mule-runtime::maven-reference.adoc[Maven Reference].
+For general basic details on Maven, see xref:3.9@mule-runtime::maven-reference.adoc[Maven Reference].
 ====

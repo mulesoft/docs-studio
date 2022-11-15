@@ -204,9 +204,9 @@ image::36loggermessagehelp.png[36LoggerMessageHelp]
 
 == See Also
 
-* Learn more about xref:3.8@mule-runtime::elements-in-a-mule-flow.adoc[Elements in a Mule Flow].
+* Learn more about xref:3.9@mule-runtime::elements-in-a-mule-flow.adoc[Elements in a Mule Flow].
 * xref:setting-up-your-development-environment.adoc[Development Environment Setup]
 * xref:basic-studio-tutorial.adoc[Basic Studio Tutorial]
 * xref:anypoint-studio-features.adoc[Studio Features]
-* Learn more about flows in xref:3.8@mule-runtime::mule-application-architecture.adoc[Mule Application Architecture].
-* Skip ahead to learn about xref:3.8@mule-runtime::mule-message-structure.adoc[Mule message structure].
+* Learn more about flows in xref:3.9@mule-runtime::mule-application-architecture.adoc[Mule Application Architecture].
+* Skip ahead to learn about xref:3.9@mule-runtime::mule-message-structure.adoc[Mule message structure].

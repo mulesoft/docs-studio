@@ -15,11 +15,11 @@ This metadata is handled by xref:datasense.adoc[DataSense] and exposed in design
 
 [TIP]
 ====
-As an alternative to what's explained in this document, the xref:3.8@mule-runtime::http-request-connector.adoc[HTTP Request Connector] can reference a RAML file, and expose metadata based on the operations listed on this API definition.
+As an alternative to what's explained in this document, the xref:3.9@mule-runtime::http-request-connector.adoc[HTTP Request Connector] can reference a RAML file, and expose metadata based on the operations listed on this API definition.
 
 image::defining-metadata-66747.png[]
 
-Similarly, the xref:3.8@mule-runtime::web-service-consumer.adoc[Web Service consumer] can include a WSDL file to expose metadata based on this service description.
+Similarly, the xref:3.9@mule-runtime::web-service-consumer.adoc[Web Service consumer] can include a WSDL file to expose metadata based on this service description.
 ====
 
 == Accessing the Metadata Editor
@@ -31,7 +31,7 @@ You can reach the metadata editor screen in various ways:
 +
 image::defining-metadata-66747.png[]
 
-* On a xref:3.8@mule-runtime::dataweave.adoc[*Transform Message Component*], you can right-click on the input or output and select *Set Metadata*. If nothing is set, you will see a *Define metadata* link:
+* On a xref:3.9@mule-runtime::dataweave.adoc[*Transform Message Component*], you can right-click on the input or output and select *Set Metadata*. If nothing is set, you will see a *Define metadata* link:
 +
 image::defining-metadata-5198c.png[]
 +
@@ -42,7 +42,7 @@ image::defining-metadata-558dd.png[]
 * On the package explorer, right click on your project and then select *Mule* > *Manage Metadata types*.
 
 [TIP]
-For DataWeave, if you want to define metadata via the Mule project XML code, see xref:3.8@mule-runtime::dataweave-xml-reference.adoc#defining-metadata-via-xml[DataWeave XML Reference].
+For DataWeave, if you want to define metadata via the Mule project XML code, see xref:3.9@mule-runtime::dataweave-xml-reference.adoc#defining-metadata-via-xml[DataWeave XML Reference].
 
 
 
@@ -52,7 +52,7 @@ For DataWeave, if you want to define metadata via the Mule project XML code, see
 The custom metadata tab is included in all message processors except connectors (which already contribute their own metadata to DataSense). The custom metadata tab allows you to define metadata types for message processors that do not automatically contribute their own types.
 
 
-The image below shows the *Metadata* tab on the properties editor of the xref:3.8@mule-runtime::file-connector.adoc[File endpoint].
+The image below shows the *Metadata* tab on the properties editor of the xref:3.9@mule-runtime::file-connector.adoc[File endpoint].
 
 image::custommetadata1.png[]
 
@@ -138,7 +138,7 @@ Copybook and Fixed Width are technically subsets of Flat File, and they actually
 
 image::dw-flatfile-format.png[fixed-width]
 
-See reference docs for the schema structures required for xref:3.8@mule-runtime::dataweave-flat-file-schemas.adoc[Flat-File and EDI].
+See reference docs for the schema structures required for xref:3.9@mule-runtime::dataweave-flat-file-schemas.adoc[Flat-File and EDI].
 
 On the fixed width editor, you can configure several properties of each of your fields through the *format* column of each. Click on the button to open a menu where you can select not only the type of the field, but also its alignment, decimals, if extra characters are to be filled with zeros or empty spaces, etc.
 
@@ -148,7 +148,7 @@ image::dw-flatfile-format.png[fixed-width]
 
 [NOTE]
 ====
-* Copybook type definitions actually use flat-file schemas, Migration from copybook to fixedwidth is supported with the exception of some options, xref:3.8@mule-runtime::dataweave-flat-file-schemas.adoc[see which ones].
+* Copybook type definitions actually use flat-file schemas, Migration from copybook to fixedwidth is supported with the exception of some options, xref:3.9@mule-runtime::dataweave-flat-file-schemas.adoc[see which ones].
 
 * On Fixed Width, the field property 'numbersign' is not configurable via the UI and the default is always used, however you can edit the schema directly if you wish to assign it a different value.
 ====
@@ -227,7 +227,7 @@ Message processors after the File endpoint inherit the defined metadata. In this
 
 == See Also
 
-* xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave quickstart guide]
+* xref:3.9@mule-runtime::dataweave-quickstart.adoc[DataWeave quickstart guide]
 * View complete example projects that use DataWeave in the https://anypoint.mulesoft.com/exchange/?search=dataweave[Anypoint Exchange]
-* xref:3.8@mule-runtime::dataweave-examples.adoc[DataWeave Examples]
+* xref:3.9@mule-runtime::dataweave-examples.adoc[DataWeave Examples]
 * xref:1.2@dataweave::dataweave-types.adoc[DataWeave Types]

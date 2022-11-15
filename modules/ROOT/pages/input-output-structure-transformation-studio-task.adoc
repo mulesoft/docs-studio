@@ -35,7 +35,7 @@ See xref:defining-metadata.adoc[Defining Metadata].
 
 == Define Data Structure Via XML
 
-See xref:3.8@mule-runtime::dataweave-xml-reference.adoc#defining-metadata-via-xml[DataWeave XML Reference].
+See xref:3.9@mule-runtime::dataweave-xml-reference.adoc#defining-metadata-via-xml[DataWeave XML Reference].
 
 
 == Reader Configuration
@@ -86,7 +86,7 @@ For a detailed reference of what properties can be set in the Writer Configurati
 
 * xref:workflow-create-mapping-ui-studio.adoc[Workflow: Create a Mapping]
 * xref:transform-message-component-concept-studio.adoc[About Transform Message Component]
-* xref:3.8@mule-runtime::dataweave.adoc[DataWeave Language]
+* xref:3.9@mule-runtime::dataweave.adoc[DataWeave Language]
 * xref:1.2@dataweave::dataweave-types.adoc[DataWeave Types]
 * xref:1.2@dataweave::dataweave-formats.adoc[DataWeave Formats]
-* xref:3.8@mule-runtime::dataweave-xml-reference.adoc#reader-configuration[DataWeave XML reference]
+* xref:3.9@mule-runtime::dataweave-xml-reference.adoc#reader-configuration[DataWeave XML reference]

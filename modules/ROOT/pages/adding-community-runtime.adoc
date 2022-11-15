@@ -67,7 +67,7 @@ If you are on a network with firewall restrictions, you may find that the Studio
 
 == See Also
 
-* Want to upgrade to Mule's Enterprise runtime? xref:3.8@mule-runtime::installing-an-enterprise-license.adoc[Install an Enterprise license].
+* Want to upgrade to Mule's Enterprise runtime? xref:3.9@mule-runtime::installing-an-enterprise-license.adoc[Install an Enterprise license].
 * Access a list of all the xref:studio-update-sites.adoc[update sites] available for your version of Anypoint Studio.
-* xref:3.8@mule-runtime::installing.adoc[Which version of Mule am I using?]
+* xref:3.9@mule-runtime::installing.adoc[Which version of Mule am I using?]
 * Read a http://blogs.mulesoft.com/dev/mule-dev/one-studio/[blog post] and/or release strategy explaining the Single Studio distribution.

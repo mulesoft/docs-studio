@@ -87,8 +87,8 @@ This section uses these building blocks:
 
 [cols="20,80"]
 |===
-|*xref:3.8@mule-runtime::http-connector.adoc[HTTP Connector]* |Allows your Mule application to connect to Web resources through the HTTP or HTTPS protocol. Find this in the Connectors section of the palette.
-|*xref:3.8@mule-runtime::set-payload-transformer-reference.adoc[Set Payload Transformer]* |Modifies your payload into a "Hello, World" message. Find this in the Transformers section of the palette.
+|*xref:3.9@mule-runtime::http-connector.adoc[HTTP Connector]* |Allows your Mule application to connect to Web resources through the HTTP or HTTPS protocol. Find this in the Connectors section of the palette.
+|*xref:3.9@mule-runtime::set-payload-transformer-reference.adoc[Set Payload Transformer]* |Modifies your payload into a "Hello, World" message. Find this in the Transformers section of the palette.
 |===
 
 [NOTE]
@@ -215,7 +215,7 @@ After running the application, the following default `Info: Basic Tutorial` Logg
 
 `2016-05-01 10:26:31,842 [[basictutorial].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Info: Basic Tutorial`
 
-More information on logging is at xref:3.8@mule-runtime::logging-in-mule.adoc[Logging in Mule] and xref:3.8@mule-runtime::logging.adoc[Logging].
+More information on logging is at xref:3.9@mule-runtime::logging-in-mule.adoc[Logging in Mule] and xref:3.9@mule-runtime::logging.adoc[Logging].
 
 == Working With Flows
 
@@ -253,8 +253,8 @@ At this point, your application simply returns the payload literal, Hello MuleSo
 * Create a dynamic, inbound message payload that appears in your browser when you send a request to the application.
 * For each request, write a file to a specified location that contains the dynamic inbound message.
 
-You need to add another message processor to your flow to direct Mule to write a payload to a xref:3.8@mule-runtime::file-connector.adoc[file].
-Use a Mule expression to log and use a xref:3.8@mule-runtime::mule-expression-language-reference.adoc[unique message ID]. The following procedure provides
+You need to add another message processor to your flow to direct Mule to write a payload to a xref:3.9@mule-runtime::file-connector.adoc[file].
+Use a Mule expression to log and use a xref:3.9@mule-runtime::mule-expression-language-reference.adoc[unique message ID]. The following procedure provides
 step-by-step instructions:
 
 . Click the existing *Logger* component in your flow to open the properties editor.
@@ -264,7 +264,7 @@ step-by-step instructions:
 +
 image::logger-for-path.png[logger+for+path]
 +
-The String `Current path is #[message.inboundProperties.'http.request.path']` is a xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule expression] that evaluates to the requested property of the message as it passes this point in the flow. Including this message here instructs Mule to log this information in the application log files, which can be useful in more complex use cases, when you need to track the payload at different points in your flow.
+The String `Current path is #[message.inboundProperties.'http.request.path']` is a xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule expression] that evaluates to the requested property of the message as it passes this point in the flow. Including this message here instructs Mule to log this information in the application log files, which can be useful in more complex use cases, when you need to track the payload at different points in your flow.
 +
 . Click the *Set Payload* building block to open its properties editor.
 . In the *Value* field, enter the following dynamic expression:
@@ -273,14 +273,14 @@ The String `Current path is #[message.inboundProperties.'http.request.path']` is
 +
 image::set-payload2.png[set+payload2]
 +
-The Value field supports xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule expressions], as well as literals such as Hello MuleSoft, which you used previously. Mule expressions are formatted using square brackets prefaced with a \#, `#[]`. If you enter a Mule expression here, Mule evaluates it at runtime and returns or uses the results for further processing.
+The Value field supports xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule expressions], as well as literals such as Hello MuleSoft, which you used previously. Mule expressions are formatted using square brackets prefaced with a \#, `#[]`. If you enter a Mule expression here, Mule evaluates it at runtime and returns or uses the results for further processing.
 +
 [NOTE]
 The *`message.inboundProperties.'http.request.path'`* and *`server.dateTime.format('MM/dd/yy')`* are both Mule expressions. Because you are entering the expressions within a larger Mule expression, the `#[]` syntax is not required around these individual expressions. Anything that you enter inside of the `#[]` syntax that is _not_ a Mule expression must be enclosed in quotation marks. Mule interprets an expression in quotation marks as a string.
 +
 . Slide the Logger component to the left of Set Payload transformer.
 +
-. Drag and drop a xref:3.8@mule-runtime::file-connector.adoc[*File*] endpoint onto your canvas immediately after the Set Payload transformer.
+. Drag and drop a xref:3.9@mule-runtime::file-connector.adoc[*File*] endpoint onto your canvas immediately after the Set Payload transformer.
 +
 image::add-file.png[add+file]
 +
@@ -328,7 +328,7 @@ INFO  2016-06-29 15:22:43,080 [[basictutorial].HTTP_Listener_Configuration.worke
 
 The following topics help you augment your knowledge of Studio:
 
-* Making decisions: xref:3.8@mule-runtime::choice-flow-control-reference.adoc[Choice Flow Control Reference]
-* Transforming data: xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart Guide]
-* Want to learn more about Mule Expression Language (MEL)? Check out the xref:3.8@mule-runtime::mule-expression-language-mel.adoc[complete reference].
-* Get a deeper explanation about the Mule message and anatomy of a Mule flow in xref:3.8@mule-runtime::mule-concepts.adoc[Mule Concepts].
+* Making decisions: xref:3.9@mule-runtime::choice-flow-control-reference.adoc[Choice Flow Control Reference]
+* Transforming data: xref:3.9@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart Guide]
+* Want to learn more about Mule Expression Language (MEL)? Check out the xref:3.9@mule-runtime::mule-expression-language-mel.adoc[complete reference].
+* Get a deeper explanation about the Mule message and anatomy of a Mule flow in xref:3.9@mule-runtime::mule-concepts.adoc[Mule Concepts].

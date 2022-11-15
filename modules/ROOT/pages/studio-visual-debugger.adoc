@@ -7,7 +7,7 @@ endif::[]
 
 Studio *Visual Debugger* allows you to run your application in Debug mode, stopping execution to check the contents of a message at previously-specified building blocks.
 
-To do this, you set a *breakpoint* at any building block in your flow that you wish to check or test (see image below). When you run your application in Debug mode, the application stops immediately after executing the building block with the breakpoint. Using the *Mule Debugger View*, you can browse through the contents of the message as it exists at that point in the flow, and evaluate xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule Expressions] against the message.
+To do this, you set a *breakpoint* at any building block in your flow that you wish to check or test (see image below). When you run your application in Debug mode, the application stops immediately after executing the building block with the breakpoint. Using the *Mule Debugger View*, you can browse through the contents of the message as it exists at that point in the flow, and evaluate xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule Expressions] against the message.
 
 [CAUTION]
 --
@@ -108,7 +108,7 @@ When a message arrives at the first breakpoint, the *Mule Debugger View* display
 
 image::debug-view.png[debug+view]
 
-The left pane displays the message payload (in this case, an HTTP GET request received via an xref:3.8@mule-runtime::http-connector.adoc[HTTP Connector]). The right pane displays various metadata associated with the message:
+The left pane displays the message payload (in this case, an HTTP GET request received via an xref:3.9@mule-runtime::http-connector.adoc[HTTP Connector]). The right pane displays various metadata associated with the message:
 
 * *Inbound*: message information (payload and metadata) if the message is inbound or within Mule
 * *Variables*: active Mule variables at execution breakpoint
@@ -196,11 +196,11 @@ Linux and Windows:
 |image:resume-icon.png[resume.icon] |*resume -* Click to run the application until the next breakpoint, if any. | `F8`
 
 |16
-|image:start-poll-icon.png[start.poll.icon] |*Start Poll -*  When configuring a xref:3.8@mule-runtime::poll-reference.adoc[Poll Scope] in your Mule application, click the _Start poll_ button to start polling the content inside the scope according to the frequency set in the poll scope. To force the poll results without waiting the frequency set, you can click the _force poll_ button that becomes visible only when you are debugging a poll scope: +
+|image:start-poll-icon.png[start.poll.icon] |*Start Poll -*  When configuring a xref:3.9@mule-runtime::poll-reference.adoc[Poll Scope] in your Mule application, click the _Start poll_ button to start polling the content inside the scope according to the frequency set in the poll scope. To force the poll results without waiting the frequency set, you can click the _force poll_ button that becomes visible only when you are debugging a poll scope: +
 image:studio-visual-debugger-7fbdb.png[] . |
 
 |17
-|image:resume-poll-icon.png[resume.poll.icon] |*Stop Poll -*  When configuring a xref:3.8@mule-runtime::poll-reference.adoc[Poll Scope] in your Mule application, click the _Stop poll_ button to stop the initiated poll Scope. This function only works if the poll has been initiated using the _Start Poll_ button above. +
+|image:resume-poll-icon.png[resume.poll.icon] |*Stop Poll -*  When configuring a xref:3.9@mule-runtime::poll-reference.adoc[Poll Scope] in your Mule application, click the _Stop poll_ button to stop the initiated poll Scope. This function only works if the poll has been initiated using the _Start Poll_ button above. +
 |
 
 |===
@@ -270,7 +270,7 @@ image::selected-deselected-in-canvas.png[selected-deselected.in.canvas]
 
 ==== Configuring Conditional Breakpoints
 
-A conditional breakpoint is activated only if a user-defined condition evaluates to _true_ when Studio executes the building block with the breakpoint. You define the condition using a xref:3.8@mule-runtime::mule-expression-language-mel.adoc[Mule Expression].
+A conditional breakpoint is activated only if a user-defined condition evaluates to _true_ when Studio executes the building block with the breakpoint. You define the condition using a xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule Expression].
 
 . Click the breakpoint in the *Mule Breakpoints View* to select it.
 . Check *Conditional* at the bottom of the Mule Breakpoints View.
@@ -323,7 +323,7 @@ You can debug an application on a remote Mule Server using *Remote Mule Applicat
 [NOTE]
 ====
 * When you start Mule in debug mode, _all_ applications that you launch in that server run in debug mode.
-* Remote debugging does not work with xref:3.8@mule-runtime::mule-high-availability-ha-clusters.adoc[clusters].
+* Remote debugging does not work with xref:3.9@mule-runtime::mule-high-availability-ha-clusters.adoc[clusters].
 ====
 === Starting Mule Server In Debug Mode
 
@@ -380,7 +380,7 @@ In the code shown above, replace the parameter number to reflect the number of a
 
 === Connecting to the Remote Mule Server
 
-Before accessing and debugging your application on a remote server, you must first xref:3.8@mule-management-console::deploying-applications.adoc[export and deploy] your application to the desired Mule server.
+Before accessing and debugging your application on a remote server, you must first export and deploy your application to the desired Mule server.
 
 . In Studio, click the arrow next to the debug icon (represented by a small insect), then select *Debug Configurations*. Studio displays the *Debug Configurations* window.
 . In the window's left pane, click *Remote Mule Application*.
@@ -414,4 +414,4 @@ Using this configuration, the Mule Application connects to the debugger using po
 * Read more about the Studio Visual Debugger in our https://blogs.mulesoft.com/dev/mule-dev/mule-studio-visual-flow-debugger-walk-through/[MuleSoft Blog].
 * Explore xref:datasense.adoc[DataSense], another tool to facilitate development of applications with fewer bugs at runtime
 * Use Studio, including Studio Visual Debugger, as an xref:studio-in-eclipse.adoc[Eclipse plugin].
-* Learn more about setting xref:3.8@mule-runtime::business-events.adoc[Business Events] in your Enterprise Edition Studio application.
+* Learn more about setting xref:3.9@mule-runtime::business-events.adoc[Business Events] in your Enterprise Edition Studio application.

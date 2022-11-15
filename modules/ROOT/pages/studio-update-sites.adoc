@@ -86,7 +86,7 @@ Provides:
 ** Signature
 * Anypoint Studio Properties File Editor
 
-*Note*: You need an Enterprise license to run applications containing xref:3.8@mule-runtime::anypoint-enterprise-security.adoc[Anypoint Enterprise Security] features.
+*Note*: You need an Enterprise license to run applications containing xref:3.9@mule-runtime::anypoint-enterprise-security.adoc[Anypoint Enterprise Security] features.
 
 == Anypoint DevKit Update Site
 

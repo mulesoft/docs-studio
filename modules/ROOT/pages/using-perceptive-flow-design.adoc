@@ -5,11 +5,11 @@ endif::[]
 :page-aliases: 6.5@studio::using-perceptive-flow-design.adoc
 :keywords: datamapper
 
-Building upon the certainty that connection testing establishes, Mule takes one more step to make designing your application easier with *Perceptive Flow Design*. If you model a flow to include an Anypoint Connector, preceded or followed by a xref:3.8@mule-runtime::dataweave.adoc[Transform Message component], Mule uses the working connection to the resource to retrieve metadata about message payload and properties. Capturing the data type and structure that a resource employs, Mule feeds that data into the xref:3.8@mule-runtime::dataweave.adoc[Transform Message component] thereby informing the component of the expected input or output.  This functionality facilitates mapping of data from one data format and structure to another.
+Building upon the certainty that connection testing establishes, Mule takes one more step to make designing your application easier with *Perceptive Flow Design*. If you model a flow to include an Anypoint Connector, preceded or followed by a xref:3.9@mule-runtime::dataweave.adoc[Transform Message component], Mule uses the working connection to the resource to retrieve metadata about message payload and properties. Capturing the data type and structure that a resource employs, Mule feeds that data into the xref:3.9@mule-runtime::dataweave.adoc[Transform Message component] thereby informing the component of the expected input or output.  This functionality facilitates mapping of data from one data format and structure to another.
 
 == Prerequisites
 
-This document assumes that you are familiar with the xref:index.adoc[Visual Editor in Anypoint Studio] and the xref:3.8@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors] and xref:3.8@mule-runtime::dataweave.adoc[DataWeave] that you can use to create applications in Studio.  Further, this document references https://anypoint.mulesoft.com/exchange/?type=connector[Connectors] and xref:3.8@mule-runtime::global-elements.adoc[Global Elements.] Review xref:datasense.adoc[DataSense] to learn more about the overall DataSense functionality.
+This document assumes that you are familiar with the xref:index.adoc[Visual Editor in Anypoint Studio] and the xref:3.9@mule-runtime::anypoint-connectors.adoc[Anypoint Connectors] and xref:3.9@mule-runtime::dataweave.adoc[DataWeave] that you can use to create applications in Studio.  Further, this document references https://anypoint.mulesoft.com/exchange/?type=connector[Connectors] and xref:3.9@mule-runtime::global-elements.adoc[Global Elements.] Review xref:datasense.adoc[DataSense] to learn more about the overall DataSense functionality.
 
 == Designing with Metadata
 
@@ -36,7 +36,7 @@ In other words, Mule intelligently examines the structure of the input or output
 image::perceptive-flow-1.png[perceptive+flow+1]
 +
 . Configure the Salesforce connector, and its corresponding global connector, then test the connection to confirm communication. Refer to xref:testing-connections.adoc[Testing Connections] for details.
-. Once you have confirmed successful connection to Salesforce, insert a xref:3.8@mule-runtime::dataweave.adoc[Transform Message Component] before the connector on your canvas.
+. Once you have confirmed successful connection to Salesforce, insert a xref:3.9@mule-runtime::dataweave.adoc[Transform Message Component] before the connector on your canvas.
 +
 image::perceptive-flow-2.png[perceptive+flow+2]
 +
@@ -55,14 +55,14 @@ image::using-perceptive-flow-design-c9f9e.png[]
 . Pick the type of your input by clicking on the dropdown menu.
 . Supply an example or a schema to represent the input structure. Some types allow you to build a schema via a built in editor UI.
 . In the Transform Message component, you now see the input fields you manually defined at on the left, and the output fields that DataSense retrieved from Salesforce on the right.
-. Drag and drop input fields across to the output fields to map and transform data format to Salesforce-friendly values. Note how the xref:3.8@mule-runtime::dataweave-language-introduction.adoc[DataWeave Code] on the right is written automatically to match every field you drag along.
+. Drag and drop input fields across to the output fields to map and transform data format to Salesforce-friendly values. Note how the xref:3.9@mule-runtime::dataweave-language-introduction.adoc[DataWeave Code] on the right is written automatically to match every field you drag along.
 +
 image::dw-perceptive-flow.png[dw_perceptive_flow]
 +
 . Save, then continue to build your Mule application.
 +
 [TIP]
-See xref:3.8@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart Guide] for more complete examples using the same features.
+See xref:3.9@mule-runtime::dataweave-quickstart.adoc[DataWeave Quickstart Guide] for more complete examples using the same features.
 
 
 
@@ -93,4 +93,4 @@ Clicking *Clear DataSense Metadata* causes Studio to automatically clear the met
 
 == See Also
 
-* Learn more about xref:3.8@mule-runtime::dataweave.adoc[DataWeave]
+* Learn more about xref:3.9@mule-runtime::dataweave.adoc[DataWeave]
