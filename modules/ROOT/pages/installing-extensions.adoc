@@ -81,4 +81,4 @@ For more specific instructions for the following extensions:
 
 == See Also
 
-* Want to create your own Mule extension? Access the xref:3.8@connector-devkit::index.adoc[Anypoint Connector DevKit] documentation for details.
+* Want to create your own Mule extension? Access the xref:3.9@connector-devkit::index.adoc[Anypoint Connector DevKit] documentation for details.

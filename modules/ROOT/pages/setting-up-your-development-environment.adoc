@@ -186,7 +186,6 @@ Anypoint Studio comes bundled with the latest runtime for deploying and testing 
 
 * The xref:runtime-manager::index.adoc[Runtime Manager], to deploy to a cloud or a local server/server-group/cluster
 * A xref:3.9@mule-runtime::downloading-and-starting-mule-esb.adoc[standalone local Mule server]
-* The xref:3.8@mule-management-console::index.adoc[Mule Management Console] to manage local servers (which will be deprecated in the future)
 
 
 == Frequently Asked Questions
