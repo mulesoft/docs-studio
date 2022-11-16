@@ -66,7 +66,7 @@ image::studio::always-trust-certificate.png[]
 Navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
 +
-image::reuse::studio-anypoint-platform-settings.png["Anypoint Studio highlighted in the navigation bar."]
+image::reuse::studio-anypoint-platform-settings.png[alt="Anypoint Studio highlighted in the navigation bar."]
 . Select the *Use a Private Cloud Instance URL*.
 . Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
 +
