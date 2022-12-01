@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: datamapper
 
+include::reuse::partial$eol-banner.adoc[tag=eolFeatureScheduled]
+
 [NOTE]
 ====
 DataMapper continues to be fully supported in all current and future versions of Mule 3.x, however it will be removed in Mule 4.0 in favor of the *Transform Message* component (based on xref:3.8@mule-runtime::dataweave.adoc[DataWeave] code). We recommend that if you wish to take advantage of the new capabilities of DataWeave or if you start new projects, upgrade now.
