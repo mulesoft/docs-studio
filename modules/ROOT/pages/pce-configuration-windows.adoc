@@ -47,8 +47,8 @@ For example:
 ** Java 8: `AnypointStudio\plugins\org.mule.tooling.jdk.v8.win32.x86_64_1.1.5\jre\lib\security\cacerts`.
 <2> `pass` is your cacerts keys store password. +
 Java default cacerts password is `changeit`.
-<3> `alias` is the name under which your certificate will be saved in the keystore.
-<4> `certificate_name` is the path to the generated .cer file you saved in the previous step.
+<3> `alias` is the name your certificate gets when saved in the keystore.
+<4> `certificate_name` is the path to the .cer file generated and saved in the previous step.
 . In Studio, open the preferences view. +
 Navigate to *Window* > *Preferences...*.
 . Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
