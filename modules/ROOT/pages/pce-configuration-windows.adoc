@@ -65,6 +65,6 @@ The first time you configure your user's login, Studio asks you to confirm your 
 Navigate to *Anypoint Studio* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
-image::preferences-authentication-add.png["*Authentication* tab and *Add* button highlighted in the *Preferences* window.]
+image::preferences-authentication-add.png["*Authentication* tab and *Add* button highlighted in the *Preferences* window."]
 . Add your PCE credentials and sign-in.
 . Select *Apply and Close*.
