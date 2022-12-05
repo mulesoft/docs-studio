@@ -45,7 +45,7 @@ For example:
 ** Java 8: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.v8.macosx.x86_64_1.1.5/Contents/Home/jre/lib/security/cacerts`.
 <2> `pass` is your cacerts keys store password. +
 Java default cacerts password is `changeit`.
-<3> `alias` is the name your certificate gets when saved in the keystore. For example, `my-certificate`.
+<3> `alias` is the name your certificate gets when you save it in the keystore. For example, `my-certificate`.
 <4> `certificate_name` is the path to the `.pem` file generated and saved in the previous step.
 . Add your certificate to your macOS keystore and set it as always trusted:
 +
