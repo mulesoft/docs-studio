@@ -62,16 +62,16 @@ Optionally, you can use the KeyChainAccess UI:
 .. Drop the `.pem` file that you generated in the previous task into the list of certificates.
 .. Double-click your imported `.pem` file and select *Always Trust* from the *When using this certificate* drop-down menu.
 +
-image::studio::always-trust-certificate.png[]
+image::studio::always-trust-certificate.png["*Always Trust* option highlighted in the drop-down menu."]
 . In Studio, open the preferences view. +
 Navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
 +
-image::studio::studio-anypoint-platform-settings.png[]
+image::studio::studio-anypoint-platform-settings.png["*Anypoint Platform* highlighted in the navigation bar."]
 . Select the *Use a Private Cloud Instance URL*.
 . Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
 +
-image::studio::pce-properties.png[]
+image::studio::pce-properties.png["*Private Cloud Instance URL* field highlighted in the in the *PCE Settings* section."]
 . Click *Apply and Close*.
 . Restart Studio.
 
@@ -87,10 +87,10 @@ The first time you configure your user's login, Studio asks you to confirm your 
 Either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
-image::studio::preferences-authentication-add.png[]
+image::studio::preferences-authentication-add.png["*Authentication* option and *Add* button highlighted in the *Preference* window."]
 . Select *Yes* in the *Invalid Certificate* message that appears.
 +
-image::studio::invalid-certificate-pce.png[]
+image::studio::invalid-certificate-pce.png["*Yes* button highlighted in the *Invalid Certificate* message window."]
 . Add your PCE credentials and sign-in.
 . Select *Apply and Close*.
 . Restart Studio.
