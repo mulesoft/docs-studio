@@ -10,3 +10,7 @@ To download and install Anypoint Studio, follow the instructions based on your o
 * xref:to-download-and-install-studio-lx.adoc[Linux]
 
 Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML and scripting language are different.
+
+== Update Schedule
+
+Anypoint Studio 7.15+ and Mule runtime engine 4.5+ are fully aligned in their release cadence. 
