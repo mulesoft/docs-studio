@@ -1,31 +1,3 @@
 = What’s New in Studio
 
-Anypoint Studio 7.14.0 introduces new features to enhance the users' experience making the daily use of Studio easier, faster, and more agile. 
-
-== Improved Copy-Paste Experience
-
-Users can now add a suffix to the copy-pasted Mule Palette elements and flows to avoid having similar long names.
-
-== Deploy to CloudHub 2.0
-
-Studio enables developers to deploy their applications to https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration[CloudHub 2.0^], which offers a wide variety of shared services.
-
-== Project Creation Made Easier
-
-The on-screen information is simplified:
-
-* The API implementation section is now collapsable, so you can choose whether to have this section collapsed by default when you create a project.
-* The API implementation tab layout is modified to get easier access to the most common options.
-
-image::api-implementation-collapsed.png["*API Implementation* section collapsed in the *New Mule Project* window."]
-
-== Increased Visibility and Readability
-
-Following accessibility initiatives, Studio has an enhanced color contrast to improve its visibility and readability.
-
-== Better Performance When Creating and Opening Projects
-
-Studio architecture is modified to reduce the time to create and open projects, and to improve its overall performance:
-
-* Less memory usage (~10%).
-* Less CPU usage (~5%).
+Anypoint Studio 7.15.0 improves the developer experience by enhancing Studio performance for a number of users, strengthens the asset import experience, and adds more to CloudHub deployment options.
