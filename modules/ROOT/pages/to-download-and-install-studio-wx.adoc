@@ -29,5 +29,5 @@ image::windows-defender-exclusions.png[“Windows Defender exclusions popup asks
 . Select the *Remember my decision* checkbox.
 . Click *Yes*.
 . Click *Yes* again when Windows PowerShell requests permission to make the change. 
-
++
 image::windows-powershell-access-request.png[“Windows Powershell popup requests user to confirm the change.”]
