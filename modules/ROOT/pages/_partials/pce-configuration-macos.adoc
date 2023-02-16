@@ -8,7 +8,7 @@ Anypoint Studio 7.8 and later only support native integration with PCE version 3
 
 // tag::pce-config[]
 
-== Configure Your PCE Certificates Into Studio
+== Configure Your PCE Certificates into Studio
 
 Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
 
@@ -32,26 +32,27 @@ openssl s_client -connect your.dsm.name.com:443 -showcerts > my-certificate.pem
 +
 [source,bash]
 --
-sudo keytool -import -trustcacerts -keystore <cacerts_path> \ //<1>
+keytool -importcert \
+-keystore <cacerts_path> \ //<1>
 -storepass <pass> \ //<2>
 -alias <alias> \ //<3>
--import -file <certificate_name>.pem //<4>
+-file <certificate_name>.pem //<4>
 --
 +
 <1> `cacerts_path` is your Anypoint Studio artifact. +
 For example:
-** If you are using Java 8: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/jre/lib/security/cacerts`.
-** If you are using Java 11: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.0.0.202002191445/Contents/Home/lib/security/cacerts`.
-<2> `pass` is your certificate's password. +
-If you don't provide a password for this certificate, the keytool generates the password `changeit` by default.
-<3> `alias` is the name you give to your certificate. For example, `my-certificate`.
-<4> `certificate name` is the path to the generated `.pem` file you saved in the previous step.
-. Add your certificate to your MacOS keystore and set it as always trusted:
+** Java 11: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.1.5/Contents/Home/lib/security/cacerts`.
+** Java 8: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.v8.macosx.x86_64_1.1.5/Contents/Home/jre/lib/security/cacerts`.
+<2> `pass` is your cacerts keys store password. +
+Java default cacerts password is `changeit`.
+<3> `alias` is the name your certificate gets when you save it in the keystore. For example, `my-certificate`.
+<4> `certificate_name` is the path to the `.pem` file generated and saved in the previous step.
+. Add your certificate to your macOS keystore and set it as always trusted:
 +
 [source,bash]
 --
 security add-trusted-cert -r trustRoot -k "${HOME}/Library/Keychains/login.keychain-db" \
-<path-to-your-certificate-pem-file>
+<certificate_name>.pem
 --
 +
 Optionally, you can use the KeyChainAccess UI:
@@ -61,7 +62,7 @@ Optionally, you can use the KeyChainAccess UI:
 .. Drop the `.pem` file that you generated in the previous task into the list of certificates.
 .. Double-click your imported `.pem` file and select *Always Trust* from the *When using this certificate* drop-down menu.
 +
-image::studio::always-trust-certificate.png[]
+image::studio::always-trust-certificate.png["*Always Trust* option highlighted in the drop-down menu."]
 . In Studio, open the preferences view. +
 Navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
@@ -70,7 +71,7 @@ image::reuse::studio-anypoint-platform-settings.png[alt="Anypoint Studio highlig
 . Select the *Use a Private Cloud Instance URL*.
 . Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
 +
-image::studio::pce-properties.png[]
+image::studio::pce-properties.png["*Private Cloud Instance URL* field highlighted in the in the *PCE Settings* section."]
 . Click *Apply and Close*.
 . Restart Studio.
 
@@ -86,10 +87,10 @@ The first time you configure your user's login, Studio asks you to confirm your 
 Either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
-image::studio::preferences-authentication-add.png[]
+image::studio::preferences-authentication-add.png["*Authentication* option and *Add* button highlighted in the *Preference* window."]
 . Select *Yes* in the *Invalid Certificate* message that appears.
 +
-image::studio::invalid-certificate-pce.png[]
+image::studio::invalid-certificate-pce.png["*Yes* button highlighted in the *Invalid Certificate* message window."]
 . Add your PCE credentials and sign-in.
 . Select *Apply and Close*.
 . Restart Studio.
