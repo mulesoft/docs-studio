@@ -11,7 +11,7 @@ To configure Studio to connect to MuleSoft Government Cloud:
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
 +
-image::studio-anypoint-platform-settings.png[]
+image::reuse::studio-anypoint-platform-settings.png[alt="Anypoint Studio highlighted in the navigation bar."]
 . Under *Region Settings*, select *GOV* from the drop-down menu.
 +
 image::gov-region-selection.png[]
