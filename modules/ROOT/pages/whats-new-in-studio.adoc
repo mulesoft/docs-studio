@@ -8,8 +8,8 @@ Windows users now experience improved performance in Studio, as they can use the
 == Enhanced experience importing API specifications or fragments
 Studio enhances importing experience of API specifications or fragments from Design Center improving the ability to search and provide more details displaying:
 
-Type of asset
-Date the asset was last updated
+* Type of asset
+* Date the asset was last updated
 
 == Easy deployment and redeployment of a Mule App to CloudHub 2.0
 
