@@ -11,7 +11,7 @@ Anypoint Studio features enhance your productivity when building Mule applicatio
 * Instant run of your Mule application inside a local runtime
 * Visual editors to configure API specification files and Mule domains
 * Push changes to a local running app to test changes
-* Integration with Exchange to import templates, examples, definitions and other resources from your Anypoint Platform organization
+* Integration with Exchange to create projects from templates and examples, and import definitions and other resources from your Anypoint Platform organization
 * Embedded unit testing framework
 * Built-in support to deploy to CloudHub
 
