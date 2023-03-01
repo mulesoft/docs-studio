@@ -39,4 +39,4 @@ image::windows-defender-exclusions.png[“A Windows Defender real-time protectio
 +
 image::windows-powershell-access-request.png[“Windows Powershell popup requests that you confirm the change.”]
 
-NOTE: If you select the *Remember my decision* checkbox and click *No*, Windows Defender real-time protection scans Studio folders and processes as you work with it.
+NOTE: If you select the *Remember my decision* checkbox and click *No*, Windows Defender real-time protection scans Studio folders and processes as you work with them.
