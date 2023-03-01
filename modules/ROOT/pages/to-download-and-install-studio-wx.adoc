@@ -35,7 +35,7 @@ image::windows-defender-exclusions.png[“A Windows Defender real-time protectio
 +
 . Optionally, select the *Remember my decision* checkbox.
 . Click *Yes*.
-. Click *Yes* again when Windows PowerShell requests permission to make the change. 
+. Click *Yes* again when Windows PowerShell requests permission to make the change:
 +
 image::windows-powershell-access-request.png[“Windows Powershell popup requests that you confirm the change.”]
 
