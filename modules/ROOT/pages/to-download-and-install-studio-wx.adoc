@@ -19,11 +19,11 @@ Studio 7.x supports only Mule 4.x projects, because the structure of the project
 
 == Exclude Studio from Windows Defender Scans
 
-While Windows Defender is a tool for keeping your computer safe, it can also slow down the performance of Studio because it scans files in real-time as they are accessed, which causes delays. To prevent performance issues, you can completely exclude Studio from Windows Defender scans. 
+While Windows Defender is a tool for keeping your computer safe, it can also slow down the performance of Studio because it scans files in real-time as they are accessed, which causes delays. To prevent performance issues, you can completely exclude Studio from Windows Defender real-time protection.
 
-. Run Studio. The following Windows Defender notice pop-ups to ask if Studio folders and processes should be excluded:
+. Run Studio. The following Windows Defender real-time protection notice pop-ups to ask if Studio folders and processes should be excluded:
 +
-image::windows-defender-exclusions.png[“Windows Defender exclusions popup asks the user if folder and processes should be excluded.”]
+image::windows-defender-exclusions.png[“Windows Defender real-time protection exclusions popup asks the user if folder and processes should be excluded.”]
 +
 * */.p2* folder stores Studio plugins.
 +
@@ -31,8 +31,10 @@ image::windows-defender-exclusions.png[“Windows Defender exclusions popup asks
 +
 * The third folder point to Anypoint Studio application location.
 +
-. Select the *Remember my decision* checkbox.
+. Optionally, select the *Remember my decision* checkbox.
 . Click *Yes*.
 . Click *Yes* again when Windows PowerShell requests permission to make the change. 
 +
 image::windows-powershell-access-request.png[“Windows Powershell popup requests user to confirm the change.”]
+
+NOTE: If you select the *Remember my decision* checkbox and click *No*, Windows Defender real-time protection scans Studio folders and processes as you work with it.
