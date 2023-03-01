@@ -29,7 +29,7 @@ image::windows-defender-exclusions.png[“Windows Defender real-time protection 
 +
 * The second folder shows the path of the workspace the user selects when launching Studio.
 +
-* The third folder point to Anypoint Studio application location.
+* The third folder points to the Anypoint Studio application location.
 +
 . Optionally, select the *Remember my decision* checkbox.
 . Click *Yes*.
