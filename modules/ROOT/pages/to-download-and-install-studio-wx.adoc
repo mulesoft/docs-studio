@@ -27,7 +27,7 @@ A Windows Defender real-time protection notice asks whether to exclude Studio fo
 +
 image::windows-defender-exclusions.png[“A Windows Defender real-time protection popup asks whether to exclude Studio folders and processes.”]
 +
-* */.p2* folder stores Studio plugins.
+* The `/.p2` folder stores Studio plugins.
 +
 * The second folder shows the path of the workspace that you select when launching Studio.
 +
