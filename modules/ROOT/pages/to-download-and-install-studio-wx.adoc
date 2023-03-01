@@ -19,7 +19,7 @@ Studio 7.x supports only Mule 4.x projects, because the structure of the project
 
 == Exclude Studio from Windows Defender Scans
 
-While Windows Defender is a tool for keeping your computer safe, it can also slow down the performance of Studio because it scans files in real-time as they are accessed, which causes delays. To prevent performance issues, you can completely exclude Studio from Windows Defender real-time protection.
+While Windows Defender is a tool for keeping your computer safe, it can slow down the performance of Studio because it scans files in real-time as they are accessed, which causes delays. To prevent performance issues, you can exclude Studio from Windows Defender real-time protection:
 
 . Run Studio. The following Windows Defender real-time protection notice pop-ups to ask if Studio folders and processes should be excluded:
 +
