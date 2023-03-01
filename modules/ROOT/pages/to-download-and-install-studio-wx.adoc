@@ -25,7 +25,7 @@ While Windows Defender is a tool for keeping your computer safe, it can slow dow
 +
 A Windows Defender real-time protection notice asks whether to exclude Studio folders and processes:
 +
-image::windows-defender-exclusions.png[“Windows Defender real-time protection exclusions popup asks the user if folder and processes should be excluded.”]
+image::windows-defender-exclusions.png[“A Windows Defender real-time protection popup asks whether to exclude Studio folders and processes.”]
 +
 * */.p2* folder stores Studio plugins.
 +
