@@ -27,7 +27,7 @@ image::windows-defender-exclusions.png[“Windows Defender real-time protection 
 +
 * */.p2* folder stores Studio plugins.
 +
-* The second folder shows the path of the workspace the user selects when launching Studio.
+* The second folder shows the path of the workspace that you select when launching Studio.
 +
 * The third folder points to the Anypoint Studio application location.
 +
