@@ -91,7 +91,9 @@
 
 * xref:studio-update-sites.adoc[Studio Update Sites]
 
-* xref:maven-preferences-reference.adoc[Maven Preferences Reference]
+* xref:use-maven-in-studio.adoc[Use Maven in Studio]
+ ** xref:configure-studio-to-use-your-own-maven.adoc[Configure Studio to Use Your Own Maven]
+ ** xref:maven-preferences-reference.adoc[Maven Preferences Reference]
 
 * xref:faq-default-browser-config.adoc[Troubleshoot Issues with Platform Content in Studio]
  ** xref:studio-xulrunner-wx-task.adoc[Windows]
