@@ -1,4 +1,4 @@
-= Configure Studio to Use Your Own Maven
+= Use Maven in Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -11,4 +11,5 @@ Using your own Maven installation in Anypoint Studio can provide a number of ben
 
 == See Also
 
- ** xref:maven-preferences-reference.adoc[Maven Preferences Reference]
+* xref:configure-studio-to-use-your-own-maven.adoc[Configure Studio to Use Your Own Maven]
+* xref:maven-preferences-reference.adoc[Maven Preferences Reference]
