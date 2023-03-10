@@ -6,7 +6,7 @@ endif::[]
 Anypoint Studio comes bundled with Maven but you can use Studio with an external Maven installation as well.
 
 . Navigate to Studio preferences:
-* In macOS, go to *Anypoint Studio > Settings…*.
+* In macOS, go to *Anypoint Studio > Settings*.
 * In Windows, go to *Anypoint Studio > Preferences*.
 . In the Preferences panel, go to *Anypoint Studio > Maven*.
 . Uncheck the *Use embedded Maven Installation* option.
