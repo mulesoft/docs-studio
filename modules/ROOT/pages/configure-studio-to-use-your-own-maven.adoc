@@ -10,10 +10,10 @@ Anypoint Studio comes bundled with Maven but you can use Studio with an external
 * In Windows, go to *Anypoint Studio > Preferences*.
 . In the Preferences panel, go to *Anypoint Studio > Maven*.
 . Deselect *Use embedded Maven Installation*.
-. Click on the *Browse* button next to the *Maven installation home directory* field.
+. Click *Browse*, next to the *Maven installation home directory* field.
 . Look for and select your Maven root installation path.
 . Click *Open*.
-. Click on the *Test Maven Configuration* button to verify your Maven configuration in Studio is correct.
+. Click *Test Maven Configuration* to verify your Maven configuration in Studio is correct.
 +
 image::maven-preferences.png["Maven options highlighted in the *Preferences* menu."]
 +
