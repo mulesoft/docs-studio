@@ -1,0 +1,15 @@
+= Use Maven in Studio
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Studio works with Maven to help you streamline the development process, making it easier to manage dependencies and build applications consistently across different machines.
+
+By default, Anypoint Studio comes with an embedded version of Maven that is used to build Mule projects. However, you can configure Studio to use your own installation of Maven. 
+
+When using your own Maven installation in Anypoint Studio, you can control the version and configuration of Maven that is used in your project, and integrate your Mule project with other systems that use Maven, such as continuous integration and deployment tools.
+
+== See Also
+
+* xref:configure-studio-to-use-your-own-maven.adoc[Configure Studio to Use Your Own Maven]
+* xref:maven-preferences-reference.adoc[Maven Preferences Reference]
