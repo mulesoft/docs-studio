@@ -5,7 +5,8 @@ endif::[]
 
 Anypoint Studio comes bundled with Maven but you can use Studio with an external Maven installation as well.
 
-. Navigate to Studio preferences:
+. Open Studio
+. Go to Studio preferences:
 * In macOS, go to *Anypoint Studio > Settings*.
 * In Windows, go to *Anypoint Studio > Preferences*.
 . In the Preferences panel, go to *Anypoint Studio > Maven*.
