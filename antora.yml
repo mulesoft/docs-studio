@@ -3,3 +3,7 @@ title: Studio
 version: '6.x'
 nav:
 - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    supportStatus: extendedSupportVersion
+    
