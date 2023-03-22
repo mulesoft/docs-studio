@@ -20,3 +20,7 @@ Users now can deploy and redeploy a Mule app to CloudHub 2.0 even if it has the 
 == Studio and Runtime Release Cadence Aligned
 
 Studio and Runtime get their releases aligned by providing new features triannually.
+
+== Native Support for M1 and M2 Processors
+
+Studio now natively supports Apple's M1 and M2 processors.
