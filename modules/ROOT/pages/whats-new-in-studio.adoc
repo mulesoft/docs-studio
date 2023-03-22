@@ -2,18 +2,21 @@
 
 Anypoint Studio 7.15.0 improves the developer experience by enhancing Studio performance for a number of users, strengthens the asset import experience, and adds more to CloudHub deployment options.
 
-== Improved performance for customers on Windows 
+== Improved Performance for Customers on Windows
+
 Windows users now experience improved performance in Studio, as they can use the built-in tool to exclude Studio from Windows Defender scans.
 
-== Enhanced experience importing API specifications or fragments
+== Improved Performance for Customers on Windows
+
 Studio enhances importing experience of API specifications or fragments from Design Center improving the ability to search and provide more details displaying:
 
 * Type of asset
 * Date the asset was last updated
 
-== Easy deployment and redeployment of a Mule App to CloudHub 2.0
+== Easy Deployment and Redeployment of a Mule App to Cloudhub 2.0
 
 Users now can deploy and redeploy a Mule app to CloudHub 2.0 even if it has the same name and target as an existing one in CloudHub 2.0. This feature is helpful for redeploying a Mule app after making changes to it.
 
-== Studio and Runtime release cadence aligned
+== Studio and Runtime Release Cadence Aligned
+
 Studio and Runtime get their releases aligned by providing new features triannually.
