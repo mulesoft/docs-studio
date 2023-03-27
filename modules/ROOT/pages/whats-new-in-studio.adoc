@@ -6,7 +6,7 @@ Anypoint Studio 7.15.0 improves the developer experience by enhancing Studio per
 
 Windows users now experience improved performance in Studio, as they can use the built-in tool to exclude Studio from Windows Defender scans.
 
-== Improved Performance for Customers on Windows
+== Enhanced Experience Importing API Specifications or Fragments
 
 Studio enhances importing experience of API specifications or fragments from Design Center improving the ability to search and provide more details displaying:
 
@@ -23,4 +23,8 @@ Studio and Runtime get their releases aligned by providing new features triannua
 
 == Native Support for M1 and M2 Processors
 
-Studio now natively supports Apple's M1 and M2 processors.
+Studio now natively supports Apple M1 and M2 processors.
+
+== Enhanced Readability in Logs
+
+Logs in Studio provides more and clearer details if the pom.xml has an error.
