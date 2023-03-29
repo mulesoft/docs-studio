@@ -25,6 +25,7 @@ Studio and Runtime get their releases aligned by providing new features triannua
 
 Studio now natively supports Apple M1 and M2 processors.
 
-== Enhanced Readability in Logs
+== Improvements in the User Experience
 
-Logs in Studio provides more and clearer details if the pom.xml has an error.
+* Studio now provides more and clearer details in the log if the pom.xml has an error.
+* The .mule folder is included in the .gitignore folder so displaying of changes in your project is more accurate.
