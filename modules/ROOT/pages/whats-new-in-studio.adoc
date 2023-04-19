@@ -8,7 +8,7 @@ Windows users now experience improved performance in Studio by using the built-i
 
 == Enhanced Experience Importing API Specifications or Fragments
 
-Studio enhances importing experience of API specifications or fragments from Design Center improving the ability to search and provide more details displaying:
+Studio enhances importing experience of API specifications or fragments from Design Center. It improves the ability to search and provides more details displaying:
 
 * Type of asset
 * Date the asset was last updated
