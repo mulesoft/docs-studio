@@ -8,7 +8,7 @@ Windows users now experience improved performance in Studio when they use the bu
 
 == Enhanced Experience Importing API Specifications or Fragments
 
-Studio enhances importing experience of API specifications or fragments from Design Center. It improves the ability to search and provides more details displaying:
+When importing API specifications or fragments from Design Center, Studio provides more information, including:
 
 * Type of asset
 * Date the asset was last updated
