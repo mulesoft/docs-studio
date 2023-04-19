@@ -4,7 +4,7 @@ Anypoint Studio 7.15.0 improves the developer experience by enhancing Studio per
 
 == Improved Performance for Customers on Windows
 
-Windows users now experience improved performance in Studio, as they can use the built-in tool to exclude Studio from Windows Defender scans.
+Windows users now experience improved performance in Studio by using the built-in tool to exclude Studio from Windows Defender scans.
 
 == Enhanced Experience Importing API Specifications or Fragments
 
