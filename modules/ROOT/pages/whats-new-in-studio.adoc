@@ -1,6 +1,6 @@
 = What’s New in Studio
 
-Anypoint Studio 7.15.0 improves the developer experience by enhancing Studio performance for a number of users, strengthens the asset import experience, and adds more to CloudHub deployment options.
+Anypoint Studio 7.15.0 improves the developer experience by enhancing Studio performance for Windows users, improves the asset-import experience, and adds more CloudHub deployment options.
 
 == Improved Performance for Customers on Windows
 
