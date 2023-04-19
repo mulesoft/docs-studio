@@ -23,5 +23,5 @@ Studio now natively supports Apple M1 and M2 processors.
 
 == Improvements in the User Experience
 
-* Studio now provides more and clearer details in the log if the pom.xml has an error.
+* Studio now provides more and clearer details in the log when the `pom.xml` file contains an error.
 * The .mule folder is included in the .gitignore folder so displaying of changes in your project is more accurate.
