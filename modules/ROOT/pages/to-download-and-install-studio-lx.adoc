@@ -9,6 +9,9 @@ endif::[]
 
 * To support the Studio Theme in Linux, have GTK version 3 installed.
 * Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
+* For a better experience installing and running your projects in Anypoint Studio for the first time, we also recommend that you install:
+- JDK 17 & Java 17
+- Maven 3.9
 
 == Installation
 
