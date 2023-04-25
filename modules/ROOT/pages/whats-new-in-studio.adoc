@@ -1,3 +1,27 @@
 = What’s New in Studio
 
-Anypoint Studio 7.15.0 improves the developer experience by enhancing Studio performance for a number of users, strengthens the asset import experience, and adds more to CloudHub deployment options.
+Anypoint Studio 7.15.0 improves the developer experience by enhancing Studio performance for Windows users, improves the asset-import experience, and adds more CloudHub deployment options.
+
+== Improved Performance for Customers on Windows
+
+Windows users now experience improved performance in Studio when they use the built-in tool to exclude Studio from Windows Defender scans.
+
+== Enhanced Experience Importing API Specifications or Fragments
+
+When importing API specifications or fragments from Design Center, Studio provides more information, including:
+
+* Type of asset
+* Date the asset was last updated
+
+== Easy Deployment and Redeployment of a Mule App to Cloudhub 2.0
+
+You can now deploy and redeploy a Mule app to CloudHub 2.0 even if it has the same name and target as an app already deployed to CloudHub 2.0. This feature is helpful for redeploying a Mule app after making changes to it.
+
+== Native Support for M1 and M2 Processors
+
+Studio now natively supports Apple M1 and M2 processors.
+
+== Improvements in the User Experience
+
+* Studio now provides more and clearer details in the log when the `pom.xml` file contains an error.
+* The `.mule` folder is included in the `.gitignore` folder so displaying changes in your project is more accurate.
