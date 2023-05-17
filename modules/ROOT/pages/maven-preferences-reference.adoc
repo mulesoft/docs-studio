@@ -3,16 +3,26 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio allows you to customize your preferences for working with Maven.
+In Studio, you can personalize your preferences when working with Maven. Studio relies on the *settings.xml* file, which details the configurations Maven uses during its operation. The *settings.xml* file lets you tailor the behavior of the build process, not just for a specific project but also for all the projects on your system. With the *settings.xml* file, you can configure:
+
+* Dependency and plugin repositories
+* Proxy servers
+* Authentication
+* Plugins
+
+Learn more about https://maven.apache.org/settings.html[Maven setting references^].
+
+To configure Maven setting preferences, go to *Anypoint Studio > Settings…* and click the *Maven* option. 
+
+Learn more about configuration of MuleSoft repositories at https://docs.mulesoft.com/studio/latest/maven-preferences-reference [Maven Reference documentation^].
 
 image::maven-preferences-reference.png["*Maven Preferences Reference* window accessed from the *Settings...* option, from the *Anypoint Studio* menu."]
-
 
 [%header,%autowidth.spread]
 |===
 | Preference | Description | Default Value
 | Display runtime version not available warnings
-| When enabled, it warns you when the runtime version configured in your pom.xml file is different than the one configured in your project.
+| When enabled, it warns you when the runtime version configured in your pom.xml file is different from the one configured in your project.
 | Enabled
 
 | Use embedded Maven installation
@@ -25,12 +35,12 @@ You can only edit this preference when you disable *Use embedded Maven installat
 | Empty
 
 | Override settings security path
-| When selected, this option overrides Studio default settings_security.xml path. +
+| When selected, this option overrides Maven default settings_security.xml path. +
 Selecting this option requires you to define your custom path to your settings_security.xml file in the *Path to settings_security.xml* field.
 | Disabled
 
 | Override Maven local repository location
-| When selected, this option overrides Studio default local repository location. +
+| When selected, this option overrides Maven default local repository location. +
 Selecting this option requires you to define your custom path to your Maven local repository.
 | Disabled
 
@@ -39,11 +49,57 @@ Selecting this option requires you to define your custom path to your Maven loca
 | Empty
 
 | Base command line for builds
-| The Maven command to execute every time you run your Mule project in your local machine.
+| The Maven command to execute every time you build or run a Mule project in your local machine.
 | mvn clean package -nsu -DskipMunitTests
 
 |===
 
+== Configure Global Settings
+
+Studio manages the servers used in the global settings and you can configure Studio to use an external Maven installation. When doing so, Studio automatically detects and populates the IDs from the *settings.xml* file stored in *${maven.installation.home}/conf/settings.xml*.
+
+image::maven-global-settings.png[“*Global Settings* option highlighted in the Studio setting preferences window.”]
+
+If there is no file on this path, you can create a new *settings.xml* file in other location:
+
+. Check *Override global settings path*.
+. Click *Browse*.
+. Select your *settings.xml* file and click *Open*.
++ The IDs are listed.
+. Click *Apply and Close*.
+
+== Configure Update Policies
+
+You can configure Maven update policies depending on your needs.
+
+image::maven-update-policies.png[“*Update Policies* option highlighted in the Studio setting preferences window.”]
+
+Learn more about https://maven.apache.org/settings.html#repositories[Update Policies^] in Maven.
+
+== Configure User Settings
+
+Studio manages the servers for downloading dependencies or plugins and defines the credentials of such servers if needed. It automatically detects and populates the IDs from the *settings.xml* file located in *${user.home}/.m2/settings.xml*.
+
+image::maven-user-settings.png[“*User Settings* option highlighted in the Studio setting preferences window.”]
+
+If there is no file on this path, you can create a new *settings.xml* file in other location:
+
+. Check *Override user settings path*.
+. Click *Browse*.
+. Select your *settings.xml* file and click *Open*.
++ The IDs are listed.
+. Click *Apply and Close*.
+
+=== Add a Server
+
+You can add a new server to your *settings.xml* file: 
+
+. In the *User Settings* window, click *Add*.
+. Enter the server Id and, your username and password.
+. Click *OK*.
+
+image::maven-add-new-server.png[“*Add server* option highlighted in the Studio setting preferences window.”]
+
 == See Also
 
-* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project]
+* xref:add-modules-in-studio-to.adoc[]
