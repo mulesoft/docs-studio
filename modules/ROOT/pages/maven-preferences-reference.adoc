@@ -56,13 +56,13 @@ Selecting this option requires you to define your custom path to your Maven loca
 
 == Configure Global Settings
 
-Studio manages the servers used in the global settings and you can configure Studio to use an external Maven installation. When doing so, Studio automatically detects and populates the IDs from the *settings.xml* file stored in *${maven.installation.home}/conf/settings.xml*.
+Studio manages the servers used in the global settings and you can configure Studio to use an external Maven installation. By doing so, Studio automatically detects and populates the IDs from the *settings.xml* file stored in *${maven.installation.home}/conf/settings.xml*.
 
 image::maven-global-settings.png[“*Global Settings* option highlighted in the Studio setting preferences window.”]
 
 If there is no file on this path, you can create a new *settings.xml* file in other location:
 
-. Check *Override global settings path*.
+. Select *Override global settings path*.
 . Click *Browse*.
 . Select your *settings.xml* file and click *Open*.
 + The IDs are listed.
@@ -84,7 +84,7 @@ image::maven-user-settings.png[“*User Settings* option highlighted in the Stud
 
 If there is no file on this path, you can create a new *settings.xml* file in other location:
 
-. Check *Override user settings path*.
+. Select *Override user settings path*.
 . Click *Browse*.
 . Select your *settings.xml* file and click *Open*.
 + The IDs are listed.
