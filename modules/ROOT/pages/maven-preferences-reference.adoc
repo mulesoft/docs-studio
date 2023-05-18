@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-In Studio, you can personalize your preferences when working with Maven. Studio relies on the *settings.xml* file, which details the configurations Maven uses during its operation. The *settings.xml* file lets you tailor the behavior of the build process, not just for a specific project but also for all the projects on your system. With the *settings.xml* file, you can configure:
+In Studio, you can personalize your preferences when working with Maven. Studio reads the `settings.xml` file, which details the configurations Maven uses during its operation. The `settings.xml` file enables you to tailor the behavior of the build process for all the projects on your system. With the `settings.xml` file, you can configure:
 
 * Dependency and plugin repositories
 * Proxy servers
