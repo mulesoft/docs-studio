@@ -64,7 +64,7 @@ If there is no file on this path, you can create a new `settings.xml` file in an
 
 . Select *Override global settings path*.
 . Click *Browse*.
-. Select your *settings.xml* file and click *Open*.
+. Select your `settings.xml` file and click *Open*.
 + The IDs are listed.
 . Click *Apply and Close*.
 
