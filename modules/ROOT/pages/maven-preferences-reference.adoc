@@ -10,7 +10,7 @@ In Studio, you can personalize your preferences when working with Maven. Studio 
 * Authentication
 * Plugins
 
-More information about https://maven.apache.org/settings.html[Maven setting references^]
+See https://maven.apache.org/settings.html[Maven setting references^] for additional information. 
 
 To configure Maven setting preferences, go to *Anypoint Studio > Settings…* and click *Maven*.
 
