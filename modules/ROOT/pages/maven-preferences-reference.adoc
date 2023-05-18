@@ -74,7 +74,7 @@ You can configure Maven update policies depending on your needs.
 
 image::maven-update-policies.png[“*Update Policies* option highlighted in the Studio setting preferences window.”]
 
-More information about https://maven.apache.org/settings.html#repositories[Update Policies^] in Maven
+See https://maven.apache.org/settings.html#repositories[Update Policies^] for additional information.
 
 == Configure User Settings
 
