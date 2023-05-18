@@ -14,7 +14,7 @@ See https://maven.apache.org/settings.html[Maven setting references^] for additi
 
 To configure Maven setting preferences, go to *Anypoint Studio > Settings…* and click *Maven*.
 
-More information about configuration of MuleSoft repositories at https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference documentation].
+See https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference] for additional information about configuring MuleSoft repositories.
 
 image::maven-preferences-reference.png["*Maven Preferences Reference* window accessed from the *Settings...* option, from the *Anypoint Studio* menu."]
 
