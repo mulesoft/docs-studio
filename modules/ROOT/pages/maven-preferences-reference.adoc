@@ -10,11 +10,11 @@ In Studio, you can personalize your preferences when working with Maven. Studio 
 * Authentication
 * Plugins
 
-Learn more about https://maven.apache.org/settings.html[Maven setting references^].
+More information about https://maven.apache.org/settings.html[Maven setting references^]
 
 To configure Maven setting preferences, go to *Anypoint Studio > Settings…* and click *Maven*.
 
-Learn more about configuration of MuleSoft repositories at https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference documentation^].
+More information about configuration of MuleSoft repositories at https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference documentation].
 
 image::maven-preferences-reference.png["*Maven Preferences Reference* window accessed from the *Settings...* option, from the *Anypoint Studio* menu."]
 
@@ -74,7 +74,7 @@ You can configure Maven update policies depending on your needs.
 
 image::maven-update-policies.png[“*Update Policies* option highlighted in the Studio setting preferences window.”]
 
-Learn more about https://maven.apache.org/settings.html#repositories[Update Policies^] in Maven.
+More information about https://maven.apache.org/settings.html#repositories[Update Policies^] in Maven
 
 == Configure User Settings
 
