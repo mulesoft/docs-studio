@@ -56,7 +56,7 @@ Selecting this option requires you to define your custom path to your Maven loca
 
 == Configure Global Settings
 
-Studio manages the servers used in the global settings and you can configure Studio to use an external Maven installation. By doing so, Studio automatically detects and populates the IDs from the *settings.xml* file stored in *${maven.installation.home}/conf/settings.xml*.
+Studio manages the servers used in the global settings and you can configure Studio to use an external Maven installation. By doing so, Studio automatically detects and populates the IDs from the `settings.xml` file stored in `${maven.installation.home}/conf/settings.xml`.
 
 image::maven-global-settings.png[“*Global Settings* option highlighted in the Studio setting preferences window.”]
 
