@@ -78,7 +78,7 @@ See https://maven.apache.org/settings.html#repositories[Update Policies^] for ad
 
 == Configure User Settings
 
-Studio manages the servers for downloading dependencies or plugins and defines the credentials of such servers if needed. It automatically detects and populates the IDs from the *settings.xml* file located in *${user.home}/.m2/settings.xml*.
+Studio manages the servers for downloading dependencies or plugins, defines the credentials of such servers when needed, and automatically detects and populates the IDs from the `settings.xml` file located in `${user.home}/.m2/settings.xml`.
 
 image::maven-user-settings.png[“*User Settings* option highlighted in the Studio setting preferences window.”]
 
