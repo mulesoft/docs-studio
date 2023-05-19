@@ -40,8 +40,8 @@ You can only edit this preference when you disable *Use embedded Maven installat
 | Empty
 
 | Override settings security path
-| When selected, this option overrides Maven default settings_security.xml path. +
-Selecting this option requires you to define your custom path to your settings_security.xml file in the *Path to settings_security.xml* field.
+| When selected, this option overrides Maven default `settings_security.xml` path. +
+Selecting this option requires you to define your custom path to your `settings_security.xml` file in the *Path to settings_security.xml* field.
 | Disabled
 
 | Override Maven local repository location
