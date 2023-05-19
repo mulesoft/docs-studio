@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-In Studio, you can personalize your preferences when working with Maven. Studio reads the `settings.xml` file, which details the configurations Maven uses during its operation. The `settings.xml` file enables you to tailor the behavior of the build process for all the projects on your system. With the `settings.xml` file, you can configure:
+In Studio, you can personalize your preferences when working with Maven. Studio reads the Maven `settings.xml` file, which details the configurations Maven uses during its operation. The `settings.xml` file enables you to tailor the behavior of the build process for all the projects on your system. With the `settings.xml` file, you can configure:
 
 * Dependency and plugin repositories
 * Proxy servers
@@ -12,7 +12,12 @@ In Studio, you can personalize your preferences when working with Maven. Studio 
 
 See https://maven.apache.org/settings.html[Maven setting references^] for additional information. 
 
-To configure Maven setting preferences, go to *Anypoint Studio > Settings…* and click *Maven*.
+To configure Maven setting preferences:
+
+* In macOS, go to *Anypoint Studio* > *Settings…*.
+* In Windows, go to *Anypoint Studio* > *Preferences*.
+
+Click *Maven*.
 
 See https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference] for additional information about configuring MuleSoft repositories.
 
