@@ -17,7 +17,7 @@ To configure Maven setting preferences:
 * In macOS, go to *Anypoint Studio* > *Settings…*.
 * In Windows, go to *Anypoint Studio* > *Preferences*.
 
-Click *Maven*.
+In the Preferences panel, go to *Anypoint Studio* > *Maven*.
 
 See https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference] for additional information about configuring MuleSoft repositories.
 
