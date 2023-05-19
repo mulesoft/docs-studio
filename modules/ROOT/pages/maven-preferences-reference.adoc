@@ -12,11 +12,7 @@ In Studio, you can personalize your preferences when working with Maven. Studio 
 
 See https://maven.apache.org/settings.html[Maven setting references^] for additional information. 
 
-To configure Maven setting preferences:
-
-* In macOS, go to *Anypoint Studio* > *Settings…*.
-* In Windows, go to *Anypoint Studio* > *Preferences*.
-
+To configure Maven setting preferences, open Studio preference settings.
 In the Preferences panel, go to *Anypoint Studio* > *Maven*.
 
 See https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference] for additional information about configuring MuleSoft repositories.
