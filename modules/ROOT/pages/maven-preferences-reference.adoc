@@ -3,52 +3,104 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio allows you to customize your preferences for working with Maven.
+In Studio, you can personalize your preferences when working with Maven. Studio reads the Maven `settings.xml` file, which details the configurations Maven uses during its operation. The `settings.xml` file enables you to tailor the behavior of the build process for all the projects on your system. With the `settings.xml` file, you can configure:
 
-image::maven-preferences-reference-7fdf0.png[]
+* Dependency and plugin repositories
+* Proxy servers
+* Authentication
+* Plugins
+
+See https://maven.apache.org/settings.html[Maven setting references^] for additional information. 
+
+To configure Maven setting preferences, open Studio preference settings.
+In the Preferences panel, go to *Anypoint Studio* > *Maven*.
+
+See https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference] for additional information about configuring MuleSoft repositories.
+
+image::maven-preferences-reference.png["*Maven Preferences Reference* window accessed from the *Settings...* option, from the *Anypoint Studio* menu."]
 
 [%header,%autowidth.spread]
 |===
-| Preference |Description |Default Value
+| Preference | Description | Default Value
 | Display runtime version not available warnings
-| When enabled, it warns you when the runtime version configured in your pom.xml file is different than the one configured in your project.
+| When enabled, it warns you when the runtime version configured in your `pom.xml` file is different from the one configured in your project.
 | Enabled
 
-| Use embedded Maven Installation (Maven 3.3.9)
+| Use embedded Maven installation
 | When enabled, it uses the Maven installation embedded in Anypoint Studio.
 | Enabled
 
-| Maven Installation home directory
+| Maven installation home directory
 | The directory of your local Maven installation. +
-You can only edit this preference when you disable Use embedded Maven Installation.
-| /usr/local/Cellar/maven/3.3.9/libexec
+You can only edit this preference when you disable *Use embedded Maven installation*.
+| Empty
 
+| Override settings security path
+| When selected, this option overrides Maven default `settings_security.xml` path. +
+Selecting this option requires you to define your custom path to your `settings_security.xml` file in the *Path to settings_security.xml* field.
+| Disabled
 
-| Override user settings path
-| When selected, this option overrides Studio default user settings.xml path. +
-Selecting this option requires for you to define your custom path to your settings.xml file in the Path To User Settings.xml field below.
-| unselected
-
-| Override global settings path
-| When selected, this option overrides Studio default global settings.xml path. +
-Selecting this option requires for you to define your custom path to your global settings.xml file in the Path To User Settings.xml field below.
-| unselected
-
-| Override Maven Local Repository Location
-| When selected, this option overrides Studio default local repository location. +
-Selecting this option requires for you to define your custom path to your maven local repository.
-| unselected
+| Override Maven local repository location
+| When selected, this option overrides Maven default local repository location. +
+Selecting this option requires you to define your custom path to your Maven local repository.
+| Disabled
 
 | MAVEN_OPTS environment variable
-| MAVEN_OPTS contains parameters to start up the JVM or to pass memory options to maven before it runs.
+| MAVEN_OPTS contains parameters to start up the JVM or to pass memory options to Maven before it runs.
 | Empty
 
 | Base command line for builds
-| The Maven command to execute every time you run your Mule project in your local machine.
-| mvn clean package
+| The Maven command to execute every time you build or run a Mule project in your local machine.
+| mvn clean package -nsu -DskipMunitTests
 
 |===
 
+== Configure Global Settings
+
+Studio manages the servers used in the global settings and you can configure Studio to use an external Maven installation. By doing so, Studio automatically detects and populates the IDs from the `settings.xml` file stored in `${maven.installation.home}/conf/settings.xml`.
+
+image::maven-global-settings.png[“*Global Settings* option highlighted in the Studio setting preferences window.”]
+
+If there is no file on this path, you can create a new `settings.xml` file in another location:
+
+. Select *Override global settings path*.
+. Click *Browse*.
+. Select your `settings.xml` file and click *Open*.
++ The IDs are listed.
+. Click *Apply and Close*.
+
+== Configure Update Policies
+
+You can configure Maven update policies depending on your needs.
+
+image::maven-update-policies.png[“*Update Policies* option highlighted in the Studio setting preferences window.”]
+
+See the `<updatePolicy>` in the https://maven.apache.org/settings.html#repositories[*Repositories* section^] of Maven Settings Reference for additional information.
+
+== Configure User Settings
+
+Studio manages the servers for downloading dependencies or plugins, defines the credentials of such servers when needed, and automatically detects and populates the IDs from the `settings.xml` file located in `${user.home}/.m2/settings.xml`.
+
+image::maven-user-settings.png[“*User Settings* option highlighted in the Studio setting preferences window.”]
+
+If there is no file on this path, you can create a new `settings.xml` file in another location:
+
+. Select *Override user settings path*.
+. Click *Browse*.
+. Select your `settings.xml` file and click *Open*.
++ The IDs are listed.
+. Click *Apply and Close*.
+
+=== Add a Server
+
+To add a new server to your `settings.xml` file: 
+
+. In the *User Settings* window, click *Add*.
+. Enter the server ID, and your username and password.
+. Click *OK*.
+
+image::maven-add-new-server.png[“*Add server* option highlighted in the Studio setting preferences window.”]
+
 == See Also
 
-* xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project]
+* xref:add-modules-in-studio-to.adoc[]
