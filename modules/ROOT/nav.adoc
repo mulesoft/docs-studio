@@ -3,6 +3,8 @@
 
 * xref:index.adoc[Overview]
 
+* xref:studio-release-notes.adoc[Release Notes]
+
 * xref:to-download-and-install-studio.adoc[Download and Install Studio]
  ** xref:to-download-and-install-studio-wx.adoc[Windows]
  ** xref:to-download-and-install-studio-lx.adoc[Linux]
