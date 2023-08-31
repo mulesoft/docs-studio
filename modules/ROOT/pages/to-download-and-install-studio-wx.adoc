@@ -7,6 +7,7 @@ endif::[]
 
 . Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 . Extract the Windows installation file into the `C:\` root folder.
+** Ensure that you extract the installation file into the `C:\` folder and do not create additional folders to avoid installation issues.
 ** Ensure that your user has read and write permissions for the `C:\` directory.
 ** If you use a Windows antivirus application, ensure that the `plugins/` and `features/` directories are in the *trusted* category.
 . Open the extracted Anypoint Studio.
