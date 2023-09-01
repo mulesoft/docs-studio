@@ -4,15 +4,44 @@ include::_attributes.adoc[]
 endif::[]
 :page-aliases: jdk-requirement-lnx-workflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-workflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
 
-
 . Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 . Extract the Windows installation file into the `C:\` root folder.
-** Ensure that your user has read and write permissions for the `C:\` directory.
-** If you are using a Windows antivirus application, ensure that the `plugins/` and `features/` directories are under the _trusted_ category.
++
+[NOTE]
+.To avoid installation errors:
+====
+* Ensure that you extract the installation file into the `C:\` folder so that the `AnypointStudio.exe` file is located in the `C:\AnypointStudio\` folder after installation.
+* Ensure that your user has read and write permissions for the `C:\` directory.
+* If you use a Windows antivirus application, ensure that the `plugins/` and `features/` directories are in the *trusted* category.
+====
 . Open the extracted Anypoint Studio.
 +
 When Studio first runs, the embedded OpenJDK Platform libraries might cause a Windows Security alert. +
 Ensure to allow the OpenJDK Platform library from Temurin publisher through your Windows firewall.
-. Click OK to accept the default workspace. +
+. Click *OK* to accept the default workspace. +
 ** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +
 Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
+
+== Exclude Studio from Windows Defender Scans
+
+While Windows Defender is a tool for keeping your computer safe, it can slow down the performance of Studio because it scans files in real-time as they are accessed, which causes delays. To prevent performance issues, you can completely exclude Studio from Windows Defender real-time protection:
+
+. Run Studio. 
++
+A Windows Defender real-time protection notice asks whether to exclude Studio folders and processes:
++
+image::windows-defender-exclusions.png[“A Windows Defender real-time protection popup asks whether to exclude Studio folders and processes.”]
++
+* The `/.p2` folder stores Studio plugins.
++
+* The second folder shows the path of the workspace that you select when launching Studio.
++
+* The third folder points to the Anypoint Studio application location.
++
+. Optionally, select the *Remember my decision* checkbox.
+. Click *Yes*.
+. Click *Yes* again when Windows PowerShell requests permission to make the change:
++
+image::windows-powershell-access-request.png[“Windows Powershell popup requests that you confirm the change.”]
+
+NOTE: If you select the *Remember my decision* checkbox and click *No*, Windows Defender real-time protection scans Studio folders and processes as you work with them.
