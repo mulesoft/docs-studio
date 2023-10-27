@@ -1,5 +1,4 @@
 .xref:index.adoc[Anypoint Studio]
-* xref:whats-new-in-studio.adoc[]
 
 * xref:index.adoc[Overview]
 
