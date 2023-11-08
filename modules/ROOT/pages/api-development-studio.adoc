@@ -30,7 +30,7 @@ You can design your API using either RAML or OAS 2.0 and 3.0 specifications in A
 
 Studio leverages APIkit to scaffold the flow and make it easier for you to start developing a Mule application from an API specification.
 
-NOTE: Studio does not support scaffolding API specs that reference OAS or JSON schema fragments imported from Exchange as project dependencies. Instead, you can scaffold a spec with such fragments by providing the fragments inline within the spec or through fragment files that you create manually within your project directory. RAML fragments from Exchange are not affected by this limitation.
+NOTE: Studio does not support scaffolding API specs that reference OAS or JSON schema fragments imported from Exchange as project dependencies. Instead, you can scaffold a spec with these fragments by providing the fragments inline within the spec or through fragment files that you create manually within your project directory. RAML fragments from Exchange are not affected by this limitation.
 
 == API Specifications as Local Copies in Your Projects
 
