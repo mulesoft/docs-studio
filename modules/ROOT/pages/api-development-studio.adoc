@@ -20,7 +20,7 @@ This workflow allows you to use both RAML and OAS 2.0 and 3.0 specifications and
 
 You can manage APIs for your Mule application the same way you manage the modules that compose your application. By leveraging Exchange as your unified repository for all your Mule application dependencies, you can monitor the latest versions of your dependencies, ensuring that your application is up-to-date with the latest API requirements.
 
-Because the implementation of your API can change with each iteration, you must keep track so that your Mule application can be updated to match newer specifications. To help you track these changes, you must treat your API specifications as dependencies of your project. This way, every time the specification design changes, the API publishes a new API version that you can manage from Studio and you can update your application to match the new API version.
+Because the implementation of your API can change with each iteration, you must keep track so that your Mule application can be updated to match newer specifications. To help you track these changes, treat your API specifications as dependencies of your project. This way, every time the specification design changes, the API publishes a new API version that you can manage from Studio and you can update your application to match the new API version.
 
 Each API version that you import from Exchange is not stored as a local copy on your project’s structure, but as a reference to the API version dependency in Exchange. By referencing the API version in Exchange, Studio can periodically check the status of the version and alert you when a new version is available.
 
