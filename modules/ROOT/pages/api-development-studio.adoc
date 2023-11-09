@@ -20,7 +20,7 @@ This workflow allows you to use both RAML and OAS 2.0 and 3.0 specifications and
 
 You can manage APIs for your Mule application the same way you manage the modules that compose your application. By leveraging Exchange as your unified repository for all your Mule application dependencies, you can monitor the latest versions of your dependencies, ensuring that your application is up-to-date with the latest API requirements.
 
-Because the implementation of your API might change with each iteration, it’s important for you to keep track so that your Mule application can be updated to match newer specifications. To help you track these changes, you must treat your API specifications as dependencies of your project. This way, every time the specification design changes, the API publishes a new API version that you can manage from Studio and you can update your application to match the new API version.
+Because the implementation of your API can change with each iteration, you must keep track so that your Mule application can be updated to match newer specifications. To help you track these changes, treat your API specifications as dependencies of your project. This way, every time the specification design changes, the API publishes a new API version that you can manage from Studio and you can update your application to match the new API version.
 
 Each API version that you import from Exchange is not stored as a local copy on your project’s structure, but as a reference to the API version dependency in Exchange. By referencing the API version in Exchange, Studio can periodically check the status of the version and alert you when a new version is available.
 
@@ -30,6 +30,7 @@ You can design your API using either RAML or OAS 2.0 and 3.0 specifications in A
 
 Studio leverages APIkit to scaffold the flow and make it easier for you to start developing a Mule application from an API specification.
 
+NOTE: Studio does not support scaffolding API specs that reference OAS or JSON schema fragments imported from Exchange as project dependencies. Instead, you can scaffold a spec with these fragments by providing the fragments inline within the spec or through fragment files that you create manually within your project directory. RAML fragments from Exchange are not affected by this limitation.
 
 == API Specifications as Local Copies in Your Projects
 
@@ -43,7 +44,7 @@ You can only keep RAML API specifications as local copies within your project's 
 
 You can start xref:create-api-specification-studio.adoc[an API specification project in Studio and synchronize it with Design Center]. Studio uses version control system (VCS) capabilities to keep your API specifications synchronized between your Studio workspace and Design Center.
 
-You can also import an API specification from Design Center as a an API specification project with VCS enabled capabilities to edit your API specification using Studio and synchronize your changes with Design Center:
+You can also import an API specification from Design Center as an API specification project with VCS-enabled capabilities to edit your API specification using Studio and synchronize your changes with Design Center:
 
 . Design an API specification in Design Center. +
 You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification with the Visual Editor] or xref:design-center::design-create-publish-api-raml-editor.adoc[with the Code Editor].
