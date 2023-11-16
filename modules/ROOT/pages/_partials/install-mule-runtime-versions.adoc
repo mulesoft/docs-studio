@@ -24,13 +24,13 @@ If you choose to use a different Mule version than the one bundled in your Studi
 . In the top menu bar, select *Help* > *Install New Software.*
 . Select *Mule Runtimes for Anypoint Studio - +https://studio.mulesoft.org/s3/studio-runtimes/+*:
 +
-image::studio::mule-runtime-update-site.png[]
+image:::mule-runtime-update-site.png[]
 . Select the Mule version you want to install and select *Next*.
 +
-image::studio::select-mule-runtime-version.png[]
+image::select-mule-runtime-version.png[]
 . Accept the terms and conditions and click *Finish*.
 +
-image::studio::accept-terms-and-conditions.png[]
+image::accept-terms-and-conditions.png[]
 . Restart Studio after the installation is completed.
 
 After installing a different Mule version, you can proceed to update your project to use that version.
@@ -41,10 +41,10 @@ After installing a different Mule version, you can proceed to update your projec
 
 . In the Package Explorer view, right-click your project, and select *Mule* > *Open Mule Project Properties*:
 +
-image::studio::open-mule-project-properties.png[]
+image::open-mule-project-properties.png[]
 . Use the drop-down menu next to *Server Runtime* to select a new Mule version:
 +
-image::studio::select-project-runtime-version.png[]
+image::select-project-runtime-version.png[]
 . Select *Apply and Close*.
 
 // end::update-mule-version-task[]
@@ -57,8 +57,8 @@ To uninstall a version of Mule:
 . In the top menu bar, select *Anypoint Studio* > *About Anypoint Studio*.
 . Select *Installation Details*:
 +
-image::studio::studio-installation-details.png[]
+image::studio-installation-details.png[]
 . Select the runtime version you want to uninstall and click *Uninstall...*.
 +
-image::studio::uninstall-runtime-version.png[]
+image::uninstall-runtime-version.png[]
 // end::uninstall-mule-version-task[]
