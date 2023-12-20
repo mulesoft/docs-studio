@@ -39,7 +39,7 @@ Java 7 is compatible with Mule 3.6 and below.
 
 [NOTE]
 --
-Studio 6.1.1 and newer allows you to log-in to Anypoint Platform using your configured xref:access-management::external-identity.adoc[federated external identity].
+Studio versions 6.1.1 and later allow you to log in to Anypoint Platform using your configured xref:access-management::external-identity.adoc[federated external identity].
 
 . When adding your Platform's credentials, click the *Configure* button
 . By default, the _Anypoint Platform_ option is selected.
