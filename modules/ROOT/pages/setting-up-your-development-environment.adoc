@@ -39,7 +39,7 @@ Java 7 is compatible with Mule 3.6 and below.
 
 [NOTE]
 --
-https://archive.docs.mulesoft.com/release-notes/studio/anypoint-studio-6.1-with-3.8.1-runtime-update-site-1-release-notes[Studio 6.1.1] and newer allows you to log-in to Anypoint Platform using your configured xref:access-management::external-identity.adoc[federated external identity].
+Studio 6.1.1 and newer allows you to log-in to Anypoint Platform using your configured xref:access-management::external-identity.adoc[federated external identity].
 
 . When adding your Platform's credentials, click the *Configure* button
 . By default, the _Anypoint Platform_ option is selected.
@@ -64,7 +64,7 @@ This process only needs to be done once. A project manager or whoever is respons
 
 === Enable Private Cloud Edition Setup
 
-https://archive.docs.mulesoft.com/release-notes/studio/anypoint-studio-6.2-with-3.8.3-runtime-release-notes[Anypoint Studio 6.2] and higher support the xref:private-cloud::index.adoc[Anypoint Platform Private Cloud Edition (Anypoint Platform PCE)] version 1.7 and earlier.
+Anypoint Studio 6.2 and higher support the xref:private-cloud::index.adoc[Anypoint Platform Private Cloud Edition (Anypoint Platform PCE)] version 1.7 and earlier.
 
 [NOTE]
 Studio 6.5 is not compatible with Anypoint Platform PCE 2.x
