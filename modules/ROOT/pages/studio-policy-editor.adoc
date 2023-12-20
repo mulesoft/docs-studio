@@ -9,7 +9,7 @@ This way, you can compose, debug, and test custom API policies within Studio, us
 
 [WARNING]
 --
-The custom policy editor is still in Beta and is available only for Enterprise Edition users of https://archive.docs.mulesoft.com/release-notes/studio/anypoint-studio-6.1-with-3.8.1-runtime-release-notes[Anypoint Studio 6.1] or newer versions of 6.5.
+The custom policy editor is still in Beta and is available only for Enterprise Edition users of Anypoint Studio 6.1 or newer versions of 6.5.
 
 The Custom Policy Editor is not available for Anypoint Studio 7.x
 --
