@@ -16,7 +16,6 @@ endif::[]
 [TIP]
 XULRunner binaries are located in a subfolder within the directory where you extracted the XULRunner package: `XUL.framework/Versions/Current/`
 
-
 == See Also
 
 * xref:studio-xulrunner-wx-task.adoc[Configure XULRunner as Studio Default Layout Engine (Windows)]

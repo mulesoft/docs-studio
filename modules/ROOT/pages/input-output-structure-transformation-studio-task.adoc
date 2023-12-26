@@ -7,9 +7,7 @@ To use the graphical view and construct mappings via drag and drop, the Transfor
 
 If you plan to create your transformation entirely by writing DataWeave code, you can skip defining input and output and reference elements directly.
 
-
 == Define Data Structure on Other Components
-
 
 . Make sure that all other elements in the flow are fully configured.
 +
@@ -19,19 +17,15 @@ When input and output of a component can be predicted based on its configuration
 +
 For example, an HTTP listener might receive requests containing any payload.
 
-
 == Define Data Structure in Transform Message Component
 
 . Right click on the root of the input or the output tree, then select Set Metadata.
 
 . Manually define the data structure.
 
-
-
 == Define Data Structure Via XML
 
 See xref:mule-runtime::transform-dataweave-xml-reference.adoc[DataWeave XML Reference].
-
 
 == Reader Configuration
 
@@ -59,7 +53,6 @@ For a detailed reference of what properties can be set in the Reader Configurati
 [NOTE]
 You can also add this information through properties in the XML source of your Mule project.
 
-
 == Writer Configuration
 
 In case your output needs to be constructed in a special way, you can set up certain properties of the writer object. Each output format has different configurable properties, or none.
@@ -75,7 +68,6 @@ For a detailed reference of what properties can be set in the Writer Configurati
 * xref:dataweave::dataweave-formats.adoc#json[JSON]
 
 * xref:dataweave::dataweave-formats.adoc#flat-file[Flat File]
-
 
 == See Also
 

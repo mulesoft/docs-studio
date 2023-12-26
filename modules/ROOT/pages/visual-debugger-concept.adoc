@@ -28,7 +28,6 @@ Additionally, you can run your application in debug mode by right-clicking in th
 
 When debugging in Studio, the debugger listens for incoming TCP connections on `localhost` and port `6666`. You can modify this configuration in by clicking *Run* > *Debug configurations* and selecting the *Debug* tab.
 
-
 == See Also
 
 * xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]

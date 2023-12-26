@@ -21,7 +21,6 @@ Studio scaffolds your API specification. If you choose not to create flows out o
 
 You can import more than one API. You can select the API you want to scaffold flows and check the *Scaffold selected API specifications* checkbox so that Studio generates the flow based on the imported API.
 
-
 == See Also
 
 * xref:api-development-studio.adoc[API Development in Studio]

@@ -14,10 +14,6 @@ Drag elements of the input and drop them onto elements of the output. You can al
 . xref:preview-transformation-output-studio-task.adoc[Preview the Output of a Transformation]
 Verify that the transformation produces the expected output.
 
-
-
-
-
 == See Also
 
 * xref:transform-message-component-concept-studio.adoc[Transform Message Component]

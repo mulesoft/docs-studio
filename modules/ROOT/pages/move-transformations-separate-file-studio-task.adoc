@@ -9,7 +9,6 @@ By default, the DataWeave code from a Transform Message component is expressed i
 
 To export the DataWeave code to a `.dwl` file:
 
-
 . Click the *Edit Current Target* button.
 +
 image::dw-multiple-outputs-edit.png[edit target]

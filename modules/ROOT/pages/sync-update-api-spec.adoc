@@ -5,7 +5,6 @@ endif::[]
 
 When you import an API specification as a dependency, you can update the API specification version in your Studio project.
 
-
 To update the API specification:
 
 . In the Package Explorer view, right-click the Mule project that contains the API specification you want to update.
