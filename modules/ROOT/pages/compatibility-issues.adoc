@@ -1,0 +1,6 @@
+= Resolving Compatibility Issues
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== See Also
