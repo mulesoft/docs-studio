@@ -33,7 +33,6 @@ After a main password is created, Studio caches the main password until it is cl
 
 This file holds all your user credentials in an encrypted form. By default, the secure storage file is located in `$HOME/.eclipse/org.eclipse.equinox.security/secure_storage` and is shared across all Eclipse-based workspaces and Anypoint Studio instances.
 
-
 == Update the Main Password
 
 You can change the main password for a particular provider. When changing a main password, all the encrypted data by this provider is re-encrypted with the new main password.
@@ -57,7 +56,6 @@ image::new-password-created.png[]
 If you don't supply new password hints, then the existing hints persist, referencing the existing main password, and you will not be able to recover your new main password.
 --
 . When Studio confirms that the password is successfully updated, select *Apply and Close*.
-
 
 == Customize the Location of the Secure Storage and Password Files
 
@@ -94,7 +92,6 @@ Exception: `org.eclipse.equinox.security.storage.StorageException: No password p
 This error occurs when Studio loads and caches the main password for the provider and tries to decrypt a value that was encrypted with another main password.
 
 This happens when a user of one instance of Studio or another Eclipse-based application changes the main password at the same time that a user in another instance of Studio saves a new credential using the previously cached main password.
-
 
 === Given Final Block Not Properly Padded
 

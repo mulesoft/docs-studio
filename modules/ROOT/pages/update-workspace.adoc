@@ -92,7 +92,6 @@ When you open a project created with versions earlier than 7.12, Studio adds thi
 
 You must add this new repository to take advantage of the latest publication process to Exchange.
 
-
 == See Also
 
 * xref:mule-runtime::mmp-concept.adoc#mule-application-packaging[Mule Application Packaging]

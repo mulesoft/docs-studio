@@ -5,7 +5,7 @@ endif::[]
 
 Anypoint Studio enables you to write documentation for your new projects and to connect to Exchange to publish your project as a new asset.
 
-== Publishing Assets with Documentation
+== Publish Assets with Documentation
 
 When you create a new project in Anypoint Studio, Studio includes an *exchange-docs* folder with a *home.md* file. You can document the front page of your new asset in Markdown format after publishing your asset to Exchange.
 
@@ -34,7 +34,7 @@ If no format is provided, the home page will be followed by the other pages in a
 . Log in to the platform if needed, fill in the required fields, and click *Finish*. 
 . After uploading the asset, click on the link provided to verify that your asset and documentation are available in Exchange.
 
-== Publishing a Project to Exchange
+== Publish a Project to Exchange
 
 . Right-click your project folder in your *Package Explorer* view.
 . Select *Anypoint Platform* > *Publish to Exchange*.
