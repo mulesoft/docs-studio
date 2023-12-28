@@ -16,6 +16,12 @@ Anypoint Studio features enhance your productivity when building Mule applicatio
 * Embedded unit testing framework
 * Built-in support to deploy to CloudHub
 
+Watch the Anypoint Studio Product Spotlight video to see a quick overview of Studio.
+
+++++
+include::_partials/studio-spotlight-video.html[]
+++++
+
 Anypoint Studio 7.x only supports Mule 4.x projects because the structure of the project, export format, XML and scripting language are different. It isn't possible to embed Mule 3.x runtimes or older versions into Anypoint Studio 7.x.
 
 == Editors
