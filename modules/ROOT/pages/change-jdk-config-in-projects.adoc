@@ -5,7 +5,9 @@ endif::[]
 
 You can select any of your installed JREs as the default Java runtime environment that Studio uses to run your Mule project.
 
-You can change your JRE if you have a specific JDK of Java 11 that you must use or to downgrade to JDK 1.8 to run applications in Mule runtime engine 4.1.x and earlier.
+You can change your JRE to use a specific JDK of Java, or to downgrade to JDK 1.8 to run applications in Mule runtime engine 4.1.x and earlier.
+
+Learn more about compatible versions of Java at xref:studio-release-notes.adoc[]. 
 
 == Select the JRE Version for All your Studio Projects
 
@@ -14,7 +16,7 @@ You can change your JRE if you have a specific JDK of Java 11 that you must use 
 +
 image::installed-jres.png[]
 +
-If your installed JRE version does not appear, you need to configure it:
+If your installed JRE version does not appear, you must configure it:
 +
 .. Go to *Add...*, and select your type of installed JRE:
 ** `MacOS X VM` for MacOS.
@@ -34,3 +36,9 @@ For example, `Java SE 11`.
 . Select the *Alternate JRE* option, and select your desired JRE from the drop-down menu.
 +
 image::change-jdk-project.png[]
+
+
+== See Also
+
+* xref:general::java-support.adoc[]
+* xref:compatibility-issues-runtime-java.adoc[]
