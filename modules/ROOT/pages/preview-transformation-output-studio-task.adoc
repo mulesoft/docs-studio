@@ -3,11 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-:page-aliases: 6.5.x@studio::preview-transformation-output-studio-task.adoc
-
 You can provide sample input data to your Transform Message component to see how the transformation affects it. You don't need to deploy your project to use this feature. A sample output is updated in real time as you make changes both to the sample input and the transformation.
-
-
 
 . Click on the root of the input pane and select *Edit Sample Data*.
 +
@@ -35,7 +31,6 @@ As you make changes in the DataWeave code or your sample data, notice how the ou
 +
 [NOTE]
 If your transformer has multiple outputs (for example, to both the payload and a variable), the *Preview* pane displays the one corresponding to the currently selected transformation.
-
 
 . Test your transformation for any special characters or structures that might arrive, verify that the output is what you expected.
 
