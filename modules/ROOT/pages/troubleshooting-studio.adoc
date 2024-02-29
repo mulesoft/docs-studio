@@ -7,4 +7,3 @@ Troubleshooting and errors you can receive when using Studio:
 
 * xref:faq-default-browser-config.adoc[]
 * xref:compatibility-issues-runtime-java.adoc[]
-
