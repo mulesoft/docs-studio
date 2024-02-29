@@ -1,24 +1,21 @@
 = Update Your Modules
 
-Every time Studio starts up it checks for updated modules in your open projects. You can choose to update to the latest minor version of your module or upgrade directly to the latest version available.
+Every time Studio starts up it checks for updated modules in your open projects. You can choose to update to the latest minor version of your module or upgrade directly to the latest version available. Upgrading to a major version of a module can introduce compatibility issues in your project. Review the release notes of your modules before upgrading to major versions.
 
-[NOTE]
-Consider that upgrading to a major version of a module might introduce compatibility issues in your project. Review the release notes of your modules before upgrading major versions.
+NOTE: If you xref:change-jdk-config-in-projects.adoc[select Java 17 for your project], Studio can notify you about updating your modules.
 
 To manually check for modules updates:
 
 . Ensure that you are logged in to Anypoint Platform.
-. In the top menu bar, select the *Manage Mule Modules* (image:manage-mule-modules-icon.png[2%,2%]) button.
+. In the menu bar, select the *Manage Mule Modules* (image:manage-mule-modules-icon.png[2%,2%]) button.
 +
 image::manage-mule-modules-location.png[]
 
-[CAUTION]
-This feature does not support modules that are inherited from a parent pom file.
-
+NOTE: This feature does not support modules that are inherited from a parent pom file.
 
 You can also manage all dependencies in your project:
 
-. In the top menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
+. In the menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
 . Under *Mule Project*, select *Modules*.
 +
 image::manage-modules.png[]
@@ -35,7 +32,9 @@ image::update-all-modules.png[]
 
 Studio updates your selected dependencies.
 
-Note that this process works only if you manage your dependencies using Studio. If you use Maven properties to specify your modules version:
+This process works if you manage your dependencies using Studio. 
+
+To use Maven properties to specify your modules version:
 
 [source,XML,linenums]
 --
@@ -52,3 +51,8 @@ Note that this process works only if you manage your dependencies using Studio. 
 --
 
 Contact your development team to update your custom Maven code to the latest version available.
+
+== See Also
+
+* xref:general::java-support.adoc[]
+* xref:compatibility-issues-runtime-java.adoc[]
