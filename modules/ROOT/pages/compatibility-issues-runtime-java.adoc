@@ -1,0 +1,15 @@
+= Troubleshooting Issues with Mule Runtime and Java
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+
+The modules in your project can have compatibility issues with Java or with Mule runtime.
+
+== Troubleshooting Errors with Java
+
+
+
+== Troubleshooting Errors with Mule Runtime
+
+
