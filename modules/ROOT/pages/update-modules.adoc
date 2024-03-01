@@ -2,7 +2,7 @@
 
 Every time Studio starts up it checks for updated modules in your open projects. You can choose to update to the latest minor version of your module or upgrade directly to the latest version available. Upgrading to a major version of a module can introduce compatibility issues in your project. Review the release notes of your modules before upgrading to major versions.
 
-NOTE: If you xref:change-jdk-config-in-projects.adoc[select Java 17 for your project], Studio can notify you about updating your modules.
+NOTE: If you xref:change-jdk-config-in-projects.adoc[select Java 17 for your project], Studio can notify you about updating your modules to make them compatible with the selected Java version.
 
 To manually check for modules updates:
 
