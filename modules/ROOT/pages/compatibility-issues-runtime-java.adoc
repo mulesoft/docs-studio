@@ -1,4 +1,4 @@
-= Troubleshoot Issues with Mule Runtime and Java
+= Troubleshooting Issues with Mule Runtime and Java
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
