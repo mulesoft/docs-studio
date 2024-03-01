@@ -37,7 +37,7 @@ For example, `Java SE 11`.
 +
 image::change-jdk-project.png[]
 
-NOTE: If you select Java 17 for your project, Studio can notify you about xref:update-modules.adoc[updating your modules].
+NOTE: If you select Java 17 for your project, Studio can notify you about xref:update-modules.adoc[updating your modules] to make them compatible with the selected Java version.
 
 == See Also
 
