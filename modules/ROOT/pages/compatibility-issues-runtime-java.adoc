@@ -1,15 +1,15 @@
-= Troubleshooting Issues with Mule Runtime and Java
+= Troubleshoot Issues with Mule Runtime and Java
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+The modules in your project can have compatibility issues with Java or Mule runtime.
 
-The modules in your project can have compatibility issues with Java or with Mule runtime.
+Mule runtime 4.6 is compatible with Java 17, and Mule runtime 4.5 and earlier are compatible with Java 8 and 11.
 
-== Troubleshooting Errors with Java
+When you create a project, Studio uses its default JRE. And when you select a module, Studio displays the latest version of the modules compatible with your JRE and your Mule runtime.
 
+If you select a different JRE for your project and you don't update your module to a compatible version, your project fails at deployment.
 
-
-== Troubleshooting Errors with Mule Runtime
-
+To avoid deployment errors, you must xref:change-jdk-config-in-projects.adoc[select a JRE] that is compatible with your current Studio Mule runtime. If needed, xref:update-modules.adoc[update your modules] to select a compatible version.  
 
