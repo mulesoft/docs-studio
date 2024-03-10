@@ -18,7 +18,7 @@ image::installed-jres.png[]
 +
 If your installed JRE version does not appear, you must configure it:
 +
-.. Go to *Add...*, and select your type of installed JRE:
+.. Go to *Add*, and select your type of installed JRE:
 ** `MacOS X VM` for MacOS.
 ** `Standard VM` for Windows and Linux.
 .. Click *Next*.
@@ -31,7 +31,7 @@ For example, `Java SE 11`.
 == Select the JRE Version for a Specific Project
 
 . Right click in your Studio project.
-. Navigate to *Build Path*, and click *Configure Build Path...*.
+. Navigate to *Build Path*, and click *Configure Build Path*.
 . In the *Libraries* tab, select your *JRE System Library* and click *Edit*.
 . Select the *Alternate JRE* option, and select your desired JRE from the drop-down menu.
 +
