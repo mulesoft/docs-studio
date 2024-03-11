@@ -5,11 +5,11 @@ endif::[]
 
 The modules in your project can have compatibility issues with Java or Mule runtime.
 
-Mule runtime 4.6 is compatible with Java 17, and Mule runtime 4.5 and earlier are compatible with Java 8 and 11.
+Mule runtime 4.6 is compatible with Java 8, 11, and 17. Mule runtime 4.5 and earlier are compatible with Java 8 and 11.
 
-When you create a project, Studio uses its default JRE. And when you select a module, Studio displays the latest version of the modules compatible with your JRE and your Mule runtime.
+When you create a project, Studio uses its default JRE. When you select a module, Studio displays the latest version of the modules compatible with your JRE and your Mule runtime.
 
-If you select a different JRE for your project and you don't update your module to a compatible version, your project fails at deployment.
+If you select a different JRE for your project and don't update your module to a compatible version, your project fails at deployment.
 
 To avoid deployment errors, you must xref:change-jdk-config-in-projects.adoc[select a JRE] that is compatible with your current Studio Mule runtime. If needed, xref:update-modules.adoc[update your modules] to select a compatible version.  
 
