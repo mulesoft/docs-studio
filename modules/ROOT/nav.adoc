@@ -106,5 +106,4 @@
   *** xref:studio-xulrunner-wx-task.adoc[Windows]
   *** xref:studio-xulrunner-lnx-task.adoc[Linux]
   *** xref:studio-xulrunner-unx-task.adoc[MacOS]
- ** xref:incompatible-runtime-jvm.adoc[Check Incompatibility in Runtime and JVM]
  ** xref:compatibility-issues-runtime-java.adoc[Resolve Compatibility Issues]
