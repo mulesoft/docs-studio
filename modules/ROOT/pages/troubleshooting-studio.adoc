@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Troubleshooting and errors you can receive when using Studio:
+For more details on troubleshooting errors with Studio, you can refer to the following resources:
 
 * xref:faq-default-browser-config.adoc[]
 * xref:compatibility-issues-runtime-java.adoc[]
