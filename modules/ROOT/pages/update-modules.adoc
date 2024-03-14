@@ -7,7 +7,7 @@ NOTE: If you xref:change-jdk-config-in-projects.adoc[select Java 17 for your pro
 To manually check for module updates:
 
 . Ensure that you are logged in to Anypoint Platform.
-. In the menu bar, select the *Manage Mule Modules* (image:manage-mule-modules-icon.png[2%,2%]) button.
+. In the menu bar, click *Manage Mule Modules* (image:manage-mule-modules-icon.png[2%,2%]).
 +
 image::manage-mule-modules-location.png[]
 
