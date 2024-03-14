@@ -34,7 +34,7 @@ Studio updates your selected dependencies.
 
 This process works if you manage your dependencies using Studio. 
 
-To use Maven properties to specify your modules version:
+To use Maven properties to specify your module version:
 
 [source,XML,linenums]
 --
