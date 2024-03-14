@@ -18,7 +18,7 @@ image::installed-jres.png[]
 +
 If your installed JRE version does not appear, you must configure it:
 +
-.. Go to *Add*, and select your type of installed JRE:
+.. Go to *Add* and select your installed JRE type:
 ** `MacOS X VM` for MacOS.
 ** `Standard VM` for Windows and Linux.
 .. Click *Next*.
