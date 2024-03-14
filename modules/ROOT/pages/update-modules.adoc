@@ -15,7 +15,7 @@ NOTE: This feature does not support modules that are inherited from a parent pom
 
 You can also manage all dependencies in your project:
 
-. In the menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
+. In the menu bar, click *Manage dependencies* image:manage-dependencies.png[20,20].
 . Under *Mule Project*, select *Modules*.
 +
 image::manage-modules.png[]
