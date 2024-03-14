@@ -7,7 +7,7 @@ The modules in your project can have compatibility issues with Java or Mule runt
 
 Mule runtime 4.6 is compatible with Java 8, 11, and 17. Mule runtime 4.5 and earlier are compatible with Java 8 and 11.
 
-When you create a project, Studio uses its default JRE. When you select a module, Studio displays the latest version of the modules compatible with your JRE and your Mule runtime.
+When you create a project, Studio uses its default JRE. When you select a module, Studio displays the latest version of the modules compatible with your JRE and Mule runtime.
 
 If you select a different JRE for your project and don't update your module to a compatible version, your project fails at deployment.
 
