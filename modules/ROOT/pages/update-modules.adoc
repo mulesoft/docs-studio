@@ -11,7 +11,7 @@ To manually check for module updates:
 +
 image::manage-mule-modules-location.png[]
 
-NOTE: This feature does not support modules that are inherited from a parent pom file.
+NOTE: This feature does not support modules that are inherited from a parent POM file.
 
 You can also manage all dependencies in your project:
 
