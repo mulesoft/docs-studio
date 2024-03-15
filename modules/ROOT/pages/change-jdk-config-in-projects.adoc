@@ -14,7 +14,7 @@ Learn more about compatible versions of Java at xref:studio-release-notes.adoc[]
 . In Studio, click *Anypoint Studio*, and *Preferences*.
 . Under *Java*, *Installed JREs*, select the JRE version you want to use.
 +
-image::installed-jres.png[]
+image::installed-jres.png["Preference window listing the installed JREs."]
 +
 If your installed JRE version does not appear, you must configure it:
 +
@@ -35,7 +35,7 @@ For example, `Java SE 11`.
 . In the *Libraries* tab, select your *JRE System Library* and click *Edit*.
 . Select the *Alternate JRE* option, and select your desired JRE from the drop-down menu.
 +
-image::change-jdk-project.png[]
+image::change-jdk-project.png["Edit Library window displaying the alternate JRE options."]
 
 NOTE: If you select Java 17 for your project, Studio can notify you about xref:update-modules.adoc[updating your modules] to make them compatible with the selected Java version.
 
