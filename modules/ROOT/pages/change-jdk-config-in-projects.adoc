@@ -12,7 +12,7 @@ Learn more about compatible versions of Java at xref:studio-release-notes.adoc[]
 == Select the JRE Version for All Your Studio Projects
 
 . In Studio, click *Anypoint Studio*, and *Preferences*.
-. Under *Java*, *Installed JREs*, select the JRE version you want to use.
+. Under *Java*, *Installed JREs*, select the JRE version to use.
 +
 image::installed-jres.png["Preference window listing the installed JREs."]
 +
