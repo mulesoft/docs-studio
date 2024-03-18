@@ -37,7 +37,7 @@ For example, `Java SE 11`.
 +
 image::change-jdk-project.png["Edit Library window displaying the alternate JRE options."]
 
-NOTE: If you select Java 17 for your project, Studio can notify you about xref:update-modules.adoc[updating your modules] to make them compatible with the selected Java version.
+NOTE: If you select Java 17 for your project, Studio automatically searches Exchange and suggests xref:update-modules.adoc[the modules and connectors to upgrade] to make your app compatible with Java 17.
 
 == See Also
 
