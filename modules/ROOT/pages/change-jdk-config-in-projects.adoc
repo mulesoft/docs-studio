@@ -5,18 +5,20 @@ endif::[]
 
 You can select any of your installed JREs as the default Java runtime environment that Studio uses to run your Mule project.
 
-You can change your JRE if you have a specific JDK of Java 11 that you must use or to downgrade to JDK 1.8 to run applications in Mule runtime engine 4.1.x and earlier.
+You can select the version of the JDK to use for the project that is compatible with the Mule runtime version the project runs on.
 
-== Select the JRE Version for All your Studio Projects
+Learn more about compatible versions of Java at xref:studio-release-notes.adoc[]. 
+
+== Select the JRE Version for All Your Studio Projects
 
 . In Studio, click *Anypoint Studio*, and *Preferences*.
-. Under *Java*, *Installed JREs*, select the JRE version you want to use.
+. Under *Java*, *Installed JREs*, select the JRE version to use.
 +
-image::installed-jres.png[]
+image::installed-jres.png["Preference window listing the installed JREs."]
 +
-If your installed JRE version does not appear, you need to configure it:
+If your installed JRE version does not appear, you must configure it:
 +
-.. Go to *Add...*, and select your type of installed JRE:
+.. Go to *Add* and select your installed JRE type:
 ** `MacOS X VM` for MacOS.
 ** `Standard VM` for Windows and Linux.
 .. Click *Next*.
@@ -28,9 +30,16 @@ For example, `Java SE 11`.
 
 == Select the JRE Version for a Specific Project
 
-. Right click in your Studio project.
-. Navigate to *Build Path*, and click *Configure Build Path...*.
+. Right-click in your Studio project.
+. Navigate to *Build Path*, and click *Configure Build Path*.
 . In the *Libraries* tab, select your *JRE System Library* and click *Edit*.
 . Select the *Alternate JRE* option, and select your desired JRE from the drop-down menu.
 +
-image::change-jdk-project.png[]
+image::change-jdk-project.png["Edit Library window displaying the alternate JRE options."]
+
+NOTE: If you select Java 17 for your project, Studio automatically searches Exchange and suggests xref:update-modules.adoc[the modules and connectors to upgrade] to make your app compatible with Java 17.
+
+== See Also
+
+* xref:general::java-support.adoc[]
+* xref:compatibility-issues-runtime-java.adoc[]
