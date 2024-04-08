@@ -33,6 +33,9 @@ Additionally you can configure the amount of worker and worker size for the Clou
 After you deploy your application from Anypoint Studio for the first time, you can keep modifying the application's code and repeat the steps 1 and 2 above to redeploy your updated application. +
 When you get to the CloudHub instance configuration window, the "Overwrite Existing Application" option would already be selected for you. This allows you to redeploy the application.
 
+[NOTE]
+Learn more about xref:cloudhub::deploying-to-cloudhub.adoc[alternative ways to deploy your Mule application to CloudHub].
+
 == See Also
 
 * xref:set-credentials-in-studio-to.adoc[Configure Anypoint Platform Credentials]
