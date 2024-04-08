@@ -34,7 +34,7 @@ After you deploy your application from Anypoint Studio for the first time, you c
 When you get to the CloudHub instance configuration window, the "Overwrite Existing Application" option would already be selected for you. This allows you to redeploy the application.
 
 [NOTE]
-Learn more about xref:cloudhub::deploying-to-cloudhub.adoc[alternative paths to deploy your mule application to CloudHub].
+Learn more about xref:cloudhub::deploying-to-cloudhub.adoc[alternative ways to deploy your Mule application to CloudHub].
 
 == See Also
 
