@@ -20,7 +20,7 @@ If your installed JRE version does not appear, you must configure it:
 +
 .. Go to *Add* and select your installed JRE type:
 ** `MacOS X VM` for MacOS.
-** `Standard VM` for Windows and Linux.
+** `Standard VM` for MacOS, Windows, and Linux.
 .. Click *Next*.
 .. In *JRE Home*, click *Directory* and select the folder where you have installed JRE. +
 For example, `/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home`
