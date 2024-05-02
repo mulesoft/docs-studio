@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio comes bundled with a default browser to display elements of the Anypoint Platform UI. For example, when you deploy to CloudHub from Studio, the Runtime Manager UI displayed in Studio is rendered using a built-in browser.
+Anypoint Studio comes bundled with a default browser to display elements of the Anypoint Platform UI. For example, when you deploy to CloudHub from Studio, Studio displays the Runtime Manager UI by using a built-in browser.
 
 This built-in browser is the default. However, if you log in to Anypoint Platform using multi-factor authentication (MFA), you must configure Studio to use your system's native browser to render the Anypoint Platform UI:
 
@@ -21,7 +21,7 @@ image::browser-configuration.png[]
 
 Additionally, if you use Windows you must perform an additional configuration:
 
-. Quit Anypoint Studio if you are running it.
+. Quit Anypoint Studio if you're running it.
 . Download the latest fixed version of WebView2 from the https://developer.microsoft.com/en-us/microsoft-edge/webview2/[Microsoft Developer Portal^].
 . Extract the `.cab` file with the following command in a Command Prompt (CMD): `Extrac32 /E <path_to_CAB>`
 . Locate your `AnypointStudio.ini` file inside your Anypoint Studio installation directory.
