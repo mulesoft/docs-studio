@@ -11,5 +11,8 @@ When you create a project, Studio uses its default JRE. When you select a module
 
 If you select a different JRE for your project and don't update your module to a compatible version, your project fails at deployment.
 
-To avoid deployment errors, you must xref:change-jdk-config-in-projects.adoc[select a JRE] that is compatible with the current Mule runtime used in Studio. If needed, xref:update-modules.adoc[update your modules] to select a compatible version.  
+To avoid deployment errors, you must xref:change-jdk-config-in-projects.adoc[select a JRE] that is compatible with the current Mule runtime used in Studio. If needed, xref:update-modules.adoc[update your modules] to select a compatible version.
 
+== See Also
+
+* xref:general::java-support.adoc[]

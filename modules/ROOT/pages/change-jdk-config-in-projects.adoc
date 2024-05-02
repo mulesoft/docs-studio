@@ -1,4 +1,4 @@
-= Select a Different JRE to Run the Embedded Mule Runtime Engine
+= Selecting a Different Java Version to Run the Embedded Mule Runtime Engine
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -9,7 +9,7 @@ You can select the version of the JDK to use for the project that is compatible 
 
 Learn more about compatible versions of Java at xref:studio-release-notes.adoc[]. 
 
-== Select the JRE Version for All Your Studio Projects
+== Select the Java Version for All Your Studio Projects
 
 . In Studio, click *Anypoint Studio*, and *Preferences*.
 . Under *Java*, *Installed JREs*, select the JRE version to use.
@@ -20,15 +20,17 @@ If your installed JRE version does not appear, you must configure it:
 +
 .. Go to *Add* and select your installed JRE type:
 ** `MacOS X VM` for MacOS.
-** `Standard VM` for Windows and Linux.
+** `Standard VM` for MacOS, Windows, and Linux.
 .. Click *Next*.
-.. In the *JRE Home*, click *Directory* and select the folder where your JRE is installed. +
+.. In *JRE Home*, click *Directory* and select the folder where you have installed JRE. +
 For example, `/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home`
 .. In *JRE Name* type in a descriptive name for the JRE. +
 For example, `Java SE 11`.
 .. Click *Finish*.
 
-== Select the JRE Version for a Specific Project
+== Migrate Your Project to a Different Java Version
+
+Studio 7.17.0 and later are compatible with Java 17, so you can upgrade connectors and apps in your projects to obtain its latest features. 
 
 . Right-click in your Studio project.
 . Navigate to *Build Path*, and click *Configure Build Path*.
@@ -37,7 +39,9 @@ For example, `Java SE 11`.
 +
 image::change-jdk-project.png["Edit Library window displaying the alternate JRE options."]
 
-NOTE: If you select Java 17 for your project, Studio automatically searches Exchange and suggests xref:update-modules.adoc[the modules and connectors to upgrade] to make your app compatible with Java 17.
+If you select Java 17 for your project, Studio automatically searches Exchange and suggests xref:update-modules.adoc[the modules and connectors to upgrade] to make your app compatible with Java 17.
+
+If you find issues, you can xref:compatibility-issues-runtime-java.adoc[troubleshoot them] and then xref:deploy-mule-application-task.adoc[deploy your project to the appropriate environment] with Java compatibility checks.
 
 == See Also
 
