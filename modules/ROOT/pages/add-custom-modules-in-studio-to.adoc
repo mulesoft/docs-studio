@@ -14,7 +14,7 @@ You can install custom modules using the Studio UI, or by manually adding them a
 
 To install a local custom module from Studio:
 
-. In the top menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
+. In the menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
 . Under *Mule Project*, select *Modules*:
 +
 image::manage-modules.png[]
@@ -29,7 +29,7 @@ This information is available in your module's `pom.xml` file.
 
 == From Maven
 
-Because Mule modules are developed as Maven projects, you can install them from a local or online Maven repository:
+As you develop Mule modules as Maven projects, you can install them from a local or online Maven repository:
 
 . In your Anypoint Studio project, edit the `pom.xml` file with the groupId, artifactId, and version of your Mule module. +
 This information is available in your module's `pom.xml` file. For example:
@@ -51,9 +51,9 @@ This information is available in your module's `pom.xml` file. For example:
 <description>Mule extension for loading encrypted properties</description>
 ----
 +
-It is also reflected in the folder structure in which the Mule module was installed (`$MAVEN_REPOS_HOME/groupID_path/artifactId/version`).
+It's also reflected in the folder structure in which the Mule module is installed (`$MAVEN_REPOS_HOME/groupID_path/artifactId/version`).
 +
-For the example above, your Anypoint Studio pom.xml file should add the following dependency:
+For the previous example, your Anypoint Studio pom.xml file must add the following dependency:
 +
 [source,xml,linenums]
 ----
@@ -65,7 +65,7 @@ For the example above, your Anypoint Studio pom.xml file should add the followin
 </dependency>
 ----
 +
-Note that the `<classifier>` element is set to mule-plugin. This automatically installs the mule-plugin into your project's palette.
+The `<classifier>` element is set to mule-plugin. This automatically installs the mule-plugin into your project's palette.
 . Save your changes to your Studio project's `pom.xml` file.
 
 After Anypoint Studio downloads the new dependency, you'll see your new Mule module in the Studio palette. In this example, there is a Secure Properties module listed in the Mule Palette view. +
