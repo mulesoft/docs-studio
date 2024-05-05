@@ -26,7 +26,7 @@ image::payload-autocomplete.png[]
 
 == When to Manually Define Metadata
 
-You can manually define the metadata that all the components of a Mule application expose. You must do this if required (for example, for a metadata type that you defined). Or you must define metadata manually if most cohesive to an annotated value (for example, when a component uses or expects a specific metadata type).
+You can manually define the metadata that all the components of a Mule application expose. You must do this if required (for example, for a metadata type that you defined). Or you must define metadata manually if it's most cohesive to an annotated value (for example, when a component uses or expects a specific metadata type).
 
 When working with flows and subflows, you must declare their metadata contract to specify the shape of the event you require and the shape of the event you return to the caller. On the contrary, do not define metadata when using the Transform Message component because DataWeave defines the contract between the producer and the consumer of data. In this situation, if you explicitly declare a metadata type, you mask the actual metadata type of the data coming from your Transform Message component.
 
