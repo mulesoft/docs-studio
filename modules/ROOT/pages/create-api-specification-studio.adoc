@@ -1,6 +1,6 @@
 = Create an API Specification Project in Studio
 
-Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment, and then to automatically sync it with Design Center.
+Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment, and automatically sync it with Design Center.
 
 [NOTE]
 Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
