@@ -12,7 +12,7 @@ You must understand how your components use metadata in a flow to ensure data re
 
 == Use Datasense to Map Data
 
-Consider a flow in which you include an Anypoint Connector preceded or followed by a Transform Message component. The Mule runtime engine uses the working connection to the resource to retrieve and supply to DataWeave metadata about the payload and properties. This feature saves you the effort of manually inspecting Mule event structure.
+Consider a flow in which you include an Anypoint Connector preceded or followed by a Transform Message component. The Mule runtime engine uses the working connection to the resource to retrieve and supply DataWeave metadata about the payload and properties. This feature saves you the effort of manually inspecting Mule event structure.
 
 For example, imagine that you must connect your organization's Salesforce account to Slack to notify your team about a new opportunity. To do this, you can drop both Salesforce and Slack connectors on your Studio canvas and configure them to connect to your organization's accounts. Then, you can drop a Transform Message component between the connectors. Mule automatically captures the data type and structure information from each provider and prescribes the input and output for your data mapping. With this prescription in place, you can configure the mapping, populating the DataWeave code.
 
