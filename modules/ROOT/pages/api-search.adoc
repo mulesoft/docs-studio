@@ -31,7 +31,7 @@ For example, `!examples.raml` searches inside all files except `examples.raml`.
 * *Local API Files* searches inside API specifications added from a local file or from Anypoint Design Center.
 . Click *Search*.
 
-You can also search for all API specifications inside your open projects. You can select *Navigate* > *Open API Resource* in the taskbar at the Anypoint Studio display, or use `cmd+Shift+P` (MacOS) or `control+shift+P` (Windows/Linux) keyboard shortcuts:
+You can also search for all API specifications inside your open projects. You can select *Navigate* > *Open API Resource* in the taskbar at the Anypoint Studio display, or press `Cmd+Shift+p` (MacOS) or `Ctrl+Shift+P` (Windows/Linux):
 
 image::open-api-resource.png[]
 
