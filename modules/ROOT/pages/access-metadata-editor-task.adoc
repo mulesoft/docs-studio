@@ -28,7 +28,7 @@ If the previous component in your flow is already defining output metadata, the 
 +
 image::access-metadata-editor-task-b0be6.png[]
 
-When you set metadata for a Transform Message component, you can select a checkbox to wrap elements in a collection. Selecting the wrap-elements option sets the metadata as a list, where each element on the list is an instance of the structure you defined. So for example if you set your metadata as an XML structure and click this checkbox, metadata expresses as a list that contains N instances of that XML structure.
+When you set metadata for a Transform Message component, you can select a checkbox to wrap elements in a collection. Selecting the wrap-elements option sets the metadata as a list, where each element on the list is an instance of the structure you defined. So for example, if you set your metadata as an XML structure and click this checkbox, metadata shows as a list that contains N instances of that XML structure.
 
 == Package Explorer View
 
