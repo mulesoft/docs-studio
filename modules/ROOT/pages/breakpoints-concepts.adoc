@@ -49,7 +49,7 @@ For example, the following expression activates the breakpoint if the method use
 attributes.method == "GET"
 ----
 
-You must not stop the application's execution to change the condition.
+You can change the condition without stopping the application's execution.
 
 == Error Breakpoints
 
