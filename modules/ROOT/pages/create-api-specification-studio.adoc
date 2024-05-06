@@ -1,13 +1,13 @@
 = Create an API Specification Project in Studio
 
-Anypoint Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment in Studio, and then to automatically synchronize it with Design Center.
+Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment, and automatically sync it with Design Center.
 
 [NOTE]
 Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
 
-To start creating an API specification project in Studio, you must be logged in to Anypoint Platform. See xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
+To start creating an API specification project in Studio, you must log in to Anypoint Platform. See xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
 
-. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *API Specification Project*.
+. In the taskbar of the Anypoint Studio display, select *File* > *New* > *API Specification Project*.
 . Select the tab of type of API specification project that you want to create:
 * To create a new API specification, select the *New API Specification* tab, and then select the type of API.
 +
@@ -34,7 +34,7 @@ include::partial$branch-commit-push-changes.adoc[tag=commit-to-branch-vcs]
 
 == Merge and Push Your API Specification Project
 
-You can merge the changes made to your API specification to your main branch and synchronize it with Design Center
+You can merge the changes made to your API specification to your main branch and sync it with Design Center.
 
 include::partial$branch-commit-push-changes.adoc[tag=merge-and-push-to-main-vcs]
 

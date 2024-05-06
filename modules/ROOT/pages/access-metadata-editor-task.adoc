@@ -17,7 +17,8 @@ For example, this is the metadata tab for an HTTP Listener source:
 
 image::access-metadata-editor-task-320a3.png[]
 
-Note that when editing inbound endpoint metadata, you can only define outbound metadata.
+[NOTE]
+If you edit inbound endpoint metadata, you can define outbound metadata.
 
 == Transform Message Component
 
@@ -27,11 +28,11 @@ If the previous component in your flow is already defining output metadata, the 
 +
 image::access-metadata-editor-task-b0be6.png[]
 
-When you set metadata for a Transform Message component, you can select a checkbox to wrap elements in a collection. Selecting the wrap-elements option sets the metadata as a list, where each element on the list is an instance of the structure you defined. So for example if you set your metadata as an XML structure and click this checkbox, your metadata is expressed as a list that contains N instances of that XML structure.
+When you set metadata for a Transform Message component, you can select a checkbox to wrap elements in a collection. Selecting the wrap-elements option sets the metadata as a list, where each element on the list is an instance of the structure you defined. So for example, if you set your metadata as an XML structure and click this checkbox, metadata shows as a list that contains N instances of that XML structure.
 
 == Package Explorer View
 
-. Select *Window > Show View > Package Explorer* if the package explorer is not already displayed.
+. Select *Window > Show View > Package Explorer* if the package explorer isn't already displayed.
 . Right click a project in the Package Explorer view.
 . Select *Mule > Manage Metadata Types*.
 

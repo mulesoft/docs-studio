@@ -3,9 +3,9 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-When you import your API specifications from Exchange or Maven as dependencies of your projects, those dependencies relocate from `src/resources/api/` to a ZIP file in your project's classpath. This change means that you cannot search for your API dependencies by using the File Search option in Studio. To enable you to search for specific text inside your API dependencies, Studio introduces the API Search feature.
+When you import your API specifications from Exchange or Maven as dependencies of your projects, those dependencies relocate from `src/resources/api/` to a ZIP file in your project's classpath. This change means that you can't search for your API dependencies by using the File Search option in Studio. To enable you to search for specific text inside your API dependencies, Studio introduces the API Search feature.
 
-You can access the API Search menu from the taskbar at the top of the Anypoint Studio display, either by selecting *Search* > *Search...* or by using the control and H keys on your keyboard simultaneously:
+You can access the API Search menu from the taskbar at the Anypoint Studio display, either by selecting *Search* > *Search...* or by pressing `Ctrl+h`:
 
 image::api-search.png[]
 
@@ -31,11 +31,11 @@ For example, `!examples.raml` searches inside all files except `examples.raml`.
 * *Local API Files* searches inside API specifications added from a local file or from Anypoint Design Center.
 . Click *Search*.
 
-You can also search for all API specifications inside your open projects either by selecting *Navigate* > *Open API Resource* in the taskbar at the top of the Anypoint Studio display, or by using `cmd+Shift+P` (MacOS) or `control+shift+P` (Windows/Linux) keyboard shortcuts:
+You can also search for all API specifications inside your open projects. You can select *Navigate* > *Open API Resource* in the taskbar at the Anypoint Studio display, or press `Cmd+Shift+p` (MacOS) or `Ctrl+Shift+P` (Windows/Linux):
 
 image::open-api-resource.png[]
 
-. Type the name of the API resource that you are looking for:
+. Type the name of the API resource that you're looking for:
 +
 image::open-api-resource-result.png[]
 +

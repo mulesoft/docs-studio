@@ -6,7 +6,7 @@ endif::[]
 
 The API Sync feature of Anypoint Studio enables you to:
 
-* Start designing a RAML, or OAS 2.0 and 3.0 API specification in Studio and synchronize it with Design Center.
+* Start designing a RAML, or OAS 2.0 and 3.0 API specification in Studio and sync it with Design Center.
 * Pull a published RAML or OAS 2.0 and 3.0 API specification from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. +
 API sync also enables you to edit the API specification you imported from Exchange, and push your changes to Design Center.
 +
@@ -46,7 +46,7 @@ See xref:sync-update-api-spec.adoc[Update the API Specification in Your Project]
 You can also edit the imported API specification in your project as an API specification project.
 
 . Import the API specification from Exchange to your Studio project.
-. Synchronize it to Design Center,
+. Sync it to Design Center,
 . Publish it to Exchange
 . Import the new version of your API spec.
 
@@ -57,7 +57,7 @@ See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API S
 . Create an API specification in Design Center. +
 You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].
 . Import the same API specification from Design Center to your Studio project. +
-See xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center] to learn how to do this.
+See xref:sync-api-projects-design-center.adoc[Sync API Specifications with Design Center] to learn how to do this.
 
 == See Also
 

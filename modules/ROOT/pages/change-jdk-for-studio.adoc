@@ -7,7 +7,7 @@ Anypoint Studio comes bundled with a Java development kit (JDK).
 
 You can find the JDK version used by Studio under *About Anypoint Studio* > *Installation Details*.
 
-If you need to start Studio using a different JDK, follow the following instructions based on your operative system:
+To start Studio using a different JDK, follow the instructions based on your operating system:
 
 * xref:change-jdk-for-studio-wx.adoc[Windows]
 * xref:change-jdk-for-studio-lx.adoc[Linux]
