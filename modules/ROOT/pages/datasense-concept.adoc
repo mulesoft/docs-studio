@@ -20,7 +20,7 @@ image::datasense-perceptive-flow-design-concept-cf42d.png[]
 
 == Use Datasense for Autocomplete
 
-Imagine that you're obtaining status update data from the Slack connector. You want to log the message you're sending to Slack, but you aren't familiar with the property names used by this connector. Instead of referring to Slack documentation, you can insert a Logger message processor after the Slack connector and begin to type in it, which activates autocomplete. For example, if you type `#[payload.` and press `ctrl + space bar`, you get a list of all the properties and methods associated with that payload. In the list, you also get the properties returned by your request to the Slack connector.
+Imagine that you're obtaining status update data from the Slack connector. You want to log the message you're sending to Slack, but you aren't familiar with the property names used by this connector. Instead of referring to Slack documentation, you can insert a Logger message processor after the Slack connector and begin to type in it, which activates autocomplete. For example, if you type `#[payload.` and press `Ctrl+Spacebar`, you get a list of all the properties and methods associated with that payload. In the list, you also get the properties returned by your request to the Slack connector.
 
 image::payload-autocomplete.png[]
 
