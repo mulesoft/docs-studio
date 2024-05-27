@@ -58,6 +58,8 @@
  ** xref:to-start-server-debug-mode.adoc[Start the Mule Server In Debug Mode]
  ** xref:java-debugger-preference.adoc[Connect the Java Debugger]
 
+* xref:test-with-munit-in-studio.adoc[Test Your Mule Project with MUnit]
+
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
 
