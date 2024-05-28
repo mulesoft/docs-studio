@@ -59,6 +59,7 @@
  ** xref:java-debugger-preference.adoc[Connect the Java Debugger]
 
 * xref:test-with-munit-in-studio.adoc[Test Your Mule Project with MUnit]
+ ** xref:coverage-studio-concept.adoc[Using MUnit Coverage in Studio]
 
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
