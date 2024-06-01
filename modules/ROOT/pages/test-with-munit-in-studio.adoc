@@ -3,20 +3,15 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Create, run, and modify, MUnit tests for your Mule projects in Anypoint Studio with MUnit.
-MUnit is a MuleSoft unit testing framework for creating and running unit tests on a Mule application, as described in xref:munit::index.adoc[MUnit Overview]. 
-
-MUnit is fully integrated into Studio.
+Create, run, and modify, MUnit tests for your Mule projects in Anypoint Studio with MUnit. MUnit is a MuleSoft unit testing framework for creating and running unit tests on a Mule application, as described in xref:munit::index.adoc[MUnit Overview]. 
 //TODO: add an image of the MUnit window in Studio
-
-You can find your project MUnit tests in the `src/test/munit` folder, in the *Package Explorer*.
 
 In the MUnit windows, you can find information about your tests:
 
 * Test errors
 * Test failures
 * Test results
-* Coverage
+* See test coverage
 
 == Before You Begin
 
@@ -29,7 +24,7 @@ Learn more about MUnit and its features:
 
 == Get to Know MUnit Tests
 
-In Studio, you can perform the following tasks with MUnit:
+You can perform the following tasks with MUnit in Studio:
 
 //TODO: Make the list of tasks you can perform in Studio with MUnit and create a link from each bullet to the content on this very same page
 * Create a test
@@ -37,85 +32,64 @@ In Studio, you can perform the following tasks with MUnit:
 * Run a test
 * Debug your project
 * Fix errors
+* Generate test reports
 
 When you work with your MUnit tests in Studio, you can:
 
-* Find the test of your project in the `src/test/munit` folder, in the *Package Explorer*.
-* Drag components to your test from the *Mule Palette*, in the *Message Flow* tab.
-* Define the MUnit configuration for your tests from the *Global Elements* tab.
-* Review test XML files from the *Configuration XML* tab.
-* Generate reports from your tests.
+* Find the test of your project in the `src/test/munit` folder, in *Package Explorer*.
+* Drag components to your test from the *Mule Palette*, in *Message Flow*.
+* Define the MUnit configuration for your tests from *Global Elements*.
+* Review test XML files from *Configuration XML*.
 
-== Create MUnit Tests 
-//TODO: Complete
+== Create MUnit Tests and MUnit Test Suits
 
-Configure MUnit tests and test suites from the XML editor. 
+To create an MUnit test:
 
+. Open your Mule project in Studio.
+. Right-click on the *src/test/munit* folder, or create this folder if it doesn't exist in your Mule project.
+. Select *New* > *MUnit Test*.
+. In the *MUnit test suite* window, write a name for your test suite.
+. Select the flows to test from the list of flows available in your project.
+. Click *Finish*.
 
-== Create MUnit Test Suits
-//TODO: Complete 
+[NOTE]
+You can also configure MUnit tests and test suites from the XML editor. 
 
 == Run MUnit Tests
 
-You can run MUnit tests by:
+Studio enables you to run MUnit test in different ways:
 
-* Right clicking  
+* Right-click on your MUnit test suite file and select *MUnit* > *Run Test*.
+* In *Message Flow*, right-click on your test flow, and select *Run MUnit suite*.
 
-When you run a test, Studio creates a build and displays the progress and the result of the test in the *Console* tab and the *MUnit* window.
-If all tests execute successfully, the build succeeds.
-If there is an error, the build fails. 
-
-To run a test in MUnit, you should:
-
-//TODO: List the steps to run an MUnit test, a test suite, etc. As there is more than one option to run a test, list them all.
+When you run a test, Studio creates a build and displays the progress and the result of the test in the *Console* tab and the *MUnit* window. If all tests execute successfully, the build succeeds. If there is an error, the build fails. 
 
 == Monitor Your Tests and Review the Test Results
 
-
-If the test results indicate any failures, learn more about these failures in the error section.
+If the test results indicate any failures, you can learn more about these failures in the error section.
 //TODO: Create a troubleshooting section for the user to learn about possible errors, if any.
 
 == Run MUnit Tests in Debug Mode
 
-//TODO: Explain how to add breakpoints in Studio and what happens when a breakpoint is reached during a test
-Run your test in debug mode after adding breakpoints for your tests or Mule application. 
-When Mule reaches the breakpoint, you can review variables in the Run and Debug panel. 
+You can run your MUnit tests in debug mode to step through your code, inspect variables, and understand the flow of your Mule application.
 
-By default, running tests fail after a timeout period. 
-
-== Fix Test Errors
-
-Review test errors 
-//TODO: Describe how you can review the test errors
-
-Make sure that the test passes. For example:
-
-For guidance with MUnit XML configurations, see xref:munit::munit-test-concept.adoc[] and xref:munit::event-processors.adoc[].
-
-== Import a Project that Contains MUnit Tests
-
-//TODO: If it's possible to download a project from Exchange that has MUnit tests and suits, describe it here. If not, this section can be removed. 
-
-Instead of starting with an empty project when creating the integration project, click *Template or Example Project* so that you can import the asset that contains tests into your project.
-
-== Clear Test Results
-
-//TODO: Explain how to clear results in Studio.
+. Open your Mule project in Studio.
+. In the *src/test/munit* folder, open the MUnit test suite to debug.
+. In *Message Flow*, add a breakpoint by right-clicking on the element that must have the breakpoint. 
+. Right-click on your MUnit flow test and select *Debug MUnit test*.
 
 == Enable Flow Sources
 
 The Enable Flow Sources element within the MUnit test tells MUnit which flow sources to load and execute for the test.
-By default, MUnit doesn’t start any of the event sources (flow sources such as triggers and listeners). 
+By default, MUnit doesn't start any of the event sources (flow sources such as triggers and listeners). 
 You must configure which flow sources must start for your tests.
 
 Learn more about flow sources in MUnit docs (xref:munit::enable-flow-sources-concept.adoc[])
 
 You can define flow sources using the *Mule Properties* view of your MUnit test in Studio:
 
-image::enable-flow-sources-concept.png["Flow sources defined using the Mule Properties view in Studio."]
-
 . Click *Add*.
-. Select the name of the flow you want to enable from the *Name of the flow* drop-down menu.
+. Select the name of the flow from *Name of the flow*.
 
 == See Also
 
