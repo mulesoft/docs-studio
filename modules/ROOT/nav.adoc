@@ -26,7 +26,7 @@
 * xref:test-specification-api-console.adoc[Test your API Specification Using the API Console]
 
 * xref:api-sync.adoc[API Sync]
- ** xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center]
+ ** xref:sync-api-projects-design-center.adoc[Sync API Specifications with Design Center]
  ** xref:sync-update-api-spec.adoc[Update the API Specification in Your Project]
  ** xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Projects in Studio]
  ** xref:solving-conflicts-api-projects.adoc[Solve Conflicts]
