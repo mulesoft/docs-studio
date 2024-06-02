@@ -8,14 +8,14 @@ Create, run, and modify, MUnit tests for your Mule projects in Anypoint Studio w
 
 In the MUnit windows, you can find information about your tests:
 
-* Test errors
-* Test failures
-* Test results
-* See test coverage
+* Errors
+* Failures
+* Results
+* Coverage
 
 == Before You Begin
 
-Learn more about MUnit and its features:
+Learn more about MUnit:
 
 * xref:munit::index.adoc[MUnit Overview]
 * xref:munit::munit-test-concept.adoc[]
@@ -57,7 +57,7 @@ You can also configure MUnit tests and test suites from the XML editor.
 
 == Run MUnit Tests
 
-Studio enables you to run MUnit test in different ways:
+You can run MUnit test in different ways in Studio:
 
 * Right-click on your MUnit test suite file and select *MUnit* > *Run Test*.
 * In *Message Flow*, right-click on your test flow, and select *Run MUnit suite*.
@@ -79,16 +79,15 @@ You can run your MUnit tests in debug mode to step through your code, inspect va
 
 == Enable Flow Sources
 
-The Enable Flow Sources element within the MUnit test tells MUnit which flow sources to load and execute for the test.
-By default, MUnit doesn't start any of the event sources (flow sources such as triggers and listeners). 
-You must configure which flow sources must start for your tests.
+The `Enable Flow Sources` element within the MUnit test tells MUnit which flow sources to load and execute for the test.
+By default, MUnit doesn't start the event sources (flow sources such as triggers and listeners). 
 
-Learn more about flow sources in MUnit docs (xref:munit::enable-flow-sources-concept.adoc[])
-
-You can define flow sources using the *Mule Properties* view of your MUnit test in Studio:
+You can define flow sources with the *Mule Properties* view of your MUnit test in Studio:
 
 . Click *Add*.
 . Select the name of the flow from *Name of the flow*.
+
+Learn more about flow sources in MUnit docs (xref:munit::enable-flow-sources-concept.adoc[]) and configure which flow sources must start for your tests.
 
 == See Also
 

@@ -5,18 +5,18 @@ endif::[]
 
 You can run a coverage report from Anypoint Studio.
 
-The following configurations apply only when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. +
+The following configurations apply when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. +
 To run coverage reports from Maven see xref:coverage-maven-concept.adoc[].
 
 == Enable Coverage Reports in Anypoint Studio
 
-You can see which flows, and which percentage of event processors in those flows the test covers by clicking on the Coverage button:
+See which flows, and which percentage of event processors in those flows the test covers by clicking on the Coverage button:
 
 image::using-munit-coverage-in-anypoint-studio.png["MUnit Coverage tab highlighted in the MUnit section"]
 
 The Overall Coverage value represents the percentage of the Mule application event processors that the MUnit test executes.
 
-You can click *Generate Report* to get the report that details the flows and event processors in the Mule configuration files that are included in the MUnit test.
+Click *Generate Report* to get the report that details the flows and event processors in the Mule configuration files included in the MUnit test.
 
 image::munit-coverage-report-in-anypoint-studio.png["Files included in the report highlighted"]
 
@@ -24,7 +24,7 @@ image::munit-coverage-report-in-anypoint-studio.png["Files included in the repor
 |===
 | Column      | Description
 | *Resource*    | Name of the Mule configuration file
-| *Containers* | Number of flows inside the Mule configuration file
+| *Containers* | Number of flows in the Mule configuration file
 | *Weight*      | Percentage of your application in a configuration file +
                 A percentage of the overall number of event processors in the documentation and the
                 number of event processors in the Mule configuration file
@@ -40,14 +40,14 @@ image::munit-granular-coverage-report-in-anypoint-studio.png["MUnit Coverage Rep
 | Column              | Description
 | *Name*                | Name of the container
 | *Type*                | Type of the container
-| *Covered Processors* | Processors inside the container that are executed during the MUnit test
-| *Processors*         | Total amount of processors inside the container
-| *Coverage*            | Percentage of the event processors inside the container executed in the MUnit test
+| *Covered Processors* | Processors in the container executed during the MUnit test
+| *Processors*         | Total amount of processors in the container
+| *Coverage*            | Percentage of the event processors in the container executed in the MUnit test
 |===
 
 == Disable Coverage Reports
 
-If you choose so, you can disable the coverage calculation from your project run configuration so you test your flow without a coverage report.
+Disable the coverage calculation from your project run configuration so you test your flow without a coverage report.
 
 Right-click *Package Explorer* and choose *Run As* > *Run Configurations*. Select your MUnit run configuration file to access your suite configuration, and deselect the *Run coverage* option in your coverage settings.
 
@@ -55,7 +55,7 @@ image::disable-munit-coverage-in-anypoint-studio.png["MUnit run and Run coverage
 
 == Exclude XML Files from MUnit Coverage Report
 
-You can exclude one or more XML files from an MUnit Coverage report when testing your application. For example, you can exclude a third-party XML file that does not comply with your quality standards to improve your final report score.
+Exclude one or more XML files from an MUnit Coverage report when testing your application. For example, exclude a third-party XML file that doesn't comply with your quality standards to improve your final report score.
 
 . Go to the flow to change.
 . Click *Run* > *Run Configuration*.
