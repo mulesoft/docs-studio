@@ -64,9 +64,8 @@ Studio enables you to run MUnit test in different ways:
 
 When you run a test, Studio creates a build and displays the progress and the result of the test in the *Console* tab and the *MUnit* window. If all tests execute successfully, the build succeeds. If there is an error, the build fails. 
 
-== Monitor Your Tests and Review the Test Results
-
-If the test results indicate any failures, you can learn more about these failures in the error section.
+// == Monitor Your Tests and Review the Test Results
+// If the test results indicate any failures, you can learn more about these failures in the error section.
 //TODO: Create a troubleshooting section for the user to learn about possible errors, if any.
 
 == Run MUnit Tests in Debug Mode
