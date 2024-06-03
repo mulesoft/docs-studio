@@ -5,8 +5,9 @@ endif::[]
 
 You can run a coverage report from Anypoint Studio.
 
-The following configurations apply when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. +
-To run coverage reports from Maven see xref:coverage-maven-concept.adoc[].
+The following configurations apply when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. 
+
+To run coverage reports from Maven, see xref:coverage-maven-concept.adoc[].
 
 == Enable Coverage Reports in Anypoint Studio
 
