@@ -26,7 +26,7 @@
 * xref:test-specification-api-console.adoc[Test your API Specification Using the API Console]
 
 * xref:api-sync.adoc[API Sync]
- ** xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center]
+ ** xref:sync-api-projects-design-center.adoc[Sync API Specifications with Design Center]
  ** xref:sync-update-api-spec.adoc[Update the API Specification in Your Project]
  ** xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Projects in Studio]
  ** xref:solving-conflicts-api-projects.adoc[Solve Conflicts]
@@ -57,6 +57,9 @@
  ** xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
  ** xref:to-start-server-debug-mode.adoc[Start the Mule Server In Debug Mode]
  ** xref:java-debugger-preference.adoc[Connect the Java Debugger]
+
+* xref:test-with-munit-in-studio.adoc[Test Your Mule Project with MUnit]
+ ** xref:coverage-studio-concept.adoc[Using MUnit Coverage in Studio]
 
 * xref:datasense-concept.adoc[DataSense]
  ** xref:datasense-explorer.adoc[DataSense Explorer]
