@@ -28,7 +28,7 @@ You can perform the following tasks with MUnit in Studio:
 
 //TODO: Make the list of tasks you can perform in Studio with MUnit and create a link from each bullet to the content on this very same page
 * Create a test
-* Create a test suit
+* Create a test suite
 * Run a test
 * Debug your project
 * Fix errors
