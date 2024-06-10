@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Import and implement an API spec into either a new Mule project or an existing one in Studio xref:import-api-specification-exchange.adoc[from Exchange] or xref:import-api-specification-maven.adoc[Maven].
+Import and implement an API spec into either a new Mule project or an existing one in Studio from Exchange, Maven, your local drive, or Design Center.
 
 Studio supports the following API specs:
 
