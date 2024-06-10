@@ -3,38 +3,38 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can add Modules and Connectors to your Mule project using the Mule Palette.
+You can add Modules and Connectors to your Mule project using the *Mule Palette*.
 
 If you're editing a Mule Application project:
 
-. Go to your Mule Palette, and click the Search in Exchange... option.
+. Go to the *Mule Palette*, and click *Search in Exchange*.
 +
 By default, this list shows the available public modules. If you configured your Anypoint Platform credentials in Studio, you can also see your organization's private modules. +
-If you have no credentials configured in Studio, you can click Add Account to access your organization's modules.
-. Select your desired modules from the Available Modules list by clicking Add >.
-. Click Finish.
+If you have no credentials configured in Studio, you can click *Add Account* to access your organization's modules.
+. Select your desired modules from the *Available Modules* list by clicking *Add >*.
+. Click *Finish*.
 
-The selected module is now part of your Mule Palette.
+The selected module is now part of the *Mule Palette*.
 
-Additionally, you can also select the Add Modules option, and drag your desired module from the featured list.
+Additionally, you can also select the *Add Modules* option, and drag your desired module from the featured list.
 
-Modules are dependencies of your Mule project. Adding a module to a Mule project in Studio does not make that module available to other projects in your Studio workspace. +
+Modules are dependencies of your Mule project. Adding a module to a Mule project in Studio doesn't make that module available to other projects in your Studio workspace. +
 
-If you're editing a Mule Domain project:
+If you're editing a Mule domain project:
 
-. Go to the Global Elements tab from your Mule Domain configuration editor and click Manage Modules.
-. Click Add Module.
+. Go to *Global Elements* from your Mule domain configuration editor and click *Manage Modules*.
+. Click *Add Module*.
 +
 By default, this list shows the available public modules. If you configured your Anypoint Platform credentials in Studio, you can also see your organization's private modules. +
-If you have no credentials configured in Studio, you can click Add Account to access your organization's modules.
-. Select your desired modules from the Available Modules list by clicking Add >.
-. Click Finish.
+If you have no credentials configured in Studio, you can click *Add Account* to access your organization's modules.
+. Select your desired modules from the *Available Modules* list by clicking *Add >*.
+. Click *Finish*.
 
-The selected Module is now part of your Mule Domain and it shows up in the Mule Palette of the Mule Application.
+The selected Module is now part of your Mule Domain and it shows up in the *Mule Palette* of your Mule application.
 
 [NOTE]
-Modules inherited by a Mule domain show as such in the Mule Palette View. +
-You can't edit or delete Domain Modules from your Mule Application's palette.
+Modules inherited by a Mule domain show as such in the Mule Palette view. +
+You can't edit or delete domain modules from your Mule application palette.
 
 == See Also
 
