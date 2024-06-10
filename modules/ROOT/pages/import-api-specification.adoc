@@ -9,30 +9,38 @@ Studio supports the following API specs:
 
 [%header%autowidth.spread,cols="a,a,a"]
 |===
-| API Spec | Version | Import
+| API Spec | Version | Importable
 
 | AsyncAPI 
 | 2.6 
 | 
 
-* xref:import-api-specification-exchange.adoc[]
+* xref:import-api-specification-design-center.adoc[]**
+* xref:import-api-specification-exchange.adoc[]**
 
 | OpenAPI Specification (OAS) 
 | 2.0 and 3.0 
 | 
 
+* xref:import-api-specification-exchange.adoc[]**
+* xref:import-api-specification-maven.adoc[]**
+
 | RESTful API Modeling Language (RAML) 
 | All
 | 
 
-* xref:import-api-specification-design-center.adoc[]
-* xref:import-api-specification-local-file.adoc[]
+* xref:import-api-specification-design-center.adoc[]**
+* xref:import-api-specification-exchange.adoc[]**
+* xref:import-api-specification-local-file.adoc[]*
+* xref:import-api-specification-maven.adoc[]*
 
 |===
 
-After importing and implementing it, the API spec becomes part of your project as a dependency.
++++*+++ After importing and implementing it, the API spec becomes part of your project as a standalone attachment.
 
-See xref:api-development-studio.adoc[API development in Studio] for more information.
++++**+++ After importing and implementing it, the API spec becomes part of your project as a dependency.
+
+See xref:api-development-studio.adoc[API development in Studio] for more information about these two different approaches.
 
 == See Also
 
