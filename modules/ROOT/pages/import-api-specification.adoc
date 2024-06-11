@@ -26,7 +26,7 @@ Studio supports the following API specs:
 * xref:import-api-specification-maven.adoc[]**
 
 | RESTful API Modeling Language (RAML) 
-| All
+| 0.8 and 1.0
 | 
 
 * xref:import-api-specification-design-center.adoc[]**
