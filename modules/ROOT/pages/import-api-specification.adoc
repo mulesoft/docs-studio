@@ -9,7 +9,7 @@ Studio supports the following API specs:
 
 [%header%autowidth.spread,cols="a,a,a"]
 |===
-| API Spec | Version | Importable
+| API Spec | Version | More Information
 
 | AsyncAPI 
 | 2.6 
