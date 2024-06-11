@@ -3,54 +3,58 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio enables you to import a RAML or OAS 2.0 and 3.0 API specification into either a new Mule project or an existing one.
+Import an AsyncAPI, OAS, or RAML API spec into a new Mule project or an existing one.
 
-If you are using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that is not available in Exchange, follow the steps presented in xref:import-api-specification-local-file.adoc[import an API specification from a local file] or xref:import-api-specification-design-center.adoc[import an API specification from Design Center] depending on your preferred use case.
+If you're using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that isn't available in Exchange, you can xref:import-api-specification-local-file.adoc[] or xref:import-api-specification-design-center.adoc[].
 
-If you cannot access Exchange from your work environment, you can still import an API specification from your local Maven installation.
+If you can't access Exchange from your work environment, you can import an API specification from your local Maven installation.
 
 == Import an API Specification from Exchange Into a New Project
 
-. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
+. In the taskbar, select *File* > *New* > *Mule Project*.
 . Type a name for your project.
 . Select a Mule runtime engine version 4.1.4 or later.
 . In the *API Specification* section, select the *From Exchange or Maven* tab.
 . Click the *Add* icon (image:add-icon.png[2%,2%]), and select *From Exchange*.
-. Select your Anypoint Platform username. +
-If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
-. From the list of available APIs, select one or more and click the *Add* button. +
+. Select your Anypoint Platform username. 
 +
-You can type a `*` character in the search bar and press enter to list all your available APIs.
+If you're not logged in, click the *Add Account* button to add your Anypoint Platform account.
+. From the list of available APIs, select one or more and click the *Add* button.
 +
-. To select the version of the API that you want to import, use the *Selected Modules* table.
+You can type a `*` character in the search bar and press enter to list all available APIs.
++
+. To select the version of the API to import, use the *Selected Modules* table.
 . Click *Finish*.
 
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
 
-You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
+Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the task bar.
 
 == Import an API Specification from Exchange Into an Existing Project
 
-. Right click on your project in the Package Explorer view, select *Mule*, and then *Manage APIs*.
+. Right click on your project in the Package Explorer, select *Mule*, and then *Manage APIs*.
 . Click the *Add* icon (image:add-icon.png[2%,2%]), and select *From Exchange*.
-. Select your Anypoint Platform username. +
-If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
-. From the list of available APIs, select the one you want and click the *Add* button to add it to your project. +
+. Select your Anypoint Platform username. 
++
+If you're not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
+. Select the API from the list of available APIs and click *Add*.
++
 You can choose more than one API to import.
 +
-You can type a `*` character in the search bar and press enter to list all your available APIs.
+You can type a `*` character in the search bar and press enter to list all available APIs.
 +
-You can select the version of the API you want to import in the *Selected Modules* table.
+You can select the version of the API to import in the *Selected Modules* table.
 . Click *Finish*.
 
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
 
-You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the top task bar.
+Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the task bar.
 
-NOTE: The API specification published as an asset in Exchange needs to be marked as *stable* to be listed in Studio when searching for available APIs.
+[NOTE]
+If you want Studio to list your API when searching in Exchange, you must mark your API specification published as an asset as *stable*.
 
 == See Also
 
-* xref:api-development-studio.adoc[API Development in Studio]
-* xref:api-sync.adoc[API Sync]
-* xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Credentials]
+* xref:api-development-studio.adoc[]
+* xref:api-sync.adoc[]
+* xref:set-credentials-in-studio-to.adoc[]
