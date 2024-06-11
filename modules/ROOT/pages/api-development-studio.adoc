@@ -3,48 +3,56 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To ensure that your Mule applications always refer to a single source of truth for your API specifications, MuleSoft introduces a workflow to design, publish, and implement your API specifications.
+Ensure that your Mule applications always refer to a single source of truth for your API specifications. Design, publish, and implement your API specifications with the following workflow.
 
 . Design an API specification. +
 You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification with the Visual Editor] or xref:design-center::design-create-publish-api-raml-editor.adoc[with the Code Editor].
 +
 You can also xref:create-api-specification-studio.adoc[create an API specification project in Studio and sync it with Design Center].
-. Publish that API specification to Exchange. +
+. Publish your API specification to Exchange. +
 Make your newly designed API available to your entire organization as an Exchange dependency. As you change your API, you can publish new versions of your API specifications to Exchange. See xref:exchange::to-change-raml-version.adoc#best-practices-api-versioning[best practices for API versioning].
 . Import the API specification from Exchange to Studio. +
 You can either xref:import-api-specification-exchange.adoc[import an API specification from Exchange] or xref:import-api-specification-maven.adoc[from Maven]. Studio imports your API specification as a dependency. This means that your Mule application project now holds a reference to the specific API version that you're implementing. Studio monitors your API and notifies you when there is a new version available.
 
-You can use this workflow for OAS 2.0 and 3.0 and RAML specifications. It requires Studio 7.8.x or later, and Mule runtime engine 4.1.4 or later.
+You can use this workflow for OAS and RAML API specifications. It requires Studio 7.8.x or later, and Mule runtime engine 4.1.4 or later.
+
+From Studio 7.18+, you can xref:import-api-specification-exchange.adoc[import an AsyncAPI specification from Exchange] and implement it in your Mule project.
 
 == API Specifications as Exchange Dependencies
 
-You can manage APIs for your Mule application as you manage the modules that compose your application. By leveraging Exchange as your unified repository for all your Mule application dependencies, you can monitor the latest versions of your dependencies. This ensures that your application is up-to-date with the latest API requirements.
+Manage APIs for your Mule application as you manage the modules that compose your application. By leveraging Exchange as your unified repository for all your Mule application dependencies, you can monitor the latest versions of your dependencies. This ensures that your application is up-to-date with the latest API requirements.
 
 Because the implementation of your API can change with each iteration, you must keep track so that you can update your Mule application to match newer specifications. To help you track these changes, treat your API specifications as dependencies of your project. This way, every time the specification design changes, the API publishes a new API version that you can manage from Studio. You can also update your application to match the new API version.
 
-Each API version that you import from Exchange isn't stored as a local copy on your project’s structure, but as a reference to the API version dependency in Exchange. By referencing the API version in Exchange, Studio can periodically check the status of the version and alert you when a new version is available.
+Each API version that you import from Exchange isn't stored as a local copy on your project's structure, but as a reference to the API version dependency in Exchange. By referencing the API version in Exchange, Studio can periodically check the status of the version and notify you when a new version is available.
 
-=== Scaffold RAML and OAS Specifications
+=== Scaffold AsyncAPI, RAML, and OAS API Specifications
 
-You can design your API using either RAML or OAS 2.0 and 3.0 specifications in Anypoint Design Center. When you import these specifications as dependencies of your flows, you can automatically generate the flows (scaffold) in your canvas based on the endpoints described in the API specification.
+Design your API using AsyncAPI, OAS, or RAML specifications in Anypoint Design Center:
+
+* xref:design-center::design-create-publish-api-visual-editor.adoc[]
+* xref:design-center::design-create-publish-api-raml-editor.adoc[]
+
+When you import these specifications as dependencies of your flows, you can automatically generate (scaffold) the flows in your canvas based on the endpoints described in the API specification.
 
 Studio leverages APIkit to scaffold the flow and make it easier for you to start developing a Mule application from an API specification.
 
-NOTE: Studio does not support scaffolding API specs that reference OAS or JSON schema fragments imported from Exchange as project dependencies. Instead, you can scaffold a spec with these fragments by providing the fragments inline within the spec or through fragment files that you create manually within your project directory. RAML fragments from Exchange aren't affected by this limitation.
+NOTE: Studio doesn't support scaffolding API specs that reference OAS or JSON schema fragments imported from Exchange as project dependencies. Instead, you can scaffold a spec with these fragments by providing the fragments inline within the spec or through fragment files that you create manually within your project directory. RAML fragments from Exchange aren't affected by this limitation.
 
 == API Specifications as Local Copies in Your Projects
 
-You can still import a RAML API specification either xref:import-api-specification-local-file.adoc[from your hard drive] or xref:import-api-specification-design-center.adoc[directly from Design Center] into the `/src/main/api/` directory in the structure of your project. This process creates a local copy of the API in your project's structure and the imported API works as a standalone attachment to your project, meaning that every subsequent upgrade requires a manual import.
+Import a RAML API specification either xref:import-api-specification-local-file.adoc[from your hard drive] or xref:import-api-specification-design-center.adoc[directly from Design Center] into the `/src/main/api/` directory in the structure of your project. This process creates a local copy of the API in your project's structure. The imported API works as a standalone attachment to your project, meaning that every subsequent upgrade requires a manual import.
 
-Whenever the API that you import as a local copy into your project's structure is updated outside your Studio environment, you must reimport the API into your project and regenerate all the flows based on the updated specification, risking creating duplicated copies of your specification.
+When the API imported as a local copy into your project's structure is updated outside your Studio environment, reimport the API into your project. Studio regenerates all the flows based on the updated specification. 
 
-You can only keep RAML API specifications as local copies within your project's structure.
+[NOTE]
+Duplicated copies of your specification can be created in your local drive. You can only keep RAML API specifications as local copies within your project's structure.
 
 == API Specifications as API Specification Projects in Studio
 
-You can start xref:create-api-specification-studio.adoc[an API specification project in Studio and sync it with Design Center]. Studio uses version control system (VCS) capabilities to keep your API specifications synchronized between your Studio workspace and Design Center.
+Start xref:create-api-specification-studio.adoc[an API specification project in Studio and sync it with Design Center]. Studio uses version control system (VCS) capabilities to keep your API specifications synchronized between your Studio workspace and Design Center.
 
-You can also import an API specification from Design Center as an API specification project with VCS-enabled capabilities to edit your API specification using Studio and sync your changes with Design Center:
+Import an API specification from Design Center as an API specification project with VCS-enabled capabilities to edit your API specification using Studio and sync your changes with Design Center:
 
 . Design an API specification in Design Center. +
 You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification with the Visual Editor] or xref:design-center::design-create-publish-api-raml-editor.adoc[with the Code Editor].
@@ -54,7 +62,8 @@ You can import the API specification as an editable asset by xref:sync-api-proje
 You can also edit an API specification that you imported as an API dependency in your project:
 
 . Import the API specification xref:import-api-specification-exchange.adoc[from Exchange to Studio]. +
-Your API specification is imported to Anypoint Studio as a dependency. This means that your Mule application project now holds a reference to the specific API version that you're implementing. Studio monitors your API and notifies you when there is a new version available.
+Studio imports your API specification as a dependency. This means that your Mule application project now holds a reference to the specific API version that you're implementing. Studio monitors your API and notifies you when there is a new version available.
 . Select the API specification imported in your project and xref:sync-imported-api-specifications-design-center.adoc[Edit your API specification from Studio] to later sync your changes to Design Center.
 
-Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
+[NOTE]
+Studio uses the EGit plugin for the VCS feature of editing API specifications offline. Studio doesn't support the EGit plugin for Mule application projects that you track using your own VCS.
