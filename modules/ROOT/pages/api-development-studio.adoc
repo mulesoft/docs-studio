@@ -17,7 +17,7 @@ You can either xref:import-api-specification-exchange.adoc[import an API specifi
 
 You can use this workflow for OAS and RAML API specifications. It requires Studio 7.8.x or later, and Mule runtime engine 4.1.4 or later.
 
-From Studio 7.18+, you can xref:import-api-specification-exchange.adoc[import an AsyncAPI specification from Exchange] and implement it in your Mule project.
+From Studio 7.18 and later, you can xref:import-api-specification-exchange.adoc[import an AsyncAPI specification from Exchange] and implement it in your Mule project.
 
 == API Specifications as Exchange Dependencies
 
