@@ -3,18 +3,18 @@
 Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment, and automatically sync it with Design Center.
 
 [NOTE]
-Studio uses the EGit plugin only for the VCS feature of editing API specifications offline. Studio does not support the EGit plugin for Mule application projects that you might track using your own VCS.
+Studio uses the EGit plugin for the VCS feature of editing API specifications offline. Studio doesn't support the EGit plugin for Mule application projects that you track using your own VCS.
 
-To start creating an API specification project in Studio, you must log in to Anypoint Platform. See xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
+To start creating an API specification project in Studio, log in to Anypoint Platform. See xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
 
 . In the taskbar of the Anypoint Studio display, select *File* > *New* > *API Specification Project*.
-. Select the tab of type of API specification project that you want to create:
-* To create a new API specification, select the *New API Specification* tab, and then select the type of API.
+. Select the tab of type of API specification project to create:
+* Create a new API specification by selecting the *New API Specification* tab and the type of API.
 +
-image::create-api-specification.png[]
+image::create-api-specification.png["The New API Specification tab and file type drop-down menu highlighted in the New API Specification window."]
 * To create a new API fragment, select the *New API Fragment* tab, and then select the type of API fragment.
 +
-image::create-api-fragment.png[]
+image::create-api-fragment.png["The New API Fragment tab and file type drop-down menu highlighted in the New API Specification window."]
 . Type a name for your project.
 . Select *Finish*.
 
@@ -26,7 +26,7 @@ Studio uses VCS to track the development of your API specification project and k
 
 == Create Branches
 
-Using a different branch enables you to used a modified API definition in certain cases, without modifying the main branch in Design Center.
+Using a different branch enables you to use a modified API definition in certain cases, without modifying the main branch in Design Center.
 
 include::partial$branch-commit-push-changes.adoc[tag=create-branch-vcs]
 
@@ -34,7 +34,7 @@ include::partial$branch-commit-push-changes.adoc[tag=commit-to-branch-vcs]
 
 == Merge and Push Your API Specification Project
 
-You can merge the changes made to your API specification to your main branch and sync it with Design Center.
+Merge the changes made to your API specification to your main branch and sync it with Design Center.
 
 include::partial$branch-commit-push-changes.adoc[tag=merge-and-push-to-main-vcs]
 
