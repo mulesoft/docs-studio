@@ -18,8 +18,8 @@ If you can't access Exchange from your work environment, you can import an API s
 . Click the *Add* icon (image:add-icon.png[2%,2%]), and select *From Exchange*.
 . Select your Anypoint Platform username. 
 +
-If you're not logged in, click the *Add Account* button to add your Anypoint Platform account.
-. From the list of available APIs, select one or more and click the *Add* button.
+If you're not logged in, click *Add Account* to add your Anypoint Platform account.
+. From the list of available APIs, select one or more and click *Add*.
 +
 You can type a `*` character in the search bar and press enter to list all available APIs.
 +
@@ -36,7 +36,7 @@ Manage the API specifications linked to Exchange in your project from the API sp
 . Click the *Add* icon (image:add-icon.png[2%,2%]), and select *From Exchange*.
 . Select your Anypoint Platform username. 
 +
-If you're not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
+If you're not logged in, click *Add Account* to add your Anypoint Platform account.
 . Select the API from the list of available APIs and click *Add*.
 +
 You can choose more than one API to import.
