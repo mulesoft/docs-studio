@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Import an AsyncAPI or RAML API specification from Design Center into either a new Mule project or an existing one.
+Import a RAML API specification from Design Center into either a new Mule project or an existing one.
 
 == Import an API Specification from Design Center Into a New Project
 
@@ -16,7 +16,7 @@ Import an AsyncAPI or RAML API specification from Design Center into either a ne
 If you're not logged in, click *Add Account* to add your Anypoint Platform account.
 . In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located.
 +
-If you have configured your Anypoint Platform credentials, the username and business group options are unavailable.
+If you configure your Anypoint Platform credentials, the username and business group options are unavailable.
 +
 If you want to use a different account, click *Add Account* and log in again.
 . Select an API from the list of available APIs and click *OK*.
@@ -34,7 +34,7 @@ Importing an API specification from Design Center into an existing project delet
 If you're not logged in, click *Add Account* to add your Anypoint Platform account.
 . In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located.
 +
-If you have configured your Anypoint Platform credentials, the username and business group options are unavailable.
+If you configure your Anypoint Platform credentials, the username and business group options are unavailable.
 +
 If you want to use a different account, click *Add Account* and log in again.
 . Select an API from the list of available APIs and click *OK*.
