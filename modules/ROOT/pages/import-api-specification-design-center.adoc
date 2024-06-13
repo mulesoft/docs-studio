@@ -3,41 +3,44 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio enables you to import a RAML API specification from Design Center into either a new Mule project or an existing one.
-
-This task only works for RAML types of API specifications.
+Import an AsyncAPI or RAML API specification from Design Center into either a new Mule project or an existing one.
 
 == Import an API Specification from Design Center Into a New Project
 
-. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
+. In the taskbar, select *File* > *New* > *Mule Project*.
 . Type a name for your project.
 . Select a Mule runtime engine version 4.1.4 or later.
 . In the *API Specification* section, select the *Download RAML from Design Center* tab.
-. In the *Location* field, click the *...* button and select *Design Center...*.
+. In the *Location* field, click *...* and select *Design Center*.
 . Select your Anypoint Platform username. +
-If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
-. In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located. +
-If you have configured your AnyPoint Platform credentials, the username and business group options are unavailable. +
-If you want to use a different account, click the *Add Account* button and log in again.
-. From the list of available APIs, select the one you want and click *OK*.
+If you're not logged in, click *Add Account* to add your Anypoint Platform account.
+. In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located.
++
+If you have configured your Anypoint Platform credentials, the username and business group options are unavailable.
++
+If you want to use a different account, click *Add Account* and log in again.
+. Select an API from the list of available APIs and click *OK*.
 . Click *Finish*.
 
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
 
 == Import an API Specification from Design Center into an Existing Project
 
 Importing an API specification from Design Center into an existing project deletes all your resources from your `src/main/resources/api` directory.
 
 . In the Package Explorer view, right-click on your project and select *Anypoint Platform* > *Download RAML from Design Center*.
-. Select your Anypoint Platform username. +
-If you are not logged in, you can click the *Add Account* button to add your Anypoint Platform account.
-. In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located. +
-If you have configured your AnyPoint Platform credentials, the username and business group options are unavailable. +
-If you want to use a different account, click the *Add Account* button and log in again.
-. From the list of available APIs, select the one you want and click *OK*.
+. Select your Anypoint Platform username.
++
+If you're not logged in, click *Add Account* to add your Anypoint Platform account.
+. In the *Browse Design Center for APIs* window, select the Anypoint Platform business group where the API specification is located.
++
+If you have configured your Anypoint Platform credentials, the username and business group options are unavailable.
++
+If you want to use a different account, click *Add Account* and log in again.
+. Select an API from the list of available APIs and click *OK*.
 . Click *Finish*.
 
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
 
 == See Also
 
