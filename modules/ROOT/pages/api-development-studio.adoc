@@ -42,7 +42,7 @@ When you import these specifications as dependencies of your flows, you can auto
 Studio leverages APIkit to scaffold the flow and make it easier for you to start developing a Mule application from an API specification.
 
 [NOTE]
-Studio doesn’t support scaffolding API specs that reference OAS or JSON schema fragments imported from Exchange as project dependencies. Instead, you can scaffold a spec with these fragments by providing the fragments inline within the spec or through fragment files that you create manually within your project directory. This limitation doesn't affect RAML fragments from Exchange.
+Studio doesn’t currently support scaffolding API specs that reference OAS, JSON schema, or AsyncAPI fragments imported from Exchange as project dependencies. To scaffold a spec with these fragments, you must provide the fragments inline within the spec or through fragment files that you create manually within your project directory. This limitation doesn’t affect RAML fragments from Exchange, which are fully supported.
 
 == API Specifications as Local Copies in Your Projects
 
