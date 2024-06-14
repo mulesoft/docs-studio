@@ -20,6 +20,9 @@ Studio supports the following API specs:
 * xref:import-api-specification-design-center.adoc[]**
 * xref:import-api-specification-exchange.adoc[]**
 
+[NOTE]
+See xref:design-center::design-async-api[] in Design Center for more information about designing even-driven APIs using AsyncAPI in API Designer.
+
 | OpenAPI Specification (OAS) 
 | 2.0 and 3.0 
 | 
