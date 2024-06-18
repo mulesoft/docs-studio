@@ -53,7 +53,7 @@ Import a RAML API specification either xref:import-api-specification-local-file.
 When the API imported as a local copy into your project's structure is updated outside your Studio environment, reimport the API into your project. Studio regenerates all the flows based on the updated specification. 
 
 [NOTE]
-Duplicated copies of your specification can be created on your local drive. You can only keep RAML API specifications as local copies within your project's structure.
+Duplicated copies of your specifications can be created on your local drive. You can only keep RAML API specifications as local copies within your project's structure.
 
 == API Specifications as API Specification Projects in Studio
 
@@ -69,7 +69,7 @@ You can import the API specification as an editable asset by xref:sync-api-proje
 You can also edit an API specification that you imported as an API dependency in your project:
 
 . Import the API specification xref:import-api-specification-exchange.adoc[from Exchange to Studio]. +
-Studio imports your API specification as a dependency. This means that your Mule application project now holds a reference to the specific API version that you're implementing. Studio monitors your API and notifies you when there is a new version available.
+Studio imports your API specification as a dependency. This means that your Mule application project now holds a reference to the specific API version that you're implementing. Studio monitors your API and notifies you when there’s a new version available.
 . Select the API specification imported in your project and xref:sync-imported-api-specifications-design-center.adoc[Edit your API specification from Studio] to later sync your changes to Design Center.
 
 [NOTE]
