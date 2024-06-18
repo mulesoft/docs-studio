@@ -1,0 +1,18 @@
+= Login to Anypoint Platform from Studio
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Enhance your security in Anypoint Studio by configuring two-factor authentication through xref:access-management::multi-factor-authentication.adoc[Anypoint Platform]. 
+
+Secure access effectively by choosing one of the supported methods:
+
+* Windows Hello
+* Android Authenticator
+* Yubikey
+
+This configuration not only protects your development environment but also ensures that sensitive data remains secure from unauthorized access, providing peace of mind and a robust defense against potential security breaches.
+
+== See Also
+
+* xref:set-credentials-in-studio-to.adoc[]
