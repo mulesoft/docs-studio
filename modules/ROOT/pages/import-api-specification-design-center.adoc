@@ -22,7 +22,7 @@ If you want to use a different account, click *Add Account* and log in again.
 . Select an API from the list of available APIs and click *OK*.
 . Click *Finish*.
 
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, deselect *Scaffold Flows From These API Specifications*.
 
 == Import an API Specification from Design Center into an Existing Project
 
@@ -40,7 +40,7 @@ If you want to use a different account, click *Add Account* and log in again.
 . Select an API from the list of available APIs and click *OK*.
 . Click *Finish*.
 
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
+Studio scaffolds your API specification. If you choose not to create flows out of your API specification, deselect *Scaffold Flows From These API Specifications*.
 
 == See Also
 
