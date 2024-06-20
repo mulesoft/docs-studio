@@ -3,9 +3,9 @@
 Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment, and automatically sync it with Design Center.
 
 [NOTE]
-Studio uses the EGit plugin for the VCS feature of editing API specifications offline. Studio doesn't support the EGit plugin for Mule application projects that you track using your own VCS.
+Studio uses the EGit plugin to edit API specifications offline. Studio doesn't support the EGit plugin for Mule application projects tracked with your own VCS.
 
-To start creating an API specification project in Studio, log in to Anypoint Platform. See xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials].
+To start creating an API specification project in Studio, log in to Anypoint Platform. See xref:set-credentials-in-studio-to.adoc[].
 
 . In the taskbar of the Anypoint Studio display, select *File* > *New* > *API Specification Project*.
 . Select the tab of type of API specification project to create:
