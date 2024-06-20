@@ -41,7 +41,7 @@ See xref:design-center::design-async-api.adoc[] in Design Center for more inform
 
 |===
 
-+++*+++ After importing and implementing it, the API spec becomes part of your project as a standalone attachment.
++++*+++ After importing and implementing the API spec, it's part of your project as a standalone attachment.
 
 +++**+++ After importing and implementing it, the API spec becomes part of your project as a dependency.
 
