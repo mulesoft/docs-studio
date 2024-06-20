@@ -34,7 +34,7 @@ Manage the API specifications linked to Exchange in your project from the API sp
 
 == Import an API Specification from Exchange Into an Existing Project
 
-. Right click on your project in the Package Explorer, select *Mule*, and then *Manage APIs*.
+. Right-click on your project in the Package Explorer, select *Mule*, and then select *Manage APIs*.
 . Click the *Add* icon (image:add-icon.png[2%,2%]), and select *From Exchange*.
 . Select your Anypoint Platform username. 
 +
