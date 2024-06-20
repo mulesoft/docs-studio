@@ -5,7 +5,7 @@ endif::[]
 
 include::reuse::partial$beta-banner.adoc[tag="studio-asyncapi"]
 
-Ensure that your Mule applications always refer to a single source of truth for your API specifications. Design, publish, and implement your API specifications with the following workflow.
+Ensure that your Mule applications always refer to a single source of truth for your API specifications. Design, publish, and implement your API specifications with the following workflow:
 
 . Design an API specification. +
 You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification with the Visual Editor] or xref:design-center::design-create-publish-api-raml-editor.adoc[with the Text Editor].
