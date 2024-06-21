@@ -49,8 +49,8 @@ See xref:api-development-studio.adoc[API development in Studio] for more informa
 
 == See Also
 
-* xref:import-api-specification-exchange.adoc[Import an API spec from Exchange]
-* xref:import-api-specification-maven.adoc[Import an API spec from Maven]
-* xref:import-api-specification-local-file.adoc[Import an API spec from your local hard drive]
-* xref:import-api-specification-design-center.adoc[Import an API spec from Anypoint Design Center]
+* xref:import-api-specification-exchange.adoc[]
+* xref:import-api-specification-maven.adoc[]
+* xref:import-api-specification-local-file.adoc[]
+* xref:import-api-specification-design-center.adoc[]
 
