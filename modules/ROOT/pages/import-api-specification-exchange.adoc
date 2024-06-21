@@ -43,7 +43,7 @@ If you're not logged in, click *Add Account* to add your Anypoint Platform accou
 +
 You can choose more than one API to import.
 +
-You can type a `*` character in the search bar and press enter to list all available APIs.
+To list all available APIs, type a `*` character in the search bar and press Enter.
 +
 You can select the version of the API to import in the *Selected Modules* table.
 . Click *Finish*.
