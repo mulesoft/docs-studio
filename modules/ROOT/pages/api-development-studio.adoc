@@ -57,12 +57,12 @@ Duplicated copies of your specifications can be created on your local drive. You
 
 == API Specifications as API Specification Projects in Studio
 
-Start xref:create-api-specification-studio.adoc[an API specification project in Studio and sync it with Design Center]. Studio uses version control system (VCS) capabilities to keep your API specifications synchronized between your Studio workspace and Design Center.
+To start an API specification project in Studio and sync it with Design Center, see xref:create-api-specification-studio.adoc[]. Studio uses version control system (VCS) capabilities to keep your API specifications synchronized between your Studio workspace and Design Center.
 
 Import an API specification from Design Center as an API specification project with VCS-enabled capabilities to edit your API specification using Studio and sync your changes with Design Center:
 
 . Design an API specification in Design Center. +
-You can either xref:design-center::design-create-publish-api-visual-editor.adoc[create and publish an API specification with the Visual Editor] or xref:design-center::design-create-publish-api-raml-editor.adoc[with the Text Editor].
+You can either create and publish an API specification with the xref:design-center::design-create-publish-api-visual-editor.adoc[Visual Editor] or with the xref:design-center::design-create-publish-api-raml-editor.adoc[Text Editor].
 . Import the API specification from Design Center into Studio. +
 You can import the API specification as an editable asset by xref:sync-api-projects-design-center.adoc[Synchronizing an API Specifications with Design Center].
 
