@@ -7,7 +7,7 @@ include::reuse::partial$beta-banner.adoc[tag="studio-asyncapi"]
 
 Import an AsyncAPI, OAS, or RAML API spec into a new or existing Mule project.
 
-If you're using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that isn't available in Exchange, you can xref:import-api-specification-local-file.adoc[] or xref:import-api-specification-design-center.adoc[].
+If you're using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that isn't available in Exchange, you can import an API spec xref:import-api-specification-local-file.adoc[from a local file] or xref:import-api-specification-design-center.adoc[from Design Center].
 
 If you can't access Exchange from your work environment, you can import an API specification from your local Maven installation.
 
