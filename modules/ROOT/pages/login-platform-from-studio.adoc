@@ -7,9 +7,9 @@ Enhance your security in Anypoint Studio by configuring two-factor authenticatio
 
 Secure access effectively by choosing one of the supported methods:
 
-* Windows Hello
 * Android Authenticator
 * Yubikey
+* Windows Hello
 
 This configuration not only protects your development environment but also ensures that sensitive data remains secure from unauthorized access, providing peace of mind and a robust defense against potential security breaches.
 
