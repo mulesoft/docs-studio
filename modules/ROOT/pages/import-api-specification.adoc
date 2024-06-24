@@ -1,13 +1,56 @@
-= Import API Specifications
+= Import an API Spec
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio enables you to import API specifications into either a new Mule project or an existing one.
+include::reuse::partial$beta-banner.adoc[tag="studio-asyncapi"]
 
-If you choose to implement your API specifications as Exchange or Maven dependencies of your project, you can either import your RAML or OAS 2.0 and 3.0 specifications xref:import-api-specification-exchange.adoc[from Exchange] or xref:import-api-specification-maven.adoc[Maven].
+Import and implement an API spec into either a new Mule project or an existing one in Studio from Exchange, Maven, your local drive, or Design Center.
 
-If you choose to implement your API specifications as standalone attachments to your project you can import a RAML specification from either xref:import-api-specification-local-file.adoc[your local hard drive] or from xref:import-api-specification-design-center.adoc[Anypoint Design Center].
+Studio supports the following API specs:
+
+[%header%autowidth.spread,cols="a,a,a"]
+|===
+| API Spec | Version | More Information
+
+| AsyncAPI 
+| 2.6 
+| 
+
+* xref:import-api-specification-design-center.adoc[]**
+* xref:import-api-specification-exchange.adoc[]**
+
+[NOTE]
+See xref:design-center::design-async-api.adoc[] in Design Center for more information about designing even-driven APIs using AsyncAPI in API Designer.
+
+| OpenAPI Specification (OAS) 
+| 2.0 and 3.0 
+| 
+
+* xref:import-api-specification-exchange.adoc[]**
+* xref:import-api-specification-maven.adoc[]**
+
+| RESTful API Modeling Language (RAML) 
+| 0.8 and 1.0
+| 
+
+* xref:import-api-specification-design-center.adoc[]**
+* xref:import-api-specification-exchange.adoc[]**
+* xref:import-api-specification-local-file.adoc[]*
+* xref:import-api-specification-maven.adoc[]*
+
+|===
+
++++*+++ After importing and implementing the API spec, it's part of your project as a standalone attachment.
+
++++**+++ After importing and implementing the API spec, it's part of your project as a dependency.
 
 See xref:api-development-studio.adoc[API development in Studio] for more information about these two different approaches.
+
+== See Also
+
+* xref:import-api-specification-exchange.adoc[]
+* xref:import-api-specification-maven.adoc[]
+* xref:import-api-specification-local-file.adoc[]
+* xref:import-api-specification-design-center.adoc[]
 
