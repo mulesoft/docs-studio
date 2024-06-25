@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Enhance your security in Anypoint Studio by configuring two-factor authentication through xref:access-management::multi-factor-authentication.adoc[Anypoint Platform]. 
+Enhance your security in Anypoint Studio by xref:access-management::multi-factor-authentication.adoc[configuring two-factor authentication] through Anypoint Platform. 
 
 Secure access effectively by choosing one of the supported methods:
 
