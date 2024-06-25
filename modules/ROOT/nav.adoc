@@ -85,8 +85,8 @@
  ** xref:pce-configuration-macos.adoc[MacOS]
  ** xref:pce-configuration-windows.adoc[Windows]
 
-* xref:login-platform-from-studio.adoc[Login to Anypoint Platform]
- ** xref:set-credentials-in-studio-to.adoc[Configure Platform Credentials]
+* xref:login-platform-from-studio.adoc[]
+ ** xref:set-credentials-in-studio-to.adoc[]
 
 * xref:secure-storage.adoc[Secure Storage]
 * xref:proxy-settings-task.adoc[Configure Proxy Settings]
