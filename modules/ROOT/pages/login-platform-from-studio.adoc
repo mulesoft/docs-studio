@@ -1,4 +1,4 @@
-= Login to Anypoint Platform from Studio
+= Sign in to Anypoint Platform from Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
