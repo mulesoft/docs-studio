@@ -1,9 +1,9 @@
-= Using MUnit Coverage in Studio
+= Optimizing API Testing with MUnit Coverage Reports in Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can run a coverage report from Anypoint Studio.
+Run a coverage report from Anypoint Studio to obtain detailed insights of the effectiveness of your tests against your Mule applications.
 
 The following configurations apply when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. 
 
