@@ -3,19 +3,17 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Run a coverage report from Anypoint Studio to obtain detailed insights of the effectiveness of your tests against your Mule applications.
+Run a coverage report from Anypoint Studio to obtain detailed insights of the effectiveness of MUnit tests on your Mule applications.
 
-The following configurations apply when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. 
-
-To run coverage reports from Maven, see xref:munit::coverage-maven-concept.adoc[].
+The following configurations apply when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. To run coverage reports from Maven, see xref:munit::coverage-maven-concept.adoc[].
 
 == Enable Coverage Reports in Anypoint Studio
 
-See which flows, and which percentage of event processors in those flows the test covers by clicking on the Coverage button:
+To see which flows, and which percentage of event processors in those flows the test covers, click on the Coverage button:
 
 image::using-munit-coverage-in-anypoint-studio.png["MUnit Coverage tab highlighted in the MUnit section"]
 
-The Overall Coverage value represents the percentage of the Mule application event processors that the MUnit test executes.
+The *Overall coverage* value represents the percentage of Mule application event processors that the MUnit test executes.
 
 Click *Generate Report* to get the report that details the flows and event processors in the Mule configuration files included in the MUnit test.
 
