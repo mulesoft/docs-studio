@@ -21,13 +21,19 @@ image::munit-coverage-report-in-anypoint-studio.png["Files included in the repor
 
 [%header,cols="20a,80a"]
 |===
-| Column      | Description
-| *Resource*    | Name of the Mule configuration file
-| *Containers* | Number of flows in the Mule configuration file
-| *Weight*      | Percentage of your application in a configuration file +
-                A percentage of the overall number of event processors in the documentation and the
-                number of event processors in the Mule configuration file
-| *Coverage*    | Percentage of event processors in the Mule configuration file that the MUnit test executes
+| Column | Description
+
+| *Resource* 
+| Name of the Mule configuration file
+
+| *Containers* 
+| Number of flows in the Mule configuration file
+
+| *Weight* 
+| Percentage of Mule configuration file relative to the entire application. The percentage represents the proportion of event processors within your file compared to the total number of event processors across all configuration files
+
+| *Coverage* 
+| Percentage of event processors in the Mule configuration file that the MUnit test executes
 |===
 
 Additionally, you can click on each *Resource* to get a more specific and granular report of the Event Processors executed in that resource:
