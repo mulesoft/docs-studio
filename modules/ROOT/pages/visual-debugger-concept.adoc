@@ -34,7 +34,7 @@ Enable precise control over application debugging by setting the debugger connec
 | Option | Description | Default Value
 
 | Connection Properties 
-| Studio debugger listens to incoming TCP connections on `localhost` and port `6666`. Pause the debugger listening activities by selecting *Suspend* to prevent the debugger from triggering or processing any incoming requests temporarily. 
+| Studio debugger listens to incoming TCP connections on `localhost` and port `6666`. To temporarily prevent the debugger from triggering or processing incoming requests, click *Suspend* to pause debugger listening activities. 
 | 
 
 * TCP connections: `localhost`
