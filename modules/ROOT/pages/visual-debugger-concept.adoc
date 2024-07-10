@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-With Anypoint Studio debugger, you can run your application from Studio in debug mode and configure breakpoints to stop the execution of your application at a specific message processor. In the *Mule Debugger* view, inspect the content of the message as it exists at that point in the flow and evaluate a DataWeave expression against it.
+With Anypoint Studio debugger, you can run your application from Studio in debug mode and configure breakpoints to stop application execution at a specific message processor. In the *Mule Debugger* view, inspect the content of the message as it exists at that point in the flow and evaluate a DataWeave expression against it.
 
 The debugger works with Enterprise Edition runtimes and doesn't connect to Mule Kernel runtimes.
 
