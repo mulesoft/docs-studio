@@ -3,11 +3,11 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio debugger enables you to run your application from Studio in debug mode, and to configure breakpoints to stop the execution of your application at a specific message processor. Then, using the *Mule Debugger* view, you can inspect the content of the message as it exists at that point in the flow, and evaluate a DataWeave expression against it.
+With Anypoint Studio debugger, you can run your application from Studio in debug mode and configure breakpoints to stop application execution at a specific message processor. In the *Mule Debugger* view, inspect the content of the message as it exists at that point in the flow and evaluate a DataWeave expression against it.
 
-The debugger works with Enterprise Edition runtimes and does not connect to Community Edition runtimes.
+The debugger works with Enterprise Edition runtimes and doesn't connect to Mule Kernel runtimes.
 
-When you run your application in debug mode for the first time, Anypoint Studio prompts you to load the *Mule debug* perspective. The *Mule debug* perspective consists of a list of preconfigured views that help you debug your application:
+When you run your application in debug mode for the first time, Anypoint Studio prompts you to load the *Mule debug* perspective. The *Mule debug* perspective is a list of views that help you debug your application:
 
 * *Mule Debugger*
 * *Evaluate DataWeave Expressions*
@@ -17,18 +17,38 @@ When you run your application in debug mode for the first time, Anypoint Studio 
 
 To debug your application in Studio:
 
-. Right-click your project in the *Package Explorer* view.
-. Select *Debug As* > *Mule Application*. +
-Studio asks you for permission to switch to the *Mule debug* perspective.
+. Right-click your project in *Package Explorer*.
+. Select *Debug As* > *Mule Application*.
++
+Studio requests permission to switch to the *Mule debug* perspective.
 . Click *Yes*.
 
-Additionally, you can run your application in debug mode by right-clicking in the canvas and selecting *Debug Project*, or by clicking the *Debug* button on your top toolbar image:to-run-debug-mode-e7b7b.png[debug-button].
+Alternatively, run your application in debug mode by right-clicking in the canvas and selecting *Debug Project*, or by clicking image:to-run-debug-mode-e7b7b.png[""] (*Debug*) on the toolbar.
 
 == Configure Studio Debugger
 
-When debugging in Studio, the debugger listens for incoming TCP connections on `localhost` and port `6666`. You can modify this configuration in by clicking *Run* > *Debug configurations* and selecting the *Debug* tab.
+Enable precise control over application debugging by setting the debugger connections and maximum values. To modify the default configuration values, click *Run* > *Debug configurations* and select the *Debug* tab.
+
+[%header,%autowidth.spread,cols="a,a,a"]
+|===
+| Option | Description | Default Value
+
+| Connection Properties 
+| Configure the Studio debugger to listen for incoming TCP connections. Click *Suspend* to pause debugger listening activities.
+| 
+
+* TCP connections: `localhost`
+* Port: `6666`
+
+| Debugger Maximum Consumption Stream Properties 
+| Control the maximum amount of data the debugger can consume from a stream when inspecting or debugging applications.
+| 2 MB
+
+| Debugger Maximum Payload Collection Size 
+| Determine the maximum size of the payload data that the debugger collects and displays during a debugging session. Manage the memory usage of the debugger to ensure it doesn't consume excessive system resources to avoid performance degradation or crashes, especially when dealing with large data payloads.
+| 100 bytes
+|===
 
 == See Also
 
 * xref:mule-debugger-view-reference.adoc[Mule Debugger View Reference]
-
