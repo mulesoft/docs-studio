@@ -1,21 +1,19 @@
-= Using MUnit Coverage in Studio
+= Optimizing API Testing with MUnit Coverage Reports in Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can run a coverage report from Anypoint Studio.
+Run a coverage report from Anypoint Studio to obtain detailed insights of the effectiveness of MUnit tests on your Mule applications.
 
-The following configurations apply when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. 
-
-To run coverage reports from Maven, see xref:munit::coverage-maven-concept.adoc[].
+The following configurations apply when you execute your MUnit tests in Studio. They don't apply when running tests from Maven in a CI/CD environment. To run coverage reports from Maven, see xref:munit::coverage-maven-concept.adoc[].
 
 == Enable Coverage Reports in Anypoint Studio
 
-See which flows, and which percentage of event processors in those flows the test covers by clicking on the Coverage button:
+To see which flows, and which percentage of event processors in those flows the test covers, click the *Coverage* button:
 
 image::using-munit-coverage-in-anypoint-studio.png["MUnit Coverage tab highlighted in the MUnit section"]
 
-The Overall Coverage value represents the percentage of the Mule application event processors that the MUnit test executes.
+The *Overall coverage* value represents the percentage of Mule application event processors that the MUnit test executes.
 
 Click *Generate Report* to get the report that details the flows and event processors in the Mule configuration files included in the MUnit test.
 
@@ -23,13 +21,19 @@ image::munit-coverage-report-in-anypoint-studio.png["Files included in the repor
 
 [%header,cols="20a,80a"]
 |===
-| Column      | Description
-| *Resource*    | Name of the Mule configuration file
-| *Containers* | Number of flows in the Mule configuration file
-| *Weight*      | Percentage of your application in a configuration file +
-                A percentage of the overall number of event processors in the documentation and the
-                number of event processors in the Mule configuration file
-| *Coverage*    | Percentage of event processors in the Mule configuration file that the MUnit test executes
+| Column | Description
+
+| *Resource* 
+| Name of the Mule configuration file
+
+| *Containers* 
+| Number of flows in the Mule configuration file
+
+| *Weight* 
+| Proportion of event processors within the Mule configuration file compared to the total number of event processors across all configuration files
+
+| *Coverage* 
+| Percentage of event processors in the Mule configuration file that the MUnit test executes
 |===
 
 Additionally, you can click on each *Resource* to get a more specific and granular report of the Event Processors executed in that resource:
