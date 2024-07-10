@@ -9,7 +9,7 @@ The following configurations apply when you execute your MUnit tests in Studio. 
 
 == Enable Coverage Reports in Anypoint Studio
 
-To see which flows, and which percentage of event processors in those flows the test covers, click on the Coverage button:
+To see which flows, and which percentage of event processors in those flows the test covers, click the *Coverage* button:
 
 image::using-munit-coverage-in-anypoint-studio.png["MUnit Coverage tab highlighted in the MUnit section"]
 
