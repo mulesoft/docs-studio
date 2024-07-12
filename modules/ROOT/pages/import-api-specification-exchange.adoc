@@ -59,7 +59,7 @@ If you want Studio to list your API when searching in Exchange, you must mark yo
 
 Studio supports the implementation of AsyncAPI 2.6 specs. When creating an implementation project, Studio imports and scaffolds an AsyncAPI spec hosted on Exchange into an API interface that you can implement.
 
-For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[] in APIkit for AsyncAPI Module Reference.
+For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
 
 === Access AsyncAPI Implementation Features
 
@@ -102,7 +102,7 @@ Errors can occur during the scaffolding process:
 * If no channels are defined in the specification
 * If unsupported message broker protocols are used
 
-For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[] in APIkit for AsyncAPI Module Reference..
+For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
 
 [NOTE]
 Studio doesn't support the scaffolding of AsyncAPI, OAS, or JSON schema fragment files that are referenced from API specs. The scaffolder doesn't add these fragments as project dependencies when you import the specification from Exchange. However, you can scaffold and reference fragments that are specified inline, within the spec. RAML fragments imported from Exchange are not affected by this limitation.
