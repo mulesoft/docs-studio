@@ -82,7 +82,7 @@ You must have access to a supported AsyncAPI specification hosted on Anypoint Ex
 
 === Scaffolding Fundamentals for AsyncAPI Implementations
 
-When scaffolding an AsyncAPI specification into a Mule project (implementation or integration), Studio:
+When scaffolding an AsyncAPI specification into a Mule project, Studio:
 
 * Introspects the AsyncAPI specification
 * Creates a new Mule project with a separate flow for each `publish` operation in the specification
