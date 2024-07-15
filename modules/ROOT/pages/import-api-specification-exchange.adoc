@@ -55,8 +55,62 @@ Manage the API specifications linked to Exchange in your project from the API sp
 [NOTE]
 If you want Studio to list your API when searching in Exchange, you must mark your API specification published as an asset as *stable*.
 
+== Implement AsyncAPI Specifications
+
+Studio supports the implementation of AsyncAPI 2.6 specs. When creating an implementation project, Studio imports and scaffolds an AsyncAPI spec hosted on Exchange into an API interface that you can implement.
+
+For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
+
+=== Access AsyncAPI Implementation Features
+
+. Open Anypoint Code Builder landing page on your Anypoint Platform cloud host (https://anypoint.mulesoft.com/codebuilder/[US] or https://eu1.anypoint.mulesoft.com/codebuilder/[EU]). 
++
+Sign-in is required. The *Terms & Conditions* button is available to the organization administrator only.
+. If the message *AsyncAPI Beta is now available in Anypoint Code Builder and Anypoint Studio* appears on the page, ask your organization administrator to join the Beta program by:
+.. Clicking *Join Beta* from the Anypoint Code Builder landing page
++
+The *Join Beta* button is available only to your organization administrator.
+.. Reviewing the terms and conditions of the beta program
+.. Clicking *Get Access*
++
+When the AsyncAPI feature is available for your organization, the Anypoint Code Builder landing page provides the following notification:
++
+*AsyncAPI Implementation Beta for Anypoint Code Builder and Studio is enabled for your organization.*
+
+[NOTE]
+You must have access to a supported AsyncAPI specification hosted on Anypoint Exchange. If your AsyncAPI specification is not published to Exchange, see xref:design-center::design-publish.adoc[]. To create an AsyncAPI specification before publishing to Exchange, see xref:design-center::design-async-api.adoc[] in the Design Center documentation.
+
+=== Scaffolding Fundamentals for AsyncAPI Implementations
+
+When scaffolding an AsyncAPI specification into a Mule project, Studio:
+
+* Introspects the AsyncAPI specification
+* Creates a new Mule project with a separate flow for each `publish` operation in the specification
+* Produces the configuration properties `file dev-properties.properties` file in the `src/main/resources` directory of your Mule project
+* Makes the APIkit for AsyncAPI module available for use in the project
++
+The module provides the following operations:
+
+** *Publish* (`<apikit-asyncapi:publish/>`): AsyncAPI `subscribe` operations in the specification are available for configuration as AsyncAPI *Publish* operations.
+** *Message Listener* (`<apikit-asyncapi:message-listener/>`): AsyncAPI `publish` operations in the specification are configurable *Message Listener* (not *Publish*) operations.
++
+The scaffolder transforms each `publish` operation into a *Message Listener* operation.
+
+* Generates a `global-configs.xml` file with connection configurations for *Message Listener* and *Publish* operations in the AsyncAPI module and for any connectors that the module depends on.
+
+Errors can occur during the scaffolding process:
+
+* If no channels are defined in the specification
+* If unsupported message broker protocols are used
++
+For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
+
+[NOTE]
+Studio doesn't support the scaffolding of AsyncAPI, OAS, or JSON schema fragment files that are referenced from API specs. The scaffolder doesn't add these fragments as project dependencies when you import the specification from Exchange. However, you can scaffold and reference fragments that are specified inline, within the spec. RAML fragments imported from Exchange are not affected by this limitation.
+
 == See Also
 
 * xref:api-development-studio.adoc[]
 * xref:api-sync.adoc[]
 * xref:set-credentials-in-studio-to.adoc[]
+* https://trailhead.salesforce.com/trailblazer-community/topics/mulesofteda?sort=LAST_MODIFIED_DATE_DESC[Provide feedback about the AsyncAPI feature]
