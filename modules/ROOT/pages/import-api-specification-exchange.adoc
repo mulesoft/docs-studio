@@ -63,7 +63,9 @@ For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#
 
 === Access AsyncAPI Implementation Features
 
-. Open Anypoint Code Builder landing page.
+. Open Anypoint Code Builder landing page on your Anypoint Platform cloud host (https://anypoint.mulesoft.com/codebuilder/[US] or https://eu1.anypoint.mulesoft.com/codebuilder/[EU]). 
++
+Sign-in is required. The *Terms & Conditions* button is available to the organization administrator only.
 . If the message *AsyncAPI Beta is now available in Anypoint Code Builder and Anypoint Studio* appears on the page, ask your organization administrator to join the Beta program by:
 .. Clicking *Join Beta* from the Anypoint Code Builder landing page.
 +
