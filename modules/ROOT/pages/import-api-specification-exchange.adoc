@@ -67,7 +67,7 @@ For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#
 +
 Sign-in is required. The *Terms & Conditions* button is available to the organization administrator only.
 . If the message *AsyncAPI Beta is now available in Anypoint Code Builder and Anypoint Studio* appears on the page, ask your organization administrator to join the Beta program by:
-.. Clicking *Join Beta* from the Anypoint Code Builder landing page.
+.. Clicking *Join Beta* from the Anypoint Code Builder landing page
 +
 The *Join Beta* button is available only to your organization administrator.
 .. Reviewing the terms and conditions of the beta program
@@ -96,7 +96,7 @@ The module provides the following operations:
 +
 The scaffolder transforms each `publish` operation into a *Message Listener* operation.
 
-* Generates a `global-configs.xml` file with connection configurations for *Message Listener* and *Publish* operations in the AsyncAPI Module and for any connectors that module depends on.
+* Generates a `global-configs.xml` file with connection configurations for *Message Listener* and *Publish* operations in the AsyncAPI module and for any connectors that the module depends on.
 
 Errors can occur during the scaffolding process:
 
