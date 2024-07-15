@@ -102,7 +102,7 @@ Errors can occur during the scaffolding process:
 
 * If no channels are defined in the specification
 * If unsupported message broker protocols are used
-
++
 For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
 
 [NOTE]
