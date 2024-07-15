@@ -63,7 +63,6 @@ For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#
 
 === Access AsyncAPI Implementation Features
 
-. Log in to Anypoint Platform.
 . Open Anypoint Code Builder landing page.
 . If the message *AsyncAPI Beta is now available in Anypoint Code Builder and Anypoint Studio* appears on the page, ask your organization administrator to join the Beta program by:
 .. Clicking *Join Beta* from the Anypoint Code Builder landing page.
