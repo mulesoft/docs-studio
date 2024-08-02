@@ -11,11 +11,11 @@ When creating a new Mule Project, Studio prompts you to select a runtime; this d
 
 . In the *Package Explorer*, expand the contents of your project's folder, then double-click to open the *mule-project.xml* file.
 +
-image::mule-config.png[mule_config]
+image::mule-config.png["An arrow points to a file named mule-project.xml in a file tree"]
 +
 . Studio displays the contents of the file as fields in which you can change the values. Use the drop-down to select the *Server Runtime* you wish to use to run your Studio project.
 +
-image::choose-runtime.png[choose_runtime]
+image::choose-runtime.png["A Mule Project overview with a highlighted server runtime of Mule Server 3.5.0 M4 EE"]
 
 [TIP]
 Keep in mind that a different runtime may be incompatible with some elements included in your application. Further, be aware that some runtimes are deployable only to CloudHub. Refer to xref:release-notes::index.adoc[Release Notes] to examine the abilities of each version of Mule runtimes.
