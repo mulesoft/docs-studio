@@ -144,7 +144,7 @@ For more information on structured mapping, see xref:datamapper-flat-to-structur
 Output *Properties* tool. Click to open the *Properties* configuration window. Configurable properties will vary according to the input type. Shown here are
 
 |16 |
-*Show/Hide Unrelated Elements* tool. Default position is open, showing the hide icon image:hide-icon.png["A red line crossing out an eye icon"].
+*Show/Hide Unrelated Elements* tool. Default position is open, showing the hide icon image:hide-icon.png["A line crossing out an eye icon"].
 
 * When open, displays all elements in the input mapping pane that are not collapsed, whether or not you can map them in the current mapping level.
 * When closed, hides all elements in the input pane that are not mappable in the currently displayed mapping level.
