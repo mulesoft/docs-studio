@@ -200,7 +200,7 @@ image:graphview.png["A list of employee data, including phone numbers, zip codes
 
 == The DataMapper Configuration View
 
-The image:view-selector-icon.png["A table icon with several rows and columns"] / image:view-selector-icon-2.png["A green logo with a gold plus sign"] buttons to the right of the graphical mapping editor allow you to toggle between the mapping view and the DataMapper configuration view. The configuration view allows you to quickly configure global parameters for your specific DataMapper transformer.
+The image:view-selector-icon.png["A table icon with several rows and columns"] / image:view-selector-icon-2.png["A logo with a plus sign"] buttons to the right of the graphical mapping editor allow you to toggle between the mapping view and the DataMapper configuration view. The configuration view allows you to quickly configure global parameters for your specific DataMapper transformer.
 
 image::config-view.png["A form with fields for configuring a CSV to JSON conversion"]
 
