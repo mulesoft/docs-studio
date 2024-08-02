@@ -68,7 +68,7 @@ Notice the *Create mapping* button at the bottom of the image above. The button 
 |1 |Display name input field. Defines the name for this DataMapper in the application flow as shown in the Studio canvas.
 |2 |File name input field. Defines the name of the file that contains the data mapping.
 |3 |Input source drop-down menu. By default, DataMapper takes its input from the message payload. Click to select another input source; you can select from several message properties or flow variables.
-|4 |Input type input field. Click the edit icon image:edit-icon.jpg["A pencil on a notepad icon"] or the drop-down menu to the right of the input field to select the input type. This causes the input pane to change allowing you to select between the available types for input data.
+|4 |Input type input field. Click the edit icon image:edit-icon.jpg["A pencil on a notepad icon"] or the dropdown menu next to the *Input Type* field. This causes the input pane to change allowing you to select between the available types for input data.
 
 |5 |Output target input field. The default is the message payload. Select between payload or available properties, or write your own expression.
 |6 |Output type drop-down menu. Click to select between the available types for output data.
