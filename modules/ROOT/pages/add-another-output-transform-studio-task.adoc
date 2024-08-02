@@ -11,13 +11,13 @@ A single Transform Message component can give shape to several different parts o
 To add a new output:
 
 
-. Click the *Add new target* button image:using-dataweave-in-studio-34a3e.png[].
+. Click the *Add new target* button image:using-dataweave-in-studio-34a3e.png["An icon of a plus sign with a line through it"].
 
 
 . Specify where in the output Mule message to place the result of this new DataWeave transform. In case you're creating a new variable or property, you must also set a name for it.
 
 +
-image::dw-new-variable.png[new variable]
+image::dw-new-variable.png["A dialog box with a selection for output variable name and source code"]
 
 
 [NOTE]
