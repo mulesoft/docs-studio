@@ -11,6 +11,7 @@ In API Sync View, you pull, push, and compare your API definition in Anypoint St
 
 The API Sync View shows by default with Studio 6.0 and newer next to the Mule Palette:
 
+image::api-sync-reference-b0a34.png["A diagram showing an API flow, a package explorer, and a Mule Palette with an API sync"]
 
 If you choose to close this view, you can bring it back up by going to *Window*, *Show view*, and *Other*. +
 Inside the *APIKit Views* Folder, you can find the *API Sync* view.
