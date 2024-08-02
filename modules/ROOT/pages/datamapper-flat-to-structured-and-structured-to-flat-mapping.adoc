@@ -12,7 +12,7 @@ DataMapper will continue to be fully supported in all current and future version
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -70,9 +70,9 @@ This example shows how to map the numbered fields in the CSV file shown above to
 
 Map the numbered fields `Street 1` and `Street 2`, and `ZipCode 1` and `ZipCode 2`, to the elements `<street>` and `<zipCode>`  in the XML `<address>` element. To do this, use mapping levels as shown in the image below.
 
-image::outline-levels.png[]
+image::outline-levels.png["A diagram illustrating the mapping levels in a code structure"]
 
-image::intro-element-mapping.png[intro-element.mapping]
+image::intro-element-mapping.png["A dropdown menu will appear, allowing you to select Address 1, Address 2, or Employee"]
 
 The image above shows the three mapping levels, visible when you click *Element Mapping*.
 
@@ -80,7 +80,7 @@ The image above shows the three mapping levels, visible when you click *Element 
 
 . First, create a new DataMapper transformer of *Input Type* CSV and *Output Type* XML, using the files provided <<Files Used For This Example>>.
 +
-image::dm-initial1.png[DM_initial1]
+image::dm-initial1.png["A window with a form for creating a mapping from CSV to XML"]
 
 . In the *Input* pane, select Type `CSV`, and provide the sample CSV file.
 
@@ -88,15 +88,15 @@ image::dm-initial1.png[DM_initial1]
 
 . After assigning the input and output files, click Create mapping. The Data Mapping View should look like the image below.
 +
-image::dm-initiala1.png[DM_initialA1]
+image::dm-initiala1.png["A diagram that illustrates the process of mapping input attributes to output attributes in data transformation"]
 +
 As you can see, Anypoint DataMapper has automatically created a top-level mapping called `Foreach 'CSV' -> 'employees'`, and mapped the field `Name` since it is identical in the input and output panes. You can now map additional elements, such as `Street 1` to `street` and `Zipcode 1` to `zipCode`.
 +
-image::dm-initial2.png[DM_initial2]
+image::dm-initial2.png["A diagram illustrating the process of field mapping between CSV and XML files"]
 
 . Now, map the input fields `Street 2` to `street`, and `ZipCode 2` to `zipCode`. The final mapping should look like the image below.
 +
-image::dm-initial3.png[DM_initial3]
+image::dm-initial3.png["A diagram that illustrates the process of mapping CSV to XML"]
 
 To test your mapping, use the xref:previewing-datamapper-results-on-sample-data.adoc[Preview] feature by completing the following steps:
 
@@ -191,7 +191,7 @@ In order to map from XML to CSV we will use rules, which we define in DataMapper
 
 Using XPath, the rules fetch the values of the XML elements that you want, and feed them to DataMapper. DataMapper maps the values to whatever output fields you define in the CSV output file.
 
-image::diagram.png[]
+image::diagram.png["An example of an XML document and an XPath expression that returns the street address 123 Main Street"]
 
 The image above shows how XPath retrieves values stored in XML structures. The XPath expression `/addresses/address[1]/street` retrieves the contents of the `street` element in the first `address` element of `addresses`.
 
@@ -199,7 +199,7 @@ The image above shows how XPath retrieves values stored in XML structures. The X
 
 . First, create a new DataMapper transformer of *Input Type* XML and *Output Type* CSV, using the files provided <<Files Used For This Example>>.
 +
-image::xml-initial1.png[XML_initial1]
+image::xml-initial1.png["A screenshot of an application for mapping XML data to a CSV format"]
 
 . In the *Input* pane, select Type `XML`. Click *Generate schema from xml*, and provide the sample XML file.
 
@@ -207,11 +207,11 @@ image::xml-initial1.png[XML_initial1]
 
 . After assigning the input and output files, click Create mapping. The Data Mapping View should look like the image below.
 +
-image::xml-initial2.png[XML_initial2]
+image::xml-initial2.png["An application for the mapping of input XML data to output CSV data"]
 +
 As you can see, DataMapper has automatically created a top-level mapping called `Foreach 'employees' > 'contacts'`. Because there are no top-level elements in the source XML document that populate rows in the output CSV document, this mapping is not needed, and in fact it will generate an extra row of output in the CSV if left in place.
 
-. Delete this top-level mapping by clicking the image:remove-map-icon.png[remove.map.icon] icon. Then, create a new mapping by clicking the Add Map icon.
+. Delete this top-level mapping by clicking the image:remove-map-icon.png["A red X"] icon. Then, create a new mapping by clicking the Add Map icon.
 
 . Studio  displays the *Add Mapping* window. Configure the window as outlined in the table below.
 
@@ -220,24 +220,24 @@ As you can see, DataMapper has automatically created a top-level mapping called 
 [%header%autowidth.spread]
 |===
 |Parameter |Value |Remarks |Configuration window image
-|*Name* |`Employees` |Suggested value .3+|image:xmladdmap1.png[XMLaddmap1]
+|*Name* |`Employees` |Suggested value .3+|image:xmladdmap1.png["A window displaying options for mapping employee data from XML to CSV format"]
 |*Source* |`employee : employee` |Click `employee : employee` in the *Source* pane to select
 |*Target* |`contacts` |Click `contacts` in the *Target* pane to select
 |===
 +
 After creating the new mapping, the DataMapper view should look like the image below.
 +
-image::xml-initial3.png[XML_initial3]
+image::xml-initial3.png["A diagram that illustrates how XML and CSV files are mapped"]
 
 As you can see, DataMapper mapped the top-level input element `employee : employee` to `contacts`, enabling you to map child elements between the two. DataMapper also mapped the field `Name`, because the name of this field is exactly the same in the input and output.
 
 You now have to manually map the input field `lastName` to the output field `Last Name`. Click the input field, drag it to the output field, and release.
 
-image::xmlmapping-3.png[XMLmapping_3]
+image::xmlmapping-3.png["A diagram that illustrates the mapping of fields from a contacts CSV to an XML structure"]
 
 To map the addresses in the input XML file to the output CSV fields `Street 1`, `Street 2`, etc., you need to create a rule for the input element `address : address`. To create the rule, right-click `address : address` in the Input pane, then select *Create Rule based on this element*.
 
-image::create-rule.png[create.rule]
+image::create-rule.png["A menu for creating a rule, adding a field, or removing an element"]
 
 DataMapper  displays the *Create a new xpath rule* window. Configure the window as outlined in the table below.
 
@@ -246,7 +246,7 @@ Window: *Create xpath rule*
 [%header%autowidth.spread]
 |===
 |Parameter |Value |Remarks |Configuration window image
-|*Name* |`Street1` |Suggested value .5+|image:configure-rule-1.png[configure.rule.1]
+|*Name* |`Street1` |Suggested value .5+|image:configure-rule-1.png["A window to establish a new XPath rule, with designated fields for name, type, context, XPath, and target field"]
 |*Type* |`string` |
 |*Context* |`/employees/employee` |
 |*XPath* |`/addresses/address[1]/street` |
@@ -255,7 +255,7 @@ Window: *Create xpath rule*
 
 After creating the rule, the DataMapper view should look like the image below.
 
-image::xml-initial4.png[XML_initial4]
+image::xml-initial4.png["A diagram illustrating data mapping between employees and contacts"]
 
 As you can see, DataMapper indicates that the rule `Street1` is in effect for mapping to the output field `Street 1`.
 
@@ -281,7 +281,7 @@ Following the procedure outlined above to create XPath rules, create additional 
 
 Once you have created the rules, you have mapped all of the input elements to their corresponding output elements. The DataMapper view should look like the image below.
 
-image::xml-initial5.png[XML_initial5]
+image::xml-initial5.png["A diagram mapping input arguments to output arguments"]
 
 To test your mapping, use the xref:previewing-datamapper-results-on-sample-data.adoc[Preview] feature by completing the following steps:
 

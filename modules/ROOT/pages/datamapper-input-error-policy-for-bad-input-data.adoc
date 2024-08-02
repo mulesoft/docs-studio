@@ -11,7 +11,7 @@ DataMapper will continue to be fully supported in all current and future version
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -34,4 +34,4 @@ The input Error Policy can only be set from the Input properties dialog from the
 
 All of the different input types have an Error Policy field in their respective Properties dialogs. For example, see Error Policy in the CSV properties dialog:
 
-image::csv-properties.png[csv_properties]
+image::csv-properties.png["A dialog box with options to edit CSV format properties"]

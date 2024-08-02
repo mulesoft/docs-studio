@@ -11,7 +11,7 @@ DataMapper will continue to be fully supported in all current and future version
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -33,9 +33,9 @@ CTL2 was licensed from a third party for use in past versions of DataMapper, and
 
 The images below illustrate DataMapper's xref:datamapper-visual-reference.adoc[Script view] displaying the same mapping, in CTL2 (below, at top) and MEL (below, at bottom.
 
-image::1-mel.png[1-MEL]
+image::1-mel.png["A code window with a code editor and a section for inbound properties"]
 
-image::2-ctl2.png[2-CTL2]
+image::2-ctl2.png["A code snippet demonstrating the transformation of input records into output records"]
 
 == Setting the DataMapper Scripting Language Preference
 
@@ -45,7 +45,7 @@ By default, Studio uses MEL as DataMapper's scripting engine. However, you can c
 
 . Use the drop-down for the *Default Script Type* field to select `CTL`.
 +
-image::3-setting.png[]
+image::3-setting.png["Preferences menu with selected option for default script type"]
 
 . Click *OK* to save your changes.
 
