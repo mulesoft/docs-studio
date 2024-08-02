@@ -16,11 +16,11 @@ This document assumes that you have https://www.mulesoft.com/ty/dl/studio[downlo
 
 . In Studio select *File* > *New* > *Mule Project*.
 +
-image::2013-11-26_16-17-43.png[]
+image::2013-11-26_16-17-43.png["A menu with options to create new projects"]
 
 . Mark the checkbox *Create POM file for project and maintain with Maven*. Then, define a *Group Id*, *Artifact Id*, and *Version* for your new project. Click *Finish*.
 +
-image::newmuleprojectwmaven.png[NewMuleProjectwMaven]
+image::newmuleprojectwmaven.png["A window with options to configure a new Mule project"]
 +
 [NOTE]
 If you see a message *Maven is currently disabled, configure Maven* click the link to enable Maven in your instance of Anypoint Studio.
@@ -38,9 +38,9 @@ Build the following flow in your project:
 
 . Drag an HTTP Connector and a Set Payload Component into your flow:
 +
-image::set-payload-basic-flow.png[set+payload+basic+flow]
+image::set-payload-basic-flow.png["A diagram showing a workflow with HTTP and Set Payload components"]
 +
-. Open the connector's properties editor and Create a new *Connector Configuration* element by clicking the green plus sign image:add.png[plus sign].
+. Open the connector's properties editor and Create a new *Connector Configuration* element by clicking the green plus sign image:add.png["A green and yellow plus sign"].
 . Fill in the two required fields: *Host* and *Port*. Set the host to `localhost` and leave the port as the default value `8081`.
 +
 [%header%autowidth.spread]
@@ -55,7 +55,7 @@ image::set-payload-basic-flow.png[set+payload+basic+flow]
 
 .  Configure the Set Payload component to set the value to "Hello World!", as shown below:
 +
-image::set-payload-hello-world.png[Set-payload-hello-world]
+image::set-payload-hello-world.png["A form with a display name, value, encoding, and MIME type settings"]
 
 [discrete.view]
 === XML Editor
@@ -80,11 +80,11 @@ Create the following simple flow. It includes an `http:inbound-endpoint` with de
 
 . Now it's time to add a unit test. To do so, right-click your project’s `src/test/java` folder, then select *New > Class*.
 +
-image::newclass.png[Newclass]
+image::newclass.png["A menu that offers the choice to create a new class, interface, or project"]
 
 . *Name* your class something like *HelloWorldTestCase*, enter a *Package* name of your choice, then hit *Finish.*
 +
-image::maven-newjavaclass.png[Maven-newjavaclass]
+image::maven-newjavaclass.png["A Java class creation dialog that offers you the ability to specify the name, modifiers, superclass, interfaces, methods, and comments"]
 +
 . Modify the newly created class (HelloWorldTestCase.java) with the following code:
 +
@@ -109,7 +109,7 @@ In Studio, when you drag and drop additional building blocks onto your canvas in
 
 . In your package explorer, look for the *pom.xml* file and open it.
 +
-image::openpom.png[]
+image::openpom.png["A menu that lists options to open a file with different editors"]
 +
 . Add your additional dependencies. To complete this example, you'll need to add these dependencies:
 +
