@@ -125,13 +125,13 @@ As you can see, the output is a large and complex structure with nested items at
 
 .. Click the *User Defined* radio button, then click *Create/Edit Structure*
 +
-image::input-and-output.jpg[input+and+output]
+image::input-and-output.jpg["A data mapping tool that converts a map of a status list into a CSV file"]
 
 .. Give your structure a Name
 
 .. Add three new fields by clicking the green plus sign, name these fields *screenName*, *date* and *Tweet*
 +
-image::custom-csv.jpg[custom+csv]
+image::custom-csv.jpg["A window for defining a CSV file with field for name, type, and child elements"]
 
 .. Click *Create Mapping*
 +
@@ -142,7 +142,7 @@ When creating a flow with a DataMapper and connectors for which there's known me
 
 . The mapping is then created. Next you must tell DataMapper what input field matches what output field. Notice that there already is an arrow joining *screenName* on both the input and output schemas, as both fields have the same name, DataMapper correctly assumed they were meant to be mapped together. Drag the input field *createdAt* onto the output field *date* and then the input field *text* onto the output field *tweet*, this will map them accordingly.
 +
-image::mapping.jpg[]
+image::mapping.jpg["A screenshot of a program that maps attributes from a data source to an output file"]
 +
 [%header%autowidth,width=80%]
 |===
