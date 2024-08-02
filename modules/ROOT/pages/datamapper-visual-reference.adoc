@@ -180,7 +180,7 @@ image::preview.png["A button with the label "Live" and an icon of a computer mon
 [%header,cols="10a,90a"]
 |===
 |Number |Description
-|1 |*Input Data* input field. Use to select the path of the file to read data from. Alternatively, click the folder image:input-folder-in-preview.png["A yellow folder with a green arrow"]button to the right of the field to select the file using your system's file browser.
+|1 |*Input Data* input field. Use to select the path of the file to read data from. Alternatively, click the folder image:input-folder-in-preview.png["A folder with a arrow"]button to the right of the field to select the file using your system's file browser.
 
 |2 |
 *Text* / *Graphic View* selector. Click to switch between graphic view (default, below left) and text view (below right).
