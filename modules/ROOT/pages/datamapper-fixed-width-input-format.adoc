@@ -231,7 +231,7 @@ image::6-add-field.png["A blue button with a plus sign and the text Add Field"]
 
 . The new fields that you add appear at the bottom of the Input pane, as if they were the last fields in the input file. You need to move them up to their proper place, after the `FirstName` input field. To do so, right-click the desired field, then select *Move Field Up*.
 +
-image::7-moveup.png["A drop-down menu displays options to remove, edit, or reposition a field"]
+image::7-moveup.png["A dropdown menu displays options to remove, edit, or reposition a field"]
 
 . Ensure that the input fields appear in the following order: `LastName`, `FirstName`, `CountryCode`, `AreaCode`, `Phone`, `Country`, `EmployeeNo`.
 
