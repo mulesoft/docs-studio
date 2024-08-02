@@ -66,7 +66,7 @@ The following characteristics and requirements of the DataSense and Native query
 
 The Query Editor retrieves available object types and fields, then lists them in a menu for you to select and filter. You can build your query using a graphical user interface, shown below. Within the connector in your flow, you need to reference a xref:3.9@mule-runtime::global-elements.adoc[Global Element] with DataSense enabled.
 
-image::dslimage.png[DSLimage]
+image::dslimage.png["A form with options to filter, order, and limit data by various fields"]
 
 ==== Native Query Language (NQL)
 
@@ -82,7 +82,7 @@ Note that query language translation is "one-way", meaning you can translate DSQ
 
 This section offers detailed information about each part of the query builder and how to use the fields to construct a query.
 
-image::query-builder.png[query_builder]
+image::query-builder.png["A query builder with options for type, fields, filter, order by, limit, direction, and offset"]
 
 [%header,cols="10a,90a"]
 |===
@@ -194,7 +194,7 @@ When you enable *DataSense* in the Salesforce global element, Studio automatical
 
 . After you have defined your query, click *OK*. The Query Editor saves, then displays your query in the Query Text field in the Properties Editor.  +
 +
-image::query-language.png[query_language]
+image::query-language.png["Code snippet demonstrating a query language interface"]
 
 . At this point, your query is fully defined. If you wish to modify it, just click the  *Query Builder*  button to change whatever you need. To modify your query, you can also edit it directly in the *Query Text* field. The Query Editor incorporates any additional fields, filters or clauses you enter; clicking  *Query Builder* again displays the Query Builder window with your changes added.
 
@@ -208,7 +208,7 @@ Due to the complexity of graphical representation, the graphical Query Builder c
 
 . Write your query in the query text field to include the `OR` operator. Your query will work, even though you can't see your query in the editor's Basic setting.
 +
-image::basic-advanced.png[basic_advanced]
+image::basic-advanced.png["A form with basic and advanced filter options"]
 ====
 
 === Using the Native Query Language

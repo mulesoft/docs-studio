@@ -11,7 +11,7 @@ DataMapper continues to be fully supported in all current and future versions of
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right-click DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -39,7 +39,7 @@ This document assumes the reader is familiar with the DataMapper Transformer.
 
 The following image illustrates a very simple Mule flow which includes a DataMapper transformer.  The first building block, a xref:3.9@mule-runtime::file-connector.adoc[File Connector], reads the fixed-width input file. Then, DataMapper transforms the data into the JSON format, and outputs the result into a second file.
 
-image::flow-1.png[]
+image::flow-1.png["A workflow with a file, DataMapper, and another file"]
 
 To test the mapping, you can build this flow in Studio, then run the application and check the results in the output file. Alternatively, you can build this flow, then can use DataMapper's xref:previewing-datamapper-results-on-sample-data.adoc[Preview] feature to view the mapping without running the application.
 
@@ -87,12 +87,12 @@ John      Doe       54112223333ARG002
 
 . Click the DataMapper building block on the canvas to display the DataMapper properties editor.
 +
-image::dm-editor.png[DM_editor]
+image::dm-editor.png["A configuration form with input and output fields for a data mapper"]
 
 . In the *Input* section, click the Edit icon
-image:edit-icon.png[edit_icon] next to the *Type* input field, then select *Fixed Width* from the *Type* drop-down menu. The properties editor *Input* pane displays the input options for the fixed-width format, as shown below.
+image:edit-icon.png["A pencil on a notepad icon"] next to the *Type* input field, then select *Fixed Width* from the *Type* drop-down menu. The properties editor *Input* pane displays the input options for the fixed-width format, as shown below.
 +
-image::3-fixedw-options.png[3.fixedw_options]
+image::3-fixedw-options.png["A window with settings for a data input source, type, and structure"]
 
 . The default option, *From Example*, allows you to use an input file for determining input field properties (field names and width). The *User Defined* option allows you to manually define the input fields. In this example, we will use the input file described above so that DataMapper automatically configures the fields.
 
@@ -100,17 +100,17 @@ image::3-fixedw-options.png[3.fixedw_options]
 
 . After you have selected your input file, click *Edit Fields*. DataMapper displays the *Define the Fixed Width* panel. The image below illustrates how DataMapper reads the input file.  DataMapper has correctly guessed the width of all fields, and the names of the first three fields. The last two fields have the correct width values, but we must edit the names.
 +
-image::fixed-width-input.png[fixed_width_input]
+image::fixed-width-input.png["A table with names, types, and widths"]
 
 . To edit a field, click the field attribute you wish to edit (the name, type or width), then adjust the content and click *OK*.  For this example, change the names of the last two fields to their appropriate values:  `Country` and `EmployeeNo`.
 +
-image::props5.png[]
+image::props5.png["A list of names and their associated data types"]
 
 [TIP]
 ====
 DataMapper accepts several input field types, including string, date, boolean, etc. To define the type for a field, click the field's type and select the desired type from the drop-down menu.
 
-image::propstip.png[]
+image::propstip.png["A dropdown menu with options for string, date, boolean, number, and integer"]
 ====
 
 === Configuring DataMapper Output
@@ -126,7 +126,7 @@ If you want DataMapper to automatically generate the output JSON, click *Generat
 
 . Click *Create mapping* at the bottom of the DataMapper properties editor. DataMapper displays the graphical mapping editor, shown below.
 +
-image::4-dm-mapedit.png[4.DM_mapedit]
+image::4-dm-mapedit.png["A table that illustrates the mapping of input and output arguments"]
 
 As you can see, DataMapper has automatically mapped the input and output fields, since the field names coincide in the input and output.
 
@@ -202,7 +202,7 @@ To complete the above high-level steps, follow the instructions below.
 
 . In the *Input* pane of the graphical mapping editor, double-click the `Phone` field to edit its properties via the *Edit attribute* window, shown below.
 +
-image::5-field-attr.png[5.Field.attr]
+image::5-field-attr.png["Editing attribute properties form"]
 
 . As you can see, the field's width is 11 characters. Change the width to 7, then click *OK*. The final input field properties should correspond to the table below.
 +
@@ -218,7 +218,7 @@ image::5-field-attr.png[5.Field.attr]
 
 . We will now create the additional fields. In the *Input* pane, right-click the top-level element (in this case, `fwtest`), then select *Add Field*.
 +
-image::6-add-field.png[6.add_field]
+image::6-add-field.png["A blue button with a plus sign and the text "Add Field""]
 
 . Using this procedure, add the following fields:
 +
@@ -231,7 +231,7 @@ image::6-add-field.png[6.add_field]
 
 . The new fields that you add appear at the bottom of the Input pane, as if they were the last fields in the input file. You need to move them up to their proper place, after the `FirstName` input field. To do so, right-click the desired field, then select *Move Field Up*.
 +
-image::7-moveup.png[7.moveup]
+image::7-moveup.png["A drop-down menu displays options to remove, edit, or reposition a field"]
 
 . Ensure that the input fields appear in the following order: `LastName`, `FirstName`, `CountryCode`, `AreaCode`, `Phone`, `Country`, `EmployeeNo`.
 
@@ -241,13 +241,13 @@ At this point, we have finished modifying the input fields for the new mapping.
 
 Now we will modify the output fields to include the new input fields. DataMapper provides a handy shortcut for this: the *Recreate Metadata From Input* function.
 
-. In the *Output* pane, click the *Infer Metadata* icon image:infer-metadata.png[infer_metadata] , then select **Re-Create Metadata From Input**.
+. In the *Output* pane, click the *Infer Metadata* icon image:infer-metadata.png["A magic wand and a downward-pointing arrow"] , then select **Re-Create Metadata From Input**.
 +
-image::8-recreate-md.png[8.recreate_md]
+image::8-recreate-md.png["A menu that displays options to reload and re-create metadata, including an option to re-create metadata from the input"]
 
 DataMapper will automatically recreate the output metadata and display the new mapping, as shown below.
 
-image::9-new-mapping.png[9.new_mapping]
+image::9-new-mapping.png["A diagram illustrating the correlation between fixed width data and JSON data"]
 
 As you can see, the new input fields have been mapped to their corresponding output fields.
 
