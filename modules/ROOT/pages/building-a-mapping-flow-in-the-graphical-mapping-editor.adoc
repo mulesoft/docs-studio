@@ -11,7 +11,7 @@ DataMapper will continue to be fully supported in all current and future version
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right-click DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A menu offering options to execute and debug projects, transition to DataWeave, and manage breakpoints"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* -> *Anypoint Studio* > *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -37,7 +37,7 @@ Each time you map an input structure to an output structure, the mapping between
 
 For example, in the image below the *Element Mapping* drop-down menu displays three mappings:
 
-image::a1.png[]
+image::a1.png["A dropdown menu displays choices for mapping elements"]
 
 In this example, *staff* is the root element of the input file; *employee* and *manager* and child elements which contain their own attributes and collections. For details on how these input structures are mapped, and how to map child elements inside them, see below.
 
@@ -47,9 +47,9 @@ When preparing to map elements from input to output, whether a specific element 
 
 Once you select a current element mapping, those elements that are available to be mapped in source and target are presented in bold. For example, consider this DataMapper for constructing a contact phone list from lists of employees and managers:
 
-image::1.png[]
+image::1.png["A mapping between XML and JSON data structures"]
 
-The _employee_ and _manager_ collections of elements are bold to indicate that they can be mapped to the output pane. Selecting the element mapping "Foreach 'manager' -> 'contact'" shows a different set of mappable elements:  image:2.png[]
+The _employee_ and _manager_ collections of elements are bold to indicate that they can be mapped to the output pane. Selecting the element mapping "Foreach 'manager' -> 'contact'" shows a different set of mappable elements:  image:2.png["A tool mapping XML attributes to JSON attributes"]
 
 In the input and output panes, the nodes and attributes available for mapping are highlighted in *bold*:
 
@@ -60,9 +60,9 @@ In some cases, mapping individual fields may require writing an expression that 
 
 You can toggle the display of input and output elements not eligible for mapping using the  *Eye*  (Hide/Show unrelated elements) button in the input or output pane.
 
-* When closed, image:eye-open.png[eye_open] hides all elements in the input pane that are not mappable in the currently displayed mapping level.
+* When closed, image:eye-open.png["An eye icon"] hides all elements in the input pane that are not mappable in the currently displayed mapping level.
 
-* When open, image:eye-open.png[eye_open] displays all elements in the input mapping pane that are not collapsed, whether or not you can map them in the current mapping level.
+* When open, image:eye-open.png["An eye icon"] displays all elements in the input mapping pane that are not collapsed, whether or not you can map them in the current mapping level.
 
 === Creating an Element Mapping
 
@@ -80,7 +80,7 @@ The Element Mapping Control expresses the idea that element mappings iterate ove
 
 To edit an element mapping, select the mapping in the Element Mapping dropdown, then click the Edit Mapping icon. The Edit Mapping dialog appears:
 
-image::3.png[]
+image::3.png["A window that contains a title and fields for entering a name and condition for a structure mapping editor"]
 
 Enter the desired values for *Name* and, for structured data, an XPath filter *Condition* here.
 
@@ -125,7 +125,7 @@ CTL2 will be supported for purposes of backward compatibility. You can change th
 
 To view an output field's assigned script, click the field name in the DataMapper's Output pane. The expression is displayed in the textbox under the Output pane.
 
-image::4.png[]
+image::4.png["A code editor displaying JSON data and a script that is valid"]
 
 In the example above, the value of output field `name` is a string composed of the following:
 
@@ -146,7 +146,7 @@ One practical technique is to drag the input fields to the output to get the cod
 
 You can also select the *Script* view to edit the script for the entire mapping:
 
-image::5.png[]
+image::5.png["A code editor with a script for converting XML to JSON"]
 
 Like the graphical view, the script view allows you to use the *Element Mapping* drop-down to view the desired mapping level.
 
@@ -180,7 +180,7 @@ To create rule, do one of the following in the input pane:
 
 * Cluck *Rules*, then select *Add Rule*
 +
-image::6.png[]
+image::6.png["A form for creating a new XPath rule with fields for name, type, context, XPath, and target field"]
 
 The New Rule dialog appears.
 
@@ -203,7 +203,7 @@ Note that XPath syntax is used in rules regardless of what type of structured da
 
 In the input pane, right-click a rule, then select *Edit*. The editing dialog appears:
 
-image::7.png[]
+image::7.png["A window for editing an XPath rule, complete with fields for name, type, context, and XPath"]
 
 You can update the definition of the rule here. Note, however, that you cannot change the target output field for the rule.
 
@@ -228,17 +228,17 @@ To define an input or output argument for a mapping, use the following steps:
 
 . Click the DataMapping tab below the Message Flow canvas to display the Input arguments element in the Input pane (highlighted below, right).
 +
-image::8.png[]
+image::8.png["A button that says "Add Input argument""]
 
 . Right-click *Input arguments*, then select *Add Input argument*.The New Input Argument dialog opens.
 +
 An input argument can be of type string, date, boolean, or any of the numeric types.
 +
-image::9.png[]
+image::9.png["A window that requests input argument properties, such as name, type, and expression"]
 +
 If you use the default MEL for scripting, an argument can be a Java object, in which case you are prompted for the class of the object.
 +
-image::10.png[]
+image::10.png["A dialog box for creating a new input argument with fields for name, type, Mule expression, and class"]
 
 In the *Mule expression* field, type the Mule Expression Language expression that will provide the value for the input argument. You can use any Mule expression that is logically valid within the context of the flow and that matches with the selected type. For *Class*, if applicable, browse to or type the name of the object class.
 
@@ -246,7 +246,7 @@ Click *OK* when finished.
 
 The input argument is then available as an input for mapping and transformation, as shown in the following screenshot:
 
-image::11.png[]
+image::11.png["A tree diagram showing an employee object with fields for first name, last name, gender, phone, and text"]
 
 == Lookup Tables in Mappings
 
@@ -268,7 +268,7 @@ You add lookup tables by right-clicking the Lookup Tables item in the mappings p
 
 * *FlowRef Lookup*: Invokes a Mule flow, then uses the output of the flow as a source for a lookup.
 +
-image::12.png[]
+image::12.png["A dropdown menu that allows you to add various types of lookup tables"]
 
 See xref:using-datamapper-lookup-tables.adoc[Using DataMapper Lookup Tables] for full details on using lookup tables in mappings.
 

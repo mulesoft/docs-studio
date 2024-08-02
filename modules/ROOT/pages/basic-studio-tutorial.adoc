@@ -36,11 +36,11 @@ If you launched Studio as part of the installation process, and it is now runnin
 ** `AnypointStudio` in Linux
 . When Studio displays the *Workspace Launcher* dialog, click *OK* to accept the default workspace.
 +
-image::workspacelauncher.png[]
+image::workspacelauncher.png["A workspace launcher window with a text box, buttons, and instructions to select a workspace folder"]
 +
 . If this is the first time you have launched Studio, you see a Welcome screen. Click *Create a Project* to dismiss the screen and jump straight to the New Mule Project wizard.
 +
-image::welcomescreen.png[WelcomeScreen]
+image::welcomescreen.png["An arrow points to a button that says "Create a Project""]
 
 === Creating a New Project
 
@@ -50,20 +50,20 @@ Studio opens the *New Mule Project* wizard.
 +
 . Fill in the *Project Name* field with the value `Basic Tutorial`.
 +
-image::new.png[basic tutorial in Studio New Mule Project]
+image::new.png["A form for the creation of a new Mule project"]
 +
 . Click *Finish* to create the project.
 
 The Studio UI, which has the following main sections, appears:
 
-image::blank-canvas.png[blank+canvas]
+image::blank-canvas.png["The Mule Design workspace displays a console tab, a palette for filtering and selecting building blocks, and a project structure in the package explorer"]
 
 The orange area in the center is the canvas where you build a visual representation of your Mule program by dragging building blocks from the palette outlined in green to the canvas.
 For more information about how to use the visual editor, see this xref:index.adoc[quick overview].
 
 At the bottom of the canvas are Message Flow and Configuration XML tabs for alternating between visual and XML editing of the application.
 
-image::basic-t-canvas-tabs.png[]
+image::basic-t-canvas-tabs.png["Text labels for Message Flow, Global Elements, and Configuration XML"]
 
 On the *Global Elements* tab you set properties for configuration elements having global scope, such as the HTTP Listener Configuration introduced later.
 
@@ -72,7 +72,7 @@ On the *Global Elements* tab you set properties for configuration elements havin
 When you create a Mule Project, Studio creates an XML file in the `src/main/app` folder, which appears in
 the *Package Explorer*. This file stores flow information for the visual editor. Studio derives the file name `basictutorial.xml` from the project name, in this case "Basic Tutorial".
 
-image::packages.png[]
+image::packages.png["A file explorer window displaying a project's folder structure and files"]
 
 The `mule-project.xml` file at the bottom of the Package Explorer is the Mule project descriptor file. Open this
 file to change the project runtime, set or edit environment variables, or edit the project description.
@@ -95,38 +95,38 @@ This section uses these building blocks:
 ====
 *Tip: Use Studio Search*
 
-image::basic-studio-search.png[]
+image::basic-studio-search.png["A search bar for locating building blocks, categories, or templates within Anypoint Exchange"]
 
 *Note*: Building blocks in each category of the palette are organized alphabetically. To avoid scrolling, use the search tool in the upper right corner of the palette to find the building blocks that you want more quickly. You can also use this area to view more information about the building block in Anypoint Exchange.
 ====
 
 . Search for `http` in the palette and drag the *HTTP* connector to the canvas. This action creates the flow named basictutorialFlow.
 +
-image::add-http.png[]
+image::add-http.png["An orange arrow points to an HTTP connector in the Mule Palette"]
 +
 . Click on the https listener canvas representation and in In General Settings, click the green plus sign to the right of *Connector Configuration*:
 +
-image::basic-t-http-cfg.png[]
+image::basic-t-http-cfg.png["A plus button for creating a new configuration"]
 +
 The Global Element Properties dialog appears:
 +
-image::basic-t-http-props.png[]
+image::basic-t-http-props.png["A window with an OK button to confirm the HTTP Listener configuration"]
 +
 . Click *OK* to accept the defaults: Host `0.0.0.0` and Port `8081`.
 +
 . Search for `set payload` and drag the *Set Payload* transformer to the Process section of the flow.
 +
-image::set-payload.png[set+payload]
+image::set-payload.png["A form that includes fields to specify a payload, encoding, and MIME type"]
 +
 Later, you use the host IP address and port number `0.0.0.0:8081` in a browser to view the application response.
 +
 . Click the *HTTP* connector. In Basic Settings in the properties editor, set the Path value to an asterisk (*). The Path value indicates how you can access your application from a browser. With the "&#x2731;" value, you can specify alternate values after a slash in the URL, for example, `0.0.0.0:8081/Polly` or `0.0.0.0:8081/Jane`.
 +
-image::basic-t-http-path.png[]
+image::basic-t-http-path.png["HTTP settings configuration form"]
 +
 . Click the Set Payload transformer to set its properties, and in the *Value* field, replace the `#[]` value with `Hello MuleSoft`:
 +
-image::basic-t-set-payload.png[set payload]
+image::basic-t-set-payload.png["A form with fields for the display name, value, encoding, and MIME type"]
 +
 With just a few clicks, you have created an application.
 
@@ -136,7 +136,7 @@ To test the application:
 
 . Right-click the project name in *Package Explorer* and click *Run* > *Run As* > *Mule Application*:
 +
-image::run-as.png[Run as a Mule Application]
+image::run-as.png["Dropdown menu featuring options to execute a Mule application"]
 +
 Click *OK* to save and launch the application.
 +
@@ -144,11 +144,11 @@ The console lists output that looks something like this - Look for a message wit
 +
 `Started app 'basic-tutorial'`
 +
-image::console1.png[mule is up and kicking]
+image::console1.png["Console output indicating the successful launch of the "my first project" application""]
 +
 . Open a browser and type the address `0.0.0.0:8081`. You see the payload, Hello MuleSoft:
 +
-image::basic-t-browser-results.png[]
+image::basic-t-browser-results.png["A browser window displaying "Hello MuleSoft" on a white background"]
 
 Next, learn about logging.
 
@@ -156,7 +156,7 @@ Next, learn about logging.
 
 As soon as you run the application, Studio starts logging error, warning, tracing, and debugging information. Studio uses https://logging.apache.org/log4j/2.x/manual/migration.html[Apache log4j 2]-based logging. You can use the default log4j 2 settings or modify settings in the `log4j2.xml` file located in the project's `src/main/resources` path. You can view this path in the *Package Explorer*:
 
-image::logging-xml-file.png[location in package explorer or log4j2.xml file]
+image::logging-xml-file.png["A file explorer window displaying project files and folders"]
 
 The palette contains a Logger component that you can include in your flow to manage logging.
 Default logging occurs whether you add a Logger or not.
@@ -166,13 +166,13 @@ To add a Logger component:
 . Search for `logger` in the palette.
 . Drag the Logger to the right of Set Payload:
 
-image::basic-t-logging.png[]
+image::basic-t-logging.png["A Mule Palette with the Logger component highlighted"]
 
 In the next section, you can change the default logger settings, but for now, just accept the defaults.
 
 *Where does the logging output appear?*
 
-image::basic-log4j2xml.png[]
+image::basic-log4j2xml.png["A file explorer window with a file named log4j2.xml"]
 
 The log4j2.xml file defines where the logging output appears:
 
@@ -226,7 +226,7 @@ Most Mule elements provide configuration options, which you can set in one of th
 
 Use the *Configuration XML* at the bottom of the canvas to switch to the XML editor view.
 
-image::canvas-tabs-xml.png[canvas_tabs_xml]
+image::canvas-tabs-xml.png["An orange button labeled Configuration XML"]
 
 XML tags representing the flow have a `flow` element parent. The child elements represent the components you
 dragged to your canvas from the palette.
@@ -243,7 +243,7 @@ in the XML configuration view you change the value of the *port*
 attribute on the `http-listener-config`, this change is reflected in the visual editor when you click *Message Flow*
 to switch back to the visual editor.
 
-image::canvas-tabs-flow.png[canvas_tabs_flow]
+image::canvas-tabs-flow.png["A tab with options for message flow, global elements, and configuration XML"]
 
 == Extending Your Application
 
@@ -262,7 +262,7 @@ step-by-step instructions:
 +
 `Current path is #[message.inboundProperties.'http.request.path']`
 +
-image::logger-for-path.png[logger+for+path]
+image::logger-for-path.png["A message field displays the current path with a code snippet"]
 +
 The String `Current path is #[message.inboundProperties.'http.request.path']` is a xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule expression] that evaluates to the requested property of the message as it passes this point in the flow. Including this message here instructs Mule to log this information in the application log files, which can be useful in more complex use cases, when you need to track the payload at different points in your flow.
 +
@@ -271,7 +271,7 @@ The String `Current path is #[message.inboundProperties.'http.request.path']` is
 +
 `#['Hello, ' + message.inboundProperties.'http.request.path' + '. Today is ' + server.dateTime.format('MM/dd/yy')]`
 +
-image::set-payload2.png[set+payload2]
+image::set-payload2.png["A settings panel with a code snippet for the value field"]
 +
 The Value field supports xref:3.9@mule-runtime::mule-expression-language-mel.adoc[Mule expressions], as well as literals such as Hello MuleSoft, which you used previously. Mule expressions are formatted using square brackets prefaced with a \#, `#[]`. If you enter a Mule expression here, Mule evaluates it at runtime and returns or uses the results for further processing.
 +
@@ -282,7 +282,7 @@ The *`message.inboundProperties.'http.request.path'`* and *`server.dateTime.form
 +
 . Drag and drop a xref:3.9@mule-runtime::file-connector.adoc[*File*] endpoint onto your canvas immediately after the Set Payload transformer.
 +
-image::add-file.png[add+file]
+image::add-file.png["A diagram that illustrates the steps in an application flow"]
 +
 . Click the File endpoint to open the properties editor, and browse to set the *Path* for saving the file. For example: `/Users/userName/Downloads`.
 . Enter a *File Name/Pattern* that defines the file name and type, as follows:
@@ -291,7 +291,7 @@ image::add-file.png[add+file]
 +
 The `#[message.id]` string is the Mule expression that resolves to the unique message ID of the current message.
 +
-image::basic-file-element.png[]
+image::basic-file-element.png["A form with fundamental settings for a file, such as name, path, and pattern"]
 +
 . Click the *Configuration XML* tab at the bottom of the Canvas to view the code of the revised application:
 +
