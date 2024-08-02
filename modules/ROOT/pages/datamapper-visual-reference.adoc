@@ -76,7 +76,7 @@ Notice the *Create mapping* button at the bottom of the image above. The button 
 |8 a|
 Sidepanel view selector and config icons. Use these icons to:
 
-* image:view-selector-icon.png[A table icon with several rows and columns] / image:view-selector-icon-2.png["A green logo with a gold plus sign"] Toggle between the mapping view and the DataMapper configuration view (described below)
+* image:view-selector-icon.png[A table icon with several rows and columns] / image:view-selector-icon-2.png["A logo with a gold plus sign"] Toggle between the mapping view and the DataMapper configuration view.
 
 * image:save-icon.png["A gray floppy disk icon"]  Save the DataMapper properties
 
