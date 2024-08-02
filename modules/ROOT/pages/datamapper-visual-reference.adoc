@@ -78,7 +78,7 @@ Sidepanel view selector and config icons. Use these icons to:
 
 * image:view-selector-icon.png[A table icon with several rows and columns] / image:view-selector-icon-2.png["A logo with a gold plus sign"] Toggle between the mapping view and the DataMapper configuration view.
 
-* image:save-icon.png["A gray floppy disk icon"]  Save the DataMapper properties
+* image:save-icon.png["A floppy disk icon"]  Save the DataMapper properties
 
 * image:help-icon.png["A question mark icon"]  Obtain help
 
