@@ -40,7 +40,7 @@ image::overview.jpg["A form with input and output fields for configuring the Dat
 .. Define the *Type* for your output data.
 
 To define the type for your input data, click the edit icon
-image:edit-icon.jpg["A pencil on a notepad icon"] or the drop-down menu to the right of the *Type* input field. DataMapper displays a mapping configuration view according to the input type you selected. The image below displays the configuration view for input type `CSV`.
+image:edit-icon.jpg["A pencil on a notepad icon"] or the dropdown menu next to the *Type* input field. DataMapper displays a mapping configuration view according to the input type you selected. The following image displays the configuration view for input type `CSV`.
 
 image::a1-before-mapping-csv.png["A window displaying a DataMapper interface with sections for input and output configuration"]
 
