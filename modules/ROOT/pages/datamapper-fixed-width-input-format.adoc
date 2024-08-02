@@ -218,7 +218,7 @@ image::5-field-attr.png["Editing attribute properties form"]
 
 . We will now create the additional fields. In the *Input* pane, right-click the top-level element (in this case, `fwtest`), then select *Add Field*.
 +
-image::6-add-field.png["A blue button with a plus sign and the text "Add Field""]
+image::6-add-field.png["A blue button with a plus sign and the text Add Field"]
 
 . Using this procedure, add the following fields:
 +
