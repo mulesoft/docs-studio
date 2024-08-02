@@ -11,14 +11,13 @@ In API Sync View, you pull, push, and compare your API definition in Anypoint St
 
 The API Sync View shows by default with Studio 6.0 and newer next to the Mule Palette:
 
-image::api-sync-reference-b0a34.png[]
 
 If you choose to close this view, you can bring it back up by going to *Window*, *Show view*, and *Other*. +
 Inside the *APIKit Views* Folder, you can find the *API Sync* view.
 
 You can also find this view using the _Quick Access_ bar. Locate your quick access bar in the top right of your Studio window, next to your Perspectives, and type _API Sync_. The view should appear labeled as _Views_:
 
-image::api-sync-quick-access.png[]
+image::api-sync-quick-access.png["A dropdown menu with options for API sync views and commands"]
 
 
 == Features
@@ -31,26 +30,26 @@ There are 3 ways this process can go:
 +
 The view shows this API with a green back tip next to the API's name:
 +
-image::api-sync-synced.png[]
+image::api-sync-synced.png["A folder titled "T-Shirt Ordering Service" contains a file named "api.raml""]
 +
 . *The local version is ahead of the remote version*: You've made changes to your local application and those changes should be pushed to Anypoint Platform.
 +
 API sync displays a black icon with an up arrow, indicating that the change needs to be updated with the platform:
 +
-image::api-sync-local-update.png[]
+image::api-sync-local-update.png["A window showing the API Sync for a T-Shirt Ordering Service"]
 +
 . *The remote version is ahead of the local version*: The API is updated from Anypoint Platform and those updates should be downloaded to Studio before continue working.
 +
 API Sync shows a black icon with a down arrow, indicating that the change needs to be downloaded to Studio.
 +
-image::api-sync-download.png[]
+image::api-sync-download.png["A folder labeled "t-shirt" contains the "T-Shirt Ordering Service""]
 
 
 == Using API Sync View
 
 Assume that you made a change to your API definition in Studio. API sync immediately indicates that there are local changes that need to be pushed to Anypoint Platform.
 
-image::api-sync-reference-44f0f.png[]
+image::api-sync-reference-44f0f.png["Eight blue circles, each with a number, are displayed"]
 
 . The *New Connection* button grants you the possibility to connect a Studio project to a remote API hosted in Anypoint Platform.
 +
@@ -65,7 +64,7 @@ After clicking on it, you need to select:
 . The *Upload* button uploads the last updated version from Anypoint Studio to Anypoint Platform. In this case, the local updated version overwrites the old version in Anypoint Platform.
 . the *Compare* button displays the differences between the local file and the one in Anypoint Platform.
 +
-image::view-changes.png[]
+image::view-changes.png["A code comparison tool that displays local and remote versions of a RAML file"]
 +
 This view, compares the local version of the file with the remote version. You can use the buttons located in the top right corner for this view to navigate through each difference or change.
 . The *Refresh all* button checks the status of all your API definitions in Studio and all your API definitions in Anypoint Platform. If there are changes in Anypoint Platform, it updates the local version. +
@@ -76,7 +75,7 @@ This feature is useful when having more than one user configured in your Anypoin
 If one user syncs one API, and then another user logs in using his/her Anypoint Platform credentials, the API synced first shows a `[Not Connected]` label next to its name, indicating that this API does not belong to the current user. +
 By clicking the *Connect to API manager* button, Studio prompts for your credentials. If they belong to the owner of the API, it connects to the selected resource.
 +
-image::api-sync-not-connected.png[]
+image::api-sync-not-connected.png["A folder labeled "t-shirt" is not connected"]
 . The *Last updated* section displays when was the last time the selected API was updated.
 
 

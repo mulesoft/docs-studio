@@ -10,7 +10,7 @@ endif::[]
 . In Studio, under the *Help* menu, select *Install New Software.*
 . In the *Work With* field of the *Install* wizard, use the drop-down menu to select the update site for Mule.
 +
-image::studioruntimes.png[StudioRuntimes]
+image::studioruntimes.png["A window appears, displaying your software installation choices"]
 +
 If Studio does not show a list of update sites from the drop-down menu, you need to add this update site manually:
 +
@@ -20,12 +20,12 @@ If Studio does not show a list of update sites from the drop-down menu, you need
 . Check the box to select Community or Enterprise and click *Next*.
 . Select one or more runtimes you want to install. If you only want one version, expand the item and click the version you want. After selecting one or more versions, click *Next*.
 +
-image::36cmtyed.png[36CmtyEd]
+image::36cmtyed.png["A list of runtimes"]
 . Click to agree to the terms and conditions of the license agreement, and click *Finish*. Studio installs the runtime(s). This may take several minutes to complete depending on the speed of your Internet connection and the number of runtimes you select.
 . Click to agree to restart Anypoint Studio.
 . When Studio restarts, see the available runtimes under the File menu, select *New* > *Mule Project.*
 +
-image::36ceeeproject.png[36CEEEProject]
+image::36ceeeproject.png["A dialog box for creating a new Mule project"]
 
 
 == Change the Runtime of an Existing Project
@@ -41,7 +41,7 @@ image::36ceeeproject.png[36CEEEProject]
 *The Community runtime does not support all the features available in Enterprise runtime.* If you switch runtimes from Enterprise to Community, be aware that some of your configurations may not be supported.
 ====
 +
-image::36dclickmuleprojxml.png[36DClickMuleProjXML]
+image::36dclickmuleprojxml.png["A window displaying Mule Project Overview settings, such as documentation and runtime information"]
 
 . If changing from Enterprise to Community, Studio displays a warning to advise that it may initiate updates to the namespace, and asks for your permission to proceed; click *Yes* to continue.
 
