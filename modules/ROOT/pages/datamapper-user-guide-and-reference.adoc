@@ -14,14 +14,14 @@ DataMapper continues to be fully supported in all current and future versions of
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. Right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and clicking the checkbox *Show deprecated Mule Components and Attributes*.
 
 To deploy a project that includes DataMapper and is built with Mule Runtime 3.6 or older in one of your own servers, you must xref:including-the-datamapper-plugin.adoc[Include the DataMapper Plugin]
 ====
 
-image::datamapper.png[]
+image::datamapper.png["A browser window displaying a data flow diagram"]
 
 <<Examples>>
 
@@ -40,7 +40,7 @@ In general, using the more basic Mule transformers to recreate the functionality
 
 Graphical design of the complex transformations supported by DataMapper makes it simple to apply all of its capabilities with little coding beyond basic expressions and function calls to transform data.
 
-image::mapping-example-compl.png[]
+image::mapping-example-compl.png["A diagram illustrating the process of converting a comma-separated value file to a JSON file"]
 
 [NOTE]
 ====

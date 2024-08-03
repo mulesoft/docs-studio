@@ -11,7 +11,7 @@ DataMapper continues to be fully supported in all current and future versions of
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and clicking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -27,7 +27,7 @@ To use a DataMapper transformer in your application, you perform the following h
 
 . Click the DataMapper transformer in the flow. Studio will display the DataMapper properties editor, shown below.
 +
-image::overview.jpg[]
+image::overview.jpg["A form with input and output fields for configuring the DataMapper"]
 
 . Define the input and output properties for your mapping (this step is required for actually creating the mapping). The required tasks are:
 
@@ -40,15 +40,15 @@ image::overview.jpg[]
 .. Define the *Type* for your output data.
 
 To define the type for your input data, click the edit icon
-image:edit-icon.jpg[edit_icon] or the drop-down menu to the right of the *Type* input field. DataMapper displays a mapping configuration view according to the input type you selected. The image below displays the configuration view for input type `CSV`.
+image:edit-icon.jpg["A pencil on a notepad icon"] or the dropdown menu next to the *Type* input field. DataMapper displays a mapping configuration view according to the input type you selected. The following image displays the configuration view for input type `CSV`.
 
-image::a1-before-mapping-csv.png[a1.before_mapping-CSV]
+image::a1-before-mapping-csv.png["A window displaying a DataMapper interface with sections for input and output configuration"]
 
 Using this window, you define the input and output mapping properties, including data types and fields (for details, see xref:defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata]).
 
 . After defining the mapping properties, click the *Create mapping* button at the bottom of the editor. The properties editor becomes the graphical mapping editor, shown below, in which you can define your data mapping proper.
 +
-image::3-mapping-view-graphical.png[3.mapping_view_graphical]
+image::3-mapping-view-graphical.png["A tool for mapping data from CSV to XML format"]
 
 . Define your mapping, adjusting or mapping fields as necessary.
 
@@ -58,7 +58,7 @@ The image below describes the different icons, indicators and tools in DataMappe
 
 For details on creating your mapping, see xref:defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata].
 
-image::1-before-mapping.png[1.before_mapping]
+image::1-before-mapping.png["A form for configuring data mapping input and output"]
 
 Notice the *Create mapping* button at the bottom of the image above. The button is grayed-out; it's available only after you define the input and output parameters for your mapping.
 
@@ -68,7 +68,7 @@ Notice the *Create mapping* button at the bottom of the image above. The button 
 |1 |Display name input field. Defines the name for this DataMapper in the application flow as shown in the Studio canvas.
 |2 |File name input field. Defines the name of the file that contains the data mapping.
 |3 |Input source drop-down menu. By default, DataMapper takes its input from the message payload. Click to select another input source; you can select from several message properties or flow variables.
-|4 |Input type input field. Click the edit icon image:edit-icon.jpg[edit_icon] or the drop-down menu to the right of the input field to select the input type. This causes the input pane to change allowing you to select between the available types for input data.
+|4 |Input type input field. Click the edit icon image:edit-icon.jpg["A pencil on a notepad icon"] or the dropdown menu next to the *Input Type* field. This causes the input pane to change allowing you to select between the available types for input data.
 
 |5 |Output target input field. The default is the message payload. Select between payload or available properties, or write your own expression.
 |6 |Output type drop-down menu. Click to select between the available types for output data.
@@ -76,11 +76,11 @@ Notice the *Create mapping* button at the bottom of the image above. The button 
 |8 a|
 Sidepanel view selector and config icons. Use these icons to:
 
-* image:view-selector-icon.png[view_selector_icon] / image:view-selector-icon-2.png[view_selector_icon.2] Toggle between the mapping view and the DataMapper configuration view (described below)
+* image:view-selector-icon.png[A table icon with several rows and columns] / image:view-selector-icon-2.png["A logo with a gold plus sign"] Toggle between the mapping view and the DataMapper configuration view.
 
-* image:save-icon.png[save_icon]  Save the DataMapper properties
+* image:save-icon.png["A floppy disk icon"]  Save the DataMapper properties
 
-* image:help-icon.png[help_icon]  Obtain help
+* image:help-icon.png["A question mark icon"]  Obtain help
 
 |9 |Input or output properties, selectable with the inbound/outbound properties view selector (item 7 in this table)
 |===
@@ -91,7 +91,7 @@ The image below describes the different icons, indicators and tools in DataMappe
 
 For details on defining your mapping, see xref:defining-datamapper-input-and-output-metadata.adoc[Defining DataMapper Input and Output Metadata].
 
-image::overview-graphical-graffle-small-cropped.jpg[]
+image::overview-graphical-graffle-small-cropped.jpg["A software interface for mapping data between a CSV file and an XML file"]
 
 [%header,cols="10a,90a"]
 |===
@@ -109,10 +109,10 @@ image::overview-graphical-graffle-small-cropped.jpg[]
 |4 |
 Input *Properties* tool. Click to open the *Properties* configuration window. Configurable properties will vary according to the input type. The image below shows the *Properties* configuration window.
 
-image::csv-input-props.png[csv.input.props]
+image::csv-input-props.png["A dialog box for editing CSV format properties, including encoding, delimiters, and quote characters"]
 
 |5 |
-*Show/Hide Unrelated Elements* tool. Default position is open, showing the hide icon image:hide-icon.png[hide.icon].
+*Show/Hide Unrelated Elements* tool. Default position is open, showing the hide icon image:hide-icon.png["A line crossing out an eye icon"].
 
 * When open, displays all elements in the input mapping pane that are not collapsed, whether or not you can map them in the current mapping level.
 * When closed, hides all elements in the input pane that are not mappable in the currently displayed mapping level.
@@ -121,7 +121,7 @@ image::csv-input-props.png[csv.input.props]
 |7 |*Current Element Mapping* indicator/drop-down menu. Indicates the currently-displayed mapping level for multiple-level data mappings such as nested lists. The drop-down menu allows you to instantly switch between mapping levels.
 |8 | *Add Mapping* icon: Click to add a new mapping. DataMapper displays the *Structure mapping editor* configuration window, displayed below.
 
-image::dm-structure-mapping-editor.png[DM_structure-mapping-editor]
+image::dm-structure-mapping-editor.png["A form with fields for Name, Condition, Source, and Target, and buttons for Cancel and OK"]
 
 In the *Name* field, type a descriptive name for the new mapping.
 
@@ -144,7 +144,7 @@ For more information on structured mapping, see xref:datamapper-flat-to-structur
 Output *Properties* tool. Click to open the *Properties* configuration window. Configurable properties will vary according to the input type. Shown here are
 
 |16 |
-*Show/Hide Unrelated Elements* tool. Default position is open, showing the hide icon image:hide-icon.png[hide.icon].
+*Show/Hide Unrelated Elements* tool. Default position is open, showing the hide icon image:hide-icon.png["A line crossing out an eye icon"].
 
 * When open, displays all elements in the input mapping pane that are not collapsed, whether or not you can map them in the current mapping level.
 * When closed, hides all elements in the input pane that are not mappable in the currently displayed mapping level.
@@ -157,7 +157,7 @@ Output *Properties* tool. Click to open the *Properties* configuration window. C
 
 == Overview of the Script View
 
-image::4-script-view.png[4.script.view]
+image::4-script-view.png["A screenshot of a program with multiple sections showing how to convert CSV to XML data"]
 
 [%header,cols="10a,90a"]
 |===
@@ -175,17 +175,17 @@ image::4-script-view.png[4.script.view]
 
 DataMapper's preview feature allows you to test your mapping using a specific input file and preview the results. For details, see xref:previewing-datamapper-results-on-sample-data.adoc[Previewing DataMapper Results on Sample Data].
 
-image::preview.png[]
+image::preview.png["A button with the label "Live" and an icon of a computer monitor"]
 
 [%header,cols="10a,90a"]
 |===
 |Number |Description
-|1 |*Input Data* input field. Use to select the path of the file to read data from. Alternatively, click the folder image:input-folder-in-preview.png[input.folder.in.preview]button to the right of the field to select the file using your system's file browser.
+|1 |*Input Data* input field. Use to select the path of the file to read data from. Alternatively, click the folder image:input-folder-in-preview.png["A folder with a arrow"]button to the right of the field to select the file using your system's file browser.
 
 |2 |
 *Text* / *Graphic View* selector. Click to switch between graphic view (default, below left) and text view (below right).
 
-image:graphview.png[]   image:textview.png[] +
+image:graphview.png["A list of employee data, including phone numbers, zip codes, addresses, and names"]   image:textview.png["Code showing a list of employee data including phone number, zipcode, street, name, last name, and employee number"] +
 
 
 
@@ -200,9 +200,9 @@ image:graphview.png[]   image:textview.png[] +
 
 == The DataMapper Configuration View
 
-The image:view-selector-icon.png[view_selector_icon] / image:view-selector-icon-2.png[view_selector_icon.2] buttons to the right of the graphical mapping editor allow you to toggle between the mapping view and the DataMapper configuration view. The configuration view allows you to quickly configure global parameters for your specific DataMapper transformer.
+The image:view-selector-icon.png["A table icon with several rows and columns"] / image:view-selector-icon-2.png["A logo with a plus sign"] buttons to the right of the graphical mapping editor allow you to toggle between the mapping view and the DataMapper configuration view. The configuration view allows you to quickly configure global parameters for your specific DataMapper transformer.
 
-image::config-view.png[config_view]
+image::config-view.png["A form with fields for configuring a CSV to JSON conversion"]
 
 [%header,cols="10a,90a"]
 |===
