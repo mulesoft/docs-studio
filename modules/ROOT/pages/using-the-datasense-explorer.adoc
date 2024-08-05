@@ -20,7 +20,7 @@ This document assumes you are familiar with Mule and the xref:index.adoc[Studio 
 
 == Basic Anatomy
 
-The DataSense Explorer is a panel that appears in the lower right corner of the default Mule perspective in Anypoint Studio. You can toggle it *on* and *off* using the image:dsexplorer-icon.png[] icon.
+The DataSense Explorer is a panel that appears in the lower right corner of the default Mule perspective in Anypoint Studio. You can toggle it *on* and *off* using the image:dsexplorer-icon.png["A letter "E" in a box"] icon.
 
 As you select the building blocks on the Message Flow canvas, the DataSense Explorer displays information on the *In* tab about the payload, flow variables, session variables, inbound properties, and outbound properties that Mule detects as the message _arrives_ at that building block.
 
@@ -28,11 +28,11 @@ Observe, for example, how the outbound properties differ from the moment when th
 
 *Before:*
 
-image::full-window.png[full+window]
+image::full-window.png["A diagram illustrates the message flow within a data sense explorer and enumerates the inbound and outbound properties of a payload"]
 
 *After:*
 
-image::full-window-after.png[full+window-after]
+image::full-window-after.png["A dialog box with details about the timestamp flow variable"]
 
 == Example
 
@@ -43,7 +43,7 @@ This simple example illustrates how, when you manipulate your message using enri
 [discrete.view]
 === Studio Visual Editor
 
-image::full-flow.png[full+flow]
+image::full-flow.png["A diagram illustrating the data flow between two systems, orderTshirt and listInventory"]
 
 [discrete.view]
 === XML Editor
@@ -84,36 +84,36 @@ The table below tracks the message state as it arrives at each building block sh
 [%header,cols="25a,25a,50a"]
 |===
 |When the message arrives at the... |The message state is... |Because...
-|image::using-the-datasense-explorer-8c626.png[]
-|image:metadata1.png[]
+|image::using-the-datasense-explorer-8c626.png["A globe inside a circle with arrows, labeled HTTP Connector"]
+|image:metadata1.png["A list of variables, including flow, session, inbound, outbound, and record variables"]
 |At the point that the message arrives at the HTTP inbound connector, Mule does not yet have any information about the payload or its metadata.
-|image::using-the-datasense-explorer-514a7.png[]
-|image:metadata2.png[]
+|image::using-the-datasense-explorer-514a7.png["A circle with a list icon inside, labeled "Set Payload""]
+|image:metadata2.png["A list of inbound properties, including the listener path, method, and version"]
 |The message leaves the inbound connector with a set of inbound properties that are set by the message source (HTTP) and one outbound property reflecting the default encoding type.
-|image::using-the-datasense-explorer-c2c9b.png[]
-|image:metadata4.png[]
+|image::using-the-datasense-explorer-c2c9b.png["A circle with an arrow icon and the text "Flow Reference""]
+|image:metadata4.png["A list of inbound and outbound properties for a Mule application, including details like the listener path, method, query parameters, and request URI"]
 |The previous message processor set a payload of type List, which DataSense Explorer now reflects as the message arrives at the following message processor.
-|image::using-the-datasense-explorer-1ea14.png[]
-|image:timestamp.png[]
+|image::using-the-datasense-explorer-1ea14.png["A circle with a line icon and text that reads "Set New Payload""]
+|image:timestamp.png["Code listing showing data types for timestamp, date, and time"]
 |In the previous step, the Variable Transformer set a flow variable called timestamp, which is now visible in the DataSense explorer as the message reaches this flow reference building block.
-|image::using-the-datasense-explorer-dfd28.png[]
-|image:metadata5.png[]
+|image::using-the-datasense-explorer-dfd28.png["A circle with a pencil icon and the text "Logger 1" below it"]
+|image:metadata5.png["A list of inbound and outbound properties and variables"]
 |Note that you can expand the timestamp variable to view all the components accessible via the #[server.dateTime] expression used for this variable.
-|image::using-the-datasense-explorer-ed69e.png[]
-|image:metadata6.png[]
+|image::using-the-datasense-explorer-ed69e.png["A flow chart showing a message enricher processor chain that flows from a flow reference to a logger"]
+|image:metadata6.png["A list of variables with their types"]
 |The xref:3.9@mule-runtime::flow-reference-component-reference.adoc[flow reference] in the previous step sent the message to a new flow.
-|image::using-the-datasense-explorer-fc448.png[]
-|image:metadata8.png[]
+|image::using-the-datasense-explorer-fc448.png["Code showing source and target variables for a color choice"]
+|image:metadata8.png["A list of properties, including listener path, method, query parameters, remote address, request path, and request URI"]
 |The Set Payload transformer in the previous step set the payload as a map with three elements. DataSense Explorer shows the map keys and types.
-|image::using-the-datasense-explorer-fc448.png[]
-|image:metadata8.png[]
+|image::using-the-datasense-explorer-fc448.png["Code showing source and target variables for a color choice"]
+|image:metadata8.png["A list of properties, including listener path, method, query parameters, remote address, request path, and request URI"]
 |When processing finishes in the flow referenced by the flow reference element, the message returns to the original flow with its newly set payload.
-|image::using-the-datasense-explorer-ea42b.png[]
-|image:metadata9.png[]
+|image::using-the-datasense-explorer-ea42b.png["A pencil inside a circle with the text "Logger 3" below it"]
+|image:metadata9.png["A code listing displaying properties for payload, flow variables, inbound properties, outbound properties, and record variables"]
 |The Enricher acts on the message after processing within its scope is completed. Click the Message Enricher header bar to view the message as it is about to be enriched. Note that the Payload is once again a List, because the Enricher inputs and outputs the payload from the message processor before its scope, not from the contents of its scope. However, the configuration of the enricher acts upon the contents of its scope. In this case, the enricher extracts the key "color" from the map and sets it as a flow variable, "colorchoice":
 The results are visible in the DataSense Explorer in the next building block.
-|image::using-the-datasense-explorer-ea42b.png[]
-|image:metadata9.png[]
+|image::using-the-datasense-explorer-ea42b.png["A pencil inside a circle with the text "Logger 3" below it"]
+|image:metadata9.png["A code listing displaying properties for payload, flow variables, inbound properties, outbound properties, and record variables"]
 |Observe that the flow variable colorchoice, added by the Enricher, now appears in the DataSense Explorer.
 
 |===
@@ -125,7 +125,7 @@ The results are visible in the DataSense Explorer in the next building block.
 * The DataSense Explorer displays only the payload and metadata information that Anypoint Studio can determine at design-time. Thus, for example, imagine you set a session variable on the message in one flow. That session variable is not visible in the DataSense Explorer in another flow within the same application because at design-time, Studio cannot determine the message origin of a flow or subflow and thus cannot predict whether the session variable would propagate to that flow. To observe the details of how your session variables move through your message, use the Visual Debugger to inspect your message in a controlled test run of your application.
 * Hover over the items listed in the DataSense Explorer for more information. For properties or variables that you set explicitly in your flow with transformers and enrichers, the hovertext indicates the name of the building block earlier in the flow that was responsible for adding that metadata. +
 
-image::property-was-defined-in.png[property+was+defined+in]
+image::property-was-defined-in.png["A dropdown menu showing input and output properties of a Mule flow"]
 
 == See Also
 
