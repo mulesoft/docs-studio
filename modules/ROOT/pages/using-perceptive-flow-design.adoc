@@ -33,12 +33,12 @@ In other words, Mule intelligently examines the structure of the input or output
 
 . Begin by building a flow which contains at least one connector which supports connection testing. For example, create a flow with a https://anypoint.mulesoft.com/exchange/?type=connector&search=salesforce[Salesforce Connector].
 +
-image::perceptive-flow-1.png[perceptive+flow+1]
+image::perceptive-flow-1.png["A data flow diagram showing data moving from a file to Salesforce, with error handling"]
 +
 . Configure the Salesforce connector, and its corresponding global connector, then test the connection to confirm communication. Refer to xref:testing-connections.adoc[Testing Connections] for details.
 . Once you have confirmed successful connection to Salesforce, insert a xref:3.9@mule-runtime::dataweave.adoc[Transform Message Component] before the connector on your canvas.
 +
-image::perceptive-flow-2.png[perceptive+flow+2]
+image::perceptive-flow-2.png["A flowchart illustrating the process of data transfer from a file to a Salesforce platform via a transform message step"]
 +
 . Open the Transform Message component's *Properties Editor*.
 . Having already retrieved details about data structure and format from Salesforce (because you have successfully connected via your global connector), Mule already presents the known structure that the *Output* must have.
@@ -51,13 +51,13 @@ See xref:input-output-structure-transformation-studio-task.adoc[To Define Input 
 ** or by selecting the *Metadata* tab in the File endpoint. See xref:defining-metadata.adoc[Custom Metadata Tab]
 . A window opens where you can select a defined metadata or create a new one. Create a new one by clicking the green plus sign.
 +
-image::using-perceptive-flow-design-c9f9e.png[]
+image::using-perceptive-flow-design-c9f9e.png["A plus sign next to the word Add"]
 . Pick the type of your input by clicking on the dropdown menu.
 . Supply an example or a schema to represent the input structure. Some types allow you to build a schema via a built in editor UI.
 . In the Transform Message component, you now see the input fields you manually defined at on the left, and the output fields that DataSense retrieved from Salesforce on the right.
 . Drag and drop input fields across to the output fields to map and transform data format to Salesforce-friendly values. Note how the xref:3.9@mule-runtime::dataweave-language-introduction.adoc[DataWeave Code] on the right is written automatically to match every field you drag along.
 +
-image::dw-perceptive-flow.png[dw_perceptive_flow]
+image::dw-perceptive-flow.png["A window displaying the JSON payload transformation"]
 +
 . Save, then continue to build your Mule application.
 +
@@ -77,13 +77,13 @@ There are two ways to clear metadata:
 * In the *Connection Explorer* pane, right-click the connector name, then select *Clear DataSense Metadata*. +
 
 +
-image::conn-exp-pane.png[conn.exp.pane]
+image::conn-exp-pane.png["A dropdown menu with options to test a connection, add a new connector, configure, remove, and clear DataSense metadata"]
 +
 
 * In the Studio canvas, right-click the connector, then select *Clear DataSense Metadata*. +
 
 +
-image::studio-canv.png[studio.canv]
+image::studio-canv.png["A menu with an option to Clear DataSense Metadata"]
 +
 
 [NOTE]
