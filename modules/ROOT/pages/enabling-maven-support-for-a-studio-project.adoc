@@ -16,16 +16,16 @@ If you have an existing Studio project that was created without Maven support en
 . Right-click the name of your project in the Package Explorer.
 . Select *Mule* > *Mavenize*.
 +
-image::mule-mavenize-existing-project.png[]
+image::mule-mavenize-existing-project.png["A dropdown menu with options for Mule, Generate Flows, and Mavenize"]
 +
 . Studio presents a confirmation dialog, warning that although Maven support can later be disabled, this does not reset your project's classpath. Click *Yes* to confirm.
 +
-image::studio-mavenize-warning.png[Studio-mavenize-warning]
+image::studio-mavenize-warning.png["A pop-up window will appear, asking if you want to enable Maven support"]
 +
 . Studio creates a `*pom.xml*` file for your project. You can observe the progress in the console.
 . When the mavenization process is complete, the `pom.xml` file for your project appears in the Package Explorer underneath the `mule-project.xml` file.
 +
-image::2-1.png[]
+image::2-1.png["A file explorer window showing the files and folders for a Java project"]
 
 == Running a Mavenized Project
 

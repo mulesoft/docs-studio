@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 :page-aliases: 6.5@studio::import-asset-exchange-task.adoc
 
-. Click the Exchange icon in the Studio taskbar image:exchange-integration-adc09.png[].
+. Click the Exchange icon in the Studio taskbar image:exchange-integration-adc09.png["An infinity symbol"].
 . Click Log In on the top right corner of your screen and provide your Anypoint Platform credentials.
 . Search for the asset you want to import and select it.
 * If your asset is a Template or an Example, select the version you want to import and click Open.
@@ -22,13 +22,13 @@ If you are having trouble accessing Exchange from Studio 6, use the following st
 See xref:general::browser-support.adoc[] for more information.
 . Select *Discover and Share* to access Exchange.
 +
-image::discover-share-exchange.png[]
+image::discover-share-exchange.png["A screenshot of the Anypoint Platform, displaying the options for Design Center and Management Center"]
 . Search for the asset that you want to use.
 +
-image::search-exchange.png[]
+image::search-exchange.png["An infinity symbol"]
 . Select *Download*.
 +
-image::download-exchange-asset.png[]
+image::download-exchange-asset.png["A table of Salesforce Connector for Mule 4 versions"]
 . Open Studio and navigate to *Help* > *Install New Software*.
 . Click *Add...*.
 . Click *Archive…* and select your downloaded asset.

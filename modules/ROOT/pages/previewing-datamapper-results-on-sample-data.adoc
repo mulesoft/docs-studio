@@ -11,7 +11,7 @@ DataMapper continues to be fully supported in all current and future versions of
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right-click DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -39,7 +39,7 @@ Jane,Doe,
 
 Mapping to JSON with live preview:
 
-image::datamapperscreenshot11.png[]
+image::datamapperscreenshot11.png["A mapping tool that converts CSV data to JSON data"]
 
 In the image above, the input fields `name` and `lastname` have values assigned to them in the input CSV file; these values are shown in gray in both the Input and Output panes. The values shown are the ones in the first row of the CSV input file. Input field `phone` has no value assigned to it, so the value displayed is `null`.
 
@@ -47,7 +47,7 @@ Live preview in the output may appear automatically or not, depending on several
 
 The *From Input* feature is available when configuring DataMapper, as shown below.
 
-image::a2.png[]
+image::a2.png["A form with a selected "From Input" button"]
 
 If you did not use this feature when configuring DataMapper, you may need to run a preview of your mapping (as described in the next sections) before you can obtain a live preview.
 
@@ -57,61 +57,61 @@ Bear in mind that the live preview displays only the output for the currently se
 
 To access the preview functionality, select Preview in the graphical mapping editor:
 
-image::datamapperscreenshot22.png[]
+image::datamapperscreenshot22.png["A tool for previewing data mapping from XML to JSON"]
 
 DataMapper displays the Preview pane, shown below.
 
-image::datamapperxmltojson.png[]
+image::datamapperxmltojson.png["A window with a white box, labeled "XML to JSON" and "Input Data""]
 
-To provide an input file for preview, click the folder button image:folder-icon.png[folder.icon] next to the *Input Data* field, then browse to the desired input sample data file. Alternatively, type the full path of the file in the *Input Data* field.
+To provide an input file for preview, click the folder button image:folder-icon.png["A folder with an arrow"] next to the *Input Data* field, then browse to the desired input sample data file. Alternatively, type the full path of the file in the *Input Data* field.
 
 The input file must be in the same format as that specified for DataMapper input. For example, if DataMapper is configured as XML to JSON, the input file you select must be an XML file. The input file selector will only let you select files with the `.xml` extension.
 
 [TIP]
 If you created an input file while configuring DataMapper, the input file is automatically selected in Preview. You can select another file if you wish.
 
-Instead of using an existing file, you can create a new file for the preview, which you can edit on the spot. To do this, click the new file button image:new-file-icon.png[new.file.icon]. DataMapper will prompt you for a name and location under which to save the new file, and Studio will automatically open the file for editing.
+Instead of using an existing file, you can create a new file for the preview, which you can edit on the spot. To do this, click the new file button image:new-file-icon.png["A plus sign on a document icon, indicating the creation of a new document"]. DataMapper will prompt you for a name and location under which to save the new file, and Studio will automatically open the file for editing.
 
 [TIP]
 For a full description of the elements in DataMapper Preview, see "Overview of DataMapper Preview" in xref:datamapper-visual-reference.adoc[DataMapper Visual Reference].
 
 == Running the Mapping Preview
 
-Once your preview input file is selected, to run the mapping and preview the output, click the Run image:run-icon.png[run.icon] button.
+Once your preview input file is selected, to run the mapping and preview the output, click the Run image:run-icon.png["A play button with an arrow"] button.
 
 If the mapping executes successfully, the preview results appear in the output window, as shown below.
 
-image::datamapperscreenshot4.png[]
+image::datamapperscreenshot4.png["JSON code with names, phone numbers, and last names"]
 
 The image above shows the default text view. You can obtain a graphic representation of the output data by clicking *Graphic View*:
 
-image::datamapperscreenshot5.png[]
+image::datamapperscreenshot5.png["A tree view that shows names, last names, and phone numbers"]
 
 If there is an error in executing the mapping, an error alert appears in the upper left of the Preview window:
 
-image::datamapperscreenshot6.png[]
+image::datamapperscreenshot6.png["An error message stating "There is an error" with a button labeled "Problems" and a tab labeled "Input Data""]
 
 This error can indicate an error in the mapping itself, or a problem with the preview input data or input arguments. For example, an Excel input sheet may have values of the wrong type for an operation in the mapping, or a Groovy script may not generate objects of the class or structure that the mapping accepts as input.
 
 For details about the error, click the alert as shown below.
 
-image::7-1.png[]
+image::7-1.png["An error message that says there is an error"]
 
 DataMapper displays the *List of DataMapper Errors* window. To see details about a specific error, click the error message in the list. The image below displays the window with only one error in the list.
 
-image::datamapperscreenshot8.png[]
+image::datamapperscreenshot8.png["A dialog box displaying an error during the mapping process"]
 
 === Setting Input Arguments for Preview
 
 To preview output of a DataMapper that uses input arguments:
 
-. Click the Input Arguments button image:input-args-arrow.png[input.args-arrow] in the Preview window. A dialog opens listing the input arguments for this DataMapper.
+. Click the Input Arguments button image:input-args-arrow.png["An arrow pointing right"] in the Preview window. A dialog opens listing the input arguments for this DataMapper.
 
 . Click the *Name* column of your sample input to select the input argument to set.
 . Click the *Value* column for that row, and enter your input argument value, which can be any Mule Expression Language expression. Note that you must respect the data types of the input arguments. For example, you must use quotes around any string input value.
 . Click *OK*.
 
-image::input-args.png[input_args]
+image::input-args.png["A table that lists the input arguments for a program, including the name, type, and value of each argument"]
 
 [TIP]
 For details about input arguments, see "Using Data Mapping Input and Output Arguments" in xref:building-a-mapping-flow-in-the-graphical-mapping-editor.adoc[Building a Mapping Flow in the Graphical Mapping Editor].

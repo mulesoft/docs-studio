@@ -7,7 +7,7 @@ endif::[]
 
 When defining or updating input and output metadata for the different data types supported by Anypoint DataMapper, you use one of several very similar editors to create the structure and define fields, elements and attributes. Any of these editors is opened by selecting *Edit Structure*.
 
-image::edit-structure.png[edit_structure]
+image::edit-structure.png["A window with options for data input, including source, type, and structure"]
 
 This document describes the use of the editor for key/value maps. The editors for other structured data are substantially similar, and the editors for flat data like CSV files are similar but simplified.
 
@@ -18,7 +18,7 @@ DataMapper continues to be fully supported in all current and future versions of
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and clicking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -43,15 +43,15 @@ You can edit data structure definitions (that is, fields) in an _existing_ DataM
 . Click `contacts` to select the parent element for the new field. (This step does not apply when working with flat data like CSV or fixed width files.)
 
 . Click the
-image:add.png[(plus)] icon in the upper-left corner of the editor panel to create a new field under the selected parent. Alternatively, right-click the existing parent and select *Add*.
+image:add.png[A plus icon] icon in the upper-left corner of the editor panel to create a new field under the selected parent. Alternatively, right-click the existing parent and select *Add*.
 +
-image::3-2-edit-indiv-fields.png[3-2-edit.indiv.fields]
+image::3-2-edit-indiv-fields.png["A list of items with options to add, remove, move up, or move down items"]
 +
 A new field is inserted.
 
 . Click the field label to edit the name of the field, then press *Enter*.
 +
-image::4-2-edit-indiv-fields.png[4-2-edit.indiv.fields]
+image::4-2-edit-indiv-fields.png["A table listing data fields with their types, including a field labeled "field 0""]
 
 === Alternative Method
 
@@ -75,7 +75,7 @@ To change the type of a field:
 
 . Use the drop-down menu to select a new field type.
 +
-image::5-select-field-type.png[5-select.field.type]
+image::5-select-field-type.png["A drop-down menu with options for data types, such as string, date, and boolean"]
 
 . Click outside the type menu to deselect the type value.
 

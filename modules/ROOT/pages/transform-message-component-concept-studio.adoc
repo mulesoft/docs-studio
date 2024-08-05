@@ -11,7 +11,7 @@ The Transform Message component carries out transformations over the input data 
 You can work with two representations of the same transformation, and any changes done to one are matched in real time by the other.
 
 
-image::using-dataweave-in-studio-b504a.png[]
+image::using-dataweave-in-studio-b504a.png["A code snippet to convert XML data into a JSON object"]
 
 
 * *Graphical View*: Two tree views show the expected metadata structures of the input and output, mappings between these are represented through lines. These can be created through drag and drop.

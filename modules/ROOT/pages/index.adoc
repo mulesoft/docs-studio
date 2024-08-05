@@ -33,7 +33,7 @@ Anypoint Studio offers two parallel tabs that you can utilize to design and craf
 * *Visual Editor*
 * *XML Editor*
 
-image::36studioeditorssidebyside.png[36StudioEditorsSideBySide]
+image::36studioeditorssidebyside.png["A visual representation of a Mule flow, including the XML code for the flow"]
 
 What you do in one editor reflects in the other. For example, if you drop a connector onto the Visual Editor canvas, the addition of the connector element to your application is recorded in the XML Editor. This real-time reflection of changes is referred to as *two-way editing*. _Same application, two different editors._
 
@@ -58,13 +58,13 @@ Studio visual editor is divided into several parts:
 . <<properties-editor,*Properties Editor*>>
 . *DataSense Explorer*
 
-image::36studio.png[36Studio]
+image::36studio.png["A Mule application with a console, package explorer, and palette"]
 
 The *Package Explorer* displays project folders and files in a tree format. Click to expand or contract Mule project folders and examine the files that make up a Mule project.
 
 The *Canvas* provides a space for arranging pre-packaged building blocks into Mule applications. The *Palette*, on the right edge of the canvas, displays a list of building blocks that you can drag and drop onto the canvas to build your application. At the base of the canvas, Studio offers three tabs which offer different ways to interface with your application:
 
-image::36vizxmltabs.png[36VizXmlTabs]
+image::36vizxmltabs.png["A visual editor showing a flow of HTTP requests and responses with an XML editor"]
 
 * *Message Flow*: Drag-and-drop interface in which you arrange building blocks to form an application
 * *Global Elements*: Interface for creating or editing reusable configurations for Mule building blocks
@@ -79,7 +79,7 @@ The *Console* area below the canvas contains the console for the embedded Mule s
 
 Anypoint Studio Visual Editor enables you to click a building block on the canvas to access its *Properties Editor* in a tab in the console (below).
 
-image::properties-editor.png[properties+editor]
+image::properties-editor.png["A window that displays the properties and metadata of an HTTP building block"]
 
 Click the tabs at left (in the above example, *General*, *Advanced*, *References* and *Documentation*) to access various categories of attributes associated with the building block.
 
@@ -90,7 +90,7 @@ If you are configuring a field that supports expressions and need help with synt
 * Place your cursor inside the brackets in a field that has `#[]` pre-populated for you, then press *Ctrl + Space Bar*.
 * Enter `#[` to open a new MEL expression and display suggestions, as shown below.
 
-image::auto-complete.png[auto_complete]
+image::auto-complete.png["A form with fields for message, level, and category, and an information note about user application properties"]
 
 [NOTE]
 The autocomplete functionality described here works in the *Visual Editor only*. Although Studio XML tab does offer some autocomplete options, the suggestions in the XML editor are limited by Eclipse and are not based on DataSense or the Mule Expression Language.
@@ -152,7 +152,7 @@ The following sections provide a list of handy tips and tricks for using Studio 
 . Use the up and down scroll arrows to browse through the suggestions.
 . When you have highlighted the attribute you wish to use, press enter to insert it into the XML configuration.
 +
-image::36helpinfoexample.png[36HelpInfoExample]
+image::36helpinfoexample.png["A drop-down list with configuration options for a Mule listener, including connection idle timeout"]
 
 
 === Keyboard Shortcut To Get Suggestions
@@ -184,23 +184,23 @@ Building blocks fall into one of two categories depending on their function with
 
 To arrange building blocks to form a flow, simply drag and drop them from the palette onto the canvas.
 
-image::36httpdragtocanvas.png[36HTTPDragToCanvas]
+image::36httpdragtocanvas.png["A flowchart that links an HTTP listener to a process with an HTTP connector"]
 
 After you arrange the building blocks in a flow, configure each by double-clicking a block to open its *Properties Editor*. Supply the values for the configuration fields.
 
 For the HTTP connector, first click the *Connector Configuration* green arrow, which displays the additional Global Element Properties screen to enter the host and port.
 
-image::36httpproperties1.png[36HttpProperties1]
+image::36httpproperties1.png["A window displaying the settings for an HTTP connector, which includes fields for path and allowed methods"]
 
 After you complete the Global Element Properties screen, return to the HTTP connector properties and specify the path as "/" or the name of the application. When you test your application, the path value is the name you put in the URL. For example, if you set the HTTP path to `/myproject` and you set the host to `localhost` and the port to `8081`, you can test the application with `localhost:8081/myproject`. Or if you leave the path as "/", you can test your application with `localhost:8081/`.
 
 Other building blocks utilize similar conventions for specifying properties.
 
-Note that the xref:datasense.adoc[*DataSense Explorer*] at the right side of the properties editor provides helpful information about the data structure and metadata of your message as it enters and exits this particular building block. You can toggle the DataSense Explorer on and off by clicking this icon: image:datasenseexplorericon.png[DataSense Explorer Icon]
+Note that the xref:datasense.adoc[*DataSense Explorer*] at the right side of the properties editor provides helpful information about the data structure and metadata of your message as it enters and exits this particular building block. You can toggle the DataSense Explorer on and off by clicking this icon: image:datasenseexplorericon.png["An icon that looks like a shopping cart with three items inside"]
 
 Anypoint Studio also supports auto-complete in any message processor configuration fields that support expressions. To open auto-complete, place your cursor in the field and press *CTRL + space bar*.
 
-image::36loggermessagehelp.png[36LoggerMessageHelp]
+image::36loggermessagehelp.png["A logger window displaying the configuration settings for a user application, with a dropdown list of categories"]
 
 == See Also
 

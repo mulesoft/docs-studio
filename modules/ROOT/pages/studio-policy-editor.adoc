@@ -31,7 +31,7 @@ In order to create a custom policy project:
 . Right click in your *Package explorer* and select, *New* and *API Custom Policy Project (Beta)*.
 . Give a Name to your Policy Project, and make sure to agree to the Beta trial license:
 +
-image::studio-policy-editor-a01e0.png[]
+image::studio-policy-editor-a01e0.png["A form for setting up a Mule Custom Policy project"]
 +
 . When you create a Custom Policy Project for the first time, a default example loads containing:
 ** a sample xref:1.x@api-manager::creating-a-policy-walkthrough.adoc#create-the-policy-configuration-file[policy configuration file]:
@@ -118,7 +118,7 @@ It asserts the MEL expression: `#[message.inboundProperties['http.method'] == 'P
 You can have more than one configuration and definition file inside the same project. However, you can only apply one pair at a time.
 Your Custom Policy Project holds a `mule-policy.xml` file in which you can define an `.xml` and `.yaml` to apply.
 
-image::studio-policy-editor-f4c04.png[]
+image::studio-policy-editor-f4c04.png["A project overview with fields for runtime, server runtime, policy files, and documentation"]
 --
 
 
@@ -155,7 +155,7 @@ In order to do so:
 . Right click in your policy project, and select *Run as* and *Run Configurations...*
 . The run configuration screen for custom policies is shown:
 +
-image::studio-policy-editor-8a38d.png[]
+image::studio-policy-editor-8a38d.png["A table with configuration properties, policy projects, property names, types, and values"]
 +
 . Select an API Custom Policy Project and a Mule Domain or Project to launch
 +

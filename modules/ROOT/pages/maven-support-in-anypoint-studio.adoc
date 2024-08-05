@@ -15,12 +15,12 @@ You can adjust your Studio preferences so that Studio automatically generates a 
 . In the *Preferences* panel, click to expand *Anypoint Studio*, then select *Maven*.
 . Click *Enable automatic maintenance of pom.xml*.
 +
-image::mavensupport.png[Mavensupport]
+image::mavensupport.png["A settings window for Maven configuration in Anypoint Studio"]
 +
 . Click *Browse* to locate the *Maven installation home directory*.
 . Click *Test Maven Configuration* to instruct Studio to run `mvn --version` in the background to validate your Maven installation. Studio produces an output of that command in a box below the button. The results flag any problems with your settings, such as a missing JAVA_HOME environment variable.
 +
-image::testmaven.png[TestMaven]
+image::testmaven.png["A dialog box that shows the results of testing the Maven configuration"]
 +
 [WARNING]
 ====
@@ -37,7 +37,7 @@ To use Maven with Anypoint Studio on Mavericks, configure your Maven home direct
 
 If you have created Maven project in Studio and wish to disable Maven support for that particular project, right-click the project name in the *Package Explorer*, then select *Mule* > *Disable Support*.
 
-image::maven-disable-support.png[]
+image::maven-disable-support.png["A menu with options for configuring Mule applications"]
 
 The Disable Support option does not remove the `pom.xml` file, Studio ceases to maintain it for the project.
 

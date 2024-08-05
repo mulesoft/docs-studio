@@ -11,7 +11,7 @@ DataMapper continues to be fully supported in all current and future versions of
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and clicking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -28,7 +28,7 @@ This document assumes the reader is familiar with the Anypoint DataMapper Transf
 
 When you first place a DataMapper component on the flow and open its properties editor, you see the fields needed for creating a new mapping.
 
-image::basic.png[]
+image::basic.png["A form with input and output fields for a data mapper"]
 
 [%header%autowidth.spread]
 |===
@@ -50,7 +50,7 @@ If you place a DataMapper right after or right before a DataSense-enabled elemen
 
 Otherwise, you must choose a data source for your mapping. You can simply take the payload, as it comes, or pick any of the variables in the mule message, inbound or outbound properties in the message. If you want to select a particular section of the payload, or any property that isn't available in design time, you can also type a MEL expression such as `#[payload.myAttribute]` to refer to this, instead of selecting from the drop down menu.
 
-image::source2.png[]
+image::source2.png["A form with input and output fields to configure a DataMapper"]
 
 The output target can be similarly configured, both through the available options in the drop down menu or by typing in an expression. You can map the data to any existing or non existing property, variable, or child element of the payload by using an expression in such a way.
 
@@ -118,13 +118,13 @@ You can define the basic metadata for a delimited input file, including:
 
 To define a CSV input or output, select CSV in the Input or Output dropdown, as shown:
 
-image::csvex.png[CSVex]
+image::csvex.png["A window that displays options for selecting a data source and editing its structure"]
 
 Click the ellipsis to select an example file from which to infer metadata.
 
 To explicitly define the columns, select *User Defined*, then click **Create/Edit Structure**.
 
-image::definefields.png[]
+image::definefields.png["A form for defining a CSV file, complete with fields for name, delimiter, and field types"]
 
 In the Edit Fields dialog, you can:
 
@@ -136,11 +136,11 @@ In the Edit Fields dialog, you can:
 
 Anypoint DataMapper offers the choice of several common delimiters for a CSV file: the default comma (","); pipe ("|"); semicolon (";"); colon (":"); or space (" "). The dropdown illustrates typical columns separated by the delimiters.
 
-image::image2013-4-10-1-58-7.png[image2013-4-10+1+58+7]
+image::image2013-4-10-1-58-7.png["A drop-down menu that lists various delimiters"]
 
 To add a custom delimiter, click + and enter the new character—for example,  a tilde ("~"). The new delimiter now appears in the dropdown among the available choices:
 
-image::image2013-4-10-2-46-50.png[image2013-4-10+2+46+50]
+image::image2013-4-10-2-46-50.png["A dropdown menu with different delimiter options, selected is "John~Doe~10""]
 
 Select the new delimiter from the list to finalize your choice.
 
@@ -164,7 +164,7 @@ Through Anypoint Studio support for Perceptive Flow Design, DataSense-enabled co
 
 When a connector already defined in a Mule flow is input or output for your DataMapper, the operation and any associated object classes are filled in for you.
 
-image::connector.png[]
+image::connector.png["Workday Connector, a button labeled "Install" and another labeled "View details""]
 
 If necessary, you can override the metadata linked to an operation by selecting *By Type* and then selecting an object type.
 
@@ -172,13 +172,13 @@ If necessary, you can override the metadata linked to an operation by selecting 
 
 For metadata for fixed width data, you can select a sample input file:
 
-image::fwidth.png[]
+image::fwidth.png["A form with options for data source, type, and structure"]
 
 Column formats are inferred from the input file.
 
 Alternatively, you can select "User Defined" and manually define name, type, and column width metadata:
 
-image::image2013-5-7-0-20-33.png[image2013-5-7+0+20+33]
+image::image2013-5-7-0-20-33.png["A table displaying data types and widths for employees"]
 
 Note: See xref:datamapper-fixed-width-input-format.adoc[Fixed-Width Input Format] for several examples of working with fixed-width input format data.
 
@@ -199,7 +199,7 @@ There are three ways to define JSON metadata:
 
 * By copying the structure you defined in the input/output
 +
-image::json.png[]
+image::json.png["A menu with options for creating a JSON sample from an example, output, or user-defined input"]
 
 ==== Using a JSON Sample
 
@@ -223,7 +223,7 @@ To define JSON Metadata directly:
 
 The Define the JSON dialog opens.
 
-image::image2013-5-7-0-39-24.png[image2013-5-7+0+39+24]
+image::image2013-5-7-0-39-24.png["A structure for defining JSON components, encompassing name, type, and child elements"]
 
 Here you can specify:
 
@@ -248,7 +248,7 @@ There are two ways to define key-value map metadata:
 
 * By copying the structure you defined in the input/output
 +
-image::mapkv.png[]
+image::mapkv.png["A dialog box with options for creating a map sample"]
 
 ==== Using Direct Key-Value Map Definition
 
@@ -306,7 +306,7 @@ To define metadata for an MS Excel spreadsheet:
 
 . Enter a value for *Name*, used to reference the input spreadsheet in DataMapper expressions.
 +
-image::excel.png[]
+image::excel.png["A form with fields for source, type, Excel example, and name"]
 
 There are no user-modifiable metadata definitions for Excel spreadsheets. DataMapper will infer column names and data types from the contents of the spreadsheet.
 
@@ -314,7 +314,7 @@ There are no user-modifiable metadata definitions for Excel spreadsheets. DataMa
 
 Metadata for a POJO (Plain Old Java Object) as DataMapper source or target consists of a definition of the class of the Java object. This can be a single class, or a complex structure consisting of nested Collections and key/value Maps containing any Java class in your project.
 
-image::pojo.png[]
+image::pojo.png["A form with fields for source, type, and class"]
 
 To define metadata for a POJO:
 
@@ -324,11 +324,11 @@ To define metadata for a POJO:
 
 . Construct the needed structure in the Object Introspector.
 +
-image::image2013-5-7-1-59-17.png[image2013-5-7+1+59+17]
+image::image2013-5-7-1-59-17.png["A dialog box labeled Object Introspector, with a dropdown menu for data structure, and "Cancel" and "OK" buttons"]
 
 Once you have a complete description of the desired class structure, click *OK*.
 
-image::pojo2.png[]
+image::pojo2.png["A form with fields for source, type, and class"]
 
 [NOTE]
 ====
@@ -365,7 +365,7 @@ To define XML metadata using an XSD schema definition:
 
 . Click the ellipsis "…" and browse to an XSD file, or enter the path to the XSD file directly.
 +
-image::xml-new-input.png[xml+new+input]
+image::xml-new-input.png["A form with options to define an XML input source"]
 
 ==== Using an XML Sample
 
@@ -442,13 +442,13 @@ The goal in this example is to create a Maps/List of Maps output metadata struct
 
 . In the Output section, select a different structured format for Type—for this example,  *Map<k,v>* . Select *User Defined* , and click *Generate default * under the *Name * field.
 +
-image::json.png[]
+image::json.png["A menu with options for creating a JSON sample from an example, output, or user-defined input"]
 +
 DataMapper duplicates the structure of the JSON file as a key-value map.
 
 . Under Output, click *Edit Fields* to see the result. The generated name *object* has been inserted, and the Type is *Element*. The structure of the input is reproduced as a starting point for the output metadata definition.
 +
-image::image2013-5-7-1-54-33.png[image2013-5-7+1+54+33]
+image::image2013-5-7-1-54-33.png["A window with a list of names and types"]
 +
 You can edit the resulting structure further, adding or removing elements as needed. The use of this editor is described in xref:defining-metadata-using-edit-fields.adoc[Defining Metadata Using Edit Fields]. When you have finalized the structure, click *OK*.
 

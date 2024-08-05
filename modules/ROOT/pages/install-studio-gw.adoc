@@ -24,7 +24,7 @@ The versions available for downloading and installation appear. If you do not se
 +
 . Check one or more API Gateway Runtimes that you want to install. For example, check API Gateway Runtime 2.2.0.
 +
-image::gw-tooling-runtimes.png[]
+image::gw-tooling-runtimes.png["A list of software to be installed, complete with check boxes, versions, and details for each"]
 +
 . Click *Next*.
 . Follow the installation wizard to complete the remaining steps, and accept the license agreement.
@@ -57,7 +57,7 @@ One or more organizations that you administer appear.
 The client id and client secret appear.
 . From the *Studio > Preferences* menu, select *Anypoint Studio > Anypoint Platform for API*.
 +
-image::gw-studio-preferences.png[]
+image::gw-studio-preferences.png["Preferences window for Anypoint Platform for APIs property pairings"]
 . In *Client Credentials*, enter the client ID and client secret.
 . Click OK.
 
@@ -71,6 +71,6 @@ To select an API Gateway Runtime version for use in Studio:
 
 . In the Project Explorer, double-click the `mule-project.xml` file in the `api-gateway_<version>` project.
 +
-image::gw-mule-project.png[]
+image::gw-mule-project.png["A Mule Project Overview for api-gateway 2.2.0."]
 +
 . From the Server Runtime drop-down, select the API Gateway version you want Studio to use.

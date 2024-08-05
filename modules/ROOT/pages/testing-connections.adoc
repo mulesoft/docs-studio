@@ -21,16 +21,16 @@ When creating a new connector, you can configure all connection values, then –
 
 . In the *Global Elements* tab, click *Create New*.
 +
-image::create-global-element.png[create+global+element]
+image::create-global-element.png["A window with a button labeled Create, Edit, and Delete"]
 
 Select one of the https://anypoint.mulesoft.com/exchange/?type=connector[Anypoint Connectors which support connection testing].
 
 . Configure your connector with all the required connection values, most importantly username and password.  Because you're testing a connection, so you must enter all the required details to access the resource.
 . Click *Validate Configuration*
 +
-image::salesforce-connector.png[salesforce_connector]
+image::salesforce-connector.png["A form for Salesforce Basic Authentication settings"]
 +
-image::connect-with-salesforce.png[connect_with_salesforce]
+image::connect-with-salesforce.png["A cloud with the Salesforce logo is connected to another cloud with the Salesforce logo, with a "no software" symbol between them"]
 +
 . Studio calls the resource and attempts to connect.
 +
@@ -50,18 +50,18 @@ If you cannot see the *Connections* tab in Studio, it may be hidden or closed.
 
 . Check the bottom lefthand corner of your Studio window for a small, blue *globe icon* with a wrench (see image below). Click this icon to display the Connections tab.
 +
-image::outline.png[]
+image::outline.png["A software interface showing a Connections button, a workflow diagram, and an HTTP connector configuration"]
 +
 . If no globe icon is present, in the top nav bar click *Window* -> *Show View* -> *Other*
 . In the *Show View* panel that appears, click to expand the *MuleSoft* folder, then select *Connections Explorer*.
 . Click *OK* to open the Connections tab.
 +
-image::view-connectors.png[view_connectors]
+image::view-connectors.png["A Connections Explorer window with a search bar, a list of connections, and a title bar"]
 +
 * The *Current* view in the Connections tab displays all the connectors in the `.mflow` file within which you are working. in other words, this view only displays the connectors in your active project.
 * The *All* view displays all your Studio projects and enables you to expand each project file to view the connectors within each. Essentially, you can access all the connectors (which support connection testing) within all your Mule projects.
 +
-image::connections-explorer.png[connections_explorer]
+image::connections-explorer.png["A screenshot showing an empty configuration element in Anypoint Studio"]
 +
 . Double-click a connector in the *Connections* tab to open the *Properties* panel.
 . Click *Validate Configuration*
@@ -75,7 +75,7 @@ By editing the Anypoint Studio Preferences, you can set a connection timeout val
 . Navigate to Preferences > Anypoint Studio > *DataSense*
 . Set the parameter *DataSense Connection Timeout* to the value in seconds that you prefer.
 +
-image::ds-preferences.png[DS-preferences]
+image::ds-preferences.png["A settings window for DataSense preferences, with a connection timeout of 60 seconds"]
 
 *Testing New Connections*
 

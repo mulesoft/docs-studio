@@ -14,7 +14,7 @@ DataMapper will continue to be fully supported in all current and future version
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* -> *Anypoint Studio* -> *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -29,7 +29,7 @@ This document assumes the reader is familiar with the Anypoint DataMapper Transf
 
 . To specify bindings and factories, open the *Properties* dialog by clicking the cog icon (highlighted below) in the Output mapping pane of the DataMapper view. The Properties icon displays the output *Pojo Properties* window.
 +
-image::datamapper-pojo-classes.png[datamapper.POJO.classes]
+image::datamapper-pojo-classes.png["A dialog box for editing Pojo format properties"]
 
 . Click *Binding Definition* or **Factory Definition** to add, remove or edit binding or factory properties.
 . Uncheck the *Cache Data in Memory* checkbox if you want DataMapper to cache process data to disk instead of in memory.

@@ -10,7 +10,7 @@ Through the graphical UI of the Transform Message component you can do the tasks
 
 Drag an element on the input structure over to another on the output structure, this casts a line that joins them.
 
-image::using-dataweave-in-studio-8e6e0.png[]
+image::using-dataweave-in-studio-8e6e0.png["A diagram that illustrates the data flow from an input containing address and related details to an output with city, country, and email"]
 
 
 
@@ -18,17 +18,17 @@ image::using-dataweave-in-studio-8e6e0.png[]
 
 Drag a high-level structure that contains lists of elements or inner fields onto another in the output. This creates a shaded region covering all the mapped structure. Fields that have identical names in these structures are automatically mapped too.
 
-image::using-dataweave-in-studio-6b171.png[]
+image::using-dataweave-in-studio-6b171.png["A diagram illustrating the flow of data from an input containing address details to an output displaying city, country, and email information"]
 
 
 == Set a Fixed Value or Function
 
 
-. Double click on a field in the output tree. This adds a function icon image:using-dataweave-in-studio-66cdc.png[] next to it.
+. Double click on a field in the output tree. This adds a function icon image:using-dataweave-in-studio-66cdc.png["The letters f and x with a blue dot next to it"] next to it.
 
 . A new line is added to the DataWeave code that assigns a default `null` value to the field. This line is highlighted. Change its value to anything you want.
 +
-image::dw-click.png[click]
+image::dw-click.png["Code showing a text value of null"]
 +
 You can add:
 

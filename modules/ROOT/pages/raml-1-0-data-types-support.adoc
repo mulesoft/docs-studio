@@ -173,11 +173,11 @@ If you download link:{attachmentsdir}/contacts.raml[this RAML definition example
 
 This is how it looks when inspecting the `GET` method for the `/companies` resource:
 
-image::raml-1-0-data-types-support-8cf05.png[]
+image::raml-1-0-data-types-support-8cf05.png["A console with a message and payload details for a company record"]
 
 DataSense even recognizes if you change the API's mediaType to `application/xml`:
 
-image::raml-1-0-data-types-support-4e17d.png[]
+image::raml-1-0-data-types-support-4e17d.png["A code editor displaying a RAML definition and an example payload"]
 
 Datasense can even handle XML attribute type declarations. Such as: +
 [source,raml,linenums]
@@ -193,4 +193,4 @@ Company:
       type: Contact
 ----
 
-image::raml-1-0-data-types-support-b4cb0.png[]
+image::raml-1-0-data-types-support-b4cb0.png["An example of a payload with multiple fields, including contact information"]
