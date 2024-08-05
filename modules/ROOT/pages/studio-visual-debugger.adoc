@@ -17,7 +17,7 @@ Studio Debugger only works with Enterprise Edition runtimes and does not connect
 
 Note that the Visual Debugger is completely distinct from the Java Debugger contained in Studio; in fact, you may run both debuggers concurrently on your application.
 
-image::in-studio.png[in+studio]
+image::in-studio.png["A message flow with breakpoints set and a table of variables in the session"]
 
 == Assumptions
 
@@ -70,11 +70,11 @@ Complete the following macro-steps to use the Visual Debugger in Studio.
 
 . Right-click a building block, then select *Toggle breakpoint*.
 +
-image::2-set-breakp-1.png[2-set.breakp.1]
+image::2-set-breakp-1.png["A workflow diagram that illustrates the process of creating a REST service and a project stock"]
 
 . Studio applies a red dot to the building block's icon on the canvas.
 +
-image::2-set-breakp-2.png[2-set.breakp.2]
+image::2-set-breakp-2.png["A diagram illustrating the transmission of a content-type property to an HTTP REST service, followed by transformation via an XML decoder"]
 
 When you run your application in Debug mode, Studio stops the flow execution at the breakpoint you have set, allowing you to check the message contents in the <<Mule Debugger View>>.
 
@@ -82,7 +82,7 @@ When you run your application in Debug mode, Studio stops the flow execution at 
 
 . In the *Package Explorer* pane, right-click your application, then select *Debug As* > *Mule Application*. Studio begins running the application in Debug mode, and displays the *Confirm Perspective Switch* window.
 +
-image::confirm-perspective-switch.png[confirm.perspective.switch]
+image::confirm-perspective-switch.png["A prompt will appear, inquiring if you wish to open a Mule Debug perspective"]
 
 . Click *Yes* to open the Debug perspective, from which you can access the full functionality of the Visual Debugger.
 
@@ -92,7 +92,7 @@ When you begin running your application in Debug mode, Mule opens the *Mule Debu
 
 The image below illustrates the Mule Debug perspective.
 
-image::debug-perspective-whole-window.png[debug.perspective-whole.window]
+image::debug-perspective-whole-window.png["A Mule Studio window with a flow diagram displaying an HTTP endpoint, body to parameter map, and a choice component"]
 
 [%header%autowidth.spread]
 |===
@@ -106,7 +106,7 @@ image::debug-perspective-whole-window.png[debug.perspective-whole.window]
 
 When a message arrives at the first breakpoint, the *Mule Debugger View* displays two panes, as shown below.
 
-image::debug-view.png[debug+view]
+image::debug-view.png["A table displaying the names, values, and types of inbound variables"]
 
 The left pane displays the message payload (in this case, an HTTP GET request received via an xref:3.9@mule-runtime::http-connector.adoc[HTTP Connector]). The right pane displays various metadata associated with the message:
 
@@ -117,7 +117,7 @@ The left pane displays the message payload (in this case, an HTTP GET request re
 
 To resume execution, click the *Resume* icon (see below) or press `F8`. Your application runs until the message reaches the next breakpoint, if any.
 
-image::debug-button.png[debug+button]
+image::debug-button.png["A table of HTTP request headers and their corresponding values"]
 
 Rather than simply resuming execution, you can choose to go to the next message processor, skip to a selected message processor, or stop the application. See <<Execution Control Tools>> for full details.
 
@@ -125,7 +125,7 @@ Rather than simply resuming execution, you can choose to go to the next message 
 
 This section contains a full description of the Mule Debugger View and all its available tools.
 
-image::debugger-view-full-desc-modif.png[Debugger.View.Full.Desc-MODIF]
+image::debugger-view-full-desc-modif.png["Table of Inbound Variables, Their Values, and Types"]
 
 ==== Left Pane
 
@@ -140,7 +140,7 @@ The left pane displays the message payload as a tree structure.
 |4 |Name of a message property. a|
 To see any nested elements for a property, click the arrow next to the property name . You can see all objects in the message payload.
 
-image::expand-payload-element.png[expand.payload.element]
+image::expand-payload-element.png["A table that displays the Message Processor with Name, Value, and Type Attributes"]
 
 |5 |Value of each message property a|
 On some message processors, you can change the message payload by editing the payload properties. Visual Debugger automatically stores the modified payload object. When you resume running the application, the message progresses with the modified value.
@@ -151,7 +151,7 @@ To edit a message property:
 . Type a new value.
 . Press *Enter*.
 
-image::edit-payload-prop.png[edit.payload.prop]
+image::edit-payload-prop.png["A table that displays the name, value, and type of a Message Processor and a payload"]
 
 |===
 
@@ -175,11 +175,11 @@ Use the tools described in the table below to perform actions in Mule Debug pers
 [%header,cols="10,10,55,25"]
 |===
 |Number |Icon |Description |Shortcut
-|10 |image:mute-bp.png[mute-bp.icon] |*Mute Breakpoints –* Click to mute all the marked breakpoints. |
-|11 |image:stop-icon.png[stop.icon] |*Terminate –* Click to stop the currently running application. |
+|10 |image:mute-bp.png["A circle with a line through it"] |*Mute Breakpoints –* Click to mute all the marked breakpoints. |
+|11 |image:stop-icon.png[A square icon"] |*Terminate –* Click to stop the currently running application. |
 
 |12
-|image:eval-mule-exp-icon.png[eval.mule.exp.icon] |*Evaluate Mule Expression –* Click to evaluate a Mule expression. a|
+|image:eval-mule-exp-icon.png["An equation icon"] |*Evaluate Mule Expression –* Click to evaluate a Mule expression. a|
 
 `Command+SHIFT+i`
 
@@ -187,20 +187,20 @@ Linux and Windows:
 
 `Ctrl+SHIFT+i`
 
-|13 |image:next-breakpoint-icon.png[next.breakpoint.icon] |*Next Processor –* Click to run the application and stop at the next message processor in the flow, even if there is no breakpoint at the next processor. |`F6`
+|13 |image:next-breakpoint-icon.png["Am arrow curving down with a bar beneath it"] |*Next Processor –* Click to run the application and stop at the next message processor in the flow, even if there is no breakpoint at the next processor. |`F6`
 
 |14
-|image:to-m-proc-icon.png[to.m.proc.icon] |*Run to Processor –* Click to run the application and stop at the currently selected processor, even if there is no breakpoint at the currently selected processor. Emulates the behavior of the "Run to cursor" option in Java debuggers. (To select a processor, single-click its building block in the canvas.) |`F7`
+|image:to-m-proc-icon.png["An arrow pointing right with a vertical line next to it"] |*Run to Processor –* Click to run the application and stop at the currently selected processor, even if there is no breakpoint at the currently selected processor. Emulates the behavior of the "Run to cursor" option in Java debuggers. (To select a processor, single-click its building block in the canvas.) |`F7`
 
 |15
-|image:resume-icon.png[resume.icon] |*resume -* Click to run the application until the next breakpoint, if any. | `F8`
+|image:resume-icon.png["A pause button and a play button"] |*resume -* Click to run the application until the next breakpoint, if any. | `F8`
 
 |16
-|image:start-poll-icon.png[start.poll.icon] |*Start Poll -*  When configuring a xref:3.9@mule-runtime::poll-reference.adoc[Poll Scope] in your Mule application, click the _Start poll_ button to start polling the content inside the scope according to the frequency set in the poll scope. To force the poll results without waiting the frequency set, you can click the _force poll_ button that becomes visible only when you are debugging a poll scope: +
-image:studio-visual-debugger-7fbdb.png[] . |
+|image:start-poll-icon.png["A clock with an arrow"] |*Start Poll -*  When configuring a xref:3.9@mule-runtime::poll-reference.adoc[Poll Scope] in your Mule application, click the _Start poll_ button to start polling the content inside the scope according to the frequency set in the poll scope. To force the poll results without waiting the frequency set, you can click the _force poll_ button that becomes visible only when you are debugging a poll scope: +
+image:studio-visual-debugger-7fbdb.png["A Twitter button with a play button highlighted"] . |
 
 |17
-|image:resume-poll-icon.png[resume.poll.icon] |*Stop Poll -*  When configuring a xref:3.9@mule-runtime::poll-reference.adoc[Poll Scope] in your Mule application, click the _Stop poll_ button to stop the initiated poll Scope. This function only works if the poll has been initiated using the _Start Poll_ button above. +
+|image:resume-poll-icon.png["A clock with a red bar indicating the time"] |*Stop Poll -*  When configuring a xref:3.9@mule-runtime::poll-reference.adoc[Poll Scope] in your Mule application, click the _Stop poll_ button to stop the initiated poll Scope. This function only works if the poll has been initiated using the _Start Poll_ button above. +
 |
 
 |===
@@ -214,13 +214,13 @@ Complete the following steps to test a Mule expression against the message proce
 . Ensure that Studio has stopped flow execution at the desired breakpoint. When stopped, the breakpoint appears surrounded by a dotted blue line in the canvas, and Studio populates the <<Mule Debugger View>> with information.
 . Click the *Evaluate Mule Expression* icon  above the right-hand pane in the Mule Debugger View. Studio displays the expression evaluation window (with yellow background in the image below).
 +
-image::expr-eval-window1-2.png[]
+image::expr-eval-window1-2.png["A flow diagram with three options: REST, SOAP, and WSDL flow references"]
 
 . Type the Mule expression you wish to evaluate in the provided input field, then press *enter*. Studio evaluates the expression, then displays the result in the *Name*, *Value* and *Type* columns.
 
 For instance, in the example <<Viewing Message Data at a Breakpoint>>, the message is an HTTP request containing two properties, `Symbol` and `Method`. To see the value for `Method`, enter `#[message.inboundProperties['Method']`, then press *Enter*.
 
-image::expr-eval-window2.png[expr.eval.window2]
+image::expr-eval-window2.png["A table with columns for name, value, and type"]
 
 Using the expression evaluation window, you can also edit message properties or attributes. Simply right-click the property value or attribute, type the new value, then press *enter*.
 
@@ -242,7 +242,7 @@ Set these parameters in the *Mule Breakpoints* view, described below.
 
 This view displays all breakpoints defined in all the applications currently open in Studio. To access the **Mule Breakpoints **view, ensure that you are currently in the Debug Perspective. (If not, click *Mule Debug* under the main toolbar). From the Debug Perspective, click the *Mule Breakpoints* tab to the right of the Studio palette.
 
-image::general-desc-2.png[general.desc-2]
+image::general-desc-2.png["A list of debugging elements with checkboxes, a conditional button, and a numbered field"]
 
 In the image above, the Mule Breakpoints View displays all breakpoints of all applications currently open in Studio. Studio lists the breakpoints in the following format: `<application name> [<message processor number>] - <flow name>`.
 
@@ -264,9 +264,9 @@ Additionally you can activate the *Mute breakpoints* option in the <<Mule Debugg
 
 The images below display two breakpoints, set in the first two message processors of the `HTTP_input` flow. The breakpoint for the first message processor, indicated as `processors:1/0/0`, is activated. The breakpoint for the second message processor, `processors:1/1/0`, is deactivated.
 
-image::deselected-break.png[deselected.break]
+image::deselected-break.png["A list of mule-config processors with a checkbox next to each one"]
 
-image::selected-deselected-in-canvas.png[selected-deselected.in.canvas]
+image::selected-deselected-in-canvas.png["A choice node connects to a REST flow reference and a SOAP flow reference"]
 
 ==== Configuring Conditional Breakpoints
 
@@ -287,7 +287,7 @@ For example, the following expression activates the breakpoint if the value of m
 
 To set the *Exception* parameter for the application, click the *Exceptions* button (represented by a lightening bolt icon) in the Breakpoints View. This parameter causes _any message processor_ in the application to become a breakpoint if it throws an exception. In such a case, Studio stops flow execution at the message processor which threw the exception, then displays the message in the *Mule Debugger View*. Additionally, Studio displays the exception throwing building block surrounded by a red, dotted-line square (see image below).
 
-image::exception.png[]
+image::exception.png["A diagram that illustrates the steps of a REST flow process, such as extracting a token, configuring the message, invoking a REST service, and using an XML decoder transformer"]
 
 In the image above, the `XsltRest transformer` building block threw an exception, stopping application execution. (Notice that the building block was not set as a breakpoint.) The Mule Debugger View displays the message content, allowing you to see the contents of the exception.
 
@@ -299,7 +299,7 @@ To access the *Mule Expression Watches* view, ensure that you are currently in t
 
 === Mule Expression Watches View
 
-image::mule-exp-watches.png[mule.exp.watches]
+image::mule-exp-watches.png["A table with columns for name, value, and type, with headers for Mule Expression Watches and Mule Breakpoints"]
 
 [%header%autowidth.spread]
 |===

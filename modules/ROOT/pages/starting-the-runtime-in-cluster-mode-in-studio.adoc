@@ -13,7 +13,7 @@ To access the run configurations for your application, select *Run*, then *Run C
 
 In the run configuration's *General* tab, click *Start as cluster node*. You can enter a cluster node ID or leave this field blank to let Studio assign a random ID.
 
-image::run-config.png[run_config]
+image::run-config.png["A dialog box for editing launch configuration properties"]
 
 == See Also
 

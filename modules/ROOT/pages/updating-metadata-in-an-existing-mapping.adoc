@@ -11,7 +11,7 @@ DataMapper will continue to be fully supported in all current and future version
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Studio, which assists in converting a DataMapper map to DataWeave. Right click on a DataMapper, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* -> *Anypoint Studio* -> *Palette Profiles* and ticking the checkbox *Show deprecated Mule Components and Attributes*.
 ====
@@ -66,7 +66,7 @@ Complete the following procedure to delete an existing input or output field.
 
 The Infer Metadata tool (indicated by the wand icon, see image below) is available both for input and output data, accessible in the Input and Output panes of the DataMapper View.
 
-image::image043.png[]
+image::image043.png["A list of fields that can be used to infer metadata, including Name, Last Name, Street, and Zipcode"]
 
 The  *Infer Metadata* tool exposes three actions that modify input or output metadata:
 
@@ -100,7 +100,7 @@ This method allows you to recreate your input or output metadata by loading the 
 
 For example, when recreating metadata for XML input or output, DataMapper displays the  *Recreate Metadata XML* ** **window (shown below). This allows you to upload a modified version or a completely new version of your original XML metadata, without having to rebuild your data mapping flow from scratch.
 
-image::image049.png[]
+image::image049.png["A dialog box with options to generate an XML schema from an example or a user-defined schema"]
 
 See the <<Adding the Output Field With Recreate Metadata>> of the example for details.
 
@@ -145,7 +145,7 @@ The following sections illustrate how to add, edit and remove fields in a CSV to
 
 The image below illustrates the initial DataMapper view.
 
-image::image046.png[]
+image::image046.png["A diagram illustrating the transfer of data from a contacts CSV file to a users XML file"]
 
 === Adding the Input Field With Reload Metadata
 
@@ -163,11 +163,11 @@ Jane,Doe,345 Main Street,111,3333-3333
 [start=2]
 .     In the Input pane of the DataMapper view, click the  *Infer Metadata* icon, then select  *Reload Metadata*. +
 +
-image::image047.png[]
+image::image047.png["A dropdown menu with options to reload, re-create, or re-create from output metadata"]
 
 The Input pane in the DataMapper will now display the  `Phone` field, as shown below.
 
-image::image048.png[]
+image::image048.png["A diagram illustrating the process of transferring data from a CSV to an XML file"]
 
 [WARNING]
 ====
@@ -198,7 +198,7 @@ Complete the following steps to add the new field  `Phone` to your output XML.
 [start=2]
 .     In the Output pane in the DataMapper view, click the  *Infer Metadata* icon, then select *Recreate Metadata*. The *Recreate Metadata XML* dialog opens. +
  +
-image::image049.png[]
+image::image049.png["A dialog box with options to generate an XML schema from an example or a user-defined schema."]
 
 .     Click  *Generate schema from xml*.
 
@@ -208,7 +208,7 @@ Complete the following steps to add the new field  `Phone` to your output XML.
 
 .     Click the  *Infer Metadata* tool, then click  *Reload Metadata*. The output XML includes the new  `Phone` field, as shown below.
 
-image::image050.png[]
+image::image050.png["A diagram illustrating the transformation of data from CSV to XML"]
 
 [start=7]
 .     Manually map the input and output  `Phone` fields.

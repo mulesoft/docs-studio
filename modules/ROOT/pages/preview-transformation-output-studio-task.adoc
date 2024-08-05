@@ -10,7 +10,7 @@ You can provide sample input data to your Transform Message component to see how
 
 . Click on the root of the input pane and select *Edit Sample Data*.
 +
-image::dataweave-edit-sample-data.png[sample data]
+image::dataweave-edit-sample-data.png["A dropdown menu with the option to Edit Sample Data"]
 
 +
 A new tab opens with an empty scaffolding of your input structure. Values are populated with the string `????` as a placeholder.
@@ -20,11 +20,11 @@ When the input is of type POJO, samples must be written in DataWeave format. Thi
 
 . Replace placeholder values with sample values to see how they are mapped out to the preview pane.
 +
-image::dw-populate-sample-data.png[sample data]
+image::dw-populate-sample-data.png["A code editor displaying a JSON object with various data fields"]
 
 +
 [TIP]
-To reset the sample to the original scaffolding with placeholders, click the *rescaffold button* image:dw-rescaffold-button.png[rescaffold]. Note that any sample data you provided is lost.
+To reset the sample to the original scaffolding with placeholders, click the *rescaffold button* image:dw-rescaffold-button.png["A gray menu icon with three horizontal lines and an arrow pointing to the right"]. Note that any sample data you provided is lost.
 
 
 . Enable the preview pane by clicking on the *Preview* button on the top-right of the editor.

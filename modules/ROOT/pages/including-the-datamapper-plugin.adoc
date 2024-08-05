@@ -14,7 +14,7 @@ DataMapper continues to be fully supported in all current and future versions of
 
 A xref:3.9@mule-runtime::dataweave-migrator.adoc[migration tool] is now included in Anypoint Studio, which assists in converting a DataMapper map to DataWeave. From the Anypoint Studio Canvas, right-click a DataMapper building block, select *Migrate to DataWeave*, and follow the instructions.
 
-image::dw-migrator-script.png[dw migrator]
+image::dw-migrator-script.png["A window for creating a mapping from CSV to JSON"]
 
 If you don't see DataMapper on your palette, you can enable it by going to *Preferences* > *Anypoint Studio* > *Palette Profiles* and clicking the checkbox *Show deprecated Mule Components and Attributes*.
 ====

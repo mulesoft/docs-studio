@@ -71,7 +71,7 @@ Studio 6.5 is not compatible with Anypoint Platform PCE 2.x
 
 To set Private Cloud Edition Setup from Studio:
 
-image::setting-up-your-development-environment-cdf6d.png[]
+image::setting-up-your-development-environment-cdf6d.png["A preferences window for the Anypoint Platform Private Edition"]
 
 . Navigate to *Preferences*.
 . Select the *Anypoint Studio* item from the left navigation bar.
@@ -126,7 +126,7 @@ After configuring and enabling Private Cloud support you can:
 
 You can change the default location of xref:exchange::index.adoc[Anypoint Exchange] to point to a private version of exchange.
 
-image::setting-up-your-development-environment-67928.png[]
+image::setting-up-your-development-environment-67928.png["Preferences window with an exchange URL and settings"]
 
 To change the default address:
 

@@ -17,7 +17,7 @@ This metadata is handled by xref:datasense.adoc[DataSense] and exposed in design
 ====
 As an alternative to what's explained in this document, the xref:3.9@mule-runtime::http-request-connector.adoc[HTTP Request Connector] can reference a RAML file, and expose metadata based on the operations listed on this API definition.
 
-image::defining-metadata-66747.png[]
+image::defining-metadata-66747.png["A confirmation message of error-free status and an input field for adding metadata"]
 
 Similarly, the xref:3.9@mule-runtime::web-service-consumer.adoc[Web Service consumer] can include a WSDL file to expose metadata based on this service description.
 ====
@@ -29,15 +29,15 @@ You can reach the metadata editor screen in various ways:
 
 * On the *properties editor* of most components, you can select the  Metadata tab
 +
-image::defining-metadata-66747.png[]
+image::defining-metadata-66747.png["A confirmation message of error-free status and an input field for adding metadata"]
 
 * On a xref:3.9@mule-runtime::dataweave.adoc[*Transform Message Component*], you can right-click on the input or output and select *Set Metadata*. If nothing is set, you will see a *Define metadata* link:
 +
-image::defining-metadata-5198c.png[]
+image::defining-metadata-5198c.png["A link to define metadata, the words Payload, Flow Variables, and Session Variables"]
 +
 If your input metadata is missing variables, inbound properties, outbound properties, session variables or record variables that you know exist in the incoming mule message, you can manually add these too in the editor. Just right-click on one of these categories and select *New Property* or *New Variable*.
 +
-image::defining-metadata-558dd.png[]
+image::defining-metadata-558dd.png["A button that says New Property, next to a list of properties"]
 
 * On the package explorer, right click on your project and then select *Mule* > *Manage Metadata types*.
 
@@ -54,11 +54,11 @@ The custom metadata tab is included in all message processors except connectors 
 
 The image below shows the *Metadata* tab on the properties editor of the xref:3.9@mule-runtime::file-connector.adoc[File endpoint].
 
-image::custommetadata1.png[]
+image::custommetadata1.png["A button that says "Add metadata""]
 
 Clicking *Add Metadata* (outlined in the image above) opens a new set of fields, shown below.
 
-image::custommetadata2.png[]
+image::custommetadata2.png["A form with input fields for output, name, and metadata"]
 
 Clicking the dropdown menus allows you to select between the available metadata types.
 
@@ -77,9 +77,9 @@ NOTE: When editing metadata on an inbound endpoint, only outbound metadata is av
 
 === Adding Multiple Metadata Types
 
-To define more than one metadata type on the metadata tab, click *Add metadata*, one time for each metadata type you need to define. To remove a metadata type, click the *Remove* image:rem-icon.png[] icon next to the right of the editor.
+To define more than one metadata type on the metadata tab, click *Add metadata*, one time for each metadata type you need to define. To remove a metadata type, click the *Remove* image:rem-icon.png["An X icon"] icon next to the right of the editor.
 
-image::adding-more.png[adding_more]
+image::adding-more.png["A form with fields for input and output variables, along with metadata"]
 
 
 
@@ -88,20 +88,20 @@ image::adding-more.png[adding_more]
 
 The metadata classes that you have previously defined in the current Mule project will be displayed for you to select one if appropriate:
 
-image::dw-define-type1.png[define type]
+image::dw-define-type1.png["A window with a form to select the metadata type and define the root element name"]
 
 
 You can also create a new metadata class, to do so:
 
 . Click the green plus sign at the top.
 +
-image::custom-metadata-tab-c9f9e.png[]
+image::custom-metadata-tab-c9f9e.png["A plus sign next to the word "Add""]
 
 . Give the new type a _name_
 . Select a data format (eg: XML, JSON, CSV, etc)
 
 +
-image::custom-metadata-tab-0e99d.png[]
+image::custom-metadata-tab-0e99d.png["A window to select the XML metadata type"]
 +
 [NOTE]
 If the type of your data is undeclared or not understood it will default to 'application/java', a warning will be logged.
@@ -136,13 +136,13 @@ After you create a new type, you can associate any new metadata you create with 
 
 Copybook and Fixed Width are technically subsets of Flat File, and they actually all produce Flat File schemas. The Flat File type is recommended only for use cases that aren't covered by the other two.
 
-image::dw-flatfile-format.png[fixed-width]
+image::dw-flatfile-format.png["Table of data types, widths, and formats for a Fixed Width data type"]
 
 See reference docs for the schema structures required for xref:3.9@mule-runtime::dataweave-flat-file-schemas.adoc[Flat-File and EDI].
 
 On the fixed width editor, you can configure several properties of each of your fields through the *format* column of each. Click on the button to open a menu where you can select not only the type of the field, but also its alignment, decimals, if extra characters are to be filled with zeros or empty spaces, etc.
 
-image::dw-flatfile-format.png[fixed-width]
+image::dw-flatfile-format.png["Table of data types, widths, and formats for a Fixed Width data type"]
 
 
 
@@ -159,7 +159,7 @@ image::dw-flatfile-format.png[fixed-width]
 
 For any type, you can click the *Wrap Element in a Collection* checkbox, at the bottom of the metadata editor window:
 
-image::defining-metadata-61ffc.png[]
+image::defining-metadata-61ffc.png["A checkbox labeled "Wrap element in a collection.""]
 
 This sets the metadata as a list, where each element on the list is an instance of the structure you defined. So for example if you set your metadata as an XML structure, clicking this checkbox will make your metadata a list that contains N instances of that XML structure.
 
@@ -198,29 +198,29 @@ This example uses the XML file displayed below as a sample. To complete the exam
 . Place a File endpoint as the inbound endpoint in the flow, configure it so that its 'path' points to a folder in your hard drive
 . Click the *Metadata* tab, then click the *Add Metadata* button. Studio displays the metadata editor, shown below.
 
-image::custom-metadata-tab-0e99d.png[]
+image::custom-metadata-tab-0e99d.png["A window to select the XML metadata type"]
 
-The field *Output: Payload* is automatically selected from the drop-down menu. Click the edit icon image:edit-icon.png[] to edit the field. Studio displays the *Define Type* window, shown below.
+The field *Output: Payload* is automatically selected from the drop-down menu. Click the edit icon image:edit-icon.png["A pencil hovering over a notepad, indicating an edit function"] to edit the field. Studio displays the *Define Type* window, shown below.
 
-image::define-type-window.png[define_type_window]
+image::define-type-window.png["A window for defining a new data type with fields for an ID, schema, and a selection to create or select a data type"]
 
 . Click the green plus sign at the top.
 +
-image::custom-metadata-tab-c9f9e.png[]
+image::custom-metadata-tab-c9f9e.png["A plus sign next to the word "Add"]
 
 . Give the new type a _name_ . In this case, we use `myXML`.
 . Click the dropdown menu next to *Type* and select a data format: XML
 . Click the drop-down menu that displays *Schema,* then select *Example*.
 
 +
-image::custom-metadata-tab-1fb01.png[]
+image::custom-metadata-tab-1fb01.png["A dialog box for selecting an XML metadata type, with fields for Type ID, Example, and Root Element Name"]
 
 . Click the ellipsis (*...*) button to use the filesystem browser to navigate to, then select the example XML file (provided above).
 . Once you have selected the file, click *Select*.
 
 . Now, place a xref:transform-message-component-concept-studio.adoc[Transform Message Component] in the flow after the File inbound endpoint. The input metadata fields for the DataWeave transformer are automatically defined, as shown below.
 
-image::custom-metadata-tab-bf539.png[]
+image::custom-metadata-tab-bf539.png["A dialog box for selecting an XML metadata type, with fields for Type ID, Example, and Root Element Name"]
 
 Message processors after the File endpoint inherit the defined metadata. In this example, as you added a metadata definition to the File endpoint's output, this metadata type is expected as an input by the DataWeaver transformer. After you define a transformation for this component to carry out, any other message processors that you place after it in the flow will expect the resulting structure from applying the transformation onto the metadata you defined in the endpoint.
 

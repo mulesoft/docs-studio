@@ -22,7 +22,7 @@ For this example, we are deploying `MuleApp1` and `MuleApp2` simultaneously.
 .. From the left navigation bar, select one of the Mule applications you want to deploy.
 .. Under the _Mule domains/projects to launch_ select all the applications you want to deploy.
 +
-image::parallel-deployment-99dab.png[]
+image::parallel-deployment-99dab.png["A dialog box for configuring and running Mule applications"]
 +
 [CAUTION]
 --

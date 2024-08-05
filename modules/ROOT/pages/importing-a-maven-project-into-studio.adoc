@@ -21,11 +21,11 @@ Studio has a built-in functionality to import a Maven project.
 . In Studio, go to *File > Import...*
 . Select *Mule* > *Maven-based Mule Project from pom.xml*, then click *Next*.
 +
-image::import-maven.png[]
+image::import-maven.png["A list of import sources with an arrow pointing to a Maven-based Mule project from pom.xml"]
 +
 . Navigate to the location of the *pom.xml* file you wish to import. Mule  automatically populates a Project Name, but you can adjust it.
 +
-image::importmaven1.png[ImportMaven1]
+image::importmaven1.png["A dialog box for importing a Maven-based Mule project"]
 +
 . Be sure to select the runtime you wish to use. Check *Copy project into workspace* if you want to create a copy of your project that resides in your workspace.
 . Click *Finish*.
@@ -38,28 +38,28 @@ Anypoint Studio then internally runs the studio:studio goal and imports the Mave
 
 After you open your Maven project in Studio you might encounter error messages (as illustrated below). You may need to set the *M2_REPO* classpath variable or, if it has already been set, re-point it to the correct repository.
 
-image::error-message.png[error_message]
+image::error-message.png["A table is presented that lists 15 errors, all related to missing required libraries"]
 
 . In Studio, right-click your project's name in the *Package Explorer*, then select *Properties*.
 . In the *Properties* pane, click *Java Build Path* in the menu on the left, then click the *Libraries* tab.
 +
-image::build-path-1.png[build_path-1]
+image::build-path-1.png["A dialog box displaying JARs and class folders on a build path"]
 +
 . Click *Add Variable...*.
 . In the *New Variable Classpath Entry* panel, click the *Configure Variables...* button.
 +
-image::new-variables-2.png[new_variables_2]
+image::new-variables-2.png["Dialog box for selecting variables to build a classpath entry"]
 +
 . Select the `M2_REPO` item from the list of classpath variables, then click *Edit...*.
 +
 [NOTE]
 If `M2_REPO` does not appear as an item in the list of classpath variables, click *New...* to create this classpath variable.
 +
-image::m2-repo-2.png[M2_repo_2]
+image::m2-repo-2.png["A dialog box with classpath variables defined"]
 +
 . Change the contents of the *Path* field to specify the location of your Maven (`.m2`) repository.
 +
-image::edit-variable-entry.png[edit_variable_entry]
+image::edit-variable-entry.png["A dialog box for editing variable entry with fields for name and path"]
 +
 . Click *OK* in each of the open panels to save your changes.
 . Click the *Problems* tab in the console to confirm that the errors are no longer listed, which means they have been resolved.
