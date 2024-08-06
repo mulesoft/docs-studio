@@ -1,4 +1,4 @@
-= Import an API Specification from Design Center
+= Import and Implement an API Specification from Design Center
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
