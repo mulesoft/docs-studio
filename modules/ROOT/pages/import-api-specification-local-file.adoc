@@ -1,4 +1,4 @@
-= Import an API Specification from a Local File
+= Import and Implement an API Specification from a Local File
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -7,13 +7,13 @@ Anypoint Studio enables you to import a RAML API specification from your local m
 
 This task only works for RAML types of API specifications.
 
-It is not possible to add a local API specification to an existing Mule project.
+You can't add a local API specification to an existing Mule project.
 
-. In the taskbar at the top of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
+. In the taskbar of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
 . Type a name for your project.
 . Select a Mule runtime engine version.
 . In the *API Specification* section, select the *From Design Center or Local Files* tab.
-. In the *Location* field, type the location of your local API, or click the *...* button and select *Browse Files...*.
+. In the *Location* field, type the location of your local API, or click the *...* button and select *Browse Files*.
 You can import either a RAML file or an entire .zip file bundle if your API has schemas and examples.
 . Click *Finish*.
 

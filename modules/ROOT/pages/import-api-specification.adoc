@@ -1,4 +1,4 @@
-= Import an API Spec
+= Import and Implement an API Spec
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
