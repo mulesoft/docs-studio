@@ -7,7 +7,7 @@ Anypoint Studio enables you to import a RAML or OAS 2.0 and 3.0 API specificatio
 
 If you're using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that's not in Exchange, follow the steps presented in xref:import-api-specification-local-file.adoc[import an API specification from a local file] or xref:import-api-specification-design-center.adoc[import an API specification from Design Center] depending on your preferred use case.
 
-== Import an API Specification From Maven into a New Project
+== Import and Implement an API Specification From Maven into a New Project
 
 . In the taskbar of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
 . Type a name for your project.
@@ -48,7 +48,7 @@ Studio scaffolds your API specification. If you choose not to create flows out o
 You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the task bar.
 // end::maven-tasks[]
 
-== Import an API Specification from Maven Into an Existing Project
+== Import and Implement an API Specification from Maven Into an Existing Project
 
 . In the Package Explorer view, select your project.
 . Click the *Add* icon (image:add-icon.png[2%,2%]) and select *From Maven*.
