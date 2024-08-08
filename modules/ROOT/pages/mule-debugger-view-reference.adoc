@@ -5,7 +5,7 @@ endif::[]
 
 This section contains a full description of the Mule Debugger View and all its available tools.
 
-image::debugger-reference.png[]
+image::debugger-reference.png["A debugger with a toolbar that has ten buttons and a section labeled "Variables and watches" that contains two empty panels."]
 
 [calloutlist]
 . *Terminate* +

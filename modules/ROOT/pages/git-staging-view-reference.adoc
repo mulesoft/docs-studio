@@ -7,68 +7,68 @@ The Git Staging view allows you to control the version control system (VCS) proc
 
 == Unstaged Changes section
 
-image::unstaged-changes-section.png[]
+image::unstaged-changes-section.png["A  box with numbered buttons for adding, deleting, and changing the view of unstaged changes"]
 
 [calloutlist]
-. image:add-unstage-icons.png[] *Add selected files to the index* +
+. image:add-unstage-icons.png["A plus sign icon"] *Add selected files to the index* +
 Adds the selected file to your index to commit.
-. image:add-all-unstage-icons.png[] *Add all files including not selected ones to the index* +
+. image:add-all-unstage-icons.png["Two plus signs stacked on top of each other"] *Add all files including not selected ones to the index* +
 Adds all the modified files in your unstaged changes section to the index to commit.
-. image:present-unstage-icons.png[] *Presentation* +
+. image:present-unstage-icons.png["A list with a downward arrow to the right"] *Presentation* +
 Changes the view for the unstaged and staged sections. Other views are:
 +
 * List view.
 * Tree view.
 * Compact Tree.
-. image:sort-by-state-unstage-icons.png[] *Sort by state* +
+. image:sort-by-state-unstage-icons.png["An arrow points down to a menu with three horizontal bars"] *Sort by state* +
 Sorts the files in the unstaged section based on their state.
 
-image::unstaged-changes-section-right-click.png[]
+image::unstaged-changes-section-right-click.png["A menu with options to open a working tree version, compare with index, add to index, replace with HEAD revision, assume unchanged, and untrack"]
 
 [calloutlist]
-. image:open-working-tree-icon-unstage.png[] *Open Working Tree Version* +
+. image:open-working-tree-icon-unstage.png["An arrow pointing to a document"] *Open Working Tree Version* +
 Opens the selected file with your local changes.
-. image:compare-with-index-icon-unstage.png[] *Compare with Index* +
+. image:compare-with-index-icon-unstage.png["Two icons, one with a plus sign and an arrow, the other a window with a bar at the top"] *Compare with Index* +
 Compares your changes to the index version of the selected file.
-. image:add-to-index-icon-unstage.png[] *Add to Index* +
+. image:add-to-index-icon-unstage.png["A plus sign icon"] *Add to Index* +
 Adds the selected file to your index to commit.
 . *Replace with HEAD Revision* +
 Discards uncommitted changes to your file.
-. image:assume-unchanged-icon-unstage.png[] *Assume Unchanged* +
+. image:assume-unchanged-icon-unstage.png["An arrow pointing to the right of a bar"] *Assume Unchanged* +
 Excludes the selected file from VCS management. +
 Use this option when you want to ignore a file that you want to change locally but not push to Design Center.
-. image:untrack-icon-unstage.png[] *Untrack* +
+. image:untrack-icon-unstage.png["A pair of glasses with a red button on the bottom right corner"] *Untrack* +
 //_TODO
 
 == Staged Changes section
 
-image::staged-changes-section.png[]
+image::staged-changes-section.png["The white box labeled "Staged Changes (0)" with two numbered pointers above it"]
 
 [calloutlist]
-. image:remove-stage-icons.png[] *Remove selected files from the index* +
+. image:remove-stage-icons.png["A rectangular button"] *Remove selected files from the index* +
 Removes the selected file from the the index.
-. image:remove-all-stage-icons.png[] *Remove all files including not selected ones from the index* +
+. image:remove-all-stage-icons.png["Two rectangular buttons are stacked on top of each other"] *Remove all files including not selected ones from the index* +
 Removes all files in the staged section from the index.
 
-image::staged-changes-section-right-click.png[]
+image::staged-changes-section-right-click.png["A menu with four options: Open Working Tree Version, Compare with Working Tree, Remove from Index, and Replace with HEAD Revision"]
 
 [calloutlist]
-. image:open-working-tree-icon-stage.png[] *Open working Tree Version* +
+. image:open-working-tree-icon-stage.png["An arrow pointing to a document icon"] *Open working Tree Version* +
 Opens the version of your file with your local changes.
-. image:compare-with-index-icon-stage.png[] *Compare with Working Tree* +
+. image:compare-with-index-icon-stage.png["Two icons, one with a plus sign and an arrow, the other a window with a bar at the top"] *Compare with Working Tree* +
 Compares your staged changes to the changes in your local copy.
-. image:remove-from-index-icon-stage.png[] *Remove from Index* +
+. image:remove-from-index-icon-stage.png["A rectangular button"] *Remove from Index* +
 Removes the selected file from the the index.
 . *Replace with HEAD Revision* +
 Discards uncommitted changes to your file.
 
 == Commit Message section
 
-image::commit-message-section.png[]
+image::commit-message-section.png["A form for committing and pushing changes, with fields for the author, committer, and commit message"]
 
 [calloutlist]
-. image:amend-commit-message.png[] *Amend (Edit previous commit)* +
+. image:amend-commit-message.png["An icon showing a document with an arrow pointing right"] *Amend (Edit previous commit)* +
 Lets you change the commit message of your previous commit.
-. image:sign-off-by-commit-message.png[] *Add Signed-off-by* +
-. image:sign-commit-commit-message.png[] *Sign Commit* +
-. image:add-change-id-commit-message.png[] *Add Change-ID* +
+. image:sign-off-by-commit-message.png["A pen writing on a line of text"] *Add Signed-off-by* +
+. image:sign-commit-commit-message.png["A closed padlock with a keyhole"] *Sign Commit* +
+. image:add-change-id-commit-message.png["Two icons, one a square with a circle in the center, the other a square with a rectangle and two plus signs inside"] *Add Change-ID* +

@@ -14,7 +14,7 @@ To configure Studio to connect to MuleSoft Government Cloud:
 image::reuse::studio-anypoint-platform-settings.png[alt="Anypoint Studio highlighted in the navigation bar."]
 . Under *Region Settings*, select *GOV* from the drop-down menu.
 +
-image::gov-region-selection.png[]
+image::gov-region-selection.png["A dropdown menu with options for selecting a region, including US, EU, GOV, and Other"]
 . Select *Apply and Close*.
 
 == Configure your MuleSoft Government Cloud User Login
@@ -26,13 +26,13 @@ Because MuleSoft Government Cloud requires you to use a two-factor authenticatio
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
-image::preferences-authentication-add.png[]
+image::preferences-authentication-add.png["A window that displays the Anypoint Platform authentication settings, including a username text field, an Add button, and a Remove button"]
 . In the *User Login* UI, select *Configure*.
 +
-image::login-configure.png[]
+image::login-configure.png["An arrow points to a button labeled "Configure" on a login screen for the Anypoint Platform"]
 . In the pop-up window, select *External Identity* and your MuleSoft Government Cloud organization's domain.
 +
-image::user-login-custom-domain.png[]
+image::user-login-custom-domain.png["A user login window with a field for organization domain"]
 +
 Talk to your organization administrator if you don't know your organization's domain.
 . Click *OK*.

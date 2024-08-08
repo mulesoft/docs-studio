@@ -8,11 +8,11 @@ endif::[]
 . Open the extracted Anypoint Studio.
 .. It is possible that Gatekeeper flags Studio as an unsafe application:
 +
-image::studio-blocked-gatekeeper.png[]
+image::studio-blocked-gatekeeper.png["You may see an error message that says Apple can't check the file for malicious software and it won't open"]
 +
 .. To open Studio, navigate to *System Preferences* > *Security and Privacy* and in the *General* tab select *Open Anyway*:
 +
-image::open-anyway-gatekeeper.png[]
+image::open-anyway-gatekeeper.png["An "Open Anyway" button is highlighted on a macOS Security & Privacy window"]
 . Click OK to accept the default workspace. +
 ** You must Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix and Linux systems.
 ** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +

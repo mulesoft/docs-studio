@@ -20,13 +20,13 @@ Studio uses the EGit plugin only for the VCS feature of editing API specificatio
 . Select *Anypoint Studio* > *API Specification from Design Center*.
 . In the *Import From Design Center* window, select your Anypoint Platform username and the Anypoint Platform business group where the API specification is located.
 +
-image::username-and-bg-studio.png[]
+image::username-and-bg-studio.png["A window with fields for importing an API from Design Center, including a list of available APIs"]
 +
 If you are not logged in, click the *Add Account* button to add your Anypoint Platform account. If you have not configured your Anypoint Platform credentials, the username and business group options are unavailable. +
 If you want to use a different account, click the *Add Account* button and log in again.
 . From the list of available APIs, select the one you want.
 +
-image::list-of-apis-studio.png[]
+image::list-of-apis-studio.png["A range of APIs to select from"]
 . Click *Finish*.
 
 Studio imports the API specification as an API specification project so that you can work on your API specification project offline.

@@ -10,7 +10,7 @@ This built-in browser is the default. However, if you log in to Anypoint Platfor
 . Navigate to *Preferences* > *Anypoint Studio* > *Browser*.
 . Select the type of default browser for Studio:
 +
-image::browser-configuration.png[]
+image::browser-configuration.png["The browser preferences window highlighting built-in or native options"]
 
 [calloutlist]
 . *Built-in*: Uses the built-in browser.

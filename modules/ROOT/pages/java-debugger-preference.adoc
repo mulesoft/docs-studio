@@ -8,7 +8,7 @@ Studio disconnects the Java debugger by default. The following steps show you ho
 . Expand *Anypoint Studio* in the left navigation bar, and select *Debugger*,
 . Select *Connect Java Debugger*.
 +
-image::connect-java-debugger.png[]
+image::connect-java-debugger.png["A window displaying preferences for the Java debugger"]
 . Select *Apply and Close*.
 
 Note that connecting the Java debugger in Studio can cause performance degradation in your subsequent redeployments.

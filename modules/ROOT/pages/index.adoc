@@ -37,7 +37,7 @@ The Mule configuration file editor opens when you double-click on the applicatio
 
 * The Message Flow tab
 +
-image::index-039ff.png[]
+image::index-039ff.png["A flowchart showing a listener, payload, and logger"]
 +
 Contains the canvas in which you can see a visual representation of your flows. You can drag and drop Event Processors from the Mule Palette into the canvas to add them to your flow.
 
@@ -45,13 +45,13 @@ Clicking an Event Processor in the canvas opens up the Mule Properties View with
 
 * The Global Elements tab
 +
-image::index-a2191.png[]
+image::index-a2191.png["A table that lists global configuration elements, including type, name, and description, with buttons to create, edit, and delete them"]
 +
 Contains the global Mule configuration elements for your modules. In this tab you can create, edit or delete configuration files.
 
 * The Configuration XML tab
 +
-image::index-ebe7d.png[]
+image::index-ebe7d.png["XML code for a Mule project"]
 +
 Contains the XML that defines your Mule Application. All changes applied here are reflected in the canvas and the Properties view of your event processors in the Message Flow tab.
 
@@ -65,7 +65,7 @@ Anypoint Studio displays the following default views.
 
 The Package Explorer view displays the project folders and files that make up a Mule project.
 
-image::index-ee160.png[]
+image::index-ee160.png["A file tree showing a project's structure and dependencies"]
 
 Click the open arrow next to a Mule project folder to expand or contract it. Double-click a folder or file to open it.
 
@@ -73,7 +73,7 @@ Click the open arrow next to a Mule project folder to expand or contract it. Dou
 
 The Mule Palette view helps you manage the modules and connectors in your project. You can also add new elements from Exchange in this view.
 
-image::mule-palette-concept-0bf01.png[]
+image::mule-palette-concept-0bf01.png["A Mule Palette with a search bar, options to add modules, a favorites section, and a core section listing modules and their types"]
 
 Available event processors, such as scopes, filters, and flow control routers, along with modules and their related operations are displayed. +
 Drag and drop any event processor to your Favorites or onto the canvas of the Mule Configuration File editor.
@@ -82,7 +82,7 @@ Drag and drop any event processor to your Favorites or onto the canvas of the Mu
 
 The Mule Properties view allows you to edit the properties of the module that is currently selected in your canvas.
 
-image::index-4cdd4.png[]
+image::index-4cdd4.png["A form with fields to configure a listener"]
 
 This view includes the DataSense Explorer which supplies real-time information about the data structure of your payload and any available inbound and outbound properties or variables.
 
@@ -90,13 +90,13 @@ This view includes the DataSense Explorer which supplies real-time information a
 
 The Console view contains the console for the embedded Mule server, which displays a list of events and problems (if any) that Studio reports as you create or run your Mule application.
 
-image::index-0b4a5.png[]
+image::index-0b4a5.png["A console log that displays status information for a Mule application"]
 
 === Problems
 
 The Problems view displays a list of all issues encountered in your project.
 
-image::index-7bcca.png[]
+image::index-7bcca.png["A table with two message flow errors"]
 
 == Perspectives
 

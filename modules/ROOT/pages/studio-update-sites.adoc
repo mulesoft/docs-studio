@@ -44,7 +44,7 @@ If you are on a network that has firewall restrictions, you must allow the URLs 
 . Click *Manage...*.
 The list of available software is displayed:
 +
-image::available-software.png[]
+image::available-software.png["A list of available software sites with options to enable, disable, and manage them"]
 +
 . Add the URLs from the *Location* column to your firewall list of allowed URLs.
 

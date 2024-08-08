@@ -5,8 +5,8 @@ endif::[]
 
 The *Mule Breakpoints* view displays all breakpoints defined in all the Mule projects opened in Studio.
 
-// image::breakpoint-view-reference-d7362.png[breakpoint-view]
-image::breakpoints-view.png[]
+// image::breakpoint-view-reference-d7362.png["Breakpoint elements highlighted in the Mule Breakpoints View"]
+image::breakpoints-view.png["Breakpoint elements highlighted in the Mule Breakpoints View"]
 
 [calloutlist]
 . *Mute breakpoints* +

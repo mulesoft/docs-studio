@@ -17,7 +17,7 @@ In the Preferences panel, go to *Anypoint Studio* > *Maven*.
 
 See https://docs.mulesoft.com/studio/latest/maven-preferences-reference[Maven Reference] for additional information about configuring MuleSoft repositories.
 
-image::maven-preferences-reference.png["*Maven Preferences Reference* window accessed from the *Settings...* option, from the *Anypoint Studio* menu."]
+image::maven-preferences-reference.png["*Maven Preferences Reference* window accessed from the *Settings...* option, from the *Anypoint Studio* menu"]
 
 [%header,%autowidth.spread]
 |===
@@ -59,7 +59,7 @@ Selecting this option requires you to define your custom path to your Maven loca
 
 Studio manages the servers used in the global settings and you can configure Studio to use an external Maven installation. By doing so, Studio automatically detects and populates the IDs from the `settings.xml` file stored in `${maven.installation.home}/conf/settings.xml`.
 
-image::maven-global-settings.png[“*Global Settings* option highlighted in the Studio setting preferences window.”]
+image::maven-global-settings.png[“*Global Settings* option highlighted in the Studio setting preferences window”]
 
 If there is no file on this path, you can create a new `settings.xml` file in another location:
 
@@ -73,7 +73,7 @@ If there is no file on this path, you can create a new `settings.xml` file in an
 
 You can configure Maven update policies depending on your needs.
 
-image::maven-update-policies.png[“*Update Policies* option highlighted in the Studio setting preferences window.”]
+image::maven-update-policies.png[“*Update Policies* option highlighted in the Studio setting preferences window”]
 
 See the `<updatePolicy>` in the https://maven.apache.org/settings.html#repositories[*Repositories* section^] of Maven Settings Reference for additional information.
 
@@ -81,7 +81,7 @@ See the `<updatePolicy>` in the https://maven.apache.org/settings.html#repositor
 
 Studio manages the servers for downloading dependencies or plugins, defines the credentials of such servers when needed, and automatically detects and populates the IDs from the `settings.xml` file located in `${user.home}/.m2/settings.xml`.
 
-image::maven-user-settings.png[“*User Settings* option highlighted in the Studio setting preferences window.”]
+image::maven-user-settings.png[“*User Settings* option highlighted in the Studio setting preferences window”]
 
 If there is no file on this path, you can create a new `settings.xml` file in another location:
 
@@ -99,7 +99,7 @@ To add a new server to your `settings.xml` file:
 . Enter the server ID, and your username and password.
 . Click *OK*.
 
-image::maven-add-new-server.png[“*Add server* option highlighted in the Studio setting preferences window.”]
+image::maven-add-new-server.png[“*Add server* option highlighted in the Studio setting preferences window”]
 
 == See Also
 

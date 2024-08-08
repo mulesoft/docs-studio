@@ -12,7 +12,7 @@ Because Studio is Eclipse-based, keep in mind that among the import/export optio
 
 Studio presents two importing options.
 
-image::import-export-packages-ad8ef.png[align=center]
+image::import-export-packages-ad8ef.png["A dialog box will appear, presenting you with a list of import options, such as General, Anypoint Studio, and Packaged Mule Applicatio" align=center]
 
 [%header%autowidth.spread,cols="a,a"]
 |===
@@ -49,7 +49,7 @@ See _Mule Runtimes for Anypoint Studio Update Site_ in xref:studio-update-sites.
 
 Studio lets you package and export your project as a Mule deployable file.
 
-image::import-export-packages-a1b21.png[]
+image::import-export-packages-a1b21.png["A window with a list of options for you to export"]
 
 [%header%autowidth.spread,cols="a,a"]
 |===

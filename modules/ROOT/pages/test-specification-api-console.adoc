@@ -13,7 +13,7 @@ Studio mocking service does not modify the `baseUri` field in your API specifica
 * You must turn on the mocking service. +
 In your Package Explorer view, right-click your API specification project and select *Manage API Specification* > *Turn on Mocking Service*.
 +
-image::turn-on-mocking-service.png[]
+image::turn-on-mocking-service.png["A menu that displays options for managing a T-shirt ordering service API, such as enabling mocking services and publishing to an exchange"]
 
 == Steps
 

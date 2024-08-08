@@ -5,7 +5,7 @@ endif::[]
 
 The Studio debugger enables you to watch for selected DataWeave expressions in all active breakpoints. If the expression occurs at any of the active breakpoints, the debugger evaluates the expression, then displays the result in the *Mule Debugger* view.
 
-image::expression-view-reference.png[]
+image::expression-view-reference.png["A window with numbered steps that guide you through evaluating a DataWeave expression, clearing an expression, and adding expressions to watch"]
 
 [calloutlist]
 . *Expression field* +

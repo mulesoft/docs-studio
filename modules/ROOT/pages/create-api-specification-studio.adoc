@@ -11,10 +11,10 @@ To start creating an API specification project in Studio, log in to Anypoint Pla
 . Select the tab of type of API specification project to create:
 * Create a new API specification by selecting the *New API Specification* tab and the type of API.
 +
-image::create-api-specification.png["The New API Specification tab and file type drop-down menu highlighted in the New API Specification window."]
+image::create-api-specification.png["The New API Specification tab and file type drop-down menu highlighted in the New API Specification window"]
 * To create a new API fragment, select the *New API Fragment* tab, and then select the type of API fragment.
 +
-image::create-api-fragment.png["The New API Fragment tab and file type drop-down menu highlighted in the New API Specification window."]
+image::create-api-fragment.png["The New API Fragment tab and the type of API fragment highlighted in the New API Specification window"]
 . Type a name for your project.
 . Select *Finish*.
 
