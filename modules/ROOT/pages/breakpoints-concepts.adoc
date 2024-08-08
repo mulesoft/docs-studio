@@ -13,19 +13,19 @@ When you add a breakpoint, Studio enables the breakpoint by default.
 
 To add a default breakpoint, right-click a message processor and select *Add Breakpoint*:
 
-image::add-breakpoint.png[]
+image::add-breakpoint.png["The Add breakpoint option highlighted in the context menu of a flow"]
 
 To disable the breakpoint, right-click the message processor and select *Disable Breakpoint*:
 
-image::disable-breakpoint.png[]
+image::disable-breakpoint.png["The Disable breakpoint option highlighted in the context menu of a flow"]
 
 Although you disable the breakpoint, Studio does not delete it. In the canvas, the breakpoint's corresponding event processor displays a gray circle instead of a red circle:
 
-image::disabled-breakpoint.png[]
+image::disabled-breakpoint.png["A gray circle shows a disabled breakpoint"]
 
 When you have many breakpoints, you can use the *Mule Breakpoints* view in the *Mule Debug* perspective. The *Mule Breakpoints* view lists all the message processors that have breakpoints and indicates with a check mark all the enabled breakpoints. You can select and unselect the check marks to enable or disable the breakpoints you need:
 
-image::breakpoint-activation.png[]
+image::breakpoint-activation.png["The elements of the Mule Breakpoints view in the Mule Debug perspective"]
 
 When you run your application in debug mode, Studio stops the flow execution at the breakpoint you added, enabling you to inspect the message's content in the *Mule Debugger* view.
 
@@ -37,10 +37,10 @@ To add a conditional breakpoint:
 
 . Right-click the message processor and select *Add Breakpoint*:
 +
-image::add-breakpoint.png[]
+image::add-breakpoint.png["The Add breakpoint option highlighted in the context menu of a flow"]
 . In the *Mule Breakpoints* view, select the breakpoint to which you want to add a condition, and select *Conditional*:
 +
-image::set-conditional-breakpoint.png[]
+image::set-conditional-breakpoint.png["Set Payload and Conditional elements highlighted In the Mule Breakpoints view"]
 . Enter the condition that must be met to activate the breakpoint. +
 For example, the following expression activates the breakpoint if the method used in the request is `GET`:
 +
@@ -59,16 +59,16 @@ Studio enables error breakpoints by default.
 
 You can't add specific error breakpoints to stop the flow execution when a specific error occurs.
 
-To disable error breakpoints, select the *Disable error breakpoints* (image:to-set-error-breakpoints-55f71.png[]) button in the *Mule Breakpoints* view:
+To disable error breakpoints, select the *Disable error breakpoints* (image:to-set-error-breakpoints-55f71.png["Disable error breakpoints icon"]") button in the *Mule Breakpoints* view:
 
-image::disable-error-breakpoint.png[]
+image::disable-error-breakpoint.png["Disable error breakpoints button highlighted in the Mule Breakpoints view"]
 
 == Temporarily Mute Breakpoints
 
 You can activate the *Mute Breakpoints* option in the *Mule Breakpoints* view to temporarily disable the debugger from stopping at your enabled breakpoints:
 
-image::mute-breakpoints.png[]
+image::mute-breakpoints.png["The Mute breakpoints icon highlighted in the Mule Breakpoints view"]
 
 By default, muting your breakpoints also disables the error breakpoints. You can configure this behavior in *Preferences* > *Anypoint Studio* > *Debugger* by unselecting the *Mute Breakpoints disables Error Breakpoints* check mark:
 
-image::mute-disable-error-breakpoints.png[]
+image::mute-disable-error-breakpoints.png["The Mute breakpoints disables Error Breakpoints checkbox highlighted in the Anypoint Studio Preferences menu"]
