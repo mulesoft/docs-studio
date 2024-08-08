@@ -8,7 +8,7 @@ The Transform Message component enables you to perform transformations over the 
 
 You can work with two representations of the same transformation, and any changes done to one are matched in real time by the other.
 
-image::transform-message-component.png[]
+image::transform-message-component.png["A code snippet that demonstrates the mapping of data from one object to another"]
 
 [calloutlist]
 . Graphical View. +
@@ -23,27 +23,27 @@ The Transform Message component has three different editor modes:
 * *Show Graphics* mode. +
 The Graphical view displays both input and output data structures and a graphical representation of the mappings in your transformation. This mode also displays the Source Code view.
 +
-image::show-graphics-mode.png[]
+image::show-graphics-mode.png["A code block that displays JSON objects for buyer data."]
 * *Show Source With Trees* mode. +
 The Graphical view displays both input and output data structures without the graphical representation of the mappings. This mode also displays the Source Code view.
 +
-image::source-with-trees-mode.png[]
+image::source-with-trees-mode.png["Here is a code snippet demonstrating how to transform a payload object into a new object with specific buyer data"]
 * *Source Only* mode. +
 The Graphical view shows only the input data structure along with the Source Code view.
 +
-image::source-code-mode.png[]
+image::source-code-mode.png["A code block displaying a payload object with buyer details"]
 
 You can define your default editor mode in the DataWeave preferences:
 
 . Navigate to *Anypoint Studio* > *Preferences*.
 . Under *Anypoint Studio* > *DataWeave*, select the default editor mode
 +
-image::editor-mode-preference.png[]
+image::editor-mode-preference.png["A menu displaying DataWeave preferences"]
 
 To improve your experience with the Transform Message component and properly manage your flow's metadata, consider the following tips:
 
 * Before creating your mapping, configure everything else on the flow. You can use Datasense to improve to expose your transformation's input and output metadata. See the xref:datasense-concept.adoc[DataSense] article for more information.
-* To filter what you see from the input or output structures, click the magnifying glass icon image:tips-transform-message-ui-studio-69e11.png[] at the top of either section and then start typing the name of a field.
+* To filter what you see from the input or output structures, click the magnifying glass icon image:tips-transform-message-ui-studio-69e11.png["A magnifying glass icon"] at the top of either section and then start typing the name of a field.
 * Select an element in the output pane to have its corresponding line in the DataWeave code highlighted.
 * If an input field is mapped to two or more output fields, you can right-click it and then select which of the multiple outputs you want to highlight in the DataWeave code.
 

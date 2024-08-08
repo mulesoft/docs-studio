@@ -14,7 +14,7 @@ After you update the specification, accept that Studio regenerates the flows bas
 +
 To manually generate a flow for the updated API, right-click the Mule project where you updated the API specification, and select *API Specs* > the name of your API > *Generate Flows*.
 
-Additionally, you can manage the API specifications in your project that are linked to Exchange from the API specification project management view. To do so, click the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the task bar.
+Additionally, you can manage the API specifications in your project that are linked to Exchange from the API specification project management view. To do so, click the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i in a house shape" 2%,2%]) in the task bar.
 
 image::update-api-version.png["The blue dot and the *Update version* button are highlighted in the API property window."]
 

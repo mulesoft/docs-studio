@@ -14,16 +14,16 @@ You can install custom modules using the Studio UI, or by manually adding them a
 
 To install a local custom module from Studio:
 
-. In the menu bar, select the *Manage dependencies* icon image:manage-dependencies.png[20,20].
+. In the menu bar, select the *Manage dependencies* icon image:manage-dependencies.png["Manage dependencies icon", 20,20].
 . Under *Mule Project*, select *Modules*:
 +
-image::manage-modules.png[]
-. Select the green plus icon (image:add-icon.png[2%,2%]) and select *From Maven*:
+image::manage-modules.png["The Modules option highlighted in your Mule project"]
+. Select the green plus icon (image:add-icon.png["A green plus sign", 2%,2%"]) and select *From Maven*:
 +
-image::add-modules-from-maven.png[]
+image::add-modules-from-maven.png["The from Maven option is highlighted in your Mule project properties window""]
 . In the properties window, configure your custom module's Maven coordinates:
 +
-image::add-modules-maven-ui.png[]
+image::add-modules-maven-ui.png["A Mule project property window showing fields to input artifact definition and advanced settings"]
 +
 This information is available in your module's `pom.xml` file.
 

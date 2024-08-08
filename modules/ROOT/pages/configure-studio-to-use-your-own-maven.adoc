@@ -15,7 +15,7 @@ Anypoint Studio comes bundled with Maven but you can use Studio with an external
 . Select your Maven root installation path and click *Open*.
 . Click *Test Maven Configuration* to verify your Maven configuration in Studio is correct.
 +
-image::maven-preferences.png["Maven options highlighted in the *Preferences* menu."]
+image::maven-preferences.png["Maven options highlighted in the Anypoint Studio preferences window"]
 +
 . Click *Apply and Close*.
 

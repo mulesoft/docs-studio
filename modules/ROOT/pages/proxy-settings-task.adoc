@@ -34,7 +34,7 @@ This section describes the options for configuring network connections from Anyp
 
 You can access these configuration options from *Preferences...* > *General* > *Network Connections*.
 
-image::proxy-settings-reference-4eeb1.png[]
+image::proxy-settings-reference-4eeb1.png["Table of Proxy Connections: Connection, Schema, Provider, and Authorization Status"]
 
 [%header,%autowidth.spread,cols="a,a,a"]
 |===

@@ -29,19 +29,19 @@ You can also save these evaluations as expression watches so that the debugger d
 
 . After the debugger stops the execution at your breakpoint, write the Dataweave expression in the *Evaluate DataWeave Expression* view, and select *Evaluate*:
 +
-image::evaluate-dw-expression.png[]
+image::evaluate-dw-expression.png["Debugger with message flow, listener, set payload, logger, and DataWeave expression evaluator with Evaluate Expression button"]
 The result of the evaluation displays in the *Evaluate DataWeave Expression* view.
 +
-image::evaluation-result.png[]
+image::evaluation-result.png["A code editor displaying the method to set the payload and media type in DataWeave"]
 
 You can also edit the event properties or attributes:
 
 . In the *Evaluate DataWeave Expression* view, right-click the property value or attribute, and select *Update value...*:
 +
-image::update-value-dw-expression.png[]
+image::update-value-dw-expression.png["A contextual menu with options to navigate to the class, duplicate the expression, add the watch, or copy the value"]
 . Edit the value and select *Set*.
 +
-image::set-new-value-dw-expression.png[]
+image::set-new-value-dw-expression.png["A window with an editing field and a Set button"]
 
 == Add a DataWeave Expression Watch
 
@@ -49,8 +49,8 @@ To instruct Studio debugger to watch for an expression:
 
 . In the *Evaluate DataWeave Expression* view, write your DataWeave expression, and select *Add to watch*:
 +
-image::add-dw-expression-watch.png[]
+image::add-dw-expression-watch.png["An arrow directs you to a button labeled "Add to watch" in a window featuring fields for evaluating a DataWeave expression"]
 Studio displays the new expression watch in the *Mule Debugger* view:
 +
-image::show-expression-watch.png[]
+image::show-expression-watch.png["A debugger window displaying a null payload"]
 

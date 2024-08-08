@@ -16,13 +16,13 @@ Consider a flow in which you include an Anypoint Connector preceded or followed 
 
 For example, imagine that you must connect your organization's Salesforce account to Slack to notify your team about a new opportunity. To do this, you can drop both Salesforce and Slack connectors on your Studio canvas and configure them to connect to your organization's accounts. Then, you can drop a Transform Message component between the connectors. Mule automatically captures the data type and structure information from each provider and prescribes the input and output for your data mapping. With this prescription in place, you can configure the mapping, populating the DataWeave code.
 
-image::datasense-perceptive-flow-design-concept-cf42d.png[]
+image::datasense-perceptive-flow-design-concept-cf42d.png["A diagram depicting a workflow for transforming an object into JSON"]
 
 == Use Datasense for Autocomplete
 
 Imagine that you're obtaining status update data from the Slack connector. You want to log the message you're sending to Slack, but you aren't familiar with the property names used by this connector. Instead of referring to Slack documentation, you can insert a Logger message processor after the Slack connector and begin to type in it, which activates autocomplete. For example, if you type `#[payload.` and press `Ctrl+Spacebar`, you get a list of all the properties and methods associated with that payload. In the list, you also get the properties returned by your request to the Slack connector.
 
-image::payload-autocomplete.png[]
+image::payload-autocomplete.png["The DataSense autocomplete feature highlighted in the payload"]
 
 == When to Manually Define Metadata
 

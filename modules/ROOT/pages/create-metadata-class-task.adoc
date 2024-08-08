@@ -5,7 +5,7 @@ endif::[]
 
 . Click the Add button in your Metadata Editor.
 +
-image::dw-define-type2.png[]
+image::dw-define-type2.png["Add button highlighted in the metadata editor window"]
 . Type in an ID for the new metadata type and click Create Type.
 . Select a data format using the type dropdown list in your Metadata Editor. +
 If the type of your data is undeclared or not understood, the type default to `application/java`, and a warning is logged.

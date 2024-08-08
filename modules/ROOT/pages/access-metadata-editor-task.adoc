@@ -11,11 +11,11 @@ There are several ways of accessing the Metadata editor in Anypoint Studio.
 . Select the Metadata tab on the component's Mule Properties view.
 . Click the Add Metadata button to start defining the metadata of your payload, attributes, and variables.
 . Select the  Mule event component to which you want to define metadata.
-. Click the Edit icon image:access-metadata-editor-task-93b19.png[] to open the Metadata Editor.
+. Click the Edit icon image:access-metadata-editor-task-93b19.png["Edit icon"] to open the Metadata Editor.
 
 For example, this is the metadata tab for an HTTP Listener source:
 
-image::access-metadata-editor-task-320a3.png[]
+image::access-metadata-editor-task-320a3.png["The metadata tab highlighted displaying the metadata of a flow"]
 
 [NOTE]
 If you edit inbound endpoint metadata, you can define outbound metadata.
@@ -26,7 +26,7 @@ If you edit inbound endpoint metadata, you can define outbound metadata.
 . Click the Define Metadata link in either the input or output columns of the component, depending on the metadata you want to define. +
 If the previous component in your flow is already defining output metadata, the input section of the Transform Component already recognizes it. You can right click the payload field and select Set Metadata.
 +
-image::access-metadata-editor-task-b0be6.png[]
+image::access-metadata-editor-task-b0be6.png["The set metadata option highlighted in a transform message component"]
 
 When you set metadata for a Transform Message component, you can select a checkbox to wrap elements in a collection. Selecting the wrap-elements option sets the metadata as a list, where each element on the list is an instance of the structure you defined. So for example, if you set your metadata as an XML structure and click this checkbox, metadata shows as a list that contains N instances of that XML structure.
 

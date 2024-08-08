@@ -7,7 +7,7 @@ When you import your API specifications from Exchange or Maven as dependencies o
 
 You can access the API Search menu from the taskbar at the Anypoint Studio display, either by selecting *Search* > *Search...* or by pressing `Ctrl+h`:
 
-image::api-search.png[]
+image::api-search.png["The API search tab highlighted in the search window"]
 
 To search inside of your API specification dependencies:
 
@@ -33,11 +33,11 @@ For example, `!examples.raml` searches inside all files except `examples.raml`.
 
 You can also search for all API specifications inside your open projects. You can select *Navigate* > *Open API Resource* in the taskbar at the Anypoint Studio display, or press `Cmd+Shift+p` (MacOS) or `Ctrl+Shift+P` (Windows/Linux):
 
-image::open-api-resource.png[]
+image::open-api-resource.png["API search field highlighted in the Open API Resource window"]
 
 . Type the name of the API resource that you're looking for:
 +
-image::open-api-resource-result.png[]
+image::open-api-resource-result.png["API resource search field highlighted in the Open API Resource window"]
 +
 Studio displays all possible matches for the API resource that you typed.
 . Select the resource you were looking for and click *OK*.

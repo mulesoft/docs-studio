@@ -23,7 +23,7 @@ To debug your application in Studio:
 Studio requests permission to switch to the *Mule debug* perspective.
 . Click *Yes*.
 
-Alternatively, run your application in debug mode by right-clicking in the canvas and selecting *Debug Project*, or by clicking image:to-run-debug-mode-e7b7b.png[""] (*Debug*) on the toolbar.
+Alternatively, run your application in debug mode by right-clicking in the canvas and selecting *Debug Project*, or by clicking image:to-run-debug-mode-e7b7b.png["A bug icon"] (*Debug*) on the toolbar.
 
 == Configure Studio Debugger
 

@@ -19,7 +19,7 @@ If you can't access Exchange from your work environment, you can import an API s
 .. Select a Mule runtime engine version 4.1.4 or later for an OAS or RAML API spec.
 .. select a Mule runtime engine version 4.5.0 or later for an AsyncAPI spec.
 . In the *API Specification* section, select the *From Exchange or Maven* tab.
-. Click the *Add* icon (image:add-icon.png[2%,2%]), and select *From Exchange*.
+. Click the *Add* icon (image:add-icon.png["A plus sign icon" 2%,2%]), and select *From Exchange*.
 . Select your Anypoint Platform username. 
 +
 If you're not logged in, click *Add Account* to add your Anypoint Platform account.
@@ -32,12 +32,12 @@ To list all available APIs, type a `*` character in the search bar and press Ent
 
 Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
 
-Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the task bar.
+Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
 
 == Import and Implement an API Specification from Exchange Into an Existing Project
 
 . Right-click on your project in the Package Explorer, select *Mule*, and then select *Manage APIs*.
-. Click the *Add* icon (image:add-icon.png[2%,2%]), and select *From Exchange*.
+. Click the *Add* icon (image:add-icon.png["A plus sign icon" 2%,2%]), and select *From Exchange*.
 . Select your Anypoint Platform username. 
 +
 If you're not logged in, click *Add Account* to add your Anypoint Platform account.
@@ -52,7 +52,7 @@ You can select the version of the API to import in the *Selected Modules* table.
 
 Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
 
-Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the task bar.
+Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
 
 [NOTE]
 If you want Studio to list your API when searching in Exchange, you must mark your API specification published as an asset as *stable*.

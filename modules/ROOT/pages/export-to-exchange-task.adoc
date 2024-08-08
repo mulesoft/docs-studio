@@ -39,13 +39,13 @@ If no format is provided, the home page will be followed by the other pages in a
 . Right-click your project folder in your *Package Explorer* view.
 . Select *Anypoint Platform* > *Publish to Exchange*.
 +
-image::publish-project-to-exchange.png[AltText:"Right-click + select + publish."]
+image::publish-project-to-exchange.png["A menu with the option to publish to Exchange"]
 +
 . Either select your Anypoint Platform user and business group or create a new Anypoint Platform account by clicking *Add Account*. +
 Additionally, you can click the *Add Account* button to use a new Anypoint Platform account.
 . Verify that the required identification and version information for your project is present and correct:
 +
-image::configure-asset-properties.png[AltText:"List of fields to configure before publishing an asset to Exchange."]
+image::configure-asset-properties.png["A form to publish a project to Exchange, with fields for user information, project details, and project type"]
 
 [calloutlist]
 . *Name*: The name of your API specification.
@@ -59,7 +59,7 @@ image::configure-asset-properties.png[AltText:"List of fields to configure befor
 . Select *Next*.
 . Configure the tags, categories, and custom fields for your project:
 +
-image::tags-and-categories-configuration.png[AltText:"Configuration screen for adding tags, categories, and custom fields to your asset."]
+image::tags-and-categories-configuration.png["A computer window with options to add tags, categories, and custom fields"]
 +
 Categories cannot be created from Studio directly. Refer to the xref:exchange::to-manage-categories.adoc[Manage Categories] documentation to learn how to create Categories for your organization.
 +

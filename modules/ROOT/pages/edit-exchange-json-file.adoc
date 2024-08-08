@@ -6,10 +6,10 @@ To edit your `exchange.json` file:
 
 . Select it from your API specification project in your Project Explorer view:
 +
-image::exchange-json-package-explorer.png[alt="Exchange.json file shown in the Package explorer view"]
+image::exchange-json-package-explorer.png["An arrow points to the flight-api.raml file in a package explorer"]
 . Use the editor to update the values of your `exchange.json` file:
 +
-image::exchange-json-studio-editor.png[alt="Exchange.json editor view"]
+image::exchange-json-studio-editor.png["A form with fields to edit exchange.json file information, including name, main file, artifact ID, group ID, asset version, and API version"]
 
 [calloutlist]
 . You cannot edit the first item, *Name*, because this is the artifact name of your API specification asset.
@@ -22,7 +22,7 @@ image::exchange-json-studio-editor.png[alt="Exchange.json editor view"]
 
 Additionally, you can edit the XML of your `exchange.json` file by selecting the editor's *exchange.json* tab:
 
-image::exchange-json-editor.png[]
+image::exchange-json-editor.png["A code window displaying a JSON file labeled exchange.json"]
 
 == See Also
 
