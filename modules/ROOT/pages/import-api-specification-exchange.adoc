@@ -57,7 +57,7 @@ Manage the API specifications linked to Exchange in your project from the API sp
 [NOTE]
 If you want Studio to list your API when searching in Exchange, you must mark your API specification published as an asset as *stable*.
 
-== Rescaffold an API Specification in a Mule project
+== Rescaffold an API Specification in a Mule Project
 
 After changing your API spec, such as adding a new endpoint, re-scaffold the spec to update your Mule project.
 
