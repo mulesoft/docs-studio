@@ -59,12 +59,12 @@ If you want Studio to list your API when searching in Exchange, you must mark yo
 
 == Rescaffold an API Specification in a Mule project
 
-After making changes to your API spec, such as adding a new endpoint, re-scaffold the spec to update your Mule project.
+After changing your API spec, such as adding a new endpoint, re-scaffold the spec to update your Mule project.
 
 . Right-click on the file.xml of your Mule project.
 . Select *API Specs*, the name of your Mule project (filename.xml), and *Generate Flows*.
 
-If your project is successfully rescaffolded, see that a new flow is added to your implementation XML file. 
+If your project is successfully rescaffolded, a new flow is added to your implementation XML file. 
 
 == Implement AsyncAPI Specifications
 
