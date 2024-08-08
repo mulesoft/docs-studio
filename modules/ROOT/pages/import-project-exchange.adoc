@@ -14,12 +14,12 @@ See xref:set-credentials-in-studio-to.adoc[To Configure Anypoint Platform Creden
 
 == Import an Exchange Example into Studio
 
-. Click the *Open Exchange* button on the top navigation bar image:import-project-exchange-c2fce.png[].
+. Click the *Open Exchange* button on the top navigation bar image:import-project-exchange-c2fce.png["An infinity symbol"].
 . In the Exchange window, select the *MuleSoft* organization from the left navigation bar.
 . Click the *All Types* drop-down menu and select *Examples*.
 . Select the example you want to import, and in the example's page, click *Open* from the right menu. +
 +
-image::import-project-exchange-7f6a4.png[]
+image::import-project-exchange-7f6a4.png["An icon of a folder with a downward arrow, labeled "Open""]
 
 == See Also
 

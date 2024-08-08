@@ -8,11 +8,11 @@ The DataSense Explorer is a feature in Studio that allows you to preview the Mes
 
 Select a specific element in the flow, then click the DataSense Explorer icon and explore the structure of the data that enters and leaves it.
 
-image::datasense-logo.png[datasense+logo]
+image::datasense-logo.png["The DataSense Explorer icon highlighted in the Studio menu"]
 
 The DataSense Explorer allows you to navigate the Mule Event and the Mule Message. It takes the known output fields of flow elements and the DataSense metadata of compatible connectors into account to predict the Mule Event contents at any given point in the flow. You can easily find what information is available where, even the variables that are implicitly created by certain flow elements which you might not be aware of.
 
-image::datasense-explorer2-1.png[datasense+explorer2-1]
+image::datasense-explorer2-1.png["An input box with a text field, dropdown menu, and a list of variables"]
 
 == See Also
 

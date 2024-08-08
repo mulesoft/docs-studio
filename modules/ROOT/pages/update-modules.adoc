@@ -7,27 +7,27 @@ NOTE: If you xref:change-jdk-config-in-projects.adoc[select Java 17 for your pro
 To manually check for module updates:
 
 . Ensure that you are logged in to Anypoint Platform.
-. In the menu bar, click *Manage Mule Modules* (image:manage-mule-modules-icon.png[2%,2%]).
+. In the menu bar, click *Manage Mule Modules* (image:manage-mule-modules-icon.png["Mule icon" 2%,2%]).
 +
-image::manage-mule-modules-location.png[]
+image::manage-mule-modules-location.png["A Mule Palette screenshot with a prompt to open a Mule Configuration file or test to view the palette"]
 
 NOTE: This feature does not support modules that are inherited from a parent POM file.
 
 You can also manage all dependencies in your project:
 
-. In the menu bar, click *Manage dependencies* image:manage-dependencies.png[20,20].
+. In the menu bar, click *Manage dependencies* image:manage-dependencies.png[A stylized letter i in a house shape" 2%,2%].
 . Under *Mule Project*, select *Modules*.
 +
-image::manage-modules.png[]
+image::manage-modules.png["Table of modules, their names, versions, and package names, with an arrow pointing to "Modules""]
 +
 When Studio loads this wizard for the first time, it automatically checks for new versions of your modules.
 . Select the module that you want to update and click *Update version*.
 +
-image::update-module-version.png[]
+image::update-module-version.png["A dialog box will display a list of modules and their respective versions, allowing for selective updates"]
 +
 Additionally, you can select *Update all dependencies to latest* to update all dependencies to the latest version of each.
 +
-image::update-all-modules.png[]
+image::update-all-modules.png["A dialog box displays the available modules with their version numbers and provides options to update, restore, apply, or close"]
 . Select *Apply and close*.
 
 Studio updates your selected dependencies.

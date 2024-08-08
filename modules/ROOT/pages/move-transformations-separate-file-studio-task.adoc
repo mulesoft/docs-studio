@@ -11,11 +11,11 @@ To export the DataWeave code to a `.dwl` file:
 
 . Click the *Edit Current Target* button.
 +
-image::dw-multiple-outputs-edit.png[edit target]
+image::dw-multiple-outputs-edit.png["Code showing a list of payment data fields, including coin, payments, and type"]
 
 . Select the 'File' radio button.
 +
-image::dataweave-externalfile2.png[external file 2]
+image::dataweave-externalfile2.png["A dialog box with options for selecting a target file"]
 
 . Type a name for your `.dwl` file.
 . Click OK.

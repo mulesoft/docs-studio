@@ -30,7 +30,7 @@ While Windows Defender is a tool for keeping your computer safe, it can slow dow
 +
 A Windows Defender real-time protection notice asks whether to exclude Studio folders and processes:
 +
-image::windows-defender-exclusions.png[“A Windows Defender real-time protection popup asks whether to exclude Studio folders and processes.”]
+image::windows-defender-exclusions.png[“A Windows Defender real-time protection popup asks whether to exclude Studio folders and processes.]
 +
 * The `/.p2` folder stores Studio plugins.
 +
@@ -42,6 +42,6 @@ image::windows-defender-exclusions.png[“A Windows Defender real-time protectio
 . Click *Yes*.
 . Click *Yes* again when Windows PowerShell requests permission to make the change:
 +
-image::windows-powershell-access-request.png[“Windows Powershell popup requests that you confirm the change.”]
+image::windows-powershell-access-request.png[“Windows Powershell popup requests that you confirm the change”]
 
 NOTE: If you select the *Remember my decision* checkbox and click *No*, Windows Defender real-time protection scans Studio folders and processes as you work with them.

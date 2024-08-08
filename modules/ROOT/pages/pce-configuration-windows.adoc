@@ -10,26 +10,26 @@ Follow these steps to integrate your Studio installation with the Anypoint Platf
 . Your browser displays a *Your connection is not private* error.
 . Click the *Not secure* section in your URL bar, and select *Certificate*.
 +
-image::get-pce-certificate-windows.png["*Not secure* section and *Certificate* option highlighted in the browser."]
+image::get-pce-certificate-windows.png["*Not secure* section and *Certificate* option highlighted in the browser"]
 . In the *Certificate* UI, navigate to the *Details* tab and select *Copy to File...*.
 +
-image::copy-certificate-windows.png["*Details* tab and *Copy to File* button highlighted in the *Certificate* window."]
+image::copy-certificate-windows.png["*Details* tab and *Copy to File* button highlighted in the *Certificate* window"]
 . In the *Certificate Export Wizard* select *Base-64 encoded X.509 (.CER)*, and click *Next*.
 +
-image::base64-certificate-windows.png["*Base-64 encoded X.509 (.CER)* option and *Next* button highlighted in the *Certificate Export Wizard* window."]
+image::base64-certificate-windows.png["*Base-64 encoded X.509 (.CER)* option and *Next* button highlighted in the *Certificate Export Wizard* window"]
 . Select a destination folder in your computer and click *Finish*.
 +
-image::export-certificate-windows.png["Destination folder and *Next* button highlighted in the *Certificate Export Wizard* window."]
+image::export-certificate-windows.png["Destination folder and *Next* button highlighted in the *Certificate Export Wizard* window"]
 . Navigate to your exported `.cer` file, double-click it, and select *Install Certificate...*.
 +
-image::install-certificate-studio.png["*Install Certificate...* button highlighted in the *Certificate* window."]
+image::install-certificate-studio.png["*Install Certificate...* button highlighted in the *Certificate* window"]
 . In the *Certificate Import Wizard*, select *Place all certificates in the following store* and type *Trusted Root Certification Authorities*.
 +
-image::trusted-root-certificate-windows.png["*Place all certificates in the following store* option and *Next* button highlighted in the *Certificate Export Wizard* window."]
+image::trusted-root-certificate-windows.png["*Place all certificates in the following store* option and *Next* button highlighted in the *Certificate Export Wizard* window"]
 . Select *Next* and then *Finish*.
 . Select *Yes* when the security warning asks for confirmation to install the certificate.
 +
-image::install-certificate-security-warning-windows.png["*Yes* button highlighted in the *Security Warning* window."]
+image::install-certificate-security-warning-windows.png["*Yes* button highlighted in the *Security Warning* window"]
 . Add your `.cer` file certificate to your Studio embedded Java cacerts keystore:
 +
 [source]
@@ -53,7 +53,7 @@ Java default cacerts password is `changeit`.
 Navigate to *Window* > *Preferences...*.
 . Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
 +
-image::pce-properties.png["*Private Cloud Instance URL* field highlighted in the *Preferences* window."]
+image::pce-properties.png["*Private Cloud Instance URL* field highlighted in the *Preferences* window"]
 . Select *Apply and Close*.
 . Restart Studio.
 
@@ -65,6 +65,6 @@ The first time you configure your user's login, Studio asks you to confirm your 
 Navigate to *Anypoint Studio* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +
-image::preferences-authentication-add.png["*Authentication* tab and *Add* button highlighted in the *Preferences* window."]
+image::preferences-authentication-add.png["*Authentication* tab and *Add* button highlighted in the *Preferences* window"]
 . Add your PCE credentials and sign-in.
 . Select *Apply and Close*.

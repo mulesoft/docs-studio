@@ -11,7 +11,7 @@ To use the drag and drop UI of the Transform Message Component, you must define 
 
 All metadata classes that you defined in the current Mule project are displayed in the Metadata Editor for you to select one if appropriate:
 
-image::dw-define-type1.png[]
+image::dw-define-type1.png["A form for selecting a metadata type, with options to add, delete, and filter user-defined types"]
 
 When defining the structure through the editor, you're implicitly creating a schema for that type. These schemas are stored in your project's `src/main/resources` folder, and you can open these and edit them freely on Anypoint Studio.
 

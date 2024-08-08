@@ -10,16 +10,16 @@ For example, you might have modified a file in a branch, while someone else modi
 
 . In the Package Explorer view, right-click your API specification project and select *Team* > *Switch To* > *Push Branch...*.
 +
-image::push-branch.png[]
+image::push-branch.png["A dropdown menu displaying choices for a software development project, featuring Git commands such as pull and push"]
 . Git rejects the push due to the conflicting file:
 +
-image::conflict.png[]
+image::conflict.png["A window will appear with the push results, including the repository URL and message details"]
 . Pull the changes from Design Center into your local version.
 +
-image::pull-changes.png[]
+image::pull-changes.png["A menu displaying choices for a git repository"]
 . Evaluate the conflicts flagged by git:
 +
-image::flagged-commit.png[]
+image::flagged-commit.png["A window displaying the outcomes of a fetch and update of flights-api data, with a conflicting result and two merge input choices"]
 
 [calloutlist]
 . Your local commit flagged as conflicting.
@@ -28,7 +28,7 @@ image::flagged-commit.png[]
 [start=5]
 . Git flags the conflicting parts of the file in the API editor view:
 +
-image::resolve-marked-conflict.png[]
+image::resolve-marked-conflict.png["Code displaying a RAML API for American Flights"]
 +
 [source,linenums]
 ----
@@ -74,7 +74,7 @@ To:
 The conflict happens because git does not know which change to prioritize.
 . Remove the change you don't want to keep:
 +
-image::push-conflict-changes.png[]
+image::push-conflict-changes.png["A code editor displaying a commit message and a conflict list"]
 
 [calloutlist]
 . Ensure that your changes remain in the file.

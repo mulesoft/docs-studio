@@ -9,12 +9,12 @@ You can export your Anypoint Studio preferences and import them into a new versi
 
 . In Studio, go to *Preferences*.
 . Ensure that you applied all the configurations that you want to export.
-. Select the export icon: image:export-icon.png[30,30].
+. Select the export icon: image:export-icon.png["An arrow pointing up and out of a box" 30,30].
 +
-image::export-preferences.png[]
+image::export-preferences.png["A preferences window with options for general settings"]
 . Configure the preferences that you want to export:
 +
-image::export-preferences-configure.png[]
+image::export-preferences-configure.png["A window showing the Export Preferences dialog, enabling the export of preferences to the local file system"]
 
 [calloutlist]
 . Select *Export all* to export all of your preferences, or select the specific configurations that you want to export.
@@ -28,12 +28,12 @@ image::export-preferences-configure.png[]
 When importing preferences, you must restart Studio to apply changes.
 
 . In Studio, go to *Preferences*.
-. Select the import icon: image:import-icon.png[30,30].
+. Select the import icon: image:import-icon.png["An arrow pointing into a box" 30,30].
 +
-image::import-preferences.png[]
+image::import-preferences.png["A window that consolidates program-wide preferences, such as those for background processes, editor behavior, and save intervals"]
 Configure the preferences that you want to import:
 +
-image::import-preferences-configure.png[]
+image::import-preferences-configure.png["A window with options to import preferences from a local file, filter by type, and view a description"]
 
 [calloutlist]
 . Define the location for your preferences.

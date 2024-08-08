@@ -46,10 +46,10 @@ To regenerate your main password:
 . Navigate to *Preferences* > *General* > *Security* > *Secure Storage*.
 . Select *Change Password...*:
 +
-image::secure-storage-change-password.png[]
+image::secure-storage-change-password.png["A table of secure storage providers, their descriptions, priorities, and instructions to change or reset your password"]
 . When Studio prompts you to create password hints, select *Yes*:
 +
-image::new-password-created.png[]
+image::new-password-created.png["A popup window will ask if you want to provide a password hint"]
 +
 [CAUTION]
 --
