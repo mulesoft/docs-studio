@@ -64,7 +64,7 @@ After changing your API spec, such as adding a new endpoint, rescaffold the spec
 . Right-click on the XML file of your Mule project.
 . Select *API Specs*, the name of your Mule project, and *Generate Flows*.
 
-If the rescaffolding process of your project is successful, your implementation XML file adds a new flow. 
+If the rescaffolding process of your project is successful, your implementation XML file includes a new flow. 
 
 == Implement AsyncAPI Specifications
 
