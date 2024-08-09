@@ -57,6 +57,15 @@ Manage the API specifications linked to Exchange in your project from the API sp
 [NOTE]
 If you want Studio to list your API when searching in Exchange, you must mark your API specification published as an asset as *stable*.
 
+== Rescaffold an API Specification in a Mule Project
+
+After changing your API spec, such as adding a new endpoint, rescaffold the spec to update your Mule project.
+
+. Right-click on the XML file of your Mule project.
+. Select *API Specs*, the name of your Mule project, and *Generate Flows*.
+
+If the rescaffolding process of your project is successful, your implementation XML file includes a new flow. 
+
 == Implement AsyncAPI Specifications
 
 Studio supports the implementation of AsyncAPI 2.6 specs. When creating an implementation project, Studio imports and scaffolds an AsyncAPI spec hosted on Exchange into an API interface that you can implement.
