@@ -43,6 +43,17 @@ If you select Java 17 for your project, Studio automatically searches Exchange a
 
 If you find issues, you can xref:compatibility-issues-runtime-java.adoc[troubleshoot them] and then xref:deploy-mule-application-task.adoc[deploy your project to the appropriate environment] with Java compatibility checks.
 
+== Verify Java 17 Dependency Compatibility
+
+In Studio 7.19.0 and later, you can check if the modules, connectors, and libraries in your Mule project are Java 17 compatible. 
+
+. Right-click on the name of your project.
+. Select *Mule* > *Java 17 Dependency Compatibility*.
++
+Studio analyzes the dependencies in your Mule project and shows you the dependencies that aren't Java 17 compatible in the *Problems* tab.  
+
+If some dependencies aren't Java 17 compatible, you can xref:update-modules.adoc[].
+
 == See Also
 
 * xref:general::java-support.adoc[]
