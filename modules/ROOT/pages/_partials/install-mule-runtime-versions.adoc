@@ -3,7 +3,11 @@
 // tag::intro[]
 Anypoint Studio bundles the latest Mule runtime engine (Mule) version available for each release.
 
-If you choose to use a different Mule version than the one bundled in your Studio distribution, you can install any compatible Mule version.
+If you choose to use a different Mule version than the one bundled in your Studio distribution, you can install the latest compatible Mule version.
+
+[NOTE]
+Older runtime versions aren't available for installation.
+
 // end::intro[]
 
 // tag::prereq[]
