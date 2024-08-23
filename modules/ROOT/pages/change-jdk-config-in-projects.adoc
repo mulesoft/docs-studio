@@ -32,7 +32,7 @@ For example, `Java SE 11`.
 
 Studio 7.17.0 and later are compatible with Java 17, so you can upgrade connectors and apps in your projects to obtain its latest features. 
 
-. Right-click in your Studio project.
+. Right-click on your Studio project.
 . Navigate to *Build Path*, and click *Configure Build Path*.
 . In the *Libraries* tab, select your *JRE System Library* and click *Edit*.
 . Select the *Alternate JRE* option, and select your desired JRE from the drop-down menu.
@@ -43,16 +43,16 @@ If you select Java 17 for your project, Studio automatically searches Exchange a
 
 If you find issues, you can xref:compatibility-issues-runtime-java.adoc[troubleshoot them] and then xref:deploy-mule-application-task.adoc[deploy your project to the appropriate environment] with Java compatibility checks.
 
-== Verify Java 17 Dependency Compatibility
+== Verify Java 17 Connector Compatibility
 
-In Studio 7.19.0 and later, you can check if the modules, connectors, and libraries in your Mule project are Java 17 compatible. 
+In Studio 7.19.0 and later, you can check if the connectors in your Mule project are Java 17 compatible. 
 
 . Right-click on the name of your project.
-. Select *Mule* > *Java 17 Dependency Compatibility*.
+. Select *Mule* > *Java 17 Connector Compatibility*.
 +
-Studio analyzes the dependencies in your Mule project and shows you the dependencies that aren't Java 17 compatible in the *Problems* tab.  
+Studio analyzes the connectors in your Mule project and shows you the connectors that aren't Java 17 compatible in the *Problems* tab.  
 
-If some dependencies aren't Java 17 compatible, you can xref:update-modules.adoc[].
+If some connectors aren't Java 17 compatible, you can xref:update-modules.adoc[update them].
 
 == See Also
 
