@@ -45,7 +45,7 @@ If you find issues, you can xref:compatibility-issues-runtime-java.adoc[troubles
 
 == Verify Java 17 Connector Compatibility
 
-In Studio 7.19.0 and later, you can check if the connectors in your Mule project are Java 17 compatible. 
+In Studio 7.19.0 and later, you can check if the connectors in your Mule project are Java 17 compatible:
 
 . Right-click on the name of your project.
 . Select *Mule* > *Java 17 Connector Compatibility*.
