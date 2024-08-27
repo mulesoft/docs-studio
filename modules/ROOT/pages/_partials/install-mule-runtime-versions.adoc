@@ -3,7 +3,7 @@
 // tag::intro[]
 Anypoint Studio bundles the latest Mule runtime engine (Mule) version available for each release.
 
-If you choose to use a different Mule version than the one bundled in your Studio distribution, you can can install and update your projects to the latest Mule runtime version.
+If you choose to use a different Mule runtime version than the one bundled in your Studio distribution, you can install it and update your projects to the latest version.
 
 [NOTE]
 Downgrading to a previous Mule runtime patch version is not supported.
