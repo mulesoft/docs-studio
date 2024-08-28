@@ -74,3 +74,7 @@ Studio imports your API specification as a dependency. This means that your Mule
 
 [NOTE]
 Studio uses the EGit plugin to edit API specifications offline. Studio doesn't support the EGit plugin for Mule application projects tracked with your own VCS.
+
+== See Also
+
+* xref:import-api-specification.adoc[]
