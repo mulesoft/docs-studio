@@ -32,7 +32,7 @@ To list all available APIs, type a `*` character in the search bar and press Ent
 
 Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
 
-Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
+Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter with a curved roof over it" 2%,2%]) in the task bar.
 
 == Import and Implement an API Specification from Exchange Into an Existing Project
 
@@ -52,7 +52,7 @@ You can select the version of the API to import in the *Selected Modules* table.
 
 Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
 
-Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
+Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter with a curved roof over it" 2%,2%]) in the task bar.
 
 [NOTE]
 If you want Studio to list your API when searching in Exchange, you must mark your API specification published as an asset as *stable*.
@@ -96,6 +96,8 @@ You must have access to a supported AsyncAPI specification hosted on Anypoint Ex
 When scaffolding an AsyncAPI specification into a Mule project, Studio:
 
 * Introspects the AsyncAPI specification
+* Considers one spec at a time
+* Treats the imported spec as a modification of an existing spec and evaluates it for rescaffolding
 * Creates a new Mule project with a separate flow for each `publish` operation in the specification
 * Produces the configuration properties `file dev-properties.properties` file in the `src/main/resources` directory of your Mule project
 * Makes the APIkit for AsyncAPI module available for use in the project
