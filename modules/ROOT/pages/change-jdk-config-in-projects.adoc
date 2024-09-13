@@ -30,7 +30,7 @@ For example, `Java SE 11`.
 
 == Migrate Your Project to a Different Java Version
 
-Studio 7.17.0 and later are compatible with Java 17, so you can upgrade connectors and apps in your projects to obtain its latest features. 
+Studio 7.17.0 and later are compatible with Java 17, so you can upgrade modules and apps in your projects to obtain its latest features. 
 
 . Right-click on your Studio project.
 . Navigate to *Build Path*, and click *Configure Build Path*.
@@ -50,8 +50,8 @@ In Studio 7.19.0 and later, you can check if the modules in your Mule project ar
 . Right-click on the name of your project.
 . Select *Mule* > *Java 17 Module Compatibility*.
 +
-Studio analyzes the modules in your Mule project and shows the connectors that aren't Java 17 compatible in the *Problems* tab.  
-. xref:update-modules.adoc[Update modules] that aren’t Java 17 compatible.
+Studio analyzes the modules in your Mule project and shows the modules that aren't Java 17 compatible in the *Problems* tab.  
+. xref:update-modules.adoc[Update the modules] that aren’t Java 17 compatible.
 
 == See Also
 
