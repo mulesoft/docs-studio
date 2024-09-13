@@ -70,22 +70,6 @@ Studio supports the implementation of AsyncAPI 2.6 specs. When creating an imple
 
 For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
 
-=== Access AsyncAPI Implementation Features
-
-. Open Anypoint Code Builder landing page on your Anypoint Platform cloud host (https://anypoint.mulesoft.com/codebuilder/[US] or https://eu1.anypoint.mulesoft.com/codebuilder/[EU]). 
-+
-You must sign in. The *Terms & Conditions* button is available to the organization administrator only.
-. If the message *AsyncAPI Beta is now available in Anypoint Code Builder and Anypoint Studio* appears on the page, ask your organization administrator to join the Beta program by:
-.. Clicking *Join Beta* from the Anypoint Code Builder landing page
-+
-The *Join Beta* button is available only to your organization administrator.
-.. Reviewing the terms and conditions of the beta program
-.. Clicking *Get Access*
-+
-When the AsyncAPI feature is available for your organization, the Anypoint Code Builder landing page provides the following notification:
-+
-*AsyncAPI Implementation Beta for Anypoint Code Builder and Studio is enabled for your organization.*
-
 [NOTE]
 You must have access to a supported AsyncAPI specification hosted on Anypoint Exchange. If your AsyncAPI specification isn't published to Exchange, see xref:design-center::design-publish.adoc[]. To create an AsyncAPI specification before publishing to Exchange, see xref:design-center::design-async-api.adoc[] in the Design Center documentation.
 
