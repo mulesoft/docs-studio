@@ -16,7 +16,7 @@ Learn more about compatible versions of Java at xref:studio-release-notes.adoc[]
 +
 image::installed-jres.png["A table listing installed Java runtime environments with names, locations, and types"]
 +
-If your installed JRE version does not appear, you must configure it:
+If your installed JRE version doesn’t appear, you must configure it:
 +
 .. Go to *Add* and select your installed JRE type:
 ** `MacOS X VM` for MacOS.
