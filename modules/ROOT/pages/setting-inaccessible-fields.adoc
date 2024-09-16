@@ -1,0 +1,12 @@
+= Setting Inaccessible Fields 
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Improve your Mule project running on Java 17 or later by configuring the Studio debugger to hide inaccessible fields and methods.
+
+* Hide inaccessible fields: Focus on relevant and accessible data to make the debugging process more efficient. Avoid accessing fields you can't interact with.
+* Hide public methods invoked to retrieve inaccessible field values: Maintain the security and integrity of your application by avoiding access to or modification of data through methods not intended for public use.
+* Use public methods with assignable return types to retrieve inaccessible field values: Ensure consistency and predictability in data accessibility and manipulation.
+
+image::mute-disable-error-breakpoints.png["Inaccessible field preferences highlighted in the debugger tab."]
