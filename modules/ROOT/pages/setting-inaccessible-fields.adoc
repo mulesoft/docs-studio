@@ -5,7 +5,9 @@ endif::[]
 
 Improve your Mule project running on Java 17 or later by configuring the Studio debugger to hide inaccessible fields and methods.
 
-* Hide inaccessible fields: Focus on relevant and accessible data to make the debugging process more efficient. Avoid accessing fields you can't interact with.
+* Hide inaccessible fields:
++
+Focus on relevant and accessible data to make the debugging process more efficient. Avoid accessing fields you can't interact with.
 * Hide public methods invoked to retrieve inaccessible field values: Reduce the verbosity of the debugger output. When the debugger is unable to directly access a field, it attempts to call public methods that can provide the value of that field. If enabled, the debugger doesn't display the method used to retrieve the field value. This helps to minimize clutter and noise on the screen, making the debugging process cleaner and more focused.
 * Use public methods with assignable return types to retrieve inaccessible field values: Ensure consistency and predictability in data accessibility and manipulation.
 
