@@ -108,4 +108,3 @@ Studio doesn't support the scaffolding of AsyncAPI, OAS, or JSON schema fragment
 * xref:api-development-studio.adoc[]
 * xref:api-sync.adoc[]
 * xref:set-credentials-in-studio-to.adoc[]
-* https://trailhead.salesforce.com/trailblazer-community/topics/mulesofteda?sort=LAST_MODIFIED_DATE_DESC[Provide feedback about the AsyncAPI feature]
