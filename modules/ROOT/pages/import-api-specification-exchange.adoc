@@ -104,19 +104,13 @@ For supported bindings and channels, see xref:apikit::apikit-for-asyncapi-suppor
 [NOTE]
 Studio doesn't support the scaffolding of AsyncAPI, Avro, OAS, or JSON schema fragment files that are referenced from API specs. The scaffolder doesn't add these fragments as project dependencies when you import the specification from Exchange. However, you can scaffold and reference fragments that are specified inline, within the spec. RAML fragments imported from Exchange aren't affected by this limitation.
 
-=== Implement AsyncAPI Fragments
+=== Considerations About Importing and Scaffolding AsyncAPI Specs and Fragments
 
-Create your API fragment in Design Center and implement it in Studio. 
-
-. Import and implement the API fragment in Studio. 
-. Rescaffold the spec to update your Mule project.
-. Publish your API spec with the new fragment to Exchange.
-
+* You can't create AsyncAPI specs or fragments in Studio.
+* AsyncAPI APIs use message brokers for communication.
++
 For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
-For learning about Avro schemas, see xref:apikit::apikit-asyncapi-avro-support.adoc[].
-
-[NOTE]
-Studio doesn't support creating AsyncAPI specs or Avro fragments.
+* If the imported Async API has an Avro fragment, see xref:apikit::apikit-asyncapi-avro-support.adoc[].
 
 == See Also
 
