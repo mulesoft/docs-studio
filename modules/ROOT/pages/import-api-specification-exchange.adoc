@@ -28,7 +28,7 @@ To list all available APIs, type a `*` character in the search bar and press Ent
 . To select the version of the API to import, use the *Selected Modules* table.
 . Click *Finish*.
 
-Studio scaffolds your API spec. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
+By default, Studio scaffolds your API spec. To prevent Studio from creating flows out of your API spec, unselect *Scaffold Flows From These API Specifications*.
 
 Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
 
