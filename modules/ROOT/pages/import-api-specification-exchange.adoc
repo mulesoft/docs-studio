@@ -28,7 +28,7 @@ To list all available APIs, type a `*` character in the search bar and press Ent
 . To select the version of the API to import, use the *Selected Modules* table.
 . Click *Finish*.
 
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
+By default, Studio scaffolds your API spec. To prevent Studio from creating flows out of your API spec, unselect *Scaffold Flows From These API Specifications*.
 
 Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
 
@@ -48,7 +48,7 @@ To list all available APIs, type a `*` character in the search bar and press Ent
 You can select the version of the API to import in the *Selected Modules* table.
 . Click *Finish*.
 
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect *Scaffold Flows From These API Specifications*.
+By default, Studio scaffolds your API spec. To prevent Studio from creating flows out of your API spec, unselect *Scaffold Flows From These API Specifications*.
 
 Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
 
@@ -99,9 +99,18 @@ Errors can occur during the scaffolding process:
 * If unsupported message broker protocols are used
 +
 For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
+For supported bindings and channels, see xref:apikit::apikit-for-asyncapi-supported-bindings.adoc[Supported Bindings and Parametrized Channels].
 
 [NOTE]
-Studio doesn't support the scaffolding of AsyncAPI, OAS, or JSON schema fragment files that are referenced from API specs. The scaffolder doesn't add these fragments as project dependencies when you import the specification from Exchange. However, you can scaffold and reference fragments that are specified inline, within the spec. RAML fragments imported from Exchange aren't affected by this limitation.
+Studio doesn't support the scaffolding of AsyncAPI, Avro, OAS, or JSON schema fragment files that are referenced from API specs. The scaffolder doesn't add these fragments as project dependencies when you import the specification from Exchange. However, you can scaffold and reference fragments that are specified inline, within the spec. RAML fragments imported from Exchange aren't affected by this limitation.
+
+=== Considerations About Importing and Scaffolding AsyncAPI Specs and Fragments
+
+* You can't create AsyncAPI specs or fragments in Studio.
+* AsyncAPI APIs use message brokers for communication.
++
+For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
+* If the imported Async API has an Avro fragment, see xref:apikit::apikit-asyncapi-avro-support.adoc[].
 
 == See Also
 
