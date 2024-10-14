@@ -46,7 +46,7 @@ image::staged-changes-section.png["The white box labeled "Staged Changes (0)" wi
 
 [calloutlist]
 . image:remove-stage-icons.png["A rectangular button"] *Remove selected files from the index* +
-Removes the selected file from the the index.
+Removes the selected file from the index.
 . image:remove-all-stage-icons.png["Two rectangular buttons are stacked on top of each other"] *Remove all files including not selected ones from the index* +
 Removes all files in the staged section from the index.
 
@@ -58,7 +58,7 @@ Opens the version of your file with your local changes.
 . image:compare-with-index-icon-stage.png["Two icons, one with a plus sign and an arrow, the other a window with a bar at the top"] *Compare with Working Tree* +
 Compares your staged changes to the changes in your local copy.
 . image:remove-from-index-icon-stage.png["A rectangular button"] *Remove from Index* +
-Removes the selected file from the the index.
+Removes the selected file from the index.
 . *Replace with HEAD Revision* +
 Discards uncommitted changes to your file.
 
