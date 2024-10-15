@@ -43,6 +43,18 @@ If you select Java 17 for your project, Studio automatically searches Exchange a
 
 If you find issues, you can xref:compatibility-issues-runtime-java.adoc[troubleshoot them] and then xref:deploy-mule-application-task.adoc[deploy your project to the appropriate environment] with Java compatibility checks.
 
+== Verify Java 17 Tooling
+
+In Studio 7.19.0 and later, your new Mule projects use JDK 17 by default and the bundled modules in your Mule projects must be Java 17 compatible. If you have issues with the modules that use previous versions of Java:
+
+. Go to *Settings* > *Anypoint Studio* > *Tooling*.
+. In the *Life cycle* section, select Java 17 as the Java virtual machine for Studio services.
+. Click *Apply and Close*.
++
+The Studio services restart and the tooling instance restarts using Java 17.
+
+To ensure your modules are Java 17 compatible, use the Java 17 module compatibility tool.
+
 == Verify Java 17 Module Compatibility
 
 In Studio 7.19.0 and later, you can check if the modules in your Mule project are Java 17 compatible:
