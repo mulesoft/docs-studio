@@ -53,7 +53,7 @@ In Studio 7.19.0 and later, your new Mule projects use JDK 17 by default and the
 +
 The Studio services restart and the tooling instance restarts using Java 17.
 
-To ensure your modules are Java 17 compatible, use the Java 17 module compatibility tool.
+To ensure your modules are Java 17 compatible, use the xref:change-jdk-config-in-projects.adoc#verify-java-17-module-compatibility[Java 17 module compatibility tool].
 
 == Verify Java 17 Module Compatibility
 
