@@ -386,7 +386,6 @@ components:
 
 ----
 
-
 === Access AsyncAPI Implementation Features
 
 . Open Anypoint Code Builder landing page on your Anypoint Platform cloud host (https://anypoint.mulesoft.com/codebuilder/[US] or https://eu1.anypoint.mulesoft.com/codebuilder/[EU]). 
