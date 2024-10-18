@@ -72,6 +72,321 @@ Studio supports the implementation of AsyncAPI 2.6 specs. When creating an imple
 
 For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
 
+== Example AsyncAPI 2.6 Specification
+
+Following is an example that you can replicate to get started with event-driven APIs.
+
+The following API specification example defines a typical event-driven process that uses Anypoint MQ and Kafka protocols. Sections in the example specification are:
+
+* AsyncAPI +
+Identifies the API model as AsyncAPI and specifies the title and version of the API spec.
+
+* Servers +
+Defines message brokers that determine the connectors to use (indirectly) when publishing events or subscribing to events through operations in the AsyncAPI module:
+
+** `AMQ-prod` configures an Anypoint MQ Broker
+
+** `Kafka-prod` configures a locally hosted Kafka broker
+
+* Operation +
+Defines the action that the application takes and whether the event is consumed or published.
+
+* Channels +
+Defines the bindings:
+
+** `order-placed`, `order-cancelled`, and `order-confirmed` configures Anypoint MQ channels for publishing and subscribing to orders
+
+** `order-backordered` configures a Kafka channel for publishing and subscribing to backorders
+
+* Components +
+Defines the structure of messages for the different types of orders, which include OrderPlaced, OrderCancelled, OrderConfirmed, and BackOrder.
+
+[source,yaml]
+----
+asyncapi: '2.6.0'
+info:
+  title: Orders AsyncAPI
+  version: '1.0.0'
+  description: Orders API
+  license:
+    name: Anypoint MQ
+    url: https://license.com
+  contact:
+    name: Max Muley
+    email: max@salesforce.com
+    url: http://salesforce.com
+defaultContentType: application/json
+tags:
+  - name: Orders API
+    description: API for orders
+servers:
+  AMQ-prod:
+    url: https:://your_MQ_server_URL_here
+    protocol: anypointmq
+    protocolVersion: v1
+    description: Anypoint MQ broker
+  kafka-prod:
+    url: your_kafka_URL_here
+    protocol: kafka
+    description: kafka broker
+  sfpubsub-prod:
+      protocol: salesforcepubsub
+      protocolVersion: v1
+      url: api.pubsub.salesforce.com
+      description: Salesforce pub sub for Platform events production
+  solace-server:
+    protocol: solace
+    variables:
+      port:
+        enum:
+        - '1000'
+    bindings:
+      solace:
+        msgVpn: your_solace_vpn_here
+        bindingVersion: 0.4.0
+    protocolVersion: 1.0.0
+    url: mySolaceURL
+channels: 
+  order-placed:
+    description: new orders channel
+    servers:
+      - AMQ-prod
+    publish:
+      operationId: listen-order-placed
+      description: listen for new order events
+      summary: Order Placed Event
+      message:
+        $ref: '#/components/messages/OrderPlaced'
+    subscribe:
+      operationId: publish-order-placed
+      description: publish new order events
+      summary: Order Placed Event
+      message:
+        $ref: '#/components/messages/OrderPlaced'
+  order-updated:
+    description: updated orders channel
+    servers:
+      - solace-server
+    publish:
+      operationId: listen-order-updated
+      description: listen for updated order events
+      summary: Order updated Event
+      bindings:
+        solace:
+          bindingVersion: 0.3.0
+          destinations:
+          - destinationType: queue
+            queue:
+              name: listen-order-updated
+              topicSubscriptions:
+              - acmeretail/onlineservices/order/updated/v1/*/*
+              - acmeretail/onlineservices/order/updated/v2/*/*
+      message:
+        $ref: '#/components/messages/OrderUpdated'
+    subscribe:
+      operationId: publish-order-updated
+      description: publish updated order events
+      summary: Order updated Event
+      bindings:
+        solace:
+          bindingVersion: 0.3.0
+          destinations:
+          - destinationType: queue
+            queue:
+              name: C360.CUSTOMERS
+              topicSubscriptions:
+              - acmeretail/onlineservices/order/updated/v1/*/*
+              - acmeretail/onlineservices/order/updated/v2/*/*
+      message:
+        $ref: '#/components/messages/OrderUpdated'
+  order-cancelled:
+    description: orders cancelled channel
+    servers:
+      - AMQ-prod
+    publish:
+      operationId: listen-order-cancellations
+      description: listen for order cancellation events
+      summary: Order Cancelled Event
+      message:
+        $ref: '#/components/messages/OrderCancelled'
+    subscribe:
+      operationId: publish-order-cancellations
+      description: publish order cancellation events
+      summary: Order Cancelled Event
+      message:
+        $ref: '#/components/messages/OrderCancelled'
+  order-confirmed:
+    description: orders confirmed channel
+    servers:
+      - sfpubsub-prod
+    publish:
+      operationId: listen-order-confirmations
+      description: listen for order confirmation events
+      summary: Order Confirmed Event
+      message:
+        $ref: '#/components/messages/OrderConfirmedSub'
+    subscribe:
+      operationId: publish-order-confirmations
+      description: publish order confirmation events
+      summary: Order Confirmed Event
+      message:
+        $ref: '#/components/messages/OrderConfirmedPub'
+  order-backordered:
+    servers:
+      - kafka-prod
+    description: orders backordered channel
+    publish:
+      operationId: listen-order-backordered
+      description: listen for backorder events
+      summary: Backorder Event
+      message:
+        $ref: '#/components/messages/BackOrder'
+    subscribe:
+      operationId: publish-order-backordered
+      description: publish backorder events
+      summary: Backorder Event
+      message:
+        $ref: '#/components/messages/BackOrder'
+components:
+  messages:
+    OrderPlaced:
+      payload:
+        type: object
+        properties:
+          orderId:
+            type: string
+          customerName:
+            type: string
+          email:
+            type: string
+          items:
+            type: array
+            items:
+              type: object
+              properties:
+                productId:
+                  type: string
+                productName:
+                  type: string
+                quantity:
+                  type: integer
+                price:
+                  type: number
+              required: [productId, productName, quantity, price]
+              additionalProperties: false
+        required: [orderId, customerName, email, items]
+        additionalProperties: false  
+    OrderConfirmedPub:
+      summary: order message pub
+      contentType: application/json
+      payload:
+        type: array
+        orderconfirmation: 
+          type: object
+          properties:
+            orderId__c:
+              type: string
+            email__c:
+              type: string
+            required: [orderId, email]
+            additionalProperties: false  
+    OrderConfirmedSub:
+      summary: order message sub
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          event:
+            type: object
+            properties:
+              orderId__c:
+                type: string
+              email__c:
+                type: string
+        required: [orderId, email]
+        additionalProperties: false  
+    OrderCancelled:
+      payload:
+        type: object
+        properties:
+          orderId:
+            type: string
+          email:
+            type: string
+          reason:
+            type: string
+        required: [orderId, email, reason]
+        additionalProperties: false
+    BackOrder:
+      payload:
+        type: object
+        properties:
+          orderId:
+            type: string
+          email:
+            type: string
+        required: [orderId, email]
+        additionalProperties: false
+    OrderUpdated:
+      contentType: application/json
+      description: Shows changes to customer information including name, address and
+        loyalty status
+      payload:
+        "$ref": "#/components/schemas/Order_JSON"
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      x-ep-application-domain-id: p4oo2ehrcpf
+      x-ep-application-domain-name: OnlineServices
+      x-ep-custom-attr-confidential: 'true'
+      x-ep-event-id: 66gdcid5pht
+      x-ep-event-name: Customer Created
+      x-ep-event-state-id: '2'
+      x-ep-event-state-name: RELEASED
+      x-ep-event-version: 2.0.2
+      x-ep-event-version-displayname: ''
+      x-ep-event-version-id: 29btjydowi0
+      x-ep-shared: 'true'
+  schemas:
+    Order_JSON:
+      "$schema": http://json-schema.org/draft-07/schema#
+      properties:
+        customer_id:
+          description: The unique identifier of the customer
+          type: string
+        insight_description:
+          description: A brief description of the insight
+          type: string
+        insight_type:
+          description: The type of insight (e.g., demographic, behavioral, transactional)
+          type: string
+        insight_value:
+          description: The value or result of the insight
+          type: string
+        timestamp:
+          description: The timestamp when the insight was generated
+          format: date-time
+          type: string
+      required:
+      - customer_id
+      - insight_type
+      - insight_description
+      - insight_value
+      - timestamp
+      title: CustomerInsight
+      type: object
+      x-ep-application-domain-id: a3hbbd7unz2
+      x-ep-application-domain-name: Customer360
+      x-ep-schema-id: 6dqkacw0k70
+      x-ep-schema-name: Customer Insight
+      x-ep-schema-state-id: '1'
+      x-ep-schema-state-name: DRAFT
+      x-ep-schema-version: 0.1.0
+      x-ep-schema-version-displayname: ''
+      x-ep-schema-version-id: u15ylfss2qx
+      x-ep-shared: 'false'
+
+----
+
+
 === Access AsyncAPI Implementation Features
 
 . Open Anypoint Code Builder landing page on your Anypoint Platform cloud host (https://anypoint.mulesoft.com/codebuilder/[US] or https://eu1.anypoint.mulesoft.com/codebuilder/[EU]). 
