@@ -1,0 +1,42 @@
+= Configure Anypoint Platform PCE 4.x in Studio
+
+Anypoint Studio 7.19 and later supports native integration with Anypoint Platform PCE version 4.0.0. The following topic covers how to configure Studio with Anypoint Platform PCE 4.0 in a MacOS environment.
+
+== Configure Your PCE Certificates into Studio
+
+Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
+
+=== Determine the Java Version and Location
+
+. Open Anypoint Studio.
+. Navigate to *Anypoint Studio > Settings...> Preferences > Java > Installed JRES*.
+. Check the location of the JRE you use: Java 8 or Java 17.
+
+=== Export the Certificate using the Platform DNS
+
+To export the certificate, run the following command by replacing `<ANYPOINT_DNS>` with your actual server URL:
+
+
+`keytool -printcert -sslserver <ANYPOINT_DNS>:443 -rfc > /tmp/PCE_Certificate.cer`
+
+For example:
+
+[source,xml,linenums]
+----
+keytool -printcert -sslserver $ANYPOINT_DNS:443 -rfc > /tmp/PCE_Certificate.cer
+----
+
+=== Import the Certificate
+
+To import the certificate, run the following command by replacing `<JAVA_HOME>` with the path to your embedded Java in Anypoint Studio:
+
+`sudo keytool -import -trustcacerts -keystore <JAVA_HOME>/lib/security/cacerts -storepass changeit -file /tmp/PCE_Certificate.cer`
+
+For example when using embedded Java 17:
+
+[source,xml,linenums]
+----
+sudo keytool -import -trustcacerts -keystore /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.3.0/Contents/Home/jre/lib/security/cacerts -storepass changeit -file /tmp/PCE_Certificate.cer`
+----
+
+After completion you can add your credentials and connect Anypoint Platform PCE from Studio.
