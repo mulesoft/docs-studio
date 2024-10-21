@@ -12,10 +12,11 @@ Follow these steps to integrate your Studio installation with the Anypoint Platf
 . Navigate to *Anypoint Studio > Settings...> Preferences > Java > Installed JRES*.
 . Check the location of the JRE you use: Java 8 or Java 17.
 
+image::pce4-jre-location.png["JRE location in Anypoint Studio"]
+
 === Export the Certificate using the Platform DNS
 
 To export the certificate, run the following command by replacing `<ANYPOINT_DNS>` with your actual server URL:
-
 
 `keytool -printcert -sslserver <ANYPOINT_DNS>:443 -rfc > /tmp/PCE_Certificate.cer`
 
@@ -39,4 +40,18 @@ For example when using embedded Java 17:
 sudo keytool -import -trustcacerts -keystore /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.3.0/Contents/Home/jre/lib/security/cacerts -storepass changeit -file /tmp/PCE_Certificate.cer`
 ----
 
-After completion you can add your credentials and connect Anypoint Platform PCE from Studio.
+=== Set a Private Cloud Instance URL
+
+. In Studio, open the preferences view. +
+Navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
+. Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
++
+image::reuse::studio-anypoint-platform-settings.png[alt="Anypoint Studio highlighted in the navigation bar."]
+. Select the *Use a Private Cloud Instance URL*.
+. Type the URL of your PCE installation in the *Private Cloud Instance URL* field.
++
+image::studio::pce-properties.png["*Private Cloud Instance URL* field highlighted in the in the *PCE Settings* section."]
+. Click *Apply and Close*.
+. Restart Studio.
+
+include::studio::partial$pce-configuration-macos.adoc[tag=pce-user-config]
