@@ -1,6 +1,6 @@
 = Configure Anypoint Platform PCE 4.x in Studio
 
-Anypoint Studio 7.19 and later supports native integration with Anypoint Platform PCE version 4.0.0. The following topic covers how to configure Studio with Anypoint Platform PCE 4.0 in a MacOS environment.
+Anypoint Studio 7.19 and later supports native integration with Anypoint Platform PCE version 4.0.0. 
 
 == Configure Your PCE Certificates into Studio
 
