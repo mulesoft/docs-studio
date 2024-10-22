@@ -81,7 +81,7 @@ When scaffolding an AsyncAPI specification into a Mule project, Studio:
 * Considers one spec at a time
 * Treats the imported spec as a modification of an existing spec and evaluates it for rescaffolding
 * Creates a new Mule project with a separate flow for each `publish` operation in the specification
-* Generates no flow.xml if the AsyncAPI spec doesn’t include a `publish` operation
+* Generates an empty XML file with the name of your Mule project if the AsyncAPI spec doesn’t include a `publish` operation
 * Produces the configuration properties `file dev-properties.properties` file in the `src/main/resources` directory of your Mule project
 * Makes the APIkit for AsyncAPI module available for use in the project
 +
