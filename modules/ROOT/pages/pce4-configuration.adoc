@@ -4,7 +4,7 @@ Anypoint Studio 7.19 and later supports native integration with Anypoint Platfor
 
 == Configure Your PCE Certificates into Studio
 
-Follow these steps to integrate your Studio installation with the Anypoint Platform components in a PCE deployment:
+Follow these steps to integrate your Studio installation with Anypoint Platform PCE 4.0 in a MacOS environment:
 
 === Determine the Java Version and Location
 
