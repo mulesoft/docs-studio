@@ -80,21 +80,21 @@ When scaffolding an AsyncAPI specification into a Mule project, Studio:
 * Introspects the AsyncAPI specification
 * Considers one spec at a time
 * Treats the imported spec as a modification of an existing spec and evaluates it for rescaffolding
-* Creates a new Mule project with a separate flow for each `publish` operation in the specification
-* Generates an empty XML file with the name of your Mule project if the AsyncAPI spec doesn’t include a `publish` operation
+* Creates a new Mule project with a separate flow for each *publish* operation in the specification
+* Generates an empty XML file with the name of your Mule project if the AsyncAPI spec doesn’t include a *publish* operation
 * Produces the configuration properties `file dev-properties.properties` file in the `src/main/resources` directory of your Mule project
 * Makes the APIkit for AsyncAPI module available for use in the project
 +
 The module provides the following operations:
 
-** *Publish* (`<apikit-asyncapi:publish/>`): AsyncAPI `subscribe` operations in the specification are available for configuration as AsyncAPI *Publish* operations.
-** *Message Listener* (`<apikit-asyncapi:message-listener/>`): AsyncAPI `publish` operations in the specification are configurable *Message Listener* (not *Publish*) operations.
+** *Publish* (`<apikit-asyncapi:publish/>`): AsyncAPI *subscribe* operations in the specification are available for configuration as AsyncAPI *Publish* operations.
+** *Message Listener* (`<apikit-asyncapi:message-listener/>`): AsyncAPI *publish* operations in the specification are configurable *Message Listener* (not *Publish*) operations.
 +
-The scaffolder transforms each `publish` operation into a *Message Listener* operation.
+The scaffolder transforms each *publish* operation into a *Message Listener* operation.
 +
 If a *Message Listener* receives an invalid message, it’s sent to the dead-letter queue (you must set up one dead-letter queue).
 
-* Generates a `global-configs.xml` file with connection configurations for *Message Listener* and *Publish* operations in the AsyncAPI module and for any connectors that the module depends on.
+* Generates a `global-configs.xml` file with connection configurations for *Message Listener* and *Publish* operations in the AsyncAPI module and for any connectors the module depends on.
 
 
 Errors can occur during the scaffolding process:
