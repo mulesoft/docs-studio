@@ -1,0 +1,6 @@
+= Configure Anypoint Platform PCE 3.x in Studio
+
+Anypoint Studio 7.12 and later supports native integration with PCE version 3.0.0, 3.0.1, and 3.0.2. Review the following articles for the configuration according to your operative system:
+
+* xref:pce-configuration-macos.adoc[MacOS]
+* xref:pce-configuration-windows.adoc[Windows]
