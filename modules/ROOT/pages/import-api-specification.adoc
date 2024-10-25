@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-include::reuse::partial$beta-banner.adoc[tag="studio-asyncapi"]
-
 Import and implement an API spec into either a new Mule project or an existing one in Studio from Exchange, Maven, your local drive, or Design Center.
 
 Studio supports the following API specs:
