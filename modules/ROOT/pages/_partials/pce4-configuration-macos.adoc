@@ -10,7 +10,7 @@ Integrate your Studio installation with the Anypoint Platform components in a PC
 === Determine the Java Version and Location
 
 . Open Studio.
-. Go to *Anypoint Studio > Settings> Preferences > Java > Installed JRES*.
+. Go to *Anypoint Studio* > *Settings* > *Preferences* > *Java* > *Installed JRES*.
 . Check the location of the JRE you use: Java 8 or Java 17.
 
 image::pce4-jre-location.png["JRE location in Anypoint Studio"]
