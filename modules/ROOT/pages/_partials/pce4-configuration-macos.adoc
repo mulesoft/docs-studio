@@ -1,11 +1,11 @@
 // tag::pce4macOS[]
 
 
-Anypoint Studio 7.19 and later adds support for Anypoint Platform PCE version 4.0.0. in macOS. 
+Anypoint Studio 7.19 and later adds support for Anypoint Platform Private Cloud Edition (Anypoint Platform PCE) version 4.0.0. in macOS. 
 
 == Configure Your PCE Certificates into Studio
 
-Integrate your Studio installation with the Anypoint Platform components in a PCE deployment.
+Integrate your Studio installation with the Anypoint Platform components in an Anypoint Platform PCE deployment.
 
 === Determine the Java Version and Location
 
