@@ -65,6 +65,8 @@ In Studio 7.19.0 and later, you can check if the modules in your Mule project ar
 Studio analyzes the modules in your Mule project and shows the modules that aren't Java 17 compatible in the *Problems* tab.  
 . xref:update-modules.adoc[Update the modules] that aren’t Java 17 compatible.
 
+image::java-17-tooling.png["The problems tab is open, with one warning and three Java module compatibility notifications"]
+
 == See Also
 
 * xref:general::java-support.adoc[]
