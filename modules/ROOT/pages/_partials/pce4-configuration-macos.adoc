@@ -34,7 +34,7 @@ Run the following command by replacing `<JAVA_HOME>` with the path to your embed
 
 `sudo keytool -import -trustcacerts -keystore <JAVA_HOME>/lib/security/cacerts -storepass changeit -file /tmp/PCE_Certificate.cer`
 
-For example if you're using the embedded Java 17:
+For example, if you're using the embedded Java 17:
 
 [source,xml,linenums]
 ----
