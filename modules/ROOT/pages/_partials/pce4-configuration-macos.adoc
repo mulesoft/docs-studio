@@ -43,7 +43,8 @@ sudo keytool -import -trustcacerts -keystore /Applications/AnypointStudio.app/Co
 
 === Set a Private Cloud Instance URL
 
-. In Studio, go to *Anypoint Studio* > *Preferences* > *Anypoint Studio* > *Anypoint Platform*.
+. In Studio, go to *Anypoint Studio* > *Settings*.
+. Select *Anypoint Studio* > *Anypoint Platform*.
 +
 image::reuse::studio-anypoint-platform-settings.png[alt="Anypoint Studio highlighted in the navigation bar."]
 . Select the *Use a Private Cloud Instance URL*.
