@@ -83,8 +83,10 @@
 * xref:eu-cloud-configuration.adoc[Configure EU Cloud in Studio]
 
 * xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
- ** xref:pce-configuration-macos.adoc[MacOS]
- ** xref:pce-configuration-windows.adoc[Windows]
+ ** xref:pce4-configuration.adoc[Configure PCE 4 in Studio]
+ ** xref:pce3-configuration.adoc[Configure PCE 3 in Studio]
+ *** xref:pce-configuration-macos.adoc[MacOS]
+ *** xref:pce-configuration-windows.adoc[Windows]
 
 * xref:login-platform-from-studio.adoc[]
  ** xref:set-credentials-in-studio-to.adoc[]

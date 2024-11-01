@@ -1,0 +1,3 @@
+= Configure Anypoint Platform PCE 4.x in Studio
+
+include::studio::partial$pce4-configuration-macos.adoc[tag=pce4macOS]
