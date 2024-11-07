@@ -1,5 +1,11 @@
 = Secure Storage Overview
 
+Do not
+
+Blacklist
+
+I will do
+
 Anypoint Studio 7.10 and earlier versions stored the information of authenticated users in the workspace, meaning that you could have different authenticated users per workspace.
 
 Studio 7.11 and later introduce Secure Storage, provided by Eclipse to encrypt and save your credentials.
