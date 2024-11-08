@@ -1,0 +1,12 @@
+= Setting Anypoint Platform Cloud in Studio
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can deploy your Mule applications from Anypoint Studio to the Anypoint Platform Cloud. 
+
+From Studio, you can:
+
+* xref:deploy-mule-application-task.adoc[Deploy to CloudHub]
+* xref:domain-support-concept.adoc[Configure domain support]
+* Set up specific cloud environments like xref:eu-cloud-configuration.adoc[EU Cloud], xref:pce-configuration.adoc[Private Cloud Edition] (xref:pce3-configuration.adoc[PCE 3] and xref:pce4-configuration.adoc[PCE 4]), Hyperforce, or xref:govcloud-config.adoc[Government Cloud]
