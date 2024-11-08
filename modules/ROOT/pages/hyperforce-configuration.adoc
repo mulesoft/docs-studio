@@ -48,7 +48,7 @@ Hyperforce is available in these regions:
 
 . Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
 . Select *Use this control plane* in *Control Plane Settings*.
-. In *Control Plane URL*, write the URL of the region to which your Mule app must be deployed:
+. In *Control Plane URL*, write the URL of the region to which your Mule app is deployed:
 * Canada Cloud: ca1.platform.mulesoft.com
 * Japan Cloud: jp1.platform.mulesoft.com
 . Click *Apply and Close*.
