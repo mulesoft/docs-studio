@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: jdk-requirement-lnx-workflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-workflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
 
 . Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 . Extract the Windows installation file into the `C:\` root folder.
