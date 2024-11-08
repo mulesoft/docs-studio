@@ -51,7 +51,7 @@ Hyperforce is available in these regions:
 . In *Control Plane URL*, write the URL of the region to which your Mule app must be deployed:
 * Canada Cloud: ca1.platform.mulesoft.com
 * Japan Cloud: jp1.platform.mulesoft.com
+. Click *Apply and Close*.
 
 == See Also
 * xref:xref:set-anypoint-platform-cloud.adoc[]
- 
