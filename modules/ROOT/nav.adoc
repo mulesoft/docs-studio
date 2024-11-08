@@ -89,6 +89,7 @@
    **** xref:pce-configuration-windows.adoc[Windows]
   *** xref:pce4-configuration.adoc[Configure PCE 4 in Studio]
  ** xref:govcloud-config.adoc[Access MuleSoft Government Cloud from Studio]
+ ** xref:hyperforce-configuration.adoc[]
 
 * xref:secure-storage.adoc[Secure Storage]
 * xref:proxy-settings-task.adoc[Configure Proxy Settings]
