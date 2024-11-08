@@ -53,5 +53,8 @@ Hyperforce is available in these regions:
 * Japan Cloud: jp1.platform.mulesoft.com
 . Click *Apply and Close*.
 
+[NOTE]
+Use the *Select your region* options in the *Region Settings* to deploy your Mule application to US, EU, or GOV clouds.
+
 == See Also
 * xref:xref:set-anypoint-platform-cloud.adoc[]
