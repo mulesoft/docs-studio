@@ -1,3 +1,57 @@
 = Configure Hyperforce in Anypoint Studio
 
-Hyperforce in Studio
+//This intro can be a partial so that all docs have the same intro. Let's consider that users don't read Hyperforce docs but products docs. In this case, for example, Studio docs.
+
+Salesforce Hyperforce (Hyperforce) is a modern, scalable, and secure infrastructure designed to support your MuleSoft application deployments. Hyperforce enables you to deliver Mule apps rapidly and reliably to locations worldwide, giving you more choice and control over data residency. Mule apps benefit from its integration of enhanced standards for compliance, scalability, security, agility, and privacy.
+
+With Hyperforce, you can use a globally distributed and reliable platform to ensure optimal performance and reliability for your integrations and APIs.
+
+Some key benefits:
+
+* Data Residency
++
+Enables you to serve your users globally while maintaining control over data residency and compliance.
+
+* Scalability
++
+Enables you to grow and scale your business more flexibly and sustainably.
+
+* Security
++
+Follows least-privileged control, zero-trust principles, and encrypts data both at rest and in transit.
+
+* Agility
++
+Minimizes downtime for releases and maintenance. Additionally, it accelerates development and testing environments and offers extensive interoperability with AWS, streamlining your workflow.
+
+* Privacy
++
+Provides you privacy standards that give you control and transparency over your users' data.
+
+== Before You Begin
+
+Before deploying Mule apps to Hyperforce your MuleSoft account must have access to a Hyperforce instance. Contact your MuleSoft account representative to provision a MuleSoft license to a Hyperforce instance.
+
+== Hyperforce Supported Regions
+
+Hyperforce is available in these regions:
+
+[%header%autowidth.spread,cols="a,a,a,a"]
+|===
+| Location | Control Plane | Region | Anypoint Platform URL
+| North America | Canada Cloud | ca-central-1 | ca1.platform.mulesoft.com
+| APAC | Japan Cloud | ap-northeast-1 | jp1.platform.mulesoft.com
+|===
+//This intro can be a partial so that all docs have the same intro. Let's consider that users don't read Hyperforce docs but products docs. In this case, for example, Studio docs. 
+
+== Deploy Mule Apps to Hyperforce
+
+. Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
+. Select *Use this control plane* in *Control Plane Settings*.
+. In *Control Plane URL*, write the URL of the region to which your Mule app must be deployed:
+* Canada Cloud: ca1.platform.mulesoft.com
+* Japan Cloud: jp1.platform.mulesoft.com
+
+== See Also
+* xref:xref:set-anypoint-platform-cloud.adoc[]
+ 
