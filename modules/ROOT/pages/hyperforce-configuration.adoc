@@ -1,0 +1,33 @@
+= Configure Hyperforce in Anypoint Studio
+
+Salesforce Hyperforce (Hyperforce) is a modern, scalable, and secure infrastructure for deploying your MuleSoft applications. Deliver Mule apps rapidly and reliably to locations worldwide with more choice and control over data residency. 
+
+You can deploy to these Hyperforce supported regions:
+[%header%autowidth.spread,cols="a,a,a,a"]
+|===
+| Location | Control Plane  | Anypoint Platform URL
+| North America | Canada Cloud  | `+ca1.platform.mulesoft.com+`
+| APAC | Japan Cloud  | `+jp1.platform.mulesoft.com+`
+|===
+
+To deploy Mule apps via Anypoint Studio to these regions, you must configure these Anypoint Platform control plane URLs in the Anypoint Studio UI.
+
+== Before You Begin
+
+Before deploying Mule apps to Hyperforce, your MuleSoft account must have access to a Hyperforce instance. Contact your MuleSoft account representative to provision a MuleSoft license to a Hyperforce instance.
+
+== Configure Hyperforce Control Planes in Anypoint Studio
+
+. Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
+. Under *Control Plane Settings*,  select *Use this control plane*.
+. In *Control Plane URL*, enter the Anypoint Platform URL for the cloud to deploy your Mule app to:
+* Canada Cloud: `+ca1.platform.mulesoft.com+`
+* Japan Cloud: `+jp1.platform.mulesoft.com+`
+. Click *Apply and Close*.
+
+[NOTE]
+Use the *Select your region* options in the *Region Settings* to deploy your Mule application to US, EU, or GOV clouds.
+
+== See Also
+
+* xref:hyperforce::index.adoc[]
