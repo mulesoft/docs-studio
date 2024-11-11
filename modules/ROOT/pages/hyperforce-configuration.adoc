@@ -14,7 +14,7 @@ To deploy Mule apps via Anypoint Studio to these regions, you must configure the
 
 == Before You Begin
 
-Before deploying Mule apps to Hyperforce your MuleSoft account must have access to a Hyperforce instance. Contact your MuleSoft account representative to provision a MuleSoft license to a Hyperforce instance.
+Before deploying Mule apps to Hyperforce, your MuleSoft account must have access to a Hyperforce instance. Contact your MuleSoft account representative to provision a MuleSoft license to a Hyperforce instance.
 
 == Configure Hyperforce Control Planes in Anypoint Studio
 
