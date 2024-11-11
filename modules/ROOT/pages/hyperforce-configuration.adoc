@@ -19,7 +19,7 @@ Before deploying Mule apps to Hyperforce, your MuleSoft account must have access
 == Configure Hyperforce Control Planes in Anypoint Studio
 
 . Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
-. Under *Control Plane Settings*,  select *Use this control plane* .
+. Under *Control Plane Settings*,  select *Use this control plane*.
 . In *Control Plane URL*, write the Anypoint Platform URL of the region to which your Mule app is deployed:
 * Canada Cloud: `+ca1.platform.mulesoft.com+`
 * Japan Cloud: `+jp1.platform.mulesoft.com+`
