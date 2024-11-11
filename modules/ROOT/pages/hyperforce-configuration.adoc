@@ -1,6 +1,6 @@
 = Configure Hyperforce in Anypoint Studio
 
-Salesforce Hyperforce (Hyperforce) is a modern, scalable, and secure infrastructure designed to support your MuleSoft application deployments. Hyperforce enables you to deliver Mule apps rapidly and reliably to locations worldwide, giving you more choice and control over data residency. 
+Salesforce Hyperforce (Hyperforce) is a modern, scalable, and secure infrastructure for deploying your MuleSoft applications. Deliver Mule apps rapidly and reliably to locations worldwide with more choice and control over data residency. 
 
 You can deploy to these Hyperforce supported regions:
 [%header%autowidth.spread,cols="a,a,a,a"]
