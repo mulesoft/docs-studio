@@ -10,7 +10,7 @@ You can deploy to these Hyperforce supported regions:
 | APAC | Japan Cloud  | `+jp1.platform.mulesoft.com+`
 |===
 
-To deploy Mule apps via Anypoint Studio to any of these regions, you must configure these Anypoint Platform control plane URLs in the Anypoint Studio UI.
+To deploy Mule apps via Anypoint Studio to these regions, you must configure these Anypoint Platform control plane URLs in the Anypoint Studio UI.
 
 == Before You Begin
 
