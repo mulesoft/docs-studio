@@ -88,7 +88,7 @@
   *** xref:pce3-configuration.adoc[Configure PCE 3 in Studio]
    **** xref:pce-configuration-macos.adoc[]
    **** xref:pce-configuration-windows.adoc[]
- ** xref:govcloud-config.adoc[Access MuleSoft Government Cloud from Studio]
+ ** xref:govcloud-config.adoc[Configure MuleSoft Government Cloud from Studio]
  ** xref:hyperforce-configuration.adoc[]
 
 * xref:secure-storage.adoc[Secure Storage]
