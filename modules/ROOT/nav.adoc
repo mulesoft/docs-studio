@@ -84,10 +84,10 @@
   *** xref:domain-studio-tasks.adoc[Design Mule Domains]
  ** xref:eu-cloud-configuration.adoc[Configure EU Cloud in Studio]
  ** xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
+  *** xref:pce4-configuration.adoc[Configure PCE 4 in Studio]
   *** xref:pce3-configuration.adoc[Configure PCE 3 in Studio]
    **** xref:pce-configuration-macos.adoc[]
    **** xref:pce-configuration-windows.adoc[]
-  *** xref:pce4-configuration.adoc[Configure PCE 4 in Studio]
  ** xref:govcloud-config.adoc[Access MuleSoft Government Cloud from Studio]
  ** xref:hyperforce-configuration.adoc[]
 
