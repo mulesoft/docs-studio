@@ -79,7 +79,7 @@
  ** xref:set-credentials-in-studio-to.adoc[]
 
 * xref:set-anypoint-platform-cloud.adoc[]
- ** xref:deploy-mule-application-task.adoc[Deploy a Mule Application to CloudHub]
+ ** xref:deploy-mule-application-task.adoc[Deploying Mule Apps to CloudHub]
  ** xref:domain-support-concept.adoc[Domain Support]
   *** xref:domain-studio-tasks.adoc[Design Mule Domains]
  ** xref:eu-cloud-configuration.adoc[Configure EU Cloud in Studio]
