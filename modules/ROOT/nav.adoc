@@ -78,7 +78,7 @@
 * xref:login-platform-from-studio.adoc[]
  ** xref:set-credentials-in-studio-to.adoc[]
 
-* xref:set-anypoint-platform-cloud.adoc[Set Anypoint Platform Cloud]
+* xref:set-anypoint-platform-cloud.adoc[]
  ** xref:deploy-mule-application-task.adoc[Deploy a Mule Application to CloudHub]
  ** xref:domain-support-concept.adoc[Domain Support]
   *** xref:domain-studio-tasks.adoc[Design Mule Domains]
