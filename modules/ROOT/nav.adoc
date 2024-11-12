@@ -80,7 +80,7 @@
 
 * xref:set-anypoint-platform-cloud.adoc[]
  ** xref:deploy-mule-application-task.adoc[Deploy Mule Apps to CloudHub]
- ** xref:domain-support-concept.adoc[Configure Domain Support]
+ ** xref:domain-support-concept.adoc[Configure Domains]
   *** xref:domain-studio-tasks.adoc[Design Mule Domains]
  ** xref:eu-cloud-configuration.adoc[Configure EU Cloud in Studio]
  ** xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
