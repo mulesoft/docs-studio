@@ -7,6 +7,14 @@ You can deploy your Mule applications from Anypoint Studio to the Anypoint Platf
 
 From Studio, you can:
 
-* xref:deploy-mule-application-task.adoc[Deploy to CloudHub]
+* xref:pce3-configuration.adoc[Configure Anypoint Platform PCE 3]
+* xref:pce4-configuration.adoc[Configure Anypoint Platform PCE 4]
+* xref:hyperforce-configuration.adoc[Configure Canada Cloud and Japan Cloud]
 * xref:domain-support-concept.adoc[Configure domain support]
-* Set up specific cloud environments like xref:eu-cloud-configuration.adoc[EU Cloud], xref:pce-configuration.adoc[Private Cloud Edition] (xref:pce3-configuration.adoc[PCE 3] and xref:pce4-configuration.adoc[PCE 4]), Hyperforce, or xref:govcloud-config.adoc[Government Cloud]
+* xref:eu-cloud-configuration.adoc[Configure EU Cloud]
+* xref:govcloud-config.adoc[Configure MuleSoft Government Cloud]
+* xref:deploy-mule-application-task.adoc[Deploy to CloudHub]
+
+== See Also
+
+* xref:pce-configuration.adoc[Anypoint Platform Private Cloud Edition] 
