@@ -3,7 +3,7 @@
 Salesforce Hyperforce (Hyperforce) is a modern, scalable, and secure infrastructure for deploying your MuleSoft applications. Deliver Mule apps rapidly and reliably to locations worldwide with more choice and control over data residency. 
 
 You can deploy to these Hyperforce supported regions:
-[%header%autowidth.spread,cols="a,a,a,a"]
+[%header%autowidth.spread,cols="a,a,a"]
 |===
 | Location | Control Plane  | Anypoint Platform URL
 | North America | Canada Cloud  | `+ca1.platform.mulesoft.com+`
