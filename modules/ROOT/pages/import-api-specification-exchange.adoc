@@ -66,9 +66,9 @@ If the rescaffolding process of your project is successful, your implementation 
 
 == Implement AsyncAPI Specifications
 
-Studio supports the implementation of AsyncAPI 2.6 specs. When creating an implementation project, Studio imports and scaffolds an AsyncAPI spec hosted on Exchange into an API interface that you can implement.
+Studio supports the implementation of AsyncAPI 2.6 specs. When creating an implementation project, Studio imports and scaffolds an AsyncAPI spec hosted on Anypoint Exchange into an implementation project that you can develop further according to your business needs.
 
-For supported protocols, see xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
+Async APIs rely on message brokers to send and receive messages between different services or components in a decoupled manner. The services can send and receive messages without knowing the specific details of the recipient or sender, thus enabling asynchronous communication. For communicating with the recipient and sender, the message brokers use specific protocols. See xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
 
 [NOTE]
 You must have access to a supported AsyncAPI specification hosted on Anypoint Exchange. If your AsyncAPI specification isn't published to Exchange, see xref:design-center::design-publish.adoc[]. To create an AsyncAPI specification before publishing to Exchange, see xref:design-center::design-async-api.adoc[] in the Design Center documentation.
