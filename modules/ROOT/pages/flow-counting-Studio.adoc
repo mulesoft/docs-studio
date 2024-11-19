@@ -5,7 +5,7 @@ endif::[]
 
 In Anypoint Studio 7.20 and later, you can know the number of billable flows your project has.
 
-include::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-prereq"]
+include::partial$code-builder/acb-studio-shared-flow-counting.adoc[tag="flow-counting-prereq"]
 
 include::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-intro"]
 
@@ -14,10 +14,10 @@ include::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-billabl
 == Counting the Flows of Your Project
 
 . In Studio, select your project to know the number of billable flows it has.
-. On the menu, click the *Flow Count* icon image:flow-count-icon.png[""].
+. On the menu, click the *Flow Count* icon image:flow-count-icon.png[2,2%""].
 +
 Studio displays the number if billable flows your Anypoint Platform Organization is charged for running deployed flows.
-
++
 image:flow-count.png["A table displaying the flow names and the type of flows that are billable."]
-
++
 . Click *OK* to close the window.
