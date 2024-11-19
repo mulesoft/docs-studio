@@ -5,11 +5,11 @@ endif::[]
 
 In Anypoint Studio 7.20 and later, you can know the number of billable flows your project has.
 
-include::partial$code-builder/acb-studio-shared-flow-counting.adoc[tag="flow-counting-prereq"]
+include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-prereq"]
 
-include::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-intro"]
+include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-intro"]
 
-include::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-billable-flows"]
+include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-billable-flows"]
 
 == Counting the Flows of Your Project
 
