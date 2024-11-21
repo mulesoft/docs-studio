@@ -42,11 +42,6 @@
   ** xref:update-modules.adoc[Update your Modules]
  ** xref:add-custom-modules-in-studio-to.adoc[Add Custom Modules to Your Project]
 
-* xref:deploy-mule-application-task.adoc[Deploy a Mule Application to CloudHub]
-
-* xref:domain-support-concept.adoc[Domain Support]
- ** xref:domain-studio-tasks.adoc[Design Mule Domains]
-
 * xref:api-search.adoc[Search Inside Your API Specification Dependencies]
 
 * xref:visual-debugger-concept.adoc[Studio Debugger]
@@ -80,23 +75,26 @@
  ** xref:add-another-output-transform-studio-task.adoc[Add Another Output Target]
  ** xref:move-transformations-separate-file-studio-task.adoc[Move Transformations to Separate Files]
 
-* xref:eu-cloud-configuration.adoc[Configure EU Cloud in Studio]
-
-* xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
- ** xref:pce4-configuration.adoc[Configure PCE 4 in Studio]
- ** xref:pce3-configuration.adoc[Configure PCE 3 in Studio]
- *** xref:pce-configuration-macos.adoc[MacOS]
- *** xref:pce-configuration-windows.adoc[Windows]
-
 * xref:login-platform-from-studio.adoc[]
  ** xref:set-credentials-in-studio-to.adoc[]
+
+* xref:set-anypoint-platform-cloud.adoc[]
+ ** xref:deploy-mule-application-task.adoc[Deploy Mule Apps to CloudHub]
+ ** xref:domain-support-concept.adoc[Configure Domains]
+  *** xref:domain-studio-tasks.adoc[Design Mule Domains]
+ ** xref:eu-cloud-configuration.adoc[Configure EU Cloud in Studio]
+ ** xref:pce-configuration.adoc[Configure Private Cloud Edition in Studio]
+  *** xref:pce4-configuration.adoc[Configure PCE 4 in Studio]
+  *** xref:pce3-configuration.adoc[Configure PCE 3 in Studio]
+   **** xref:pce-configuration-macos.adoc[]
+   **** xref:pce-configuration-windows.adoc[]
+ ** xref:govcloud-config.adoc[Configure MuleSoft Government Cloud from Studio]
+ ** xref:hyperforce-configuration.adoc[]
 
 * xref:secure-storage.adoc[Secure Storage]
 * xref:proxy-settings-task.adoc[Configure Proxy Settings]
 * xref:browser-settings.adoc[Configure Studio Browser Settings]
 * xref:change-jdk-config-in-projects.adoc[Select a Different JRE to Run the Embedded Mule Runtime Engine]
-
-* xref:govcloud-config.adoc[Access MuleSoft Government Cloud from Studio]
 
 * xref:studio-update-sites.adoc[Studio Update Sites]
 
