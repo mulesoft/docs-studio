@@ -18,7 +18,7 @@ include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag
 . Select your project.
 . Click the *Flow Count* icon (image:flow-count-icon.png[2,2%""]) in the task bar.
 +
-Studio displays the number if billable flows your Anypoint Platform Organization is charged for running deployed flows.
+Studio displays the number of billable flows your Anypoint Platform Organization is charged for running deployed flows.
 +
 image:flow-count.png["A table displays the billable flow names and type."]
 +
