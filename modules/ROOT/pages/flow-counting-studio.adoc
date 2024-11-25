@@ -13,7 +13,7 @@ include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag
 
 include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-prereq"]
 
-== Count the Flows in Your Project using Studio
+== Count the Flows in Your Project Using Studio
 
 . Select your project.
 . Click the *Flow Count* icon (image:flow-count-icon.png[2,2%""]) in the task bar.
