@@ -45,7 +45,7 @@ You can add either a RAML or OAS 2.0 and 3.0 specification, or a ZIP bundle file
 
 Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
 
-You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the task bar.
+You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the taskbar.
 // end::maven-tasks[]
 
 == Import and Implement an API Specification from Maven Into an Existing Project
