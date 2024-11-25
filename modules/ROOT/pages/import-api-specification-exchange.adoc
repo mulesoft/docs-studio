@@ -30,7 +30,7 @@ To list all available APIs, type a `*` character in the search bar and press Ent
 
 By default, Studio scaffolds your API spec. To prevent Studio from creating flows out of your API spec, unselect *Scaffold Flows From These API Specifications*.
 
-Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
+Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the taskbar.
 
 == Import and Implement an API Specification from Exchange Into an Existing Project
 
@@ -50,7 +50,7 @@ You can select the version of the API to import in the *Selected Modules* table.
 
 By default, Studio scaffolds your API spec. To prevent Studio from creating flows out of your API spec, unselect *Scaffold Flows From These API Specifications*.
 
-Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the task bar.
+Manage the API specifications linked to Exchange in your project from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png["A stylized letter i with a curved roof over it" 2%,2%]) in the taskbar.
 
 [NOTE]
 If you want Studio to list your API when searching in Exchange, you must mark your API specification published as an asset as *stable*.

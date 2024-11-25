@@ -75,4 +75,7 @@ Studio uses the EGit plugin to edit API specifications offline. Studio doesn't s
 
 == See Also
 
+* xref:create-api-specification-studio.adoc[]
 * xref:import-api-specification.adoc[]
+* xref:flow-counting-studio.adoc[]
+* xref:test-specification-api-console.adoc[]
