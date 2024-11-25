@@ -20,7 +20,7 @@ include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag
 +
 Studio displays the number of billable flows your Anypoint Platform organization is charged for running deployed flows.
 +
-image:flow-count.png["A table displays the billable flow names and type."]
+image:flow-count.png["A table showing the billable flow names and type"]
 +
 . Click *OK* to close the window.
 
