@@ -12,7 +12,7 @@ You can't add a local API specification to an existing Mule project.
 . In the taskbar of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
 . Type a name for your project.
 . Select a Mule runtime engine version.
-. In the *API Specification* section, select the *From Design Center or Local Files* tab.
+. In the *API Specification* section, select the *From MuleSoft VCS or Local Files* tab.
 . In the *Location* field, type the location of your local API, or click the *...* button and select *Browse Files*.
 You can import either a RAML file or an entire .zip file bundle if your API has schemas and examples.
 . Click *Finish*.
