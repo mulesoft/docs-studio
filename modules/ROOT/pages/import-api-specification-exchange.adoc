@@ -5,7 +5,7 @@ endif::[]
 
 Import an AsyncAPI, OAS, or RAML API spec into a new or existing Mule project.
 
-If you're using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that isn't available in Exchange, you can import an API spec xref:import-api-specification-local-file.adoc[from a local file] or xref:import-api-specification-design-center.adoc[from Design Center].
+If you're using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer to import an API specification that isn't available in Exchange, you can import an API spec xref:import-api-specification-local-file.adoc[from a local file] or xref:import-api-specification-design-center.adoc[from MuleSoft VCS].
 
 If you can't access Exchange from your work environment, you can import an API specification from your local Maven installation.
 
@@ -71,7 +71,7 @@ Studio supports the implementation of AsyncAPI 2.6 specs. When creating an imple
 Async APIs rely on message brokers to send and receive messages between different services or components in a decoupled manner. The services can send and receive messages without knowing the specific details of the recipient or sender, thus enabling asynchronous communication. For communicating with the recipient and sender, the message brokers use specific protocols. See xref:apikit::apikit-asyncapi-module-reference.adoc#supported-message-brokers[Supported Message Brokers] in APIkit for AsyncAPI Module Reference.
 
 [NOTE]
-You must have access to a supported AsyncAPI specification hosted on Anypoint Exchange. If your AsyncAPI specification isn't published to Exchange, see xref:design-center::design-publish.adoc[]. To create an AsyncAPI specification before publishing to Exchange, see xref:design-center::design-async-api.adoc[] in the Design Center documentation.
+You must have access to a supported AsyncAPI specification hosted on Anypoint Exchange. If your AsyncAPI specification isn't published to Exchange, see xref:design-center::design-publish.adoc[]. To create an AsyncAPI specification before publishing to Exchange, see xref:design-center::design-async-api.adoc[].
 
 === Scaffolding Fundamentals for AsyncAPI Implementations
 
