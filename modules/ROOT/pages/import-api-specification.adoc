@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Import and implement an API spec into either a new Mule project or an existing one in Studio from Exchange, Maven, your local drive, or Design Center.
+Import and implement an API spec into either a new Mule project or an existing one in Studio from Exchange, Maven, your local drive, or MuleSfot VCS.
 
 Studio supports the following API specs:
 
@@ -19,7 +19,7 @@ Studio supports the following API specs:
 * xref:import-api-specification-exchange.adoc[]**
 
 [NOTE]
-See xref:design-center::design-async-api.adoc[] in Design Center for more information about designing even-driven APIs using AsyncAPI in API Designer.
+See xref:design-center::design-async-api.adoc[] for more information about designing even-driven APIs using AsyncAPI in API Designer.
 
 | OpenAPI Specification (OAS) 
 | 2.0 and 3.0 
