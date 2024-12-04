@@ -3,10 +3,10 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-In certain scenarios, someone else can introduces changes in the version in MuleSoft VCS at the same time you modify the same version locally. This triggers a conflict in Git.
+In certain scenarios, someone else can introduce changes in the version in MuleSoft VCS at the same time you modify the same version locally. This triggers a conflict in Git.
 
 For example, you might have modified a file in a branch, while someone else modified this very same file in the same branch directly in MuleSoft VCS. By the time you want to push your changes, Git rejects the push command because it cannot fast-forward your changes to the version in MuleSoft VCS, meaning that you must tell git how to apply your changes over a modified version:
-//_TODO add more information about git conflicts.
+//_TODO add more information about Git conflicts.
 
 . In the Package Explorer view, right-click your API specification project and select *Team* > *Switch To* > *Push Branch...*.
 +
@@ -16,8 +16,8 @@ image::push-branch.png["A dropdown menu displaying choices for a software develo
 image::conflict.png["A window appears with the push results, including the repository URL and message details"]
 . Pull the changes from MuleSoft VCS into your local version.
 +
-image::pull-changes.png["A menu displaying choices for a git repository"]
-. Evaluate the conflicts flagged by git:
+image::pull-changes.png["A menu displaying choices for a Git repository"]
+. Evaluate the conflicts flagged by Git:
 +
 image::flagged-commit.png["A window displaying the outcomes of a fetch and update of flights-api data, with a conflicting result and two merge input choices"]
 
