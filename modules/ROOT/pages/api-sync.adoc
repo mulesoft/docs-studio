@@ -60,7 +60,7 @@ See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API S
 . Create an API specification in Design Center. 
 +
 You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].
-. Import the same API specification from Design Center to your Studio project through MuleSoft VCS. 
+. Import the same API specification from Anypoint Platform to your Studio project through MuleSoft VCS. 
 +
 See xref:sync-api-projects-design-center.adoc[].
 
