@@ -9,8 +9,9 @@ Studio mocking service does not modify the `baseUri` field in your API specifica
 == Prerequisites
 
 * You must have an API specification project created.
-* Your API specification project must be synchronized with Design Center.
-* You must turn on the mocking service. +
+* Your API specification project must be synchronized with MuleSoft VCS.
+* You must turn on the mocking service. 
++
 In your Package Explorer view, right-click your API specification project and select *Manage API Specification* > *Turn on Mocking Service*.
 +
 image::turn-on-mocking-service.png["A menu that displays options for managing a T-shirt ordering service API, such as enabling mocking services and publishing to an exchange"]

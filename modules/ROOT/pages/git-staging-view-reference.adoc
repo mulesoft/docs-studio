@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Git Staging view allows you to control the version control system (VCS) process to edit RAML and OAS 2.0 and 3.0 API specifications offline and push your changes to Design Center.
+The Git Staging view allows you to control the version control system (VCS) process to edit RAML and OAS 2.0 and 3.0 API specifications offline and push your changes to MuleSoft VCS.
 
 == Unstaged Changes section
 
@@ -36,7 +36,7 @@ Adds the selected file to your index to commit.
 Discards uncommitted changes to your file.
 . image:assume-unchanged-icon-unstage.png["An arrow pointing to the right of a bar"] *Assume Unchanged* +
 Excludes the selected file from VCS management. +
-Use this option when you want to ignore a file that you want to change locally but not push to Design Center.
+Use this option when you want to ignore a file that you want to change locally but not push to MuleSoft VCS.
 . image:untrack-icon-unstage.png["A pair of glasses with a red button on the bottom right corner"] *Untrack* +
 //_TODO
 

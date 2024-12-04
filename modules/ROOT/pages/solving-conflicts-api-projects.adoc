@@ -3,21 +3,21 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-In certain scenarios, someone else might have modified the version in Design Center while you modified the same version locally. This triggers a conflict in git.
+In certain scenarios, someone else can introduce changes in the version in MuleSoft VCS at the same time you modify the same version locally. This triggers a conflict in Git.
 
-For example, you might have modified a file in a branch, while someone else modified this very same file in the same branch directly in Design Center. By the time you want to push your changes, git rejects the push command because it cannot fast-forward your changes to the version in Design Center, meaning that you must tell git how to apply your changes over a modified version:
-//_TODO add more information about git conflicts.
+For example, you might have modified a file in a branch, while someone else modified this very same file in the same branch directly in MuleSoft VCS. By the time you want to push your changes, Git rejects the push command because it cannot fast-forward your changes to the version in MuleSoft VCS, meaning that you must tell git how to apply your changes over a modified version:
+//_TODO add more information about Git conflicts.
 
 . In the Package Explorer view, right-click your API specification project and select *Team* > *Switch To* > *Push Branch...*.
 +
 image::push-branch.png["A dropdown menu displaying choices for a software development project, featuring Git commands such as pull and push"]
 . Git rejects the push due to the conflicting file:
 +
-image::conflict.png["A window will appear with the push results, including the repository URL and message details"]
-. Pull the changes from Design Center into your local version.
+image::conflict.png["A window appears with the push results, including the repository URL and message details"]
+. Pull the changes from MuleSoft VCS into your local version.
 +
-image::pull-changes.png["A menu displaying choices for a git repository"]
-. Evaluate the conflicts flagged by git:
+image::pull-changes.png["A menu displaying choices for a Git repository"]
+. Evaluate the conflicts flagged by Git:
 +
 image::flagged-commit.png["A window displaying the outcomes of a fetch and update of flights-api data, with a conflicting result and two merge input choices"]
 
@@ -41,7 +41,7 @@ image::resolve-marked-conflict.png["Code displaying a RAML API for American Flig
 >>>>>>> branch 'add-flights-path' of https://anypoint.mulesoft.com/ //<2>
 ----
 <1> Everything between the characters `HEAD` and `=======` are your changes.
-<2> Everything between the characters `=======` and `branch ...` are the changes in Design Center conflicting with yours.
+<2> Everything between the characters `=======` and `branch ...` are the changes in MuleSoft VCS conflicting with yours.
 +
 In this case, another collaborator changed the definition from:
 +
@@ -83,8 +83,8 @@ image::push-conflict-changes.png["A code editor displaying a commit message and 
 [start=7]
 . Select *Commit and Push*.
 
-Your copies between Studio and Design Center are synchronized with your latest changes.
+Your copies between Studio and MuleSoft VCS are synchronized with your latest changes.
 
 == See Also
 
-* xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center]
+* xref:sync-api-projects-design-center.adoc[]

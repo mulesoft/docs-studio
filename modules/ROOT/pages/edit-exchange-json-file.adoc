@@ -26,6 +26,6 @@ image::exchange-json-editor.png["A code window displaying a JSON file labeled ex
 
 == See Also
 
-* xref:sync-api-projects-design-center.adoc[Synchronize API Specifications with Design Center]
-* xref:sync-update-api-spec.adoc[Update the API Specification in Your Project]
-* xref:publish-api-project-to-exchange.adoc[Publish an API Project to Exchange]
+* xref:sync-api-projects-design-center.adoc[]
+* xref:sync-update-api-spec.adoc[]
+* xref:publish-api-project-to-exchange.adoc[]

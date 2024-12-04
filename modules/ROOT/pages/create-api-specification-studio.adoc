@@ -1,6 +1,6 @@
 = Create an API Specification Project in Studio
 
-Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment, and automatically sync it with Design Center.
+Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment, and automatically sync it with MuleSoft VCS.
 
 [NOTE]
 Studio uses the EGit plugin to edit API specifications offline. Studio doesn't support the EGit plugin for Mule application projects tracked with your own VCS.
@@ -22,11 +22,11 @@ Studio prompts you to switch to the API design perspective.
 
 In the API design perspective, use the API editor to write your API specification or API fragment. Additionally, you can use the API Console view to mock a live service so you can test your API specification.
 
-Studio uses VCS to track the development of your API specification project and keep it synchronized with Design Center.
+Studio uses VCS to track the development of your API specification project and keep it synchronized with MuleSoft VCS.
 
 == Create Branches
 
-Using a different branch enables you to use a modified API definition in certain cases, without modifying the main branch in Design Center.
+Using a different branch enables you to use a modified API definition in certain cases, without modifying the main branch in MuleSoft VCS.
 
 include::partial$branch-commit-push-changes.adoc[tag=create-branch-vcs]
 
@@ -34,7 +34,7 @@ include::partial$branch-commit-push-changes.adoc[tag=commit-to-branch-vcs]
 
 == Merge and Push Your API Specification Project
 
-Merge the changes made to your API specification to your main branch and sync it with Design Center.
+Merge the changes made to your API specification to your main branch and sync it with MuleSoft VCS.
 
 include::partial$branch-commit-push-changes.adoc[tag=merge-and-push-to-main-vcs]
 
