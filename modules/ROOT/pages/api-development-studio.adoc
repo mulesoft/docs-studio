@@ -63,7 +63,7 @@ Import an API specification from MuleSoft VCS as an API specification project wi
 . Design an API specification in Design Center. 
 +
 You can either create and publish an API specification with the xref:design-center::design-create-publish-api-visual-editor.adoc[Visual Editor] or with the xref:design-center::design-create-publish-api-raml-editor.adoc[Text Editor].
-. Import the API specification from Design Center through MuleSoft VCS into Studio. 
+. Import the API specification from Anypoint Platform through MuleSoft VCS into Studio. 
 +
 You can import the API specification as an editable asset by xref:sync-api-projects-design-center.adoc[Synchronizing an API Specifications with MuleSoft VCS].
 
