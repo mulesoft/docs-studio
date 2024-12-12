@@ -25,7 +25,7 @@
  ** xref:flow-counting-studio.adoc[Track the Number of Billable Flows in Studio]
  ** xref:test-specification-api-console.adoc[Test your API Specification Using the API Console]
 
-* xref:api-sync.adoc[Sync Your Mule Projects with MuleSoft VCS]
+* xref:api-sync.adoc[Sync Your API Projects with MuleSoft VCS]
  ** xref:sync-api-projects-design-center.adoc[Sync API Specifications with MuleSoft VCS]
  ** xref:sync-update-api-spec.adoc[Update the API Specification in Your Project]
  ** xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Projects in Studio]
