@@ -58,6 +58,6 @@ include::import-api-specification-maven.adoc[tag=maven-tasks]
 
 == See Also
 
-* xref:api-development-studio.adoc[API Development in Studio]
-* xref:api-sync.adoc[API Sync]
-* xref:maven-preferences-reference.adoc[Maven Preferences Reference]
+* xref:api-development-studio.adoc[]
+* xref:api-sync.adoc[]
+* xref:maven-preferences-reference.adoc[]
