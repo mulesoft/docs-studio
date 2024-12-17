@@ -20,9 +20,7 @@ API Sync can’t work properly if the RAML file exceeds 4,000 lines of text.
 
 == Create an API Spec in Studio
 
-. Start a new API spec project in Studio.
-+
-See xref:create-api-specification-studio.adoc[] for more information.
+Start a new API spec project in Studio. See xref:create-api-specification-studio.adoc[] for more information.
 
 == Import an API Spec from Exchange 
 
