@@ -26,6 +26,7 @@ Using MuleSoft VCS, you can develop your Mule applications following API Lifecyc
 == Create an API Spec in Studio
 
 . Start a new API spec project in Studio.
++
 See xref:create-api-specification-studio.adoc[] for more information.
 . Publish it to Exchange.
 . Import the same API spec from Exchange to your Studio project.
