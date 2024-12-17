@@ -6,67 +6,67 @@ endif::[]
 
 With MuleSoft VCS, you can:
 
-* Start designing a RAML, or OAS 2.0 and 3.0 API specification in Studio and sync it with MuleSoft VCS.
-* Pull a published RAML or OAS 2.0 and 3.0 API specification from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. 
+* Start designing a RAML, or OAS 2.0 and 3.0 API spec in Studio and sync it with MuleSoft VCS.
+* Pull a published RAML or OAS 2.0 and 3.0 API spec from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. 
 +
 You can edit the API spec you imported from Exchange, and push your changes to MuleSoft VCS.
 +
 You can use MuleSoft VCS on more than one API spec to scaffold multiple flows in different Mule configuration files.
-* Monitor the API versions that you implemented in your project and update your flows based on the latest published version.
-* Pull a RAML or OAS 2.0 and 3.0 API specification from MuleSoft VCS into Studio, edit the specification offline, and pull the updates back to MuleSoft VCS.
+* Monitor the API versions that you implement in your project and update your flows based on the latest published version.
+* Pull a RAML or OAS 2.0 and 3.0 API spec from MuleSoft VCS into Studio, edit the spec offline, and pull the updates back to MuleSoft VCS.
 
-MuleSoft VCS supports importing both RAML, OAS 2.0 and OAS 3.0 specifications.
+MuleSoft VCS supports importing both RAML, OAS 2.0, and OAS 3.0 spec.
 
-MuleSoft VCS comes bundled by default in Studio, and requires Mule 4.1.4 and later.
+MuleSoft VCS comes bundled by default with Studio, and requires Mule 4.1.4 and later.
 
-MuleSoft VCS can not work properly if the RAML file exceeds 4,000 lines of text.
+MuleSoft VCS can’t work properly if the RAML file exceeds 4,000 lines of text.
 
 Using MuleSoft VCS, you can develop your Mule applications following API Lifecycle development practices.
 
-== Create an API Specification in Studio
+== Create an API Spec in Studio
 
-. Start a new API specification project in Studio.
-See xref:create-api-specification-studio.adoc[Create an API Specification Project in Studio] for more information.
+. Start a new API spec project in Studio.
+See xref:create-api-specification-studio.adoc[Create an API Spec Project in Studio] for more information.
 . Publish it to Exchange.
-. Import the same API specification from Exchange to your Studio project. +
-See xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange] for more information.
+. Import the same API spec from Exchange to your Studio project. +
+See xref:import-api-specification-exchange.adoc[Import an API Spec from Exchange] for more information.
 
-== Import an API Specification from Exchange into a New Mule Project
+== Import an API Spec from Exchange into a New Mule Project
 
-. Create an API specification in Design Center. 
+. Create an API spec in Design Center. 
 +
-You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].
+You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Spec with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Spec with the Visual API Editor in Design Center].
 . Publish it to Exchange. 
 +
-See xref:design-center::design-publish.adoc[Publish an API Specification] for more information.
-. Import the same API specification from Exchange to your Studio project. 
+See xref:design-center::design-publish.adoc[Publish an API Spec] for more information.
+. Import the same API spec from Exchange to your Studio project. 
 +
-See xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange] for more information.
+See xref:import-api-specification-exchange.adoc[Import an API Spec] for more information.
 
-See xref:sync-update-api-spec.adoc[Update the API Specification in Your Project] for instructions on keeping your Studio projects up to date with the latest version of an API specification.
+See xref:sync-update-api-spec.adoc[Update the API Spec in Your Project] for instructions on keeping your Studio projects up to date with the latest version of an API spec.
 
-=== Edit The Imported API Specification in Studio
+=== Edit The Imported API Spec in Studio
 
-You can also edit the imported API specification in your project as an API specification project.
+You can also edit the imported API spec in your project as an API spec project.
 
-. Import the API specification from Exchange to your Studio project.
+. Import the API spec from Exchange to your Studio project.
 . Sync it to MuleSoft VCS.
 . Publish it to Exchange.
 . Import the new version of your API spec.
 
-See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Projects in Studio] for more information.
+See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Spec in Your Projects in Studio] for more information.
 
-== Import an API Specification from MuleSoft VCS into an Editable API Specification Project
+== Import an API Spec from MuleSoft VCS into an Editable API Spec Project
 
-. Create an API specification in Design Center. 
+. Create an API spec in Design Center. 
 +
-You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].
-. Import the same API specification from Anypoint Platform to your Studio project through MuleSoft VCS. 
+You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Spec with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Spec with the Visual API Editor in Design Center].
+. Import the same API spec from Anypoint Platform to your Studio project through MuleSoft VCS. 
 +
 See xref:sync-api-projects-design-center.adoc[].
 
 == See Also
 
-* xref:api-development-studio.adoc[API Development in Studio]
-* xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange]
-* xref:import-api-specification-maven.adoc[Import an API Specification from Maven]
+* xref:api-development-studio.adoc[]
+* xref:import-api-specification-exchange.adoc[]
+* xref:import-api-specification-maven.adoc[]
