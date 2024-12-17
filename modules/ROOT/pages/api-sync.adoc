@@ -6,7 +6,7 @@ endif::[]
 
 With API Sync, you can:
 
-* Start designing a RAML, or OAS 2.0 and 3.0 API spec in Studio and sync it with MuleSoft VCS.
+* Start designing a RAML, or OAS 2.0 and 3.0 API spec in Studio and sync it with API Sync.
 * Pull a published RAML or OAS 2.0 and 3.0 API spec from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. 
 * You can edit the API spec you imported from Exchange, and push your changes to MuleSoft VCS.
 * You can use MuleSoft VCS on more than one API spec to scaffold multiple flows in different Mule configuration files.
