@@ -26,17 +26,17 @@ Using MuleSoft VCS, you can develop your Mule applications following API Lifecyc
 == Create an API Spec in Studio
 
 . Start a new API spec project in Studio.
-See xref:create-api-specification-studio.adoc[Create an API Spec Project in Studio] for more information.
+See xref:create-api-specification-studio.adoc[] for more information.
 . Publish it to Exchange.
 . Import the same API spec from Exchange to your Studio project.
 +
-See xref:import-api-specification-exchange.adoc[Import an API Spec from Exchange] for more information.
+See xref:import-api-specification-exchange.adoc[] for more information.
 
 == Import an API Spec from Exchange into a New Mule Project
 
-See xref:import-api-specification-exchange.adoc[Import an API Spec] for more information.
+See xref:import-api-specification-exchange.adoc[] for more information.
 
-See xref:sync-update-api-spec.adoc[Update the API Spec in Your Project] for instructions on keeping your Studio projects up to date with the latest version of an API spec.
+See xref:sync-update-api-spec.adoc[] for instructions on keeping your Studio projects up to date with the latest version of an API spec.
 
 === Edit the Imported API Spec in Studio
 
@@ -47,13 +47,13 @@ You can also edit the imported API spec in your project as an API spec project.
 . Publish it to Exchange.
 . Import the new version of your API spec.
 
-See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Spec in Your Projects in Studio] for more information.
+See xref:sync-imported-api-specifications-design-center.adoc[] for more information.
 
 == Import an API Spec from MuleSoft VCS into an Editable API Spec Project
 
 Import the same API spec from Anypoint Platform to your Studio project through MuleSoft VCS. 
 
-See xref:sync-api-projects-design-center.adoc[].
+See xref:sync-api-projects-design-center.adoc[] for more information.
 
 == See Also
 
