@@ -14,7 +14,9 @@ With API Sync, you can:
 * Pull a RAML, OAS 2.0, or OAS 3.0 API spec from MuleSoft VCS into Studio, edit the spec offline, and push the updates back to MuleSoft VCS.
 * Develop your Mule applications using API lifecycle development practices.
 
-API Sync supports importing both RAML, OAS 2.0, and OAS 3.0 spec, comes bundled by default with Studio, and requires Mule 4.1.4 and later.
+API Sync supports importing both RAML, OAS 2.0, and OAS 3.0 spec.
+
+API Sync is bundled by default with Studio and requires Mule 4.1.4 or later.
 
 API Sync doesn't work properly if the RAML file exceeds 4,000 lines of text.
 
