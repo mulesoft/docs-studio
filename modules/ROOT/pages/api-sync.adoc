@@ -26,7 +26,7 @@ Start a new API spec project in Studio. See xref:create-api-specification-studio
 
 == Import an API Spec from Exchange 
 
-Import an API spec from Exchange into a new Mule project or from MuleSoft VCS into an Editable API Spec Project.
+Import an API spec from Exchange into a new Mule project or from MuleSoft VCS into an editable API spec project.
 
 See xref:import-api-specification-exchange.adoc[] for more information.
 
