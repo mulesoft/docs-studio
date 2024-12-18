@@ -16,7 +16,7 @@ With API Sync, you can:
 
 API Sync supports importing both RAML, OAS 2.0, and OAS 3.0 spec, comes bundled by default with Studio, and requires Mule 4.1.4 and later.
 
-API Sync can’t work properly if the RAML file exceeds 4,000 lines of text.
+API Sync doesn't work properly if the RAML file exceeds 4,000 lines of text.
 
 == Create an API Spec in Studio
 
