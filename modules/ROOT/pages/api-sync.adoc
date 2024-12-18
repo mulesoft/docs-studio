@@ -11,7 +11,7 @@ With API Sync, you can:
 * Edit the API spec you imported from Exchange, and push your changes to MuleSoft VCS.
 * Use API Sync on more than one API spec to scaffold multiple flows in different Mule configuration files.
 * Monitor the API versions that you implement in your project and update your flows based on the latest published version.
-* Pull a RAML or OAS 2.0 and 3.0 API spec from MuleSoft VCS into Studio, edit the spec offline, and pull the updates back to MuleSoft VCS.
+* Pull a RAML, OAS 2.0, or OAS 3.0 API spec from MuleSoft VCS into Studio, edit the spec offline, and push the updates back to MuleSoft VCS.
 * Develop your Mule applications following API Lifecycle development practices.
 
 API Sync supports importing both RAML, OAS 2.0, and OAS 3.0 spec, comes bundled by default with Studio, and requires Mule 4.1.4 and later.
