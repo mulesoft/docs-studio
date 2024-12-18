@@ -1,71 +1,52 @@
-= API Sync
+= Sync Your API Projects with API Sync
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: api, anypoint platform, sync, api sync
+:keywords: api, anypoint platform, sync, api sync, MuleSoft VCS
 
-The API Sync feature of Anypoint Studio enables you to:
+With API Sync, you can:
 
-* Start designing a RAML, or OAS 2.0 and 3.0 API specification in Studio and sync it with MuleSoft VCS.
-* Pull a published RAML or OAS 2.0 and 3.0 API specification from Exchange or a private Maven repository, into your Mule application project in Studio to scaffold a new project. +
-API sync also enables you to edit the API specification you imported from Exchange, and push your changes to MuleSoft VCS.
-+
-You can use API Sync on more than one API specification to scaffold multiple flows in different Mule configuration files.
-* Monitor the API versions that you implemented in your project and update your flows based on the latest published version.
-* Pull a RAML or OAS 2.0 and 3.0 API specification from MuleSoft VCS into Studio, edit the specification offline, and pull the updates back to MuleSoft VCS.
+* Start designing a RAML, OAS 2.0, or OAS 3.0 API spec in Studio and sync it with API Sync.
+* Pull a published RAML, OAS 2.0, or OAS 3.0 API spec from Exchange or from a private Maven repository, into your Mule application project in Studio to scaffold a new project. 
+* Edit the API spec you imported from Exchange, and push your changes to MuleSoft VCS.
+* Scaffold multiple flows in different Mule configuration files by using API Sync on more than one API spec.
+* Monitor the API versions that you implement in your project and update your flows based on the latest published version.
+* Pull a RAML, OAS 2.0, or OAS 3.0 API spec from MuleSoft VCS into Studio, edit the spec offline, and push the updates back to MuleSoft VCS.
+* Develop your Mule applications using API lifecycle development practices.
 
-API Sync supports importing both RAML, OAS 2.0 and OAS 3.0 specifications.
+API Sync supports importing both RAML, OAS 2.0, and OAS 3.0 spec.
 
-API Sync comes bundled by default in Studio, and requires Mule 4.1.4 and later.
+API Sync is bundled by default with Studio and requires Mule 4.1.4 or later.
 
-API sync might not work properly if the RAML file exceeds 4,000 lines of text.
+API Sync doesn't work properly if the RAML file exceeds 4,000 lines of text.
 
-Using API Sync, you can develop your Mule applications following API Lifecycle development practices.
+== Create an API Spec in Studio
 
-== Create an API Specification in Studio
+Start a new API spec project in Studio. See xref:create-api-specification-studio.adoc[] for more information.
 
-. Start a new API specification project in Studio.
-See xref:create-api-specification-studio.adoc[Create an API Specification Project in Studio] for more information.
-. Publish it to Exchange.
-. Import the same API specification from Exchange to your Studio project. +
-See xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange] for more information.
+== Import an API Spec from Exchange 
 
-== Import an API Specification from Exchange into a New Mule Project
+Import an API spec from Exchange into a new Mule project or from MuleSoft VCS into an editable API spec project.
 
-. Create an API specification in Design Center. 
-+
-You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].
-. Publish it to Exchange. 
-+
-See xref:design-center::design-publish.adoc[Publish an API Specification] for more information.
-. Import the same API specification from Exchange to your Studio project. 
-+
-See xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange] for more information.
+See xref:import-api-specification-exchange.adoc[] for more information.
 
-See xref:sync-update-api-spec.adoc[Update the API Specification in Your Project] for instructions on keeping your Studio projects up to date with the latest version of an API specification.
+See xref:sync-update-api-spec.adoc[] for more information about keeping your Studio projects up to date with the latest version of an API spec.
 
-=== Edit The Imported API Specification in Studio
+See xref:sync-api-projects-design-center.adoc[] for more information.
 
-You can also edit the imported API specification in your project as an API specification project.
+=== Edit the Imported API Spec in Studio
 
-. Import the API specification from Exchange to your Studio project.
+Edit the imported API spec in your project as an API spec project.
+
+. Import the API spec from Exchange to your Studio project.
 . Sync it to MuleSoft VCS.
 . Publish it to Exchange.
 . Import the new version of your API spec.
 
-See xref:sync-imported-api-specifications-design-center.adoc[Edit Imported API Specifications in Your Projects in Studio] for more information.
-
-== Import an API Specification from MuleSoft VCS into an Editable API Specification Project
-
-. Create an API specification in Design Center. 
-+
-You can either xref:design-center::design-create-publish-api-raml-editor.adoc[Create an API Specification with the Text Editor in Design Center] or xref:design-center::design-create-publish-api-visual-editor.adoc[Create an API Specification with the Visual API Editor in Design Center].
-. Import the same API specification from Anypoint Platform to your Studio project through MuleSoft VCS. 
-+
-See xref:sync-api-projects-design-center.adoc[].
+See xref:sync-imported-api-specifications-design-center.adoc[] for more information.
 
 == See Also
 
-* xref:api-development-studio.adoc[API Development in Studio]
-* xref:import-api-specification-exchange.adoc[Import an API Specification from Exchange]
-* xref:import-api-specification-maven.adoc[Import an API Specification from Maven]
+* xref:api-development-studio.adoc[]
+* xref:import-api-specification-exchange.adoc[]
+* xref:import-api-specification-maven.adoc[]
