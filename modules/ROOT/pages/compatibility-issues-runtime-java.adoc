@@ -5,7 +5,9 @@ endif::[]
 
 The modules in your project can have compatibility issues with Java or Mule runtime.
 
-Mule runtime 4.6 is compatible with Java 8, 11, and 17. Mule runtime 4.5 and earlier are compatible with Java 8 and 11.
+* Mule runtime 4.5 and earlier are compatible with Java 8 and 11.
+* Mule runtime 4.6 is compatible with Java 8, 11, and 17. 
+* Mule runtime 4.9 is compatible with Java 17.
 
 When you create a project, Studio uses its default JRE. When you select a module, Studio displays the latest version of the modules compatible with your JRE and Mule runtime.
 
