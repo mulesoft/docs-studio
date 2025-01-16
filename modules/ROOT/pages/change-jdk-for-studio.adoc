@@ -12,3 +12,7 @@ To start Studio using a different JDK, follow the instructions based on your ope
 * xref:change-jdk-for-studio-wx.adoc[Windows]
 * xref:change-jdk-for-studio-lx.adoc[Linux]
 * xref:change-jdk-for-studio-ox.adoc[MacOS]
+
+== Select the Appropriate Java and Mule Runtime Versions
+
+include::partial$install-mule-runtime-versions.adoc[tag=java-mule-runtime-compatibility]
