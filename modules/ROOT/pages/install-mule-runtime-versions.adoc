@@ -2,6 +2,8 @@
 
 include::studio::partial$install-mule-runtime-versions.adoc[tag=intro]
 
+include::studio::partial$install-mule-runtime-versions.adoc[tag=java-mule-runtime-compatibility]
+
 include::studio::partial$install-mule-runtime-versions.adoc[tag=prereq]
 
 include::studio::partial$install-mule-runtime-versions.adoc[tag=install-task]
@@ -9,3 +11,7 @@ include::studio::partial$install-mule-runtime-versions.adoc[tag=install-task]
 include::studio::partial$install-mule-runtime-versions.adoc[tag=update-mule-version-task]
 
 include::studio::partial$install-mule-runtime-versions.adoc[tag=uninstall-mule-version-task]
+
+== See Also
+
+* xref:general::java-support.adoc[]
