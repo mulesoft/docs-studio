@@ -7,8 +7,15 @@ If you choose to use a different Mule runtime version than the one bundled in yo
 
 [NOTE]
 Studio doesn’t support downgrading Mule runtime to an earlier patch version.
-
 // end::intro[]
+
+// tag::java-mule-runtime-compatibility[]
+* Mule runtime 4.5 and earlier are compatible with Java 8 and 11.
+* Mule runtime 4.6 is compatible with Java 8, 11, and 17. 
+* Mule runtime 4.9 and later are compatible with Java 17.
+
+See the xref:studio-release-notes.adoc[Studio release notes] for the latest information on compatibility.
+// end::java-mule-runtime-compatibility[]
 
 // tag::prereq[]
 == Prerequisites

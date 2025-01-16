@@ -5,7 +5,7 @@ endif::[]
 
 The modules in your project can have compatibility issues with Java or Mule runtime.
 
-include::partial$java-mule-runtime-compatibility.adoc[tag=java-mule-runtime-compatibility]
+include::partial$install-mule-runtime-versions.adoc[tag=java-mule-runtime-compatibility]
 
 When you create a project, Studio uses its default JRE. When you select a module, Studio displays the latest version of the modules compatible with your JRE and Mule runtime.
 
