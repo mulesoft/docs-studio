@@ -16,3 +16,7 @@ To start Studio using a different JDK, follow the instructions based on your ope
 == Select the Appropriate Java and Mule Runtime Versions
 
 include::partial$install-mule-runtime-versions.adoc[tag=java-mule-runtime-compatibility]
+
+== See Also
+
+* xref:general::java-support.adoc[]
