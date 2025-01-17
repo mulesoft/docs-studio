@@ -10,10 +10,7 @@ To update the API spec:
 . In *Package Explorer*, right-click the Mule project that contains the API spec to update.
 . Select *API Specs* > the name of your API > *Update Version*.
 +
-[NOTE]
-The *Update Version* option is shown if there is a newer version of the API spec available.
-+
-After you update the API spec, accept that Studio regenerates the flows based on the new version.
+After you update the API spec, you can accept or deny that Studio regenerates the flows based on the new version.
 +
 To manually generate a flow for the updated API, right-click the Mule project where you updated the API spec, and select *API Specs* > the name of your API > *Generate Flows*.
 
