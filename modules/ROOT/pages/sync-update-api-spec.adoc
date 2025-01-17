@@ -1,23 +1,26 @@
-= Update the API Specification in Your Project
+= Update the API Spec in Your Project
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-When you import an API specification as a dependency, you can update the API specification version in your Studio project.
+When you import an API spec as a dependency, you can update the API spec version in your Studio project if there's a newer version available.
 
-To update the API specification:
+To update the API spec:
 
-. In *Package Explorer*, right-click the Mule project that contains the API specification to update.
+. In *Package Explorer*, right-click the Mule project that contains the API spec to update.
 . Select *API Specs* > the name of your API > *Update Version*.
 +
-After you update the specification, accept that Studio regenerates the flows based on the new version.
+[NOTE]
+The *Update Version* option is shown if there is a newer version of the API spec available.
 +
-To manually generate a flow for the updated API, right-click the Mule project where you updated the API specification, and select *API Specs* > the name of your API > *Generate Flows*.
+After you update the API spec, accept that Studio regenerates the flows based on the new version.
++
+To manually generate a flow for the updated API, right-click the Mule project where you updated the API spec, and select *API Specs* > the name of your API > *Generate Flows*.
 
-Additionally, you can manage the API specifications in your project that are linked to Exchange from the API specification project management view. To do so, click the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%,""]) in the taskbar.
+You can manage the API specs in your project that are linked to Exchange from the API spec project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%,""]) in the taskbar.
 
 image::update-api-version.png["The blue dot and the *Update version* button are highlighted in the API property window."]
 
 [calloutlist]
-. The blue dot indicates a new version of the API specification is available.
-. Click *Update version* and Studio regenerates the flow based on the new version of the API specification.
+. The blue dot indicates a new version of the API spec is available.
+. Click *Update version* and Studio regenerates the flow based on the new version of the API spec.
