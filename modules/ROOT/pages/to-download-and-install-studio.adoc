@@ -10,3 +10,7 @@ To download and install Anypoint Studio, follow the instructions based on your o
 * xref:to-download-and-install-studio-lx.adoc[Linux]
 
 Anypoint Studio 7.x only supports Mule 4.x projects since the structure of the project, export format, XML, and scripting language are different.
+
+== See Also
+
+* https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/Agreements/versioning-back-support-policy.pdf[Salesforce Versioning and Back Support Policy]
