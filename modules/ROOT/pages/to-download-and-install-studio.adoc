@@ -3,13 +3,23 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+You can download two versions of Anypoint Studio 7.x:
+
+[%header,%autowidth.spread,cols="a,a,a,a,a"]
+|===
+| Studio | Version | Release Notes | Mule runtime Support | Java Support
+| 7.21.x | Latest | xref:release-notes::studio/anypoint-studio-7.21.0-with-4.9-runtime-release-notes.adoc[Anypoint Studio 7.21.0 Release Notes] |4.9 and later | 17
+| 7.20.x | Previous | xref:release-notes::studio:anypoint-studio-7.20.0-with-4.8-runtime-release-notes.adoc[Anypoint Studio 7.20.0 Release Notes] |4.6 | 8, 11, and 17
+|===
+
 To download and install Anypoint Studio, follow the instructions based on your operating system:
 
 * xref:to-download-and-install-studio-wx.adoc[Windows]
 * xref:to-download-and-install-studio-ox.adoc[MacOS]
 * xref:to-download-and-install-studio-lx.adoc[Linux]
 
-Anypoint Studio 7.x supports Mule 4.x projects.
+[NOTE]
+Anypoint Studio 6.x reached end of life.
 
 == See Also
 
