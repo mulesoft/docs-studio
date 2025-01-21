@@ -19,7 +19,7 @@ To download and install Anypoint Studio, follow the instructions based on your o
 * xref:to-download-and-install-studio-lx.adoc[Linux]
 
 [NOTE]
-Anypoint Studio 6.x reached end of life.
+Anypoint Studio 6.x reached End of Life.
 
 == See Also
 
