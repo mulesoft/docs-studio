@@ -7,7 +7,7 @@ You can select any of your installed JREs as the default Java runtime environmen
 
 You can select the version of the JDK to use for the project that is compatible with the Mule runtime version the project runs on.
 
-Learn more about compatible versions of Java at xref:studio-release-notes.adoc[]. 
+include::partial$install-mule-runtime-versions.adoc[tag=java-mule-runtime-compatibility]
 
 == Select the Java Version for All Your Studio Projects
 
