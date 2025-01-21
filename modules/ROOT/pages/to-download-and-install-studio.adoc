@@ -9,7 +9,7 @@ You can download two versions of Anypoint Studio 7.x:
 |===
 | Studio | Version | Release Notes | Mule runtime Support | Java Support
 | 7.21.x | Latest | xref:release-notes::studio/anypoint-studio-7.21.0-with-4.9-runtime-release-notes.adoc[Anypoint Studio 7.21.0 Release Notes] |4.9 and later | 17
-| 7.20.x | Previous | xref:release-notes::studio:anypoint-studio-7.20.0-with-4.8-runtime-release-notes.adoc[Anypoint Studio 7.20.0 Release Notes] |4.6 | 8, 11, and 17
+| 7.20.x | Previous | xref:release-notes::studio/anypoint-studio-7.20.0-with-4.8-runtime-release-notes.adoc[Anypoint Studio 7.20.0 Release Notes] |4.6 | 8, 11, and 17
 |===
 
 To download and install Anypoint Studio, follow the instructions based on your operating system:
