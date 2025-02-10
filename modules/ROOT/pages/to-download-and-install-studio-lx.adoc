@@ -5,15 +5,29 @@ endif::[]
 
 :page-aliases: 6.5.x@studio::to-download-and-install-studio-lx.adoc
 
-== Prerequisites
+== Before You Begin Installing Anypoint Studio
 
-* To support the Studio Theme in Linux, have GTK version 3 installed.
+* To support the Studio Theme in Linux, you must have the GTK version 3 installed.
 * Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
 
 == Installation
 
 . Open the extracted Anypoint Studio.
+. Choose a directory for extraction. You can choose a directory under your home directory, such as ~/anypoint-studio.
+. Open a terminal.
+. Navigate to the download directory.
+. Use the `tar` command to extract the contents of the archive file. For example, if the file name is *anypoint-studio-7.21.0.tar.gz*, run:
++
+----
+`tar -xvzf anypoint-studio-7.11.0.tar.gz -C ~/anypoint-studio`
+----
++
+This command extracts the contents of the archive to the *~/anypoint-studio* directory.
+. Navigate to the extracted directory.
+. Run Studio.
 . Click *OK* to accept the default workspace.
-** You must Use an absolute path when defining your workspace because Anypoint Studio does not expand the `~` tilde used in Unix and Linux systems.
-** If you choose to use an existing workspace, this must have been created using Anypoint Studio 7.0 or later. +
-Studio 7.x supports only Mule 4.x projects, because the structure of the project, export format, XML, and scripting language are different than the ones used by Mule 3.x.
+
+== Workspaces Considerations
+
+* You must use an absolute path when defining your workspace because Anypoint Studio doesn't expand the `~` tilde used in Unix and Linux systems.
+* If you choose to use an existing workspace, the workspace must be created with Anypoint Studio 7.0 or later. Studio 7.x supports Mule 4.x projects. The structure of the project, export format, XML, and scripting language are different from the ones used by Mule 3.x.
