@@ -22,7 +22,7 @@ endif::[]
 `tar -xvzf anypoint-studio-7.21.0.tar.gz -C ~/anypoint-studio`
 ----
 +
-This command extracts the contents of the archive to the *~/anypoint-studio* directory.
+This command extracts the contents of the archive to the `~/anypoint-studio` directory.
 . Go to the extracted directory.
 . Run Studio.
 . Click *OK* to accept the default workspace.
