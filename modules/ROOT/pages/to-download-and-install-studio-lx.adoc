@@ -13,7 +13,7 @@ endif::[]
 == Installation
 
 . Open the extracted Anypoint Studio.
-. Choose a directory for extraction. You can choose a directory under your home directory, such as ~/anypoint-studio.
+. Choose a directory for extraction. You can choose a directory under your home directory, such as `~/anypoint-studio`.
 . Open a terminal.
 . Navigate to the download directory.
 . Use the `tar` command to extract the contents of the archive file. For example, if the file name is *anypoint-studio-7.21.0.tar.gz*, run:
