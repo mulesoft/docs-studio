@@ -36,14 +36,12 @@ a|
 
 | 7.20 
 a| 
-* 4.8.x and later
-* 4.7.x
+* 4.8.x
 * 4.6.x (LTS)
-* 4.5.x 
 * 4.4.x
 | Yes 
 | Yes 
-| Yes
+| No
 |===
 
 See the xref:studio-release-notes.adoc[Studio release notes] for the latest information about compatibility.
