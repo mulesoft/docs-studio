@@ -34,10 +34,14 @@ a|
 | No 
 | Yes
 
-| 7.20 
-a| 
+.4+| 7.20 
+a|
 * 4.8.x
 * 4.6.x (LTS)
+| Yes 
+| Yes 
+| Yes
+a|
 * 4.4.x
 | Yes 
 | Yes 
