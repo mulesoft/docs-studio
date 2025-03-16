@@ -2,6 +2,7 @@
 
 * xref:index.adoc[Overview]
 * test
+* test 2
 
 * xref:studio-release-notes.adoc[Release Notes]
 
