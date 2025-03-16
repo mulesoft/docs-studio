@@ -1,6 +1,7 @@
 .xref:index.adoc[Anypoint Studio]
 
 * xref:index.adoc[Overview]
+* test
 
 * xref:studio-release-notes.adoc[Release Notes]
 
