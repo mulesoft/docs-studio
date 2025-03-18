@@ -6,7 +6,7 @@ endif::[]
 You can add your custom Mule module to your Mule projects in Anypoint Studio.
 
 These instructions assume that you developed your Mule module using the Mule SDK, and that you followed the proper setup steps. +
-See the xref:1.1@mule-sdk::getting-started.adoc[Mule SDK introductory instructions] for more details.
+See the xref:mule-sdk::getting-started.adoc[Mule SDK introductory instructions] for more details.
 
 You can install custom modules using the Studio UI, or by manually adding them as a Maven dependency in your project's `pom.xml` file.
 
@@ -74,4 +74,4 @@ There's also a new Secure Properties Config element available in the Global Elem
 == See Also
 
 * xref:add-modules-in-studio-to.adoc[To Add Modules to Your Project]
-* xref:1.1@mule-sdk::getting-started.adoc[Get Started with the Mule SDK]
+* xref:mule-sdk::getting-started.adoc[Get Started with the Mule SDK]
