@@ -28,6 +28,13 @@ For example:
 --
 openssl s_client -connect your.dsm.name.com:443 -showcerts > my-certificate.pem
 --
++
+[NOTE]
+Starting with Anypoint Studio 7.17, the default JDK version for Studio is Java 17. To ensure proper functionality, add the certificate to the default JDK version that Anypoint Studio supports. +
+* If you use an external JDK, add the certificate to the external JDK that you use with Anypoint Studio. +
+* If you use the default JDK provided by Anypoint Studio, add the certificate to the default JDK, regardless of the JDK version you use in your project.
+
+
 . Add your `.pem` file certificate to your Studio embedded Java cacerts keystore:
 +
 [source,bash]
