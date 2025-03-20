@@ -7,8 +7,49 @@ If you choose to use a different Mule runtime version than the one bundled in yo
 
 [NOTE]
 Studio doesn’t support downgrading Mule runtime to an earlier patch version.
-
 // end::intro[]
+
+// tag::java-mule-runtime-compatibility[]
+If you change the Java or Mule runtime versions in your project, consider these facts:
+
+* Mule runtime 4.4 and earlier works with Java 8 and 11.
+* Mule runtime 4.6 works with Java 8, 11, and 17.
+* Standard support for Java 8 and 11 ends in March 2025 for Mule 4.8 Edge and August 2025 for 4.6 LTS, so plan your upgrade path for apps that are running on Java 8 or 11 accordingly.
+* Mule runtime 4.9 LTS and Edge run and compile only on Java 17. To use Mule 4.9, upgrade your apps to run on Java 17. 
+
+== Mule Runtime and Java Compatibility in Studio
+
+This table shows the compatibility between Mule runtime and Java versions in Studio:
+
+[cols="1,1,1,1,1",options="header"]
+|===
+|Studio Version | Mule Runtime Version | Java 8 | Java 11 | Java 17
+
+| 7.21 and later
+a| 
+* 4.9.x (LTS) and later
+* 4.8.x
+* 4.6.x (LTS)
+| No 
+| No 
+| Yes
+
+.4+| 7.20 
+a|
+* 4.8.x
+* 4.6.x (LTS)
+| Yes 
+| Yes 
+| Yes
+a|
+* 4.4.x
+| Yes 
+| Yes 
+| No
+|===
+
+See the xref:studio-release-notes.adoc[Studio release notes] for the latest information about compatibility.
+// end::java-mule-runtime-compatibility[]
 
 // tag::prereq[]
 == Prerequisites
@@ -25,7 +66,7 @@ Studio doesn’t support downgrading Mule runtime to an earlier patch version.
 // tag::install-task[]
 == Installing a Different Mule Version
 
-. In the top menu bar, select *Help* > *Install New Software.*
+. In the menu bar, select *Help* > *Install New Software.*
 . Select *Mule Runtimes for Anypoint Studio - +https://studio.mulesoft.org/s3/studio-runtimes/+*:
 +
 image::studio::mule-runtime-update-site.png[]
@@ -58,7 +99,7 @@ image::studio::select-project-runtime-version.png[]
 
 To uninstall a version of Mule:
 
-. In the top menu bar, select *Anypoint Studio* > *About Anypoint Studio*.
+. In the menu bar, select *Anypoint Studio* > *About Anypoint Studio*.
 . Select *Installation Details*:
 +
 image::studio::studio-installation-details.png[]

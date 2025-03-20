@@ -40,12 +40,21 @@ Run the following command by replacing `<JAVA_HOME>` with the path to your embed
 
 `sudo keytool -import -trustcacerts -keystore <JAVA_HOME>/lib/security/cacerts -storepass changeit -file /tmp/PCE_Certificate.cer`
 
-For example, if you're using the embedded Java 17:
+For example, if you're using the embedded Java 17 on macOS:
 
 [source,xml,linenums]
 ----
 sudo keytool -import -trustcacerts -keystore /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_1.3.0/Contents/Home/jre/lib/security/cacerts -storepass changeit -file /tmp/PCE_Certificate.cer`
 ----
+
+For example, if you're using the embedded Java 17 on Windows:
+
+[source,xml,linenums]
+----
+keytool -import -trustcacerts -keystore C:[...]\AnypointStudio\plugins\org.mule.tooling.jdk.win32.x86_64_1.3.3\lib\security\cacerts -storepass changeit -file /tmp/PCE_Certificate.cer //<!--1-->
+----
+[calloutlist]
+.. The path changes with each Studio version because the JDK plugin version is included in the Windows path, and Studio includes a different JDK plugin version with each release.
 
 === Set a Private Cloud Instance URL
 
