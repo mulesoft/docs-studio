@@ -3,9 +3,9 @@
 Anypoint Studio 7.12 and later supports native integration with PCE versions 3.0.0, 3.0.1, and 3.0.2.
 
 [NOTE]
-Starting with Anypoint Studio 7.17, the default JDK version for Studio is Java 17. To ensure proper functionality, add the certificate to the default JDK version that Anypoint Studio supports. +
-* If you use an external JDK, add the certificate to the external JDK that you use with Anypoint Studio. +
-* If you use the default JDK provided by Anypoint Studio, add the certificate to the default JDK, regardless of the JDK version you use in your project.
+Starting with Anypoint Studio 7.17, the default JDK version for Studio is Java 17. To ensure proper functionality, add the certificate to the default JDK version that Studio supports. + 
+* If you use an external JDK, add the certificate to the external JDK that you use with Studio. +
+* If you use the default JDK Studio provides, add the certificate to the default JDK, regardless of the JDK version you use in your project.
 
 == Configure Your PCE Certificates Into Studio
 
