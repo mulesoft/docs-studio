@@ -9,10 +9,6 @@ include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag
 
 include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-billable-flows"]
 
-== Before You Begin
-
-include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-prereq"]
-
 == Count the Flows in Your Project Using Studio
 
 . Select your project.
