@@ -6,5 +6,5 @@ nav:
 asciidoc:
   attributes:
     supportStatus: eolReachedVersion
-    latestVersionSwitch: false - test
+    latestVersionSwitch: false
     
