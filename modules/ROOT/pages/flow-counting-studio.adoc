@@ -5,13 +5,20 @@ endif::[]
 
 In Anypoint Studio 7.20 and later, you can track the number of billable flows in your project.
 
-include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-intro"]
+Flow Counting improves transparency in usage-based pricing by providing visibility into the number of billable flows when developing your project. With this new feature, you better understand your consumption patterns from design to deployment, preventing unexpected billing issues.
 
-include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-billable-flows"]
+Your Anypoint Platform organization pays for billable flows, such as Trigger Flows or APIkit-generated flows, that are currently deployed and running in your runtime plane. To reduce these costs, consider using subflows or private flows, which aren't billable. Additionally, to bypass charges for unused flows, avoid deploying unnecessary flows from accelerators or assets. See xref:general::pricing.adoc[] for information about managing and reducing billable flows.
 
-== Before You Begin
+[%header,cols="20a,60a"] 
+|===
+| Type of Flow | Description
 
-include::anypoint-code-builder::partial$acb-studio-shared-flow-counting.adoc[tag="flow-counting-prereq"]
+| Trigger Flows 
+| Begins the execution of a process based on certain events or conditions. These flows are the starting point of any integration application. A trigger flow usually starts with a message source, like a listener or a scheduler. The message source reacts to external events (like HTTP requests, time schedules, or file updates) and starts the next process.
+
+| APIkit-generated Flows 
+| Flow automatically created by the APIkit module if you import or design an API spec. These flows map incoming API requests to the appropriate logic and responses. Each action in the API spec results in a flow.
+|===
 
 == Count the Flows in Your Project Using Studio
 
