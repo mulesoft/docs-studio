@@ -15,7 +15,7 @@ If you change the Java or Mule runtime versions in your project, consider these 
 * Mule runtime 4.4 and earlier works with Java 8 and 11.
 * Mule runtime 4.6 works with Java 8, 11, and 17.
 * Standard support for Java 8 and 11 ends in March 2025 for Mule 4.8 Edge and August 2025 for 4.6 LTS, so plan your upgrade path for apps that are running on Java 8 or 11 accordingly.
-* Studio 7.21 builds and runs projects on Java 17 by default.
+* Studio 7.21 builds and runs projects on Java 17 by default. To use Mule 4.9, upgrade your apps to run on Java 17. 
 
 == Mule Runtime and Java Compatibility in Studio
 
