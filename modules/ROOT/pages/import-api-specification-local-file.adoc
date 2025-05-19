@@ -3,11 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio enables you to import a RAML API specification from your local machine and import it either into a new Mule project, or an existing one.
-
-This task only works for RAML types of API specifications.
-
-You can't add a local API specification to an existing Mule project.
+Import a RAML API specification from your local machine into a new Mule project. You can't add a local API specification to an existing Mule project. This task only works for RAML types of API specifications.
 
 . In the taskbar of the Anypoint Studio display, select *File* > *New* > *Mule Project*.
 . Type a name for your project.
