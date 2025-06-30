@@ -15,15 +15,15 @@ Depending on the selected option, there are different ways to define the data st
 [%header,cols="40a,20a,20a,20a"]
 |===
 |Format |Sample | Schema | Editor
-|JSON |X |X |
-|XML |X |X |
-|Java |X |X |
-|CSV |X | |X
-|Fixed Width |X | |X
-|Copybook |X |X |
-|Flat File | |X |
-|Simple | | |X
-|Excel | | |X
+|JSON |Yes |Yes |No
+|XML |Yes |Yes |No
+|Java |Yes |Yes |No
+|CSV |Yes |No |Yes
+|Fixed Width |Yes |No |Yes
+|Copybook |Yes |Yes |No
+|Flat File |No |Yes |No
+|Simple |No |No |Yes
+|Excel |No |No |Yes
 |===
 
 == See Also
