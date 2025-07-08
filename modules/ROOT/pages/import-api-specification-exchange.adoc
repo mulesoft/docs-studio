@@ -107,13 +107,13 @@ For supported bindings and channels, see xref:apikit::apikit-for-asyncapi-suppor
 
 Studio supports scaffolding these schema fragment files if they're referenced from API specs:
 
-[%header,cols="1,1,1,1"]
+[%header,cols="1,1,1,1,1"]
 |===
-| | Avro | JSON | RAML 
-| *AsyncAPI* | Yes | Yes | No
-| *OData v2* | No | No | Yes 
-| *REST* | No | No | Yes 
-| *SOAP* | No | No | Yes 
+| API Type | Avro | JSON | RAML | WSDL 
+| *AsyncAPI* | Yes | Yes | No | No
+| *OData v2* | No | No | Yes | No
+| *REST* | No | No | Yes | No
+| *SOAP* | No | No | Yes | Yes
 |===
 
 If you add a fragment that isn't supported, the scaffolder doesn't add these fragments as project dependencies when you import the spec from Exchange. However, you can scaffold schemas that are specified inline within the spec.
