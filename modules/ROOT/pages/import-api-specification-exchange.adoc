@@ -110,8 +110,8 @@ Studio supports scaffolding these schema fragment files if they're referenced fr
 [%header,cols="1,1,1,1"]
 |===
 | | Avro | JSON | RAML 
-| *AsyncAPI* | Yes | Yes | No 
-| *OData* | No | No | Yes 
+| *AsyncAPI* | Yes | Yes | No
+| *OData v2* | No | No | Yes 
 | *REST* | No | No | Yes 
 | *SOAP* | No | No | Yes 
 |===
