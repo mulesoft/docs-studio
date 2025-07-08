@@ -111,7 +111,6 @@ Studio supports scaffolding these schema fragment files if they're referenced fr
 |===
 | | Avro | JSON | RAML 
 | *AsyncAPI* | Yes | Yes | No 
-| *GraphQL* | No | No | Yes 
 | *OData* | No | No | Yes 
 | *REST* | No | No | Yes 
 | *SOAP* | No | No | Yes 
