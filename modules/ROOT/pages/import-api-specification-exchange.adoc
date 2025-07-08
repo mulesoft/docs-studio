@@ -113,7 +113,7 @@ Studio supports scaffolding these schema fragment files if they're referenced fr
 | *AsyncAPI* | Yes | Yes | No | No
 | *OData v2* | No | No | Yes | No
 | *REST* | No | No | Yes | No
-| *SOAP* | No | No | Yes | Yes
+| *SOAP* | No | No | No | Yes
 |===
 
 If you add a fragment that isn't supported, the scaffolder doesn't add these fragments as project dependencies when you import the spec from Exchange. However, you can scaffold schemas that are specified inline within the spec.
