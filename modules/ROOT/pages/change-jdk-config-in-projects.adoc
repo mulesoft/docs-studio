@@ -186,7 +186,7 @@ wrapper.java.additional.21=--add-opens=java.base/sun.security.provider=org.bounc
 [source,text]
 ----
 * Mule Runtime and Integration Platform
-* Version: 4.4.0 Build: adffffac
+* Version: 4.9.8 Build: adffffac
 * MuleSoft, Inc.
 * For more information go to
 * https://www.mulesoft.com/platform/soa/mule-esb-enterprise
