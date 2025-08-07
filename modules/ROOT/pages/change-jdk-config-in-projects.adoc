@@ -110,7 +110,7 @@ security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips
 -Dorg.bouncycastle.fips.approved_only=true
 ----
 +
-. Run your application. The startup readout shows FIPS security mode enabled.
+. Run your application. The startup readout shows FIPS security model enabled.
 +
 [source,text]
 ----
