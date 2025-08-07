@@ -88,6 +88,8 @@ Studio supports FIPS 140-2 security model for Java 8, 11, and 17.
 cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.v8.macosx.x86_64_1.3.4/Contents/Home/jre/lib/ext/
 ----
 +
+The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.jdk.v8.win32.x86_1.3.4\jre\lib\ext``.
++
 . Register the security providers in the `java.security` properties file, located in your JDK 8 `.../lib/security/` folder. Bouncy Castle must be the only providers.
 +
 [source,java]
@@ -158,14 +160,26 @@ security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips
 +
 [source,bash]
 ----
-cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.server.4.4.0.ee_7.3.5.202107221543/mule/lib/boot
+cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.server.4.9.ee_7.21.0.202507071837/lib/boot
 ----
++
+The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202507071837\lib\boot`.
++
+. Delete the *wrapper.conf* file at `AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202507071837\mule\conf`.
+. Edit `AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202507071837\mule\conf\wrapper.conf.template` and uncomment this line by deleting the starting *#* character:
++
+[source,text]
+----
+wrapper.java.additional.21=--add-opens=java.base/sun.security.provider=org.bouncycastle.fips.core
+----
++
 . In Studio, go to your project, right click on its folder, and select *Run configuration*.
 . Go to the *Arguments* tab. In *VM arguments*, add:
 +
 [source,text]
 ----
--Dmule.security.model=fips140-2 --add-opens=java.base/sun.security.provider=org.bouncycastle.fips.core -Dorg.bouncycastle.fips.approved_only=true
+-Dmule.security.model=fips140-2
+-Dorg.bouncycastle.fips.approved_only=true
 ----
 . Run your application. The startup readout shows FIPS security model enabled.
 +
