@@ -142,7 +142,7 @@ security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips
   - mule.home = /Users/your-user/AnypointStudio/studio-workspace/.mule
 ----
 [calloutlist]
-.. FIPS 140-2 security mode is enabled.
+.. FIPS 140-2 security model is enabled.
 
 === Configure FIPS 140-2 in Java 11 and Later
 
