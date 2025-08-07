@@ -67,16 +67,121 @@ Studio analyzes the modules in your Mule project and shows the modules that aren
 
 image::java-17-tooling.png["The problems tab is open, with one warning and three Java module compatibility notifications"]
 
-==Configure FIPS 140-2 in Studio
+== Configure FIPS 140-2 in Studio
+
+Studio supports FIPS 140-2 security mode for Java 8, 11, and 17.
 
 === Configure FIPS 140-2 in Java 8
+
 . Download the provider files from the https://www.bouncycastle.org/download/bouncy-castle-java-fips/[BouncyCastle] website:
 * Provider: bc-fips-1.0.2.4
 * TLS: bctls-fips-1.0.19.jar
 * PKIX: bcpkix-fips-1.0.7.jar
 . Install the required JAR file into Studio JDK8.
++
+----
+~/Downloads Agents
+cp bc-fips-1.0.2.4.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.v8.macosx.x86_64_1.3.4/Contents/Home/jre/lib/ext/
+----
++
+. Register the security provider in the security properties file at the JDK8 lib/security folder to set the bouncy castle providers.
++
+----
+#
+# List of providers and their preference orders (see above):
+#
+security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider
+security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS
+----
++
+. Save your changes.
+. In Studio, open the *Run configuration* of your project.
+. Go to the *Arguments* tab. In *VM arguments*, add:
++
+----
+-Dmule.security.model=fips140-2 
+-Dorg.bouncycastle.fips.approved_only=true
+----
++
+. Run your application. 
++
+The startup readout shows FIPS security mode enabled.
++
+----
+* Mule Runtime and Integration Platform
+* Version: 4.1.1 Build: adffffac
+* MuleSoft, Inc.
+* For more information go to
+* https://www.mulesoft.com/platform/soa/mule-esb-enterprise
+*
+* Server started: 6/4/18 4:06 PM
+* JDK: 1.8.0_172 (mixed mode)
+* JDK properties:
+  - java.vendor = Oracle Corporation
+  - java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+  - java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+* OS: Mac OS X (10.11, x86_64)
+* Host: martins-macbook-pro-2.local (10.250.0.81)
+* Security model: fips140-2 //<!--1-->
+* Mule services:
+  - api-gateway-contract-service-1.0.0-mule-service.jar
+  - mule-service-http-ee-1.1.1-mule-service.jar
+  - mule-service-oauth-1.1.1-mule-service.jar
+  - mule-service-scheduler-1.1.4-mule-service.jar
+  - mule-service-soap-1.1.2-mule-service.jar
+  - mule-service-weave-ee-2.1.2-mule-service.jar
+* Mule system properties:
+  - mule.security.model = fips140-2
+* - mule.base = /Users/martinbuchwald/Desktop/Standalones/mule-enterprise-standalone-4.1.1-8002
+  - mule.home = /Users/martinbuchwald/Desktop/Standalones/mule-enterprise-standalone-4.1.1-8002
+----
+[calloutlist]
+.. FIPS 140-2 security mode is enabled.
 
+== Configure FIPS 140-2 in Java 11 and Later
 
+. Download the provider files from the https://www.bouncycastle.org/download/bouncy-castle-java-fips/[BouncyCastle] website:
+* Provider: bc-fips-1.0.2.4
+* TLS: bctls-fips-1.0.19.jar
+* PKIX: bcpkix-fips-1.0.7.jar
+. Copy the downloaded files to the embedded Mule runtime folder located at /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.server.4.9.ee_7.21.0.202507071837/lib/boot.
+. In Studio, open the *Run configuration* of your project.
+. Go to the *Arguments* tab. In *VM arguments*, add:
+----
+-Dmule.security.model=fips140-2 --add-opens=java.base/sun.security.provider=org.bouncycastle.fips.core -Dorg.bouncycastle.fips.approved_only=true
+----
+. Run your application. The startup readout shows FIPS security mode enabled.
++
+----
+* Mule Runtime and Integration Platform
+* Version: 4.1.1 Build: adffffac
+* MuleSoft, Inc.
+* For more information go to
+* https://www.mulesoft.com/platform/soa/mule-esb-enterprise
+*
+* Server started: 6/4/18 4:06 PM
+* JDK: 1.11.0_172 (mixed mode)
+* JDK properties:
+  - java.vendor = Oracle Corporation
+  - java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+  - java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+* OS: Mac OS X (10.11, x86_64)
+* Host: martins-macbook-pro-2.local (10.250.0.81)
+* Security model: fips140-2 //<!--1-->
+* Mule services:
+  - api-gateway-contract-service-1.0.0-mule-service.jar
+  - mule-service-http-ee-1.1.1-mule-service.jar
+  - mule-service-oauth-1.1.1-mule-service.jar
+  - mule-service-scheduler-1.1.4-mule-service.jar
+  - mule-service-soap-1.1.2-mule-service.jar
+  - mule-service-weave-ee-2.1.2-mule-service.jar
+* Mule system properties:
+  - mule.security.model = fips140-2
+* - mule.base = /Users/martinbuchwald/Desktop/Standalones/mule-enterprise-standalone-4.1.1-8002
+  - mule.home = /Users/martinbuchwald/Desktop/Standalones/mule-enterprise-standalone-4.1.1-8002
+----
+[calloutlist]
+.. FIPS 140-2 security mode is enabled.
 
 == See Also
 
