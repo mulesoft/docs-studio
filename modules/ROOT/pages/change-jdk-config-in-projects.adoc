@@ -194,7 +194,7 @@ cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications
   - mule.home = /Users/your-user/AnypointStudio/studio-workspace/.mule
 ----
 [calloutlist]
-.. FIPS 140-2 security mode is enabled.
+.. FIPS 140-2 security model is enabled.
 
 == See Also
 
