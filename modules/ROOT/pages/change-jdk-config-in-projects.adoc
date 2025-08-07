@@ -88,7 +88,7 @@ Studio supports FIPS 140-2 security model for Java 8, 11, and 17.
 cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.v8.macosx.x86_64_1.3.4/Contents/Home/jre/lib/ext/
 ----
 +
-. Register the security providers in the `java.security` properties file, located in your JDK 8 `.../lib/security/` folder. Add the Bouncy Castle providers to the beginning of the provider list and renumber the subsequent entries.
+. Register the security providers in the `java.security` properties file, located in your JDK 8 `.../lib/security/` folder. Bouncy Castle must be the only providers.
 +
 [source,java]
 ----
@@ -97,8 +97,6 @@ cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications
 #
 security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider
 security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS
-security.provider.3=sun.security.provider.Sun
-security.provider.4=sun.security.rsa.SunRsaSign
 # ...
 ----
 +
