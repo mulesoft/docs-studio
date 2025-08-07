@@ -168,7 +168,6 @@ The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.serve
 ----
 wrapper.java.additional.21=--add-opens=java.base/sun.security.provider=org.bouncycastle.fips.core
 ----
-+
 . Edit `/Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.aarch64_1.4.1/Contents/Home/conf/security/java.security` to list only the BouncyCastle security providers.
 +
 [source,java]
@@ -176,7 +175,7 @@ wrapper.java.additional.21=--add-opens=java.base/sun.security.provider=org.bounc
 security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider
 security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS
 ----
-. In Studio, go to your project, right click on its folder, and select *Run configuration*.
+. In Studio, go to your project, right click its folder, and select *Run configuration*.
 . Go to the *Arguments* tab. In *VM arguments*, add:
 +
 [source,text]
