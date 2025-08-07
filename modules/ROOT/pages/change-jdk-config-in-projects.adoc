@@ -167,7 +167,7 @@ cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications
 ----
 -Dmule.security.model=fips140-2 --add-opens=java.base/sun.security.provider=org.bouncycastle.fips.core -Dorg.bouncycastle.fips.approved_only=true
 ----
-. Run your application. The startup readout shows FIPS security mode enabled.
+. Run your application. The startup readout shows FIPS security model enabled.
 +
 [source,text]
 ----
