@@ -1,4 +1,4 @@
-= Selecting a Different Java Version to Run the Embedded Mule Runtime Engine
+= Selecting a Different Java Version to Run the Embedded Mule Runtime
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -19,8 +19,8 @@ image::installed-jres.png["A table listing installed Java runtime environments w
 If your installed JRE version doesn’t appear, you must configure it:
 +
 .. Go to *Add* and select your installed JRE type:
-** `MacOS X VM` for MacOS.
-** `Standard VM` for MacOS, Windows, and Linux.
+** `MacOS X VM` for macOS.
+** `Standard VM` for macOS, Windows, and Linux.
 .. Click *Next*.
 .. In *JRE Home*, click *Directory* and select the folder where you have installed JRE. +
 For example, `/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home`
@@ -30,12 +30,12 @@ For example, `Java SE 11`.
 
 == Migrate Your Project to a Different Java Version
 
-Studio 7.17.0 and later are compatible with Java 17, so you can upgrade modules and apps in your projects to obtain its latest features. 
+Studio 7.17.0 and later are compatible with Java 17. Upgrade modules and apps in your projects to obtain its latest features. 
 
-. Right-click on your Studio project.
-. Navigate to *Build Path*, and click *Configure Build Path*.
+. Right-click your Studio project.
+. Go to *Build Path*, and click *Configure Build Path*.
 . In the *Libraries* tab, select your *JRE System Library* and click *Edit*.
-. Select the *Alternate JRE* option, and select your desired JRE from the drop-down menu.
+. Select the *Alternate JRE* option, and select your desired JRE from the dropdown menu.
 +
 image::change-jdk-project.png["Edit Library window displaying the alternate JRE options."]
 
@@ -53,19 +53,30 @@ In Studio 7.19.0 and later, your new Mule projects use JDK 17 by default and the
 +
 The Studio services restart and the tooling instance restarts using Java 17.
 
-To ensure your modules are Java 17 compatible, use the xref:change-jdk-config-in-projects.adoc#verify-java-17-module-compatibility[Java 17 module compatibility tool].
+Use the xref:change-jdk-config-in-projects.adoc#verify-java-17-module-compatibility[Java 17 module compatibility tool] to verify the modules in your Mule project are Java 17 compatible.
 
 == Verify Java 17 Module Compatibility
 
 In Studio 7.19.0 and later, you can check if the modules in your Mule project are Java 17 compatible:
 
-. Right-click on the name of your project.
+. Right-click the name of your project.
 . Select *Mule* > *Java 17 Module Compatibility*.
 +
 Studio analyzes the modules in your Mule project and shows the modules that aren't Java 17 compatible in the *Problems* tab.  
 . xref:update-modules.adoc[Update the modules] that aren’t Java 17 compatible.
 
 image::java-17-tooling.png["The problems tab is open, with one warning and three Java module compatibility notifications"]
+
+==Configure FIPS 140-2 in Studio
+
+=== Configure FIPS 140-2 in Java 8
+. Download the provider files from the https://www.bouncycastle.org/download/bouncy-castle-java-fips/[BouncyCastle] website:
+* Provider: bc-fips-1.0.2.4
+* TLS: bctls-fips-1.0.19.jar
+* PKIX: bcpkix-fips-1.0.7.jar
+. Install the required JAR file into Studio JDK8.
+
+
 
 == See Also
 
