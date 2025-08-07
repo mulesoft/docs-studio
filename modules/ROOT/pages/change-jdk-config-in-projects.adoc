@@ -69,7 +69,7 @@ image::java-17-tooling.png["The problems tab is open, with one warning and three
 
 == Configure FIPS 140-2 in Studio
 
-Studio supports FIPS 140-2 security mode for Java 8, 11, and 17.
+Studio supports FIPS 140-2 security model for Java 8, 11, and 17.
 
 === Configure FIPS 140-2 in Java 8
 
