@@ -117,7 +117,7 @@ security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips
 [source,text]
 ----
 * Mule Runtime and Integration Platform
-* Version: 4.1.1 Build: adffffac
+* Version: 4.6.21 Build: adffffac
 * MuleSoft, Inc.
 * For more information go to
 * https://www.mulesoft.com/platform/soa/mule-esb-enterprise
