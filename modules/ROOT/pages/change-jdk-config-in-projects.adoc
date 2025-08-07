@@ -202,3 +202,4 @@ cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications
 
 * xref:general::java-support.adoc[]
 * xref:compatibility-issues-runtime-java.adoc[]
+* xref:mule-runtime::fips-140-2-compliance-support.adoc[]
