@@ -80,7 +80,6 @@ Studio supports FIPS 140-2 security model for Java 8, 11, and 17.
 * TLS: bctls-fips-1.0.19.jar
 * PKIX: bcpkix-fips-1.0.7.jar
 --
-+
 . Install the required JAR files into your Studio embedded JDK 8. This example shows the command for a default macOS installation. The path to the `.../jre/lib/ext/` directory can be different depending on your operating system and Studio version.
 +
 [source,bash]
@@ -88,8 +87,7 @@ Studio supports FIPS 140-2 security model for Java 8, 11, and 17.
 cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.v8.macosx.x86_64_1.3.4/Contents/Home/jre/lib/ext/
 ----
 +
-The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.jdk.v8.win32.x86_1.3.4\jre\lib\ext``.
-+
+The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.jdk.v8.win32.x86_1.3.4\jre\lib\ext`.
 . Register the security providers in the `java.security` properties file, located in your JDK 8 `.../lib/security/` folder. Bouncy Castle must be the only providers.
 +
 [source,java]
@@ -101,9 +99,8 @@ security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider
 security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS
 # ...
 ----
-+
 . Save your changes.
-. In Studio, go to your project, right click on its folder, and select *Run configuration*.
+. In Studio, go to your project, right click its folder, and select *Run configuration*.
 . Go to the *Arguments* tab. In *VM arguments*, add:
 +
 [source,text]
@@ -111,7 +108,6 @@ security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips
 -Dmule.security.model=fips140-2 
 -Dorg.bouncycastle.fips.approved_only=true
 ----
-+
 . Run your application. The startup readout shows FIPS security model enabled.
 +
 [source,text]
@@ -175,7 +171,7 @@ wrapper.java.additional.21=--add-opens=java.base/sun.security.provider=org.bounc
 +
 . Edit `/Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.aarch64_1.4.1/Contents/Home/conf/security/java.security` to list only the BouncyCastle security providers.
 +
-[source,text]
+[source,java]
 ----
 security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider
 security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS
