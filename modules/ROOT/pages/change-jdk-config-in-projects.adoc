@@ -1,4 +1,4 @@
-= Selecting a Different Java Version to Run the Embedded Mule Runtime Engine
+= Selecting a Different Java Version to Run the Embedded Mule Runtime
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -19,8 +19,8 @@ image::installed-jres.png["A table listing installed Java runtime environments w
 If your installed JRE version doesn’t appear, you must configure it:
 +
 .. Go to *Add* and select your installed JRE type:
-** `MacOS X VM` for MacOS.
-** `Standard VM` for MacOS, Windows, and Linux.
+** `MacOS X VM` for macOS.
+** `Standard VM` for macOS, Windows, and Linux.
 .. Click *Next*.
 .. In *JRE Home*, click *Directory* and select the folder where you have installed JRE. +
 For example, `/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home`
@@ -30,12 +30,12 @@ For example, `Java SE 11`.
 
 == Migrate Your Project to a Different Java Version
 
-Studio 7.17.0 and later are compatible with Java 17, so you can upgrade modules and apps in your projects to obtain its latest features. 
+Studio 7.17.0 and later are compatible with Java 17. Upgrade modules and apps in your projects to obtain its latest features. 
 
-. Right-click on your Studio project.
-. Navigate to *Build Path*, and click *Configure Build Path*.
+. Right-click your Studio project.
+. Go to *Build Path*, and click *Configure Build Path*.
 . In the *Libraries* tab, select your *JRE System Library* and click *Edit*.
-. Select the *Alternate JRE* option, and select your desired JRE from the drop-down menu.
+. Select the *Alternate JRE* option, and select your desired JRE from the dropdown menu.
 +
 image::change-jdk-project.png["Edit Library window displaying the alternate JRE options."]
 
@@ -53,13 +53,13 @@ In Studio 7.19.0 and later, your new Mule projects use JDK 17 by default and the
 +
 The Studio services restart and the tooling instance restarts using Java 17.
 
-To ensure your modules are Java 17 compatible, use the xref:change-jdk-config-in-projects.adoc#verify-java-17-module-compatibility[Java 17 module compatibility tool].
+Use the xref:change-jdk-config-in-projects.adoc#verify-java-17-module-compatibility[Java 17 module compatibility tool] to verify the modules in your Mule project are Java 17 compatible.
 
 == Verify Java 17 Module Compatibility
 
 In Studio 7.19.0 and later, you can check if the modules in your Mule project are Java 17 compatible:
 
-. Right-click on the name of your project.
+. Right-click the name of your project.
 . Select *Mule* > *Java 17 Module Compatibility*.
 +
 Studio analyzes the modules in your Mule project and shows the modules that aren't Java 17 compatible in the *Problems* tab.  
@@ -67,7 +67,153 @@ Studio analyzes the modules in your Mule project and shows the modules that aren
 
 image::java-17-tooling.png["The problems tab is open, with one warning and three Java module compatibility notifications"]
 
+== Configure FIPS 140-2 in Studio
+
+Studio supports FIPS 140-2 security model for Java 8, 11, and 17.
+
+=== Configure FIPS 140-2 in Java 8
+
+. Download the provider files from the https://www.bouncycastle.org/download/bouncy-castle-java-fips/[BouncyCastle] website.
++
+--
+* Provider: bc-fips-1.0.2.4
+* TLS: bctls-fips-1.0.19.jar
+* PKIX: bcpkix-fips-1.0.7.jar
+--
+. Install the required JAR files into your Studio embedded JDK 8. This example shows the command for a default macOS installation. The path to the `.../jre/lib/ext/` directory can be different depending on your operating system and Studio version.
++
+[source,bash]
+----
+cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.v8.macosx.x86_64_1.3.4/Contents/Home/jre/lib/ext/
+----
++
+The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.jdk.v8.win32.x86_1.3.4\jre\lib\ext`.
+. Register the security providers in the `java.security` properties file, located in your JDK 8 `.../lib/security/` folder. Bouncy Castle must be the only provider.
++
+[source,java]
+----
+#
+# List of providers and their preference orders:
+#
+security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider
+security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS
+# ...
+----
+. Save your changes.
+. In Studio, go to your project, right click its folder, and select *Run configuration*.
+. Go to the *Arguments* tab. In *VM arguments*, add:
++
+[source,text]
+----
+-Dmule.security.model=fips140-2 
+-Dorg.bouncycastle.fips.approved_only=true
+----
+. Run your application. The startup readout shows FIPS security model enabled.
++
+[source,text]
+----
+* Mule Runtime and Integration Platform
+* Version: 4.6.21 Build: adffffac
+* MuleSoft, Inc.
+* For more information go to
+* https://www.mulesoft.com/platform/soa/mule-esb-enterprise
+*
+* Server started: 6/4/18 4:06 PM
+* JDK: 1.8.0_172 (mixed mode)
+* JDK properties:
+  - java.vendor = Oracle Corporation
+  - java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+  - java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+* OS: Mac OS X (10.11, x86_64)
+* Host: your-hostname.local (10.250.0.81)
+* Security model: fips140-2 //<!--1-->
+* Mule services:
+  - api-gateway-contract-service-1.0.0-mule-service.jar
+  - mule-service-http-ee-1.1.1-mule-service.jar
+  - mule-service-oauth-1.1.1-mule-service.jar
+  - mule-service-scheduler-1.1.4-mule-service.jar
+  - mule-service-soap-1.1.2-mule-service.jar
+  - mule-service-weave-ee-2.1.2-mule-service.jar
+* Mule system properties:
+  - mule.security.model = fips140-2
+  - mule.base = /Users/your-user/AnypointStudio/studio-workspace/.mule
+  - mule.home = /Users/your-user/AnypointStudio/studio-workspace/.mule
+----
+[calloutlist]
+.. FIPS 140-2 security model is enabled.
+
+=== Configure FIPS 140-2 in Java 11 and Later
+
+. Download the provider files from the https://www.bouncycastle.org/download/bouncy-castle-java-fips/[BouncyCastle] website:
++
+--
+* Provider: bc-fips-1.0.2.4
+* TLS: bctls-fips-1.0.19.jar
+* PKIX: bcpkix-fips-1.0.7.jar
+--
++
+. Copy the downloaded files to the embedded Mule runtime `.../lib/boot` directory. The path to this directory can vary depending on your Studio and Mule runtime versions.
++
+[source,bash]
+----
+cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.server.4.9.ee_7.21.0.202507071837/lib/boot
+----
++
+The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202507071837\lib\boot`.
++
+. Delete the *wrapper.conf* file at `AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202507071837\mule\conf`.
+. Edit `AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202507071837\mule\conf\wrapper.conf.template` and uncomment this line by deleting the starting *#* character:
++
+[source,text]
+----
+wrapper.java.additional.21=--add-opens=java.base/sun.security.provider=org.bouncycastle.fips.core
+----
+. Edit `/Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.aarch64_1.4.1/Contents/Home/conf/security/java.security` to list only the BouncyCastle security providers.
++
+[source,java]
+----
+security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider
+security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS
+----
+. In Studio, go to your project, right click its folder, and select *Run configuration*.
+. Go to the *Arguments* tab. In *VM arguments*, add:
++
+[source,text]
+----
+-Dmule.security.model=fips140-2
+-Dorg.bouncycastle.fips.approved_only=true
+----
+. Run your application. The startup readout shows FIPS security model enabled.
++
+[source,text]
+----
+* Mule Runtime and Integration Platform
+* Version: 4.9.8 Build: adffffac
+* MuleSoft, Inc.
+* For more information go to
+* https://www.mulesoft.com/platform/soa/mule-esb-enterprise
+*
+* Server started: 8/10/21 5:12 PM
+* JDK: 11.0.11 (mixed mode)
+* JDK properties:
+  - java.vendor = AdoptOpenJDK
+  - java.vm.name = OpenJDK 64-Bit Server VM
+  - java.home = /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+* OS: Mac OS X (11.5, x86_64)
+* Host: your-hostname.local (192.168.1.10)
+* Security model: fips140-2 // <1>
+* Mule services:
+  - ...
+* Mule system properties:
+  - mule.security.model = fips140-2
+  - mule.base = /Users/your-user/AnypointStudio/studio-workspace/.mule
+  - mule.home = /Users/your-user/AnypointStudio/studio-workspace/.mule
+----
+[calloutlist]
+.. FIPS 140-2 security model is enabled.
+
 == See Also
 
 * xref:general::java-support.adoc[]
 * xref:compatibility-issues-runtime-java.adoc[]
+* xref:mule-runtime::fips-140-2-compliance-support.adoc[]
