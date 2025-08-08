@@ -73,7 +73,7 @@ Studio supports FIPS 140-2 security model for Java 8, 11, and 17.
 
 === Configure FIPS 140-2 in Java 8
 
-. Download the provider files from the https://www.bouncycastle.org/download/bouncy-castle-java-fips/[BouncyCastle] website:
+. Download the provider files from the https://www.bouncycastle.org/download/bouncy-castle-java-fips/[BouncyCastle] website.
 +
 --
 * Provider: bc-fips-1.0.2.4
