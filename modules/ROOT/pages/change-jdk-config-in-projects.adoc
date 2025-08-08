@@ -88,7 +88,7 @@ cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications
 ----
 +
 The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.jdk.v8.win32.x86_1.3.4\jre\lib\ext`.
-. Register the security providers in the `java.security` properties file, located in your JDK 8 `.../lib/security/` folder. Bouncy Castle must be the only providers.
+. Register the security providers in the `java.security` properties file, located in your JDK 8 `.../lib/security/` folder. Bouncy Castle must be the only provider.
 +
 [source,java]
 ----
