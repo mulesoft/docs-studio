@@ -159,7 +159,7 @@ security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips
 cp bc-fips-1.0.2.4.jar bctls-fips-1.0.19.jar bcpkix-fips-1.0.7.jar /Applications/AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.server.4.9.ee_7.21.0.202508051502/mule/lib/boot
 ----
 +
-The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202508051502\lib\boot`.
+The default path on Windows is `C:\AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202508051502\mule\lib\boot`.
 +
 . Delete the *wrapper.conf* file at `AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202508051502\mule\conf`.
 . Edit `AnypointStudio\plugins\org.mule.tooling.server.4.9.ee_7.21.0.202508051502\mule\conf\wrapper.conf.template` and uncomment this line by deleting the starting *#* character:
