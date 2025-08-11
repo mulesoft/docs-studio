@@ -1,22 +1,23 @@
-= Configure Hyperforce in Anypoint Studio
+= Configuring Anypoint Studio for Control Planes
+:page-aliases: eu-cloud-configuration.adoc
 
-Salesforce Hyperforce (Hyperforce) is a modern, scalable, and secure infrastructure for deploying your MuleSoft applications. Deliver Mule apps rapidly and reliably to locations worldwide with more choice and control over data residency. 
+Configure Anypoint Studio to point to a specific control plane region. This enables you to perform tasks such as deploying to CloudHub, importing assets from Exchange, and importing API definitions from Design Center.
 
-You can deploy to these Hyperforce supported regions:
-[%header%autowidth.spread,cols="a,a,a"]
-|===
-| Location | Control Plane  | Anypoint Platform URL
-| North America | Canada Cloud  | `+ca1.platform.mulesoft.com+`
-| APAC | Japan Cloud  | `+jp1.platform.mulesoft.com+`
-|===
+== Configure Anypoint Studio to US or EU Clouds
 
-To deploy Mule apps via Anypoint Studio to these regions, you must configure these Anypoint Platform control plane URLs in the Anypoint Studio UI.
+Follow these steps to configure Anypoint Studio, for the US or EU Clouds:
 
-== Before You Begin
+. Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
+. Under *Select your region*, select either *US* or *EU* from the drop-down menu.
+. Select *Apply and Close*:
++
+image::select-eu-cloud.png["EU cloud selected"]
 
-Before deploying Mule apps to Hyperforce, your MuleSoft account must have access to a Hyperforce instance. Contact your MuleSoft account representative to provision a MuleSoft license to a Hyperforce instance.
+As a result, all Anypoint Platform tools embedded in Anypoint Studio display your Anypoint Platform from the US or EU clouds.
 
-== Configure Hyperforce Control Planes in Anypoint Studio
+== Configure Anypoint Studio to Other Clouds
+
+Follow these steps to configure Anypoint Studio, for other clouds:
 
 . Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
 . Under *Control Plane Settings*,  select *Use this control plane*.
@@ -24,9 +25,8 @@ Before deploying Mule apps to Hyperforce, your MuleSoft account must have access
 * Canada Cloud: `+ca1.platform.mulesoft.com+`
 * Japan Cloud: `+jp1.platform.mulesoft.com+`
 . Click *Apply and Close*.
-
-[NOTE]
-Use the *Select your region* options in the *Region Settings* to deploy your Mule application to US, EU, or GOV clouds.
++
+image::select-other-region.png["Canada Cloud platform URL in control plane URL field"]
 
 == See Also
 
