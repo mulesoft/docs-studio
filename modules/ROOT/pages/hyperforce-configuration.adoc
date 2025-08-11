@@ -8,7 +8,7 @@ Configure Anypoint Studio to point to a specific control plane region. This enab
 Follow these steps to configure Anypoint Studio, for the US or EU Clouds:
 
 . Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
-. Under *Select your region*, select either *US or *EU* from the drop-down menu.
+. Under *Select your region*, select either *US or EU* from the drop-down menu.
 . Select *Apply and Close*:
 +
 image::select-eu-cloud.png["EU cloud selected"]
