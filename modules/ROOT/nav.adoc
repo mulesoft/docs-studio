@@ -82,7 +82,6 @@
  ** xref:deploy-mule-application-task.adoc[Deploying Mule Apps to CloudHub]
  ** xref:domain-support-concept.adoc[Configuring Domains]
   *** xref:domain-studio-tasks.adoc[Designing Mule Domains]
- ** xref:eu-cloud-configuration.adoc[Configuring EU Cloud in Studio]
  ** xref:pce-configuration.adoc[Configuring Private Cloud Edition in Studio]
   *** xref:pce4-configuration.adoc[Configuring PCE 4 in Studio]
   *** xref:pce3-configuration.adoc[Configuring PCE 3 in Studio]
