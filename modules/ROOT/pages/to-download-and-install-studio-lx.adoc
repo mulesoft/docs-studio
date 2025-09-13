@@ -3,8 +3,6 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-:page-aliases: 6.5.x@studio::to-download-and-install-studio-lx.adoc
-
 == Before You Begin Installing Anypoint Studio
 
 * To support the Studio Theme on Linux, you must have the GTK version 3 installed.
