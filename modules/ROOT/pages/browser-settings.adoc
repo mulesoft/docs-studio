@@ -28,12 +28,12 @@ Additionally, if you use Windows you must perform an additional configuration:
 . Add the following lines to the `AnypointStudio.ini` file:
 +
 [source]
---
+---
 -Dorg.eclipse.swt.browser.DefaultType=edge
 -Dorg.eclipse.swt.browser.EdgeDir=<path-to-extracted-WebView2-dir>
 # for example:
 # -Dorg.eclipse.swt.browser.EdgeDir=C:\Users\my-user\Downloads\Microsoft.WebView2.FixedVersionRuntime.9x.x.xx.xx
---
+---
 
 
 == See Also
