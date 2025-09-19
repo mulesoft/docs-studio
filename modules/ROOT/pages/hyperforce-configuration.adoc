@@ -1,5 +1,4 @@
 = Configuring Anypoint Studio for Control Planes
-:page-aliases: eu-cloud-configuration.adoc
 
 Configure Anypoint Studio to point to a specific control plane region. This enables you to perform tasks such as deploying to CloudHub, importing assets from Exchange, and importing API definitions from Design Center.
 

@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-aliases: proxy-settings-reference.adoc
 
 Anypoint Studio allows you to configure proxy configurations for when your computer is behind a proxy server and needs to connect to the internet to download plugins and install updates.
 
