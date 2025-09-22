@@ -15,38 +15,7 @@ If you're using Mule runtime engine (Mule) 4.1.3 and earlier, or if you prefer t
 . In the *API Specification* section, select the *From Exchange or Maven* tab, click the *Add* icon (image:add-icon.png[2%,2%]) and select *From Maven*. +
 You can either specify the Maven coordinates of your API specification, or you can install a local file into your Maven repository.
 
-// tag::maven-tasks[]
-=== Add an API Specification From Maven Coordinates
-
-If your API specification is in your corporate Maven repository, you can add it as a dependency.
-
-. In the *Import From Maven* screen, configure your API specification artifact definition:
-* Group ID
-* Artifact ID
-* Version
-. In the *Advanced Settings* section, verify that the *Classifier* value for your dependency is the same as your API specification type (RAML, for example).
-. Click *OK*.
-
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
-
-After you import them, you can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the _Manage Mule Project APIs_ icon (image:manage-project-api-icon.png[2%,2%]) in the taskbar.
-
-=== Add an API Specification From a Local File
-
-If you can't download the API specification dependency from your corporate Maven repository, or if your API specification isn't available in Maven, make your specification available as a dependency by installing it to your local Maven installation:
-
-. In the *Import From Maven* screen, next to the *Install a local dependency* field, click *Install*.
-. In the *File* field, either type the location of your file or click *Browse* to find it in your files. +
-If you select *Browse*, change the file type to *any*. +
-You can add either a RAML or OAS 2.0 and 3.0 specification, or a ZIP bundle file as your API specification, and click *Open*.
-. Set up the rest of your Maven coordinates for your API specification.
-. In the *Advanced Settings* section, verify that the *Classifier* value for your dependency is the same as your API specification type (RAML, for example).
-. Click *Install* and *OK*.
-
-Studio scaffolds your API specification. If you choose not to create flows out of your API specification, unselect the *Scaffold Flows From These API Specifications* checkbox.
-
-You can manage the API specifications in your project that are linked to Exchange from the API specification project management view by clicking the *Manage Mule Project APIs* icon (image:manage-project-api-icon.png[2%,2%]) in the taskbar.
-// end::maven-tasks[]
+include::partial$maven-tasks.adoc[]
 
 == Import and Implement an API Specification from Maven Into an Existing Project
 
@@ -54,7 +23,7 @@ You can manage the API specifications in your project that are linked to Exchang
 . Click the *Add* icon (image:add-icon.png[2%,2%]) and select *From Maven*.
 . You can either specify the Maven coordinates of your API specification, or you can install a local file into your Maven repository.
 
-include::import-api-specification-maven.adoc[tag=maven-tasks]
+include::partial$maven-tasks.adoc[]
 
 == See Also
 
