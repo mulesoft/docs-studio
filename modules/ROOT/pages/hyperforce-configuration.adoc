@@ -8,7 +8,7 @@ Configure Anypoint Studio to point to a specific control plane region. This enab
 Follow these steps to configure Anypoint Studio, for the US or EU Clouds:
 
 . Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
-. Under *Select your region*, select either *US* or *EU* from the drop-down menu.
+. Under *Select your region*, select either *US* or *EU* from the dropdown menu.
 . Select *Apply and Close*:
 +
 image::select-eu-cloud.png["EU cloud selected"]
@@ -22,8 +22,8 @@ Follow these steps to configure Anypoint Studio, for other clouds:
 . Go to *Anypoint Studio* > *Settings* > *Anypoint Studio* > *Anypoint Platform*.
 . Under *Control Plane Settings*,  select *Use this control plane*.
 . In *Control Plane URL*, enter the Anypoint Platform URL for the cloud to deploy your Mule app to:
-* Canada Cloud: `+ca1.platform.mulesoft.com+`
-* Japan Cloud: `+jp1.platform.mulesoft.com+`
+* Canada Cloud: `+https://ca1.platform.mulesoft.com+`
+* Japan Cloud: `+https://jp1.platform.mulesoft.com+`
 . Click *Apply and Close*.
 +
 image::select-other-region.png["Canada Cloud platform URL in control plane URL field"]
