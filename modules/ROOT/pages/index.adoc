@@ -137,7 +137,7 @@ After installing Studio, you can enable FIPS mode to ensure both the Mule runtim
 
 Studio automatically configures all required FIPS components. 
 
-When you enable FIPS mode, it performs the following:
+When you enable FIPS mode:
 
 * Studio includes the Bouncy Castle FIPS (BCFIPS) libraries in the Mule runtime boot classpath. +
 These libraries provide FIPS-validated cryptographic implementations.
