@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-. Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
+. Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/anypoint-mule-studio[Download Site].
 . Extract the Anypoint Studio package and move it to your `/Applications` directory.
 . Open the extracted Anypoint Studio.
 .. It is possible that Gatekeeper flags Studio as an unsafe application:
