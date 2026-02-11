@@ -8,7 +8,7 @@ endif::[]
 == Before You Begin Installing Anypoint Studio
 
 * To support the Studio Theme on Linux, you must have the GTK version 3 installed.
-* Download the Studio installation file from the https://www.mulesoft.com/lp/dl/studio[Download Site].
+* Download the Studio installation file from the https://www.mulesoft.com/lp/dl/anypoint-mule-studio[Download Site].
 
 == Installation
 

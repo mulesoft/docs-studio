@@ -13,4 +13,4 @@ If you are experiencing issues visualizing web content such as the Runtime Manag
 
 == See Also
 
-* For more information about this configuration, check the https://www.eclipse.org/swt/faq.php#howusemozilla[Eclipse Documentation resource].
+* For more information about this configuration, check the https://eclipse.dev/eclipse/swt/[Eclipse Documentation resource].
