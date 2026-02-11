@@ -23,4 +23,4 @@ Anypoint Studio 6.x reached End of Life.
 
 == See Also
 
-* https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/Agreements/versioning-back-support-policy.pdf[Salesforce Versioning and Back Support Policy]
+* https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Agreements/versioning-back-support-policy.pdf[Salesforce Versioning and Back Support Policy]
