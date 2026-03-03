@@ -10,7 +10,7 @@ endif::[]
 Anypoint Studio uses update sites to update both itself and embedded versions of Mule runtime engine and MUnit.
 
 [NOTE]
-Corrupted files or incompatible dependencies often cause Studio update errors. To resolve these, install the latest Studio version from scratch.
+Corrupted files or incompatible dependencies often cause Studio update errors. To ensure stability and avoid residual configuration issues, perform a clean installation of the latest Studio version.
 
 == Access an Update Site
 
