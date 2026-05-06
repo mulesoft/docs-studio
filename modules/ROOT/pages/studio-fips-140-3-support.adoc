@@ -1,0 +1,10 @@
+= Anypoint Studio FIPS 140-3 Environment Support
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Studio can run in environments configured for FIPS 140-3-compliant cryptography. This support helps teams in regulated organizations keep development workflows aligned with security requirements.
+
+FIPS support means Studio is compatible with a compliant operating system and Java cryptographic configuration. 
+
+If your environment enforces FIPS policies, Studio uses approved cryptographic providers and stricter security controls. Some non-compliant algorithms or legacy settings require updates in project and runtime configurations.

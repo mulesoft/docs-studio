@@ -91,6 +91,7 @@
  ** xref:hyperforce-configuration.adoc[]
 
 * xref:secure-storage.adoc[Securing Storage]
+* xref:studio-fips-140-3-support.adoc[FIPS 140-3 Environment Support]
 * xref:proxy-settings-task.adoc[Configuring Proxy Settings]
 * xref:browser-settings.adoc[Configuring Studio Browser Settings]
 * xref:change-jdk-config-in-projects.adoc[Selecting a Different JRE to Run the Embedded Mule Runtime Engine]
