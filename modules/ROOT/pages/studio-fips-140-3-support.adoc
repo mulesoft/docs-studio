@@ -7,4 +7,4 @@ Anypoint Studio can run in environments configured for FIPS 140-3-compliant cryp
 
 FIPS support means Studio is compatible with a compliant operating system and Java cryptographic configuration. 
 
-If your environment enforces FIPS policies, Studio uses approved cryptographic providers and stricter security controls. Some non-compliant algorithms or legacy settings require updates in project and runtime configurations.
+If your environment enforces FIPS policies, Studio uses approved cryptographic providers and stricter security controls. Verify that the Mule runtime version you use in Studio is also FIPS 140-3 compliant. Some non-compliant algorithms or legacy settings require updates in project and runtime configurations.
