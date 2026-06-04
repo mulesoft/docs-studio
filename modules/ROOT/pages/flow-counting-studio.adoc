@@ -7,7 +7,7 @@ In Anypoint Studio 7.20 and later, you can track the number of billable flows in
 
 Flow Counting improves transparency in usage-based pricing by providing visibility into the number of billable flows when developing your project. With this new feature, you better understand your consumption patterns from design to deployment, preventing unexpected billing issues.
 
-Your Anypoint Platform organization pays for billable flows, such as Trigger Flows or APIkit-generated flows, that are currently deployed and running in your runtime plane. To reduce these costs, consider using subflows or private flows, which aren't billable. Additionally, to bypass charges for unused flows, avoid deploying unnecessary flows from accelerators or assets. See xref:general::pricing.adoc[] for information about managing and reducing billable flows.
+Your Anypoint Platform organization pays for billable flows, such as Trigger Flows or APIkit-generated flows, in deployed Mule applications in your runtime plane. A flow is billable when it contains a Mule event source or routes APIkit requests. To reduce these costs, consider using subflows or private flows, which aren't billable. Additionally, to bypass charges for unused flows, avoid deploying unnecessary flows from accelerators or assets. See xref:general::pricing.adoc[] for information about managing and reducing billable flows.
 
 [%header,cols="20a,60a"] 
 |===
@@ -25,7 +25,7 @@ Your Anypoint Platform organization pays for billable flows, such as Trigger Flo
 . Select your project.
 . Click *Flow Count* (image:flow-count-icon.png[2%,2%,""]) in the taskbar.
 +
-Studio displays the number of billable flows your Anypoint Platform organization is charged for running deployed flows.
+Studio displays the number of billable flows your Anypoint Platform organization is charged for in deployed Mule applications.
 +
 image:flow-count.png["A table showing the billable flow names and type"]
 +
