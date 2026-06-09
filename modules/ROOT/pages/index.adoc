@@ -22,8 +22,6 @@ Watch the Anypoint Studio Product Spotlight video to see a quick overview of Stu
 include::_partials/studio-spotlight-video.html[]
 ++++
 
-Anypoint Studio 7.x only supports Mule 4.x projects because the structure of the project, export format, XML and scripting language are different. It isn't possible to embed Mule 3.x runtimes or older versions into Anypoint Studio 7.x.
-
 == Editors
 
 Studio editors help you design and edit the definitions of your applications, APIs, properties, and configuration files:
