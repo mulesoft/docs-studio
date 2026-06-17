@@ -119,8 +119,8 @@ This page explains how to enable FIPS mode in Studio and how to run Mule applica
 
 To use FIPS mode in Anypoint Studio, make sure to review these prerequisites:
 
-* Anypoint Studio *7.23.0*
-* Mule runtime *4.9* (LTS) or *4.10* bundled with Studio
+* Anypoint Studio *7.23.0* and later
+* Mule runtime *4.9* (LTS) or *4.10* and later bundled with Studio
 * Java *17* configured when using Runtime 4.9 
 
 === Enable FIPS Mode in Anypoint Studio

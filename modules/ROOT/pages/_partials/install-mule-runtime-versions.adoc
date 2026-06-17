@@ -6,7 +6,7 @@ Anypoint Studio bundles the latest Mule runtime engine (Mule) version available 
 If you choose to use a different Mule runtime version than the one bundled in your Studio distribution, you can install it and update your projects to the latest version.
 
 [NOTE]
-Studio doesn’t support downgrading Mule runtime to an earlier patch version.
+Studio doesn't support downgrading Mule runtime to an earlier patch version.
 // end::intro[]
 
 // tag::java-mule-runtime-compatibility[]
@@ -27,6 +27,8 @@ This table shows the compatibility between Mule runtime and Java versions in Stu
 
 | 7.22 and later
 a| 
+* 4.12.x
+* 4.11.x
 * 4.10.x
 * 4.9.x (LTS) and later
 * 4.8.x
@@ -68,15 +70,9 @@ See the xref:studio-release-notes.adoc[Studio release notes] for the latest info
 == Installing a Different Mule Version
 
 . In the menu bar, select *Help* > *Install New Software.*
-. Select *Mule Runtimes for Anypoint Studio - +https://studio.mulesoft.org/s3/studio-runtimes/+*:
-+
-image::studio::mule-runtime-update-site.png[]
+. Select *Mule Runtimes for Anypoint Studio - +https://repository.mulesoft.org/nexus/repository/studio-releases-orbit/org/mule/tooling/studio-runtimes/+*:
 . Select the Mule version you want to install and select *Next*.
-+
-image::studio::select-mule-runtime-version.png[]
 . Accept the terms and conditions and click *Finish*.
-+
-image::studio::accept-terms-and-conditions.png[]
 . Restart Studio after the installation is completed.
 
 After installing a different Mule version, you can proceed to update your project to use that version.
@@ -88,7 +84,7 @@ After installing a different Mule version, you can proceed to update your projec
 . In the Package Explorer view, right-click your project, and select *Mule* > *Open Mule Project Properties*:
 +
 image::studio::open-mule-project-properties.png[]
-. Use the drop-down menu next to *Server Runtime* to select a new Mule version:
+. Use the dropdown menu next to *Server Runtime* to select a new Mule version:
 +
 image::studio::select-project-runtime-version.png[]
 . Select *Apply and Close*.

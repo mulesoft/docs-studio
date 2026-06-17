@@ -22,18 +22,18 @@ Corrupted files or incompatible dependencies often cause Studio update errors. T
 To add a new update site for installing additional components to Studio:
 
 . Navigate to *Help* > *Install New Software*.
-. Click *Add...*.
+. Click *Add*.
 . In *Name*, add a name to identify the update site.
 . In *Location*, type the URL of the update site.
 . Click *OK*.
 
 === Add a Local Update Site
 
-To add a local update site ensure that your update site is a JAR or ZIP file format and complete the following steps:
+To add a local update site ensure that your update site is a JAR or ZIP file format and complete these steps:
 
 . Navigate to *Help* > *Install New Software*.
-. Select *Add...*.
-. In *Location*, select *Archive* .
+. Select *Add*.
+. In *Location*, select *Archive*.
 . Select the ZIP or JAR file of your update site.
 . In *Name*, add a name to identify the update site.
 . Select *OK*
@@ -41,13 +41,11 @@ To add a local update site ensure that your update site is a JAR or ZIP file for
 
 == Allow Connection to Update Site Through Firewall
 
-If you are on a network that has firewall restrictions, you must allow the URLs of the update sites to download extensions:
+If you're on a network that has firewall restrictions, you must allow the URLs of the update sites to download extensions:
 
 . Navigate to *Help* > *Install New Software*.
-. Click *Manage...*.
-The list of available software is displayed:
-+
-image::available-software.png["A list of available software sites with options to enable, disable, and manage them"]
+. Click *Manage*.
+The list of available software is shown.
 +
 . Add the URLs from the *Location* column to your firewall list of allowed URLs.
 
