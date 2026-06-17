@@ -70,7 +70,7 @@ See the xref:studio-release-notes.adoc[Studio release notes] for the latest info
 == Installing a Different Mule Version
 
 . In the menu bar, select *Help* > *Install New Software.*
-. Select *Mule Runtimes for Anypoint Studio - +https://repository.mulesoft.org/nexus/repository/studio-releases-orbit/org/mule/tooling/studio-runtimes/+*:
+. Select *Mule Runtime for Anypoint Studio - +https://repository.mulesoft.org/nexus/repository/studio-releases-orbit/org/mule/tooling/studio-runtimes/+*:
 . Select the Mule version you want to install and select *Next*.
 . Accept the terms and conditions and click *Finish*.
 . Restart Studio after the installation is completed.
