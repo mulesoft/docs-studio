@@ -7,3 +7,7 @@ For more details on troubleshooting errors with Studio, you can refer to the fol
 
 * xref:faq-default-browser-config.adoc[]
 * xref:compatibility-issues-runtime-java.adoc[]
+
+== See Also
+
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
