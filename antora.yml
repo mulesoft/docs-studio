@@ -1,5 +1,5 @@
 name: studio
 title: Studio
-version: ~
+version: '7.27'
 nav:
 - modules/ROOT/nav.adoc
