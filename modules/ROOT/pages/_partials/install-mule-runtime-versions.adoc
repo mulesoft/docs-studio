@@ -58,7 +58,7 @@ See the xref:studio-release-notes.adoc[Studio release notes] for the latest info
 == Prerequisites
 
 * If you have strict firewall rules, ensure that you allow the following URLs:
-** `+http://studio.mulesoft.org/+`
+** `+https://repository.mulesoft.org/nexus/repository/studio-releases-orbit/+`
 ** `+http://repository.mulesoft.org/connectors/releases/+`
 ** `+http://download.eclipse.org/technology/m2e/releases+`
 ** `+http://download.eclipse.org/eclipse/updates+`
