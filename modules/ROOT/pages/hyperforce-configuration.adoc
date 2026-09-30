@@ -26,6 +26,7 @@ Follow these steps to configure Anypoint Studio, for other clouds:
 * Japan Cloud: `+https://jp1.platform.mulesoft.com+`
 * India Cloud: `+https://in1.platform.mulesoft.com+`
 * Australia Cloud: `+https://au1.platform.mulesoft.com+`
+* United Kingdom Cloud: `+https://gb1.platform.mulesoft.com+`
 . Click *Apply and Close*.
 +
 image::select-other-region.png["Canada Cloud platform URL in control plane URL field"]
