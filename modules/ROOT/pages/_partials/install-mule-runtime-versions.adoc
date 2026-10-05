@@ -89,6 +89,8 @@ image::studio::open-mule-project-properties.png[]
 image::studio::select-project-runtime-version.png[]
 . Select *Apply and Close*.
 
+Studio automatically fixes inconsistencies between the minimum Mule version (`minMuleVersion`) and the `javaSpecificationVersions` values in your project's `mule-artifact.json` file.
+
 // end::update-mule-version-task[]
 
 // tag::uninstall-mule-version-task[]
