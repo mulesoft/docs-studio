@@ -34,7 +34,7 @@
  ** xref:publish-api-project-to-exchange.adoc[Publishing an API Project to Exchange]
  ** xref:edit-exchange-json-file.adoc[Editing Your API Project Exchange File]
 
-* xref:import-export-packages.adoc[Importing and Export Projects]
+* xref:import-export-packages.adoc[Importing and Exporting Projects]
  ** xref:import-project-exchange.adoc[Importing a Mule Project from Exchange]
  ** xref:export-to-exchange-task.adoc[Publishing a Project to Exchange]
 
