@@ -3,10 +3,11 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Find resources for troubleshooting Anypoint Studio errors, including default browser configuration and Java compatibility issues.
+Find resources for troubleshooting Anypoint Studio errors, including default browser configuration, Java compatibility issues, and HTTPS connections that fail certificate validation.
 
 * xref:faq-default-browser-config.adoc[]
 * xref:compatibility-issues-runtime-java.adoc[]
+* xref:add-ca-certificate-studio-jdk.adoc[]
 
 == See Also
 

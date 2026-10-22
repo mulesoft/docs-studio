@@ -26,6 +26,8 @@ Keep in mind that when setting a manual provider, don't disable the default `loc
 When applying changes to your proxy settings, Anypoint Studio restarts the Mule instance used to obtain metadata and test outbound connections.
 If this fails, manually restart your instance: navigate to *Preferences* > *Tooling*, and click *Restart Instance*.
 
+If your proxy inspects HTTPS traffic with a private CA certificate, add that certificate to the JDK truststore that Studio uses. See xref:add-ca-certificate-studio-jdk.adoc[].
+
 == Proxy Settings Reference
 
 This section describes the options for configuring network connections from Anypoint Studio.
