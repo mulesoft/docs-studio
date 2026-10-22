@@ -1,9 +1,9 @@
-= Troubleshooting Studio
+= Anypoint Studio Troubleshooting
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-For more details on troubleshooting errors with Studio, you can refer to the following resources:
+Find resources for troubleshooting Anypoint Studio errors, including default browser configuration and Java compatibility issues.
 
 * xref:faq-default-browser-config.adoc[]
 * xref:compatibility-issues-runtime-java.adoc[]

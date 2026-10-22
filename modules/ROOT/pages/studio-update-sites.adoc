@@ -1,4 +1,4 @@
-= Anypoint Studio Update Sites
+= Update Anypoint Studio, Mule Runtime, and MUnit with Update Sites
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

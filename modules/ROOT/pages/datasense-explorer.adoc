@@ -1,4 +1,4 @@
-= DataSense Explorer
+= Preview Message Data Structure at Design Time with DataSense Explorer
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

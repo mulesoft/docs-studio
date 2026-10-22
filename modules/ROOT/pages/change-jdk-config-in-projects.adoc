@@ -1,4 +1,4 @@
-= Selecting a Different Java Version to Run the Embedded Mule Runtime
+= Select a Different Java Version to Run the Embedded Mule Runtime
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

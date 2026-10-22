@@ -1,9 +1,9 @@
-= Synchronize API Specifications with MuleSoft VCS
+= Edit API Specifications Offline and Sync Them with MuleSoft VCS
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio enables you to import a RAML, OAS 2.0, or OAS 3.0 API specification from MuleSoft VCS to an API specification project in Studio so that you can edit it offline and then stage and push your changes as you would do with any version control system (VCS).
+Import a RAML, OAS 2.0, or OAS 3.0 API specification from MuleSoft VCS into an API specification project in Anypoint Studio to edit it offline. Then stage and push your changes as you would with any version control system (VCS).
 
 This feature only works when importing an API from MuleSoft as shown in the following process.
 

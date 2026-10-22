@@ -1,10 +1,11 @@
-= Metadata Editor
+= Define Metadata for Components with the Metadata Editor
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Several elements in your Mule flow automatically expose metadata about the expected input and output. +
-However, given that some components don't expose this metadata, Anypoint Studio features a metadata editor that allows you to define your component's metadata either manually, or through an example, or a schema.
+The Anypoint Studio metadata editor lets you define metadata for components that don't expose it automatically, either manually, through an example, or through a schema.
+
+Several elements in your Mule flow automatically expose metadata about the expected input and output.
 
 This metadata is handled by DataSense and exposed during design time on every component of your flows, helping you debug your application and know if the expected data structure differs from what's truly being sent. It also provides smart autocomplete options. +
 To use the drag and drop UI of the Transform Message Component, you must define its input and output metadata.

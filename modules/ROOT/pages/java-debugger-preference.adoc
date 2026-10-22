@@ -1,9 +1,9 @@
-= Connect the Java Debugger
+= Connect the Java Debugger in Anypoint Studio
 
-Studio disconnects the Java debugger by default. The following steps show you how to connect your Java debugger if you need to debug Java code in Studio:
+Studio disconnects the Java debugger by default. Connect it in the Studio preferences if you need to debug Java code in your Mule project.
 
 . Open the preferences view in the manner appropriate to your OS: +
-* In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
+* In macOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Debugger*,
 . Select *Connect Java Debugger*.

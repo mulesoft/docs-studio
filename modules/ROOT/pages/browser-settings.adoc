@@ -1,4 +1,4 @@
-= Configure Studio Browser Settings
+= Configure Anypoint Studio Browser Settings
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

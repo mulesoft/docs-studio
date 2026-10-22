@@ -3,9 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Exchange offers a wide variety of example Mule projects that you can import into your Studio workspace and edit according to your needs. +
-
-It's always recommended that you explore the available examples in Exchange. They are a very useful way of learning how to design and code more complex mule applications.
+Import an example Mule project from Exchange into your Studio workspace and edit it to fit your needs. Exploring the available examples is a useful way to learn how to design and code more complex Mule applications.
 
 == Before you Begin
 

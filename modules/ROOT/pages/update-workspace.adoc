@@ -1,4 +1,4 @@
-= Update Workspaces
+= Update Workspaces in Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

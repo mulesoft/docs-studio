@@ -1,4 +1,4 @@
-= Use Maven in Studio
+= Use Maven in Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

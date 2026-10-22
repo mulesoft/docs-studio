@@ -1,9 +1,9 @@
-= Solve Conflicts
+= Solve Git Conflicts in API Projects
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-In certain scenarios, someone else can introduce changes in the version in MuleSoft VCS at the same time you modify the same version locally. This triggers a conflict in Git.
+Resolve a Git conflict in your API project when someone else changes a version in MuleSoft VCS while you modify the same version locally.
 
 For example, you might have modified a file in a branch, while someone else modified this very same file in the same branch directly in MuleSoft VCS. By the time you want to push your changes, Git rejects the push command because it cannot fast-forward your changes to the version in MuleSoft VCS, meaning that you must tell git how to apply your changes over a modified version:
 //_TODO add more information about Git conflicts.

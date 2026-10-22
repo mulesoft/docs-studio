@@ -3,6 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Download and install Anypoint Studio 7.x, the MuleSoft IDE for designing, building, and testing Mule applications, on Windows, macOS, or Linux.
+
 You can download two versions of Anypoint Studio 7.x:
 
 [%header,%autowidth.spread,cols="a,a,a,a,a"]
@@ -15,7 +17,7 @@ You can download two versions of Anypoint Studio 7.x:
 To download and install Anypoint Studio, follow the instructions based on your operating system:
 
 * xref:to-download-and-install-studio-wx.adoc[Windows]
-* xref:to-download-and-install-studio-ox.adoc[MacOS]
+* xref:to-download-and-install-studio-ox.adoc[macOS]
 * xref:to-download-and-install-studio-lx.adoc[Linux]
 
 [NOTE]

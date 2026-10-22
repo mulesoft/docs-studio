@@ -1,4 +1,4 @@
-= Create an API Specification Project in Studio
+= Create an API Specification Project in Anypoint Studio
 
 Studio enables you to create a RAML API specification, an OAS 2.0 or 3.0 API specification, or an API fragment, and automatically sync it with MuleSoft VCS.
 

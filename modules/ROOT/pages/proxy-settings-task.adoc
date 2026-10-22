@@ -1,15 +1,13 @@
-= Configure Proxy Settings
+= Configure Anypoint Studio to Connect Through a Proxy Server
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :page-aliases: proxy-settings-reference.adoc
 
-Anypoint Studio allows you to configure proxy configurations for when your computer is behind a proxy server and needs to connect to the internet to download plugins and install updates.
-
-Anypoint Studio supports configurations for authenticated and non-authenticated proxies.
+Configure Anypoint Studio to connect through a proxy server when your computer is behind one and needs internet access to download plugins and install updates. Studio supports both authenticated and non-authenticated proxies.
 
 . Open the preferences view in the manner appropriate to your OS: +
-* In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
+* In macOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Under *General* select *Network Connections*.
 . Select your Active Provider: +
