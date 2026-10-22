@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-There are several ways of accessing the Metadata editor in Anypoint Studio.
+Open the Metadata Editor in Anypoint Studio from a component's Metadata tab, the Transform Message component, or the Package Explorer view. Use the editor to define the metadata of your payload, attributes, and variables.
 
 == Metadata Tab
 

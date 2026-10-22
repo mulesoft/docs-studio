@@ -3,7 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To configure Anypoint Private Cloud Edition (Anypoint Platform PCE) in Anypoint Studio, follow the instructions for the version you are installing:
+Configure Anypoint Platform Private Cloud Edition (Anypoint Platform PCE) in Anypoint Studio by following the instructions for your PCE version.
+
 
 * xref:pce4-configuration.adoc[Configure Anypoint Platform PCE 4.x in Studio]
 * xref:pce3-configuration.adoc[Configure Anypoint Platform PCE 3.x in Studio]

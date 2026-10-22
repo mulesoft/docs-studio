@@ -5,6 +5,8 @@ endif::[]
 
 :page-aliases: 6.5.x@studio::to-download-and-install-studio-lx.adoc
 
+Download Anypoint Studio and install it on Linux by extracting the archive file and running Studio in a new or existing workspace.
+
 == Before You Begin Installing Anypoint Studio
 
 * To support the Studio Theme on Linux, you must have the GTK version 3 installed.

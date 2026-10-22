@@ -1,7 +1,9 @@
-= Configure XULRunner as Studio Default Layout Engine (MacOS)
+= Configure XULRunner as Studio Default Layout Engine (macOS)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+Set XULRunner as the default layout engine for Anypoint Studio on macOS by pointing the Studio configuration file to your XULRunner binaries.
 
 . Download `XULRunner` (we recommend http://ftp.mozilla.org/pub/xulrunner/releases/24.0/runtimes/[v24.0]).
 . Unzip your package and install it.

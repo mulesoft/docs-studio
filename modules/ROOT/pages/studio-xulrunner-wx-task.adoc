@@ -3,6 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Set XULRunner as the default layout engine for Anypoint Studio on Windows by pointing the Studio configuration file to your XULRunner binaries. You can also disable ActiveX Filtering if web content crashes while rendering.
+
 . Download `XULRunner` (we recommend http://ftp.mozilla.org/pub/xulrunner/releases/24.0/runtimes/[v24.0]).
 . Unzip your package and install it.
 . Go to your Anypoint Studio installation directory and open your `AnypointStudio.ini` file.
@@ -25,4 +27,4 @@ Additionally, if you are experiencing unexpected crashes when rendering web cont
 == See Also
 
 * xref:studio-xulrunner-lnx-task.adoc[Configure XULRunner as Studio Default Layout Engine (Linux)]
-* xref:studio-xulrunner-unx-task.adoc[Configure XULRunner as Studio Default Layout Engine (MacOS)]
+* xref:studio-xulrunner-unx-task.adoc[Configure XULRunner as Studio Default Layout Engine (macOS)]

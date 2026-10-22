@@ -1,4 +1,4 @@
-= Optimizing API Testing with MUnit Coverage Reports in Studio
+= MUnit Coverage Reports in Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

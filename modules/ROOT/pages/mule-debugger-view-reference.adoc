@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This section contains a full description of the Mule Debugger View and all its available tools.
+The Mule Debugger view in Anypoint Studio provides tools to control a running Mule application, such as running to the next processor, evaluating DataWeave expressions, and starting or stopping schedulers. Use this reference to learn what each tool does.
 
 image::debugger-reference.png["A debugger with a toolbar that has ten buttons and a section labeled "Variables and watches" that contains two empty panels."]
 

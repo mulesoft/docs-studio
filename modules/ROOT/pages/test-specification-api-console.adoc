@@ -1,6 +1,6 @@
 = Test Your API Specification Using the API Console
 
-Studio provides an API Console view and a mocking service for the API you are designing. While the mocking service is enabled, The API Console view returns the HTTP status codes and example payloads that you defined in your API specification.
+Studio provides an API Console view and a mocking service for the API you are designing. While the mocking service is enabled, the API Console view returns the HTTP status codes and example payloads that you defined in your API specification.
 
 Simulating calls to your API is a critical design task that helps you troubleshoot problems and demo the API to prospective users even before you implement it. You can simulate calls to the API in the API Console view before publishing a new version of the API specification to Exchange.
 

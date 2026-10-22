@@ -1,8 +1,8 @@
-= Secure Storage Overview
+= Secure Storage in Anypoint Studio
+
+Anypoint Studio 7.11 and later uses Secure Storage, provided by Eclipse, to encrypt and save your credentials.
 
 Anypoint Studio 7.10 and earlier versions stored the information of authenticated users in the workspace, meaning that you could have different authenticated users per workspace.
-
-Studio 7.11 and later introduce Secure Storage, provided by Eclipse to encrypt and save your credentials.
 
 Studio provides a main password provider that automatically generates a main password for all your user credentials. When adding a new credential, Studio uses your main password to encrypt and save that credential into a secure storage file in your file system.
 

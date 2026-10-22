@@ -1,9 +1,11 @@
-= Handling Inaccessible Fields
+= Hide Inaccessible Fields in the Studio Debugger
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Improve your Mule project running on Java 17 or later by configuring the Studio debugger to hide inaccessible fields and methods.
+Configure the Studio debugger to hide inaccessible fields and methods in Mule projects that run on Java 17 or later. Hiding these items focuses the debugger on data you can access and reduces output clutter.
+
+You can set these options:
 
 * Hide inaccessible fields:
 +

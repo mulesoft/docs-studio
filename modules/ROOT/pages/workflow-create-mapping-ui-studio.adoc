@@ -1,7 +1,9 @@
-= Workflow: Create a Mapping via UI
+= Workflow: Create a Mapping with the Transform Message UI
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+Create a DataWeave mapping in Anypoint Studio by defining the input and output structures, mapping elements graphically, and previewing the result.
 
 . xref:input-output-structure-transformation-studio-task.adoc[Define Input and Output Structure of a Transformation]
 Provide expected input and required output structures.

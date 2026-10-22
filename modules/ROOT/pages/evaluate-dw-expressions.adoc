@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-When debugging your Mule application, you may need to evaluate a specific expression while your flow's execution is paused. You can write a DataWeave expression to evaluate or inspect any message property.
+Evaluate DataWeave expressions in the Studio debugger while your flow's execution is paused. You can evaluate a condition or inspect any message property at a breakpoint.
 
 If your expression is a declaration, the debugger returns `boolean`. Otherwise, it returns the value.
 For example, you can set:

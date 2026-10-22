@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Studio comes bundled with a Java development kit (JDK).
+Anypoint Studio comes bundled with a Java development kit (JDK), but you can configure it to start with a different JDK on Windows, Linux, or macOS.
 
 You can find the JDK version used by Studio under *About Anypoint Studio* > *Installation Details*.
 
@@ -11,7 +11,7 @@ To start Studio using a different JDK, follow the instructions based on your ope
 
 * xref:change-jdk-for-studio-wx.adoc[Windows]
 * xref:change-jdk-for-studio-lx.adoc[Linux]
-* xref:change-jdk-for-studio-ox.adoc[MacOS]
+* xref:change-jdk-for-studio-ox.adoc[macOS]
 
 == Select the Appropriate Java and Mule Runtime Versions
 

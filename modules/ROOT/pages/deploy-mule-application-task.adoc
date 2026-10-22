@@ -1,7 +1,9 @@
-= Deploying a Mule Application to CloudHub
+= Deploy a Mule Application to CloudHub
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+Deploy your Mule application from Anypoint Studio to CloudHub, and redeploy it after you update the code. Before you deploy, make sure that your application meets the CloudHub requirements.
 
 == Before You Begin
 

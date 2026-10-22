@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-When you import your API specifications from Exchange or Maven as dependencies of your projects, those dependencies relocate from `src/resources/api/` to a ZIP file in your project's classpath. This change means that you can't search for your API dependencies by using the File Search option in Studio. To enable you to search for specific text inside your API dependencies, Studio introduces the API Search feature.
+Use API Search in Anypoint Studio to find specific text inside your API specification dependencies. API specifications that you import from Exchange or Maven move from `src/resources/api/` to a ZIP file in your project's classpath, so the File Search option can't search them.
 
 You can access the API Search menu from the taskbar at the Anypoint Studio display, either by selecting *Search* > *Search...* or by pressing `Ctrl+h`:
 
@@ -31,7 +31,7 @@ For example, `!examples.raml` searches inside all files except `examples.raml`.
 * *Local API Files* searches inside API specifications added from a local file or from MuleSoft VCS.
 . Click *Search*.
 
-You can also search for all API specifications inside your open projects. You can select *Navigate* > *Open API Resource* in the taskbar at the Anypoint Studio display, or press `Cmd+Shift+p` (MacOS) or `Ctrl+Shift+P` (Windows/Linux):
+You can also search for all API specifications inside your open projects. You can select *Navigate* > *Open API Resource* in the taskbar at the Anypoint Studio display, or press `Cmd+Shift+p` (macOS) or `Ctrl+Shift+P` (Windows/Linux):
 
 image::open-api-resource.png["API search field highlighted in the Open API Resource window"]
 

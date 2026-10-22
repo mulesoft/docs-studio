@@ -3,6 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Create a metadata class in the Metadata Editor to define the structure of your data in Anypoint Studio. Depending on the data format, you define the structure from a sample, a schema, or a built-in editor.
+
 . Click the Add button in your Metadata Editor.
 +
 image::dw-define-type2.png["Add button highlighted in the metadata editor window"]

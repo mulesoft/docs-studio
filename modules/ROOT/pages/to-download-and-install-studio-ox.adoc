@@ -1,7 +1,9 @@
-= Download and Install Anypoint Studio (OS X)
+= Download and Install Anypoint Studio (macOS)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+Download Anypoint Studio and install it on macOS by moving the extracted package to your Applications directory and opening it in a new or existing workspace.
 
 . Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/anypoint-mule-studio[Download Site].
 . Extract the Anypoint Studio package and move it to your `/Applications` directory.

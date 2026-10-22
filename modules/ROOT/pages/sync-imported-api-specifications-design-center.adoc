@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can edit an imported API specification in your project as an API specification project.
+Edit an API specification that you imported as a dependency by opening it as an API specification project in Studio. Then synchronize your changes with MuleSoft VCS and publish the new version to Exchange.
 
 Before you begin, ensure that you have the necessary permissions to edit the API specification, and that you don't already have an API specification project for that API specification in your Studio workspace.
 

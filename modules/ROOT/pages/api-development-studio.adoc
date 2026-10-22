@@ -3,7 +3,9 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Ensure that your Mule applications always refer to a single source of truth for your API specifications. Design, publish, and implement your API specifications with the following workflow:
+Design, publish, and implement API specifications so your Mule applications always refer to a single source of truth. Studio works with Design Center, Exchange, and Maven to support this workflow for AsyncAPI, OAS, and RAML specifications.
+
+Use this workflow:
 
 . Design an API specification. 
 +

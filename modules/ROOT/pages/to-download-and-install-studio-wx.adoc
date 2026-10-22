@@ -4,6 +4,8 @@ include::_attributes.adoc[]
 endif::[]
 :page-aliases: jdk-requirement-lnx-workflow.adoc, jdk-requirement-wx-workflow.adoc, jdk-requirement-xos-workflow.adoc, studio-configure-vm-task-lnx.adoc, studio-configure-vm-task-unx.adoc, studio-configure-vm-task-wx.adoc, faq-jdk-requirement.adoc
 
+Download Anypoint Studio and install it on Windows by extracting the installation file to the `C:\` root folder and opening Studio in a new or existing workspace. You can also exclude Studio from Windows Defender scans to improve performance.
+
 . Download the Anypoint Studio installation file from the https://www.mulesoft.com/lp/dl/anypoint-mule-studio[Download Site].
 . Extract the Windows installation file into the `C:\` root folder.
 +

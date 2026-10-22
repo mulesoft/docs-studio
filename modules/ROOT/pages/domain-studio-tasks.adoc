@@ -3,6 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+Create a Mule domain project in Anypoint Studio and associate your Mule applications with it. Applications that use the same domain share its global configurations.
+
 == Create Mule Domains
 
 . Go to File > New > Mule Domain Project. +

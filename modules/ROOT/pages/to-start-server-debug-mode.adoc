@@ -1,7 +1,9 @@
-= Start the Mule Server In Debug Mode
+= Start the Mule Server in Debug Mode
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+Start a Mule server in debug mode so that you can connect to it from Anypoint Studio and debug an application remotely. You pass the debug parameters to the server on the command line or in the wrapper configuration file.
 
 . To start the server in debug mode, use the following parameters: +
 +

@@ -7,7 +7,7 @@ Anypoint Studio allows you to connect to the MuleSoft Government Cloud region.
 To configure Studio to connect to MuleSoft Government Cloud:
 
 . Open the preferences view in the manner appropriate to your OS: +
-* In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
+* In macOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, and select *Anypoint Platform*.
 +
@@ -22,7 +22,7 @@ image::gov-region-selection.png["A dropdown menu with options for selecting a re
 Because MuleSoft Government Cloud requires you to use a two-factor authentication (2FA) method, you must configure your identity provider (IdP) information to access it:
 
 . Open the preferences view in the manner appropriate to your OS: +
-* In MacOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
+* In macOS, either navigate to *Anypoint Studio* > *Preferences...* or press `cmd + ,`.
 * In Windows and Linux, navigate to *Window* > *Preferences...*.
 . Expand *Anypoint Studio* in the left navigation bar, select *Authentication* > *Add*.
 +

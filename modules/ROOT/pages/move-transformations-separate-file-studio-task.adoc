@@ -1,4 +1,4 @@
-= Move Transformation to Separate Files
+= Move Transformations to Separate Files
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

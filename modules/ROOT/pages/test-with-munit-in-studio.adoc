@@ -1,9 +1,9 @@
-= Testing Your Mule Projects with MUnit
+= Test Your Mule Projects with MUnit
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Create, run, and modify, MUnit tests for your Mule projects in Anypoint Studio with MUnit. MUnit is a MuleSoft unit testing framework for creating and running unit tests on a Mule application, as described in xref:munit::index.adoc[MUnit Overview]. 
+Use MUnit in Anypoint Studio to create, run, debug, and modify unit tests for your Mule projects. MUnit is a MuleSoft unit testing framework for creating and running unit tests on a Mule application, as described in xref:munit::index.adoc[MUnit Overview].
 //TODO: add an image of the MUnit window in Studio
 
 In the MUnit windows, you can find information about your tests:
@@ -53,7 +53,7 @@ To create an MUnit test:
 . Click *Finish*.
 
 [NOTE]
-You can also configure MUnit tests and test suites from the XML editor. 
+You can also configure MUnit tests and test suites from the XML editor.
 
 == Run MUnit Tests
 
@@ -62,7 +62,7 @@ You can run MUnit test in different ways in Studio:
 * Right-click on your MUnit test suite file and select *MUnit* > *Run Test*.
 * In *Message Flow*, right-click on your test flow, and select *Run MUnit suite*.
 
-When you run a test, Studio creates a build and displays the progress and the result of the test in the *Console* tab and the *MUnit* window. If all tests execute successfully, the build succeeds. If there is an error, the build fails. 
+When you run a test, Studio creates a build and displays the progress and the result of the test in the *Console* tab and the *MUnit* window. If all tests execute successfully, the build succeeds. If there is an error, the build fails.
 
 // == Monitor Your Tests and Review the Test Results
 // If the test results indicate any failures, you can learn more about these failures in the error section.
@@ -74,13 +74,13 @@ You can run your MUnit tests in debug mode to step through your code, inspect va
 
 . Open your Mule project in Studio.
 . In the *src/test/munit* folder, open the MUnit test suite to debug.
-. In *Message Flow*, add a breakpoint by right-clicking on the element that must have the breakpoint. 
+. In *Message Flow*, add a breakpoint by right-clicking on the element that must have the breakpoint.
 . Right-click on your MUnit flow test and select *Debug MUnit test*.
 
 == Enable Flow Sources
 
 The `Enable Flow Sources` element within the MUnit test tells MUnit which flow sources to load and execute for the test.
-By default, MUnit doesn't start the event sources (flow sources such as triggers and listeners). 
+By default, MUnit doesn't start the event sources (flow sources such as triggers and listeners).
 
 You can define flow sources with the *Mule Properties* view of your MUnit test in Studio:
 

@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The modules in your project can have compatibility issues with Java or Mule runtime.
+Modules in your Mule project can have compatibility issues with the Java version or Mule runtime version that Studio uses. Select a compatible JRE or update your modules to avoid deployment errors.
 
 include::partial$install-mule-runtime-versions.adoc[tag=java-mule-runtime-compatibility]
 

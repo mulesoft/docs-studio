@@ -1,7 +1,9 @@
-= Configure Studio to Use Your Own JDK (MacOS)
+= Configure Studio to Use Your Own JDK (macOS)
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+
+Point Anypoint Studio on macOS to your own JDK by adding the `-vm` option to the `AnypointStudio.ini` file. Studio then starts with the JDK installation that you specify instead of its bundled JDK.
 
 . Go to your `/Applications` folder, right click the `AnypointStudio` package and select *Show Package Contents*.
 . Go to `Contents` > `Eclipse`, and open the `AnypointStudio.ini` file.
