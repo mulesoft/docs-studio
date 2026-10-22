@@ -1,4 +1,4 @@
-= Sync Your API Projects with API Sync
+= Sync Your API Projects with MuleSoft VCS Using API Sync
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

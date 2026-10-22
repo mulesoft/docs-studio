@@ -1,4 +1,4 @@
-= Connect the Java Debugger
+= Connect the Java Debugger in Anypoint Studio
 
 Studio disconnects the Java debugger by default. Connect it in the Studio preferences if you need to debug Java code in your Mule project.
 

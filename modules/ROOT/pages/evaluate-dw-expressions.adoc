@@ -1,4 +1,4 @@
-= DataWeave Expression Watches
+= Evaluate DataWeave Expressions While Debugging
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

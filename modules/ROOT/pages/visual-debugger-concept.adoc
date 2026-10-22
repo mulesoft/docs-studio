@@ -1,4 +1,4 @@
-= Studio Debugger
+= Debug Mule Applications with the Studio Debugger
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

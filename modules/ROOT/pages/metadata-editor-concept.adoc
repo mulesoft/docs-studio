@@ -1,4 +1,4 @@
-= Metadata Editor
+= Define Metadata for Components with the Metadata Editor
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

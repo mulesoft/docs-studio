@@ -1,4 +1,4 @@
-= Synchronize API Specifications with MuleSoft VCS
+= Edit API Specifications Offline and Sync Them with MuleSoft VCS
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

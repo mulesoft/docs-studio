@@ -1,4 +1,4 @@
-= Design Mule Domains
+= Create a Mule Domain Project and Associate Your Applications
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

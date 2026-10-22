@@ -1,4 +1,4 @@
-= Mule Domain Support in Anypoint Studio
+= Share Global Configurations Between Mule Applications with Domains
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

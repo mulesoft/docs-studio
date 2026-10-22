@@ -1,4 +1,4 @@
-= Secure Storage in Anypoint Studio
+= Protect Your Credentials with Secure Storage in Studio
 
 Anypoint Studio 7.11 and later uses Secure Storage, provided by Eclipse, to encrypt and save your credentials.
 
