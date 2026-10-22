@@ -27,6 +27,7 @@ This table shows the compatibility between Mule runtime and Java versions in Stu
 
 | 7.22 and later
 a| 
+* 4.13.x
 * 4.12.x
 * 4.11.x
 * 4.10.x
