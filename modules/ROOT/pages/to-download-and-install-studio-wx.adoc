@@ -14,7 +14,7 @@ Download Anypoint Studio and install it on Windows by extracting the installatio
 ====
 * Anypoint Studio is distributed as a compressed installation file and does not include a separate Windows installer. Extract the file to install Studio.
 * Ensure that you extract the installation file into the `C:\` folder so that the `AnypointStudio.exe` file is located in the `C:\AnypointStudio\` folder after installation.
-* Ensure that the extraction path is short and does not contain spaces. Do not extract Studio to `C:\Program Files` or to a Downloads folder.
+* Ensure that the extraction path is short and does not contain spaces. Do not extract Studio to `C:\Program Files` or to the `Downloads` folder.
 * Windows limits many file paths to 260 characters. Studio stores plugins in deeply nested folders, so a long extraction path can leave the installation incomplete.
 * Ensure that your user has read and write permissions for the `C:\` directory.
 * If you use a Windows antivirus application, ensure that the `plugins/` and `features/` directories are in the *trusted* category.
