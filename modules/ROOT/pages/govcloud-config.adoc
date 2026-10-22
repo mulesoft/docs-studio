@@ -1,4 +1,4 @@
-= Access MuleSoft Government Cloud from Studio
+= Access MuleSoft Government Cloud from Anypoint Studio
 
 Anypoint Studio allows you to connect to the MuleSoft Government Cloud region.
 

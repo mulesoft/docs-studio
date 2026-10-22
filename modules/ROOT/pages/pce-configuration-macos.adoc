@@ -1,4 +1,4 @@
-= Configure Private Cloud Edition in Studio (macOS)
+= Configure Private Cloud Edition in Anypoint Studio (macOS)
 
 include::studio::partial$pce-configuration-macos.adoc[tag=intro]
 

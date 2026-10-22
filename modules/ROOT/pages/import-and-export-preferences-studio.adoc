@@ -1,4 +1,4 @@
-= Export and Import Studio Preferences
+= Export and Import Anypoint Studio Preferences
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -1,4 +1,4 @@
-= Configure Studio to Connect Through a Proxy Server
+= Configure Anypoint Studio to Connect Through a Proxy Server
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -1,4 +1,4 @@
-= Configure Private Cloud Edition in Studio
+= Configure Private Cloud Edition in Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

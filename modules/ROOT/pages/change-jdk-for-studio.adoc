@@ -1,4 +1,4 @@
-= Configure Studio to Use Your Own JDK
+= Configure Anypoint Studio to Use Your Own JDK
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

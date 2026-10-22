@@ -1,4 +1,4 @@
-= Hide Inaccessible Fields in the Studio Debugger
+= Hide Inaccessible Fields in the Anypoint Studio Debugger
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

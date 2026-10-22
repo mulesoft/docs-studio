@@ -1,4 +1,4 @@
-= Design, Publish, and Implement API Specifications in Studio
+= Design, Publish, and Implement API Specifications in Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

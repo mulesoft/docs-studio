@@ -1,4 +1,4 @@
-= Troubleshoot Issues with Platform Content in Studio
+= Troubleshoot Issues with Platform Content in Anypoint Studio
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
