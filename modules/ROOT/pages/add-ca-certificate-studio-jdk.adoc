@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Add a private CA certificate to the JDK truststore that Anypoint Studio uses for HTTPS connections to Anypoint Platform, Exchange, Maven repositories, and Studio update sites. Import the certificate when a private certificate authority or an HTTPS-inspecting proxy signs those connections. If you have Studio open, restart it after you import the certificate.
+Add a private CA (Certificate Authority) certificate to the JDK truststore that Anypoint Studio uses for HTTPS connections to Anypoint Platform, Exchange, Maven repositories, and Studio update sites. Import the certificate when a private certificate authority or an HTTPS-inspecting proxy signs those connections. If you have Studio open, restart it after you import the certificate.
 
 Studio validates these connections with the JDK that starts Studio. That JDK is either the JDK bundled with Studio or the JDK you configured with the `-vm` option. The JRE you select for a Mule project does not validate these connections.
 
