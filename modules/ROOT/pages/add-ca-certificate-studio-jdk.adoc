@@ -1,0 +1,103 @@
+= Add a CA Certificate to the Anypoint Studio JDK
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Add a private CA (Certificate Authority) certificate to the JDK truststore that Anypoint Studio uses for HTTPS connections to Anypoint Platform, Exchange, Maven repositories, and Studio update sites. Import the certificate when a private certificate authority or an HTTPS-inspecting proxy signs those connections. If you have Studio open, restart it after you import the certificate.
+
+Studio validates these connections with the JDK that starts Studio. That JDK is either the JDK bundled with Studio or the JDK you configured with the `-vm` option. The JRE you select for a Mule project does not validate these connections.
+
+== Locate the Truststore
+
+The truststore file is `lib/security/cacerts` in the home directory of the JDK that starts Studio. On a Java 8 JDK, the file is `jre/lib/security/cacerts`.
+
+. Open the `AnypointStudio.ini` file: 
++
+* On Windows, the file is in the Anypoint Studio installation directory. See xref:change-jdk-for-studio-wx.adoc[].
+* On Linux, the file is `/usr/lib/anypointstudio/anypointstudio.ini`. See xref:change-jdk-for-studio-lx.adoc[].
+* On macOS, the file is `Contents/Eclipse/AnypointStudio.ini` inside the `AnypointStudio` application. See xref:change-jdk-for-studio-ox.adoc[].
+. Find the `-vm` entry. The next line is the Java executable for the JDK that starts Studio.
+. From that executable, go up to the JDK home directory (the directory that contains `bin`). The truststore is `lib/security/cacerts` in that directory.
+
+For example, a Windows `-vm` value of `plugins/org.mule.tooling.jdk.win32.x86_64_<version>/bin/javaw.exe` uses this truststore:
+
+`plugins/org.mule.tooling.jdk.win32.x86_64_<version>/lib/security/cacerts`
+
+A macOS `-vm` value of `../Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_<version>/Contents/Home/bin/java` uses this truststore:
+
+`../Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_<version>/Contents/Home/lib/security/cacerts`
+
+The bundled JDK is in the `plugins` directory of your Studio installation, in a directory whose name starts with `org.mule.tooling.jdk`. The directory name includes your operating system and the JDK plugin version. That version changes with each Studio release.
+
+* Windows: `AnypointStudio\plugins\org.mule.tooling.jdk.win32.x86_64_<version>\lib\security\cacerts`
+* macOS on Intel: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.x86_64_<version>/Contents/Home/lib/security/cacerts`
+* macOS on Apple silicon: `AnypointStudio.app/Contents/Eclipse/plugins/org.mule.tooling.jdk.macosx.aarch64_<version>/Contents/Home/lib/security/cacerts`
+
+On Linux, use the JDK path from the `-vm` entry. The truststore is `lib/security/cacerts` in that JDK home directory.
+
+If you start Studio with your own JDK, use the `lib/security/cacerts` file in that JDK home directory. On a Java 8 JDK, use `jre/lib/security/cacerts`.
+
+== Import the Certificate
+
+Get the CA certificate (`.cer` or `.pem`) from your administrator. Use the CA that signed the server certificate, or the CA of the proxy that inspects HTTPS traffic. If the server presents a certificate chain, import each certificate in the chain and use a different alias for each file.
+
+. From the home directory of the JDK that starts Studio, import the certificate with `keytool`. Replace the placeholders with your truststore path, truststore password, alias, and certificate file.
++
+Windows:
++
+[source]
+--
+bin\keytool -importcert -trustcacerts ^
+-keystore <cacerts_path> ^ //<1>
+-storepass <pass> ^ //<2>
+-alias <alias> ^ //<3>
+-file <certificate_file> //<4>
+--
++
+macOS and Linux:
++
+[source,bash]
+--
+bin/keytool -importcert -trustcacerts \
+-keystore <cacerts_path> \ //<1>
+-storepass <pass> \ //<2>
+-alias <alias> \ //<3>
+-file <certificate_file> //<4>
+--
++
+<1> `cacerts_path` is the full path to the `cacerts` file.
+<2> `pass` is the truststore password. The default password for a JDK `cacerts` file is `changeit`.
+<3> `alias` is the name your certificate gets when you save it in the truststore. For example, `corporate-ca`.
+<4> `certificate_file` is the path to the `.cer` or `.pem` file.
++
+When `keytool` shows `Trust this certificate? [no]:`, type `yes`.
++
+If `keytool` cannot write the truststore, run the command prompt as administrator on Windows, or run the same command with `sudo` on macOS and Linux.
+. If you have Studio open, restart it.
+
+== Add the Certificate for Maven
+
+A failed download from a Maven repository in Studio is recorded as `org.apache.maven.wagon.TransferFailedException` with `PKIX path building failed`. Import the CA into the JDK from the `-vm` entry. Studio uses that JDK for these downloads, including downloads from `maven.anypoint.mulesoft.com`.
+
+When you run Maven from a terminal outside Studio, import the certificate into the JDK that starts that `mvn` command.
+
+To use your own Maven installation inside Studio, see xref:configure-studio-to-use-your-own-maven.adoc[].
+
+== Troubleshoot Certificate Errors
+
+Exception: `javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target`
+
+Exception: `javax.net.ssl.SSLHandshakeException: org.eclipse.ecf.internal.ssl.ECFCertificateException: Valid cert chain, but no trust certificate found!`
+
+These errors occur when the JDK that starts Studio connects to Anypoint Platform, Exchange, a Maven repository, or a Studio update site, and the truststore does not contain the CA or the rest of the certificate chain. Add the missing certificates to that JDK. If you have Studio open, restart it.
+
+Exception: `java.io.IOException: Keystore was tampered with, or password was incorrect`
+
+This error occurs when the `-storepass` value does not match the `cacerts` password. The default password for a JDK `cacerts` truststore is `changeit`. A damaged `cacerts` file produces the same error.
+
+== See Also
+
+* xref:proxy-settings-task.adoc[]
+* xref:change-jdk-for-studio.adoc[]
+* xref:use-maven-in-studio.adoc[]
+* xref:pce-configuration.adoc[]

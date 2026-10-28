@@ -8,3 +8,7 @@ Configure Anypoint Platform Private Cloud Edition (Anypoint Platform PCE) in Any
 
 * xref:pce4-configuration.adoc[Configure Anypoint Platform PCE 4.x in Studio]
 * xref:pce3-configuration.adoc[Configure Anypoint Platform PCE 3.x in Studio]
+
+== See Also
+
+* xref:add-ca-certificate-studio-jdk.adoc[]
