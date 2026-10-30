@@ -9,6 +9,8 @@ Anypoint Studio enables you to write documentation for your new projects and to 
 
 When you create a new project in Anypoint Studio, Studio includes an *exchange-docs* folder with a *home.md* file. You can document the front page of your new asset in Markdown format after publishing your asset to Exchange.
 
+When you publish your project, the content in the *exchange-docs* folder overwrites the documentation page for your asset in Exchange. Use the *exchange-docs* folder as a changelog to maintain documentation history across all versions of your asset.
+
 NOTE: Learn more about Markdown at https://www.markdownguide.org/.
 
 Studio enables you to add more pages, images, and an icon: 
