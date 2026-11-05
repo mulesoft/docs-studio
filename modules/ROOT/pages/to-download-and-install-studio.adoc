@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-
 :page-aliases: update-studio.adoc
 
 Download and install Anypoint Studio 7.x, the MuleSoft IDE for designing, building, and testing Mule applications, on Windows, macOS, or Linux.
